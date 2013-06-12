@@ -1,0 +1,29 @@
+Dependencies for Project 'scanner', Target 'STM32F4 flash': (DO NOT MODIFY !)
+F (.\user\Blinky.c)(0x51B8DAF3)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I d:\Keil\ARM\RV31\INC -I d:\Keil\ARM\CMSIS\Include -I d:\Keil\ARM\Inc\ST\STM32F4xx -o "..\..\out\blinky.o" --omf_browse "..\..\out\blinky.crf" --depend "..\..\out\blinky.d")
+I (d:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x516ED646)
+I (d:\Keil\ARM\Inc\ST\STM32F4xx\STM32F4xx.h)(0x515403C8)
+I (d:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x515E7D14)
+I (d:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x516ED646)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x515E7D14)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x515E7D14)
+I (d:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x515E7D14)
+I (d:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x50FF9F8A)
+I (user\LED.h)(0x5087AF0C)
+F (.\user\LED.c)(0x5087AF0C)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I d:\Keil\ARM\RV31\INC -I d:\Keil\ARM\CMSIS\Include -I d:\Keil\ARM\Inc\ST\STM32F4xx -o "..\..\out\led.o" --omf_browse "..\..\out\led.crf" --depend "..\..\out\led.d")
+I (d:\Keil\ARM\Inc\ST\STM32F4xx\STM32F4xx.h)(0x515403C8)
+I (d:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x515E7D14)
+I (d:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x516ED646)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x515E7D14)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x515E7D14)
+I (d:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x515E7D14)
+I (d:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x50FF9F8A)
+I (user\LED.h)(0x5087AF0C)
+F (.\startup\startup_stm32f4xx.s)(0x5087AE0C)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I d:\Keil\ARM\RV31\INC -I d:\Keil\ARM\CMSIS\Include -I d:\Keil\ARM\Inc\ST\STM32F4xx --list "..\..\list\scanner\startup_stm32f4xx.lst" --xref -o "..\..\out\startup_stm32f4xx.o" --depend "..\..\out\startup_stm32f4xx.d")
+F (.\startup\system_stm32f4xx.c)(0x5087AF0C)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I d:\Keil\ARM\RV31\INC -I d:\Keil\ARM\CMSIS\Include -I d:\Keil\ARM\Inc\ST\STM32F4xx -o "..\..\out\system_stm32f4xx.o" --omf_browse "..\..\out\system_stm32f4xx.crf" --depend "..\..\out\system_stm32f4xx.d")
+I (d:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h)(0x515403C8)
+I (d:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x515E7D14)
+I (d:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x516ED646)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x515E7D14)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x515E7D14)
+I (d:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x515E7D14)
+I (d:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x50FF9F8A)

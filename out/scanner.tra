@@ -1,0 +1,22 @@
+*** Creating Trace Output File '..\..\out\scanner.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\..\out\blinky.o"'
+### List of Objects: adding '"..\..\out\led.o"'
+### List of Objects: adding '"..\..\out\startup_stm32f4xx.o"'
+### List of Objects: adding '"..\..\out\system_stm32f4xx.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp "..\..\out\blinky.o" "..\..\out\led.o" "..\..\out\startup_stm32f4xx.o" "..\..\out\system_stm32f4xx.o" 
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list "..\..\list\scanner\scanner.map" -o ..\..\out\scanner.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\..\out\scanner.axf'
+### ADS-LD Command File: '..\..\out\scanner.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\..\out\scanner.lnp', Handle=0x00001DE8
+### Writing '.lnp' file
+### ADS-LD Command file '..\..\out\scanner.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
