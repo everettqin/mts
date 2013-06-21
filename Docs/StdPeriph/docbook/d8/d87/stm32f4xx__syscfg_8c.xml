@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d87/stm32f4xx__syscfg_8c">
+    <title>stm32f4xx_syscfg.c File Reference</title>
+    <programlisting>#include stm32f4xx_syscfg.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_y_s_c_f_g_1ga13f7abe3641989d4d063ad21962da8b0">SYSCFG_OFFSET</link> (SYSCFG_BASE - PERIPH_BASE)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_y_s_c_f_g_1ga505f7263c4ca98810cca19505752d61d">PMC_OFFSET</link> (SYSCFG_OFFSET + 0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_y_s_c_f_g_1gad4a9bbd669109039291f942d923ff8ae">MII_RMII_SEL_BitNumber</link> ((uint8_t)0x17)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_y_s_c_f_g_1ga06dbfd74f07783e68f03797038cd9457">PMC_MII_RMII_SEL_BB</link> (PERIPH_BB_BASE + (PMC_OFFSET * 32) + (MII_RMII_SEL_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_y_s_c_f_g_1ga8e5fbe846e7478d522df749672b90084">CMPCR_OFFSET</link> (SYSCFG_OFFSET + 0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_y_s_c_f_g_1ga0ca336e48ea4840c7d1cde05a0e07e82">CMP_PD_BitNumber</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_y_s_c_f_g_1gae4516ed27e02d84d9d20c7d711b87437">CMPCR_CMP_PD_BB</link> (PERIPH_BB_BASE + (CMPCR_OFFSET * 32) + (CMP_PD_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1gaf2f9faa2df9a59a68ae17fae23bc478e">SYSCFG_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1ga09a5712f6c66ba5f0e0eeba30bc1e20d">SYSCFG_MemoryRemapConfig</link> (
+uint8_t SYSCFG_MemoryRemap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1gafedab1f64cef720aeafeafd409ba6ae7">SYSCFG_EXTILineConfig</link> (
+uint8_t EXTI_PortSourceGPIOx, uint8_t EXTI_PinSourcex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1gabec494266ebbbde0279ad1d16c3065d0">SYSCFG_ETH_MediaInterfaceConfig</link> (
+uint32_t SYSCFG_ETH_MediaInterface)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1ga85e423de2ee76b615120bde37881bb93">SYSCFG_CompensationCellCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1ga2541640bdf35f63e4bb55f7dc8be9d16">SYSCFG_GetCompensationCellStatus</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the SYSCFG peripheral. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 <programlisting><literallayout>*  
+*          ===================================================================
+*                                 How to use this driver
+*          ===================================================================
+*                  
+*          This driver provides functions for:
+*          
+*          1. Remapping the memory accessible in the code area using SYSCFG_MemoryRemapConfig()
+*              
+*          2. Manage the EXTI lines connection to the GPIOs using SYSCFG_EXTILineConfig()
+*            
+*          3. Select the ETHERNET media interface (RMII/RII) using SYSCFG_ETH_MediaInterfaceConfig()
+*
+*  @note  SYSCFG APB clock must be enabled to get write access to SYSCFG registers,
+*         using RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
+*                 
+*  </literallayout></programlisting></para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c</para>
+    </simplesect>
+</section>

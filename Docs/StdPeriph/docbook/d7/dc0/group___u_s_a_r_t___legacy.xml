@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dc0/group___u_s_a_r_t___legacy">
+    <title>USART_Legacy</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dc0/group___u_s_a_r_t___legacy_1ga8b7d40e02a81be787fbb325bbe6dfbeb">USART_IT_ORE</link> USART_IT_ORE_ER</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,1207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dc4/group___d_a_c">
+    <title>DAC</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DAC driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d17/struct_d_a_c___init_type_def">DAC_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="df/d88/group___d_a_c___exported___constants">DAC_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="d0/d12/group___d_a_c___private___functions">DAC_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga1fae225204e1e049d6795319e99ba8bc">DAC_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga7c59850468ed4bf0659663fe495441da">DAC_Init</link> (
+uint32_t DAC_Channel, <link linkend="da/d17/struct_d_a_c___init_type_def">DAC_InitTypeDef</link> * DAC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1gadfc270974d54cb5fa5f92556015c4046">DAC_StructInit</link> (
+<link linkend="da/d17/struct_d_a_c___init_type_def">DAC_InitTypeDef</link> * DAC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga323e61530d7fa9396c3bce9edb61f733">DAC_Cmd</link> (
+uint32_t DAC_Channel, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga46f9f7f6b9520a86e300fe966afe5fb3">DAC_SoftwareTriggerCmd</link> (
+uint32_t DAC_Channel, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1gab4d3b364a6b184dcd65f3b294ebf56dc">DAC_DualSoftwareTriggerCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1gabd51ae6880821d4dcd923969ec19a19e">DAC_WaveGenerationCmd</link> (
+uint32_t DAC_Channel, uint32_t DAC_Wave, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1gad06b4230d2b17d1d13f41dce4c782461">DAC_SetChannel1Data</link> (
+uint32_t DAC_Align, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga44e12006ec186791378d132da8541552">DAC_SetChannel2Data</link> (
+uint32_t DAC_Align, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga4ca2cfdf56ab35a23f2517f23d7fbb24">DAC_SetDualChannelData</link> (
+uint32_t DAC_Align, uint16_t Data2, uint16_t Data1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="de/dc4/group___d_a_c_1ga51274838de1e5dd012a82d7f44d7a50b">DAC_GetDataOutputValue</link> (
+uint32_t DAC_Channel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga194cba38f60ace11658824f0250121f4">DAC_DMACmd</link> (
+uint32_t DAC_Channel, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga12d7495b30eae40c2570118cabbda1c3">DAC_ITConfig</link> (
+uint32_t DAC_Channel, uint32_t DAC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="de/dc4/group___d_a_c_1ga9ee60b78f0ccd23bfbe54bce2a2f909b">DAC_GetFlagStatus</link> (
+uint32_t DAC_Channel, uint32_t DAC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga49543c52786d70d6b6311f3fee856d37">DAC_ClearFlag</link> (
+uint32_t DAC_Channel, uint32_t DAC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="de/dc4/group___d_a_c_1ga541aac3b50db3a8a806ec5ef30679aca">DAC_GetITStatus</link> (
+uint32_t DAC_Channel, uint32_t DAC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc4/group___d_a_c_1ga12d90e69a2642997136b23224d180641">DAC_ClearITPendingBit</link> (
+uint32_t DAC_Channel, uint32_t DAC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga8a5812a1d5ced986bb997a4bb7ae697d">CR_CLEAR_MASK</link> ((uint32_t)0x00000FFE)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga6401668f65168b2b689b49155f380bdd">DUAL_SWTRIG_SET</link> ((uint32_t)0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1gacd3ce00f8b25892532af267f26932ed7">DUAL_SWTRIG_RESET</link> ((uint32_t)0xFFFFFFFC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1gaf1305e3b7cfb0f898678baeab6e91cbf">DHR12R1_OFFSET</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga157b0fbccea090637eea09172fdd6a39">DHR12R2_OFFSET</link> ((uint32_t)0x00000014)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga2893b0491ec29a95fd061e5e0fa029e3">DHR12RD_OFFSET</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga051bab7263211bd232d13665339c1745">DOR_OFFSET</link> ((uint32_t)0x0000002C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="de/dc4/group___d_a_c_1ga1fae225204e1e049d6795319e99ba8bc">
+                <title>void DAC_DeInit (void)</title> <emphasis>Deinitializes the DAC peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga7c59850468ed4bf0659663fe495441da">
+                <title>void DAC_Init (uint32_t DAC_Channel, DAC_InitTypeDef *DAC_InitStruct)</title> <emphasis>Initializes the DAC peripheral according to the specified parameters
+        in the DAC_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>the selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DAC_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="da/d17/struct_d_a_c___init_type_def">DAC_InitTypeDef</link> structure that contains the configuration information for the specified DAC channel. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1gadfc270974d54cb5fa5f92556015c4046">
+                <title>void DAC_StructInit (DAC_InitTypeDef *DAC_InitStruct)</title> <emphasis>Fills each DAC_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="da/d17/struct_d_a_c___init_type_def">DAC_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga323e61530d7fa9396c3bce9edb61f733">
+                <title>void DAC_Cmd (uint32_t DAC_Channel, FunctionalState NewState)</title> <emphasis>Enables or disables the specified DAC channel.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DAC channel. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>When the DAC channel is enabled the trigger source can no more be modified. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga46f9f7f6b9520a86e300fe966afe5fb3">
+                <title>void DAC_SoftwareTriggerCmd (uint32_t DAC_Channel, FunctionalState NewState)</title> <emphasis>Enables or disables the selected DAC channel software trigger.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected DAC channel software trigger. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1gab4d3b364a6b184dcd65f3b294ebf56dc">
+                <title>void DAC_DualSoftwareTriggerCmd (FunctionalState NewState)</title> <emphasis>Enables or disables simultaneously the two DAC channels software triggers.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DAC channels software triggers. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1gabd51ae6880821d4dcd923969ec19a19e">
+                <title>void DAC_WaveGenerationCmd (uint32_t DAC_Channel, uint32_t DAC_Wave, FunctionalState NewState)</title> <emphasis>Enables or disables the selected DAC channel wave generation.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DAC_Wave, :</entry>
+                                <entry>
+<para>specifies the wave type to enable or disable. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Wave_Noise: noise wave generation </para>
+</listitem>
+<listitem>
+<para>DAC_Wave_Triangle: triangle wave generation </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected DAC channel wave generation. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1gad06b4230d2b17d1d13f41dce4c782461">
+                <title>void DAC_SetChannel1Data (uint32_t DAC_Align, uint16_t Data)</title> <emphasis>Set the specified data holding register value for DAC channel1.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Align, :</entry>
+                                <entry>
+<para>Specifies the data alignment for DAC channel1. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Align_8b_R: 8bit right data alignment selected </para>
+</listitem>
+<listitem>
+<para>DAC_Align_12b_L: 12bit left data alignment selected </para>
+</listitem>
+<listitem>
+<para>DAC_Align_12b_R: 12bit right data alignment selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>Data to be loaded in the selected data holding register. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga44e12006ec186791378d132da8541552">
+                <title>void DAC_SetChannel2Data (uint32_t DAC_Align, uint16_t Data)</title> <emphasis>Set the specified data holding register value for DAC channel2.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Align, :</entry>
+                                <entry>
+<para>Specifies the data alignment for DAC channel2. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Align_8b_R: 8bit right data alignment selected </para>
+</listitem>
+<listitem>
+<para>DAC_Align_12b_L: 12bit left data alignment selected </para>
+</listitem>
+<listitem>
+<para>DAC_Align_12b_R: 12bit right data alignment selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>Data to be loaded in the selected data holding register. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga4ca2cfdf56ab35a23f2517f23d7fbb24">
+                <title>void DAC_SetDualChannelData (uint32_t DAC_Align, uint16_t Data2, uint16_t Data1)</title> <emphasis>Set the specified data holding register value for dual channel DAC.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Align, :</entry>
+                                <entry>
+<para>Specifies the data alignment for dual channel DAC. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Align_8b_R: 8bit right data alignment selected </para>
+</listitem>
+<listitem>
+<para>DAC_Align_12b_L: 12bit left data alignment selected </para>
+</listitem>
+<listitem>
+<para>DAC_Align_12b_R: 12bit right data alignment selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data2, :</entry>
+                                <entry>
+<para>Data for DAC Channel2 to be loaded in the selected data holding register. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data1, :</entry>
+                                <entry>
+<para>Data for DAC Channel1 to be loaded in the selected data holding register. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>In dual mode, a unique register access is required to write in both DAC channels at the same time. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga51274838de1e5dd012a82d7f44d7a50b">
+                <title>uint16_t DAC_GetDataOutputValue (uint32_t DAC_Channel)</title> <emphasis>Returns the last data output value of the selected DAC channel.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>selected DAC channel data output value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga194cba38f60ace11658824f0250121f4">
+                <title>void DAC_DMACmd (uint32_t DAC_Channel, FunctionalState NewState)</title> <emphasis>Enables or disables the specified DAC channel DMA request.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>When enabled DMA1 is generated when an external trigger (EXTI Line9, TIM2, TIM4, TIM5, TIM6, TIM7 or TIM8 but not a software trigger) occurs. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected DAC channel DMA request. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The DAC channel1 is mapped on DMA1 Stream 5 channel7 which must be already configured. </para>
+<simplesect/>
+<para>The DAC channel2 is mapped on DMA1 Stream 6 channel7 which must be already configured. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga12d7495b30eae40c2570118cabbda1c3">
+                <title>void DAC_ITConfig (uint32_t DAC_Channel, uint32_t DAC_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified DAC interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DAC_IT, :</entry>
+                                <entry>
+<para>specifies the DAC interrupt sources to be enabled or disabled. This parameter can be the following values: <itemizedlist>
+<listitem>
+<para>DAC_IT_DMAUDR: DMA underrun interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The DMA underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified DAC interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga9ee60b78f0ccd23bfbe54bce2a2f909b">
+                <title>FlagStatus DAC_GetFlagStatus (uint32_t DAC_Channel, uint32_t DAC_FLAG)</title> <emphasis>Checks whether the specified DAC flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DAC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be only of the following value: <itemizedlist>
+<listitem>
+<para>DAC_FLAG_DMAUDR: DMA underrun flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The DMA underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of DAC_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga49543c52786d70d6b6311f3fee856d37">
+                <title>void DAC_ClearFlag (uint32_t DAC_Channel, uint32_t DAC_FLAG)</title> <emphasis>Clears the DAC channel&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DAC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be of the following value: <itemizedlist>
+<listitem>
+<para>DAC_FLAG_DMAUDR: DMA underrun flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The DMA underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga541aac3b50db3a8a806ec5ef30679aca">
+                <title>ITStatus DAC_GetITStatus (uint32_t DAC_Channel, uint32_t DAC_IT)</title> <emphasis>Checks whether the specified DAC interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DAC_IT, :</entry>
+                                <entry>
+<para>specifies the DAC interrupt source to check. This parameter can be the following values: <itemizedlist>
+<listitem>
+<para>DAC_IT_DMAUDR: DMA underrun interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The DMA underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of DAC_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc4/group___d_a_c_1ga12d90e69a2642997136b23224d180641">
+                <title>void DAC_ClearITPendingBit (uint32_t DAC_Channel, uint32_t DAC_IT)</title> <emphasis>Clears the DAC channel&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DAC_IT, :</entry>
+                                <entry>
+<para>specifies the DAC interrupt pending bit to clear. This parameter can be the following values: <itemizedlist>
+<listitem>
+<para>DAC_IT_DMAUDR: DMA underrun interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The DMA underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="df/d88/group___d_a_c___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d12/group___d_a_c___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

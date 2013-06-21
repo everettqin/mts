@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode">
+    <title>HASH_HMAC_Long_key_only_for_HMAC_mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode_1ga75d858a8b5b891edc321486eebe74692">HASH_HMACKeyType_ShortKey</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode_1ga99296878d9ed1d3ede590fdeef8f8394">HASH_HMACKeyType_LongKey</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode_1ga49eb626daedfececd0d171877a0e9472">IS_HASH_HMAC_KEYTYPE</link> (((KEYTYPE) == <link linkend="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode_1ga75d858a8b5b891edc321486eebe74692">HASH_HMACKeyType_ShortKey</link>) || \
+                                  ((KEYTYPE) == <link linkend="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode_1ga99296878d9ed1d3ede590fdeef8f8394">HASH_HMACKeyType_LongKey</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode_1ga75d858a8b5b891edc321486eebe74692">
+                <title>#define HASH_HMACKeyType_ShortKey</title>                
+<para>HMAC Key is &lt;= 64 bytes </para>
+
+                <para>Definition at line 129 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode_1ga99296878d9ed1d3ede590fdeef8f8394">
+                <title>#define HASH_HMACKeyType_LongKey</title>                
+<para>HMAC Key is &gt; 64 bytes </para>
+
+                <para>Definition at line 130 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

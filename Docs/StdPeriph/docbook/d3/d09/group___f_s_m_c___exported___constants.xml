@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d09/group___f_s_m_c___exported___constants">
+    <title>FSMC_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="db/db8/group___f_s_m_c___n_o_r_s_r_a_m___bank">FSMC_NORSRAM_Bank</link></para></listitem>
+            <listitem><para><link linkend="d0/dcf/group___f_s_m_c___n_a_n_d___bank">FSMC_NAND_Bank</link></para></listitem>
+            <listitem><para><link linkend="df/da7/group___f_s_m_c___p_c_c_a_r_d___bank">FSMC_PCCARD_Bank</link></para></listitem>
+            <listitem><para><link linkend="d1/d3a/group___f_s_m_c___n_o_r___s_r_a_m___controller">FSMC_NOR_SRAM_Controller</link></para></listitem>
+            <listitem><para><link linkend="d2/d5d/group___f_s_m_c___n_a_n_d___p_c_c_a_r_d___controller">FSMC_NAND_PCCARD_Controller</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d09/group___f_s_m_c___exported___constants_1ga3e3bed3dd83d38e63f11ac4cbcb87304">IS_FSMC_NORSRAM_BANK</link> (((BANK) == FSMC_Bank1_NORSRAM1) || \
+                                    ((BANK) == FSMC_Bank1_NORSRAM2) || \
+                                    ((BANK) == FSMC_Bank1_NORSRAM3) || \
+                                    ((BANK) == FSMC_Bank1_NORSRAM4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d09/group___f_s_m_c___exported___constants_1ga725bada099197f15f49dc0c5be00e19b">IS_FSMC_NAND_BANK</link> (((BANK) == FSMC_Bank2_NAND) || \
+                                 ((BANK) == FSMC_Bank3_NAND))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d09/group___f_s_m_c___exported___constants_1ga884e28a365a738ad8a3199ee279a1f77">IS_FSMC_GETFLAG_BANK</link> (((BANK) == FSMC_Bank2_NAND) || \
+                                    ((BANK) == FSMC_Bank3_NAND) || \
+                                    ((BANK) == FSMC_Bank4_PCCARD))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d09/group___f_s_m_c___exported___constants_1gaca216ea0c184b78f23df15296a10bac0">IS_FSMC_IT_BANK</link> (((BANK) == FSMC_Bank2_NAND) || \
+                               ((BANK) == FSMC_Bank3_NAND) || \
+                               ((BANK) == FSMC_Bank4_PCCARD))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="db/db8/group___f_s_m_c___n_o_r_s_r_a_m___bank.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/dcf/group___f_s_m_c___n_a_n_d___bank.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/da7/group___f_s_m_c___p_c_c_a_r_d___bank.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d3a/group___f_s_m_c___n_o_r___s_r_a_m___controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d5d/group___f_s_m_c___n_a_n_d___p_c_c_a_r_d___controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

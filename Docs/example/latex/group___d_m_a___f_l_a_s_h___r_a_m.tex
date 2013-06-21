@@ -1,0 +1,363 @@
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m}{\section{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}
+\label{group___d_m_a___f_l_a_s_h___r_a_m}\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Test\-Status} \{ {\bfseries F\-A\-I\-L\-E\-D} = 0, 
+{\bfseries P\-A\-S\-S\-E\-D} = !\-F\-A\-I\-L\-E\-D, 
+{\bfseries F\-A\-I\-L\-E\-D} = 0, 
+{\bfseries P\-A\-S\-S\-E\-D} = !\-F\-A\-I\-L\-E\-D
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga2f35631611ce4b2f324c418ba6ca84a9}{D\-M\-A\-\_\-\-Config} (void)
+\begin{DoxyCompactList}\small\item\em Configure the D\-M\-A controller according to the Stream parameters defined in main.\-h file. \end{DoxyCompactList}\item 
+Test\-Status \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga34a2d42696369bbd1373e884d48523c5}{Buffercmp} (const uint32\-\_\-t $\ast$p\-Buffer, uint32\-\_\-t $\ast$p\-Buffer1, uint16\-\_\-t Buffer\-Length)
+\begin{DoxyCompactList}\small\item\em Compares two buffers. \end{DoxyCompactList}\item 
+int \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em Main program. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}{N\-M\-I\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles N\-M\-I exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga2bffc10d5bd4106753b7c30e86903bea}{Hard\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Hard Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga3150f74512510287a942624aa9b44cc5}{Mem\-Manage\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Memory Manage exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga850cefb17a977292ae5eb4cafa9976c3}{Bus\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Bus Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga1d98923de2ed6b7309b66f9ba2971647}{Usage\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Usage Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}{S\-V\-C\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles S\-V\-Call exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_gadbdfb05858cc36fc520974df37ec3cb0}{Debug\-Mon\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Debug Monitor exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga6303e1f258cbdc1f970ce579cc015623}{Pend\-S\-V\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Pend\-S\-V\-C exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_gab5e09814056d617c521549e542639b7e}{Sys\-Tick\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Sys\-Tick Handler. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_m_a___f_l_a_s_h___r_a_m_ga4b76f77c8e92e439b2e061fbe0d897fc}{D\-A\-M\-\_\-\-S\-T\-R\-E\-A\-M\-\_\-\-I\-R\-Q\-H\-A\-N\-D\-L\-E\-R} (void)
+\begin{DoxyCompactList}\small\item\em This function handles P\-P\-P interrupt request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_gae8f5fbd416ad8ae349fc041515f024a2}{\-\_\-\-\_\-\-I\-O Test\-Status {\bfseries Transfer\-Status} = F\-A\-I\-L\-E\-D}\label{group___d_m_a___f_l_a_s_h___r_a_m_gae8f5fbd416ad8ae349fc041515f024a2}
+
+\item 
+const uint32\-\_\-t {\bfseries S\-R\-C\-\_\-\-Const\-\_\-\-Buffer} \mbox{[}B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E\mbox{]}
+\item 
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga56178e336d729f7c49b69228b97e899d}{uint32\-\_\-t {\bfseries D\-S\-T\-\_\-\-Buffer} \mbox{[}B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E\mbox{]}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga56178e336d729f7c49b69228b97e899d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga34a2d42696369bbd1373e884d48523c5}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!Buffercmp@{Buffercmp}}
+\index{Buffercmp@{Buffercmp}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{Buffercmp}]{\setlength{\rightskip}{0pt plus 5cm}Test\-Status Buffercmp (
+\begin{DoxyParamCaption}
+\item[{const uint32\-\_\-t $\ast$}]{p\-Buffer, }
+\item[{uint32\-\_\-t $\ast$}]{p\-Buffer1, }
+\item[{uint16\-\_\-t}]{Buffer\-Length}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga34a2d42696369bbd1373e884d48523c5}
+
+
+Compares two buffers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Buffer,p\-Buffer1,\-:} & buffers to be compared. \\
+\hline
+{\em Buffer\-Length,\-:} & buffer's length \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em P\-A\-S\-S\-E\-D,\-:} & p\-Buffer identical to p\-Buffer1 F\-A\-I\-L\-E\-D\-: p\-Buffer differs from p\-Buffer1 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga850cefb17a977292ae5eb4cafa9976c3}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!Bus\-Fault\-\_\-\-Handler@{Bus\-Fault\-\_\-\-Handler}}
+\index{Bus\-Fault\-\_\-\-Handler@{Bus\-Fault\-\_\-\-Handler}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{Bus\-Fault\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Bus\-Fault\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga850cefb17a977292ae5eb4cafa9976c3}
+
+
+This function handles Bus Fault exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga4b76f77c8e92e439b2e061fbe0d897fc}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!D\-A\-M\-\_\-\-S\-T\-R\-E\-A\-M\-\_\-\-I\-R\-Q\-H\-A\-N\-D\-L\-E\-R@{D\-A\-M\-\_\-\-S\-T\-R\-E\-A\-M\-\_\-\-I\-R\-Q\-H\-A\-N\-D\-L\-E\-R}}
+\index{D\-A\-M\-\_\-\-S\-T\-R\-E\-A\-M\-\_\-\-I\-R\-Q\-H\-A\-N\-D\-L\-E\-R@{D\-A\-M\-\_\-\-S\-T\-R\-E\-A\-M\-\_\-\-I\-R\-Q\-H\-A\-N\-D\-L\-E\-R}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{D\-A\-M\-\_\-\-S\-T\-R\-E\-A\-M\-\_\-\-I\-R\-Q\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-M\-\_\-\-S\-T\-R\-E\-A\-M\-\_\-\-I\-R\-Q\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga4b76f77c8e92e439b2e061fbe0d897fc}
+
+
+This function handles P\-P\-P interrupt request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & This function handles D\-M\-A Stream interrupt request. \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_gadbdfb05858cc36fc520974df37ec3cb0}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!Debug\-Mon\-\_\-\-Handler@{Debug\-Mon\-\_\-\-Handler}}
+\index{Debug\-Mon\-\_\-\-Handler@{Debug\-Mon\-\_\-\-Handler}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{Debug\-Mon\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Debug\-Mon\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_gadbdfb05858cc36fc520974df37ec3cb0}
+
+
+This function handles Debug Monitor exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga2f35631611ce4b2f324c418ba6ca84a9}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!D\-M\-A\-\_\-\-Config@{D\-M\-A\-\_\-\-Config}}
+\index{D\-M\-A\-\_\-\-Config@{D\-M\-A\-\_\-\-Config}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{D\-M\-A\-\_\-\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\-M\-A\-\_\-\-Config (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga2f35631611ce4b2f324c418ba6ca84a9}
+
+
+Configure the D\-M\-A controller according to the Stream parameters defined in main.\-h file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga2bffc10d5bd4106753b7c30e86903bea}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!Hard\-Fault\-\_\-\-Handler@{Hard\-Fault\-\_\-\-Handler}}
+\index{Hard\-Fault\-\_\-\-Handler@{Hard\-Fault\-\_\-\-Handler}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{Hard\-Fault\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Hard\-Fault\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga2bffc10d5bd4106753b7c30e86903bea}
+
+
+This function handles Hard Fault exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga840291bc02cba5474a4cb46a9b9566fe}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!main@{main}}
+\index{main@{main}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga840291bc02cba5474a4cb46a9b9566fe}
+
+
+Main program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+$<$ At this stage the microcontroller clock setting is already configured, this is done through \hyperlink{group___s_t_m32_f4xx___system___private___functions_ga93f514700ccf00d08dbdcff7f1224eb2}{System\-Init()} function which is called from startup file (startup\-\_\-stm32f4xx.\-s) before to branch to application main. To reconfigure the default setting of \hyperlink{group___s_t_m32_f4xx___system___private___functions_ga93f514700ccf00d08dbdcff7f1224eb2}{System\-Init()} function, refer to system\-\_\-stm32f4xx.\-c file\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga3150f74512510287a942624aa9b44cc5}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!Mem\-Manage\-\_\-\-Handler@{Mem\-Manage\-\_\-\-Handler}}
+\index{Mem\-Manage\-\_\-\-Handler@{Mem\-Manage\-\_\-\-Handler}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{Mem\-Manage\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Mem\-Manage\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga3150f74512510287a942624aa9b44cc5}
+
+
+This function handles Memory Manage exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!N\-M\-I\-\_\-\-Handler@{N\-M\-I\-\_\-\-Handler}}
+\index{N\-M\-I\-\_\-\-Handler@{N\-M\-I\-\_\-\-Handler}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{N\-M\-I\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void N\-M\-I\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}
+
+
+This function handles N\-M\-I exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga6303e1f258cbdc1f970ce579cc015623}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!Pend\-S\-V\-\_\-\-Handler@{Pend\-S\-V\-\_\-\-Handler}}
+\index{Pend\-S\-V\-\_\-\-Handler@{Pend\-S\-V\-\_\-\-Handler}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{Pend\-S\-V\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Pend\-S\-V\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga6303e1f258cbdc1f970ce579cc015623}
+
+
+This function handles Pend\-S\-V\-C exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!S\-V\-C\-\_\-\-Handler@{S\-V\-C\-\_\-\-Handler}}
+\index{S\-V\-C\-\_\-\-Handler@{S\-V\-C\-\_\-\-Handler}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{S\-V\-C\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void S\-V\-C\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}
+
+
+This function handles S\-V\-Call exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_gab5e09814056d617c521549e542639b7e}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!Sys\-Tick\-\_\-\-Handler@{Sys\-Tick\-\_\-\-Handler}}
+\index{Sys\-Tick\-\_\-\-Handler@{Sys\-Tick\-\_\-\-Handler}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{Sys\-Tick\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Sys\-Tick\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_gab5e09814056d617c521549e542639b7e}
+
+
+This function handles Sys\-Tick Handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_ga1d98923de2ed6b7309b66f9ba2971647}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!Usage\-Fault\-\_\-\-Handler@{Usage\-Fault\-\_\-\-Handler}}
+\index{Usage\-Fault\-\_\-\-Handler@{Usage\-Fault\-\_\-\-Handler}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{Usage\-Fault\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Usage\-Fault\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_m_a___f_l_a_s_h___r_a_m_ga1d98923de2ed6b7309b66f9ba2971647}
+
+
+This function handles Usage Fault exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{Variable Documentation}
+\hypertarget{group___d_m_a___f_l_a_s_h___r_a_m_gaa395c8ade60ef51d8127a2393ea5c56c}{\index{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}!S\-R\-C\-\_\-\-Const\-\_\-\-Buffer@{S\-R\-C\-\_\-\-Const\-\_\-\-Buffer}}
+\index{S\-R\-C\-\_\-\-Const\-\_\-\-Buffer@{S\-R\-C\-\_\-\-Const\-\_\-\-Buffer}!DMA_FLASH_RAM@{D\-M\-A\-\_\-\-F\-L\-A\-S\-H\-\_\-\-R\-A\-M}}
+\subsubsection[{S\-R\-C\-\_\-\-Const\-\_\-\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\-\_\-t S\-R\-C\-\_\-\-Const\-\_\-\-Buffer\mbox{[}B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E\mbox{]}}}\label{group___d_m_a___f_l_a_s_h___r_a_m_gaa395c8ade60ef51d8127a2393ea5c56c}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \{
+                                    0x01020304,0x05060708,0x090A0B0C,0x0D0E0F10,
+                                    0x11121314,0x15161718,0x191A1B1C,0x1D1E1F20,
+                                    0x21222324,0x25262728,0x292A2B2C,0x2D2E2F30,
+                                    0x31323334,0x35363738,0x393A3B3C,0x3D3E3F40,
+                                    0x41424344,0x45464748,0x494A4B4C,0x4D4E4F50,
+                                    0x51525354,0x55565758,0x595A5B5C,0x5D5E5F60,
+                                    0x61626364,0x65666768,0x696A6B6C,0x6D6E6F70,
+                                    0x71727374,0x75767778,0x797A7B7C,0x7D7E7F80\}
+\end{DoxyCode}

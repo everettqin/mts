@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d74/group___t_i_m___counter___mode">
+    <title>TIM_Counter_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d74/group___t_i_m___counter___mode_1gaf4cd3ce74af3122507b77c8f6e79c832">TIM_CounterMode_Up</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d74/group___t_i_m___counter___mode_1gadd7c4200d185bdcd9e64ae80e6b200b0">TIM_CounterMode_Down</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d74/group___t_i_m___counter___mode_1gac07392e9637f8a0d115d4ba9a002ae93">TIM_CounterMode_CenterAligned1</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d74/group___t_i_m___counter___mode_1ga3793122e4c123a99e46fc2f04acea0d4">TIM_CounterMode_CenterAligned2</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d74/group___t_i_m___counter___mode_1ga65d9bc01ffa287cd7cf200d08c20a1ce">TIM_CounterMode_CenterAligned3</link> ((uint16_t)0x0060)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d74/group___t_i_m___counter___mode_1ga9543fec190793e800d5d1b1b853636f5">IS_TIM_COUNTER_MODE</link> (((MODE) == TIM_CounterMode_Up) ||  \
+                                   ((MODE) == TIM_CounterMode_Down) || \
+                                   ((MODE) == TIM_CounterMode_CenterAligned1) || \
+                                   ((MODE) == TIM_CounterMode_CenterAligned2) || \
+                                   ((MODE) == TIM_CounterMode_CenterAligned3))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

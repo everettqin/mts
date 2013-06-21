@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dad/group___c_a_n__flags">
+    <title>CAN_flags</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga6df0579049eb471720ea103c5446298b">CAN_FLAG_RQCP0</link> ((uint32_t)0x38000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1gaba705586ebc3d961507436c03a2feaba">CAN_FLAG_RQCP1</link> ((uint32_t)0x38000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga9c20cd47e558135bd7ae71149583d487">CAN_FLAG_RQCP2</link> ((uint32_t)0x38010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga4b40574700edfe752433bb4e0d457c64">CAN_FLAG_FMP0</link> ((uint32_t)0x12000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga11648741ff43af1561ce7009698fb797">CAN_FLAG_FF0</link> ((uint32_t)0x32000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga2abd66b5e0032132673208decd2d01f2">CAN_FLAG_FOV0</link> ((uint32_t)0x32000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga5d4b7376954a059fbd74ed8d688f6657">CAN_FLAG_FMP1</link> ((uint32_t)0x14000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga0fa967743c5db04189bb2160aa48e371">CAN_FLAG_FF1</link> ((uint32_t)0x34000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1gac1af6e61b1285ddc4658c4bcc152719a">CAN_FLAG_FOV1</link> ((uint32_t)0x34000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga18c72dbe75cb80e8b5126c23c9120818">CAN_FLAG_WKU</link> ((uint32_t)0x31000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1gad087b5025a3d5ead2c32b06663821cf4">CAN_FLAG_SLAK</link> ((uint32_t)0x31000012)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1gae8906ba9c4031866c5096418ffa9bf71">CAN_FLAG_EWG</link> ((uint32_t)0x10F00001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga61954e54995f638ed78281ad2b0cf43a">CAN_FLAG_EPV</link> ((uint32_t)0x10F00002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga65f20612d0bf1692003882c0cdbadb1c">CAN_FLAG_BOF</link> ((uint32_t)0x10F00004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga73a774fa4d391aec0ea6552bf9372917">CAN_FLAG_LEC</link> ((uint32_t)0x30F00070)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1ga38d33d1762ed3a331d214cdb3249866e">IS_CAN_GET_FLAG</link> (((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga73a774fa4d391aec0ea6552bf9372917">CAN_FLAG_LEC</link>)  || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga65f20612d0bf1692003882c0cdbadb1c">CAN_FLAG_BOF</link>)   || \
+                               ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga61954e54995f638ed78281ad2b0cf43a">CAN_FLAG_EPV</link>)  || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1gae8906ba9c4031866c5096418ffa9bf71">CAN_FLAG_EWG</link>)   || \
+                               ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga18c72dbe75cb80e8b5126c23c9120818">CAN_FLAG_WKU</link>)  || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga2abd66b5e0032132673208decd2d01f2">CAN_FLAG_FOV0</link>)  || \
+                               ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga11648741ff43af1561ce7009698fb797">CAN_FLAG_FF0</link>)  || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga4b40574700edfe752433bb4e0d457c64">CAN_FLAG_FMP0</link>)  || \
+                               ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1gac1af6e61b1285ddc4658c4bcc152719a">CAN_FLAG_FOV1</link>) || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga0fa967743c5db04189bb2160aa48e371">CAN_FLAG_FF1</link>)   || \
+                               ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga5d4b7376954a059fbd74ed8d688f6657">CAN_FLAG_FMP1</link>) || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga9c20cd47e558135bd7ae71149583d487">CAN_FLAG_RQCP2</link>) || \
+                               ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1gaba705586ebc3d961507436c03a2feaba">CAN_FLAG_RQCP1</link>)|| ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga6df0579049eb471720ea103c5446298b">CAN_FLAG_RQCP0</link>) || \
+                               ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1gad087b5025a3d5ead2c32b06663821cf4">CAN_FLAG_SLAK</link> ))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dad/group___c_a_n__flags_1gac46f5fb953efb6163cf3b2e33a514d0c">IS_CAN_CLEAR_FLAG</link> (((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga73a774fa4d391aec0ea6552bf9372917">CAN_FLAG_LEC</link>) || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga9c20cd47e558135bd7ae71149583d487">CAN_FLAG_RQCP2</link>) || \
+                                ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1gaba705586ebc3d961507436c03a2feaba">CAN_FLAG_RQCP1</link>)  || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga6df0579049eb471720ea103c5446298b">CAN_FLAG_RQCP0</link>) || \
+                                ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga11648741ff43af1561ce7009698fb797">CAN_FLAG_FF0</link>)  || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga2abd66b5e0032132673208decd2d01f2">CAN_FLAG_FOV0</link>) ||\
+                                ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga0fa967743c5db04189bb2160aa48e371">CAN_FLAG_FF1</link>) || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1gac1af6e61b1285ddc4658c4bcc152719a">CAN_FLAG_FOV1</link>) || \
+                                ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1ga18c72dbe75cb80e8b5126c23c9120818">CAN_FLAG_WKU</link>) || ((FLAG) == <link linkend="d3/dad/group___c_a_n__flags_1gad087b5025a3d5ead2c32b06663821cf4">CAN_FLAG_SLAK</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga6df0579049eb471720ea103c5446298b">
+                <title>#define CAN_FLAG_RQCP0</title>                
+<para>Request MailBox0 Flag </para>
+
+                <para>Definition at line 488 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1gaba705586ebc3d961507436c03a2feaba">
+                <title>#define CAN_FLAG_RQCP1</title>                
+<para>Request MailBox1 Flag </para>
+
+                <para>Definition at line 489 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga9c20cd47e558135bd7ae71149583d487">
+                <title>#define CAN_FLAG_RQCP2</title>                
+<para>Request MailBox2 Flag </para>
+
+                <para>Definition at line 490 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga4b40574700edfe752433bb4e0d457c64">
+                <title>#define CAN_FLAG_FMP0</title>                
+<para>FIFO 0 Message Pending Flag </para>
+
+                <para>Definition at line 493 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga11648741ff43af1561ce7009698fb797">
+                <title>#define CAN_FLAG_FF0</title>                
+<para>FIFO 0 Full Flag </para>
+
+                <para>Definition at line 494 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga2abd66b5e0032132673208decd2d01f2">
+                <title>#define CAN_FLAG_FOV0</title>                
+<para>FIFO 0 Overrun Flag </para>
+
+                <para>Definition at line 495 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga5d4b7376954a059fbd74ed8d688f6657">
+                <title>#define CAN_FLAG_FMP1</title>                
+<para>FIFO 1 Message Pending Flag </para>
+
+                <para>Definition at line 496 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga0fa967743c5db04189bb2160aa48e371">
+                <title>#define CAN_FLAG_FF1</title>                
+<para>FIFO 1 Full Flag </para>
+
+                <para>Definition at line 497 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1gac1af6e61b1285ddc4658c4bcc152719a">
+                <title>#define CAN_FLAG_FOV1</title>                
+<para>FIFO 1 Overrun Flag </para>
+
+                <para>Definition at line 498 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga18c72dbe75cb80e8b5126c23c9120818">
+                <title>#define CAN_FLAG_WKU</title>                
+<para>Wake up Flag </para>
+
+                <para>Definition at line 501 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1gad087b5025a3d5ead2c32b06663821cf4">
+                <title>#define CAN_FLAG_SLAK</title>                
+<para>Sleep acknowledge Flag </para>
+
+                <para>Definition at line 502 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1gae8906ba9c4031866c5096418ffa9bf71">
+                <title>#define CAN_FLAG_EWG</title>                
+<para>Error Warning Flag </para>
+
+                <para>Definition at line 507 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga61954e54995f638ed78281ad2b0cf43a">
+                <title>#define CAN_FLAG_EPV</title>                
+<para>Error Passive Flag </para>
+
+                <para>Definition at line 508 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga65f20612d0bf1692003882c0cdbadb1c">
+                <title>#define CAN_FLAG_BOF</title>                
+<para>Bus-Off Flag </para>
+
+                <para>Definition at line 509 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dad/group___c_a_n__flags_1ga73a774fa4d391aec0ea6552bf9372917">
+                <title>#define CAN_FLAG_LEC</title>                
+<para>Last error code Flag </para>
+
+                <para>Definition at line 510 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

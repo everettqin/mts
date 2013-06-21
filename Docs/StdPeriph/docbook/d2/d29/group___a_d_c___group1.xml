@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d29/group___a_d_c___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      Initialization and Configuration functions
+ ===============================================================================  
+  This section provides functions allowing to:
+   - Initialize and configure the ADC Prescaler
+   - ADC Conversion Resolution (12bit..6bit)
+   - Scan Conversion Mode (multichannels or one channel) for regular group
+   - ADC Continuous Conversion Mode (Continuous or Single conversion) for 
+     regular group
+   - External trigger Edge and source of regular group, 
+   - Converted data alignment (left or right)
+   - The number of ADC conversions that will be done using the sequencer for 
+     regular channel group
+   - Multi ADC mode selection
+   - Direct memory access mode selection for multi ADC mode  
+   - Delay between 2 sampling phases (used in dual or triple interleaved modes)
+   - Enable or disable the ADC peripheral</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d29/group___a_d_c___group1_1ga1962afdd9eebe5c896bbba2e4f26fe09">ADC_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d29/group___a_d_c___group1_1gabbab6038cf8691404350625e477254f9">ADC_Init</link> (
+ADC_TypeDef * ADCx, <link linkend="d0/d25/struct_a_d_c___init_type_def">ADC_InitTypeDef</link> * ADC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d29/group___a_d_c___group1_1ga6c6e754d1d0a98d56e465efaf73272ec">ADC_StructInit</link> (
+<link linkend="d0/d25/struct_a_d_c___init_type_def">ADC_InitTypeDef</link> * ADC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d29/group___a_d_c___group1_1ga5803f6581a9cd7e90b6e637067102d94">ADC_CommonInit</link> (
+<link linkend="da/d84/struct_a_d_c___common_init_type_def">ADC_CommonInitTypeDef</link> * ADC_CommonInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d29/group___a_d_c___group1_1gad60a6414b4932c704f6f7a7c2963fa2a">ADC_CommonStructInit</link> (
+<link linkend="da/d84/struct_a_d_c___common_init_type_def">ADC_CommonInitTypeDef</link> * ADC_CommonInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d29/group___a_d_c___group1_1ga40882d399e3371755ed610c1134e634e">ADC_Cmd</link> (
+ADC_TypeDef * ADCx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d2/d29/group___a_d_c___group1_1ga1962afdd9eebe5c896bbba2e4f26fe09">
+                <title>void ADC_DeInit (void)</title> <emphasis>Deinitializes all ADCs peripherals registers to their default reset 
+        values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d29/group___a_d_c___group1_1gabbab6038cf8691404350625e477254f9">
+                <title>void ADC_Init (ADC_TypeDef *ADCx, ADC_InitTypeDef *ADC_InitStruct)</title> <emphasis>Initializes the ADCx peripheral according to the specified parameters 
+        in the ADC_InitStruct.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function is used to configure the global features of the ADC ( Resolution and Data Alignment), however, the rest of the configuration parameters are specific to the regular channels group (scan mode activation, continuous mode activation, External trigger source and edge, number of conversion in the regular channels group sequencer). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_InitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="d0/d25/struct_a_d_c___init_type_def">ADC_InitTypeDef</link> structure that contains the configuration information for the specified ADC peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d29/group___a_d_c___group1_1ga6c6e754d1d0a98d56e465efaf73272ec">
+                <title>void ADC_StructInit (ADC_InitTypeDef *ADC_InitStruct)</title> <emphasis>Fills each ADC_InitStruct member with its default value.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function is used to initialize the global features of the ADC ( Resolution and Data Alignment), however, the rest of the configuration parameters are specific to the regular channels group (scan mode activation, continuous mode activation, External trigger source and edge, number of conversion in the regular channels group sequencer). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADC_InitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="d0/d25/struct_a_d_c___init_type_def">ADC_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d29/group___a_d_c___group1_1ga5803f6581a9cd7e90b6e637067102d94">
+                <title>void ADC_CommonInit (ADC_CommonInitTypeDef *ADC_CommonInitStruct)</title> <emphasis>Initializes the ADCs peripherals according to the specified parameters 
+        in the ADC_CommonInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADC_CommonInitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="da/d84/struct_a_d_c___common_init_type_def">ADC_CommonInitTypeDef</link> structure that contains the configuration information for All ADCs peripherals. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d29/group___a_d_c___group1_1gad60a6414b4932c704f6f7a7c2963fa2a">
+                <title>void ADC_CommonStructInit (ADC_CommonInitTypeDef *ADC_CommonInitStruct)</title> <emphasis>Fills each ADC_CommonInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADC_CommonInitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="da/d84/struct_a_d_c___common_init_type_def">ADC_CommonInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d29/group___a_d_c___group1_1ga40882d399e3371755ed610c1134e634e">
+                <title>void ADC_Cmd (ADC_TypeDef *ADCx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified ADC peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the ADCx peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

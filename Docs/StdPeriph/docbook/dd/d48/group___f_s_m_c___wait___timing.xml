@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d48/group___f_s_m_c___wait___timing">
+    <title>FSMC_Wait_Timing</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d48/group___f_s_m_c___wait___timing_1ga62c6855a7cc65b20024085f09cdc65e8">FSMC_WaitSignalActive_BeforeWaitState</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d48/group___f_s_m_c___wait___timing_1gae905fc59e5d99091d132d7c221c8b6d4">FSMC_WaitSignalActive_DuringWaitState</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d48/group___f_s_m_c___wait___timing_1ga3edb40c756afa8bb78550b7e22ded093">IS_FSMC_WAIT_SIGNAL_ACTIVE</link> (((ACTIVE) == FSMC_WaitSignalActive_BeforeWaitState) || \
+                                            ((ACTIVE) == FSMC_WaitSignalActive_DuringWaitState))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

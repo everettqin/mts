@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d31/group___s_p_i___group4">
+    <title>DMA transfers management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DMA transfers management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                         DMA transfers management functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d31/group___s_p_i___group4_1gabed5b91a8576e6d578f364cc0e807e4a">SPI_I2S_DMACmd</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_I2S_DMAReq, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d6/d31/group___s_p_i___group4_1gabed5b91a8576e6d578f364cc0e807e4a">
+                <title>void SPI_I2S_DMACmd (SPI_TypeDef *SPIx, uint16_t SPI_I2S_DMAReq, FunctionalState NewState)</title> <emphasis>Enables or disables the SPIx/I2Sx DMA interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>To select the SPIx/I2Sx peripheral, where x can be: 1, 2 or 3 in SPI mode or 2 or 3 in I2S mode or I2Sxext for I2S full duplex mode. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_I2S_DMAReq, :</entry>
+                                <entry>
+<para>specifies the SPI DMA transfer request to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>SPI_I2S_DMAReq_Tx: Tx buffer DMA transfer request </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_DMAReq_Rx: Rx buffer DMA transfer request </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected SPI DMA transfer request. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

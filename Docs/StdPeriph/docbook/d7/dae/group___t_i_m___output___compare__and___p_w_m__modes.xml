@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes">
+    <title>TIM_Output_Compare_and_PWM_modes</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes_1ga54d5745fade3b2f8ea1325e7447ca760">TIM_OCMode_Timing</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes_1ga76bac57d41dc67218772f9c745c77102">TIM_OCMode_Active</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes_1gae0c350d7adaea14a37cabc2ab762695f">TIM_OCMode_Inactive</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes_1ga8b8adb6e81fe88bd14d44430f7f97021">TIM_OCMode_Toggle</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes_1gaefbe32dddc9630fbcc48b302b50d15fc">TIM_OCMode_PWM1</link> ((uint16_t)0x0060)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes_1ga722d8f33a795ef82ed7ae76dfbb7613d">TIM_OCMode_PWM2</link> ((uint16_t)0x0070)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes_1ga93d898976e236c135bfd02a0c213c8ec">IS_TIM_OC_MODE</link> (((MODE) == TIM_OCMode_Timing) || \
+                              ((MODE) == TIM_OCMode_Active) || \
+                              ((MODE) == TIM_OCMode_Inactive) || \
+                              ((MODE) == TIM_OCMode_Toggle)|| \
+                              ((MODE) == TIM_OCMode_PWM1) || \
+                              ((MODE) == TIM_OCMode_PWM2))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes_1ga45f530dd241d3b0787b5c2d62cd1b98f">IS_TIM_OCM</link> (((MODE) == TIM_OCMode_Timing) || \
+                          ((MODE) == TIM_OCMode_Active) || \
+                          ((MODE) == TIM_OCMode_Inactive) || \
+                          ((MODE) == TIM_OCMode_Toggle)|| \
+                          ((MODE) == TIM_OCMode_PWM1) || \
+                          ((MODE) == TIM_OCMode_PWM2) ||	\
+                          ((MODE) == TIM_ForcedAction_Active) || \
+                          ((MODE) == TIM_ForcedAction_InActive))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

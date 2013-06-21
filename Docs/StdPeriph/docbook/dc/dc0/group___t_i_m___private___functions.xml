@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dc0/group___t_i_m___private___functions">
+    <title>TIM_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d1/d65/group___t_i_m___group1">TimeBase management functions</link></para></listitem>
+            <listitem><para><link linkend="d6/dbc/group___t_i_m___group2">Output Compare management functions</link></para></listitem>
+            <listitem><para><link linkend="db/dc0/group___t_i_m___group3">Input Capture management functions</link></para></listitem>
+            <listitem><para><link linkend="d5/dc1/group___t_i_m___group4">Advanced-control timers (TIM1 and TIM8) specific features</link></para></listitem>
+            <listitem><para><link linkend="d5/d80/group___t_i_m___group5">Interrupts DMA and flags management functions</link></para></listitem>
+            <listitem><para><link linkend="df/d48/group___t_i_m___group6">Clocks management functions</link></para></listitem>
+            <listitem><para><link linkend="df/dba/group___t_i_m___group7">Synchronization management functions</link></para></listitem>
+            <listitem><para><link linkend="d9/d6f/group___t_i_m___group8">Specific interface management functions</link></para></listitem>
+            <listitem><para><link linkend="dd/dc3/group___t_i_m___group9">Specific remapping management function</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dc/dc0/group___t_i_m___private___functions_1gac8dbcb0d903cc0a3491155b5b4fbee65">TI1_Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dc/dc0/group___t_i_m___private___functions_1gafed528b30af910d7e55ebd1d22a9a58f">TI2_Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dc/dc0/group___t_i_m___private___functions_1gae0776241db23f0f31950476804dad588">TI3_Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dc/dc0/group___t_i_m___private___functions_1gaee26c0ada47174264fcd624cad3a91aa">TI4_Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dc/dc0/group___t_i_m___private___functions_1gac8dbcb0d903cc0a3491155b5b4fbee65">
+                <title>static void TI1_Config (TIM_TypeDef *TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</title> <emphasis>Configure the TI1 as Input.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13 or 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICPolarity</entry>
+                                <entry>
+<para>: The Input Polarity. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICPolarity_Rising </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_Falling </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_BothEdge </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICSelection, :</entry>
+                                <entry>
+<para>specifies the input to be used. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICSelection_DirectTI: TIM Input 1 is selected to be connected to IC1. </para>
+</listitem>
+<listitem>
+<para>TIM_ICSelection_IndirectTI: TIM Input 1 is selected to be connected to IC2. </para>
+</listitem>
+<listitem>
+<para>TIM_ICSelection_TRC: TIM Input 1 is selected to be connected to TRC. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICFilter, :</entry>
+                                <entry>
+<para>Specifies the Input Capture Filter. This parameter must be a value between 0x00 and 0x0F. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/dc0/group___t_i_m___private___functions_1gafed528b30af910d7e55ebd1d22a9a58f">
+                <title>static void TI2_Config (TIM_TypeDef *TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</title> <emphasis>Configure the TI2 as Input.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICPolarity</entry>
+                                <entry>
+<para>: The Input Polarity. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICPolarity_Rising </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_Falling </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_BothEdge </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICSelection, :</entry>
+                                <entry>
+<para>specifies the input to be used. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICSelection_DirectTI: TIM Input 2 is selected to be connected to IC2. </para>
+</listitem>
+<listitem>
+<para>TIM_ICSelection_IndirectTI: TIM Input 2 is selected to be connected to IC1. </para>
+</listitem>
+<listitem>
+<para>TIM_ICSelection_TRC: TIM Input 2 is selected to be connected to TRC. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICFilter, :</entry>
+                                <entry>
+<para>Specifies the Input Capture Filter. This parameter must be a value between 0x00 and 0x0F. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/dc0/group___t_i_m___private___functions_1gae0776241db23f0f31950476804dad588">
+                <title>static void TI3_Config (TIM_TypeDef *TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</title> <emphasis>Configure the TI3 as Input.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICPolarity</entry>
+                                <entry>
+<para>: The Input Polarity. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICPolarity_Rising </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_Falling </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_BothEdge </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICSelection, :</entry>
+                                <entry>
+<para>specifies the input to be used. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICSelection_DirectTI: TIM Input 3 is selected to be connected to IC3. </para>
+</listitem>
+<listitem>
+<para>TIM_ICSelection_IndirectTI: TIM Input 3 is selected to be connected to IC4. </para>
+</listitem>
+<listitem>
+<para>TIM_ICSelection_TRC: TIM Input 3 is selected to be connected to TRC. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICFilter, :</entry>
+                                <entry>
+<para>Specifies the Input Capture Filter. This parameter must be a value between 0x00 and 0x0F. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/dc0/group___t_i_m___private___functions_1gaee26c0ada47174264fcd624cad3a91aa">
+                <title>static void TI4_Config (TIM_TypeDef *TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</title> <emphasis>Configure the TI4 as Input.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICPolarity</entry>
+                                <entry>
+<para>: The Input Polarity. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICPolarity_Rising </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_Falling </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_BothEdge </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICSelection, :</entry>
+                                <entry>
+<para>specifies the input to be used. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICSelection_DirectTI: TIM Input 4 is selected to be connected to IC4. </para>
+</listitem>
+<listitem>
+<para>TIM_ICSelection_IndirectTI: TIM Input 4 is selected to be connected to IC3. </para>
+</listitem>
+<listitem>
+<para>TIM_ICSelection_TRC: TIM Input 4 is selected to be connected to TRC. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ICFilter, :</entry>
+                                <entry>
+<para>Specifies the Input Capture Filter. This parameter must be a value between 0x00 and 0x0F. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="d1/d65/group___t_i_m___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/dbc/group___t_i_m___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/dc0/group___t_i_m___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/dc1/group___t_i_m___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d80/group___t_i_m___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d48/group___t_i_m___group6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/dba/group___t_i_m___group7.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d6f/group___t_i_m___group8.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/dc3/group___t_i_m___group9.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

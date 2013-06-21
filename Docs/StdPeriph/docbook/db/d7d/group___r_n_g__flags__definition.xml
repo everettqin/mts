@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d7d/group___r_n_g__flags__definition">
+    <title>RNG_flags_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d7d/group___r_n_g__flags__definition_1ga25845be03c05930bde3c03975eb6c44f">RNG_FLAG_DRDY</link> ((uint8_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d7d/group___r_n_g__flags__definition_1ga4d4d7142b6c50bf0f421a1b668b3ff42">RNG_FLAG_CECS</link> ((uint8_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d7d/group___r_n_g__flags__definition_1ga0a3a6b3d5e584f04546cbcfe0b4fdac3">RNG_FLAG_SECS</link> ((uint8_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d7d/group___r_n_g__flags__definition_1ga476bc65e9df40bd28870c6722b0989cc">IS_RNG_GET_FLAG</link> (((RNG_FLAG) == <link linkend="db/d7d/group___r_n_g__flags__definition_1ga25845be03c05930bde3c03975eb6c44f">RNG_FLAG_DRDY</link>) || \
+                                   ((RNG_FLAG) == <link linkend="db/d7d/group___r_n_g__flags__definition_1ga4d4d7142b6c50bf0f421a1b668b3ff42">RNG_FLAG_CECS</link>) || \
+                                   ((RNG_FLAG) == <link linkend="db/d7d/group___r_n_g__flags__definition_1ga0a3a6b3d5e584f04546cbcfe0b4fdac3">RNG_FLAG_SECS</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d7d/group___r_n_g__flags__definition_1gabf70e291bc05206bfccf1ac8ab5bba18">IS_RNG_CLEAR_FLAG</link> (((RNG_FLAG) == <link linkend="db/d7d/group___r_n_g__flags__definition_1ga4d4d7142b6c50bf0f421a1b668b3ff42">RNG_FLAG_CECS</link>) || \
+                                    ((RNG_FLAG) == <link linkend="db/d7d/group___r_n_g__flags__definition_1ga0a3a6b3d5e584f04546cbcfe0b4fdac3">RNG_FLAG_SECS</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="db/d7d/group___r_n_g__flags__definition_1ga25845be03c05930bde3c03975eb6c44f">
+                <title>#define RNG_FLAG_DRDY</title>                
+<para>Data ready </para>
+
+                <para>Definition at line 52 of file stm32f4xx_rng.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rng.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d7d/group___r_n_g__flags__definition_1ga4d4d7142b6c50bf0f421a1b668b3ff42">
+                <title>#define RNG_FLAG_CECS</title>                
+<para>Clock error current status </para>
+
+                <para>Definition at line 53 of file stm32f4xx_rng.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rng.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d7d/group___r_n_g__flags__definition_1ga0a3a6b3d5e584f04546cbcfe0b4fdac3">
+                <title>#define RNG_FLAG_SECS</title>                
+<para>Seed error current status </para>
+
+                <para>Definition at line 54 of file stm32f4xx_rng.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rng.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

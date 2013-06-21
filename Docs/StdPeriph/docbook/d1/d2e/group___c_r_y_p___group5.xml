@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d2e/group___c_r_y_p___group5">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                   Interrupts and flags management functions
+ ===============================================================================  
+
+  This section provides functions allowing to configure the CRYP Interrupts and 
+  to get the status and Interrupts pending bits.
+
+  The CRYP provides 2 Interrupts sources and 7 Flags:
+
+  Flags :
+  ------- 
+                          
+     1. CRYP_FLAG_IFEM :  Set when Input FIFO is empty.
+                          This Flag is cleared only by hardware.
+      
+     2. CRYP_FLAG_IFNF :  Set when Input FIFO is not full.
+                          This Flag is cleared only by hardware.
+
+
+     3. CRYP_FLAG_INRIS  : Set when Input FIFO Raw interrupt is pending 
+                           it gives the raw interrupt state prior to masking 
+                           of the input FIFO service interrupt.
+                           This Flag is cleared only by hardware.
+     
+     4. CRYP_FLAG_OFNE   : Set when Output FIFO not empty.
+                           This Flag is cleared only by hardware.
+        
+     5. CRYP_FLAG_OFFU   : Set when Output FIFO is full.
+                           This Flag is cleared only by hardware.
+                           
+     6. CRYP_FLAG_OUTRIS : Set when Output FIFO Raw interrupt is pending 
+                           it gives the raw interrupt state prior to masking 
+                           of the output FIFO service interrupt.
+                           This Flag is cleared only by hardware.
+                               
+     7. CRYP_FLAG_BUSY   : Set when the CRYP core is currently processing a 
+                           block of data or a key preparation (for AES 
+                           decryption).
+                           This Flag is cleared only by hardware.
+                           To clear it, the CRYP core must be disabled and the 
+                           last processing has completed. 
+
+  Interrupts :
+  ------------
+
+   1. CRYP_IT_INI   : The input FIFO service interrupt is asserted when there 
+                      are less than 4 words in the input FIFO.
+                      This interrupt is associated to CRYP_FLAG_INRIS flag.
+
+                @note This interrupt is cleared by performing write operations 
+                      to the input FIFO until it holds 4 or more words. The 
+                      input FIFO service interrupt INMIS is enabled with the 
+                      CRYP enable bit. Consequently, when CRYP is disabled, the 
+                      INMIS signal is low even if the input FIFO is empty.
+
+
+
+   2. CRYP_IT_OUTI  : The output FIFO service interrupt is asserted when there 
+                      is one or more (32-bit word) data items in the output FIFO.
+                      This interrupt is associated to CRYP_FLAG_OUTRIS flag.
+
+                @note This interrupt is cleared by reading data from the output 
+                      FIFO until there is no valid (32-bit) word left (that is, 
+                      the interrupt follows the state of the OFNE (output FIFO 
+                      not empty) flag).
+
+
+  Managing the CRYP controller events :
+  ------------------------------------ 
+  The user should identify which mode will be used in his application to manage 
+  the CRYP controller events: Polling mode or Interrupt mode.
+
+  1.  In the Polling Mode it is advised to use the following functions:
+      - CRYP_GetFlagStatus() : to check if flags events occur. 
+
+  @note  The CRYPT flags do not need to be cleared since they are cleared as 
+         soon as the associated event are reset.   
+
+
+  2.  In the Interrupt Mode it is advised to use the following functions:
+      - CRYP_ITConfig()       : to enable or disable the interrupt source.
+      - CRYP_GetITStatus()    : to check if Interrupt occurs.
+
+  @note  The CRYPT interrupts have no pending bits, the interrupt is cleared as 
+         soon as the associated event is reset. </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d2e/group___c_r_y_p___group5_1gafbf5ee5f2c3ae4404149a994e15b33d8">CRYP_ITConfig</link> (
+uint8_t CRYP_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d1/d2e/group___c_r_y_p___group5_1ga00a48b748ed127fa517cacec9dbf18f4">CRYP_GetITStatus</link> (
+uint8_t CRYP_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d1/d2e/group___c_r_y_p___group5_1ga993d568b626a74b2973d4a6848a681f6">CRYP_GetFlagStatus</link> (
+uint8_t CRYP_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d1/d2e/group___c_r_y_p___group5_1gafbf5ee5f2c3ae4404149a994e15b33d8">
+                <title>void CRYP_ITConfig (uint8_t CRYP_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified CRYP interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_IT, :</entry>
+                                <entry>
+<para>specifies the CRYP interrupt source to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>CRYP_IT_INI: Input FIFO interrupt </para>
+</listitem>
+<listitem>
+<para>CRYP_IT_OUTI: Output FIFO interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified CRYP interrupt. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d2e/group___c_r_y_p___group5_1ga00a48b748ed127fa517cacec9dbf18f4">
+                <title>ITStatus CRYP_GetITStatus (uint8_t CRYP_IT)</title> <emphasis>Checks whether the specified CRYP interrupt has occurred or not.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function checks the status of the masked interrupt (i.e the interrupt should be previously enabled). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_IT, :</entry>
+                                <entry>
+<para>specifies the CRYP (masked) interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CRYP_IT_INI: Input FIFO interrupt </para>
+</listitem>
+<listitem>
+<para>CRYP_IT_OUTI: Output FIFO interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of CRYP_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d2e/group___c_r_y_p___group5_1ga993d568b626a74b2973d4a6848a681f6">
+                <title>FlagStatus CRYP_GetFlagStatus (uint8_t CRYP_FLAG)</title> <emphasis>Checks whether the specified CRYP flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_FLAG, :</entry>
+                                <entry>
+<para>specifies the CRYP flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CRYP_FLAG_IFEM: Input FIFO Empty flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_IFNF: Input FIFO Not Full flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_OFNE: Output FIFO Not Empty flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_OFFU: Output FIFO Full flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_BUSY: Busy flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_OUTRIS: Output FIFO raw interrupt flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_INRIS: Input FIFO raw interrupt flag. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of CRYP_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

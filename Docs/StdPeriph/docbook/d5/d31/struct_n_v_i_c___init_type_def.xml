@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d31/struct_n_v_i_c___init_type_def">
+<title>NVIC_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d4/d08/misc_8h">&lt;misc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t NVIC_IRQChannel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t NVIC_IRQChannelPreemptionPriority</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t NVIC_IRQChannelSubPriority</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FunctionalState NVIC_IRQChannelCmd</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>NVIC Init Structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint8_t NVIC_IRQChannel</title>                
+<para>Specifies the IRQ channel to be enabled or disabled. This parameter can be an enumerator of IRQn_Type enumeration (For the complete STM32 Devices IRQ Channels list, please refer to stm32f4xx.h file) </para>
+
+                <para>Definition at line 50 of file misc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>misc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t NVIC_IRQChannelPreemptionPriority</title>                
+<para>Specifies the pre-emption priority for the IRQ channel specified in NVIC_IRQChannel. This parameter can be a value between 0 and 15 as described in the table MISC_NVIC_Priority_Table A lower priority value indicates a higher priority </para>
+
+                <para>Definition at line 55 of file misc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>misc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t NVIC_IRQChannelSubPriority</title>                
+<para>Specifies the subpriority level for the IRQ channel specified in NVIC_IRQChannel. This parameter can be a value between 0 and 15 as described in the table MISC_NVIC_Priority_Table A lower priority value indicates a higher priority </para>
+
+                <para>Definition at line 60 of file misc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>misc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>FunctionalState NVIC_IRQChannelCmd</title>                
+<para>Specifies whether the IRQ channel defined in NVIC_IRQChannel will be enabled or disabled. This parameter can be set either to ENABLE or DISABLE </para>
+
+                <para>Definition at line 65 of file misc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>misc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

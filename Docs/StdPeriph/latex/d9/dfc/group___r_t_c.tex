@@ -1,0 +1,1819 @@
+\hypertarget{group___r_t_c}{\section{R\-T\-C}
+\label{group___r_t_c}\index{R\-T\-C@{R\-T\-C}}
+}
+
+
+R\-T\-C driver modules.  
+
+
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___r_t_c___exported___constants}{R\-T\-C\-\_\-\-Exported\-\_\-\-Constants}
+\item 
+\hyperlink{group___r_t_c___private___functions}{R\-T\-C\-\_\-\-Private\-\_\-\-Functions}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_r_t_c___init_type_def}{R\-T\-C\-\_\-\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em R\-T\-C Init structures definition. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em R\-T\-C Time structure definition. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_r_t_c___date_type_def}{R\-T\-C\-\_\-\-Date\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em R\-T\-C Date structure definition. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_r_t_c___alarm_type_def}{R\-T\-C\-\_\-\-Alarm\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em R\-T\-C Alarm structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___r_t_c_gacc08d7d212e235f4b04bb88f5567fa54}{\#define {\bfseries R\-T\-C\-\_\-\-T\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x007\-F7\-F7\-F)}\label{group___r_t_c_gacc08d7d212e235f4b04bb88f5567fa54}
+
+\item 
+\hypertarget{group___r_t_c_ga16855eaae542f992c93170492822d058}{\#define {\bfseries R\-T\-C\-\_\-\-D\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x00\-F\-F\-F\-F3\-F)}\label{group___r_t_c_ga16855eaae542f992c93170492822d058}
+
+\item 
+\hypertarget{group___r_t_c_ga0dbaf639bc171f2055c9055d538f13df}{\#define {\bfseries R\-T\-C\-\_\-\-I\-N\-I\-T\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F\-F\-F\-F)}\label{group___r_t_c_ga0dbaf639bc171f2055c9055d538f13df}
+
+\item 
+\hypertarget{group___r_t_c_ga3a1033490aaf8304e1522d551bd1a7b9}{\#define {\bfseries R\-T\-C\-\_\-\-R\-S\-F\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F\-F5\-F)}\label{group___r_t_c_ga3a1033490aaf8304e1522d551bd1a7b9}
+
+\item 
+\#define {\bfseries R\-T\-C\-\_\-\-F\-L\-A\-G\-S\-\_\-\-M\-A\-S\-K}
+\item 
+\hypertarget{group___r_t_c_gab89243e1f23e45fedc6357396b26827d}{\#define {\bfseries I\-N\-I\-T\-M\-O\-D\-E\-\_\-\-T\-I\-M\-E\-O\-U\-T}~((uint32\-\_\-t) 0x00010000)}\label{group___r_t_c_gab89243e1f23e45fedc6357396b26827d}
+
+\item 
+\hypertarget{group___r_t_c_ga017f8fc40e791545ae1dfebf84567ed8}{\#define {\bfseries S\-Y\-N\-C\-H\-R\-O\-\_\-\-T\-I\-M\-E\-O\-U\-T}~((uint32\-\_\-t) 0x00020000)}\label{group___r_t_c_ga017f8fc40e791545ae1dfebf84567ed8}
+
+\item 
+\hypertarget{group___r_t_c_gae578d94ca54a697f9d26b20944f036bc}{\#define {\bfseries R\-E\-C\-A\-L\-P\-F\-\_\-\-T\-I\-M\-E\-O\-U\-T}~((uint32\-\_\-t) 0x00020000)}\label{group___r_t_c_gae578d94ca54a697f9d26b20944f036bc}
+
+\item 
+\hypertarget{group___r_t_c_ga911218ae83f22129a4df0087d98db3cd}{\#define {\bfseries S\-H\-P\-F\-\_\-\-T\-I\-M\-E\-O\-U\-T}~((uint32\-\_\-t) 0x00001000)}\label{group___r_t_c_ga911218ae83f22129a4df0087d98db3cd}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Error\-Status \hyperlink{group___r_t_c_ga9777c6cc4a99c339ebc527a791b2ebe7}{R\-T\-C\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the R\-T\-C registers to their default reset values. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_ga8eb747bf9698b2482ba6ef4d811de8e0}{R\-T\-C\-\_\-\-Init} (\hyperlink{struct_r_t_c___init_type_def}{R\-T\-C\-\_\-\-Init\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the R\-T\-C registers according to the specified parameters in R\-T\-C\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gab466f3348de3236976e9aec7d6025dff}{R\-T\-C\-\_\-\-Struct\-Init} (\hyperlink{struct_r_t_c___init_type_def}{R\-T\-C\-\_\-\-Init\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each R\-T\-C\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga9d4bdfd3ae6957630d15d2497573b7c7}{R\-T\-C\-\_\-\-Write\-Protection\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the R\-T\-C registers write protection. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_ga679f8883cbfb267a53ffb1ab4cc5c8c5}{R\-T\-C\-\_\-\-Enter\-Init\-Mode} (void)
+\begin{DoxyCompactList}\small\item\em Enters the R\-T\-C Initialization mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga87f86f3b794205f09a1eac51738d900f}{R\-T\-C\-\_\-\-Exit\-Init\-Mode} (void)
+\begin{DoxyCompactList}\small\item\em Exits the R\-T\-C Initialization mode. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_ga2938febeef6baf0d91cc066ca5caf095}{R\-T\-C\-\_\-\-Wait\-For\-Synchro} (void)
+\begin{DoxyCompactList}\small\item\em Waits until the R\-T\-C Time and Date registers (R\-T\-C\-\_\-\-T\-R and R\-T\-C\-\_\-\-D\-R) are synchronized with R\-T\-C A\-P\-B clock. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_gaa60079ec257fb3a277d058ca8305533d}{R\-T\-C\-\_\-\-Ref\-Clock\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the R\-T\-C reference clock detection. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gae5e7c682f15b8ae9ddd3b2a85a9df7db}{R\-T\-C\-\_\-\-Bypass\-Shadow\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or Disables the Bypass Shadow feature. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_ga9f9df80cfa82f7a4dd9f4d0cf2ffb3a6}{R\-T\-C\-\_\-\-Set\-Time} (uint32\-\_\-t R\-T\-C\-\_\-\-Format, \hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Time\-Struct)
+\begin{DoxyCompactList}\small\item\em Set the R\-T\-C current time. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga0404db6e0c70e5a6bbbe4fa58a577365}{R\-T\-C\-\_\-\-Time\-Struct\-Init} (\hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Time\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each R\-T\-C\-\_\-\-Time\-Struct member with its default value (Time = 00h\-:00min\-:00sec). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga1fcc101339c77aebd25ec3621fd1b61a}{R\-T\-C\-\_\-\-Get\-Time} (uint32\-\_\-t R\-T\-C\-\_\-\-Format, \hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Time\-Struct)
+\begin{DoxyCompactList}\small\item\em Get the R\-T\-C current Time. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___r_t_c_gae59c33fb19e36b6abab0bad58072c01a}{R\-T\-C\-\_\-\-Get\-Sub\-Second} (void)
+\begin{DoxyCompactList}\small\item\em Gets the R\-T\-C current Calendar Subseconds value. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_ga69d08538147f3d89c818dcfabf50e362}{R\-T\-C\-\_\-\-Set\-Date} (uint32\-\_\-t R\-T\-C\-\_\-\-Format, \hyperlink{struct_r_t_c___date_type_def}{R\-T\-C\-\_\-\-Date\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Date\-Struct)
+\begin{DoxyCompactList}\small\item\em Set the R\-T\-C current date. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga6e4e99be910d7759f8910056a2985056}{R\-T\-C\-\_\-\-Date\-Struct\-Init} (\hyperlink{struct_r_t_c___date_type_def}{R\-T\-C\-\_\-\-Date\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Date\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each R\-T\-C\-\_\-\-Date\-Struct member with its default value (Monday, January 01 xx00). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga582645d554cdd4a316213e90f0b4c8ae}{R\-T\-C\-\_\-\-Get\-Date} (uint32\-\_\-t R\-T\-C\-\_\-\-Format, \hyperlink{struct_r_t_c___date_type_def}{R\-T\-C\-\_\-\-Date\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Date\-Struct)
+\begin{DoxyCompactList}\small\item\em Get the R\-T\-C current date. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga44e3334f8e882df9b8a59b47f0857395}{R\-T\-C\-\_\-\-Set\-Alarm} (uint32\-\_\-t R\-T\-C\-\_\-\-Format, uint32\-\_\-t R\-T\-C\-\_\-\-Alarm, \hyperlink{struct_r_t_c___alarm_type_def}{R\-T\-C\-\_\-\-Alarm\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Alarm\-Struct)
+\begin{DoxyCompactList}\small\item\em Set the specified R\-T\-C Alarm. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga36ab6199e21fb415ab1ec4d7aa48ba45}{R\-T\-C\-\_\-\-Alarm\-Struct\-Init} (\hyperlink{struct_r_t_c___alarm_type_def}{R\-T\-C\-\_\-\-Alarm\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Alarm\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each R\-T\-C\-\_\-\-Alarm\-Struct member with its default value (Time = 00h\-:00mn\-:00sec / Date = 1st day of the month/\-Mask = all fields are masked). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga6e2888d2fd2e3ecb4ec50f5c955b362b}{R\-T\-C\-\_\-\-Get\-Alarm} (uint32\-\_\-t R\-T\-C\-\_\-\-Format, uint32\-\_\-t R\-T\-C\-\_\-\-Alarm, \hyperlink{struct_r_t_c___alarm_type_def}{R\-T\-C\-\_\-\-Alarm\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Alarm\-Struct)
+\begin{DoxyCompactList}\small\item\em Get the R\-T\-C Alarm value and masks. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_gac2c08f1aeeb664d3d245cb5aca1b8ca8}{R\-T\-C\-\_\-\-Alarm\-Cmd} (uint32\-\_\-t R\-T\-C\-\_\-\-Alarm, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified R\-T\-C Alarm. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga7b3e4e9e39262e9b0d1aadd895394e46}{R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Alarm, uint32\-\_\-t R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Value, uint32\-\_\-t R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask)
+\begin{DoxyCompactList}\small\item\em Configure the R\-T\-C Alarm\-A/\-B Subseconds value and mask.$\ast$. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___r_t_c_gae7b5e7146be2710d619c8ed3cca464ad}{R\-T\-C\-\_\-\-Get\-Alarm\-Sub\-Second} (uint32\-\_\-t R\-T\-C\-\_\-\-Alarm)
+\begin{DoxyCompactList}\small\item\em Gets the R\-T\-C Alarm Subseconds value. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga2557b02b318211112731a91a190c4b26}{R\-T\-C\-\_\-\-Wake\-Up\-Clock\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Wake\-Up\-Clock)
+\begin{DoxyCompactList}\small\item\em Configures the R\-T\-C Wakeup clock source. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga1412044eb756a166c1cf341f3d46ed6b}{R\-T\-C\-\_\-\-Set\-Wake\-Up\-Counter} (uint32\-\_\-t R\-T\-C\-\_\-\-Wake\-Up\-Counter)
+\begin{DoxyCompactList}\small\item\em Configures the R\-T\-C Wakeup counter. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___r_t_c_gae63aab672e917cc48e298162c3dec049}{R\-T\-C\-\_\-\-Get\-Wake\-Up\-Counter} (void)
+\begin{DoxyCompactList}\small\item\em Returns the R\-T\-C Wake\-Up timer counter value. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_ga2ce05293303e0d7879c6d755c5355b4c}{R\-T\-C\-\_\-\-Wake\-Up\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or Disables the R\-T\-C Wake\-Up timer. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga812feddea77990b5dc336a4989ae61b8}{R\-T\-C\-\_\-\-Day\-Light\-Saving\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Day\-Light\-Saving, uint32\-\_\-t R\-T\-C\-\_\-\-Store\-Operation)
+\begin{DoxyCompactList}\small\item\em Adds or substract one hour from the current time. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___r_t_c_gaba0c1361790203e9dca43846f0d9bc15}{R\-T\-C\-\_\-\-Get\-Store\-Operation} (void)
+\begin{DoxyCompactList}\small\item\em Returns the R\-T\-C Day Light Saving stored operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gae3165ef19ef3bd63789e59130ad8d89b}{R\-T\-C\-\_\-\-Output\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Output, uint32\-\_\-t R\-T\-C\-\_\-\-Output\-Polarity)
+\begin{DoxyCompactList}\small\item\em Configures the R\-T\-C output source (A\-F\-O\-\_\-\-A\-L\-A\-R\-M). \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_gaa3bb10170a2c70ac9ce3e41c611bdd43}{R\-T\-C\-\_\-\-Coarse\-Calib\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Calib\-Sign, uint32\-\_\-t Value)
+\begin{DoxyCompactList}\small\item\em Configures the Coarse calibration parameters. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_ga008ae7173b2befe876f5e76686bc9089}{R\-T\-C\-\_\-\-Coarse\-Calib\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Coarse calibration process. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga25eaa2de5ee858a4572d5fb1eb146ff8}{R\-T\-C\-\_\-\-Calib\-Output\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the R\-T\-C clock to be output through the relative pin. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga2139adc802bdb6882904c0b855d50b29}{R\-T\-C\-\_\-\-Calib\-Output\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Calib\-Output)
+\begin{DoxyCompactList}\small\item\em Configure the Calibration Pinout (R\-T\-C\-\_\-\-C\-A\-L\-I\-B) Selection (1\-Hz or 512\-Hz). \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_ga91a28dcc7d45340a469dd8b8c029f841}{R\-T\-C\-\_\-\-Smooth\-Calib\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Smooth\-Calib\-Period, uint32\-\_\-t R\-T\-C\-\_\-\-Smooth\-Calib\-Plus\-Pulses, uint32\-\_\-t R\-T\-C\-\_\-\-Smouth\-Calib\-Minus\-Pulses\-Value)
+\begin{DoxyCompactList}\small\item\em Configures the Smooth Calibration Settings. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga7d80fa4a2c87654598d8207154ac8e96}{R\-T\-C\-\_\-\-Time\-Stamp\-Cmd} (uint32\-\_\-t R\-T\-C\-\_\-\-Time\-Stamp\-Edge, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or Disables the R\-T\-C Time\-Stamp functionality with the specified time stamp pin stimulating edge. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga44c38b0c74e9e960a4263b2905f44796}{R\-T\-C\-\_\-\-Get\-Time\-Stamp} (uint32\-\_\-t R\-T\-C\-\_\-\-Format, \hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Stamp\-Time\-Struct, \hyperlink{struct_r_t_c___date_type_def}{R\-T\-C\-\_\-\-Date\-Type\-Def} $\ast$R\-T\-C\-\_\-\-Stamp\-Date\-Struct)
+\begin{DoxyCompactList}\small\item\em Get the R\-T\-C Time\-Stamp value and masks. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___r_t_c_ga2b0ef81f4959a2f9fc6361fbda759b00}{R\-T\-C\-\_\-\-Get\-Time\-Stamp\-Sub\-Second} (void)
+\begin{DoxyCompactList}\small\item\em Get the R\-T\-C timestamp Subseconds value. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gad547d636cfc4fd8d4d673325571e0ffb}{R\-T\-C\-\_\-\-Tamper\-Trigger\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Tamper, uint32\-\_\-t R\-T\-C\-\_\-\-Tamper\-Trigger)
+\begin{DoxyCompactList}\small\item\em Configures the select Tamper pin edge. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gaf85cc696d624da0de9fbe99779402833}{R\-T\-C\-\_\-\-Tamper\-Cmd} (uint32\-\_\-t R\-T\-C\-\_\-\-Tamper, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or Disables the Tamper detection. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga1e87b9ae757ad12d7585e4fbcbf2c4b8}{R\-T\-C\-\_\-\-Tamper\-Filter\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Tamper\-Filter)
+\begin{DoxyCompactList}\small\item\em Configures the Tampers Filter. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gadc7f33a31df80b5deac313fc8af8d7f7}{R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq)
+\begin{DoxyCompactList}\small\item\em Configures the Tampers Sampling Frequency. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gafc176a013076a651862dc6a957286025}{R\-T\-C\-\_\-\-Tamper\-Pins\-Precharge\-Duration} (uint32\-\_\-t R\-T\-C\-\_\-\-Tamper\-Precharge\-Duration)
+\begin{DoxyCompactList}\small\item\em Configures the Tampers Pins input Precharge Duration. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga29c82fceefd21a78dc55ccc5bcc1ed59}{R\-T\-C\-\_\-\-Time\-Stamp\-On\-Tamper\-Detection\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or Disables the Time\-Stamp on Tamper Detection Event. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga981b9c654e521282a2020a81118c8c3c}{R\-T\-C\-\_\-\-Tamper\-Pull\-Up\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or Disables the Precharge of Tamper pin. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gaa1241e2b47d04acc116b50d7b031c3aa}{R\-T\-C\-\_\-\-Write\-Backup\-Register} (uint32\-\_\-t R\-T\-C\-\_\-\-B\-K\-P\-\_\-\-D\-R, uint32\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Writes a data in a specified R\-T\-C Backup data register. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___r_t_c_ga504489fd91a66e392beb82bb8230b37f}{R\-T\-C\-\_\-\-Read\-Backup\-Register} (uint32\-\_\-t R\-T\-C\-\_\-\-B\-K\-P\-\_\-\-D\-R)
+\begin{DoxyCompactList}\small\item\em Reads data from the specified R\-T\-C Backup data Register. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga46777272ae77eb9dc38610481e12b0ed}{R\-T\-C\-\_\-\-Tamper\-Pin\-Selection} (uint32\-\_\-t R\-T\-C\-\_\-\-Tamper\-Pin)
+\begin{DoxyCompactList}\small\item\em Selects the R\-T\-C Tamper Pin. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gaedf9830bdaaaa50ea5d45d2ff7bb43a9}{R\-T\-C\-\_\-\-Time\-Stamp\-Pin\-Selection} (uint32\-\_\-t R\-T\-C\-\_\-\-Time\-Stamp\-Pin)
+\begin{DoxyCompactList}\small\item\em Selects the R\-T\-C Time\-Stamp Pin. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga95263b7acf7168d52f66ef9121f14760}{R\-T\-C\-\_\-\-Output\-Type\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Output\-Type)
+\begin{DoxyCompactList}\small\item\em Configures the R\-T\-C Output Pin mode. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_t_c_gaad434ed2a268f05662f0613e8e9717f3}{R\-T\-C\-\_\-\-Synchro\-Shift\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-Shift\-Add1\-S, uint32\-\_\-t R\-T\-C\-\_\-\-Shift\-Sub\-F\-S)
+\begin{DoxyCompactList}\small\item\em Configures the Synchronization Shift Control Settings. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gaa8469b33b3a99025baf52f007683b925}{R\-T\-C\-\_\-\-I\-T\-Config} (uint32\-\_\-t R\-T\-C\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified R\-T\-C interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___r_t_c_gaf2a7f11aa7160e95650fd10845e7780b}{R\-T\-C\-\_\-\-Get\-Flag\-Status} (uint32\-\_\-t R\-T\-C\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified R\-T\-C flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_ga9be3325e05418d05c8c5a5ad369c7d50}{R\-T\-C\-\_\-\-Clear\-Flag} (uint32\-\_\-t R\-T\-C\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the R\-T\-C's pending flags. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___r_t_c_gaab81adc6d2a5a5c1e37a49707c6bf640}{R\-T\-C\-\_\-\-Get\-I\-T\-Status} (uint32\-\_\-t R\-T\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified R\-T\-C interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c_gacac6accc75ae54f1b799fa8e7e83ccdb}{R\-T\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint32\-\_\-t R\-T\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the R\-T\-C's interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+R\-T\-C driver modules. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___r_t_c_ga0c7513e50528d7b5a52e88340a4e7b25}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-F\-L\-A\-G\-S\-\_\-\-M\-A\-S\-K@{R\-T\-C\-\_\-\-F\-L\-A\-G\-S\-\_\-\-M\-A\-S\-K}}
+\index{R\-T\-C\-\_\-\-F\-L\-A\-G\-S\-\_\-\-M\-A\-S\-K@{R\-T\-C\-\_\-\-F\-L\-A\-G\-S\-\_\-\-M\-A\-S\-K}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-F\-L\-A\-G\-S\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-C\-\_\-\-F\-L\-A\-G\-S\-\_\-\-M\-A\-S\-K}}\label{group___r_t_c_ga0c7513e50528d7b5a52e88340a4e7b25}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+((uint32\_t)(RTC\_FLAG\_TSOVF | RTC\_FLAG\_TSF | RTC\_FLAG\_WUTF | \(\backslash\)
+                                            RTC\_FLAG\_ALRBF | RTC\_FLAG\_ALRAF | RTC\_FLAG\_INITF | \(\backslash\)
+                                            RTC\_FLAG\_RSF | RTC\_FLAG\_INITS | RTC\_FLAG\_WUTWF | \(\backslash\)
+                                            RTC\_FLAG\_ALRBWF | RTC\_FLAG\_ALRAWF | RTC\_FLAG\_TAMP1F ))
+\end{DoxyCode}
+
+
+Definition at line 297 of file stm32f4xx\-\_\-rtc.\-c.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{group___r_t_c_gac2c08f1aeeb664d3d245cb5aca1b8ca8}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Alarm\-Cmd@{R\-T\-C\-\_\-\-Alarm\-Cmd}}
+\index{R\-T\-C\-\_\-\-Alarm\-Cmd@{R\-T\-C\-\_\-\-Alarm\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Alarm\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Alarm\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Alarm, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gac2c08f1aeeb664d3d245cb5aca1b8ca8}
+
+
+Enables or disables the specified R\-T\-C Alarm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Alarm,\-:} & specifies the alarm to be configured. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Alarm\-\_\-\-A\-: to select Alarm A \item R\-T\-C\-\_\-\-Alarm\-\_\-\-B\-: to select Alarm B \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified alarm. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C Alarm is enabled/disabled
+\item E\-R\-R\-O\-R\-: R\-T\-C Alarm is not enabled/disabled 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1283 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga36ab6199e21fb415ab1ec4d7aa48ba45}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Alarm\-Struct\-Init@{R\-T\-C\-\_\-\-Alarm\-Struct\-Init}}
+\index{R\-T\-C\-\_\-\-Alarm\-Struct\-Init@{R\-T\-C\-\_\-\-Alarm\-Struct\-Init}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Alarm\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Alarm\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-T\-C\-\_\-\-Alarm\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Alarm\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga36ab6199e21fb415ab1ec4d7aa48ba45}
+
+
+Fills each R\-T\-C\-\_\-\-Alarm\-Struct member with its default value (Time = 00h\-:00mn\-:00sec / Date = 1st day of the month/\-Mask = all fields are masked). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Alarm\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___alarm_type_def}{R\-T\-C\-\_\-\-Alarm\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1199 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga7b3e4e9e39262e9b0d1aadd895394e46}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Config@{R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Config}}
+\index{R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Config@{R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Alarm, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Value, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga7b3e4e9e39262e9b0d1aadd895394e46}
+
+
+Configure the R\-T\-C Alarm\-A/\-B Subseconds value and mask.$\ast$. 
+
+\begin{DoxyNote}{Note}
+This function is performed only when the Alarm is disabled. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Alarm,\-:} & specifies the alarm to be configured. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Alarm\-\_\-\-A\-: to select Alarm A \item R\-T\-C\-\_\-\-Alarm\-\_\-\-B\-: to select Alarm B \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Value,\-:} & specifies the Subseconds value. This parameter can be a value from 0 to 0x00007\-F\-F\-F. \\
+\hline
+{\em R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask,\-:} & specifies the Subseconds Mask. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-All \-: All Alarm S\-S fields are masked. There is no comparison on sub seconds for Alarm. \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-1 \-: S\-S\mbox{[}14\-:1\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}0\mbox{]} is compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-2 \-: S\-S\mbox{[}14\-:2\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}1\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-3 \-: S\-S\mbox{[}14\-:3\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}2\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-4 \-: S\-S\mbox{[}14\-:4\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}3\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-5 \-: S\-S\mbox{[}14\-:5\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}4\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-6 \-: S\-S\mbox{[}14\-:6\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}5\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-7 \-: S\-S\mbox{[}14\-:7\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}6\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-8 \-: S\-S\mbox{[}14\-:8\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}7\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-9 \-: S\-S\mbox{[}14\-:9\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}8\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-10\-: S\-S\mbox{[}14\-:10\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}9\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-11\-: S\-S\mbox{[}14\-:11\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}10\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-12\-: S\-S\mbox{[}14\-:12\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}11\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14\-\_\-13\-: S\-S\mbox{[}14\-:13\mbox{]} are don't care in Alarm comparison. Only S\-S\mbox{[}12\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-S\-S14 \-: S\-S\mbox{[}14\mbox{]} is don't care in Alarm comparison. Only S\-S\mbox{[}13\-:0\mbox{]} are compared \item R\-T\-C\-\_\-\-Alarm\-Sub\-Second\-Mask\-\_\-\-None \-: S\-S\mbox{[}14\-:0\mbox{]} are compared and must match to activate alarm \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1377 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gae5e7c682f15b8ae9ddd3b2a85a9df7db}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Bypass\-Shadow\-Cmd@{R\-T\-C\-\_\-\-Bypass\-Shadow\-Cmd}}
+\index{R\-T\-C\-\_\-\-Bypass\-Shadow\-Cmd@{R\-T\-C\-\_\-\-Bypass\-Shadow\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Bypass\-Shadow\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Bypass\-Shadow\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gae5e7c682f15b8ae9ddd3b2a85a9df7db}
+
+
+Enables or Disables the Bypass Shadow feature. 
+
+\begin{DoxyNote}{Note}
+When the Bypass Shadow is enabled the calendar value are taken directly from the Calendar counter. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the Bypass Shadow feature. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 698 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga25eaa2de5ee858a4572d5fb1eb146ff8}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Calib\-Output\-Cmd@{R\-T\-C\-\_\-\-Calib\-Output\-Cmd}}
+\index{R\-T\-C\-\_\-\-Calib\-Output\-Cmd@{R\-T\-C\-\_\-\-Calib\-Output\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Calib\-Output\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Calib\-Output\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga25eaa2de5ee858a4572d5fb1eb146ff8}
+
+
+Enables or disables the R\-T\-C clock to be output through the relative pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the digital calibration Output. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1811 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga2139adc802bdb6882904c0b855d50b29}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Calib\-Output\-Config@{R\-T\-C\-\_\-\-Calib\-Output\-Config}}
+\index{R\-T\-C\-\_\-\-Calib\-Output\-Config@{R\-T\-C\-\_\-\-Calib\-Output\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Calib\-Output\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Calib\-Output\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Calib\-Output}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga2139adc802bdb6882904c0b855d50b29}
+
+
+Configure the Calibration Pinout (R\-T\-C\-\_\-\-C\-A\-L\-I\-B) Selection (1\-Hz or 512\-Hz). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Calib\-Output} & \-: Select the Calibration output Selection . This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Calib\-Output\-\_\-512\-Hz\-: A signal has a regular waveform at 512\-Hz. \item R\-T\-C\-\_\-\-Calib\-Output\-\_\-1\-Hz \-: A signal has a regular waveform at 1\-Hz. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1843 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga9be3325e05418d05c8c5a5ad369c7d50}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Clear\-Flag@{R\-T\-C\-\_\-\-Clear\-Flag}}
+\index{R\-T\-C\-\_\-\-Clear\-Flag@{R\-T\-C\-\_\-\-Clear\-Flag}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga9be3325e05418d05c8c5a5ad369c7d50}
+
+
+Clears the R\-T\-C's pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-F\-L\-A\-G,\-:} & specifies the R\-T\-C flag to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-T\-A\-M\-P1\-F\-: Tamper 1 event flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-T\-S\-O\-V\-F\-: Time Stamp Overflow flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-T\-S\-F\-: Time Stamp event flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-W\-U\-T\-F\-: Wake\-Up Timer flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-A\-L\-R\-B\-F\-: Alarm B flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-A\-L\-R\-A\-F\-: Alarm A flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-R\-S\-F\-: Registers Synchronized flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2612 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gacac6accc75ae54f1b799fa8e7e83ccdb}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{R\-T\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{R\-T\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{R\-T\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gacac6accc75ae54f1b799fa8e7e83ccdb}
+
+
+Clears the R\-T\-C's interrupt pending bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-I\-T,\-:} & specifies the R\-T\-C interrupt pending bit to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-I\-T\-\_\-\-T\-S\-: Time Stamp interrupt \item R\-T\-C\-\_\-\-I\-T\-\_\-\-W\-U\-T\-: Wake\-Up Timer interrupt \item R\-T\-C\-\_\-\-I\-T\-\_\-\-A\-L\-R\-B\-: Alarm B interrupt \item R\-T\-C\-\_\-\-I\-T\-\_\-\-A\-L\-R\-A\-: Alarm A interrupt \item R\-T\-C\-\_\-\-I\-T\-\_\-\-T\-A\-M\-P1\-: Tamper 1 event interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2672 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga008ae7173b2befe876f5e76686bc9089}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Coarse\-Calib\-Cmd@{R\-T\-C\-\_\-\-Coarse\-Calib\-Cmd}}
+\index{R\-T\-C\-\_\-\-Coarse\-Calib\-Cmd@{R\-T\-C\-\_\-\-Coarse\-Calib\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Coarse\-Calib\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Coarse\-Calib\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga008ae7173b2befe876f5e76686bc9089}
+
+
+Enables or disables the Coarse calibration process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the Coarse calibration. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C Coarse calibration are enabled/disabled
+\item E\-R\-R\-O\-R\-: R\-T\-C Coarse calibration are not enabled/disabled 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1765 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaa3bb10170a2c70ac9ce3e41c611bdd43}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Coarse\-Calib\-Config@{R\-T\-C\-\_\-\-Coarse\-Calib\-Config}}
+\index{R\-T\-C\-\_\-\-Coarse\-Calib\-Config@{R\-T\-C\-\_\-\-Coarse\-Calib\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Coarse\-Calib\-Config}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Coarse\-Calib\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Calib\-Sign, }
+\item[{uint32\-\_\-t}]{Value}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaa3bb10170a2c70ac9ce3e41c611bdd43}
+
+
+Configures the Coarse calibration parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Calib\-Sign,\-:} & specifies the sign of the coarse calibration value. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Calib\-Sign\-\_\-\-Positive\-: The value sign is positive \item R\-T\-C\-\_\-\-Calib\-Sign\-\_\-\-Negative\-: The value sign is negative \end{DoxyItemize}
+\\
+\hline
+{\em Value,\-:} & value of coarse calibration expressed in ppm (coded on 5 bits).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This Calibration value should be between 0 and 63 when using negative sign with a 2-\/ppm step.
+
+This Calibration value should be between 0 and 126 when using positive sign with a 4-\/ppm step.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C Coarse calibration are initialized
+\item E\-R\-R\-O\-R\-: R\-T\-C Coarse calibration are not initialized 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1724 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga6e4e99be910d7759f8910056a2985056}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Date\-Struct\-Init@{R\-T\-C\-\_\-\-Date\-Struct\-Init}}
+\index{R\-T\-C\-\_\-\-Date\-Struct\-Init@{R\-T\-C\-\_\-\-Date\-Struct\-Init}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Date\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Date\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-T\-C\-\_\-\-Date\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Date\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga6e4e99be910d7759f8910056a2985056}
+
+
+Fills each R\-T\-C\-\_\-\-Date\-Struct member with its default value (Monday, January 01 xx00). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Date\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___date_type_def}{R\-T\-C\-\_\-\-Date\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1009 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga812feddea77990b5dc336a4989ae61b8}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Day\-Light\-Saving\-Config@{R\-T\-C\-\_\-\-Day\-Light\-Saving\-Config}}
+\index{R\-T\-C\-\_\-\-Day\-Light\-Saving\-Config@{R\-T\-C\-\_\-\-Day\-Light\-Saving\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Day\-Light\-Saving\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Day\-Light\-Saving\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Day\-Light\-Saving, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Store\-Operation}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga812feddea77990b5dc336a4989ae61b8}
+
+
+Adds or substract one hour from the current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Day\-Light\-Save\-Operation,\-:} & the value of hour adjustment. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Day\-Light\-Saving\-\_\-\-S\-U\-B1\-H\-: Substract one hour (winter time) \item R\-T\-C\-\_\-\-Day\-Light\-Saving\-\_\-\-A\-D\-D1\-H\-: Add one hour (summer time) \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Store\-Operation,\-:} & Specifies the value to be written in the B\-C\-K bit in C\-R register to store the operation. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Store\-Operation\-\_\-\-Reset\-: B\-C\-K Bit Reset \item R\-T\-C\-\_\-\-Store\-Operation\-\_\-\-Set\-: B\-C\-K Bit Set \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1604 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga9777c6cc4a99c339ebc527a791b2ebe7}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-De\-Init@{R\-T\-C\-\_\-\-De\-Init}}
+\index{R\-T\-C\-\_\-\-De\-Init@{R\-T\-C\-\_\-\-De\-Init}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga9777c6cc4a99c339ebc527a791b2ebe7}
+
+
+Deinitializes the R\-T\-C registers to their default reset values. 
+
+\begin{DoxyNote}{Note}
+This function doesn't reset the R\-T\-C Clock source and R\-T\-C Backup Data registers. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C registers are deinitialized
+\item E\-R\-R\-O\-R\-: R\-T\-C registers are not deinitialized 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 367 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga679f8883cbfb267a53ffb1ab4cc5c8c5}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Enter\-Init\-Mode@{R\-T\-C\-\_\-\-Enter\-Init\-Mode}}
+\index{R\-T\-C\-\_\-\-Enter\-Init\-Mode@{R\-T\-C\-\_\-\-Enter\-Init\-Mode}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Enter\-Init\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Enter\-Init\-Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga679f8883cbfb267a53ffb1ab4cc5c8c5}
+
+
+Enters the R\-T\-C Initialization mode. 
+
+\begin{DoxyNote}{Note}
+The R\-T\-C Initialization mode is write protected, use the R\-T\-C\-\_\-\-Write\-Protection\-Cmd(\-D\-I\-S\-A\-B\-L\-E) before calling this function. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C is in Init mode
+\item E\-R\-R\-O\-R\-: R\-T\-C is not in Init mode 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 540 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga87f86f3b794205f09a1eac51738d900f}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Exit\-Init\-Mode@{R\-T\-C\-\_\-\-Exit\-Init\-Mode}}
+\index{R\-T\-C\-\_\-\-Exit\-Init\-Mode@{R\-T\-C\-\_\-\-Exit\-Init\-Mode}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Exit\-Init\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Exit\-Init\-Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga87f86f3b794205f09a1eac51738d900f}
+
+
+Exits the R\-T\-C Initialization mode. 
+
+\begin{DoxyNote}{Note}
+When the initialization sequence is complete, the calendar restarts counting after 4 R\-T\-C\-C\-L\-K cycles. 
+
+The R\-T\-C Initialization mode is write protected, use the R\-T\-C\-\_\-\-Write\-Protection\-Cmd(\-D\-I\-S\-A\-B\-L\-E) before calling this function. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 585 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga6e2888d2fd2e3ecb4ec50f5c955b362b}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Alarm@{R\-T\-C\-\_\-\-Get\-Alarm}}
+\index{R\-T\-C\-\_\-\-Get\-Alarm@{R\-T\-C\-\_\-\-Get\-Alarm}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Alarm}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Get\-Alarm (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Format, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Alarm, }
+\item[{{\bf R\-T\-C\-\_\-\-Alarm\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Alarm\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga6e2888d2fd2e3ecb4ec50f5c955b362b}
+
+
+Get the R\-T\-C Alarm value and masks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Format,\-:} & specifies the format of the output parameters. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Format\-\_\-\-B\-I\-N\-: Binary data format \item R\-T\-C\-\_\-\-Format\-\_\-\-B\-C\-D\-: B\-C\-D data format \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Alarm,\-:} & specifies the alarm to be read. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Alarm\-\_\-\-A\-: to select Alarm A \item R\-T\-C\-\_\-\-Alarm\-\_\-\-B\-: to select Alarm B \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Alarm\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___alarm_type_def}{R\-T\-C\-\_\-\-Alarm\-Type\-Def} structure that will contains the output alarm configuration values. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1229 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gae7b5e7146be2710d619c8ed3cca464ad}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Alarm\-Sub\-Second@{R\-T\-C\-\_\-\-Get\-Alarm\-Sub\-Second}}
+\index{R\-T\-C\-\_\-\-Get\-Alarm\-Sub\-Second@{R\-T\-C\-\_\-\-Get\-Alarm\-Sub\-Second}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Alarm\-Sub\-Second}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t R\-T\-C\-\_\-\-Get\-Alarm\-Sub\-Second (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Alarm}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gae7b5e7146be2710d619c8ed3cca464ad}
+
+
+Gets the R\-T\-C Alarm Subseconds value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Alarm,\-:} & specifies the alarm to be read. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Alarm\-\_\-\-A\-: to select Alarm A \item R\-T\-C\-\_\-\-Alarm\-\_\-\-B\-: to select Alarm B \end{DoxyItemize}
+\\
+\hline
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em R\-T\-C} & Alarm Subseconds value. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1418 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga582645d554cdd4a316213e90f0b4c8ae}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Date@{R\-T\-C\-\_\-\-Get\-Date}}
+\index{R\-T\-C\-\_\-\-Get\-Date@{R\-T\-C\-\_\-\-Get\-Date}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Get\-Date (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Format, }
+\item[{{\bf R\-T\-C\-\_\-\-Date\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Date\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga582645d554cdd4a316213e90f0b4c8ae}
+
+
+Get the R\-T\-C current date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Format,\-:} & specifies the format of the returned parameters. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Format\-\_\-\-B\-I\-N\-: Binary data format \item R\-T\-C\-\_\-\-Format\-\_\-\-B\-C\-D\-: B\-C\-D data format \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Date\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___date_type_def}{R\-T\-C\-\_\-\-Date\-Type\-Def} structure that will contain the returned current date configuration. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1028 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaf2a7f11aa7160e95650fd10845e7780b}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Flag\-Status@{R\-T\-C\-\_\-\-Get\-Flag\-Status}}
+\index{R\-T\-C\-\_\-\-Get\-Flag\-Status@{R\-T\-C\-\_\-\-Get\-Flag\-Status}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status R\-T\-C\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaf2a7f11aa7160e95650fd10845e7780b}
+
+
+Checks whether the specified R\-T\-C flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-T\-A\-M\-P1\-F\-: Tamper 1 event flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-T\-S\-O\-V\-F\-: Time Stamp Over\-Flow flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-T\-S\-F\-: Time Stamp event flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-W\-U\-T\-F\-: Wake\-Up Timer flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-A\-L\-R\-B\-F\-: Alarm B flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-A\-L\-R\-A\-F\-: Alarm A flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-I\-N\-I\-T\-F\-: Initialization mode flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-R\-S\-F\-: Registers Synchronized flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-I\-N\-I\-T\-S\-: Registers Configured flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-W\-U\-T\-W\-F\-: Wake\-Up Timer Write flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-A\-L\-R\-B\-W\-F\-: Alarm B Write flag \item R\-T\-C\-\_\-\-F\-L\-A\-G\-\_\-\-A\-L\-R\-A\-W\-F\-: Alarm A write flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of R\-T\-C\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2576 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaab81adc6d2a5a5c1e37a49707c6bf640}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-I\-T\-Status@{R\-T\-C\-\_\-\-Get\-I\-T\-Status}}
+\index{R\-T\-C\-\_\-\-Get\-I\-T\-Status@{R\-T\-C\-\_\-\-Get\-I\-T\-Status}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status R\-T\-C\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaab81adc6d2a5a5c1e37a49707c6bf640}
+
+
+Checks whether the specified R\-T\-C interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-I\-T,\-:} & specifies the R\-T\-C interrupt source to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-I\-T\-\_\-\-T\-S\-: Time Stamp interrupt \item R\-T\-C\-\_\-\-I\-T\-\_\-\-W\-U\-T\-: Wake\-Up Timer interrupt \item R\-T\-C\-\_\-\-I\-T\-\_\-\-A\-L\-R\-B\-: Alarm B interrupt \item R\-T\-C\-\_\-\-I\-T\-\_\-\-A\-L\-R\-A\-: Alarm A interrupt \item R\-T\-C\-\_\-\-I\-T\-\_\-\-T\-A\-M\-P1\-: Tamper 1 event interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of R\-T\-C\-\_\-\-I\-T (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2632 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaba0c1361790203e9dca43846f0d9bc15}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Store\-Operation@{R\-T\-C\-\_\-\-Get\-Store\-Operation}}
+\index{R\-T\-C\-\_\-\-Get\-Store\-Operation@{R\-T\-C\-\_\-\-Get\-Store\-Operation}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Store\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t R\-T\-C\-\_\-\-Get\-Store\-Operation (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaba0c1361790203e9dca43846f0d9bc15}
+
+
+Returns the R\-T\-C Day Light Saving stored operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em R\-T\-C} & Day Light Saving stored operation.
+\begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Store\-Operation\-\_\-\-Reset
+\item R\-T\-C\-\_\-\-Store\-Operation\-\_\-\-Set 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1631 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gae59c33fb19e36b6abab0bad58072c01a}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Sub\-Second@{R\-T\-C\-\_\-\-Get\-Sub\-Second}}
+\index{R\-T\-C\-\_\-\-Get\-Sub\-Second@{R\-T\-C\-\_\-\-Get\-Sub\-Second}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Sub\-Second}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t R\-T\-C\-\_\-\-Get\-Sub\-Second (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gae59c33fb19e36b6abab0bad58072c01a}
+
+
+Gets the R\-T\-C current Calendar Subseconds value. 
+
+\begin{DoxyNote}{Note}
+This function freeze the Time and Date registers after reading the S\-S\-R register. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em R\-T\-C} & current Calendar Subseconds value. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 901 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga1fcc101339c77aebd25ec3621fd1b61a}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Time@{R\-T\-C\-\_\-\-Get\-Time}}
+\index{R\-T\-C\-\_\-\-Get\-Time@{R\-T\-C\-\_\-\-Get\-Time}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Get\-Time (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Format, }
+\item[{{\bf R\-T\-C\-\_\-\-Time\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Time\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga1fcc101339c77aebd25ec3621fd1b61a}
+
+
+Get the R\-T\-C current Time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Format,\-:} & specifies the format of the returned parameters. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Format\-\_\-\-B\-I\-N\-: Binary data format \item R\-T\-C\-\_\-\-Format\-\_\-\-B\-C\-D\-: B\-C\-D data format \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Time\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def} structure that will contain the returned current time configuration. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 868 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga44c38b0c74e9e960a4263b2905f44796}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Time\-Stamp@{R\-T\-C\-\_\-\-Get\-Time\-Stamp}}
+\index{R\-T\-C\-\_\-\-Get\-Time\-Stamp@{R\-T\-C\-\_\-\-Get\-Time\-Stamp}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Time\-Stamp}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Get\-Time\-Stamp (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Format, }
+\item[{{\bf R\-T\-C\-\_\-\-Time\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Stamp\-Time\-Struct, }
+\item[{{\bf R\-T\-C\-\_\-\-Date\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Stamp\-Date\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga44c38b0c74e9e960a4263b2905f44796}
+
+
+Get the R\-T\-C Time\-Stamp value and masks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Format,\-:} & specifies the format of the output parameters. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Format\-\_\-\-B\-I\-N\-: Binary data format \item R\-T\-C\-\_\-\-Format\-\_\-\-B\-C\-D\-: B\-C\-D data format \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Stamp\-Time\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def} structure that will contains the Time\-Stamp time values. \\
+\hline
+{\em R\-T\-C\-\_\-\-Stamp\-Date\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___date_type_def}{R\-T\-C\-\_\-\-Date\-Type\-Def} structure that will contains the Time\-Stamp date values. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1999 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga2b0ef81f4959a2f9fc6361fbda759b00}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Time\-Stamp\-Sub\-Second@{R\-T\-C\-\_\-\-Get\-Time\-Stamp\-Sub\-Second}}
+\index{R\-T\-C\-\_\-\-Get\-Time\-Stamp\-Sub\-Second@{R\-T\-C\-\_\-\-Get\-Time\-Stamp\-Sub\-Second}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Time\-Stamp\-Sub\-Second}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t R\-T\-C\-\_\-\-Get\-Time\-Stamp\-Sub\-Second (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga2b0ef81f4959a2f9fc6361fbda759b00}
+
+
+Get the R\-T\-C timestamp Subseconds value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em R\-T\-C} & current timestamp Subseconds value. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2043 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gae63aab672e917cc48e298162c3dec049}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Get\-Wake\-Up\-Counter@{R\-T\-C\-\_\-\-Get\-Wake\-Up\-Counter}}
+\index{R\-T\-C\-\_\-\-Get\-Wake\-Up\-Counter@{R\-T\-C\-\_\-\-Get\-Wake\-Up\-Counter}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Get\-Wake\-Up\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t R\-T\-C\-\_\-\-Get\-Wake\-Up\-Counter (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gae63aab672e917cc48e298162c3dec049}
+
+
+Returns the R\-T\-C Wake\-Up timer counter value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & R\-T\-C Wake\-Up Counter value. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1515 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga8eb747bf9698b2482ba6ef4d811de8e0}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Init@{R\-T\-C\-\_\-\-Init}}
+\index{R\-T\-C\-\_\-\-Init@{R\-T\-C\-\_\-\-Init}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-T\-C\-\_\-\-Init\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga8eb747bf9698b2482ba6ef4d811de8e0}
+
+
+Initializes the R\-T\-C registers according to the specified parameters in R\-T\-C\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___init_type_def}{R\-T\-C\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the R\-T\-C peripheral. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The R\-T\-C Prescaler register is write protected and can be written in initialization mode only. 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C registers are initialized
+\item E\-R\-R\-O\-R\-: R\-T\-C registers are not initialized 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 445 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaa8469b33b3a99025baf52f007683b925}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-I\-T\-Config@{R\-T\-C\-\_\-\-I\-T\-Config}}
+\index{R\-T\-C\-\_\-\-I\-T\-Config@{R\-T\-C\-\_\-\-I\-T\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaa8469b33b3a99025baf52f007683b925}
+
+
+Enables or disables the specified R\-T\-C interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-I\-T,\-:} & specifies the R\-T\-C interrupt sources to be enabled or disabled. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-I\-T\-\_\-\-T\-S\-: Time Stamp interrupt mask \item R\-T\-C\-\_\-\-I\-T\-\_\-\-W\-U\-T\-: Wake\-Up Timer interrupt mask \item R\-T\-C\-\_\-\-I\-T\-\_\-\-A\-L\-R\-B\-: Alarm B interrupt mask \item R\-T\-C\-\_\-\-I\-T\-\_\-\-A\-L\-R\-A\-: Alarm A interrupt mask \item R\-T\-C\-\_\-\-I\-T\-\_\-\-T\-A\-M\-P\-: Tamper event interrupt mask \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified R\-T\-C interrupts. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2530 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gae3165ef19ef3bd63789e59130ad8d89b}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Output\-Config@{R\-T\-C\-\_\-\-Output\-Config}}
+\index{R\-T\-C\-\_\-\-Output\-Config@{R\-T\-C\-\_\-\-Output\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Output\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Output\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Output, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Output\-Polarity}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gae3165ef19ef3bd63789e59130ad8d89b}
+
+
+Configures the R\-T\-C output source (A\-F\-O\-\_\-\-A\-L\-A\-R\-M). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Output,\-:} & Specifies which signal will be routed to the R\-T\-C output. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Output\-\_\-\-Disable\-: No output selected \item R\-T\-C\-\_\-\-Output\-\_\-\-Alarm\-A\-: signal of Alarm\-A mapped to output \item R\-T\-C\-\_\-\-Output\-\_\-\-Alarm\-B\-: signal of Alarm\-B mapped to output \item R\-T\-C\-\_\-\-Output\-\_\-\-Wake\-Up\-: signal of Wake\-Up mapped to output \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Output\-Polarity,\-:} & Specifies the polarity of the output signal. This parameter can be one of the following\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Output\-Polarity\-\_\-\-High\-: The output pin is high when the A\-L\-R\-A\-F/\-A\-L\-R\-B\-F/\-W\-U\-T\-F is high (depending on O\-S\-E\-L) \item R\-T\-C\-\_\-\-Output\-Polarity\-\_\-\-Low\-: The output pin is low when the A\-L\-R\-A\-F/\-A\-L\-R\-B\-F/\-W\-U\-T\-F is high (depending on O\-S\-E\-L) \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1670 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga95263b7acf7168d52f66ef9121f14760}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Output\-Type\-Config@{R\-T\-C\-\_\-\-Output\-Type\-Config}}
+\index{R\-T\-C\-\_\-\-Output\-Type\-Config@{R\-T\-C\-\_\-\-Output\-Type\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Output\-Type\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Output\-Type\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Output\-Type}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga95263b7acf7168d52f66ef9121f14760}
+
+
+Configures the R\-T\-C Output Pin mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Output\-Type,\-:} & specifies the R\-T\-C Output (P\-C13) pin mode. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Output\-Type\-\_\-\-Open\-Drain\-: R\-T\-C Output (P\-C13) is configured in Open Drain mode. \item R\-T\-C\-\_\-\-Output\-Type\-\_\-\-Push\-Pull\-: R\-T\-C Output (P\-C13) is configured in Push Pull mode. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2373 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga504489fd91a66e392beb82bb8230b37f}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Read\-Backup\-Register@{R\-T\-C\-\_\-\-Read\-Backup\-Register}}
+\index{R\-T\-C\-\_\-\-Read\-Backup\-Register@{R\-T\-C\-\_\-\-Read\-Backup\-Register}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Read\-Backup\-Register}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t R\-T\-C\-\_\-\-Read\-Backup\-Register (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-B\-K\-P\-\_\-\-D\-R}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga504489fd91a66e392beb82bb8230b37f}
+
+
+Reads data from the specified R\-T\-C Backup data Register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-B\-K\-P\-\_\-\-D\-R,\-:} & R\-T\-C Backup data Register number. This parameter can be\-: R\-T\-C\-\_\-\-B\-K\-P\-\_\-\-D\-Rx where x can be from 0 to 19 to specify the register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2297 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaa60079ec257fb3a277d058ca8305533d}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Ref\-Clock\-Cmd@{R\-T\-C\-\_\-\-Ref\-Clock\-Cmd}}
+\index{R\-T\-C\-\_\-\-Ref\-Clock\-Cmd@{R\-T\-C\-\_\-\-Ref\-Clock\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Ref\-Clock\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Ref\-Clock\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaa60079ec257fb3a277d058ca8305533d}
+
+
+Enables or disables the R\-T\-C reference clock detection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the R\-T\-C reference clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C reference clock detection is enabled
+\item E\-R\-R\-O\-R\-: R\-T\-C reference clock detection is disabled 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 650 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga44e3334f8e882df9b8a59b47f0857395}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Set\-Alarm@{R\-T\-C\-\_\-\-Set\-Alarm}}
+\index{R\-T\-C\-\_\-\-Set\-Alarm@{R\-T\-C\-\_\-\-Set\-Alarm}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Set\-Alarm}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Set\-Alarm (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Format, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Alarm, }
+\item[{{\bf R\-T\-C\-\_\-\-Alarm\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Alarm\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga44e3334f8e882df9b8a59b47f0857395}
+
+
+Set the specified R\-T\-C Alarm. 
+
+\begin{DoxyNote}{Note}
+The Alarm register can only be written when the corresponding Alarm is disabled (Use the R\-T\-C\-\_\-\-Alarm\-Cmd(\-D\-I\-S\-A\-B\-L\-E)). 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Format,\-:} & specifies the format of the returned parameters. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Format\-\_\-\-B\-I\-N\-: Binary data format \item R\-T\-C\-\_\-\-Format\-\_\-\-B\-C\-D\-: B\-C\-D data format \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Alarm,\-:} & specifies the alarm to be configured. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Alarm\-\_\-\-A\-: to select Alarm A \item R\-T\-C\-\_\-\-Alarm\-\_\-\-B\-: to select Alarm B \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Alarm\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___alarm_type_def}{R\-T\-C\-\_\-\-Alarm\-Type\-Def} structure that contains the alarm configuration parameters. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1088 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga69d08538147f3d89c818dcfabf50e362}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Set\-Date@{R\-T\-C\-\_\-\-Set\-Date}}
+\index{R\-T\-C\-\_\-\-Set\-Date@{R\-T\-C\-\_\-\-Set\-Date}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Set\-Date}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Set\-Date (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Format, }
+\item[{{\bf R\-T\-C\-\_\-\-Date\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Date\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga69d08538147f3d89c818dcfabf50e362}
+
+
+Set the R\-T\-C current date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Format,\-:} & specifies the format of the entered parameters. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Format\-\_\-\-B\-I\-N\-: Binary data format \item R\-T\-C\-\_\-\-Format\-\_\-\-B\-C\-D\-: B\-C\-D data format \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Date\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___date_type_def}{R\-T\-C\-\_\-\-Date\-Type\-Def} structure that contains the date configuration information for the R\-T\-C. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C Date register is configured
+\item E\-R\-R\-O\-R\-: R\-T\-C Date register is not configured 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 926 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga9f9df80cfa82f7a4dd9f4d0cf2ffb3a6}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Set\-Time@{R\-T\-C\-\_\-\-Set\-Time}}
+\index{R\-T\-C\-\_\-\-Set\-Time@{R\-T\-C\-\_\-\-Set\-Time}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Set\-Time (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Format, }
+\item[{{\bf R\-T\-C\-\_\-\-Time\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Time\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga9f9df80cfa82f7a4dd9f4d0cf2ffb3a6}
+
+
+Set the R\-T\-C current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Format,\-:} & specifies the format of the entered parameters. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Format\-\_\-\-B\-I\-N\-: Binary data format \item R\-T\-C\-\_\-\-Format\-\_\-\-B\-C\-D\-: B\-C\-D data format \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Time\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def} structure that contains the time configuration information for the R\-T\-C. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C Time register is configured
+\item E\-R\-R\-O\-R\-: R\-T\-C Time register is not configured 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 753 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga1412044eb756a166c1cf341f3d46ed6b}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Set\-Wake\-Up\-Counter@{R\-T\-C\-\_\-\-Set\-Wake\-Up\-Counter}}
+\index{R\-T\-C\-\_\-\-Set\-Wake\-Up\-Counter@{R\-T\-C\-\_\-\-Set\-Wake\-Up\-Counter}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Set\-Wake\-Up\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Set\-Wake\-Up\-Counter (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Wake\-Up\-Counter}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga1412044eb756a166c1cf341f3d46ed6b}
+
+
+Configures the R\-T\-C Wakeup counter. 
+
+\begin{DoxyNote}{Note}
+The R\-T\-C Wake\-Up counter can only be written when the R\-T\-C Wake\-Up is disabled (Use the R\-T\-C\-\_\-\-Wake\-Up\-Cmd(\-D\-I\-S\-A\-B\-L\-E)). 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Wake\-Up\-Counter,\-:} & specifies the Wake\-Up counter. This parameter can be a value from 0x0000 to 0x\-F\-F\-F\-F. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1494 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga91a28dcc7d45340a469dd8b8c029f841}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Smooth\-Calib\-Config@{R\-T\-C\-\_\-\-Smooth\-Calib\-Config}}
+\index{R\-T\-C\-\_\-\-Smooth\-Calib\-Config@{R\-T\-C\-\_\-\-Smooth\-Calib\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Smooth\-Calib\-Config}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Smooth\-Calib\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Smooth\-Calib\-Period, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Smooth\-Calib\-Plus\-Pulses, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Smouth\-Calib\-Minus\-Pulses\-Value}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga91a28dcc7d45340a469dd8b8c029f841}
+
+
+Configures the Smooth Calibration Settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Smooth\-Calib\-Period} & \-: Select the Smooth Calibration Period. This parameter can be can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Smooth\-Calib\-Period\-\_\-32sec \-: The smooth calibration periode is 32s. \item R\-T\-C\-\_\-\-Smooth\-Calib\-Period\-\_\-16sec \-: The smooth calibration periode is 16s. \item R\-T\-C\-\_\-\-Smooth\-Calib\-Period\-\_\-8sec \-: The smooth calibartion periode is 8s. \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Smooth\-Calib\-Plus\-Pulses} & \-: Select to Set or reset the C\-A\-L\-P bit. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Smooth\-Calib\-Plus\-Pulses\-\_\-\-Set \-: Add one R\-T\-C\-C\-L\-K puls every 2$\ast$$\ast$11 pulses. \item R\-T\-C\-\_\-\-Smooth\-Calib\-Plus\-Pulses\-\_\-\-Reset\-: No R\-T\-C\-C\-L\-K pulses are added. \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Smouth\-Calib\-Minus\-Pulses\-Value,\-:} & Select the value of C\-A\-L\-M\mbox{[}8\-:0\mbox{]} bits. This parameter can be one any value from 0 to 0x000001\-F\-F. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C Calib registers are configured
+\item E\-R\-R\-O\-R\-: R\-T\-C Calib registers are not configured 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1879 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gab466f3348de3236976e9aec7d6025dff}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Struct\-Init@{R\-T\-C\-\_\-\-Struct\-Init}}
+\index{R\-T\-C\-\_\-\-Struct\-Init@{R\-T\-C\-\_\-\-Struct\-Init}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-T\-C\-\_\-\-Init\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gab466f3348de3236976e9aec7d6025dff}
+
+
+Fills each R\-T\-C\-\_\-\-Init\-Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___init_type_def}{R\-T\-C\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 491 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaad434ed2a268f05662f0613e8e9717f3}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Synchro\-Shift\-Config@{R\-T\-C\-\_\-\-Synchro\-Shift\-Config}}
+\index{R\-T\-C\-\_\-\-Synchro\-Shift\-Config@{R\-T\-C\-\_\-\-Synchro\-Shift\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Synchro\-Shift\-Config}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Synchro\-Shift\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Shift\-Add1\-S, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Shift\-Sub\-F\-S}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaad434ed2a268f05662f0613e8e9717f3}
+
+
+Configures the Synchronization Shift Control Settings. 
+
+\begin{DoxyNote}{Note}
+When R\-E\-F\-C\-K\-O\-N is set, firmware must not write to Shift control register 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Shift\-Add1\-S} & \-: Select to add or not 1 second to the time Calendar. This parameter can be one of the following values \-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Shift\-Add1\-S\-\_\-\-Set \-: Add one second to the clock calendar. \item R\-T\-C\-\_\-\-Shift\-Add1\-S\-\_\-\-Reset\-: No effect. \end{DoxyItemize}
+\\
+\hline
+{\em R\-T\-C\-\_\-\-Shift\-Sub\-F\-S,\-:} & Select the number of Second Fractions to Substitute. This parameter can be one any value from 0 to 0x7\-F\-F\-F. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C Shift registers are configured
+\item E\-R\-R\-O\-R\-: R\-T\-C Shift registers are not configured 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2411 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaf85cc696d624da0de9fbe99779402833}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Tamper\-Cmd@{R\-T\-C\-\_\-\-Tamper\-Cmd}}
+\index{R\-T\-C\-\_\-\-Tamper\-Cmd@{R\-T\-C\-\_\-\-Tamper\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Tamper\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Tamper\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Tamper, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaf85cc696d624da0de9fbe99779402833}
+
+
+Enables or Disables the Tamper detection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Tamper,\-:} & Selected tamper pin. This parameter can be R\-T\-C\-\_\-\-Tamper\-\_\-1. \\
+\hline
+{\em New\-State,\-:} & new state of the tamper pin. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2104 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga1e87b9ae757ad12d7585e4fbcbf2c4b8}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Tamper\-Filter\-Config@{R\-T\-C\-\_\-\-Tamper\-Filter\-Config}}
+\index{R\-T\-C\-\_\-\-Tamper\-Filter\-Config@{R\-T\-C\-\_\-\-Tamper\-Filter\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Tamper\-Filter\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Tamper\-Filter\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Tamper\-Filter}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga1e87b9ae757ad12d7585e4fbcbf2c4b8}
+
+
+Configures the Tampers Filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Tamper\-Filter,\-:} & Specifies the tampers filter. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Tamper\-Filter\-\_\-\-Disable\-: Tamper filter is disabled. \item R\-T\-C\-\_\-\-Tamper\-Filter\-\_\-2\-Sample\-: Tamper is activated after 2 consecutive samples at the active level \item R\-T\-C\-\_\-\-Tamper\-Filter\-\_\-4\-Sample\-: Tamper is activated after 4 consecutive samples at the active level \item R\-T\-C\-\_\-\-Tamper\-Filter\-\_\-8\-Sample\-: Tamper is activated after 8 consecutive samples at the active level \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2135 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga46777272ae77eb9dc38610481e12b0ed}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Tamper\-Pin\-Selection@{R\-T\-C\-\_\-\-Tamper\-Pin\-Selection}}
+\index{R\-T\-C\-\_\-\-Tamper\-Pin\-Selection@{R\-T\-C\-\_\-\-Tamper\-Pin\-Selection}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Tamper\-Pin\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Tamper\-Pin\-Selection (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Tamper\-Pin}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga46777272ae77eb9dc38610481e12b0ed}
+
+
+Selects the R\-T\-C Tamper Pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Tamper\-Pin,\-:} & specifies the R\-T\-C Tamper Pin. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Tamper\-Pin\-\_\-\-P\-C13\-: P\-C13 is selected as R\-T\-C Tamper Pin. \item R\-T\-C\-\_\-\-Tamper\-Pin\-\_\-\-P\-I8\-: P\-I8 is selected as R\-T\-C Tamper Pin. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2337 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gafc176a013076a651862dc6a957286025}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Tamper\-Pins\-Precharge\-Duration@{R\-T\-C\-\_\-\-Tamper\-Pins\-Precharge\-Duration}}
+\index{R\-T\-C\-\_\-\-Tamper\-Pins\-Precharge\-Duration@{R\-T\-C\-\_\-\-Tamper\-Pins\-Precharge\-Duration}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Tamper\-Pins\-Precharge\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Tamper\-Pins\-Precharge\-Duration (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Tamper\-Precharge\-Duration}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gafc176a013076a651862dc6a957286025}
+
+
+Configures the Tampers Pins input Precharge Duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Tamper\-Precharge\-Duration,\-:} & Specifies the Tampers Pins input Precharge Duration. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Tamper\-Precharge\-Duration\-\_\-1\-R\-T\-C\-C\-L\-K\-: Tamper pins are pre-\/charged before sampling during 1 R\-T\-C\-C\-L\-K cycle \item R\-T\-C\-\_\-\-Tamper\-Precharge\-Duration\-\_\-2\-R\-T\-C\-C\-L\-K\-: Tamper pins are pre-\/charged before sampling during 2 R\-T\-C\-C\-L\-K cycle \item R\-T\-C\-\_\-\-Tamper\-Precharge\-Duration\-\_\-4\-R\-T\-C\-C\-L\-K\-: Tamper pins are pre-\/charged before sampling during 4 R\-T\-C\-C\-L\-K cycle \item R\-T\-C\-\_\-\-Tamper\-Precharge\-Duration\-\_\-8\-R\-T\-C\-C\-L\-K\-: Tamper pins are pre-\/charged before sampling during 8 R\-T\-C\-C\-L\-K cycle \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2192 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga981b9c654e521282a2020a81118c8c3c}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Tamper\-Pull\-Up\-Cmd@{R\-T\-C\-\_\-\-Tamper\-Pull\-Up\-Cmd}}
+\index{R\-T\-C\-\_\-\-Tamper\-Pull\-Up\-Cmd@{R\-T\-C\-\_\-\-Tamper\-Pull\-Up\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Tamper\-Pull\-Up\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Tamper\-Pull\-Up\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga981b9c654e521282a2020a81118c8c3c}
+
+
+Enables or Disables the Precharge of Tamper pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of tamper pull up. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2235 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gadc7f33a31df80b5deac313fc8af8d7f7}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-Config@{R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-Config}}
+\index{R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-Config@{R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gadc7f33a31df80b5deac313fc8af8d7f7}
+
+
+Configures the Tampers Sampling Frequency. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq,\-:} & Specifies the tampers Sampling Frequency. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div32768\-: Each of the tamper inputs are sampled with a frequency = R\-T\-C\-C\-L\-K / 32768 \item R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div16384\-: Each of the tamper inputs are sampled with a frequency = R\-T\-C\-C\-L\-K / 16384 \item R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div8192\-: Each of the tamper inputs are sampled with a frequency = R\-T\-C\-C\-L\-K / 8192 \item R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div4096\-: Each of the tamper inputs are sampled with a frequency = R\-T\-C\-C\-L\-K / 4096 \item R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div2048\-: Each of the tamper inputs are sampled with a frequency = R\-T\-C\-C\-L\-K / 2048 \item R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div1024\-: Each of the tamper inputs are sampled with a frequency = R\-T\-C\-C\-L\-K / 1024 \item R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div512\-: Each of the tamper inputs are sampled with a frequency = R\-T\-C\-C\-L\-K / 512 \item R\-T\-C\-\_\-\-Tamper\-Sampling\-Freq\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div256\-: Each of the tamper inputs are sampled with a frequency = R\-T\-C\-C\-L\-K / 256 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2169 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gad547d636cfc4fd8d4d673325571e0ffb}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Tamper\-Trigger\-Config@{R\-T\-C\-\_\-\-Tamper\-Trigger\-Config}}
+\index{R\-T\-C\-\_\-\-Tamper\-Trigger\-Config@{R\-T\-C\-\_\-\-Tamper\-Trigger\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Tamper\-Trigger\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Tamper\-Trigger\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Tamper, }
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Tamper\-Trigger}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gad547d636cfc4fd8d4d673325571e0ffb}
+
+
+Configures the select Tamper pin edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Tamper,\-:} & Selected tamper pin. This parameter can be R\-T\-C\-\_\-\-Tamper\-\_\-1. \\
+\hline
+{\em R\-T\-C\-\_\-\-Tamper\-Trigger,\-:} & Specifies the trigger on the tamper pin that stimulates tamper event. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Tamper\-Trigger\-\_\-\-Rising\-Edge\-: Rising Edge of the tamper pin causes tamper event. \item R\-T\-C\-\_\-\-Tamper\-Trigger\-\_\-\-Falling\-Edge\-: Falling Edge of the tamper pin causes tamper event. \item R\-T\-C\-\_\-\-Tamper\-Trigger\-\_\-\-Low\-Level\-: Low Level of the tamper pin causes tamper event. \item R\-T\-C\-\_\-\-Tamper\-Trigger\-\_\-\-High\-Level\-: High Level of the tamper pin causes tamper event. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2078 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga7d80fa4a2c87654598d8207154ac8e96}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Time\-Stamp\-Cmd@{R\-T\-C\-\_\-\-Time\-Stamp\-Cmd}}
+\index{R\-T\-C\-\_\-\-Time\-Stamp\-Cmd@{R\-T\-C\-\_\-\-Time\-Stamp\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Time\-Stamp\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Time\-Stamp\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Time\-Stamp\-Edge, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga7d80fa4a2c87654598d8207154ac8e96}
+
+
+Enables or Disables the R\-T\-C Time\-Stamp functionality with the specified time stamp pin stimulating edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Time\-Stamp\-Edge,\-:} & Specifies the pin edge on which the Time\-Stamp is activated. This parameter can be one of the following\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Time\-Stamp\-Edge\-\_\-\-Rising\-: the Time stamp event occurs on the rising edge of the related pin. \item R\-T\-C\-\_\-\-Time\-Stamp\-Edge\-\_\-\-Falling\-: the Time stamp event occurs on the falling edge of the related pin. \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the Time\-Stamp. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1955 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga29c82fceefd21a78dc55ccc5bcc1ed59}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Time\-Stamp\-On\-Tamper\-Detection\-Cmd@{R\-T\-C\-\_\-\-Time\-Stamp\-On\-Tamper\-Detection\-Cmd}}
+\index{R\-T\-C\-\_\-\-Time\-Stamp\-On\-Tamper\-Detection\-Cmd@{R\-T\-C\-\_\-\-Time\-Stamp\-On\-Tamper\-Detection\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Time\-Stamp\-On\-Tamper\-Detection\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Time\-Stamp\-On\-Tamper\-Detection\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga29c82fceefd21a78dc55ccc5bcc1ed59}
+
+
+Enables or Disables the Time\-Stamp on Tamper Detection Event. 
+
+\begin{DoxyNote}{Note}
+The timestamp is valid even the T\-S\-E bit in tamper control register is reset. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the timestamp on tamper event. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2212 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaedf9830bdaaaa50ea5d45d2ff7bb43a9}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Time\-Stamp\-Pin\-Selection@{R\-T\-C\-\_\-\-Time\-Stamp\-Pin\-Selection}}
+\index{R\-T\-C\-\_\-\-Time\-Stamp\-Pin\-Selection@{R\-T\-C\-\_\-\-Time\-Stamp\-Pin\-Selection}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Time\-Stamp\-Pin\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Time\-Stamp\-Pin\-Selection (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Time\-Stamp\-Pin}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaedf9830bdaaaa50ea5d45d2ff7bb43a9}
+
+
+Selects the R\-T\-C Time\-Stamp Pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Time\-Stamp\-Pin,\-:} & specifies the R\-T\-C Time\-Stamp Pin. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Time\-Stamp\-Pin\-\_\-\-P\-C13\-: P\-C13 is selected as R\-T\-C Time\-Stamp Pin. \item R\-T\-C\-\_\-\-Time\-Stamp\-Pin\-\_\-\-P\-I8\-: P\-I8 is selected as R\-T\-C Time\-Stamp Pin. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2354 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga0404db6e0c70e5a6bbbe4fa58a577365}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Time\-Struct\-Init@{R\-T\-C\-\_\-\-Time\-Struct\-Init}}
+\index{R\-T\-C\-\_\-\-Time\-Struct\-Init@{R\-T\-C\-\_\-\-Time\-Struct\-Init}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Time\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Time\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-T\-C\-\_\-\-Time\-Type\-Def} $\ast$}]{R\-T\-C\-\_\-\-Time\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga0404db6e0c70e5a6bbbe4fa58a577365}
+
+
+Fills each R\-T\-C\-\_\-\-Time\-Struct member with its default value (Time = 00h\-:00min\-:00sec). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Time\-Struct,\-:} & pointer to a \hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 849 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga2938febeef6baf0d91cc066ca5caf095}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Wait\-For\-Synchro@{R\-T\-C\-\_\-\-Wait\-For\-Synchro}}
+\index{R\-T\-C\-\_\-\-Wait\-For\-Synchro@{R\-T\-C\-\_\-\-Wait\-For\-Synchro}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Wait\-For\-Synchro}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Wait\-For\-Synchro (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga2938febeef6baf0d91cc066ca5caf095}
+
+
+Waits until the R\-T\-C Time and Date registers (R\-T\-C\-\_\-\-T\-R and R\-T\-C\-\_\-\-D\-R) are synchronized with R\-T\-C A\-P\-B clock. 
+
+\begin{DoxyNote}{Note}
+The R\-T\-C Resynchronization mode is write protected, use the R\-T\-C\-\_\-\-Write\-Protection\-Cmd(\-D\-I\-S\-A\-B\-L\-E) before calling this function. 
+
+To read the calendar through the shadow registers after Calendar initialization, calendar update or after wakeup from low power modes the software must first clear the R\-S\-F flag. The software must then wait until it is set again before reading the calendar, which means that the calendar registers have been correctly copied into the R\-T\-C\-\_\-\-T\-R and R\-T\-C\-\_\-\-D\-R shadow registers. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: R\-T\-C registers are synchronised
+\item E\-R\-R\-O\-R\-: R\-T\-C registers are not synchronised 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 607 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga2557b02b318211112731a91a190c4b26}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Wake\-Up\-Clock\-Config@{R\-T\-C\-\_\-\-Wake\-Up\-Clock\-Config}}
+\index{R\-T\-C\-\_\-\-Wake\-Up\-Clock\-Config@{R\-T\-C\-\_\-\-Wake\-Up\-Clock\-Config}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Wake\-Up\-Clock\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Wake\-Up\-Clock\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-Wake\-Up\-Clock}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga2557b02b318211112731a91a190c4b26}
+
+
+Configures the R\-T\-C Wakeup clock source. 
+
+\begin{DoxyNote}{Note}
+The Wake\-Up Clock source can only be changed when the R\-T\-C Wake\-Up is disabled (Use the R\-T\-C\-\_\-\-Wake\-Up\-Cmd(\-D\-I\-S\-A\-B\-L\-E)). 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-Wake\-Up\-Clock,\-:} & Wakeup Clock source. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-T\-C\-\_\-\-Wake\-Up\-Clock\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div16\-: R\-T\-C Wakeup Counter Clock = R\-T\-C\-C\-L\-K/16 \item R\-T\-C\-\_\-\-Wake\-Up\-Clock\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div8\-: R\-T\-C Wakeup Counter Clock = R\-T\-C\-C\-L\-K/8 \item R\-T\-C\-\_\-\-Wake\-Up\-Clock\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div4\-: R\-T\-C Wakeup Counter Clock = R\-T\-C\-C\-L\-K/4 \item R\-T\-C\-\_\-\-Wake\-Up\-Clock\-\_\-\-R\-T\-C\-C\-L\-K\-\_\-\-Div2\-: R\-T\-C Wakeup Counter Clock = R\-T\-C\-C\-L\-K/2 \item R\-T\-C\-\_\-\-Wake\-Up\-Clock\-\_\-\-C\-K\-\_\-\-S\-P\-R\-E\-\_\-16bits\-: R\-T\-C Wakeup Counter Clock = C\-K\-\_\-\-S\-P\-R\-E \item R\-T\-C\-\_\-\-Wake\-Up\-Clock\-\_\-\-C\-K\-\_\-\-S\-P\-R\-E\-\_\-17bits\-: R\-T\-C Wakeup Counter Clock = C\-K\-\_\-\-S\-P\-R\-E \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1467 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga2ce05293303e0d7879c6d755c5355b4c}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Wake\-Up\-Cmd@{R\-T\-C\-\_\-\-Wake\-Up\-Cmd}}
+\index{R\-T\-C\-\_\-\-Wake\-Up\-Cmd@{R\-T\-C\-\_\-\-Wake\-Up\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Wake\-Up\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-T\-C\-\_\-\-Wake\-Up\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga2ce05293303e0d7879c6d755c5355b4c}
+
+
+Enables or Disables the R\-T\-C Wake\-Up timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the Wake\-Up timer. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1527 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_gaa1241e2b47d04acc116b50d7b031c3aa}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Write\-Backup\-Register@{R\-T\-C\-\_\-\-Write\-Backup\-Register}}
+\index{R\-T\-C\-\_\-\-Write\-Backup\-Register@{R\-T\-C\-\_\-\-Write\-Backup\-Register}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Write\-Backup\-Register}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Write\-Backup\-Register (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-T\-C\-\_\-\-B\-K\-P\-\_\-\-D\-R, }
+\item[{uint32\-\_\-t}]{Data}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_gaa1241e2b47d04acc116b50d7b031c3aa}
+
+
+Writes a data in a specified R\-T\-C Backup data register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-T\-C\-\_\-\-B\-K\-P\-\_\-\-D\-R,\-:} & R\-T\-C Backup data Register number. This parameter can be\-: R\-T\-C\-\_\-\-B\-K\-P\-\_\-\-D\-Rx where x can be from 0 to 19 to specify the register. \\
+\hline
+{\em Data,\-:} & Data to be written in the specified R\-T\-C Backup data register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 2276 of file stm32f4xx\-\_\-rtc.\-c.
+
+\hypertarget{group___r_t_c_ga9d4bdfd3ae6957630d15d2497573b7c7}{\index{R\-T\-C@{R\-T\-C}!R\-T\-C\-\_\-\-Write\-Protection\-Cmd@{R\-T\-C\-\_\-\-Write\-Protection\-Cmd}}
+\index{R\-T\-C\-\_\-\-Write\-Protection\-Cmd@{R\-T\-C\-\_\-\-Write\-Protection\-Cmd}!RTC@{R\-T\-C}}
+\subsubsection[{R\-T\-C\-\_\-\-Write\-Protection\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-Write\-Protection\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c_ga9d4bdfd3ae6957630d15d2497573b7c7}
+
+
+Enables or disables the R\-T\-C registers write protection. 
+
+\begin{DoxyNote}{Note}
+All the R\-T\-C registers are write protected except for R\-T\-C\-\_\-\-I\-S\-R\mbox{[}13\-:8\mbox{]}, R\-T\-C\-\_\-\-T\-A\-F\-C\-R and R\-T\-C\-\_\-\-B\-K\-Px\-R. 
+
+Writing a wrong key reactivates the write protection. 
+
+The protection mechanism is not affected by system reset. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the write protection. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 513 of file stm32f4xx\-\_\-rtc.\-c.
+

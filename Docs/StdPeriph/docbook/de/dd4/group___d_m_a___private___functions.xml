@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dd4/group___d_m_a___private___functions">
+    <title>DMA_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d7/d4e/group___d_m_a___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="de/da4/group___d_m_a___group2">Data Counter functions</link></para></listitem>
+            <listitem><para><link linkend="de/d7c/group___d_m_a___group3">Double Buffer mode functions</link></para></listitem>
+            <listitem><para><link linkend="db/d44/group___d_m_a___group4">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d7/d4e/group___d_m_a___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/da4/group___d_m_a___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d7c/group___d_m_a___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d44/group___d_m_a___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

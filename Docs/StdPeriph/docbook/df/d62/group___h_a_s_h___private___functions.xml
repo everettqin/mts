@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d62/group___h_a_s_h___private___functions">
+    <title>HASH_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d3/d75/group___h_a_s_h___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="da/d9f/group___h_a_s_h___group2">Message Digest generation functions</link></para></listitem>
+            <listitem><para><link linkend="dd/d3c/group___h_a_s_h___group3">Context swapping functions</link></para></listitem>
+            <listitem><para><link linkend="d5/d83/group___h_a_s_h___group4">HASH&apos;s DMA interface Configuration function</link></para></listitem>
+            <listitem><para><link linkend="de/d4f/group___h_a_s_h___group5">Interrupts and flags management functions</link></para></listitem>
+            <listitem><para><link linkend="da/d16/group___h_a_s_h___group7">High Level MD5 functions</link></para></listitem>
+            <listitem><para><link linkend="d8/d55/group___h_a_s_h___group6">High Level SHA1 functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d3/d75/group___h_a_s_h___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d9f/group___h_a_s_h___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d3c/group___h_a_s_h___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d83/group___h_a_s_h___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d4f/group___h_a_s_h___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d16/group___h_a_s_h___group7.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d55/group___h_a_s_h___group6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

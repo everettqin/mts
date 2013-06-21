@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/de2/struct_d_c_m_i___codes_init_type_def">
+<title>DCMI_CodesInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d66/stm32f4xx__dcmi_8h">&lt;stm32f4xx_dcmi.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t DCMI_FrameStartCode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t DCMI_LineStartCode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t DCMI_LineEndCode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t DCMI_FrameEndCode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DCMI Embedded Synchronisation CODE Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint8_t DCMI_FrameStartCode</title>                
+<para>Specifies the code of the frame start delimiter. </para>
+
+                <para>Definition at line 93 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t DCMI_LineStartCode</title>                
+<para>Specifies the code of the line start delimiter. </para>
+
+                <para>Definition at line 94 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t DCMI_LineEndCode</title>                
+<para>Specifies the code of the line end delimiter. </para>
+
+                <para>Definition at line 95 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t DCMI_FrameEndCode</title>                
+<para>Specifies the code of the frame end delimiter. </para>
+
+                <para>Definition at line 96 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

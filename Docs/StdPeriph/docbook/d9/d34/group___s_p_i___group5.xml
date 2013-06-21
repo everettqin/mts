@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d34/group___s_p_i___group5">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                         Interrupts and flags management functions
+ ===============================================================================  
+
+  This section provides a set of functions allowing to configure the SPI Interrupts 
+  sources and check or clear the flags or pending bits status.
+  The user should identify which mode will be used in his application to manage 
+  the communication: Polling mode, Interrupt mode or DMA mode. 
+    
+  Polling Mode
+  =============
+  In Polling Mode, the SPI/I2S communication can be managed by 9 flags:
+     1. SPI_I2S_FLAG_TXE : to indicate the status of the transmit buffer register
+     2. SPI_I2S_FLAG_RXNE : to indicate the status of the receive buffer register
+     3. SPI_I2S_FLAG_BSY : to indicate the state of the communication layer of the SPI.
+     4. SPI_FLAG_CRCERR : to indicate if a CRC Calculation error occur              
+     5. SPI_FLAG_MODF : to indicate if a Mode Fault error occur
+     6. SPI_I2S_FLAG_OVR : to indicate if an Overrun error occur
+     7. I2S_FLAG_TIFRFE: to indicate a Frame Format error occurs.
+     8. I2S_FLAG_UDR: to indicate an Underrun error occurs.
+     9. I2S_FLAG_CHSIDE: to indicate Channel Side.
+
+@note Do not use the BSY flag to handle each data transmission or reception.  It is
+      better to use the TXE and RXNE flags instead.
+
+  In this Mode it is advised to use the following functions:
+     - FlagStatus SPI_I2S_GetFlagStatus(SPI_TypeDef* SPIx, uint16_t SPI_I2S_FLAG);
+     - void SPI_I2S_ClearFlag(SPI_TypeDef* SPIx, uint16_t SPI_I2S_FLAG);
+
+  Interrupt Mode
+  ===============
+  In Interrupt Mode, the SPI communication can be managed by 3 interrupt sources
+  and 7 pending bits: 
+  Pending Bits:
+  ------------- 
+     1. SPI_I2S_IT_TXE : to indicate the status of the transmit buffer register
+     2. SPI_I2S_IT_RXNE : to indicate the status of the receive buffer register
+     3. SPI_IT_CRCERR : to indicate if a CRC Calculation error occur (available in SPI mode only)            
+     4. SPI_IT_MODF : to indicate if a Mode Fault error occur (available in SPI mode only)
+     5. SPI_I2S_IT_OVR : to indicate if an Overrun error occur
+     6. I2S_IT_UDR : to indicate an Underrun Error occurs (available in I2S mode only).
+     7. I2S_FLAG_TIFRFE : to indicate a Frame Format error occurs (available in TI mode only).
+
+  Interrupt Source:
+  -----------------
+     1. SPI_I2S_IT_TXE: specifies the interrupt source for the Tx buffer empty 
+                        interrupt.  
+     2. SPI_I2S_IT_RXNE : specifies the interrupt source for the Rx buffer not 
+                          empty interrupt.
+     3. SPI_I2S_IT_ERR : specifies the interrupt source for the errors interrupt.
+
+  In this Mode it is advised to use the following functions:
+     - void SPI_I2S_ITConfig(SPI_TypeDef* SPIx, uint8_t SPI_I2S_IT, FunctionalState NewState);
+     - ITStatus SPI_I2S_GetITStatus(SPI_TypeDef* SPIx, uint8_t SPI_I2S_IT);
+     - void SPI_I2S_ClearITPendingBit(SPI_TypeDef* SPIx, uint8_t SPI_I2S_IT);
+
+  DMA Mode
+  ========
+  In DMA Mode, the SPI communication can be managed by 2 DMA Channel requests:
+     1. SPI_I2S_DMAReq_Tx: specifies the Tx buffer DMA transfer request
+     2. SPI_I2S_DMAReq_Rx: specifies the Rx buffer DMA transfer request
+
+  In this Mode it is advised to use the following function:
+    - void SPI_I2S_DMACmd(SPI_TypeDef* SPIx, uint16_t SPI_I2S_DMAReq, FunctionalState NewState);</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d34/group___s_p_i___group5_1ga17f4ef132e8ddbf94cb6b1688d181e41">SPI_I2S_ITConfig</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_I2S_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d9/d34/group___s_p_i___group5_1ga1bd785d129e09c5734a876c8f2767204">SPI_I2S_GetFlagStatus</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_I2S_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d34/group___s_p_i___group5_1ga3aabd9e2437e213056c0ed9bdfa1a724">SPI_I2S_ClearFlag</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_I2S_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d9/d34/group___s_p_i___group5_1ga72decbc1cd79f8fad92a2204beca6bc5">SPI_I2S_GetITStatus</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_I2S_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d34/group___s_p_i___group5_1ga35a524a49ff3d058137060f751e8749f">SPI_I2S_ClearITPendingBit</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_I2S_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d9/d34/group___s_p_i___group5_1ga17f4ef132e8ddbf94cb6b1688d181e41">
+                <title>void SPI_I2S_ITConfig (SPI_TypeDef *SPIx, uint8_t SPI_I2S_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified SPI/I2S interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>To select the SPIx/I2Sx peripheral, where x can be: 1, 2 or 3 in SPI mode or 2 or 3 in I2S mode or I2Sxext for I2S full duplex mode. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_I2S_IT, :</entry>
+                                <entry>
+<para>specifies the SPI interrupt source to be enabled or disabled. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SPI_I2S_IT_TXE: Tx buffer empty interrupt mask </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_IT_RXNE: Rx buffer not empty interrupt mask </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_IT_ERR: Error interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified SPI interrupt. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d34/group___s_p_i___group5_1ga1bd785d129e09c5734a876c8f2767204">
+                <title>FlagStatus SPI_I2S_GetFlagStatus (SPI_TypeDef *SPIx, uint16_t SPI_I2S_FLAG)</title> <emphasis>Checks whether the specified SPIx/I2Sx flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>To select the SPIx/I2Sx peripheral, where x can be: 1, 2 or 3 in SPI mode or 2 or 3 in I2S mode or I2Sxext for I2S full duplex mode. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_I2S_FLAG, :</entry>
+                                <entry>
+<para>specifies the SPI flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SPI_I2S_FLAG_TXE: Transmit buffer empty flag. </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_FLAG_RXNE: Receive buffer not empty flag. </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_FLAG_BSY: Busy flag. </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_FLAG_OVR: Overrun flag. </para>
+</listitem>
+<listitem>
+<para>SPI_FLAG_MODF: Mode Fault flag. </para>
+</listitem>
+<listitem>
+<para>SPI_FLAG_CRCERR: CRC Error flag. </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_FLAG_TIFRFE: Format Error. </para>
+</listitem>
+<listitem>
+<para>I2S_FLAG_UDR: Underrun Error flag. </para>
+</listitem>
+<listitem>
+<para>I2S_FLAG_CHSIDE: Channel Side flag. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of SPI_I2S_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d34/group___s_p_i___group5_1ga3aabd9e2437e213056c0ed9bdfa1a724">
+                <title>void SPI_I2S_ClearFlag (SPI_TypeDef *SPIx, uint16_t SPI_I2S_FLAG)</title> <emphasis>Clears the SPIx CRC Error (CRCERR) flag.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>To select the SPIx/I2Sx peripheral, where x can be: 1, 2 or 3 in SPI mode or 2 or 3 in I2S mode or I2Sxext for I2S full duplex mode. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_I2S_FLAG, :</entry>
+                                <entry>
+<para>specifies the SPI flag to clear. This function clears only CRCERR flag. <itemizedlist>
+<listitem>
+<para>SPI_FLAG_CRCERR: CRC Error flag.</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>OVR (OverRun error) flag is cleared by software sequence: a read operation to SPI_DR register (<link linkend="dd/d3c/group___s_p_i_1gab77de76547f3bff403236b263b070a30">SPI_I2S_ReceiveData()</link>) followed by a read operation to SPI_SR register (<link linkend="dd/d3c/group___s_p_i_1ga1bd785d129e09c5734a876c8f2767204">SPI_I2S_GetFlagStatus()</link>). </para>
+<simplesect/>
+<para>UDR (UnderRun error) flag is cleared by a read operation to SPI_SR register (<link linkend="dd/d3c/group___s_p_i_1ga1bd785d129e09c5734a876c8f2767204">SPI_I2S_GetFlagStatus()</link>). </para>
+<simplesect/>
+<para>MODF (Mode Fault) flag is cleared by software sequence: a read/write operation to SPI_SR register (<link linkend="dd/d3c/group___s_p_i_1ga1bd785d129e09c5734a876c8f2767204">SPI_I2S_GetFlagStatus()</link>) followed by a write operation to SPI_CR1 register (<link linkend="dd/d3c/group___s_p_i_1gaa31357879a65ee1ed7223f3b9114dcf3">SPI_Cmd()</link> to enable the SPI).</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d34/group___s_p_i___group5_1ga72decbc1cd79f8fad92a2204beca6bc5">
+                <title>ITStatus SPI_I2S_GetITStatus (SPI_TypeDef *SPIx, uint8_t SPI_I2S_IT)</title> <emphasis>Checks whether the specified SPIx/I2Sx interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>To select the SPIx/I2Sx peripheral, where x can be: 1, 2 or 3 in SPI mode or 2 or 3 in I2S mode or I2Sxext for I2S full duplex mode. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_I2S_IT, :</entry>
+                                <entry>
+<para>specifies the SPI interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SPI_I2S_IT_TXE: Transmit buffer empty interrupt. </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_IT_RXNE: Receive buffer not empty interrupt. </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_IT_OVR: Overrun interrupt. </para>
+</listitem>
+<listitem>
+<para>SPI_IT_MODF: Mode Fault interrupt. </para>
+</listitem>
+<listitem>
+<para>SPI_IT_CRCERR: CRC Error interrupt. </para>
+</listitem>
+<listitem>
+<para>I2S_IT_UDR: Underrun interrupt. </para>
+</listitem>
+<listitem>
+<para>SPI_I2S_IT_TIFRFE: Format Error interrupt. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of SPI_I2S_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d34/group___s_p_i___group5_1ga35a524a49ff3d058137060f751e8749f">
+                <title>void SPI_I2S_ClearITPendingBit (SPI_TypeDef *SPIx, uint8_t SPI_I2S_IT)</title> <emphasis>Clears the SPIx CRC Error (CRCERR) interrupt pending bit.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>To select the SPIx/I2Sx peripheral, where x can be: 1, 2 or 3 in SPI mode or 2 or 3 in I2S mode or I2Sxext for I2S full duplex mode. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_I2S_IT, :</entry>
+                                <entry>
+<para>specifies the SPI interrupt pending bit to clear. This function clears only CRCERR interrupt pending bit. <itemizedlist>
+<listitem>
+<para>SPI_IT_CRCERR: CRC Error interrupt.</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>OVR (OverRun Error) interrupt pending bit is cleared by software sequence: a read operation to SPI_DR register (<link linkend="dd/d3c/group___s_p_i_1gab77de76547f3bff403236b263b070a30">SPI_I2S_ReceiveData()</link>) followed by a read operation to SPI_SR register (<link linkend="dd/d3c/group___s_p_i_1ga72decbc1cd79f8fad92a2204beca6bc5">SPI_I2S_GetITStatus()</link>). </para>
+<simplesect/>
+<para>UDR (UnderRun Error) interrupt pending bit is cleared by a read operation to SPI_SR register (<link linkend="dd/d3c/group___s_p_i_1ga72decbc1cd79f8fad92a2204beca6bc5">SPI_I2S_GetITStatus()</link>). </para>
+<simplesect/>
+<para>MODF (Mode Fault) interrupt pending bit is cleared by software sequence: a read/write operation to SPI_SR register (<link linkend="dd/d3c/group___s_p_i_1ga72decbc1cd79f8fad92a2204beca6bc5">SPI_I2S_GetITStatus()</link>) followed by a write operation to SPI_CR1 register (<link linkend="dd/d3c/group___s_p_i_1gaa31357879a65ee1ed7223f3b9114dcf3">SPI_Cmd()</link> to enable the SPI). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

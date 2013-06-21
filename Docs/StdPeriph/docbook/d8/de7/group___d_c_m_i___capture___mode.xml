@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/de7/group___d_c_m_i___capture___mode">
+    <title>DCMI_Capture_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/de7/group___d_c_m_i___capture___mode_1gafc4b1ac09dcbc966fd0626d388b3e34b">DCMI_CaptureMode_Continuous</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/de7/group___d_c_m_i___capture___mode_1ga2be97e0095cc139fa20fe07a74c81fd0">DCMI_CaptureMode_SnapShot</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/de7/group___d_c_m_i___capture___mode_1ga138eda82f23ad7c714ed6408edfc8ae5">IS_DCMI_CAPTURE_MODE</link> (((MODE) == <link linkend="d8/de7/group___d_c_m_i___capture___mode_1gafc4b1ac09dcbc966fd0626d388b3e34b">DCMI_CaptureMode_Continuous</link>) || \
+                                   ((MODE) == <link linkend="d8/de7/group___d_c_m_i___capture___mode_1ga2be97e0095cc139fa20fe07a74c81fd0">DCMI_CaptureMode_SnapShot</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d8/de7/group___d_c_m_i___capture___mode_1gafc4b1ac09dcbc966fd0626d388b3e34b">
+                <title>#define DCMI_CaptureMode_Continuous</title>                
+<para>The received data are transferred continuously into the destination memory through the DMA </para>
+
+                <para>Definition at line 109 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/de7/group___d_c_m_i___capture___mode_1ga2be97e0095cc139fa20fe07a74c81fd0">
+                <title>#define DCMI_CaptureMode_SnapShot</title>                
+<para>Once activated, the interface waits for the start of frame and then transfers a single frame through the DMA </para>
+
+                <para>Definition at line 111 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

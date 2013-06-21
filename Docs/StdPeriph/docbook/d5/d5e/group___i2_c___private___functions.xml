@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d5e/group___i2_c___private___functions">
+    <title>I2C_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="dc/d29/group___i2_c___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d3/df9/group___i2_c___group2">Data transfers functions</link></para></listitem>
+            <listitem><para><link linkend="df/dde/group___i2_c___group3">PEC management functions</link></para></listitem>
+            <listitem><para><link linkend="df/dc9/group___i2_c___group4">DMA transfers management functions</link></para></listitem>
+            <listitem><para><link linkend="d8/de0/group___i2_c___group5">Interrupts events and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="dc/d29/group___i2_c___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/df9/group___i2_c___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/dde/group___i2_c___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/dc9/group___i2_c___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/de0/group___i2_c___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

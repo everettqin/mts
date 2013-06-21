@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/de4/group___f_l_a_s_h___private___functions">
+    <title>FLASH_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d7/d0e/group___f_l_a_s_h___group1">FLASH Interface configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d9/d2f/group___f_l_a_s_h___group2">FLASH Memory Programming functions</link></para></listitem>
+            <listitem><para><link linkend="da/d89/group___f_l_a_s_h___group3">Option Bytes Programming functions</link></para></listitem>
+            <listitem><para><link linkend="dd/df8/group___f_l_a_s_h___group4">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d7/d0e/group___f_l_a_s_h___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d2f/group___f_l_a_s_h___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d89/group___f_l_a_s_h___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/df8/group___f_l_a_s_h___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

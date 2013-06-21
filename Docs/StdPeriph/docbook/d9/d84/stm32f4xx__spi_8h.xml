@@ -1,0 +1,1175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d84/stm32f4xx__spi_8h">
+    <title>stm32f4xx_spi.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dc4/struct_s_p_i___init_type_def">SPI_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1gaf54f84a30a5914b54dbfdc186720d0ba">IS_SPI_ALL_PERIPH</link> (((PERIPH) == SPI1) || \
+                                   ((PERIPH) == SPI2) || \
+                                   ((PERIPH) == SPI3))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1ga6dc428a850ec6181eeef824bacca3544">IS_SPI_ALL_PERIPH_EXT</link> (((PERIPH) == SPI1) || \
+                                       ((PERIPH) == SPI2) || \
+                                       ((PERIPH) == SPI3) || \
+                                       ((PERIPH) == I2S2ext) || \
+                                       ((PERIPH) == I2S3ext))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1gae2222c673a036497587b8791f89428d0">IS_SPI_23_PERIPH</link> (((PERIPH) == SPI2) || \
+                                   ((PERIPH) == SPI3))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1gabfd0b6de3f402ec0b41c66add9c99b62">IS_SPI_23_PERIPH_EXT</link> (((PERIPH) == SPI2) || \
+                                       ((PERIPH) == SPI3) || \
+                                       ((PERIPH) == I2S2ext) || \
+                                       ((PERIPH) == I2S3ext))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1gaed21835cf2bf6c9469dedaa8720627c2">IS_I2S_EXT_PERIPH</link> (((PERIPH) == I2S2ext) || \
+                                    ((PERIPH) == I2S3ext))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1gab6bdb82e315a90210c4425c46bbdf5f1">SPI_Direction_2Lines_FullDuplex</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1gab8ab942f7240394f50e4c86c5288516a">SPI_Direction_2Lines_RxOnly</link> ((uint16_t)0x0400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1ga42ea8306cfc1f23ffc51efae6f66320e">SPI_Direction_1Line_Rx</link> ((uint16_t)0x8000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1ga70cc710a771065b2ed11c2ac9697defe">SPI_Direction_1Line_Tx</link> ((uint16_t)0xC000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1ga536857c68ce1d9806c04046707448b3e">IS_SPI_DIRECTION_MODE</link> (((MODE) == SPI_Direction_2Lines_FullDuplex) || \
+                                     ((MODE) == SPI_Direction_2Lines_RxOnly) || \
+                                     ((MODE) == SPI_Direction_1Line_Rx) || \
+                                     ((MODE) == SPI_Direction_1Line_Tx))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d6d/group___s_p_i__mode_1gaa9e47fb7c1d6c4655b72a00ed1f3b651">SPI_Mode_Master</link> ((uint16_t)0x0104)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d6d/group___s_p_i__mode_1ga84621141413ee07cb2d2dc82da2baa42">SPI_Mode_Slave</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d6d/group___s_p_i__mode_1gad5135300763c75dbb446861536359f12">IS_SPI_MODE</link> (((MODE) == SPI_Mode_Master) || \
+                           ((MODE) == SPI_Mode_Slave))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___s_p_i__data__size_1ga8af2c8ca5c2162423531ebf560e0a41d">SPI_DataSize_16b</link> ((uint16_t)0x0800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___s_p_i__data__size_1ga56721814a935922b6ca7c49060509765">SPI_DataSize_8b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___s_p_i__data__size_1gab6f9f528f7eb70373b9caf3548e44e67">IS_SPI_DATASIZE</link> (((DATASIZE) == SPI_DataSize_16b) || \
+                                   ((DATASIZE) == SPI_DataSize_8b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d24/group___s_p_i___clock___polarity_1ga3dbc0234c4b4e7c37137e7c189f3c085">SPI_CPOL_Low</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d24/group___s_p_i___clock___polarity_1ga4431f2edf42f8298d5bbe693351edbb0">SPI_CPOL_High</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d24/group___s_p_i___clock___polarity_1gafc1cc5b1ff7e801a409a7a1e6047acf9">IS_SPI_CPOL</link> (((CPOL) == SPI_CPOL_Low) || \
+                           ((CPOL) == SPI_CPOL_High))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d3a/group___s_p_i___clock___phase_1gaade9d9555fac8a302bde5c94da9c7292">SPI_CPHA_1Edge</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d3a/group___s_p_i___clock___phase_1ga7543f88bf05a08705eb4203862dcebdf">SPI_CPHA_2Edge</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d3a/group___s_p_i___clock___phase_1ga6441f08edf79dd5b243c54b888d3cbf7">IS_SPI_CPHA</link> (((CPHA) == SPI_CPHA_1Edge) || \
+                           ((CPHA) == SPI_CPHA_2Edge))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dde/group___s_p_i___slave___select__management_1ga105969ee7eb635414da35b41e942e383">SPI_NSS_Soft</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dde/group___s_p_i___slave___select__management_1ga07c547459d39fb7a6e0322147a60b74a">SPI_NSS_Hard</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dde/group___s_p_i___slave___select__management_1gabbeedf42eccef1bae4f88c606fc3b261">IS_SPI_NSS</link> (((NSS) == SPI_NSS_Soft) || \
+                         ((NSS) == SPI_NSS_Hard))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga88cd6d416c87b382396dbf4c02e3bd4b">SPI_BaudRatePrescaler_2</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga17ac4858cb9387289ee7c3d94a9b54be">SPI_BaudRatePrescaler_4</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga023a1e4c04586f2feb0d4b03b2e0c230">SPI_BaudRatePrescaler_8</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga5ef8587bb96e3ec98e9fde770756fc7d">SPI_BaudRatePrescaler_16</link> ((uint16_t)0x0018)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga1d30cecaa412cee5250c69644207c652">SPI_BaudRatePrescaler_32</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga2c9cd96ed56432a83f8e4f46fbecb5e6">SPI_BaudRatePrescaler_64</link> ((uint16_t)0x0028)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1gafa6c39c3ee16a08730356a5cd30f3648">SPI_BaudRatePrescaler_128</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga1e1aa6406f0e88ac557ba49fb8069e3e">SPI_BaudRatePrescaler_256</link> ((uint16_t)0x0038)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1gae79f46ed9f91e39dc1f6912cb25fc716">IS_SPI_BAUDRATE_PRESCALER</link> (((PRESCALER) == SPI_BaudRatePrescaler_2) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_4) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_8) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_16) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_32) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_64) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_128) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_256))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d82/group___s_p_i___m_s_b___l_s_b__transmission_1ga45e688f93a93b605886240cad23bc2eb">SPI_FirstBit_MSB</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d82/group___s_p_i___m_s_b___l_s_b__transmission_1ga5ef57fca79434cbc517e4ede548ca02d">SPI_FirstBit_LSB</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d82/group___s_p_i___m_s_b___l_s_b__transmission_1gabee8e0302741f4a5c41b96af640c63ad">IS_SPI_FIRST_BIT</link> (((BIT) == SPI_FirstBit_MSB) || \
+                               ((BIT) == SPI_FirstBit_LSB))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1gadd5b20277198fcdb6aa53ea48e802ae5">I2S_Mode_SlaveTx</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1gaaf62ee0353476afc9612dc2933e1c5c5">I2S_Mode_SlaveRx</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1ga3a62ee8964033a3f6fd030da9e40fba6">I2S_Mode_MasterTx</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1gabf9f872cda7c0f159c5fc18aed44e973">I2S_Mode_MasterRx</link> ((uint16_t)0x0300)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1ga942c37b2c1274c4c5773ddcf8b46d9b5">IS_I2S_MODE</link> (((MODE) == I2S_Mode_SlaveTx) || \
+                           ((MODE) == I2S_Mode_SlaveRx) || \
+                           ((MODE) == I2S_Mode_MasterTx)|| \
+                           ((MODE) == I2S_Mode_MasterRx))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1gacdb89d66a2a941924ff4b7a8d14884f9">I2S_Standard_Phillips</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1gae716cfa7e031affc37fe65dd80b0e6f4">I2S_Standard_MSB</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1ga88bc9001a13b95a0844d81fea2080df6">I2S_Standard_LSB</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1gaaf59e587048ff632037dfc9875ab4c7b">I2S_Standard_PCMShort</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1gaf79cb88702059506d876dbd776d7a136">I2S_Standard_PCMLong</link> ((uint16_t)0x00B0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1ga826b9ddb34520b8fa64c2b65c9bfd528">IS_I2S_STANDARD</link> (((STANDARD) == I2S_Standard_Phillips) || \
+                                   ((STANDARD) == I2S_Standard_MSB) || \
+                                   ((STANDARD) == I2S_Standard_LSB) || \
+                                   ((STANDARD) == I2S_Standard_PCMShort) || \
+                                   ((STANDARD) == I2S_Standard_PCMLong))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dfc/group___s_p_i___i2_s___data___format_1gabcd7cb799b68346a735709cc135bd414">I2S_DataFormat_16b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dfc/group___s_p_i___i2_s___data___format_1gae44b9704c9e393d5abec9bf4fcfe1116">I2S_DataFormat_16bextended</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dfc/group___s_p_i___i2_s___data___format_1ga5a959486671cf00c5a734f1df205581b">I2S_DataFormat_24b</link> ((uint16_t)0x0003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dfc/group___s_p_i___i2_s___data___format_1ga6be3bdcc713cb92a9ad247de013a5e37">I2S_DataFormat_32b</link> ((uint16_t)0x0005)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dfc/group___s_p_i___i2_s___data___format_1gac467da829eca4a5c4ce41a6abd2d8e81">IS_I2S_DATA_FORMAT</link> (((FORMAT) == I2S_DataFormat_16b) || \
+                                    ((FORMAT) == I2S_DataFormat_16bextended) || \
+                                    ((FORMAT) == I2S_DataFormat_24b) || \
+                                    ((FORMAT) == I2S_DataFormat_32b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d6b/group___s_p_i___i2_s___m_c_l_k___output_1ga99713ee8c824f4d3bb25a9ce7bf5312a">I2S_MCLKOutput_Enable</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d6b/group___s_p_i___i2_s___m_c_l_k___output_1gaea09824d7e6359924152277ed3661e7e">I2S_MCLKOutput_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d6b/group___s_p_i___i2_s___m_c_l_k___output_1ga829ae526d1d11f14592e881f800fbb8a">IS_I2S_MCLK_OUTPUT</link> (((OUTPUT) == I2S_MCLKOutput_Enable) || \
+                                    ((OUTPUT) == I2S_MCLKOutput_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1gadfdaed9a2acb71f2cdd737be81a6f747">I2S_AudioFreq_192k</link> ((uint32_t)192000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1ga5acd02a974e90bb8f2c4e07f8fa0231b">I2S_AudioFreq_96k</link> ((uint32_t)96000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1gac5f3f0416f9dd03d680d0fcee93b50ab">I2S_AudioFreq_48k</link> ((uint32_t)48000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1ga3514e4c292b92b8a7d8a6916f4e3690c">I2S_AudioFreq_44k</link> ((uint32_t)44100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1gac501b566718f4890aaafa323a33b732c">I2S_AudioFreq_32k</link> ((uint32_t)32000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1gac6adafe5586e83c2408f1eab8edb4ab3">I2S_AudioFreq_22k</link> ((uint32_t)22050)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1ga5b8f2f8393e022becf0dbb04d1b01950">I2S_AudioFreq_16k</link> ((uint32_t)16000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1ga3adf95fadd1ad75670ed1babd5faca39">I2S_AudioFreq_11k</link> ((uint32_t)11025)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1ga7868ac234485a80d45586dd87cd00043">I2S_AudioFreq_8k</link> ((uint32_t)8000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1ga30f78e8214e8a91cdb6d6360c1d3f18d">I2S_AudioFreq_Default</link> ((uint32_t)2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency_1gaf39d917f4a38fd9916ec347fb055391c">IS_I2S_AUDIO_FREQ</link> ((((FREQ) &gt;= I2S_AudioFreq_8k) &amp;&amp; \
+                                 ((FREQ) &lt;= I2S_AudioFreq_192k)) || \
+                                 ((FREQ) == I2S_AudioFreq_Default))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d23/group___s_p_i___i2_s___clock___polarity_1gae859a63575e4af3e007fc5123fa901ab">I2S_CPOL_Low</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d23/group___s_p_i___i2_s___clock___polarity_1gae26f7f9fbde299fbdc0b81a2cc38bfdb">I2S_CPOL_High</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d23/group___s_p_i___i2_s___clock___polarity_1ga6323375bf0b6fa6e2ee2a9ce6f9ef82f">IS_I2S_CPOL</link> (((CPOL) == I2S_CPOL_Low) || \
+                           ((CPOL) == I2S_CPOL_High))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests_1ga05f55a18c83aaa945d99200d012e5e2a">SPI_I2S_DMAReq_Tx</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests_1gaa7f680295cdc1af9b086bf51312f15f3">SPI_I2S_DMAReq_Rx</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests_1ga6a8f97093494f2331dbdf9295d7c2c6b">IS_SPI_I2S_DMAREQ</link> ((((DMAREQ) &amp; (uint16_t)0xFFFC) == 0x00) &amp;&amp; ((DMAREQ) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d40/group___s_p_i___n_s_s__internal__software__management_1ga6b2102816167d12140648dba49a192a7">SPI_NSSInternalSoft_Set</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d40/group___s_p_i___n_s_s__internal__software__management_1ga292ec7bc0cd362d61b3b5eed620522c2">SPI_NSSInternalSoft_Reset</link> ((uint16_t)0xFEFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d40/group___s_p_i___n_s_s__internal__software__management_1ga7036de442206fb8b365528c115345b36">IS_SPI_NSS_INTERNAL</link> (((INTERNAL) == SPI_NSSInternalSoft_Set) || \
+                                       ((INTERNAL) == SPI_NSSInternalSoft_Reset))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4e/group___s_p_i___c_r_c___transmit___receive_1ga7b5cd97c9323e491b628fd3a7be9e133">SPI_CRC_Tx</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4e/group___s_p_i___c_r_c___transmit___receive_1gaf68380273616efbbc2dc9a420f1c641b">SPI_CRC_Rx</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4e/group___s_p_i___c_r_c___transmit___receive_1ga31fe242594f851558496a93f85def883">IS_SPI_CRC</link> (((CRC) == SPI_CRC_Tx) || ((CRC) == SPI_CRC_Rx))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d61/group___s_p_i__direction__transmit__receive_1ga9a59d225a8cf42eebafbec6ad95c078c">SPI_Direction_Rx</link> ((uint16_t)0xBFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d61/group___s_p_i__direction__transmit__receive_1gabd76982a7e305c13f7ad8ea1789d3c0c">SPI_Direction_Tx</link> ((uint16_t)0x4000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d61/group___s_p_i__direction__transmit__receive_1gae96b69403c4206e347cde77b9a30e207">IS_SPI_DIRECTION</link> (((DIRECTION) == SPI_Direction_Rx) || \
+                                     ((DIRECTION) == SPI_Direction_Tx))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga0f192977fdb12c40d35672b8ae074724">SPI_I2S_IT_TXE</link> ((uint8_t)0x71)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1gae46dd53cd2e4ad8b8a7836d3dcec57ea">SPI_I2S_IT_RXNE</link> ((uint8_t)0x60)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga1d9d4916bf7ae315f23a54ecfbcd9157">SPI_I2S_IT_ERR</link> ((uint8_t)0x50)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga54aba7dc06f97fb4839de5f42bd5a47d">I2S_IT_UDR</link> ((uint8_t)0x53)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1gab147fb8ba6913106e06ac80dcf4005a4">SPI_I2S_IT_TIFRFE</link> ((uint8_t)0x58)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga3ec2f6950d7ff801f992e65593c3365e">IS_SPI_I2S_CONFIG_IT</link> (((IT) == SPI_I2S_IT_TXE) || \
+                                  ((IT) == SPI_I2S_IT_RXNE) || \
+                                  ((IT) == SPI_I2S_IT_ERR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga279c30176e8ff7e2ec299774a2e88f45">SPI_I2S_IT_OVR</link> ((uint8_t)0x56)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga0b9780d5f31fd80f4d0fa7d6860041e9">SPI_IT_MODF</link> ((uint8_t)0x55)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga9aa97a5ce8d3500dc14ca4e30eada199">SPI_IT_CRCERR</link> ((uint8_t)0x54)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1gabeb917a0a708af0439f753a5f4af4c5e">IS_SPI_I2S_CLEAR_IT</link> (((IT) == SPI_IT_CRCERR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1gacb2949c066a74f1c4ef8c6a0d4e14a0c">IS_SPI_I2S_GET_IT</link> (((IT) == SPI_I2S_IT_RXNE)|| ((IT) == SPI_I2S_IT_TXE) || \
+                               ((IT) == SPI_IT_CRCERR)  || ((IT) == SPI_IT_MODF) || \
+                               ((IT) == SPI_I2S_IT_OVR) || ((IT) == I2S_IT_UDR) ||\
+                               ((IT) == SPI_I2S_IT_TIFRFE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1ga79ee46c44f8886193293528460fea6ed">SPI_I2S_FLAG_RXNE</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1ga4dbac2dc3e0cfbd7a019ebecc45d66d7">SPI_I2S_FLAG_TXE</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1gaf0d629fd522a15aff188236d3254b2ad">I2S_FLAG_CHSIDE</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1gaec08a8ad716bef1b87a8c8d992ab89ec">I2S_FLAG_UDR</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1ga30fb6af50e1f3c61cb9de76b0101c889">SPI_FLAG_CRCERR</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1gac7d3525ab98cc18f02270a4dba685897">SPI_FLAG_MODF</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1ga42001f769835f133600a021a29764254">SPI_I2S_FLAG_OVR</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1ga4551095df1365cf2a760282a34279b3c">SPI_I2S_FLAG_BSY</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1gae5996e849f4178d77520f26a34be4733">SPI_I2S_FLAG_TIFRFE</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1gab16c7f47712871b8f1b97de43841856f">IS_SPI_I2S_CLEAR_FLAG</link> (((FLAG) == SPI_FLAG_CRCERR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition_1ga1241471a018bc63ed140089ce8334b4f">IS_SPI_I2S_GET_FLAG</link> (((FLAG) == SPI_I2S_FLAG_BSY) || ((FLAG) == SPI_I2S_FLAG_OVR) || \
+                                   ((FLAG) == SPI_FLAG_MODF) || ((FLAG) == SPI_FLAG_CRCERR) || \
+                                   ((FLAG) == I2S_FLAG_UDR) || ((FLAG) == I2S_FLAG_CHSIDE) || \
+                                   ((FLAG) == SPI_I2S_FLAG_TXE) || ((FLAG) == SPI_I2S_FLAG_RXNE)|| \
+                                   ((FLAG) == SPI_I2S_FLAG_TIFRFE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___s_p_i___c_r_c__polynomial_1ga76eec5bbb44c873aa52966a9cb6c8f8c">IS_SPI_CRC_POLYNOMIAL</link> ((POLYNOMIAL) &gt;= 0x1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1gafb91bff0e91a2849f8977e3d4dfdeb52">SPI_DMAReq_Tx</link> SPI_I2S_DMAReq_Tx</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga225b89513a434bd33df7900a2514dbc0">SPI_DMAReq_Rx</link> SPI_I2S_DMAReq_Rx</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga6f0778617fc5f58086e4e29cd3781f18">SPI_IT_TXE</link> SPI_I2S_IT_TXE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga6c6ea3686830c60d9363f97a5d1011cc">SPI_IT_RXNE</link> SPI_I2S_IT_RXNE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1gace6a9377da7f18ea8b5c73163c2278d6">SPI_IT_ERR</link> SPI_I2S_IT_ERR</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1gae99166c2b214fd7a9800a15eda36e4a0">SPI_IT_OVR</link> SPI_I2S_IT_OVR</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga7bd627ae57160a2f0aad1736194b5999">SPI_FLAG_RXNE</link> SPI_I2S_FLAG_RXNE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1gaf84a1e6af2739a6be58e1b23d9e6b914">SPI_FLAG_TXE</link> SPI_I2S_FLAG_TXE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1gab45264da2296c75495a7437a045513ea">SPI_FLAG_OVR</link> SPI_I2S_FLAG_OVR</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1gaf19c77ee876a3598d616ac07d136fc46">SPI_FLAG_BSY</link> SPI_I2S_FLAG_BSY</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1gaa9cee71d6fdb086e90cfe79fb572ee1d">SPI_DeInit</link> <link linkend="d8/deb/group___s_p_i___group1_1gabe36880945fa56785283a9c0092124cc">SPI_I2S_DeInit</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga54555e80d1bbaca80906e4dcc27e1b67">SPI_ITConfig</link> <link linkend="d9/d34/group___s_p_i___group5_1ga17f4ef132e8ddbf94cb6b1688d181e41">SPI_I2S_ITConfig</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga1e0a95be7beea23d6972d835b33d2bb5">SPI_DMACmd</link> <link linkend="d6/d31/group___s_p_i___group4_1gabed5b91a8576e6d578f364cc0e807e4a">SPI_I2S_DMACmd</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1gad0647692e317283bc4c8ead37558b198">SPI_SendData</link> <link linkend="d9/dbf/group___s_p_i___group2_1gad5af40bebe8dbe3fa8bd476489d7e3da">SPI_I2S_SendData</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga62c3f7d78506b029ebb1845342e5bc05">SPI_ReceiveData</link> <link linkend="d9/dbf/group___s_p_i___group2_1gab77de76547f3bff403236b263b070a30">SPI_I2S_ReceiveData</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga188075bf183b67201651e20b227fe7a7">SPI_GetFlagStatus</link> <link linkend="d9/d34/group___s_p_i___group5_1ga1bd785d129e09c5734a876c8f2767204">SPI_I2S_GetFlagStatus</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga9fde1f0c2f8d9f5690fe3d058d16ed5c">SPI_ClearFlag</link> <link linkend="d9/d34/group___s_p_i___group5_1ga3aabd9e2437e213056c0ed9bdfa1a724">SPI_I2S_ClearFlag</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1ga4ebfa18a880b0eec4142e74cad021dd9">SPI_GetITStatus</link> <link linkend="d9/d34/group___s_p_i___group5_1ga72decbc1cd79f8fad92a2204beca6bc5">SPI_I2S_GetITStatus</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/daa/group___s_p_i___i2_s___legacy_1gab5f0a306ab6c4dc0775314f367fe935e">SPI_ClearITPendingBit</link> <link linkend="d9/d34/group___s_p_i___group5_1ga35a524a49ff3d058137060f751e8749f">SPI_I2S_ClearITPendingBit</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1gabe36880945fa56785283a9c0092124cc">SPI_I2S_DeInit</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga8dacc1dc48bf08c0f12da409f4889037">SPI_Init</link> (
+SPI_TypeDef * SPIx, <link linkend="dc/dc4/struct_s_p_i___init_type_def">SPI_InitTypeDef</link> * SPI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga53661884ae4a9640df7cbc59187782f7">I2S_Init</link> (
+SPI_TypeDef * SPIx, <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> * I2S_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga9a0116f88cc2c4478c270f05608703f1">SPI_StructInit</link> (
+<link linkend="dc/dc4/struct_s_p_i___init_type_def">SPI_InitTypeDef</link> * SPI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga7470ec1d0759fdeeb42c7fe71a3b41b7">I2S_StructInit</link> (
+<link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> * I2S_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1gaa31357879a65ee1ed7223f3b9114dcf3">SPI_Cmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1gafe061c71bbc5b4224f3f2884dc53739e">I2S_Cmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1gafc82e90841d7879535d655c035709cb1">SPI_DataSizeConfig</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_DataSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga166171c421fc51da7714723524d41b45">SPI_BiDirectionalLineConfig</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_Direction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga56fc508a482f032f9eb80e4c63184126">SPI_NSSInternalSoftwareConfig</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_NSSInternalSoft)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga4ec54abdedf6cd17403d853a926d91c1">SPI_SSOutputCmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga74594bf32e3bf4905ac7a2deef8eb475">SPI_TIModeCmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga60082947bedfe9efc233405be2a7bec2">I2S_FullDuplexConfig</link> (
+SPI_TypeDef * I2Sxext, <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> * I2S_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1gad5af40bebe8dbe3fa8bd476489d7e3da">SPI_I2S_SendData</link> (
+SPI_TypeDef * SPIx, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="dd/d3c/group___s_p_i_1gab77de76547f3bff403236b263b070a30">SPI_I2S_ReceiveData</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga64f7276d119e6cb58afc100f8832adb0">SPI_CalculateCRC</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1gace8b1058e09bab150b0dbe5978810273">SPI_TransmitCRC</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="dd/d3c/group___s_p_i_1ga4c81c193516e82cf0a2fdc149ef20cc6">SPI_GetCRC</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_CRC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="dd/d3c/group___s_p_i_1ga80fb9374cfce670f29128bb78568353f">SPI_GetCRCPolynomial</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1gabed5b91a8576e6d578f364cc0e807e4a">SPI_I2S_DMACmd</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_I2S_DMAReq, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga17f4ef132e8ddbf94cb6b1688d181e41">SPI_I2S_ITConfig</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_I2S_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="dd/d3c/group___s_p_i_1ga1bd785d129e09c5734a876c8f2767204">SPI_I2S_GetFlagStatus</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_I2S_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga3aabd9e2437e213056c0ed9bdfa1a724">SPI_I2S_ClearFlag</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_I2S_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="dd/d3c/group___s_p_i_1ga72decbc1cd79f8fad92a2204beca6bc5">SPI_I2S_GetITStatus</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_I2S_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___s_p_i_1ga35a524a49ff3d058137060f751e8749f">SPI_I2S_ClearITPendingBit</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_I2S_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the SPI firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_spi.h</para>
+    </simplesect>
+</section>

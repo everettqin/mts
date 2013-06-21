@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dcc/group___i_w_d_g___write_access">
+    <title>IWDG_WriteAccess</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dcc/group___i_w_d_g___write_access_1ga86f4b926f4351e19ea069f98c2e65f91">IWDG_WriteAccess_Enable</link> ((uint16_t)0x5555)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dcc/group___i_w_d_g___write_access_1ga4b395cf5b2d7ab18fc71a5f779f758cc">IWDG_WriteAccess_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dcc/group___i_w_d_g___write_access_1gaa89c93332f5977175f8d416b7492de18">IS_IWDG_WRITE_ACCESS</link> (((ACCESS) == IWDG_WriteAccess_Enable) || \
+                                      ((ACCESS) == IWDG_WriteAccess_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

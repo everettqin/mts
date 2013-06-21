@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d66/stm32f4xx__dcmi_8h">
+    <title>stm32f4xx_dcmi.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/daa/struct_d_c_m_i___init_type_def">DCMI_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dc1/struct_d_c_m_i___c_r_o_p_init_type_def">DCMI_CROPInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/de2/struct_d_c_m_i___codes_init_type_def">DCMI_CodesInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/de7/group___d_c_m_i___capture___mode_1gafc4b1ac09dcbc966fd0626d388b3e34b">DCMI_CaptureMode_Continuous</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/de7/group___d_c_m_i___capture___mode_1ga2be97e0095cc139fa20fe07a74c81fd0">DCMI_CaptureMode_SnapShot</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/de7/group___d_c_m_i___capture___mode_1ga138eda82f23ad7c714ed6408edfc8ae5">IS_DCMI_CAPTURE_MODE</link> (((MODE) == <link linkend="d8/de7/group___d_c_m_i___capture___mode_1gafc4b1ac09dcbc966fd0626d388b3e34b">DCMI_CaptureMode_Continuous</link>) || \
+                                   ((MODE) == <link linkend="d8/de7/group___d_c_m_i___capture___mode_1ga2be97e0095cc139fa20fe07a74c81fd0">DCMI_CaptureMode_SnapShot</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga03d983bb911952d7f84783d5999a9559">DCMI_SynchroMode_Hardware</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga66d71596091ae2a6273100ffa50334d0">DCMI_SynchroMode_Embedded</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga0f713dc8c5762ecb08ca40f90f7cf1cb">IS_DCMI_SYNCHRO</link> (((MODE) == <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga03d983bb911952d7f84783d5999a9559">DCMI_SynchroMode_Hardware</link>) || \
+                              ((MODE) == <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga66d71596091ae2a6273100ffa50334d0">DCMI_SynchroMode_Embedded</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga71fe5ad550cc63a754ea075d7b21fd78">DCMI_PCKPolarity_Falling</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga3835956f9c552c1a0438ee408d5046ca">DCMI_PCKPolarity_Rising</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga08c6dd6e407a5a8f7aaa90dadb1774a5">IS_DCMI_PCKPOLARITY</link> (((POLARITY) == <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga71fe5ad550cc63a754ea075d7b21fd78">DCMI_PCKPolarity_Falling</link>) || \
+                                      ((POLARITY) == <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga3835956f9c552c1a0438ee408d5046ca">DCMI_PCKPolarity_Rising</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga7373470d26c50a616f12b2855b29b240">DCMI_VSPolarity_Low</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga8ee9a81f7d657b0121ddff9ce0ae9bec">DCMI_VSPolarity_High</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1gad575b228df2bbd1eaf76d52300dc7c3e">IS_DCMI_VSPOLARITY</link> (((POLARITY) == <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga7373470d26c50a616f12b2855b29b240">DCMI_VSPolarity_Low</link>) || \
+                                     ((POLARITY) == <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga8ee9a81f7d657b0121ddff9ce0ae9bec">DCMI_VSPolarity_High</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1ga8be508108ba5f8982a63632c0525b105">DCMI_HSPolarity_Low</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1gab7d13846b01ffa41fdfc1987f0a91a67">DCMI_HSPolarity_High</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1gae8b194321ecb049f708454f6d16b343e">IS_DCMI_HSPOLARITY</link> (((POLARITY) == <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1ga8be508108ba5f8982a63632c0525b105">DCMI_HSPolarity_Low</link>) || \
+                                     ((POLARITY) == <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1gab7d13846b01ffa41fdfc1987f0a91a67">DCMI_HSPolarity_High</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gac6fe1a56c081942ad0398e727280f4b5">DCMI_CaptureRate_All_Frame</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/ded/group___d_c_m_i___capture___rate_1ga9f89cbc2c2af326e029327603b2b5e78">DCMI_CaptureRate_1of2_Frame</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gab1cffa0fc41d2dabe1320370060434f2">DCMI_CaptureRate_1of4_Frame</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gafde28d3b8bcdb11b6c1afb3d3312ccb5">IS_DCMI_CAPTURE_RATE</link> (((RATE) == <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gac6fe1a56c081942ad0398e727280f4b5">DCMI_CaptureRate_All_Frame</link>) || \
+                                    ((RATE) == <link linkend="d6/ded/group___d_c_m_i___capture___rate_1ga9f89cbc2c2af326e029327603b2b5e78">DCMI_CaptureRate_1of2_Frame</link>) ||\
+                                    ((RATE) == <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gab1cffa0fc41d2dabe1320370060434f2">DCMI_CaptureRate_1of4_Frame</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1ga01627fb1fcd0d0682628e5bea8e5dfba">DCMI_ExtendedDataMode_8b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gad47d200f9e2bf947dd07b9f8bc395336">DCMI_ExtendedDataMode_10b</link> ((uint16_t)0x0400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1ga183733b7d784387200aa00b988c906da">DCMI_ExtendedDataMode_12b</link> ((uint16_t)0x0800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gae1a4ca9b9a1929a40213758e80d38e15">DCMI_ExtendedDataMode_14b</link> ((uint16_t)0x0C00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gaf28a103f095fed769e757334933a6981">IS_DCMI_EXTENDED_DATA</link> (((DATA) == <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1ga01627fb1fcd0d0682628e5bea8e5dfba">DCMI_ExtendedDataMode_8b</link>) || \
+                                    ((DATA) == <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gad47d200f9e2bf947dd07b9f8bc395336">DCMI_ExtendedDataMode_10b</link>) ||\
+                                    ((DATA) == <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1ga183733b7d784387200aa00b988c906da">DCMI_ExtendedDataMode_12b</link>) ||\
+                                    ((DATA) == <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gae1a4ca9b9a1929a40213758e80d38e15">DCMI_ExtendedDataMode_14b</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1gadaec1a969aa5f1f993157c3b7930ee15">DCMI_IT_FRAME</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1ga5afbb2e1a8b64d9e042da18d8304667e">DCMI_IT_OVF</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1gaef8a30c349bbe77a26052613053c0201">DCMI_IT_ERR</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1gac60620cc8cfcff9063bb141f75bdedf6">DCMI_IT_VSYNC</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1gab31edbfaa9359494beda9324bbe3a70d">DCMI_IT_LINE</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1ga73bb15913a02e43fa9e4519f16d8566b">IS_DCMI_CONFIG_IT</link> ((((IT) &amp; (uint16_t)0xFFE0) == 0x0000) &amp;&amp; ((IT) != 0x0000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1ga03e77e43829150f92a861421250355e5">IS_DCMI_GET_IT</link> (((IT) == DCMI_IT_FRAME) || \
+                            ((IT) == DCMI_IT_OVF) || \
+                            ((IT) == DCMI_IT_ERR) || \
+                            ((IT) == DCMI_IT_VSYNC) || \
+                            ((IT) == DCMI_IT_LINE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gaf0137c6fe1d4f62e3197a1525ccd4576">DCMI_FLAG_HSYNC</link> ((uint16_t)0x2001)<para><emphasis>DCMI SR register.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga7ae4108d63dc1148222a50f84fd3af4f">DCMI_FLAG_VSYNC</link> ((uint16_t)0x2002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga9fe6ca35ea558baf07ff85cc6d9d3394">DCMI_FLAG_FNE</link> ((uint16_t)0x2004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gab882a0ef2f660db5dcd1d12eff39f653">DCMI_FLAG_FRAMERI</link> ((uint16_t)0x0001)<para><emphasis>DCMI RISR register.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga10e986f24ca3e73d31f56ddd908987e0">DCMI_FLAG_OVFRI</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga38108fd82e34f856f2cc2289d5809143">DCMI_FLAG_ERRRI</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga684fd8d6f4d02ec7e9113a5a4caa6484">DCMI_FLAG_VSYNCRI</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga291eae13e645d5303690dc07a8cfcfde">DCMI_FLAG_LINERI</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gad6373f50f9681c59b0406c8c1ae3aac1">DCMI_FLAG_FRAMEMI</link> ((uint16_t)0x1001)<para><emphasis>DCMI MISR register.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gaec0c82ddcc3994b877a2f904c680e2b1">DCMI_FLAG_OVFMI</link> ((uint16_t)0x1002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga32d9f0793f2c0758c05e07e273251e96">DCMI_FLAG_ERRMI</link> ((uint16_t)0x1004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga9933cab890dbebea51db4aa71a11f90d">DCMI_FLAG_VSYNCMI</link> ((uint16_t)0x1008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga9c409d7ee355083e9b73f267f94d44e3">DCMI_FLAG_LINEMI</link> ((uint16_t)0x1010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gaa0278161a8e39b18ecd4a3501c70e753">IS_DCMI_GET_FLAG</link> (((FLAG) == <link linkend="d8/d34/group___d_c_m_i___flags_1gaf0137c6fe1d4f62e3197a1525ccd4576">DCMI_FLAG_HSYNC</link>) || \
+                                ((FLAG) == DCMI_FLAG_VSYNC) || \
+                                ((FLAG) == DCMI_FLAG_FNE) || \
+                                ((FLAG) == <link linkend="d8/d34/group___d_c_m_i___flags_1gab882a0ef2f660db5dcd1d12eff39f653">DCMI_FLAG_FRAMERI</link>) || \
+                                ((FLAG) == DCMI_FLAG_OVFRI) || \
+                                ((FLAG) == DCMI_FLAG_ERRRI) || \
+                                ((FLAG) == DCMI_FLAG_VSYNCRI) || \
+                                ((FLAG) == DCMI_FLAG_LINERI) || \
+                                ((FLAG) == <link linkend="d8/d34/group___d_c_m_i___flags_1gad6373f50f9681c59b0406c8c1ae3aac1">DCMI_FLAG_FRAMEMI</link>) || \
+                                ((FLAG) == DCMI_FLAG_OVFMI) || \
+                                ((FLAG) == DCMI_FLAG_ERRMI) || \
+                                ((FLAG) == DCMI_FLAG_VSYNCMI) || \
+                                ((FLAG) == DCMI_FLAG_LINEMI))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gaf47c4a92fae67d5f5208ba0b222efa7a">IS_DCMI_CLEAR_FLAG</link> ((((FLAG) &amp; (uint16_t)0xFFE0) == 0x0000) &amp;&amp; ((FLAG) != 0x0000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1gab8f501f117d5695017e1dc5a611a5015">DCMI_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga1299076f1459525053ba4f2fa408ed2a">DCMI_Init</link> (
+<link linkend="d8/daa/struct_d_c_m_i___init_type_def">DCMI_InitTypeDef</link> * DCMI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga268eb4266fe7f294ee748e86f7b8add2">DCMI_StructInit</link> (
+<link linkend="d8/daa/struct_d_c_m_i___init_type_def">DCMI_InitTypeDef</link> * DCMI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga3bd4eb06314ed06dcb71ee91391b7ec4">DCMI_CROPConfig</link> (
+<link linkend="dd/dc1/struct_d_c_m_i___c_r_o_p_init_type_def">DCMI_CROPInitTypeDef</link> * DCMI_CROPInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga7139eecdc0f7975b42cd2f9c5644d0a5">DCMI_CROPCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga8888b27bd5aca62d250642468ea6cd6d">DCMI_SetEmbeddedSynchroCodes</link> (
+<link linkend="d4/de2/struct_d_c_m_i___codes_init_type_def">DCMI_CodesInitTypeDef</link> * DCMI_CodesInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga30a38a4858273c05e8f1b4677d744c13">DCMI_JPEGCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga36bba54c40637b8071aea8ffea71fb84">DCMI_Cmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1gad00fb33497ffa337a5b2b77fc6aa8d74">DCMI_CaptureCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d5/dc3/group___d_c_m_i_1ga475305bd8694e4cebefcb263c0a5b979">DCMI_ReadData</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga3d89fb10384dff1dfd9197fbb6c6b2eb">DCMI_ITConfig</link> (
+uint16_t DCMI_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d5/dc3/group___d_c_m_i_1ga1b66e1966fbea902a8e7015c56db7587">DCMI_GetFlagStatus</link> (
+uint16_t DCMI_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga1c93caf3ccfecf07cec8e1e0f844ddaa">DCMI_ClearFlag</link> (
+uint16_t DCMI_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d5/dc3/group___d_c_m_i_1gac0b27821aab3ee6b73ae8a6c6339fed5">DCMI_GetITStatus</link> (
+uint16_t DCMI_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc3/group___d_c_m_i_1ga908e6dad7bc5f4f4bbc512f679222c55">DCMI_ClearITPendingBit</link> (
+uint16_t DCMI_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the DCMI firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dcmi.h</para>
+    </simplesect>
+</section>

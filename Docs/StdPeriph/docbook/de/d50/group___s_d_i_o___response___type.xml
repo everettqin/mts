@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d50/group___s_d_i_o___response___type">
+    <title>SDIO_Response_Type</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d50/group___s_d_i_o___response___type_1ga308b8ef0e79ba451644dda923bb3ac41">SDIO_Response_No</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d50/group___s_d_i_o___response___type_1ga1f61768f90641648fd5c12e8d2f7e508">SDIO_Response_Short</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d50/group___s_d_i_o___response___type_1ga1a11a8750612b344214f846784046bb0">SDIO_Response_Long</link> ((uint32_t)0x000000C0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d50/group___s_d_i_o___response___type_1gae4df2359c9b637694b9baa220c16e062">IS_SDIO_RESPONSE</link> (((RESPONSE) == SDIO_Response_No) || \
+                                    ((RESPONSE) == SDIO_Response_Short) || \
+                                    ((RESPONSE) == SDIO_Response_Long))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

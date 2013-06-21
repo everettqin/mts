@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/da3/group___c_r_y_p___encryption___decryption__modes__definition">
+    <title>CRYP_Encryption_Decryption_modes_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da3/group___c_r_y_p___encryption___decryption__modes__definition_1ga34ad77e4aded75365ecfe2be34077891">MODE_ENCRYPT</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da3/group___c_r_y_p___encryption___decryption__modes__definition_1gad455c2c9a98406dfbde2635483da69a6">MODE_DECRYPT</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

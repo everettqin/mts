@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d52/group___i_w_d_g___group1">
+    <title>Prescaler and Counter configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Prescaler and Counter configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                  Prescaler and Counter configuration functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d52/group___i_w_d_g___group1_1gae466681e5bdc11b353c508b89d75ca05">IWDG_WriteAccessCmd</link> (
+uint16_t IWDG_WriteAccess)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d52/group___i_w_d_g___group1_1ga4fa7f1cd690533a35ad9e4729c0450a3">IWDG_SetPrescaler</link> (
+uint8_t IWDG_Prescaler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d52/group___i_w_d_g___group1_1gae2a14752a0431f23cb80cebf202ac365">IWDG_SetReload</link> (
+uint16_t Reload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d52/group___i_w_d_g___group1_1ga7147ebabdc3fef97f532b171a4e70d49">IWDG_ReloadCounter</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="da/d52/group___i_w_d_g___group1_1gae466681e5bdc11b353c508b89d75ca05">
+                <title>void IWDG_WriteAccessCmd (uint16_t IWDG_WriteAccess)</title> <emphasis>Enables or disables write access to IWDG_PR and IWDG_RLR registers.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>IWDG_WriteAccess, :</entry>
+                                <entry>
+<para>new state of write access to IWDG_PR and IWDG_RLR registers. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>IWDG_WriteAccess_Enable: Enable write access to IWDG_PR and IWDG_RLR registers </para>
+</listitem>
+<listitem>
+<para>IWDG_WriteAccess_Disable: Disable write access to IWDG_PR and IWDG_RLR registers </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d52/group___i_w_d_g___group1_1ga4fa7f1cd690533a35ad9e4729c0450a3">
+                <title>void IWDG_SetPrescaler (uint8_t IWDG_Prescaler)</title> <emphasis>Sets IWDG Prescaler value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>IWDG_Prescaler, :</entry>
+                                <entry>
+<para>specifies the IWDG Prescaler value. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>IWDG_Prescaler_4: IWDG prescaler set to 4 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_8: IWDG prescaler set to 8 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_16: IWDG prescaler set to 16 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_32: IWDG prescaler set to 32 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_64: IWDG prescaler set to 64 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_128: IWDG prescaler set to 128 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_256: IWDG prescaler set to 256 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d52/group___i_w_d_g___group1_1gae2a14752a0431f23cb80cebf202ac365">
+                <title>void IWDG_SetReload (uint16_t Reload)</title> <emphasis>Sets IWDG Reload value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Reload, :</entry>
+                                <entry>
+<para>specifies the IWDG Reload value. This parameter must be a number between 0 and 0x0FFF. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d52/group___i_w_d_g___group1_1ga7147ebabdc3fef97f532b171a4e70d49">
+                <title>void IWDG_ReloadCounter (void)</title> <emphasis>Reloads IWDG counter with value defined in the reload register
+        (write access to IWDG_PR and IWDG_RLR registers disabled).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

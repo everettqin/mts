@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d99/group___t_i_m___encoder___mode">
+    <title>TIM_Encoder_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d99/group___t_i_m___encoder___mode_1gabc63e3617a938382f87439ec58768b8e">TIM_EncoderMode_TI1</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d99/group___t_i_m___encoder___mode_1ga5627a2d5d47b7301c7dbb29d20ae00e3">TIM_EncoderMode_TI2</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d99/group___t_i_m___encoder___mode_1ga12511f903de08f1a634ff7828757f081">TIM_EncoderMode_TI12</link> ((uint16_t)0x0003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d99/group___t_i_m___encoder___mode_1ga9dd5baa6b2a44e0f25068a650cbfdd1b">IS_TIM_ENCODER_MODE</link> (((MODE) == TIM_EncoderMode_TI1) || \
+                                   ((MODE) == TIM_EncoderMode_TI2) || \
+                                   ((MODE) == TIM_EncoderMode_TI12))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

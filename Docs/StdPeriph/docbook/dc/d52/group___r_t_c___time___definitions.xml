@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d52/group___r_t_c___time___definitions">
+    <title>RTC_Time_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d52/group___r_t_c___time___definitions_1ga6bdfe3bed0a57dfafc2d1de785d48a62">IS_RTC_HOUR12</link> (((HOUR) &gt; 0) &amp;&amp; ((HOUR) &lt;= 12))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d52/group___r_t_c___time___definitions_1ga4883613bec76074ac62608b89e3f48a8">IS_RTC_HOUR24</link> ((HOUR) &lt;= 23)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d52/group___r_t_c___time___definitions_1ga8475ceaf2d35d98be0b3401812aef445">IS_RTC_MINUTES</link> ((MINUTES) &lt;= 59)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d52/group___r_t_c___time___definitions_1gadb5a39d98fc906a8ea035bd29308bc5c">IS_RTC_SECONDS</link> ((SECONDS) &lt;= 59)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

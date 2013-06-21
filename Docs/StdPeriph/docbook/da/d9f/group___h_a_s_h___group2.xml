@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d9f/group___h_a_s_h___group2">
+    <title>Message Digest generation functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Message Digest generation functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      Message Digest generation functions
+ ===============================================================================  
+  This section provides functions allowing the generation of message digest: 
+  - Push data in the IN FIFO : using HASH_DataIn()
+  - Get the number of words set in IN FIFO, use HASH_GetInFIFOWordsNbr()  
+  - set the last word valid bits number using HASH_SetLastWordValidBitsNbr() 
+  - start digest calculation : using HASH_StartDigest()
+  - Get the Digest message : using HASH_GetDigest()</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d9f/group___h_a_s_h___group2_1gac4d1fa51c9240ad0287b371564b5d2a6">HASH_SetLastWordValidBitsNbr</link> (
+uint16_t ValidNumber)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d9f/group___h_a_s_h___group2_1ga9c4c0cebdeb1ce2631dd2eeab82107ef">HASH_DataIn</link> (
+uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="da/d9f/group___h_a_s_h___group2_1ga37bec5e637a57124f3179185d03537ab">HASH_GetInFIFOWordsNbr</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d9f/group___h_a_s_h___group2_1ga23018d770837d6ab9f46941f105cc017">HASH_GetDigest</link> (
+<link linkend="df/d20/struct_h_a_s_h___msg_digest">HASH_MsgDigest</link> * HASH_MessageDigest)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d9f/group___h_a_s_h___group2_1ga84ac2b64179fd37b75c4d5f665126e93">HASH_StartDigest</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="da/d9f/group___h_a_s_h___group2_1gac4d1fa51c9240ad0287b371564b5d2a6">
+                <title>void HASH_SetLastWordValidBitsNbr (uint16_t ValidNumber)</title> <emphasis>Configure the Number of valid bits in last word of the message.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ValidNumber, :</entry>
+                                <entry>
+<para>Number of valid bits in last word of the message. This parameter must be a number between 0 and 0x1F.<itemizedlist>
+<listitem>
+<para>0x00: All 32 bits of the last data written are valid</para>
+</listitem><listitem>
+<para>0x01: Only bit [0] of the last data written is valid</para>
+</listitem><listitem>
+<para>0x02: Only bits[1:0] of the last data written are valid</para>
+</listitem><listitem>
+<para>0x03: Only bits[2:0] of the last data written are valid</para>
+</listitem><listitem>
+<para>...</para>
+</listitem><listitem>
+<para>0x1F: Only bits[30:0] of the last data written are valid </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The Number of valid bits must be set before to start the message digest competition (in Hash and HMAC) and key treatment(in HMAC). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d9f/group___h_a_s_h___group2_1ga9c4c0cebdeb1ce2631dd2eeab82107ef">
+                <title>void HASH_DataIn (uint32_t Data)</title> <emphasis>Writes data in the Data Input FIFO.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>new data of the message to be processed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d9f/group___h_a_s_h___group2_1ga37bec5e637a57124f3179185d03537ab">
+                <title>uint8_t HASH_GetInFIFOWordsNbr (void)</title> <emphasis>Returns the number of words already pushed into the IN FIFO.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>value of words already pushed into the IN FIFO. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d9f/group___h_a_s_h___group2_1ga23018d770837d6ab9f46941f105cc017">
+                <title>void HASH_GetDigest (HASH_MsgDigest *HASH_MessageDigest)</title> <emphasis>Provides the message digest result.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>In MD5 mode, Data[4] filed of <link linkend="df/d20/struct_h_a_s_h___msg_digest">HASH_MsgDigest</link> structure is not used and is read as zero. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_MessageDigest, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="df/d20/struct_h_a_s_h___msg_digest">HASH_MsgDigest</link> structure which will hold the message digest result </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d9f/group___h_a_s_h___group2_1ga84ac2b64179fd37b75c4d5f665126e93">
+                <title>void HASH_StartDigest (void)</title> <emphasis>Starts the message padding and calculation of the final message.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

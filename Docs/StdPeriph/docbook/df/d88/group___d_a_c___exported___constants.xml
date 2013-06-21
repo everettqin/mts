@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d88/group___d_a_c___exported___constants">
+    <title>DAC_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d0/d12/group___d_a_c__trigger__selection">DAC_trigger_selection</link></para></listitem>
+            <listitem><para><link linkend="d2/d11/group___d_a_c__wave__generation">DAC_wave_generation</link></para></listitem>
+            <listitem><para><link linkend="d3/ddc/group___d_a_c__lfsrunmask__triangleamplitude">DAC_lfsrunmask_triangleamplitude</link></para></listitem>
+            <listitem><para><link linkend="d5/d56/group___d_a_c__output__buffer">DAC_output_buffer</link></para></listitem>
+            <listitem><para><link linkend="d2/db1/group___d_a_c___channel__selection">DAC_Channel_selection</link></para></listitem>
+            <listitem><para><link linkend="de/d4f/group___d_a_c__data__alignement">DAC_data_alignement</link></para></listitem>
+            <listitem><para><link linkend="dc/d22/group___d_a_c__data">DAC_data</link></para></listitem>
+            <listitem><para><link linkend="dc/d3a/group___d_a_c__interrupts__definition">DAC_interrupts_definition</link></para></listitem>
+            <listitem><para><link linkend="d8/d43/group___d_a_c__flags__definition">DAC_flags_definition</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d0/d12/group___d_a_c__trigger__selection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d11/group___d_a_c__wave__generation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/ddc/group___d_a_c__lfsrunmask__triangleamplitude.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d56/group___d_a_c__output__buffer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/db1/group___d_a_c___channel__selection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d4f/group___d_a_c__data__alignement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d22/group___d_a_c__data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d3a/group___d_a_c__interrupts__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d43/group___d_a_c__flags__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

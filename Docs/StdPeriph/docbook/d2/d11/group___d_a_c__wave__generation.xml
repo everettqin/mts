@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d11/group___d_a_c__wave__generation">
+    <title>DAC_wave_generation</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d11/group___d_a_c__wave__generation_1gaabbcd575d6106267f6b65ce988158f29">DAC_WaveGeneration_None</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d11/group___d_a_c__wave__generation_1ga1692990325098cae6f32182c1fa0f61e">DAC_WaveGeneration_Noise</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d11/group___d_a_c__wave__generation_1ga68f1a71011437a5ea6298ab039554714">DAC_WaveGeneration_Triangle</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d11/group___d_a_c__wave__generation_1ga50fb2dd12305cd7bd0b738a1f6388d3c">IS_DAC_GENERATE_WAVE</link> (((WAVE) == DAC_WaveGeneration_None) || \
+                                    ((WAVE) == DAC_WaveGeneration_Noise) || \
+                                    ((WAVE) == DAC_WaveGeneration_Triangle))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d11/group___d_a_c__wave__generation_1ga09c5ee68f8e726b1c039df1f6e195965">DAC_Wave_Noise</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d11/group___d_a_c__wave__generation_1ga95a1566e1728e1e345e8f3b50629a075">DAC_Wave_Triangle</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d11/group___d_a_c__wave__generation_1ga45c25065fb713820f6dbae0009376e1c">IS_DAC_WAVE</link> (((WAVE) == DAC_Wave_Noise) || \
+                           ((WAVE) == DAC_Wave_Triangle))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/de8/group___s_d_i_o___transfer___type">
+    <title>SDIO_Transfer_Type</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/de8/group___s_d_i_o___transfer___type_1ga5b54ada18cc4072ceff1d98ee4b69972">SDIO_TransferMode_Block</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/de8/group___s_d_i_o___transfer___type_1gadd0cafe0a80e6b6cc5c22d838cbb2e28">SDIO_TransferMode_Stream</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/de8/group___s_d_i_o___transfer___type_1gaf7565ea93f9ed01558bdc9ad80dac763">IS_SDIO_TRANSFER_MODE</link> (((MODE) == SDIO_TransferMode_Stream) || \
+                                     ((MODE) == SDIO_TransferMode_Block))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

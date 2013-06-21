@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d94/group___a_d_c__regular__rank">
+    <title>ADC_regular_rank</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d94/group___a_d_c__regular__rank_1ga5928a1e9315f798e27220b91f1bae7f2">IS_ADC_REGULAR_RANK</link> (((RANK) &gt;= 0x1) &amp;&amp; ((RANK) &lt;= 0x10))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

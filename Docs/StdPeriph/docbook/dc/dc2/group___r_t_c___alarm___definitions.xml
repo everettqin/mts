@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dc2/group___r_t_c___alarm___definitions">
+    <title>RTC_Alarm_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc2/group___r_t_c___alarm___definitions_1ga8b6cb39fac113de7c5d2b05a93093243">IS_RTC_ALARM_DATE_WEEKDAY_DATE</link> (((DATE) &gt; 0) &amp;&amp; ((DATE) &lt;= 31))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc2/group___r_t_c___alarm___definitions_1gabc968cd70cf33e06b8e2886c98099021">IS_RTC_ALARM_DATE_WEEKDAY_WEEKDAY</link> (((WEEKDAY) == RTC_Weekday_Monday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Tuesday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Wednesday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Thursday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Friday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Saturday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Sunday))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

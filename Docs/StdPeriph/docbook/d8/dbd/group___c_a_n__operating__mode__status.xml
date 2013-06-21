@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/dbd/group___c_a_n__operating__mode__status">
+    <title>CAN_operating_mode_status</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dbd/group___c_a_n__operating__mode__status_1ga9882944537945325ef08e1986838ea45">CAN_ModeStatus_Failed</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dbd/group___c_a_n__operating__mode__status_1ga7ca0ea503eb3b3a7c0abdfad27cb6579">CAN_ModeStatus_Success</link> ((uint8_t)!<link linkend="d8/dbd/group___c_a_n__operating__mode__status_1ga9882944537945325ef08e1986838ea45">CAN_ModeStatus_Failed</link>)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d8/dbd/group___c_a_n__operating__mode__status_1ga9882944537945325ef08e1986838ea45">
+                <title>#define CAN_ModeStatus_Failed</title>                
+<para>CAN entering the specific mode failed </para>
+
+                <para>Definition at line 244 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dbd/group___c_a_n__operating__mode__status_1ga7ca0ea503eb3b3a7c0abdfad27cb6579">
+                <title>#define CAN_ModeStatus_Success</title>                
+<para>CAN entering the specific mode Succeed </para>
+
+                <para>Definition at line 245 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

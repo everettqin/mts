@@ -1,0 +1,308 @@
+\hypertarget{stm32f4xx__sdio_8c}{\section{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.1.0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-sdio.c File Reference}
+\label{stm32f4xx__sdio_8c}\index{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-sdio.\-c@{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-sdio.\-c}}
+}
+
+
+This file provides firmware functions to manage the following functionalities of the Secure digital input/output interface (S\-D\-I\-O) peripheral\-:  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx\-\_\-sdio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stm32f4xx\-\_\-rcc.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___s_d_i_o_gabf07aced03df5f46d57cea1d4f56d1e3}{\#define {\bfseries S\-D\-I\-O\-\_\-\-O\-F\-F\-S\-E\-T}~(S\-D\-I\-O\-\_\-\-B\-A\-S\-E -\/ P\-E\-R\-I\-P\-H\-\_\-\-B\-A\-S\-E)}\label{group___s_d_i_o_gabf07aced03df5f46d57cea1d4f56d1e3}
+
+\item 
+\hypertarget{group___s_d_i_o_gac5d642be874338519fdec175204ca8ed}{\#define {\bfseries C\-L\-K\-C\-R\-\_\-\-O\-F\-F\-S\-E\-T}~(S\-D\-I\-O\-\_\-\-O\-F\-F\-S\-E\-T + 0x04)}\label{group___s_d_i_o_gac5d642be874338519fdec175204ca8ed}
+
+\item 
+\hypertarget{group___s_d_i_o_ga6ad1da47f9d84c54eb620b9231ebec86}{\#define {\bfseries C\-L\-K\-E\-N\-\_\-\-Bit\-Number}~0x08}\label{group___s_d_i_o_ga6ad1da47f9d84c54eb620b9231ebec86}
+
+\item 
+\hypertarget{group___s_d_i_o_gabfb5772b9b734972b576309f7ca8bf92}{\#define {\bfseries C\-L\-K\-C\-R\-\_\-\-C\-L\-K\-E\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-L\-K\-C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (C\-L\-K\-E\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_gabfb5772b9b734972b576309f7ca8bf92}
+
+\item 
+\hypertarget{group___s_d_i_o_gaf12d26702ce7a88d2a3dae87f000b75e}{\#define {\bfseries C\-M\-D\-\_\-\-O\-F\-F\-S\-E\-T}~(S\-D\-I\-O\-\_\-\-O\-F\-F\-S\-E\-T + 0x0\-C)}\label{group___s_d_i_o_gaf12d26702ce7a88d2a3dae87f000b75e}
+
+\item 
+\hypertarget{group___s_d_i_o_gaf88f03a42d76974b55dfb8bda65ade97}{\#define {\bfseries S\-D\-I\-O\-S\-U\-S\-P\-E\-N\-D\-\_\-\-Bit\-Number}~0x0\-B}\label{group___s_d_i_o_gaf88f03a42d76974b55dfb8bda65ade97}
+
+\item 
+\hypertarget{group___s_d_i_o_ga931e48aa282e2a937308f57f807e0781}{\#define {\bfseries C\-M\-D\-\_\-\-S\-D\-I\-O\-S\-U\-S\-P\-E\-N\-D\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-M\-D\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (S\-D\-I\-O\-S\-U\-S\-P\-E\-N\-D\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_ga931e48aa282e2a937308f57f807e0781}
+
+\item 
+\hypertarget{group___s_d_i_o_ga1d1112c7b804791a0fffd8b317085aeb}{\#define {\bfseries E\-N\-C\-M\-D\-C\-O\-M\-P\-L\-\_\-\-Bit\-Number}~0x0\-C}\label{group___s_d_i_o_ga1d1112c7b804791a0fffd8b317085aeb}
+
+\item 
+\hypertarget{group___s_d_i_o_gade06098d1616639ce5f1b70675280b7c}{\#define {\bfseries C\-M\-D\-\_\-\-E\-N\-C\-M\-D\-C\-O\-M\-P\-L\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-M\-D\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (E\-N\-C\-M\-D\-C\-O\-M\-P\-L\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_gade06098d1616639ce5f1b70675280b7c}
+
+\item 
+\hypertarget{group___s_d_i_o_gab6d83a7ccd4a0d9ea9a09fec263fb25f}{\#define {\bfseries N\-I\-E\-N\-\_\-\-Bit\-Number}~0x0\-D}\label{group___s_d_i_o_gab6d83a7ccd4a0d9ea9a09fec263fb25f}
+
+\item 
+\hypertarget{group___s_d_i_o_ga08623f1d053677de8b20a6f5f5090edd}{\#define {\bfseries C\-M\-D\-\_\-\-N\-I\-E\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-M\-D\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (N\-I\-E\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_ga08623f1d053677de8b20a6f5f5090edd}
+
+\item 
+\hypertarget{group___s_d_i_o_gabd4fd3bb700b879f843ccc867db1832e}{\#define {\bfseries A\-T\-A\-C\-M\-D\-\_\-\-Bit\-Number}~0x0\-E}\label{group___s_d_i_o_gabd4fd3bb700b879f843ccc867db1832e}
+
+\item 
+\hypertarget{group___s_d_i_o_gabb7e537f931b6fdd3b49e826f2e19d7c}{\#define {\bfseries C\-M\-D\-\_\-\-A\-T\-A\-C\-M\-D\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-M\-D\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (A\-T\-A\-C\-M\-D\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_gabb7e537f931b6fdd3b49e826f2e19d7c}
+
+\item 
+\hypertarget{group___s_d_i_o_ga948c1382c4cfd3af3e406c4d0cdd4240}{\#define {\bfseries D\-C\-T\-R\-L\-\_\-\-O\-F\-F\-S\-E\-T}~(S\-D\-I\-O\-\_\-\-O\-F\-F\-S\-E\-T + 0x2\-C)}\label{group___s_d_i_o_ga948c1382c4cfd3af3e406c4d0cdd4240}
+
+\item 
+\hypertarget{group___s_d_i_o_gab2af311e327213503f0dbf3d013b7944}{\#define {\bfseries D\-M\-A\-E\-N\-\_\-\-Bit\-Number}~0x03}\label{group___s_d_i_o_gab2af311e327213503f0dbf3d013b7944}
+
+\item 
+\hypertarget{group___s_d_i_o_ga43f7336d4f955c6cf1f676ccbc043fe9}{\#define {\bfseries D\-C\-T\-R\-L\-\_\-\-D\-M\-A\-E\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (D\-C\-T\-R\-L\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (D\-M\-A\-E\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_ga43f7336d4f955c6cf1f676ccbc043fe9}
+
+\item 
+\hypertarget{group___s_d_i_o_ga773045c51d3e8daee0c181517c44a2df}{\#define {\bfseries R\-W\-S\-T\-A\-R\-T\-\_\-\-Bit\-Number}~0x08}\label{group___s_d_i_o_ga773045c51d3e8daee0c181517c44a2df}
+
+\item 
+\hypertarget{group___s_d_i_o_gac776c39dfac0e1ed007217133e1145c3}{\#define {\bfseries D\-C\-T\-R\-L\-\_\-\-R\-W\-S\-T\-A\-R\-T\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (D\-C\-T\-R\-L\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (R\-W\-S\-T\-A\-R\-T\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_gac776c39dfac0e1ed007217133e1145c3}
+
+\item 
+\hypertarget{group___s_d_i_o_gae8c0654ad5cba23281bcfa77ef19b9cf}{\#define {\bfseries R\-W\-S\-T\-O\-P\-\_\-\-Bit\-Number}~0x09}\label{group___s_d_i_o_gae8c0654ad5cba23281bcfa77ef19b9cf}
+
+\item 
+\hypertarget{group___s_d_i_o_ga678da1db835676b0fb1976cf3408e2d1}{\#define {\bfseries D\-C\-T\-R\-L\-\_\-\-R\-W\-S\-T\-O\-P\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (D\-C\-T\-R\-L\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (R\-W\-S\-T\-O\-P\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_ga678da1db835676b0fb1976cf3408e2d1}
+
+\item 
+\hypertarget{group___s_d_i_o_gad7b722671f65e79d1be2899b643278ad}{\#define {\bfseries R\-W\-M\-O\-D\-\_\-\-Bit\-Number}~0x0\-A}\label{group___s_d_i_o_gad7b722671f65e79d1be2899b643278ad}
+
+\item 
+\hypertarget{group___s_d_i_o_gad34bfe8650534ce24320ae83886c91e3}{\#define {\bfseries D\-C\-T\-R\-L\-\_\-\-R\-W\-M\-O\-D\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (D\-C\-T\-R\-L\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (R\-W\-M\-O\-D\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_gad34bfe8650534ce24320ae83886c91e3}
+
+\item 
+\hypertarget{group___s_d_i_o_ga37f3e1612e0dae8160be978ebfa54301}{\#define {\bfseries S\-D\-I\-O\-E\-N\-\_\-\-Bit\-Number}~0x0\-B}\label{group___s_d_i_o_ga37f3e1612e0dae8160be978ebfa54301}
+
+\item 
+\hypertarget{group___s_d_i_o_ga894f7da62b89ddd9f4b79d066056a3c7}{\#define {\bfseries D\-C\-T\-R\-L\-\_\-\-S\-D\-I\-O\-E\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (D\-C\-T\-R\-L\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (S\-D\-I\-O\-E\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___s_d_i_o_ga894f7da62b89ddd9f4b79d066056a3c7}
+
+\item 
+\hypertarget{group___s_d_i_o_gac8d10dd1e49ca9e8a6954146654e9a01}{\#define {\bfseries C\-L\-K\-C\-R\-\_\-\-C\-L\-E\-A\-R\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F8100)}\label{group___s_d_i_o_gac8d10dd1e49ca9e8a6954146654e9a01}
+
+\item 
+\hypertarget{group___s_d_i_o_ga7e6ec7be68d0fbb8fb4e3725cca9a05c}{\#define {\bfseries P\-W\-R\-\_\-\-P\-W\-R\-C\-T\-R\-L\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F\-F\-F\-C)}\label{group___s_d_i_o_ga7e6ec7be68d0fbb8fb4e3725cca9a05c}
+
+\item 
+\hypertarget{group___s_d_i_o_ga9e9fc7810b95805aeeb760bbdd87fa9b}{\#define {\bfseries D\-C\-T\-R\-L\-\_\-\-C\-L\-E\-A\-R\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F\-F08)}\label{group___s_d_i_o_ga9e9fc7810b95805aeeb760bbdd87fa9b}
+
+\item 
+\hypertarget{group___s_d_i_o_ga2325d77090e44221b07f8fba5bc9217e}{\#define {\bfseries C\-M\-D\-\_\-\-C\-L\-E\-A\-R\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F800)}\label{group___s_d_i_o_ga2325d77090e44221b07f8fba5bc9217e}
+
+\item 
+\hypertarget{group___s_d_i_o_ga4285ce49b005e3d03ddf9fdc491c4d70}{\#define {\bfseries S\-D\-I\-O\-\_\-\-R\-E\-S\-P\-\_\-\-A\-D\-D\-R}~((uint32\-\_\-t)(S\-D\-I\-O\-\_\-\-B\-A\-S\-E + 0x14))}\label{group___s_d_i_o_ga4285ce49b005e3d03ddf9fdc491c4d70}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___s_d_i_o___group1_gac359d2c6c67a2590f8f9b720c0e4ff1b}{S\-D\-I\-O\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the S\-D\-I\-O peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group1_gad40764a8e37c0ed5c9141ae338ff0203}{S\-D\-I\-O\-\_\-\-Init} (\hyperlink{struct_s_d_i_o___init_type_def}{S\-D\-I\-O\-\_\-\-Init\-Type\-Def} $\ast$S\-D\-I\-O\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\-D\-I\-O peripheral according to the specified parameters in the S\-D\-I\-O\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group1_ga778d338c29df4fae9ef69432e6df32ad}{S\-D\-I\-O\-\_\-\-Struct\-Init} (\hyperlink{struct_s_d_i_o___init_type_def}{S\-D\-I\-O\-\_\-\-Init\-Type\-Def} $\ast$S\-D\-I\-O\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\-D\-I\-O\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group1_ga7243b857d6b323748ff3a493b265bedc}{S\-D\-I\-O\-\_\-\-Clock\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-D\-I\-O Clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group1_ga36ecca32b904de74218fbe65cd5f5270}{S\-D\-I\-O\-\_\-\-Set\-Power\-State} (uint32\-\_\-t S\-D\-I\-O\-\_\-\-Power\-State)
+\begin{DoxyCompactList}\small\item\em Sets the power status of the controller. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_d_i_o___group1_ga3a19de2c7cd51645702213f64a1758ed}{S\-D\-I\-O\-\_\-\-Get\-Power\-State} (void)
+\begin{DoxyCompactList}\small\item\em Gets the power status of the controller. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group2_ga7117d2f702703f6c0a66bc07707cab23}{S\-D\-I\-O\-\_\-\-Send\-Command} (\hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def} $\ast$S\-D\-I\-O\-\_\-\-Cmd\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\-D\-I\-O Command according to the specified parameters in the S\-D\-I\-O\-\_\-\-Cmd\-Init\-Struct and send the command. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group2_ga09d9e89f49c87c82aec79c97b7068e24}{S\-D\-I\-O\-\_\-\-Cmd\-Struct\-Init} (\hyperlink{struct_s_d_i_o___cmd_init_type_def}{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def} $\ast$S\-D\-I\-O\-\_\-\-Cmd\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\-D\-I\-O\-\_\-\-Cmd\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___s_d_i_o___group2_ga9badf271c818e09da301d715c4ad0e5b}{S\-D\-I\-O\-\_\-\-Get\-Command\-Response} (void)
+\begin{DoxyCompactList}\small\item\em Returns command index of last command for which response received. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_d_i_o___group2_ga5c1e859511840e8cca6a9a768bce220b}{S\-D\-I\-O\-\_\-\-Get\-Response} (uint32\-\_\-t S\-D\-I\-O\-\_\-\-R\-E\-S\-P)
+\begin{DoxyCompactList}\small\item\em Returns response received from the card for the last command. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group3_gad65d896ae919683585bda44a1e2afae4}{S\-D\-I\-O\-\_\-\-Data\-Config} (\hyperlink{struct_s_d_i_o___data_init_type_def}{S\-D\-I\-O\-\_\-\-Data\-Init\-Type\-Def} $\ast$S\-D\-I\-O\-\_\-\-Data\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\-D\-I\-O data path according to the specified parameters in the S\-D\-I\-O\-\_\-\-Data\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group3_gaa83209c09e921521aca2587fb5b22ea2}{S\-D\-I\-O\-\_\-\-Data\-Struct\-Init} (\hyperlink{struct_s_d_i_o___data_init_type_def}{S\-D\-I\-O\-\_\-\-Data\-Init\-Type\-Def} $\ast$S\-D\-I\-O\-\_\-\-Data\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\-D\-I\-O\-\_\-\-Data\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_d_i_o___group3_ga7a28aaa2c25a9a5a8db1f49b0e8c9d0a}{S\-D\-I\-O\-\_\-\-Get\-Data\-Counter} (void)
+\begin{DoxyCompactList}\small\item\em Returns number of remaining data bytes to be transferred. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_d_i_o___group3_ga4e8ac755ef3c31ecd4ed2708df19187e}{S\-D\-I\-O\-\_\-\-Read\-Data} (void)
+\begin{DoxyCompactList}\small\item\em Read one data word from Rx F\-I\-F\-O. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group3_ga361008b5252aa33b5f2b5823ee3d7240}{S\-D\-I\-O\-\_\-\-Write\-Data} (uint32\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Write one data word to Tx F\-I\-F\-O. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_d_i_o___group3_ga9a3343983a2d68b5164a1c89797d2dd6}{S\-D\-I\-O\-\_\-\-Get\-F\-I\-F\-O\-Count} (void)
+\begin{DoxyCompactList}\small\item\em Returns the number of words left to be written to or read from F\-I\-F\-O. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group4_gac88f914d9a68a83abc2265ec8a7b79fc}{S\-D\-I\-O\-\_\-\-Start\-S\-D\-I\-O\-Read\-Wait} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Starts the S\-D I/\-O Read Wait operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group4_gaca6b25eb2debb73ac827c66f0ebcf837}{S\-D\-I\-O\-\_\-\-Stop\-S\-D\-I\-O\-Read\-Wait} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Stops the S\-D I/\-O Read Wait operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group4_ga2baac4ea1bb6c2d94345d2712604338a}{S\-D\-I\-O\-\_\-\-Set\-S\-D\-I\-O\-Read\-Wait\-Mode} (uint32\-\_\-t S\-D\-I\-O\-\_\-\-Read\-Wait\-Mode)
+\begin{DoxyCompactList}\small\item\em Sets one of the two options of inserting read wait interval. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group4_ga24e210c185d5a7855cbaff4472a8f8d1}{S\-D\-I\-O\-\_\-\-Set\-S\-D\-I\-O\-Operation} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-D I/\-O Mode Operation. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group4_ga9264137a01a1ab81d03bc80a3b3120fc}{S\-D\-I\-O\-\_\-\-Send\-S\-D\-I\-O\-Suspend\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-D I/\-O Mode suspend command sending. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group5_ga1bbe98c629812bc62121d9c8b2c5e21b}{S\-D\-I\-O\-\_\-\-Command\-Completion\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the command completion signal. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group5_gab44b8cbc21be000a291563076159503b}{S\-D\-I\-O\-\_\-\-C\-E\-A\-T\-A\-I\-T\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the C\-E-\/\-A\-T\-A interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group5_ga8dc7f17804bdb745b42f6647c8487b4c}{S\-D\-I\-O\-\_\-\-Send\-C\-E\-A\-T\-A\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Sends C\-E-\/\-A\-T\-A command (C\-M\-D61). \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group6_gad36fde5ec0ce0c2089b9d971c2271e6e}{S\-D\-I\-O\-\_\-\-D\-M\-A\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-D\-I\-O D\-M\-A request. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group7_ga208f51237ef43288735829dbaed37f00}{S\-D\-I\-O\-\_\-\-I\-T\-Config} (uint32\-\_\-t S\-D\-I\-O\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-D\-I\-O interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___s_d_i_o___group7_ga644514b4b3c95c5c4326d99cd166f6f9}{S\-D\-I\-O\-\_\-\-Get\-Flag\-Status} (uint32\-\_\-t S\-D\-I\-O\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\-D\-I\-O flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group7_ga7aff4efdeb528229135f9f285e53518a}{S\-D\-I\-O\-\_\-\-Clear\-Flag} (uint32\-\_\-t S\-D\-I\-O\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the S\-D\-I\-O's pending flags. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___s_d_i_o___group7_ga2d64af1f3df0f99cb518f9a89bbd02ac}{S\-D\-I\-O\-\_\-\-Get\-I\-T\-Status} (uint32\-\_\-t S\-D\-I\-O\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\-D\-I\-O interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_d_i_o___group7_ga048e07fd86321cd01b2a22c071c3149b}{S\-D\-I\-O\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint32\-\_\-t S\-D\-I\-O\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the S\-D\-I\-O's interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides firmware functions to manage the following functionalities of the Secure digital input/output interface (S\-D\-I\-O) peripheral\-: \begin{DoxyAuthor}{Author}
+M\-C\-D Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+30-\/\-September-\/2011
+\begin{DoxyItemize}
+\item Initialization and Configuration
+\item Command path state machine (C\-P\-S\-M) management
+\item Data path state machine (D\-P\-S\-M) management
+\item S\-D\-I\-O I\-O Cards mode management
+\item C\-E-\/\-A\-T\-A mode management
+\item D\-M\-A transfers management
+\item Interrupts and flags management
+\end{DoxyItemize}
+\end{DoxyDate}
+\begin{DoxyVerb}*
+*
+*          ===================================================================
+*                                 How to use this driver
+*          ===================================================================
+*          1. The SDIO clock (SDIOCLK = 48 MHz) is coming from a specific output
+*             of PLL (PLL48CLK). Before to start working with SDIO peripheral
+*             make sure that the PLL is well configured.
+*          The SDIO peripheral uses two clock signals:
+*              - SDIO adapter clock (SDIOCLK = 48 MHz)
+*              - APB2 bus clock (PCLK2)
+*          PCLK2 and SDIO_CK clock frequencies must respect the following condition:
+*                   Frequenc(PCLK2) >= (3 / 8 x Frequency(SDIO_CK))
+*
+*          2. Enable peripheral clock using RCC_APB2PeriphClockCmd(RCC_APB2Periph_SDIO, ENABLE).
+*
+*          3.  According to the SDIO mode, enable the GPIO clocks using 
+*              RCC_AHB1PeriphClockCmd() function. 
+*              The I/O can be one of the following configurations:
+*                 - 1-bit data length: SDIO_CMD, SDIO_CK and D0.
+*                 - 4-bit data length: SDIO_CMD, SDIO_CK and D[3:0].
+*                 - 8-bit data length: SDIO_CMD, SDIO_CK and D[7:0].      
+*
+*          4. Peripheral's alternate function: 
+*                 - Connect the pin to the desired peripherals' Alternate 
+*                   Function (AF) using GPIO_PinAFConfig() function
+*                 - Configure the desired pin in alternate function by:
+*                   GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AF
+*                 - Select the type, pull-up/pull-down and output speed via 
+*                   GPIO_PuPd, GPIO_OType and GPIO_Speed members
+*                 - Call GPIO_Init() function
+*
+*          5. Program the Clock Edge, Clock Bypass, Clock Power Save, Bus Wide, 
+*             hardware, flow control and the Clock Divider using the SDIO_Init()
+*             function.
+*
+*          6. Enable the Power ON State using the SDIO_SetPowerState(SDIO_PowerState_ON) 
+*             function.
+*              
+*          7. Enable the clock using the SDIO_ClockCmd() function.
+*
+*          8. Enable the NVIC and the corresponding interrupt using the function 
+*             SDIO_ITConfig() if you need to use interrupt mode. 
+*
+*          9. When using the DMA mode 
+*                   - Configure the DMA using DMA_Init() function
+*                   - Active the needed channel Request using SDIO_DMACmd() function
+*
+*          10. Enable the DMA using the DMA_Cmd() function, when using DMA mode. 
+*
+*          11. To control the CPSM (Command Path State Machine) and send 
+*              commands to the card use the SDIO_SendCommand(), 
+*              SDIO_GetCommandResponse() and SDIO_GetResponse() functions.     
+*              First, user has to fill the command structure (pointer to
+*              SDIO_CmdInitTypeDef) according to the selected command to be sent.
+*                 The parameters that should be filled are:
+*                   - Command Argument
+*                   - Command Index
+*                   - Command Response type
+*                   - Command Wait
+*                   - CPSM Status (Enable or Disable)
+*
+*              To check if the command is well received, read the SDIO_CMDRESP
+*              register using the SDIO_GetCommandResponse().
+*              The SDIO responses registers (SDIO_RESP1 to SDIO_RESP2), use the
+*              SDIO_GetResponse() function.
+*
+*          12. To control the DPSM (Data Path State Machine) and send/receive 
+*              data to/from the card use the SDIO_DataConfig(), SDIO_GetDataCounter(), 
+*              SDIO_ReadData(), SDIO_WriteData() and SDIO_GetFIFOCount() functions.
+*
+*              Read Operations
+*              ---------------
+*              a) First, user has to fill the data structure (pointer to
+*                 SDIO_DataInitTypeDef) according to the selected data type to
+*                 be received.
+*                 The parameters that should be filled are:
+*                   - Data TimeOut
+*                   - Data Length
+*                   - Data Block size
+*                   - Data Transfer direction: should be from card (To SDIO)
+*                   - Data Transfer mode
+*                   - DPSM Status (Enable or Disable)
+*                                   
+*              b) Configure the SDIO resources to receive the data from the card
+*                 according to selected transfer mode (Refer to Step 8, 9 and 10).
+*
+*              c) Send the selected Read command (refer to step 11).
+*                  
+*              d) Use the SDIO flags/interrupts to check the transfer status.
+*
+*              Write Operations
+*              ---------------
+*              a) First, user has to fill the data structure (pointer to
+*                 SDIO_DataInitTypeDef) according to the selected data type to
+*                 be received.
+*                 The parameters that should be filled are:
+*                   - Data TimeOut
+*                   - Data Length
+*                   - Data Block size
+*                   - Data Transfer direction:  should be to card (To CARD)
+*                   - Data Transfer mode
+*                   - DPSM Status (Enable or Disable)
+*
+*              b) Configure the SDIO resources to send the data to the card
+*                 according to selected transfer mode (Refer to Step 8, 9 and 10).
+*                   
+*              c) Send the selected Write command (refer to step 11).
+*                  
+*              d) Use the SDIO flags/interrupts to check the transfer status.
+*
+*
+*  \end{DoxyVerb}
+
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\-H\-E P\-R\-E\-S\-E\-N\-T F\-I\-R\-M\-W\-A\-R\-E W\-H\-I\-C\-H I\-S F\-O\-R G\-U\-I\-D\-A\-N\-C\-E O\-N\-L\-Y A\-I\-M\-S A\-T P\-R\-O\-V\-I\-D\-I\-N\-G C\-U\-S\-T\-O\-M\-E\-R\-S W\-I\-T\-H C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N R\-E\-G\-A\-R\-D\-I\-N\-G T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S I\-N O\-R\-D\-E\-R F\-O\-R T\-H\-E\-M T\-O S\-A\-V\-E T\-I\-M\-E. A\-S A R\-E\-S\-U\-L\-T, S\-T\-M\-I\-C\-R\-O\-E\-L\-E\-C\-T\-R\-O\-N\-I\-C\-S S\-H\-A\-L\-L N\-O\-T B\-E H\-E\-L\-D L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y D\-I\-R\-E\-C\-T, I\-N\-D\-I\-R\-E\-C\-T O\-R C\-O\-N\-S\-E\-Q\-U\-E\-N\-T\-I\-A\-L D\-A\-M\-A\-G\-E\-S W\-I\-T\-H R\-E\-S\-P\-E\-C\-T T\-O A\-N\-Y C\-L\-A\-I\-M\-S A\-R\-I\-S\-I\-N\-G F\-R\-O\-M T\-H\-E C\-O\-N\-T\-E\-N\-T O\-F S\-U\-C\-H F\-I\-R\-M\-W\-A\-R\-E A\-N\-D/\-O\-R T\-H\-E U\-S\-E M\-A\-D\-E B\-Y C\-U\-S\-T\-O\-M\-E\-R\-S O\-F T\-H\-E C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N C\-O\-N\-T\-A\-I\-N\-E\-D H\-E\-R\-E\-I\-N I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S.
+
+\subsubsection*{\begin{center}\copyright C\-O\-P\-Y\-R\-I\-G\-H\-T 2011 S\-T\-Microelectronics\end{center} }
+
+Definition in file \hyperlink{stm32f4xx__sdio_8c_source}{stm32f4xx\-\_\-sdio.\-c}.
+

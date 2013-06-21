@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d7c/group___d_m_a___group3">
+    <title>Double Buffer mode functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Double Buffer mode functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                         Double Buffer mode functions
+ ===============================================================================  
+
+  This subsection provides function allowing to configure and control the double 
+  buffer mode parameters.
+  
+  The Double Buffer mode can be used only when Circular mode is enabled.
+  The Double Buffer mode cannot be used when transferring data from Memory to Memory.
+  
+  The Double Buffer mode allows to set two different Memory addresses from/to which
+  the DMA controller will access alternatively (after completing transfer to/from target
+  memory 0, it will start transfer to/from target memory 1).
+  This allows to reduce software overhead for double buffering and reduce the CPU
+  access time.
+
+  Two functions must be called before calling the DMA_Init() function:
+   - void DMA_DoubleBufferModeConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t Memory1BaseAddr,
+                                uint32_t DMA_CurrentMemory);
+   - void DMA_DoubleBufferModeCmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+   
+  DMA_DoubleBufferModeConfig() is called to configure the Memory 1 base address and the first
+  Memory target from/to which the transfer will start after enabling the DMA Stream.
+  Then DMA_DoubleBufferModeCmd() must be called to enable the Double Buffer mode (or disable 
+  it when it should not be used).
+  
+   
+  Two functions can be called dynamically when the transfer is ongoing (or when the DMA Stream is 
+  stopped) to modify on of the target Memories addresses or to check wich Memory target is currently
+   used:
+    - void DMA_MemoryTargetConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t MemoryBaseAddr,
+                            uint32_t DMA_MemoryTarget);
+    - uint32_t DMA_GetCurrentMemoryTarget(DMA_Stream_TypeDef* DMAy_Streamx);
+
+  DMA_MemoryTargetConfig() can be called to modify the base address of one of the two target Memories.
+  The Memory of which the base address will be modified must not be currently be used by the DMA Stream
+  (ie. if the DMA Stream is currently transferring from Memory 1 then you can only modify base address
+  of target Memory 0 and vice versa).
+  To check this condition, it is recommended to use the function DMA_GetCurrentMemoryTarget() which
+  returns the index of the Memory target currently in use by the DMA Stream.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d7c/group___d_m_a___group3_1ga8d0957e50302efaf48a16c62d14c9ca8">DMA_DoubleBufferModeConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t Memory1BaseAddr, uint32_t DMA_CurrentMemory)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d7c/group___d_m_a___group3_1ga7fe09e62ea3125db384829dab59ebe3e">DMA_DoubleBufferModeCmd</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d7c/group___d_m_a___group3_1ga4ebcffd32eb6968ac61cfb64a6bae258">DMA_MemoryTargetConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t MemoryBaseAddr, uint32_t DMA_MemoryTarget)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="de/d7c/group___d_m_a___group3_1ga74b6624f9faa2f43c9369ddbdeab241c">DMA_GetCurrentMemoryTarget</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="de/d7c/group___d_m_a___group3_1ga8d0957e50302efaf48a16c62d14c9ca8">
+                <title>void DMA_DoubleBufferModeConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t Memory1BaseAddr, uint32_t DMA_CurrentMemory)</title> <emphasis>Configures, when the DMAy Streamx is disabled, the double buffer mode 
+        and the current memory target.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Memory1BaseAddr, :</entry>
+                                <entry>
+<para>the base address of the second buffer (Memory 1) </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_CurrentMemory, :</entry>
+                                <entry>
+<para>specifies which memory will be first buffer for the transactions when the Stream will be enabled. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_Memory_0: Memory 0 is the current buffer. </para>
+</listitem>
+<listitem>
+<para>DMA_Memory_1: Memory 1 is the current buffer.</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>Memory0BaseAddr is set by the DMA structure configuration in <link linkend="df/df8/group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init()</link>.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d7c/group___d_m_a___group3_1ga7fe09e62ea3125db384829dab59ebe3e">
+                <title>void DMA_DoubleBufferModeCmd (DMA_Stream_TypeDef *DMAy_Streamx, FunctionalState NewState)</title> <emphasis>Enables or disables the double buffer mode for the selected DMA stream.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function can be called only when the DMA Stream is disabled. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DMAy Streamx double buffer mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d7c/group___d_m_a___group3_1ga4ebcffd32eb6968ac61cfb64a6bae258">
+                <title>void DMA_MemoryTargetConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t MemoryBaseAddr, uint32_t DMA_MemoryTarget)</title> <emphasis>Configures the Memory address for the next buffer transfer in double
+        buffer mode (for dynamic use). This function can be called when the
+        DMA Stream is enabled and when the transfer is ongoing.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>MemoryBaseAddr, :</entry>
+                                <entry>
+<para>The base address of the target memory buffer </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_MemoryTarget, :</entry>
+                                <entry>
+<para>Next memory target to be used. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_Memory_0: To use the memory address 0 </para>
+</listitem>
+<listitem>
+<para>DMA_Memory_1: To use the memory address 1</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>It is not allowed to modify the Base Address of a target Memory when this target is involved in the current transfer. ie. If the DMA Stream is currently transferring to/from Memory 1, then it not possible to modify Base address of Memory 1, but it is possible to modify Base address of Memory 0. To know which Memory is currently used, you can use the function <link linkend="df/df8/group___d_m_a_1ga74b6624f9faa2f43c9369ddbdeab241c">DMA_GetCurrentMemoryTarget()</link>.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d7c/group___d_m_a___group3_1ga74b6624f9faa2f43c9369ddbdeab241c">
+                <title>uint32_t DMA_GetCurrentMemoryTarget (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Returns the current memory target used by double buffer transfer.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>memory target number: 0 for Memory0 or 1 for Memory1. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

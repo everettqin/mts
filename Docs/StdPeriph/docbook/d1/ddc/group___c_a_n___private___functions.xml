@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/ddc/group___c_a_n___private___functions">
+    <title>CAN_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="de/d39/group___c_a_n___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d6/d9d/group___c_a_n___group2">CAN Frames Transmission functions</link></para></listitem>
+            <listitem><para><link linkend="d6/da8/group___c_a_n___group3">CAN Frames Reception functions</link></para></listitem>
+            <listitem><para><link linkend="d6/dd0/group___c_a_n___group4">CAN Operation modes functions</link></para></listitem>
+            <listitem><para><link linkend="df/d0c/group___c_a_n___group5">CAN Bus Error management functions</link></para></listitem>
+            <listitem><para><link linkend="d8/d49/group___c_a_n___group6">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static ITStatus <link linkend="d1/ddc/group___c_a_n___private___functions_1gaed56e0c694fbf4dc2fd3244d4e4e269a">CheckITStatus</link> (
+uint32_t CAN_Reg, uint32_t It_Bit)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d1/ddc/group___c_a_n___private___functions_1gaed56e0c694fbf4dc2fd3244d4e4e269a">
+                <title>static ITStatus CheckITStatus (uint32_t CAN_Reg, uint32_t It_Bit)</title> <emphasis>Checks whether the CAN interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_Reg, :</entry>
+                                <entry>
+<para>specifies the CAN interrupt register to check. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>It_Bit, :</entry>
+                                <entry>
+<para>specifies the interrupt source bit to check. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of the CAN Interrupt (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="de/d39/group___c_a_n___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d9d/group___c_a_n___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/da8/group___c_a_n___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/dd0/group___c_a_n___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d0c/group___c_a_n___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d49/group___c_a_n___group6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

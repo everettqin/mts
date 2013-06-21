@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests">
+    <title>SPI_I2S_DMA_transfer_requests</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests_1ga05f55a18c83aaa945d99200d012e5e2a">SPI_I2S_DMAReq_Tx</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests_1gaa7f680295cdc1af9b086bf51312f15f3">SPI_I2S_DMAReq_Rx</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests_1ga6a8f97093494f2331dbdf9295d7c2c6b">IS_SPI_I2S_DMAREQ</link> ((((DMAREQ) &amp; (uint16_t)0xFFFC) == 0x00) &amp;&amp; ((DMAREQ) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d76/group___w_w_d_g">
+    <title>WWDG</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>WWDG driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d0/de5/group___w_w_d_g___exported___constants">WWDG_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="dc/d14/group___w_w_d_g___private___functions">WWDG_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1ga7130f4dc861b9234b62e73f9f57f89a1">WWDG_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1gafeaa2b52c31ba7baca7eb61d2d42e07b">WWDG_SetPrescaler</link> (
+uint32_t WWDG_Prescaler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1gaf44a7bf8bf6b11b41cd89ff521fdd5a5">WWDG_SetWindowValue</link> (
+uint8_t WindowValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1gac8af66ea5254d3d78b60b9b7c7f29521">WWDG_EnableIT</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1ga6e44cc35f133b28b9ad861f459bf8d76">WWDG_SetCounter</link> (
+uint8_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1ga10dc2554d0b504b5472e3ecf0f02a9e6">WWDG_Enable</link> (
+uint8_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d5/d76/group___w_w_d_g_1ga7df4882d45918b9b8249dfca1e44fabc">WWDG_GetFlagStatus</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1gabd2b5a6317c2e1a3ab0795838ce59dd2">WWDG_ClearFlag</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1gab6dcdf2385dd7317ec775e146cff40ca">WWDG_OFFSET</link> (WWDG_BASE - PERIPH_BASE)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1ga3e0f9d9f7f69a6d133bba721e25aca4a">CFR_OFFSET</link> (WWDG_OFFSET + 0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1ga97c9005823520f5aaefe211923b48215">EWI_BitNumber</link> 0x09</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1gaa48804210cea547f0e0f4ca49c44fc94">CFR_EWI_BB</link> (PERIPH_BB_BASE + (CFR_OFFSET * 32) + (EWI_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1gab500f6978b5964c1de28e59e7ac98012">CFR_WDGTB_MASK</link> ((uint32_t)0xFFFFFE7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1gab99b48f5d1720c22c2ef8d8a5f934a11">CFR_W_MASK</link> ((uint32_t)0xFFFFFF80)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1ga7d4a1875576135ebdd354a816679d45c">BIT_MASK</link> ((uint8_t)0x7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d5/d76/group___w_w_d_g_1ga7130f4dc861b9234b62e73f9f57f89a1">
+                <title>void WWDG_DeInit (void)</title> <emphasis>Deinitializes the WWDG peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d76/group___w_w_d_g_1gafeaa2b52c31ba7baca7eb61d2d42e07b">
+                <title>void WWDG_SetPrescaler (uint32_t WWDG_Prescaler)</title> <emphasis>Sets the WWDG Prescaler.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>WWDG_Prescaler, :</entry>
+                                <entry>
+<para>specifies the WWDG Prescaler. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>WWDG_Prescaler_1: WWDG counter clock = (PCLK1/4096)/1 </para>
+</listitem>
+<listitem>
+<para>WWDG_Prescaler_2: WWDG counter clock = (PCLK1/4096)/2 </para>
+</listitem>
+<listitem>
+<para>WWDG_Prescaler_4: WWDG counter clock = (PCLK1/4096)/4 </para>
+</listitem>
+<listitem>
+<para>WWDG_Prescaler_8: WWDG counter clock = (PCLK1/4096)/8 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d76/group___w_w_d_g_1gaf44a7bf8bf6b11b41cd89ff521fdd5a5">
+                <title>void WWDG_SetWindowValue (uint8_t WindowValue)</title> <emphasis>Sets the WWDG window value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>WindowValue, :</entry>
+                                <entry>
+<para>specifies the window value to be compared to the downcounter. This parameter value must be lower than 0x80. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d76/group___w_w_d_g_1gac8af66ea5254d3d78b60b9b7c7f29521">
+                <title>void WWDG_EnableIT (void)</title> <emphasis>Enables the WWDG Early Wakeup interrupt(EWI).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Once enabled this interrupt cannot be disabled except by a system reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d76/group___w_w_d_g_1ga6e44cc35f133b28b9ad861f459bf8d76">
+                <title>void WWDG_SetCounter (uint8_t Counter)</title> <emphasis>Sets the WWDG counter value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Counter, :</entry>
+                                <entry>
+<para>specifies the watchdog counter value. This parameter must be a number between 0x40 and 0x7F (to prevent generating an immediate reset) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d76/group___w_w_d_g_1ga10dc2554d0b504b5472e3ecf0f02a9e6">
+                <title>void WWDG_Enable (uint8_t Counter)</title> <emphasis>Enables WWDG and load the counter value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Counter, :</entry>
+                                <entry>
+<para>specifies the watchdog counter value. This parameter must be a number between 0x40 and 0x7F (to prevent generating an immediate reset) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d76/group___w_w_d_g_1ga7df4882d45918b9b8249dfca1e44fabc">
+                <title>FlagStatus WWDG_GetFlagStatus (void)</title> <emphasis>Checks whether the Early Wakeup interrupt flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of the Early Wakeup interrupt flag (SET or RESET) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d76/group___w_w_d_g_1gabd2b5a6317c2e1a3ab0795838ce59dd2">
+                <title>void WWDG_ClearFlag (void)</title> <emphasis>Clears Early Wakeup interrupt flag.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="d0/de5/group___w_w_d_g___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d14/group___w_w_d_g___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

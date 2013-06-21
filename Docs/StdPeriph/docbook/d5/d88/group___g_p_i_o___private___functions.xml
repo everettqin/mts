@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d88/group___g_p_i_o___private___functions">
+    <title>GPIO_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d4/db2/group___g_p_i_o___group1">Initialization and Configuration</link></para></listitem>
+            <listitem><para><link linkend="d1/d6a/group___g_p_i_o___group2">GPIO Read and Write</link></para></listitem>
+            <listitem><para><link linkend="d2/ded/group___g_p_i_o___group3">GPIO Alternate functions configuration function</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d4/db2/group___g_p_i_o___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d6a/group___g_p_i_o___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/ded/group___g_p_i_o___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

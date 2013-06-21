@@ -1,0 +1,93 @@
+\hypertarget{struct_can_rx_msg}{\section{Can\-Rx\-Msg Struct Reference}
+\label{struct_can_rx_msg}\index{Can\-Rx\-Msg@{Can\-Rx\-Msg}}
+}
+
+
+C\-A\-N Rx message structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\-\_\-can.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\-\_\-t \hyperlink{struct_can_rx_msg_a511131786af8d1534273e48ea2052245}{Std\-Id}
+\item 
+uint32\-\_\-t \hyperlink{struct_can_rx_msg_a8625d2aaf6b0b99f0faf0b8cd07debd4}{Ext\-Id}
+\item 
+uint8\-\_\-t \hyperlink{struct_can_rx_msg_accecf260a60cf687f0f9898421aeea86}{I\-D\-E}
+\item 
+uint8\-\_\-t \hyperlink{struct_can_rx_msg_a131e825d532b66f27dbb74aa80864d37}{R\-T\-R}
+\item 
+uint8\-\_\-t \hyperlink{struct_can_rx_msg_a5f86974a53a85fb5706e08f8106296b9}{D\-L\-C}
+\item 
+uint8\-\_\-t \hyperlink{struct_can_rx_msg_ab7783127a49388ba2431603e29251b9b}{Data} \mbox{[}8\mbox{]}
+\item 
+uint8\-\_\-t \hyperlink{struct_can_rx_msg_af219946419093720aad14ef427f3cde4}{F\-M\-I}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\-A\-N Rx message structure definition. 
+
+Definition at line 157 of file stm32f4xx\-\_\-can.\-h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{struct_can_rx_msg_ab7783127a49388ba2431603e29251b9b}{\index{Can\-Rx\-Msg@{Can\-Rx\-Msg}!Data@{Data}}
+\index{Data@{Data}!CanRxMsg@{Can\-Rx\-Msg}}
+\subsubsection[{Data}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Data\mbox{[}8\mbox{]}}}\label{struct_can_rx_msg_ab7783127a49388ba2431603e29251b9b}
+Contains the data to be received. It ranges from 0 to 0x\-F\-F. 
+
+Definition at line 176 of file stm32f4xx\-\_\-can.\-h.
+
+\hypertarget{struct_can_rx_msg_a5f86974a53a85fb5706e08f8106296b9}{\index{Can\-Rx\-Msg@{Can\-Rx\-Msg}!D\-L\-C@{D\-L\-C}}
+\index{D\-L\-C@{D\-L\-C}!CanRxMsg@{Can\-Rx\-Msg}}
+\subsubsection[{D\-L\-C}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t D\-L\-C}}\label{struct_can_rx_msg_a5f86974a53a85fb5706e08f8106296b9}
+Specifies the length of the frame that will be received. This parameter can be a value between 0 to 8 
+
+Definition at line 173 of file stm32f4xx\-\_\-can.\-h.
+
+\hypertarget{struct_can_rx_msg_a8625d2aaf6b0b99f0faf0b8cd07debd4}{\index{Can\-Rx\-Msg@{Can\-Rx\-Msg}!Ext\-Id@{Ext\-Id}}
+\index{Ext\-Id@{Ext\-Id}!CanRxMsg@{Can\-Rx\-Msg}}
+\subsubsection[{Ext\-Id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t Ext\-Id}}\label{struct_can_rx_msg_a8625d2aaf6b0b99f0faf0b8cd07debd4}
+Specifies the extended identifier. This parameter can be a value between 0 to 0x1\-F\-F\-F\-F\-F\-F\-F. 
+
+Definition at line 162 of file stm32f4xx\-\_\-can.\-h.
+
+\hypertarget{struct_can_rx_msg_af219946419093720aad14ef427f3cde4}{\index{Can\-Rx\-Msg@{Can\-Rx\-Msg}!F\-M\-I@{F\-M\-I}}
+\index{F\-M\-I@{F\-M\-I}!CanRxMsg@{Can\-Rx\-Msg}}
+\subsubsection[{F\-M\-I}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t F\-M\-I}}\label{struct_can_rx_msg_af219946419093720aad14ef427f3cde4}
+Specifies the index of the filter the message stored in the mailbox passes through. This parameter can be a value between 0 to 0x\-F\-F 
+
+Definition at line 179 of file stm32f4xx\-\_\-can.\-h.
+
+\hypertarget{struct_can_rx_msg_accecf260a60cf687f0f9898421aeea86}{\index{Can\-Rx\-Msg@{Can\-Rx\-Msg}!I\-D\-E@{I\-D\-E}}
+\index{I\-D\-E@{I\-D\-E}!CanRxMsg@{Can\-Rx\-Msg}}
+\subsubsection[{I\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t I\-D\-E}}\label{struct_can_rx_msg_accecf260a60cf687f0f9898421aeea86}
+Specifies the type of identifier for the message that will be received. This parameter can be a value of \hyperlink{group___c_a_n__identifier__type}{C\-A\-N\-\_\-identifier\-\_\-type} 
+
+Definition at line 165 of file stm32f4xx\-\_\-can.\-h.
+
+\hypertarget{struct_can_rx_msg_a131e825d532b66f27dbb74aa80864d37}{\index{Can\-Rx\-Msg@{Can\-Rx\-Msg}!R\-T\-R@{R\-T\-R}}
+\index{R\-T\-R@{R\-T\-R}!CanRxMsg@{Can\-Rx\-Msg}}
+\subsubsection[{R\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t R\-T\-R}}\label{struct_can_rx_msg_a131e825d532b66f27dbb74aa80864d37}
+Specifies the type of frame for the received message. This parameter can be a value of \hyperlink{group___c_a_n__remote__transmission__request}{C\-A\-N\-\_\-remote\-\_\-transmission\-\_\-request} 
+
+Definition at line 169 of file stm32f4xx\-\_\-can.\-h.
+
+\hypertarget{struct_can_rx_msg_a511131786af8d1534273e48ea2052245}{\index{Can\-Rx\-Msg@{Can\-Rx\-Msg}!Std\-Id@{Std\-Id}}
+\index{Std\-Id@{Std\-Id}!CanRxMsg@{Can\-Rx\-Msg}}
+\subsubsection[{Std\-Id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t Std\-Id}}\label{struct_can_rx_msg_a511131786af8d1534273e48ea2052245}
+Specifies the standard identifier. This parameter can be a value between 0 to 0x7\-F\-F. 
+
+Definition at line 159 of file stm32f4xx\-\_\-can.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/inc/\hyperlink{stm32f4xx__can_8h}{stm32f4xx\-\_\-can.\-h}\end{DoxyCompactItemize}

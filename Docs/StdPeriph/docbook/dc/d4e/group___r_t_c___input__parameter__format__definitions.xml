@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d4e/group___r_t_c___input__parameter__format__definitions">
+    <title>RTC_Input_parameter_format_definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d4e/group___r_t_c___input__parameter__format__definitions_1gaa0d76a1ae008c8e3602e45a1d4675174">RTC_Format_BIN</link> ((uint32_t)0x000000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d4e/group___r_t_c___input__parameter__format__definitions_1gac40ea19c2fee09cf26beaa29140a771e">RTC_Format_BCD</link> ((uint32_t)0x000000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d4e/group___r_t_c___input__parameter__format__definitions_1ga05a1ca8558058d71322ccf1045b8fb1c">IS_RTC_FORMAT</link> (((FORMAT) == RTC_Format_BIN) || ((FORMAT) == RTC_Format_BCD))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

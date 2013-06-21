@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dbe/group___g_p_i_o__pins__define">
+    <title>GPIO_pins_define</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gab305b8d1be9f89bf2b4a05589b456049">GPIO_Pin_0</link> ((uint16_t)0x0001)  /* Pin 0 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1ga29db642c26f1fa0fffc3ecadcd30f82b">GPIO_Pin_1</link> ((uint16_t)0x0002)  /* Pin 1 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gabdf6630324b2f99360537a310687187c">GPIO_Pin_2</link> ((uint16_t)0x0004)  /* Pin 2 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1ga763c6544859dbe28cd3f8ad820045556">GPIO_Pin_3</link> ((uint16_t)0x0008)  /* Pin 3 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gacbf04d09b954606cdcc55eb2e81780e3">GPIO_Pin_4</link> ((uint16_t)0x0010)  /* Pin 4 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1ga32dbe930f52ce5ab60190c65e9dc741e">GPIO_Pin_5</link> ((uint16_t)0x0020)  /* Pin 5 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gaf047899d873f27c2db9f50b342e35a58">GPIO_Pin_6</link> ((uint16_t)0x0040)  /* Pin 6 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1ga7346b6ce5507bd28a7a79e7dcc816c08">GPIO_Pin_7</link> ((uint16_t)0x0080)  /* Pin 7 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gac891f0984dc64af3567577fbf13ab304">GPIO_Pin_8</link> ((uint16_t)0x0100)  /* Pin 8 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gaad1891082d5d6bcac06c2729a9fdd2f0">GPIO_Pin_9</link> ((uint16_t)0x0200)  /* Pin 9 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1ga726af6407ba60ac60f02057227c2d348">GPIO_Pin_10</link> ((uint16_t)0x0400)  /* Pin 10 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1ga5139d5bc3d15784ae7794ed2ae1ff767">GPIO_Pin_11</link> ((uint16_t)0x0800)  /* Pin 11 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gada91257dcaab2c86f75fbd8e4b52b98c">GPIO_Pin_12</link> ((uint16_t)0x1000)  /* Pin 12 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1ga4155a41c433f3657b9c79cfbd4240966">GPIO_Pin_13</link> ((uint16_t)0x2000)  /* Pin 13 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1ga21cd1d89c0c061a6f09c5a842610bee5">GPIO_Pin_14</link> ((uint16_t)0x4000)  /* Pin 14 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gae686a9fc47cf3e420e5db0784210711d">GPIO_Pin_15</link> ((uint16_t)0x8000)  /* Pin 15 selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gaba3e915ddca17a1211edc07b7fd97e8b">GPIO_Pin_All</link> ((uint16_t)0xFFFF)  /* All pins selected */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gad6ec74e33360395535ad5d91ba6d4781">IS_GPIO_PIN</link> ((((PIN) &amp; (uint16_t)0x00) == 0x00) &amp;&amp; ((PIN) != (uint16_t)0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dbe/group___g_p_i_o__pins__define_1gaddf7154b7f30b7c0a70f3aeaff5ddffc">IS_GET_GPIO_PIN</link> (((PIN) == GPIO_Pin_0) || \
+                              ((PIN) == GPIO_Pin_1) || \
+                              ((PIN) == GPIO_Pin_2) || \
+                              ((PIN) == GPIO_Pin_3) || \
+                              ((PIN) == GPIO_Pin_4) || \
+                              ((PIN) == GPIO_Pin_5) || \
+                              ((PIN) == GPIO_Pin_6) || \
+                              ((PIN) == GPIO_Pin_7) || \
+                              ((PIN) == GPIO_Pin_8) || \
+                              ((PIN) == GPIO_Pin_9) || \
+                              ((PIN) == GPIO_Pin_10) || \
+                              ((PIN) == GPIO_Pin_11) || \
+                              ((PIN) == GPIO_Pin_12) || \
+                              ((PIN) == GPIO_Pin_13) || \
+                              ((PIN) == GPIO_Pin_14) || \
+                              ((PIN) == GPIO_Pin_15))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

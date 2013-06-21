@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/da4/group___d_m_a___group2">
+    <title>Data Counter functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Data Counter functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                           Data Counter functions
+ ===============================================================================  
+
+  This subsection provides function allowing to configure and read the buffer size
+  (number of data to be transferred). 
+
+  The DMA data counter can be written only when the DMA Stream is disabled 
+  (ie. after transfer complete event).
+
+  The following function can be used to write the Stream data counter value:
+    - void DMA_SetCurrDataCounter(DMA_Stream_TypeDef* DMAy_Streamx, uint16_t Counter);
+
+@note It is advised to use this function rather than DMA_Init() in situations where
+      only the Data buffer needs to be reloaded.
+
+@note If the Source and Destination Data Sizes are different, then the value written in
+      data counter, expressing the number of transfers, is relative to the number of 
+      transfers from the Peripheral point of view.
+      ie. If Memory data size is Word, Peripheral data size is Half-Words, then the value
+      to be configured in the data counter is the number of Half-Words to be transferred
+      from/to the peripheral.
+
+  The DMA data counter can be read to indicate the number of remaining transfers for
+  the relative DMA Stream. This counter is decremented at the end of each data 
+  transfer and when the transfer is complete: 
+   - If Normal mode is selected: the counter is set to 0.
+   - If Circular mode is selected: the counter is reloaded with the initial value
+     (configured before enabling the DMA Stream)
+   
+  The following function can be used to read the Stream data counter value:
+     - uint16_t DMA_GetCurrDataCounter(DMA_Stream_TypeDef* DMAy_Streamx);</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/da4/group___d_m_a___group2_1ga6a11a2c951cff59b125ba8857d44e3f3">DMA_SetCurrDataCounter</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint16_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="de/da4/group___d_m_a___group2_1ga4a76444a92423f5f15a4328738d6dc46">DMA_GetCurrDataCounter</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="de/da4/group___d_m_a___group2_1ga6a11a2c951cff59b125ba8857d44e3f3">
+                <title>void DMA_SetCurrDataCounter (DMA_Stream_TypeDef *DMAy_Streamx, uint16_t Counter)</title> <emphasis>Writes the number of data units to be transferred on the DMAy Streamx.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Counter, :</entry>
+                                <entry>
+<para>Number of data units to be transferred (from 0 to 65535) Number of data items depends only on the Peripheral data format.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>If Peripheral data format is Bytes: number of data units is equal to total number of bytes to be transferred.</para>
+<simplesect/>
+<para>If Peripheral data format is Half-Word: number of data units is equal to total number of bytes to be transferred / 2.</para>
+<simplesect/>
+<para>If Peripheral data format is Word: number of data units is equal to total number of bytes to be transferred / 4.</para>
+<simplesect/>
+<para>In Memory-to-Memory transfer mode, the memory buffer pointed by DMAy_SxPAR register is considered as Peripheral.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>number of remaining data units in the current DMAy Streamx transfer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/da4/group___d_m_a___group2_1ga4a76444a92423f5f15a4328738d6dc46">
+                <title>uint16_t DMA_GetCurrDataCounter (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Returns the number of remaining data units in the current DMAy Streamx transfer.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>number of remaining data units in the current DMAy Streamx transfer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

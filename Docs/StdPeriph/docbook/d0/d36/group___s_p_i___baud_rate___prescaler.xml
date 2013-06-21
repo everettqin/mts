@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d36/group___s_p_i___baud_rate___prescaler">
+    <title>SPI_BaudRate_Prescaler</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga88cd6d416c87b382396dbf4c02e3bd4b">SPI_BaudRatePrescaler_2</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga17ac4858cb9387289ee7c3d94a9b54be">SPI_BaudRatePrescaler_4</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga023a1e4c04586f2feb0d4b03b2e0c230">SPI_BaudRatePrescaler_8</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga5ef8587bb96e3ec98e9fde770756fc7d">SPI_BaudRatePrescaler_16</link> ((uint16_t)0x0018)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga1d30cecaa412cee5250c69644207c652">SPI_BaudRatePrescaler_32</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga2c9cd96ed56432a83f8e4f46fbecb5e6">SPI_BaudRatePrescaler_64</link> ((uint16_t)0x0028)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1gafa6c39c3ee16a08730356a5cd30f3648">SPI_BaudRatePrescaler_128</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1ga1e1aa6406f0e88ac557ba49fb8069e3e">SPI_BaudRatePrescaler_256</link> ((uint16_t)0x0038)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler_1gae79f46ed9f91e39dc1f6912cb25fc716">IS_SPI_BAUDRATE_PRESCALER</link> (((PRESCALER) == SPI_BaudRatePrescaler_2) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_4) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_8) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_16) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_32) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_64) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_128) || \
+                                              ((PRESCALER) == SPI_BaudRatePrescaler_256))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

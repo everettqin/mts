@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/db1/group___t_i_m___slave___mode">
+    <title>TIM_Slave_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db1/group___t_i_m___slave___mode_1gaac1cec731f1a5e680a038c4f472f74af">TIM_SlaveMode_Reset</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db1/group___t_i_m___slave___mode_1ga1f36c870b926f70b32f274bbc0bc39a5">TIM_SlaveMode_Gated</link> ((uint16_t)0x0005)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db1/group___t_i_m___slave___mode_1ga9e7726c04ee1bafec97226f08adf5677">TIM_SlaveMode_Trigger</link> ((uint16_t)0x0006)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db1/group___t_i_m___slave___mode_1ga34427a693157ab177fead9871185bd35">TIM_SlaveMode_External1</link> ((uint16_t)0x0007)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db1/group___t_i_m___slave___mode_1ga7f0e666bc968c56df7f1f6c2465c89fb">IS_TIM_SLAVE_MODE</link> (((MODE) == TIM_SlaveMode_Reset) || \
+                                 ((MODE) == TIM_SlaveMode_Gated) || \
+                                 ((MODE) == TIM_SlaveMode_Trigger) || \
+                                 ((MODE) == TIM_SlaveMode_External1))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

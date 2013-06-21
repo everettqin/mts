@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/de3/group___r_t_c___group9">
+    <title>Tampers configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Tampers configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                       Tampers configuration functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1gad547d636cfc4fd8d4d673325571e0ffb">RTC_TamperTriggerConfig</link> (
+uint32_t RTC_Tamper, uint32_t RTC_TamperTrigger)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1gaf85cc696d624da0de9fbe99779402833">RTC_TamperCmd</link> (
+uint32_t RTC_Tamper, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1ga1e87b9ae757ad12d7585e4fbcbf2c4b8">RTC_TamperFilterConfig</link> (
+uint32_t RTC_TamperFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1gadc7f33a31df80b5deac313fc8af8d7f7">RTC_TamperSamplingFreqConfig</link> (
+uint32_t RTC_TamperSamplingFreq)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1gafc176a013076a651862dc6a957286025">RTC_TamperPinsPrechargeDuration</link> (
+uint32_t RTC_TamperPrechargeDuration)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1ga29c82fceefd21a78dc55ccc5bcc1ed59">RTC_TimeStampOnTamperDetectionCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1ga981b9c654e521282a2020a81118c8c3c">RTC_TamperPullUpCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d0/de3/group___r_t_c___group9_1gad547d636cfc4fd8d4d673325571e0ffb">
+                <title>void RTC_TamperTriggerConfig (uint32_t RTC_Tamper, uint32_t RTC_TamperTrigger)</title> <emphasis>Configures the select Tamper pin edge.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Tamper, :</entry>
+                                <entry>
+<para>Selected tamper pin. This parameter can be RTC_Tamper_1. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_TamperTrigger, :</entry>
+                                <entry>
+<para>Specifies the trigger on the tamper pin that stimulates tamper event. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TamperTrigger_RisingEdge: Rising Edge of the tamper pin causes tamper event. </para>
+</listitem>
+<listitem>
+<para>RTC_TamperTrigger_FallingEdge: Falling Edge of the tamper pin causes tamper event. </para>
+</listitem>
+<listitem>
+<para>RTC_TamperTrigger_LowLevel: Low Level of the tamper pin causes tamper event. </para>
+</listitem>
+<listitem>
+<para>RTC_TamperTrigger_HighLevel: High Level of the tamper pin causes tamper event. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/de3/group___r_t_c___group9_1gaf85cc696d624da0de9fbe99779402833">
+                <title>void RTC_TamperCmd (uint32_t RTC_Tamper, FunctionalState NewState)</title> <emphasis>Enables or Disables the Tamper detection.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Tamper, :</entry>
+                                <entry>
+<para>Selected tamper pin. This parameter can be RTC_Tamper_1. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the tamper pin. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/de3/group___r_t_c___group9_1ga1e87b9ae757ad12d7585e4fbcbf2c4b8">
+                <title>void RTC_TamperFilterConfig (uint32_t RTC_TamperFilter)</title> <emphasis>Configures the Tampers Filter.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TamperFilter, :</entry>
+                                <entry>
+<para>Specifies the tampers filter. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TamperFilter_Disable: Tamper filter is disabled. </para>
+</listitem>
+<listitem>
+<para>RTC_TamperFilter_2Sample: Tamper is activated after 2 consecutive samples at the active level </para>
+</listitem>
+<listitem>
+<para>RTC_TamperFilter_4Sample: Tamper is activated after 4 consecutive samples at the active level </para>
+</listitem>
+<listitem>
+<para>RTC_TamperFilter_8Sample: Tamper is activated after 8 consecutive samples at the active level </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/de3/group___r_t_c___group9_1gadc7f33a31df80b5deac313fc8af8d7f7">
+                <title>void RTC_TamperSamplingFreqConfig (uint32_t RTC_TamperSamplingFreq)</title> <emphasis>Configures the Tampers Sampling Frequency.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TamperSamplingFreq, :</entry>
+                                <entry>
+<para>Specifies the tampers Sampling Frequency. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div32768: Each of the tamper inputs are sampled with a frequency = RTCCLK / 32768 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div16384: Each of the tamper inputs are sampled with a frequency = RTCCLK / 16384 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div8192: Each of the tamper inputs are sampled with a frequency = RTCCLK / 8192 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div4096: Each of the tamper inputs are sampled with a frequency = RTCCLK / 4096 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div2048: Each of the tamper inputs are sampled with a frequency = RTCCLK / 2048 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div1024: Each of the tamper inputs are sampled with a frequency = RTCCLK / 1024 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div512: Each of the tamper inputs are sampled with a frequency = RTCCLK / 512 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div256: Each of the tamper inputs are sampled with a frequency = RTCCLK / 256 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/de3/group___r_t_c___group9_1gafc176a013076a651862dc6a957286025">
+                <title>void RTC_TamperPinsPrechargeDuration (uint32_t RTC_TamperPrechargeDuration)</title> <emphasis>Configures the Tampers Pins input Precharge Duration.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TamperPrechargeDuration, :</entry>
+                                <entry>
+<para>Specifies the Tampers Pins input Precharge Duration. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TamperPrechargeDuration_1RTCCLK: Tamper pins are pre-charged before sampling during 1 RTCCLK cycle </para>
+</listitem>
+<listitem>
+<para>RTC_TamperPrechargeDuration_2RTCCLK: Tamper pins are pre-charged before sampling during 2 RTCCLK cycle </para>
+</listitem>
+<listitem>
+<para>RTC_TamperPrechargeDuration_4RTCCLK: Tamper pins are pre-charged before sampling during 4 RTCCLK cycle </para>
+</listitem>
+<listitem>
+<para>RTC_TamperPrechargeDuration_8RTCCLK: Tamper pins are pre-charged before sampling during 8 RTCCLK cycle </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/de3/group___r_t_c___group9_1ga29c82fceefd21a78dc55ccc5bcc1ed59">
+                <title>void RTC_TimeStampOnTamperDetectionCmd (FunctionalState NewState)</title> <emphasis>Enables or Disables the TimeStamp on Tamper Detection Event.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The timestamp is valid even the TSE bit in tamper control register is reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the timestamp on tamper event. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/de3/group___r_t_c___group9_1ga981b9c654e521282a2020a81118c8c3c">
+                <title>void RTC_TamperPullUpCmd (FunctionalState NewState)</title> <emphasis>Enables or Disables the Precharge of Tamper pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of tamper pull up. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

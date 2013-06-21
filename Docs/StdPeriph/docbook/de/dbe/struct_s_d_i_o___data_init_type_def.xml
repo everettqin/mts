@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dbe/struct_s_d_i_o___data_init_type_def">
+<title>SDIO_DataInitTypeDef struct Reference</title>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_DataTimeOut</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_DataLength</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_DataBlockSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_TransferDir</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_TransferMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_DPSM</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t SDIO_DataTimeOut</title>                
+<para>Specifies the data timeout period in card bus clock periods. </para>
+
+                <para>Definition at line 90 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_DataLength</title>                
+<para>Specifies the number of data bytes to be transferred. </para>
+
+                <para>Definition at line 92 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_DataBlockSize</title>                
+<para>Specifies the data block size for block transfer. This parameter can be a value of <link linkend="d4/ddb/group___s_d_i_o___data___block___size">SDIO_Data_Block_Size</link> </para>
+
+                <para>Definition at line 94 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_TransferDir</title>                
+<para>Specifies the data transfer direction, whether the transfer is a read or write. This parameter can be a value of <link linkend="d4/de5/group___s_d_i_o___transfer___direction">SDIO_Transfer_Direction</link> </para>
+
+                <para>Definition at line 97 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_TransferMode</title>                
+<para>Specifies whether data transfer is in stream or block mode. This parameter can be a value of <link linkend="d7/de8/group___s_d_i_o___transfer___type">SDIO_Transfer_Type</link> </para>
+
+                <para>Definition at line 101 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_DPSM</title>                
+<para>Specifies whether SDIO Data path state machine (DPSM) is enabled or disabled. This parameter can be a value of <link linkend="da/d3a/group___s_d_i_o___d_p_s_m___state">SDIO_DPSM_State</link> </para>
+
+                <para>Definition at line 104 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/da1/group___s_d_i_o___private___functions">
+    <title>SDIO_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d3/d53/group___s_d_i_o___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="de/d20/group___s_d_i_o___group2">Command path state machine (CPSM) management functions</link></para></listitem>
+            <listitem><para><link linkend="de/dba/group___s_d_i_o___group3">Data path state machine (DPSM) management functions</link></para></listitem>
+            <listitem><para><link linkend="d3/d19/group___s_d_i_o___group4">SDIO IO Cards mode management functions</link></para></listitem>
+            <listitem><para><link linkend="d4/db5/group___s_d_i_o___group5">CE-ATA mode management functions</link></para></listitem>
+            <listitem><para><link linkend="d6/d8f/group___s_d_i_o___group6">DMA transfers management functions</link></para></listitem>
+            <listitem><para><link linkend="d0/d36/group___s_d_i_o___group7">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d3/d53/group___s_d_i_o___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d20/group___s_d_i_o___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/dba/group___s_d_i_o___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d19/group___s_d_i_o___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/db5/group___s_d_i_o___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d8f/group___s_d_i_o___group6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d36/group___s_d_i_o___group7.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

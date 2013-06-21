@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dbb/group___d_m_a__channel">
+    <title>DMA_channel</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1ga4979fc18bd59701dec52c8fa89b5edb2">DMA_Channel_0</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gacad41f71e3a940abd495b0aab3b4e8cb">DMA_Channel_1</link> ((uint32_t)0x02000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1ga6b5d9fcfd72335777ce2796af6300574">DMA_Channel_2</link> ((uint32_t)0x04000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gaf835103c99f21d1b1c04d5c98471c1d5">DMA_Channel_3</link> ((uint32_t)0x06000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gac8a40bf3a421b434177e988263a3d787">DMA_Channel_4</link> ((uint32_t)0x08000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gae3dd5d28def40846aea8e3013d63311b">DMA_Channel_5</link> ((uint32_t)0x0A000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1ga141e89570dabba4f778e8e8df80e7812">DMA_Channel_6</link> ((uint32_t)0x0C000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1ga14f1265827ce49dad5075986118cc542">DMA_Channel_7</link> ((uint32_t)0x0E000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gac7f4709d9244f25b853789d888a74d46">IS_DMA_CHANNEL</link> (((CHANNEL) == DMA_Channel_0) || \
+                                 ((CHANNEL) == DMA_Channel_1) || \
+                                 ((CHANNEL) == DMA_Channel_2) || \
+                                 ((CHANNEL) == DMA_Channel_3) || \
+                                 ((CHANNEL) == DMA_Channel_4) || \
+                                 ((CHANNEL) == DMA_Channel_5) || \
+                                 ((CHANNEL) == DMA_Channel_6) || \
+                                 ((CHANNEL) == DMA_Channel_7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d34/group___d_m_a__flow__controller__definitions">
+    <title>DMA_flow_controller_definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d34/group___d_m_a__flow__controller__definitions_1gafe69109789c2c285f98193f4b598cbc1">DMA_FlowCtrl_Memory</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d34/group___d_m_a__flow__controller__definitions_1ga33a735d51a2b790a25c579753edddd46">DMA_FlowCtrl_Peripheral</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d34/group___d_m_a__flow__controller__definitions_1ga78c0f18c0a86c67510f540a4210aadb7">IS_DMA_FLOW_CTRL</link> (((CTRL) == DMA_FlowCtrl_Memory) || \
+                                ((CTRL) == DMA_FlowCtrl_Peripheral))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

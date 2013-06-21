@@ -1,0 +1,273 @@
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions}{\section{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}
+\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions}\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaeba4b4a5e51d99929d303b6cdf006641}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Set\-Audio\-Interface} (uint32\-\_\-t Interface)
+\begin{DoxyCompactList}\small\item\em Set the current audio interface (I2\-S or D\-A\-C). \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaeb1a379374e6e0ae4276ef087e213524}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Init} (uint16\-\_\-t Output\-Device, uint8\-\_\-t Volume, uint32\-\_\-t Audio\-Freq)
+\begin{DoxyCompactList}\small\item\em Configure the audio peripherals. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaa7b87a9dee532c3f2b7b9be18f8c20e8}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes all the resources used by the codec (those initialized by \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___private___functions_gaeb1a379374e6e0ae4276ef087e213524}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Init()} function). \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga0422f1985733a86bdc2d8d42eeaafac5}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Play} (uint16\-\_\-t $\ast$p\-Buffer, uint32\-\_\-t Size)
+\begin{DoxyCompactList}\small\item\em Starts playing audio stream from a data buffer for a determined size. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga6c6084dfd89cd5ea01440fef86031e18}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Pause\-Resume} (uint32\-\_\-t Cmd)
+\begin{DoxyCompactList}\small\item\em This function Pauses or Resumes the audio file stream. In case of using D\-M\-A, the D\-M\-A Pause feature is used. In all cases the I2\-S peripheral is disabled. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga058f4c3e44690ce595ac679e02d7332a}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Stop} (uint32\-\_\-t Codec\-Power\-Down\-\_\-\-Mode)
+\begin{DoxyCompactList}\small\item\em Stops audio playing and Power down the Audio Codec. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gacc2d90eb028556f428ca8fd703df74bb}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Volume\-Ctl} (uint8\-\_\-t Volume)
+\begin{DoxyCompactList}\small\item\em Controls the current audio volume level. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaffb514fd732abc2186161a5bcdc69886}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Mute} (uint32\-\_\-t Command)
+\begin{DoxyCompactList}\small\item\em Enables or disables the M\-U\-T\-E mode by software. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga61e4aae22494a20a40ca16f66d0663a0}{Audio\-\_\-\-M\-A\-L\-\_\-\-Play} (uint32\-\_\-t Addr, uint32\-\_\-t Size)
+\begin{DoxyCompactList}\small\item\em Starts playing audio stream from the audio Media. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga1c4fcf5b7727573c3b30e5b95e61cdcc}{D\-A\-C\-\_\-\-Config} (void)
+\begin{DoxyCompactList}\small\item\em D\-A\-C Channel1 Configuration. \end{DoxyCompactList}\item 
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga083526166f89787eaf0234b5bc421039}{uint16\-\_\-t {\bfseries E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Get\-Sample\-Call\-Back} (void)}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga083526166f89787eaf0234b5bc421039}
+
+\item 
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga020b90d50e29c81842d4334a910a4edc}{void {\bfseries E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Transfer\-Complete\-\_\-\-Call\-Back} (uint32\-\_\-t p\-Buffer, uint32\-\_\-t Size)}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga020b90d50e29c81842d4334a910a4edc}
+
+\item 
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga5ea18d6e774ac0e724c8684ef13b5589}{void {\bfseries E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Half\-Transfer\-\_\-\-Call\-Back} (uint32\-\_\-t p\-Buffer, uint32\-\_\-t Size)}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga5ea18d6e774ac0e724c8684ef13b5589}
+
+\item 
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaa5e3541996c8e0b552ff2379e9a7c6d3}{void {\bfseries E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Error\-\_\-\-Call\-Back} (void $\ast$p\-Data)}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaa5e3541996c8e0b552ff2379e9a7c6d3}
+
+\item 
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gacc456a5ec7076feff5b6e816923088bc}{uint32\-\_\-t {\bfseries Codec\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-User\-Callback} (void)}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gacc456a5ec7076feff5b6e816923088bc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga61e4aae22494a20a40ca16f66d0663a0}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!Audio\-\_\-\-M\-A\-L\-\_\-\-Play@{Audio\-\_\-\-M\-A\-L\-\_\-\-Play}}
+\index{Audio\-\_\-\-M\-A\-L\-\_\-\-Play@{Audio\-\_\-\-M\-A\-L\-\_\-\-Play}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{Audio\-\_\-\-M\-A\-L\-\_\-\-Play}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\-\_\-\-M\-A\-L\-\_\-\-Play (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Addr, }
+\item[{uint32\-\_\-t}]{Size}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga61e4aae22494a20a40ca16f66d0663a0}
+
+
+Starts playing audio stream from the audio Media. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga1c4fcf5b7727573c3b30e5b95e61cdcc}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!D\-A\-C\-\_\-\-Config@{D\-A\-C\-\_\-\-Config}}
+\index{D\-A\-C\-\_\-\-Config@{D\-A\-C\-\_\-\-Config}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{D\-A\-C\-\_\-\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Config (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga1c4fcf5b7727573c3b30e5b95e61cdcc}
+
+
+D\-A\-C Channel1 Configuration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaa7b87a9dee532c3f2b7b9be18f8c20e8}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-De\-Init@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-De\-Init}}
+\index{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-De\-Init@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-De\-Init}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaa7b87a9dee532c3f2b7b9be18f8c20e8}
+
+
+Deinitializes all the resources used by the codec (those initialized by \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___private___functions_gaeb1a379374e6e0ae4276ef087e213524}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Init()} function). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if correct communication, else wrong communication \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaeb1a379374e6e0ae4276ef087e213524}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Init@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Init}}
+\index{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Init@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Init}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{Output\-Device, }
+\item[{uint8\-\_\-t}]{Volume, }
+\item[{uint32\-\_\-t}]{Audio\-Freq}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaeb1a379374e6e0ae4276ef087e213524}
+
+
+Configure the audio peripherals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Output\-Device,\-:} & O\-U\-T\-P\-U\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-S\-P\-E\-A\-K\-E\-R, O\-U\-T\-P\-U\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-H\-E\-A\-D\-P\-H\-O\-N\-E, O\-U\-T\-P\-U\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-B\-O\-T\-H or O\-U\-T\-P\-U\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-U\-T\-O . \\
+\hline
+{\em Volume,\-:} & Initial volume level (from 0 (Mute) to 100 (Max)) \\
+\hline
+{\em Audio\-Freq,\-:} & Audio frequency used to play the audio stream. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if correct communication, else wrong communication \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaffb514fd732abc2186161a5bcdc69886}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Mute@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Mute}}
+\index{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Mute@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Mute}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Mute}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Mute (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Cmd}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaffb514fd732abc2186161a5bcdc69886}
+
+
+Enables or disables the M\-U\-T\-E mode by software. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Command,\-:} & could be A\-U\-D\-I\-O\-\_\-\-M\-U\-T\-E\-\_\-\-O\-N to mute sound or A\-U\-D\-I\-O\-\_\-\-M\-U\-T\-E\-\_\-\-O\-F\-F to unmute the codec and restore previous volume level. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if correct communication, else wrong communication \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga6c6084dfd89cd5ea01440fef86031e18}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Pause\-Resume@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Pause\-Resume}}
+\index{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Pause\-Resume@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Pause\-Resume}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Pause\-Resume}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Pause\-Resume (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Cmd}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga6c6084dfd89cd5ea01440fef86031e18}
+
+
+This function Pauses or Resumes the audio file stream. In case of using D\-M\-A, the D\-M\-A Pause feature is used. In all cases the I2\-S peripheral is disabled. 
+
+When calling \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___private___functions_ga6c6084dfd89cd5ea01440fef86031e18}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Pause\-Resume()} function for pause, only this function should be called for resume (use of \hyperlink{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___private___functions_ga0422f1985733a86bdc2d8d42eeaafac5}{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Play()} function for resume could lead to unexpected behavior).
+
+
+\begin{DoxyParams}{Parameters}
+{\em Cmd,\-:} & A\-U\-D\-I\-O\-\_\-\-P\-A\-U\-S\-E (or 0) to pause, A\-U\-D\-I\-O\-\_\-\-R\-E\-S\-U\-M\-E (or any value different from 0) to resume. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if correct communication, else wrong communication \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga0422f1985733a86bdc2d8d42eeaafac5}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Play@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Play}}
+\index{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Play@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Play}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Play}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Play (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t $\ast$}]{p\-Buffer, }
+\item[{uint32\-\_\-t}]{Size}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga0422f1985733a86bdc2d8d42eeaafac5}
+
+
+Starts playing audio stream from a data buffer for a determined size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Buffer,\-:} & Pointer to the buffer \\
+\hline
+{\em Size,\-:} & Number of audio data B\-Y\-T\-E\-S. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if correct communication, else wrong communication \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaeba4b4a5e51d99929d303b6cdf006641}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Set\-Audio\-Interface@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Set\-Audio\-Interface}}
+\index{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Set\-Audio\-Interface@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Set\-Audio\-Interface}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Set\-Audio\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}void E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Set\-Audio\-Interface (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Interface}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gaeba4b4a5e51d99929d303b6cdf006641}
+
+
+Set the current audio interface (I2\-S or D\-A\-C). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Interface,\-:} & A\-U\-D\-I\-O\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-\_\-\-I2\-S or A\-U\-D\-I\-O\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-\_\-\-D\-A\-C \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga058f4c3e44690ce595ac679e02d7332a}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Stop@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Stop}}
+\index{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Stop@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Stop}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Stop (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Option}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_ga058f4c3e44690ce595ac679e02d7332a}
+
+
+Stops audio playing and Power down the Audio Codec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Option,\-:} & could be one of the following parameters
+\begin{DoxyItemize}
+\item C\-O\-D\-E\-C\-\_\-\-P\-D\-W\-N\-\_\-\-S\-W\-: for software power off (by writing registers). Then no need to reconfigure the Codec after power on.
+\item C\-O\-D\-E\-C\-\_\-\-P\-D\-W\-N\-\_\-\-H\-W\-: completely shut down the codec (physically). Then need to reconfigure the Codec after power on. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if correct communication, else wrong communication \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gacc2d90eb028556f428ca8fd703df74bb}{\index{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}!E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Volume\-Ctl@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Volume\-Ctl}}
+\index{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Volume\-Ctl@{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Volume\-Ctl}!STM32F4_DISCOVERY_AUDIO_CODEC_Exported_Functions@{S\-T\-M32\-F4\-\_\-\-D\-I\-S\-C\-O\-V\-E\-R\-Y\-\_\-\-A\-U\-D\-I\-O\-\_\-\-C\-O\-D\-E\-C\-\_\-\-Exported\-\_\-\-Functions}}
+\subsubsection[{E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Volume\-Ctl}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t E\-V\-A\-L\-\_\-\-A\-U\-D\-I\-O\-\_\-\-Volume\-Ctl (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{Volume}
+\end{DoxyParamCaption}
+)}}\label{group___s_t_m32_f4___d_i_s_c_o_v_e_r_y___a_u_d_i_o___c_o_d_e_c___exported___functions_gacc2d90eb028556f428ca8fd703df74bb}
+
+
+Controls the current audio volume level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Volume,\-:} & Volume level to be set in percentage from 0\% to 100\% (0 for Mute and 100 for Max volume level). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if correct communication, else wrong communication \\
+\hline
+\end{DoxyRetVals}

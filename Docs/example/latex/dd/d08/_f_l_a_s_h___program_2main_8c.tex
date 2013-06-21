@@ -1,0 +1,112 @@
+\hypertarget{_f_l_a_s_h___program_2main_8c}{\section{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.1.0/\-Project/\-Peripheral\-\_\-\-Examples/\-F\-L\-A\-S\-H\-\_\-\-Program/main.c File Reference}
+\label{_f_l_a_s_h___program_2main_8c}\index{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Project/\-Peripheral\-\_\-\-Examples/\-F\-L\-A\-S\-H\-\_\-\-Program/main.\-c@{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Project/\-Peripheral\-\_\-\-Examples/\-F\-L\-A\-S\-H\-\_\-\-Program/main.\-c}}
+}
+
+
+Main program body.  
+
+
+{\ttfamily \#include \char`\"{}stm32f4\-\_\-discovery.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___f_l_a_s_h___program_gaa4f22c9236f667f99aea9076efa53fc7}{\#define {\bfseries F\-L\-A\-S\-H\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-R\-T\-\_\-\-A\-D\-D\-R}~A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-2   /$\ast$ Start @ of user Flash area $\ast$/}\label{group___f_l_a_s_h___program_gaa4f22c9236f667f99aea9076efa53fc7}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_gae2f33bed60f6cd95c93fa2aec487a0ef}{\#define {\bfseries F\-L\-A\-S\-H\-\_\-\-U\-S\-E\-R\-\_\-\-E\-N\-D\-\_\-\-A\-D\-D\-R}~A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-5   /$\ast$ End @ of user Flash area $\ast$/}\label{group___f_l_a_s_h___program_gae2f33bed60f6cd95c93fa2aec487a0ef}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga1a626254790c0810ff2dda356393e10c}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-0}~((uint32\-\_\-t)0x08000000) /$\ast$ Base @ of Sector 0, 16 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga1a626254790c0810ff2dda356393e10c}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga3921df9831b40afc489e0abb4ae2e1d8}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-1}~((uint32\-\_\-t)0x08004000) /$\ast$ Base @ of Sector 1, 16 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga3921df9831b40afc489e0abb4ae2e1d8}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga252ab8bba2a5556d7aa70c4629749b25}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-2}~((uint32\-\_\-t)0x08008000) /$\ast$ Base @ of Sector 2, 16 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga252ab8bba2a5556d7aa70c4629749b25}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga299b477f5a33428b1867eecc8663028a}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-3}~((uint32\-\_\-t)0x0800\-C000) /$\ast$ Base @ of Sector 3, 16 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga299b477f5a33428b1867eecc8663028a}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga0137a47c6b41f7aef7e18d9bc280a918}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-4}~((uint32\-\_\-t)0x08010000) /$\ast$ Base @ of Sector 4, 64 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga0137a47c6b41f7aef7e18d9bc280a918}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga6e78dc4f01c1faf00384490d3536f4de}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-5}~((uint32\-\_\-t)0x08020000) /$\ast$ Base @ of Sector 5, 128 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga6e78dc4f01c1faf00384490d3536f4de}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga353c96f72d9893b5c24e9775a6e9f999}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-6}~((uint32\-\_\-t)0x08040000) /$\ast$ Base @ of Sector 6, 128 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga353c96f72d9893b5c24e9775a6e9f999}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga0fcae367e68209cb20aec1f31d0cef75}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-7}~((uint32\-\_\-t)0x08060000) /$\ast$ Base @ of Sector 7, 128 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga0fcae367e68209cb20aec1f31d0cef75}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga46efd249195dc6615a5f991bf67fbfd5}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-8}~((uint32\-\_\-t)0x08080000) /$\ast$ Base @ of Sector 8, 128 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga46efd249195dc6615a5f991bf67fbfd5}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga94b661cf00ffc288e3d2983c3d6c72ed}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-9}~((uint32\-\_\-t)0x080\-A0000) /$\ast$ Base @ of Sector 9, 128 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga94b661cf00ffc288e3d2983c3d6c72ed}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga3cea1f00ae802317e67815c9dedc62b7}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-10}~((uint32\-\_\-t)0x080\-C0000) /$\ast$ Base @ of Sector 10, 128 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga3cea1f00ae802317e67815c9dedc62b7}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga7b945836a10e9782cbb63338f271f2aa}{\#define {\bfseries A\-D\-D\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-11}~((uint32\-\_\-t)0x080\-E0000) /$\ast$ Base @ of Sector 11, 128 Kbytes $\ast$/}\label{group___f_l_a_s_h___program_ga7b945836a10e9782cbb63338f271f2aa}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga10c5a379cdc06e8ace023d89206bae8d}{\#define {\bfseries D\-A\-T\-A\-\_\-32}~((uint32\-\_\-t)0x12345678)}\label{group___f_l_a_s_h___program_ga10c5a379cdc06e8ace023d89206bae8d}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Test\-Status} \{ {\bfseries F\-A\-I\-L\-E\-D} = 0, 
+{\bfseries P\-A\-S\-S\-E\-D} = !\-F\-A\-I\-L\-E\-D, 
+{\bfseries F\-A\-I\-L\-E\-D} = 0, 
+{\bfseries P\-A\-S\-S\-E\-D} = !\-F\-A\-I\-L\-E\-D
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\-\_\-t \hyperlink{group___f_l_a_s_h___program_ga90db73e2ffb962de6891c783f62db0d0}{Get\-Sector} (uint32\-\_\-t Address)
+\begin{DoxyCompactList}\small\item\em Gets the sector of a given address. \end{DoxyCompactList}\item 
+int \hyperlink{group___f_l_a_s_h___program_ga840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em Main program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga02d9393237b2f1a7b2de9d17bbb43504}{uint32\-\_\-t {\bfseries Start\-Sector} = 0}\label{group___f_l_a_s_h___program_ga02d9393237b2f1a7b2de9d17bbb43504}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga5fe432b6beabe01726ea7258062172e0}{uint32\-\_\-t {\bfseries End\-Sector} = 0}\label{group___f_l_a_s_h___program_ga5fe432b6beabe01726ea7258062172e0}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_gaca1b23fd721c8d8dc70a8227e336b6e8}{uint32\-\_\-t {\bfseries Address} = 0}\label{group___f_l_a_s_h___program_gaca1b23fd721c8d8dc70a8227e336b6e8}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga752abcfe7ce5874cd9e8012a0346a37b}{uint32\-\_\-t {\bfseries i} = 0}\label{group___f_l_a_s_h___program_ga752abcfe7ce5874cd9e8012a0346a37b}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga2daee9060df10c8ab4143e9d17ae4a7d}{\-\_\-\-\_\-\-I\-O uint32\-\_\-t {\bfseries data32} = 0}\label{group___f_l_a_s_h___program_ga2daee9060df10c8ab4143e9d17ae4a7d}
+
+\item 
+\hypertarget{group___f_l_a_s_h___program_ga2448fe848ed35c19f70722d72cf3157c}{\-\_\-\-\_\-\-I\-O uint32\-\_\-t {\bfseries Memory\-Program\-Status} = 0}\label{group___f_l_a_s_h___program_ga2448fe848ed35c19f70722d72cf3157c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main program body. \begin{DoxyAuthor}{Author}
+M\-C\-D Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+19-\/\-September-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\-H\-E P\-R\-E\-S\-E\-N\-T F\-I\-R\-M\-W\-A\-R\-E W\-H\-I\-C\-H I\-S F\-O\-R G\-U\-I\-D\-A\-N\-C\-E O\-N\-L\-Y A\-I\-M\-S A\-T P\-R\-O\-V\-I\-D\-I\-N\-G C\-U\-S\-T\-O\-M\-E\-R\-S W\-I\-T\-H C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N R\-E\-G\-A\-R\-D\-I\-N\-G T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S I\-N O\-R\-D\-E\-R F\-O\-R T\-H\-E\-M T\-O S\-A\-V\-E T\-I\-M\-E. A\-S A R\-E\-S\-U\-L\-T, S\-T\-M\-I\-C\-R\-O\-E\-L\-E\-C\-T\-R\-O\-N\-I\-C\-S S\-H\-A\-L\-L N\-O\-T B\-E H\-E\-L\-D L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y D\-I\-R\-E\-C\-T, I\-N\-D\-I\-R\-E\-C\-T O\-R C\-O\-N\-S\-E\-Q\-U\-E\-N\-T\-I\-A\-L D\-A\-M\-A\-G\-E\-S W\-I\-T\-H R\-E\-S\-P\-E\-C\-T T\-O A\-N\-Y C\-L\-A\-I\-M\-S A\-R\-I\-S\-I\-N\-G F\-R\-O\-M T\-H\-E C\-O\-N\-T\-E\-N\-T O\-F S\-U\-C\-H F\-I\-R\-M\-W\-A\-R\-E A\-N\-D/\-O\-R T\-H\-E U\-S\-E M\-A\-D\-E B\-Y C\-U\-S\-T\-O\-M\-E\-R\-S O\-F T\-H\-E C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N C\-O\-N\-T\-A\-I\-N\-E\-D H\-E\-R\-E\-I\-N I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S.
+
+\subsubsection*{\begin{center}\copyright C\-O\-P\-Y\-R\-I\-G\-H\-T 2011 S\-T\-Microelectronics\end{center} }

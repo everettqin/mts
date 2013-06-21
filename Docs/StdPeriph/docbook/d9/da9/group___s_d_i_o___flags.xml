@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/da9/group___s_d_i_o___flags">
+    <title>SDIO_Flags</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga8ff1f3960378e05ec3c949940e1c49d0">SDIO_FLAG_CCRCFAIL</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga6de936ea11cbc79444d519268ad9f9bd">SDIO_FLAG_DCRCFAIL</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga7389f64ff6cfa4f459bf852b5faede30">SDIO_FLAG_CTIMEOUT</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga2d2fd219dd9fea522862195ab9568345">SDIO_FLAG_DTIMEOUT</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gabd18f8e5d5387a38dccbe1bf28ae5dbc">SDIO_FLAG_TXUNDERR</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gad49d60039e40d31b734cfacf90caa84f">SDIO_FLAG_RXOVERR</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga083531db75a1e4c05c47578763d53af1">SDIO_FLAG_CMDREND</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gac81f3837aac17a6aed7310a8ea460f17">SDIO_FLAG_CMDSENT</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gaaacb2f6207c149e05f8bdd70e5d49926">SDIO_FLAG_DATAEND</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gae83f7cb3fa1183898131f3de47c2333e">SDIO_FLAG_STBITERR</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga5452d8033567821709bd7d5f06547b70">SDIO_FLAG_DBCKEND</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gad12a9b2bd30e7b907cbabfd92fc645b3">SDIO_FLAG_CMDACT</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gad5d075c98012586b169ec131aab2eeb5">SDIO_FLAG_TXACT</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gacc935dd830338970890a05922dff8ab7">SDIO_FLAG_RXACT</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gae9277461d3c8984dc31af318e2df1959">SDIO_FLAG_TXFIFOHE</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga8c5942ae3df21efad2d7c61a46015758">SDIO_FLAG_RXFIFOHF</link> ((uint32_t)0x00008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gad3ca936300ef251639a4cfbe2f63b6b8">SDIO_FLAG_TXFIFOF</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gaf92cb783f000b8d946fe8ace81b51df2">SDIO_FLAG_RXFIFOF</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gac41ef05773abad79b4b0c443a77733db">SDIO_FLAG_TXFIFOE</link> ((uint32_t)0x00040000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga59ea7e2dc22df742053c5e525b98599d">SDIO_FLAG_RXFIFOE</link> ((uint32_t)0x00080000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga9c6620d6b16b6af19d3e14f40e688631">SDIO_FLAG_TXDAVL</link> ((uint32_t)0x00100000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga7558b354658171bb6aa1b6f1e16d8e21">SDIO_FLAG_RXDAVL</link> ((uint32_t)0x00200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gae888ec1c9885c35a5f8e01bcffe324a1">SDIO_FLAG_SDIOIT</link> ((uint32_t)0x00400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga3c8d09a405944948e7a1c5493d49aff1">SDIO_FLAG_CEATAEND</link> ((uint32_t)0x00800000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga04b3c3c316e112172abacbf5e316f24a">IS_SDIO_FLAG</link> (((FLAG)  == SDIO_FLAG_CCRCFAIL) || \
+                            ((FLAG)  == SDIO_FLAG_DCRCFAIL) || \
+                            ((FLAG)  == SDIO_FLAG_CTIMEOUT) || \
+                            ((FLAG)  == SDIO_FLAG_DTIMEOUT) || \
+                            ((FLAG)  == SDIO_FLAG_TXUNDERR) || \
+                            ((FLAG)  == SDIO_FLAG_RXOVERR) || \
+                            ((FLAG)  == SDIO_FLAG_CMDREND) || \
+                            ((FLAG)  == SDIO_FLAG_CMDSENT) || \
+                            ((FLAG)  == SDIO_FLAG_DATAEND) || \
+                            ((FLAG)  == SDIO_FLAG_STBITERR) || \
+                            ((FLAG)  == SDIO_FLAG_DBCKEND) || \
+                            ((FLAG)  == SDIO_FLAG_CMDACT) || \
+                            ((FLAG)  == SDIO_FLAG_TXACT) || \
+                            ((FLAG)  == SDIO_FLAG_RXACT) || \
+                            ((FLAG)  == SDIO_FLAG_TXFIFOHE) || \
+                            ((FLAG)  == SDIO_FLAG_RXFIFOHF) || \
+                            ((FLAG)  == SDIO_FLAG_TXFIFOF) || \
+                            ((FLAG)  == SDIO_FLAG_RXFIFOF) || \
+                            ((FLAG)  == SDIO_FLAG_TXFIFOE) || \
+                            ((FLAG)  == SDIO_FLAG_RXFIFOE) || \
+                            ((FLAG)  == SDIO_FLAG_TXDAVL) || \
+                            ((FLAG)  == SDIO_FLAG_RXDAVL) || \
+                            ((FLAG)  == SDIO_FLAG_SDIOIT) || \
+                            ((FLAG)  == SDIO_FLAG_CEATAEND))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1ga8a093bc0b51901676fd5da7087d8ab3a">IS_SDIO_CLEAR_FLAG</link> ((((FLAG) &amp; (uint32_t)0xFF3FF800) == 0x00) &amp;&amp; ((FLAG) != (uint32_t)0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gaef42c81f1f6250d8f9f438f4e16d1e98">IS_SDIO_GET_IT</link> (((IT)  == SDIO_IT_CCRCFAIL) || \
+                            ((IT)  == SDIO_IT_DCRCFAIL) || \
+                            ((IT)  == SDIO_IT_CTIMEOUT) || \
+                            ((IT)  == SDIO_IT_DTIMEOUT) || \
+                            ((IT)  == SDIO_IT_TXUNDERR) || \
+                            ((IT)  == SDIO_IT_RXOVERR) || \
+                            ((IT)  == SDIO_IT_CMDREND) || \
+                            ((IT)  == SDIO_IT_CMDSENT) || \
+                            ((IT)  == SDIO_IT_DATAEND) || \
+                            ((IT)  == SDIO_IT_STBITERR) || \
+                            ((IT)  == SDIO_IT_DBCKEND) || \
+                            ((IT)  == SDIO_IT_CMDACT) || \
+                            ((IT)  == SDIO_IT_TXACT) || \
+                            ((IT)  == SDIO_IT_RXACT) || \
+                            ((IT)  == SDIO_IT_TXFIFOHE) || \
+                            ((IT)  == SDIO_IT_RXFIFOHF) || \
+                            ((IT)  == SDIO_IT_TXFIFOF) || \
+                            ((IT)  == SDIO_IT_RXFIFOF) || \
+                            ((IT)  == SDIO_IT_TXFIFOE) || \
+                            ((IT)  == SDIO_IT_RXFIFOE) || \
+                            ((IT)  == SDIO_IT_TXDAVL) || \
+                            ((IT)  == SDIO_IT_RXDAVL) || \
+                            ((IT)  == SDIO_IT_SDIOIT) || \
+                            ((IT)  == SDIO_IT_CEATAEND))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da9/group___s_d_i_o___flags_1gaf829b01d8c3e9a1e4e04d39abdc8c355">IS_SDIO_CLEAR_IT</link> ((((IT) &amp; (uint32_t)0xFF3FF800) == 0x00) &amp;&amp; ((IT) != (uint32_t)0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

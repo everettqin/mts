@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d25/struct_a_d_c___init_type_def">
+<title>ADC_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d0d/stm32f4xx__adc_8h">&lt;stm32f4xx_adc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t ADC_Resolution</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FunctionalState ADC_ScanConvMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FunctionalState ADC_ContinuousConvMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t ADC_ExternalTrigConvEdge</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t ADC_ExternalTrigConv</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t ADC_DataAlign</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t ADC_NbrOfConversion</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>ADC Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t ADC_Resolution</title>                
+<para>Configures the ADC resolution dual mode. This parameter can be a value of <link linkend="d6/d8d/group___a_d_c__resolution">ADC_resolution</link> </para>
+
+                <para>Definition at line 49 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>FunctionalState ADC_ScanConvMode</title>                
+<para>Specifies whether the conversion is performed in Scan (multichannels) or Single (one channel) mode. This parameter can be set to ENABLE or DISABLE </para>
+
+                <para>Definition at line 51 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>FunctionalState ADC_ContinuousConvMode</title>                
+<para>Specifies whether the conversion is performed in Continuous or Single mode. This parameter can be set to ENABLE or DISABLE. </para>
+
+                <para>Definition at line 55 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t ADC_ExternalTrigConvEdge</title>                
+<para>Select the external trigger edge and enable the trigger of a regular group. This parameter can be a value of <link linkend="d8/d7f/group___a_d_c__external__trigger__edge__for__regular__channels__conversion">ADC_external_trigger_edge_for_regular_channels_conversion</link> </para>
+
+                <para>Definition at line 58 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t ADC_ExternalTrigConv</title>                
+<para>Select the external event used to trigger the start of conversion of a regular group. This parameter can be a value of <link linkend="da/ddc/group___a_d_c__extrenal__trigger__sources__for__regular__channels__conversion">ADC_extrenal_trigger_sources_for_regular_channels_conversion</link> </para>
+
+                <para>Definition at line 62 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t ADC_DataAlign</title>                
+<para>Specifies whether the ADC data alignment is left or right. This parameter can be a value of <link linkend="d7/da8/group___a_d_c__data__align">ADC_data_align</link> </para>
+
+                <para>Definition at line 66 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t ADC_NbrOfConversion</title>                
+<para>Specifies the number of ADC conversions that will be done using the sequencer for regular channel group. This parameter must range from 1 to 16. </para>
+
+                <para>Definition at line 69 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

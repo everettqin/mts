@@ -1,0 +1,907 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d96/stm32f4xx__flash_8h">
+    <title>stm32f4xx_flash.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga09afe6e52b819cc074f6111ec42ac3c3">FLASH_Latency_0</link> ((uint8_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga6b7281665340fe8f7919bdfcfd06f8e6">FLASH_Latency_1</link> ((uint8_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga55173ebb5c978459ce18d5e2516e3e89">FLASH_Latency_2</link> ((uint8_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga13fbc5a6423848be5bf631dc437bbc3f">FLASH_Latency_3</link> ((uint8_t)0x0003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga74a5deaec2020e484ce576925ff7de16">FLASH_Latency_4</link> ((uint8_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga8e52670ad258b0a95c94b99b8d7eab27">FLASH_Latency_5</link> ((uint8_t)0x0005)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga053dfbef3307536ff40a5ceb2576a4a3">FLASH_Latency_6</link> ((uint8_t)0x0006)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga352a374f6ae41d2cae767ed95efc6ae5">FLASH_Latency_7</link> ((uint8_t)0x0007)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1gafcbd098d482318a622a58bf168547389">IS_FLASH_LATENCY</link> (((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga09afe6e52b819cc074f6111ec42ac3c3">FLASH_Latency_0</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga6b7281665340fe8f7919bdfcfd06f8e6">FLASH_Latency_1</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga55173ebb5c978459ce18d5e2516e3e89">FLASH_Latency_2</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga13fbc5a6423848be5bf631dc437bbc3f">FLASH_Latency_3</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga74a5deaec2020e484ce576925ff7de16">FLASH_Latency_4</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga8e52670ad258b0a95c94b99b8d7eab27">FLASH_Latency_5</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga053dfbef3307536ff40a5ceb2576a4a3">FLASH_Latency_6</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga352a374f6ae41d2cae767ed95efc6ae5">FLASH_Latency_7</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga0ed013741f9d88425fe97da49f4980c1">VoltageRange_1</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga4c080832b4c8c992acb645f2c39561e0">VoltageRange_2</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1gadd249fb08c69b11cea3a6b7c22865b99">VoltageRange_3</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga3197950f6bfefc8b9a784db5439a0498">VoltageRange_4</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1gaa9682aea9d9ceebca83c48e53f9f6028">IS_VOLTAGERANGE</link> (((RANGE) == <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga0ed013741f9d88425fe97da49f4980c1">VoltageRange_1</link>) || \
+                               ((RANGE) == <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga4c080832b4c8c992acb645f2c39561e0">VoltageRange_2</link>) || \
+                               ((RANGE) == <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1gadd249fb08c69b11cea3a6b7c22865b99">VoltageRange_3</link>) || \
+                               ((RANGE) == <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga3197950f6bfefc8b9a784db5439a0498">VoltageRange_4</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gac0f2d85ff047a3bf5dcdcd275e488796">FLASH_Sector_0</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga64fa0a3c29717df67d2fa827cc316faa">FLASH_Sector_1</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga9c5458f70e420e0715a7f268aff38fc1">FLASH_Sector_2</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga64cfe33ec785060ce70034df6534a656">FLASH_Sector_3</link> ((uint16_t)0x0018)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga389be89b2f79824cc2682a25297adf4a">FLASH_Sector_4</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga79028613994f20106c3fc2dfd56d8085">FLASH_Sector_5</link> ((uint16_t)0x0028)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gadeda2fce59d9ee17d7cc1025d1b6352d">FLASH_Sector_6</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga143c0665510327a7ec97052e6d6bb53a">FLASH_Sector_7</link> ((uint16_t)0x0038)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga27a8e02b4fcfe7863a95f38a78ca52a6">FLASH_Sector_8</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga717c6135a9ed6aa633796faf695fc2cd">FLASH_Sector_9</link> ((uint16_t)0x0048)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga0f9450aee4976ecf4f0ba2fbcf2555be">FLASH_Sector_10</link> ((uint16_t)0x0050)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gaac431a84bd33c70626b7981dcaf123b1">FLASH_Sector_11</link> ((uint16_t)0x0058)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga9e7722ee983a9411f59c0fdb81bc0e08">IS_FLASH_SECTOR</link> (((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gac0f2d85ff047a3bf5dcdcd275e488796">FLASH_Sector_0</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga64fa0a3c29717df67d2fa827cc316faa">FLASH_Sector_1</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga9c5458f70e420e0715a7f268aff38fc1">FLASH_Sector_2</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga64cfe33ec785060ce70034df6534a656">FLASH_Sector_3</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga389be89b2f79824cc2682a25297adf4a">FLASH_Sector_4</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga79028613994f20106c3fc2dfd56d8085">FLASH_Sector_5</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gadeda2fce59d9ee17d7cc1025d1b6352d">FLASH_Sector_6</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga143c0665510327a7ec97052e6d6bb53a">FLASH_Sector_7</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga27a8e02b4fcfe7863a95f38a78ca52a6">FLASH_Sector_8</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga717c6135a9ed6aa633796faf695fc2cd">FLASH_Sector_9</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga0f9450aee4976ecf4f0ba2fbcf2555be">FLASH_Sector_10</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gaac431a84bd33c70626b7981dcaf123b1">FLASH_Sector_11</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gad0c8166ba15a0b8d458412a8bb74e2f0">IS_FLASH_ADDRESS</link> ((((ADDRESS) &gt;= 0x08000000) &amp;&amp; ((ADDRESS) &lt; 0x080FFFFF)) ||\
+                                   (((ADDRESS) &gt;= 0x1FFF7800) &amp;&amp; ((ADDRESS) &lt; 0x1FFF7A0F)))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gaff0ba34d35179bdc6e2f09d6813290f6">OB_WRP_Sector_0</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gac9644173d5d7d5f67f5b623fcfb3b40f">OB_WRP_Sector_1</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga7753cebe1a52745ff90147970f7ec32e">OB_WRP_Sector_2</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga0c5703b7294cccd7a1db08075032c863">OB_WRP_Sector_3</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gabb50050de92ef1fb2d0d0927323d8206">OB_WRP_Sector_4</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gae1d6cf3e35d5a75934dec6ce9a5e33c3">OB_WRP_Sector_5</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga383d910c0be9c8ec4577b4fd4a6c8954">OB_WRP_Sector_6</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga23f59fa8ec37ea1072e617ac50f09632">OB_WRP_Sector_7</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gaf351164510a07ba8cdcfde8473100c05">OB_WRP_Sector_8</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga5441787d51d48a73f85f2f8efe7f2992">OB_WRP_Sector_9</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga886ff84dee003a1fbb6de64bf9465455">OB_WRP_Sector_10</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gadd07be676785c86096ad546f2e792d17">OB_WRP_Sector_11</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga049185e634497456e6d3c7b3dca214d6">OB_WRP_Sector_All</link> ((uint32_t)0x00000FFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga4bd8f8ce63ce60bac832efbfbb4fa564">IS_OB_WRP</link> ((((SECTOR) &amp; (uint32_t)0xFFFFF000) == 0x00000000) &amp;&amp; ((SECTOR) != 0x00000000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection_1gae0417128469ebd025ef619bb9bd28271">OB_RDP_Level_0</link> ((uint8_t)0xAA)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection_1gaeee87887410dcc3d47f0e6416f1d49d5">OB_RDP_Level_1</link> ((uint8_t)0x55)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection_1ga9f6200da3a5294668e1b24b65f85b34a">IS_OB_RDP</link> (((LEVEL) == OB_RDP_Level_0)||\
+                          ((LEVEL) == OB_RDP_Level_1))/*||\
+                          ((LEVEL) == OB_RDP_Level_2))*/</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1ga5a357e232c955444c3f2ccb9a937ffce">OB_IWDG_SW</link> ((uint8_t)0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1gadfcbfa963d79c339ec8e2d5a7734e47a">OB_IWDG_HW</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1gaf2871652c08e76499d9449be6556f12c">IS_OB_IWDG_SOURCE</link> (((SOURCE) == <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1ga5a357e232c955444c3f2ccb9a937ffce">OB_IWDG_SW</link>) || ((SOURCE) == <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1gadfcbfa963d79c339ec8e2d5a7734e47a">OB_IWDG_HW</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dfa/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_o_p_1ga6762d6e4045fec58b49dfc03c1927d51">OB_STOP_NoRST</link> ((uint8_t)0x40)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dfa/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_o_p_1gaef92c03b1f279c532bfa13d3bb074b57">OB_STOP_RST</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dfa/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_o_p_1ga131ae3434f300c8317dd6b3b349c7cab">IS_OB_STOP_SOURCE</link> (((SOURCE) == <link linkend="de/dfa/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_o_p_1ga6762d6e4045fec58b49dfc03c1927d51">OB_STOP_NoRST</link>) || ((SOURCE) == <link linkend="de/dfa/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_o_p_1gaef92c03b1f279c532bfa13d3bb074b57">OB_STOP_RST</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga9588443b20719498422aeb72b65de839">OB_STDBY_NoRST</link> ((uint8_t)0x80)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga69451a6f69247528f58735c9c83499ce">OB_STDBY_RST</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga8a05393df3a5e89551b4e2e1e8c5b884">IS_OB_STDBY_SOURCE</link> (((SOURCE) == <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga9588443b20719498422aeb72b65de839">OB_STDBY_NoRST</link>) || ((SOURCE) == <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga69451a6f69247528f58735c9c83499ce">OB_STDBY_RST</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3132b8202c0a345e9dd33d136714b046">OB_BOR_LEVEL3</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gad678e849fcf817f6ed2d837538e8ebc2">OB_BOR_LEVEL2</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3a888b788e75f0bc1f9add85c9ccd9d6">OB_BOR_LEVEL1</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gaabc231cb1d05a94fe860f67bb5a37b12">OB_BOR_OFF</link> ((uint8_t)0x0C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga1fbf304e1564edd30259c5ea069afc93">IS_OB_BOR</link> (((LEVEL) == <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3a888b788e75f0bc1f9add85c9ccd9d6">OB_BOR_LEVEL1</link>) || ((LEVEL) == <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gad678e849fcf817f6ed2d837538e8ebc2">OB_BOR_LEVEL2</link>) ||\
+                          ((LEVEL) == <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3132b8202c0a345e9dd33d136714b046">OB_BOR_LEVEL3</link>) || ((LEVEL) == <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gaabc231cb1d05a94fe860f67bb5a37b12">OB_BOR_OFF</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d18/group___f_l_a_s_h___interrupts_1gaea20e80e1806d58a7544cfe8659e7f11">FLASH_IT_EOP</link> ((uint32_t)0x01000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d18/group___f_l_a_s_h___interrupts_1ga4e2c23ab8c1b9a5ee49bf6d695d9ae8c">FLASH_IT_ERR</link> ((uint32_t)0x02000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d18/group___f_l_a_s_h___interrupts_1ga46ee77d0be1f3e0a14ded0651163ae11">IS_FLASH_IT</link> ((((IT) &amp; (uint32_t)0xFCFFFFFF) == 0x00000000) &amp;&amp; ((IT) != 0x00000000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9">FLASH_FLAG_EOP</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1">FLASH_FLAG_OPERR</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266">FLASH_FLAG_WRPERR</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd">FLASH_FLAG_PGAERR</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga88a93907641f5eeb4091a26b84c94897">FLASH_FLAG_PGPERR</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68">FLASH_FLAG_PGSERR</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7">FLASH_FLAG_BSY</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga82f8c6104c348d6aa47c7658ed3b6b36">IS_FLASH_CLEAR_FLAG</link> ((((FLAG) &amp; (uint32_t)0xFFFFFF0C) == 0x00000000) &amp;&amp; ((FLAG) != 0x00000000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga61b60325cd94e1608e34afc7aff20ee4">IS_FLASH_GET_FLAG</link> (((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9">FLASH_FLAG_EOP</link>) || ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1">FLASH_FLAG_OPERR</link>) || \
+                                  ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266">FLASH_FLAG_WRPERR</link>) || ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd">FLASH_FLAG_PGAERR</link>) || \
+                                  ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga88a93907641f5eeb4091a26b84c94897">FLASH_FLAG_PGPERR</link>) || ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68">FLASH_FLAG_PGSERR</link>) || \
+                                  ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7">FLASH_FLAG_BSY</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1ga83c67710aa697216193654e1e90cc953">FLASH_PSIZE_BYTE</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1gad3210ba7423b45cb3063f4294cdeab16">FLASH_PSIZE_HALF_WORD</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1gac3ac337ed43efc869a9f734527e44673">FLASH_PSIZE_WORD</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1ga0fd17c4e281f199f09a6a6365e9243ee">FLASH_PSIZE_DOUBLE_WORD</link> ((uint32_t)0x00000300)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1ga7c755f15e36221021a1438857e40365c">CR_PSIZE_MASK</link> ((uint32_t)0xFFFFFCFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1gae497135e5528d69274bf8daf7f077f23">RDP_KEY</link> ((uint16_t)0x00A5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1gafd77e7bf91765d891ce63e2f0084b019">FLASH_KEY1</link> ((uint32_t)0x45670123)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1gaee83d0f557e158da52f4a205db6b60a7">FLASH_KEY2</link> ((uint32_t)0xCDEF89AB)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1gacebe54ff9ff12abcf0e4d3e697b2f116">FLASH_OPT_KEY1</link> ((uint32_t)0x08192A3B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1ga636d46db38e376f0483eed4b7346697c">FLASH_OPT_KEY2</link> ((uint32_t)0x4C5D6E7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___f_l_a_s_h___exported___constants_1gaeaca61fbcff69df08100280868bff214">ACR_BYTE0_ADDRESS</link> ((uint32_t)0x40023C00)<para><emphasis>ACR register byte 0 (Bits[8:0]) base address.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___f_l_a_s_h___exported___constants_1ga8223df020203a97af44e4b14e219d01e">OPTCR_BYTE0_ADDRESS</link> ((uint32_t)0x40023C14)<para><emphasis>OPTCR register byte 3 (Bits[24:16]) base address.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___f_l_a_s_h___exported___constants_1ga3c08568a9b3a9d213a70eff8e87117ac">OPTCR_BYTE1_ADDRESS</link> ((uint32_t)0x40023C15)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___f_l_a_s_h___exported___constants_1ga600e8029b876676da246a62924a294c7">OPTCR_BYTE2_ADDRESS</link> ((uint32_t)0x40023C16)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>enum <link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link>{<link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099">FLASH_BUSY</link>== 1, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0aee7da388d2f5c589a3cb34efea767ad2">FLASH_ERROR_PGS</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ae4f20fb81a812fb65473373c3c36765d">FLASH_ERROR_PGP</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ab2ac5838863aa3dcf727587bc3264d95">FLASH_ERROR_PGA</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ac9e2d95d3ba415fb7392d72a2458f4d8">FLASH_ERROR_WRP</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0a9564434dba379dc864805dc964a05e03">FLASH_ERROR_PROGRAM</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0a22a777a65972676f311e20de5a0f0beb">FLASH_ERROR_OPERATION</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf">FLASH_COMPLETE</link>}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga54bcb96270215c752c3479c8c9e438c0">FLASH_SetLatency</link> (
+uint32_t FLASH_Latency)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1gafaa24b6176b587bdda46abbe755af986">FLASH_PrefetchBufferCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga7d5a9a35e792d844c329d7f1656b50ae">FLASH_InstructionCacheCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga937a824493f3c6949289401a767a0360">FLASH_DataCacheCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1gaf6f1e54d9df32f3c196d67e59eb80a49">FLASH_InstructionCacheReset</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga8332da89b072373b7f116e0b7c137a22">FLASH_DataCacheReset</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga4084d0184bab463a1579271bf474aaef">FLASH_Unlock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga46899557353c4312ddbe3f25e65df1d8">FLASH_Lock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1ga48f408290b32a3aebbcad83a00fc447c">FLASH_EraseSector</link> (
+uint32_t FLASH_Sector, uint8_t VoltageRange)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1ga2aee006e5f4db4280bdedd401dfa50f9">FLASH_EraseAllSectors</link> (
+uint8_t VoltageRange)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gab84b52121e58d0dbc8ff2a92145d20f2">FLASH_ProgramDoubleWord</link> (
+uint32_t Address, uint64_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gaac9a2f400b92537bd42a6bd7cc237b11">FLASH_ProgramWord</link> (
+uint32_t Address, uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1ga5c1336f667950a8765887228f1d0d501">FLASH_ProgramHalfWord</link> (
+uint32_t Address, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gac425adf52fe7f229ef6bb893fe386848">FLASH_ProgramByte</link> (
+uint32_t Address, uint8_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga518d6e3bbba2adf1523e8454f62348e9">FLASH_OB_Unlock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga63a33d9af7e29b64c3806e5505c59b74">FLASH_OB_Lock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1gaffe7e91bcce65ac079ae5afa1db568b5">FLASH_OB_WRPConfig</link> (
+uint32_t OB_WRP, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga12cb6799f725a49cd151eef4d6d1789b">FLASH_OB_RDPConfig</link> (
+uint8_t OB_RDP)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga6b605409e4271b4cc6dfb56ed8108a1a">FLASH_OB_UserConfig</link> (
+uint8_t OB_IWDG, uint8_t OB_STOP, uint8_t OB_STDBY)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga621bf052bc381c7a37fb1f8758f5ec2e">FLASH_OB_BORConfig</link> (
+uint8_t OB_BOR)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gabcbd44a62a2488d8b90aa8562a258ef1">FLASH_OB_Launch</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="dc/da6/group___f_l_a_s_h_1ga737dd808489113af7f8df7f7e9f7baae">FLASH_OB_GetUser</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="dc/da6/group___f_l_a_s_h_1gafa2aec5fa1ea7a73c31f3405f465c525">FLASH_OB_GetWRP</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="dc/da6/group___f_l_a_s_h_1ga2f0151c6c923396eaf96c554a5860c31">FLASH_OB_GetRDP</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="dc/da6/group___f_l_a_s_h_1gab8a8804905929b2edd544d28c2e7b215">FLASH_OB_GetBOR</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga94c1e51a9c3bf8d48eb6eb4a4d054861">FLASH_ITConfig</link> (
+uint32_t FLASH_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="dc/da6/group___f_l_a_s_h_1gae3fb545e32f21501ca27d4380e0f2088">FLASH_GetFlagStatus</link> (
+uint32_t FLASH_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1gac4be1d486483fa5cd70ec77d44ca8f87">FLASH_ClearFlag</link> (
+uint32_t FLASH_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gac265b8d1e7ea11e44ceee28797c3debb">FLASH_GetStatus</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gaaf8ea3b00c9a5f5eca0df9a795b83f22">FLASH_WaitForLastOperation</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the FLASH firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h</para>
+    </simplesect>
+</section>

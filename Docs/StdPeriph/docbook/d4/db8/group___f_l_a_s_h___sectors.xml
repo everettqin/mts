@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/db8/group___f_l_a_s_h___sectors">
+    <title>FLASH_Sectors</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gac0f2d85ff047a3bf5dcdcd275e488796">FLASH_Sector_0</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga64fa0a3c29717df67d2fa827cc316faa">FLASH_Sector_1</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga9c5458f70e420e0715a7f268aff38fc1">FLASH_Sector_2</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga64cfe33ec785060ce70034df6534a656">FLASH_Sector_3</link> ((uint16_t)0x0018)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga389be89b2f79824cc2682a25297adf4a">FLASH_Sector_4</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga79028613994f20106c3fc2dfd56d8085">FLASH_Sector_5</link> ((uint16_t)0x0028)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gadeda2fce59d9ee17d7cc1025d1b6352d">FLASH_Sector_6</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga143c0665510327a7ec97052e6d6bb53a">FLASH_Sector_7</link> ((uint16_t)0x0038)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga27a8e02b4fcfe7863a95f38a78ca52a6">FLASH_Sector_8</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga717c6135a9ed6aa633796faf695fc2cd">FLASH_Sector_9</link> ((uint16_t)0x0048)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga0f9450aee4976ecf4f0ba2fbcf2555be">FLASH_Sector_10</link> ((uint16_t)0x0050)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gaac431a84bd33c70626b7981dcaf123b1">FLASH_Sector_11</link> ((uint16_t)0x0058)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga9e7722ee983a9411f59c0fdb81bc0e08">IS_FLASH_SECTOR</link> (((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gac0f2d85ff047a3bf5dcdcd275e488796">FLASH_Sector_0</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga64fa0a3c29717df67d2fa827cc316faa">FLASH_Sector_1</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga9c5458f70e420e0715a7f268aff38fc1">FLASH_Sector_2</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga64cfe33ec785060ce70034df6534a656">FLASH_Sector_3</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga389be89b2f79824cc2682a25297adf4a">FLASH_Sector_4</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga79028613994f20106c3fc2dfd56d8085">FLASH_Sector_5</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gadeda2fce59d9ee17d7cc1025d1b6352d">FLASH_Sector_6</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga143c0665510327a7ec97052e6d6bb53a">FLASH_Sector_7</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga27a8e02b4fcfe7863a95f38a78ca52a6">FLASH_Sector_8</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga717c6135a9ed6aa633796faf695fc2cd">FLASH_Sector_9</link>) ||\
+                                 ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1ga0f9450aee4976ecf4f0ba2fbcf2555be">FLASH_Sector_10</link>) || ((SECTOR) == <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gaac431a84bd33c70626b7981dcaf123b1">FLASH_Sector_11</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/db8/group___f_l_a_s_h___sectors_1gad0c8166ba15a0b8d458412a8bb74e2f0">IS_FLASH_ADDRESS</link> ((((ADDRESS) &gt;= 0x08000000) &amp;&amp; ((ADDRESS) &lt; 0x080FFFFF)) ||\
+                                   (((ADDRESS) &gt;= 0x1FFF7800) &amp;&amp; ((ADDRESS) &lt; 0x1FFF7A0F)))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1gac0f2d85ff047a3bf5dcdcd275e488796">
+                <title>#define FLASH_Sector_0</title>                
+<para>Sector Number 0 </para>
+
+                <para>Definition at line 107 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1ga64fa0a3c29717df67d2fa827cc316faa">
+                <title>#define FLASH_Sector_1</title>                
+<para>Sector Number 1 </para>
+
+                <para>Definition at line 108 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1ga9c5458f70e420e0715a7f268aff38fc1">
+                <title>#define FLASH_Sector_2</title>                
+<para>Sector Number 2 </para>
+
+                <para>Definition at line 109 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1ga64cfe33ec785060ce70034df6534a656">
+                <title>#define FLASH_Sector_3</title>                
+<para>Sector Number 3 </para>
+
+                <para>Definition at line 110 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1ga389be89b2f79824cc2682a25297adf4a">
+                <title>#define FLASH_Sector_4</title>                
+<para>Sector Number 4 </para>
+
+                <para>Definition at line 111 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1ga79028613994f20106c3fc2dfd56d8085">
+                <title>#define FLASH_Sector_5</title>                
+<para>Sector Number 5 </para>
+
+                <para>Definition at line 112 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1gadeda2fce59d9ee17d7cc1025d1b6352d">
+                <title>#define FLASH_Sector_6</title>                
+<para>Sector Number 6 </para>
+
+                <para>Definition at line 113 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1ga143c0665510327a7ec97052e6d6bb53a">
+                <title>#define FLASH_Sector_7</title>                
+<para>Sector Number 7 </para>
+
+                <para>Definition at line 114 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1ga27a8e02b4fcfe7863a95f38a78ca52a6">
+                <title>#define FLASH_Sector_8</title>                
+<para>Sector Number 8 </para>
+
+                <para>Definition at line 115 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1ga717c6135a9ed6aa633796faf695fc2cd">
+                <title>#define FLASH_Sector_9</title>                
+<para>Sector Number 9 </para>
+
+                <para>Definition at line 116 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1ga0f9450aee4976ecf4f0ba2fbcf2555be">
+                <title>#define FLASH_Sector_10</title>                
+<para>Sector Number 10 </para>
+
+                <para>Definition at line 117 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/db8/group___f_l_a_s_h___sectors_1gaac431a84bd33c70626b7981dcaf123b1">
+                <title>#define FLASH_Sector_11</title>                
+<para>Sector Number 11 </para>
+
+                <para>Definition at line 118 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

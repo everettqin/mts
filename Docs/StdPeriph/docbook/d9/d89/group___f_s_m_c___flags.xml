@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d89/group___f_s_m_c___flags">
+    <title>FSMC_Flags</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d89/group___f_s_m_c___flags_1ga5aadbd5d9f1b6a25bcc1fc6f3bf4c9cc">FSMC_FLAG_RisingEdge</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d89/group___f_s_m_c___flags_1ga25868d35780998a52190c424ebb3823f">FSMC_FLAG_Level</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d89/group___f_s_m_c___flags_1gaaaa85bce06ed962874686ad7af0f0cb7">FSMC_FLAG_FallingEdge</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d89/group___f_s_m_c___flags_1ga8da2bd0b9d11877aaebaba0c77e8b0cc">FSMC_FLAG_FEMPT</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d89/group___f_s_m_c___flags_1gab8674160ef7884f939e07041bbf5b18b">IS_FSMC_GET_FLAG</link> (((FLAG) == FSMC_FLAG_RisingEdge) || \
+                                ((FLAG) == FSMC_FLAG_Level) || \
+                                ((FLAG) == FSMC_FLAG_FallingEdge) || \
+                                ((FLAG) == FSMC_FLAG_FEMPT))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d89/group___f_s_m_c___flags_1ga1114bf56b54e726831b38fc8c5daa14e">IS_FSMC_CLEAR_FLAG</link> ((((FLAG) &amp; (uint32_t)0xFFFFFFF8) == 0x00000000) &amp;&amp; ((FLAG) != 0x00000000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

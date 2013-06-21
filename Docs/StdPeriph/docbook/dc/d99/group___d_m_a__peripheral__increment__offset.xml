@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d99/group___d_m_a__peripheral__increment__offset">
+    <title>DMA_peripheral_increment_offset</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d99/group___d_m_a__peripheral__increment__offset_1ga939053c42e486b82963b8eecc809bce0">DMA_PINCOS_Psize</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d99/group___d_m_a__peripheral__increment__offset_1gaae8184971db13b62cd9f4dc5aecf9c22">DMA_PINCOS_WordAligned</link> ((uint32_t)0x00008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d99/group___d_m_a__peripheral__increment__offset_1ga2fcfea7f5dedb658358f1220773fb2f2">IS_DMA_PINCOS_SIZE</link> (((SIZE) == DMA_PINCOS_Psize) || \
+                                  ((SIZE) == DMA_PINCOS_WordAligned))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

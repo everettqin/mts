@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d49/group___c_r_y_p___exported___constants">
+    <title>CRYP_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="db/dea/group___c_r_y_p___algorithm___direction">CRYP_Algorithm_Direction</link></para></listitem>
+            <listitem><para><link linkend="d3/d86/group___c_r_y_p___algorithm___mode">CRYP_Algorithm_Mode</link></para></listitem>
+            <listitem><para><link linkend="d6/dd9/group___c_r_y_p___data___type">CRYP_Data_Type</link></para></listitem>
+            <listitem><para><link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only">CRYP_Key_Size_for_AES_only</link></para></listitem>
+            <listitem><para><link linkend="d4/dcd/group___c_r_y_p__flags__definition">CRYP_flags_definition</link></para></listitem>
+            <listitem><para><link linkend="d5/d2d/group___c_r_y_p__interrupts__definition">CRYP_interrupts_definition</link></para></listitem>
+            <listitem><para><link linkend="d9/da3/group___c_r_y_p___encryption___decryption__modes__definition">CRYP_Encryption_Decryption_modes_definition</link></para></listitem>
+            <listitem><para><link linkend="d6/d4a/group___c_r_y_p___d_m_a__transfer__requests">CRYP_DMA_transfer_requests</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="db/dea/group___c_r_y_p___algorithm___direction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d86/group___c_r_y_p___algorithm___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/dd9/group___c_r_y_p___data___type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d90/group___c_r_y_p___key___size__for___a_e_s__only.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/dcd/group___c_r_y_p__flags__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d2d/group___c_r_y_p__interrupts__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/da3/group___c_r_y_p___encryption___decryption__modes__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d4a/group___c_r_y_p___d_m_a__transfer__requests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

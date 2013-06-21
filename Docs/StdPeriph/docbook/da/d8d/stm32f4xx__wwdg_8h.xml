@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d8d/stm32f4xx__wwdg_8h">
+    <title>stm32f4xx_wwdg.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga55780dcf60a252724f5aae2ca37d91c5">WWDG_Prescaler_1</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga2ac67d0a7f8691b5ebf0d7d77d6b5f08">WWDG_Prescaler_2</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1gab11714e1816967802a8421587e54a2eb">WWDG_Prescaler_4</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga7a4933366603869726bd5ea547d99f02">WWDG_Prescaler_8</link> ((uint32_t)0x00000180)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga39070de0722a70f99a6fcfe8720b2dfd">IS_WWDG_PRESCALER</link> (((PRESCALER) == WWDG_Prescaler_1) || \
+                                      ((PRESCALER) == WWDG_Prescaler_2) || \
+                                      ((PRESCALER) == WWDG_Prescaler_4) || \
+                                      ((PRESCALER) == WWDG_Prescaler_8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1gab6ea714a2380b7d6547ba97363887868">IS_WWDG_WINDOW_VALUE</link> ((VALUE) &lt;= 0x7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga4728877128cd60494692d8f14389112e">IS_WWDG_COUNTER</link> (((COUNTER) &gt;= 0x40) &amp;&amp; ((COUNTER) &lt;= 0x7F))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1ga7130f4dc861b9234b62e73f9f57f89a1">WWDG_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1gafeaa2b52c31ba7baca7eb61d2d42e07b">WWDG_SetPrescaler</link> (
+uint32_t WWDG_Prescaler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1gaf44a7bf8bf6b11b41cd89ff521fdd5a5">WWDG_SetWindowValue</link> (
+uint8_t WindowValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1gac8af66ea5254d3d78b60b9b7c7f29521">WWDG_EnableIT</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1ga6e44cc35f133b28b9ad861f459bf8d76">WWDG_SetCounter</link> (
+uint8_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1ga10dc2554d0b504b5472e3ecf0f02a9e6">WWDG_Enable</link> (
+uint8_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d5/d76/group___w_w_d_g_1ga7df4882d45918b9b8249dfca1e44fabc">WWDG_GetFlagStatus</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d76/group___w_w_d_g_1gabd2b5a6317c2e1a3ab0795838ce59dd2">WWDG_ClearFlag</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the WWDG firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h</para>
+    </simplesect>
+</section>

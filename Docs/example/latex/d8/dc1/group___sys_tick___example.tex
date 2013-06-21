@@ -1,0 +1,320 @@
+\hypertarget{group___sys_tick___example}{\section{Sys\-Tick\-\_\-\-Example}
+\label{group___sys_tick___example}\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___sys_tick___example_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}{N\-M\-I\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles N\-M\-I exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_ga2bffc10d5bd4106753b7c30e86903bea}{Hard\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Hard Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_ga3150f74512510287a942624aa9b44cc5}{Mem\-Manage\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Memory Manage exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_ga850cefb17a977292ae5eb4cafa9976c3}{Bus\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Bus Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_ga1d98923de2ed6b7309b66f9ba2971647}{Usage\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Usage Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}{S\-V\-C\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles S\-V\-Call exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_gadbdfb05858cc36fc520974df37ec3cb0}{Debug\-Mon\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Debug Monitor exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_ga6303e1f258cbdc1f970ce579cc015623}{Pend\-S\-V\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Pend\-S\-V\-C exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_gab5e09814056d617c521549e542639b7e}{Sys\-Tick\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Sys\-Tick Handler. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_gadf6ebc82af142bc201d3eb70e107f52e}{Delay} (\-\_\-\-\_\-\-I\-O uint32\-\_\-t n\-Time)
+\begin{DoxyCompactList}\small\item\em Inserts a delay time. \end{DoxyCompactList}\item 
+int \hyperlink{group___sys_tick___example_ga840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em Main program. \end{DoxyCompactList}\item 
+void \hyperlink{group___sys_tick___example_gaeb4c4307d28035637f0280cce42553fe}{Timing\-Delay\-\_\-\-Decrement} (void)
+\begin{DoxyCompactList}\small\item\em Decrements the Timing\-Delay variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___sys_tick___example_ga023d9e3f823118cee07edc493b68e0d4}{uint8\-\_\-t {\bfseries Counter} = 0}\label{group___sys_tick___example_ga023d9e3f823118cee07edc493b68e0d4}
+
+\item 
+\hypertarget{group___sys_tick___example_ga65ae650a8f9852583e5115c6cef63564}{\-\_\-\-\_\-\-I\-O int8\-\_\-t {\bfseries X\-Offset}}\label{group___sys_tick___example_ga65ae650a8f9852583e5115c6cef63564}
+
+\item 
+\hypertarget{group___sys_tick___example_gaabec2e8b238c68bcf7a52f977a738f04}{\-\_\-\-\_\-\-I\-O int8\-\_\-t {\bfseries Y\-Offset}}\label{group___sys_tick___example_gaabec2e8b238c68bcf7a52f977a738f04}
+
+\item 
+\hypertarget{group___sys_tick___example_gabd80ff08dc4407c1408b05c9e8ad400c}{uint8\-\_\-t {\bfseries Buffer} \mbox{[}4\mbox{]}}\label{group___sys_tick___example_gabd80ff08dc4407c1408b05c9e8ad400c}
+
+\item 
+\hypertarget{group___sys_tick___example_ga6fa8375c8168ca9a7c94f1be2a04e3db}{\-\_\-\-\_\-\-I\-O uint8\-\_\-t {\bfseries Temp\-Acceleration} = 0}\label{group___sys_tick___example_ga6fa8375c8168ca9a7c94f1be2a04e3db}
+
+\item 
+\hypertarget{group___sys_tick___example_ga67299a22e2291ffc112aa828744f08ea}{uint8\-\_\-t {\bfseries Click\-Reg} = 0}\label{group___sys_tick___example_ga67299a22e2291ffc112aa828744f08ea}
+
+\item 
+\hypertarget{group___sys_tick___example_gaf484abe0ca156dc40cf0fb5e79d4d6db}{\-\_\-\-\_\-\-I\-O uint32\-\_\-t {\bfseries Timing\-Delay}}\label{group___sys_tick___example_gaf484abe0ca156dc40cf0fb5e79d4d6db}
+
+\item 
+\hypertarget{group___sys_tick___example_gadd1e9305c0bb616ee59a705531d11bee}{\-\_\-\-\_\-\-I\-O uint8\-\_\-t {\bfseries Single\-Click\-Detect}}\label{group___sys_tick___example_gadd1e9305c0bb616ee59a705531d11bee}
+
+\item 
+\hypertarget{group___sys_tick___example_ga58d8a7f3700f34e7226b33e61f5ed960}{G\-P\-I\-O\-\_\-\-Init\-Type\-Def {\bfseries G\-P\-I\-O\-\_\-\-Init\-Structure}}\label{group___sys_tick___example_ga58d8a7f3700f34e7226b33e61f5ed960}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___sys_tick___example_ga850cefb17a977292ae5eb4cafa9976c3}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!Bus\-Fault\-\_\-\-Handler@{Bus\-Fault\-\_\-\-Handler}}
+\index{Bus\-Fault\-\_\-\-Handler@{Bus\-Fault\-\_\-\-Handler}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{Bus\-Fault\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Bus\-Fault\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_ga850cefb17a977292ae5eb4cafa9976c3}
+
+
+This function handles Bus Fault exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_gadbdfb05858cc36fc520974df37ec3cb0}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!Debug\-Mon\-\_\-\-Handler@{Debug\-Mon\-\_\-\-Handler}}
+\index{Debug\-Mon\-\_\-\-Handler@{Debug\-Mon\-\_\-\-Handler}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{Debug\-Mon\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Debug\-Mon\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_gadbdfb05858cc36fc520974df37ec3cb0}
+
+
+This function handles Debug Monitor exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_gadf6ebc82af142bc201d3eb70e107f52e}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!Delay@{Delay}}
+\index{Delay@{Delay}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{Delay}]{\setlength{\rightskip}{0pt plus 5cm}void Delay (
+\begin{DoxyParamCaption}
+\item[{\-\_\-\-\_\-\-I\-O uint32\-\_\-t}]{n\-Time}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_gadf6ebc82af142bc201d3eb70e107f52e}
+
+
+Inserts a delay time. 
+
+Delay Function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\-Time,\-:} & specifies the delay time length, in milliseconds. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_ga2bffc10d5bd4106753b7c30e86903bea}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!Hard\-Fault\-\_\-\-Handler@{Hard\-Fault\-\_\-\-Handler}}
+\index{Hard\-Fault\-\_\-\-Handler@{Hard\-Fault\-\_\-\-Handler}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{Hard\-Fault\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Hard\-Fault\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_ga2bffc10d5bd4106753b7c30e86903bea}
+
+
+This function handles Hard Fault exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_ga840291bc02cba5474a4cb46a9b9566fe}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!main@{main}}
+\index{main@{main}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_ga840291bc02cba5474a4cb46a9b9566fe}
+
+
+Main program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+$<$ At this stage the microcontroller clock setting is already configured, this is done through \hyperlink{group___s_t_m32_f4xx___system___private___functions_ga93f514700ccf00d08dbdcff7f1224eb2}{System\-Init()} function which is called from startup file (startup\-\_\-stm32f4xx.\-s) before to branch to application main. To reconfigure the default setting of \hyperlink{group___s_t_m32_f4xx___system___private___functions_ga93f514700ccf00d08dbdcff7f1224eb2}{System\-Init()} function, refer to system\-\_\-stm32f4xx.\-c file\hypertarget{group___sys_tick___example_ga3150f74512510287a942624aa9b44cc5}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!Mem\-Manage\-\_\-\-Handler@{Mem\-Manage\-\_\-\-Handler}}
+\index{Mem\-Manage\-\_\-\-Handler@{Mem\-Manage\-\_\-\-Handler}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{Mem\-Manage\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Mem\-Manage\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_ga3150f74512510287a942624aa9b44cc5}
+
+
+This function handles Memory Manage exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!N\-M\-I\-\_\-\-Handler@{N\-M\-I\-\_\-\-Handler}}
+\index{N\-M\-I\-\_\-\-Handler@{N\-M\-I\-\_\-\-Handler}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{N\-M\-I\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void N\-M\-I\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}
+
+
+This function handles N\-M\-I exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_ga6303e1f258cbdc1f970ce579cc015623}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!Pend\-S\-V\-\_\-\-Handler@{Pend\-S\-V\-\_\-\-Handler}}
+\index{Pend\-S\-V\-\_\-\-Handler@{Pend\-S\-V\-\_\-\-Handler}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{Pend\-S\-V\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Pend\-S\-V\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_ga6303e1f258cbdc1f970ce579cc015623}
+
+
+This function handles Pend\-S\-V\-C exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!S\-V\-C\-\_\-\-Handler@{S\-V\-C\-\_\-\-Handler}}
+\index{S\-V\-C\-\_\-\-Handler@{S\-V\-C\-\_\-\-Handler}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{S\-V\-C\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void S\-V\-C\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}
+
+
+This function handles S\-V\-Call exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_gab5e09814056d617c521549e542639b7e}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!Sys\-Tick\-\_\-\-Handler@{Sys\-Tick\-\_\-\-Handler}}
+\index{Sys\-Tick\-\_\-\-Handler@{Sys\-Tick\-\_\-\-Handler}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{Sys\-Tick\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Sys\-Tick\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_gab5e09814056d617c521549e542639b7e}
+
+
+This function handles Sys\-Tick Handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_gaeb4c4307d28035637f0280cce42553fe}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!Timing\-Delay\-\_\-\-Decrement@{Timing\-Delay\-\_\-\-Decrement}}
+\index{Timing\-Delay\-\_\-\-Decrement@{Timing\-Delay\-\_\-\-Decrement}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{Timing\-Delay\-\_\-\-Decrement}]{\setlength{\rightskip}{0pt plus 5cm}void Timing\-Delay\-\_\-\-Decrement (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_gaeb4c4307d28035637f0280cce42553fe}
+
+
+Decrements the Timing\-Delay variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___sys_tick___example_ga1d98923de2ed6b7309b66f9ba2971647}{\index{Sys\-Tick\-\_\-\-Example@{Sys\-Tick\-\_\-\-Example}!Usage\-Fault\-\_\-\-Handler@{Usage\-Fault\-\_\-\-Handler}}
+\index{Usage\-Fault\-\_\-\-Handler@{Usage\-Fault\-\_\-\-Handler}!SysTick_Example@{Sys\-Tick\-\_\-\-Example}}
+\subsubsection[{Usage\-Fault\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Usage\-Fault\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___sys_tick___example_ga1d98923de2ed6b7309b66f9ba2971647}
+
+
+This function handles Usage Fault exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

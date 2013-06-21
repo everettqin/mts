@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d4a/struct_e_x_t_i___init_type_def">
+<title>EXTI_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/dca/stm32f4xx__exti_8h">&lt;stm32f4xx_exti.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t EXTI_Line</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>EXTIMode_TypeDef EXTI_Mode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>EXTITrigger_TypeDef EXTI_Trigger</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FunctionalState EXTI_LineCmd</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>EXTI Init Structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t EXTI_Line</title>                
+<para>Specifies the EXTI lines to be enabled or disabled. This parameter can be any combination value of <link linkend="db/d4a/group___e_x_t_i___lines">EXTI_Lines</link> </para>
+
+                <para>Definition at line 76 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>EXTIMode_TypeDef EXTI_Mode</title>                
+<para>Specifies the mode for the EXTI lines. This parameter can be a value of <link linkend="d7/d5d/group___e_x_t_i_1gad5e69af98dc0dfdf64417adc1cf57929">EXTIMode_TypeDef</link> </para>
+
+                <para>Definition at line 79 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>EXTITrigger_TypeDef EXTI_Trigger</title>                
+<para>Specifies the trigger signal active edge for the EXTI lines. This parameter can be a value of <link linkend="d7/d5d/group___e_x_t_i_1ga9da190f5425d1b421a06bced8cc48e9b">EXTITrigger_TypeDef</link> </para>
+
+                <para>Definition at line 82 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>FunctionalState EXTI_LineCmd</title>                
+<para>Specifies the new state of the selected EXTI lines. This parameter can be set either to ENABLE or DISABLE </para>
+
+                <para>Definition at line 85 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

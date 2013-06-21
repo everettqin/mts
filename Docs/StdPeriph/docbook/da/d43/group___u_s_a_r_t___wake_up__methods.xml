@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d43/group___u_s_a_r_t___wake_up__methods">
+    <title>USART_WakeUp_methods</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d43/group___u_s_a_r_t___wake_up__methods_1ga9646d71590d5cef29ee12da0bb431d92">USART_WakeUp_IdleLine</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d43/group___u_s_a_r_t___wake_up__methods_1ga9f63c1671060682adee91b9a2f3202e4">USART_WakeUp_AddressMark</link> ((uint16_t)0x0800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d43/group___u_s_a_r_t___wake_up__methods_1ga3611be417bdb82f42dc2ca17584271f9">IS_USART_WAKEUP</link> (((WAKEUP) == USART_WakeUp_IdleLine) || \
+                                 ((WAKEUP) == USART_WakeUp_AddressMark))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

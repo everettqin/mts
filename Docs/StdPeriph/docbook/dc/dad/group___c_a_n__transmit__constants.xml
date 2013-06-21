@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dad/group___c_a_n__transmit__constants">
+    <title>CAN_transmit_constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga8d193002e76c04ec8caff6b110cd5983">CAN_TxStatus_Failed</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga0b401c61922b1449de9b486dcf475c97">CAN_TxStatus_Ok</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga9678a3a51379422868083608c7394409">CAN_TxStatus_Pending</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga2620e99debd51011d3569121f2e44690">CAN_TxStatus_NoMailBox</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga3590356d92f1a328dc794ac1f07d57d5">CANTXFAILED</link> <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga8d193002e76c04ec8caff6b110cd5983">CAN_TxStatus_Failed</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga288ba42cf1de7572f2fe1378268c9452">CANTXOK</link> <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga0b401c61922b1449de9b486dcf475c97">CAN_TxStatus_Ok</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga76f43f4c54505b1f87b39b056ca38897">CANTXPENDING</link> <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga9678a3a51379422868083608c7394409">CAN_TxStatus_Pending</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga418f1fd7ca2e852b263fd07874fde0c6">CAN_NO_MB</link> <link linkend="dc/dad/group___c_a_n__transmit__constants_1ga2620e99debd51011d3569121f2e44690">CAN_TxStatus_NoMailBox</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="dc/dad/group___c_a_n__transmit__constants_1ga8d193002e76c04ec8caff6b110cd5983">
+                <title>#define CAN_TxStatus_Failed</title>                
+<para>CAN transmission failed </para>
+
+                <para>Definition at line 412 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="dc/dad/group___c_a_n__transmit__constants_1ga0b401c61922b1449de9b486dcf475c97">
+                <title>#define CAN_TxStatus_Ok</title>                
+<para>CAN transmission succeeded </para>
+
+                <para>Definition at line 413 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="dc/dad/group___c_a_n__transmit__constants_1ga9678a3a51379422868083608c7394409">
+                <title>#define CAN_TxStatus_Pending</title>                
+<para>CAN transmission pending </para>
+
+                <para>Definition at line 414 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="dc/dad/group___c_a_n__transmit__constants_1ga2620e99debd51011d3569121f2e44690">
+                <title>#define CAN_TxStatus_NoMailBox</title>                
+<para>CAN cell did not provide an empty mailbox </para>
+
+                <para>Definition at line 416 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

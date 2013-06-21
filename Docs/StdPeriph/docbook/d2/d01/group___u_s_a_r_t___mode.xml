@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d01/group___u_s_a_r_t___mode">
+    <title>USART_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d01/group___u_s_a_r_t___mode_1gafefcc3d3c1a1f83b425784fa6289aecf">USART_Mode_Rx</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d01/group___u_s_a_r_t___mode_1ga22b2813509a062435ea68d086ec565b4">USART_Mode_Tx</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d01/group___u_s_a_r_t___mode_1gae9140e5ca405d2377fe0e82c79e136a2">IS_USART_MODE</link> ((((MODE) &amp; (uint16_t)0xFFF3) == 0x00) &amp;&amp; ((MODE) != (uint16_t)0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

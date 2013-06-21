@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/da8/group___p_w_r___regulator___voltage___scale">
+    <title>PWR_Regulator_Voltage_Scale</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/da8/group___p_w_r___regulator___voltage___scale_1ga3626811fd793b5f5cf9d510acfcbffc4">PWR_Regulator_Voltage_Scale1</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/da8/group___p_w_r___regulator___voltage___scale_1ga93ae6faf954e9478cf719f9b05c9cba8">PWR_Regulator_Voltage_Scale2</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/da8/group___p_w_r___regulator___voltage___scale_1gab7f9039ed34cc5af3d57606c726e66a2">IS_PWR_REGULATOR_VOLTAGE</link> (((VOLTAGE) == PWR_Regulator_Voltage_Scale1) || ((VOLTAGE) == PWR_Regulator_Voltage_Scale2))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

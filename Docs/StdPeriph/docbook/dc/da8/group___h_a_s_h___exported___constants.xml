@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/da8/group___h_a_s_h___exported___constants">
+    <title>HASH_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d5/d73/group___h_a_s_h___algo___selection">HASH_Algo_Selection</link></para></listitem>
+            <listitem><para><link linkend="dd/dc8/group___h_a_s_h__processor___algorithm___mode">HASH_processor_Algorithm_Mode</link></para></listitem>
+            <listitem><para><link linkend="df/d75/group___h_a_s_h___data___type">HASH_Data_Type</link></para></listitem>
+            <listitem><para><link linkend="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode">HASH_HMAC_Long_key_only_for_HMAC_mode</link></para></listitem>
+            <listitem><para><link linkend="d2/de9/group___number__of__valid__bits__in__last__word__of__the__message">Number_of_valid_bits_in_last_word_of_the_message</link></para></listitem>
+            <listitem><para><link linkend="da/d62/group___h_a_s_h__interrupts__definition">HASH_interrupts_definition</link></para></listitem>
+            <listitem><para><link linkend="df/dd2/group___h_a_s_h__flags__definition">HASH_flags_definition</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d5/d73/group___h_a_s_h___algo___selection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/dc8/group___h_a_s_h__processor___algorithm___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d75/group___h_a_s_h___data___type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d49/group___h_a_s_h___h_m_a_c___long__key__only__for___h_m_a_c__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/de9/group___number__of__valid__bits__in__last__word__of__the__message.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d62/group___h_a_s_h__interrupts__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/dd2/group___h_a_s_h__flags__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

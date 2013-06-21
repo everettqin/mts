@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d4a/group___r_t_c___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                 Initialization and Configuration functions
+ ===============================================================================
+
+  This section provide functions allowing to initialize and configure the RTC
+  Prescaler (Synchronous and Asynchronous), RTC Hour format, disable RTC registers
+  Write protection, enter and exit the RTC initialization mode, RTC registers
+  synchronization check and reference clock detection enable.
+  
+  1. The RTC Prescaler is programmed to generate the RTC 1Hz time base. It is
+     split into 2 programmable prescalers to minimize power consumption.
+     - A 7-bit asynchronous prescaler and A 13-bit synchronous prescaler.
+     - When both prescalers are used, it is recommended to configure the asynchronous
+       prescaler to a high value to minimize consumption.
+
+  2. All RTC registers are Write protected. Writing to the RTC registers
+     is enabled by writing a key into the Write Protection register, RTC_WPR.
+
+  3. To Configure the RTC Calendar, user application should enter initialization
+     mode. In this mode, the calendar counter is stopped and its value can be 
+     updated. When the initialization sequence is complete, the calendar restarts 
+     counting after 4 RTCCLK cycles.
+
+  4. To read the calendar through the shadow registers after Calendar initialization,
+     calendar update or after wakeup from low power modes the software must first 
+     clear the RSF flag. The software must then wait until it is set again before 
+     reading the calendar, which means that the calendar registers have been 
+     correctly copied into the RTC_TR and RTC_DR shadow registers.
+     The RTC_WaitForSynchro() function implements the above software sequence 
+     (RSF clear and RSF check).</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1ga9777c6cc4a99c339ebc527a791b2ebe7">RTC_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1ga8eb747bf9698b2482ba6ef4d811de8e0">RTC_Init</link> (
+<link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> * RTC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4a/group___r_t_c___group1_1gab466f3348de3236976e9aec7d6025dff">RTC_StructInit</link> (
+<link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> * RTC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4a/group___r_t_c___group1_1ga9d4bdfd3ae6957630d15d2497573b7c7">RTC_WriteProtectionCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1ga679f8883cbfb267a53ffb1ab4cc5c8c5">RTC_EnterInitMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4a/group___r_t_c___group1_1ga87f86f3b794205f09a1eac51738d900f">RTC_ExitInitMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1ga2938febeef6baf0d91cc066ca5caf095">RTC_WaitForSynchro</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1gaa60079ec257fb3a277d058ca8305533d">RTC_RefClockCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4a/group___r_t_c___group1_1gae5e7c682f15b8ae9ddd3b2a85a9df7db">RTC_BypassShadowCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d0/d4a/group___r_t_c___group1_1ga9777c6cc4a99c339ebc527a791b2ebe7">
+                <title>ErrorStatus RTC_DeInit (void)</title> <emphasis>Deinitializes the RTC registers to their default reset values.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function doesn&apos;t reset the RTC Clock source and RTC Backup Data registers. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC registers are deinitialized</para>
+</listitem><listitem>
+<para>ERROR: RTC registers are not deinitialized </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d4a/group___r_t_c___group1_1ga8eb747bf9698b2482ba6ef4d811de8e0">
+                <title>ErrorStatus RTC_Init (RTC_InitTypeDef *RTC_InitStruct)</title> <emphasis>Initializes the RTC registers according to the specified parameters 
+        in RTC_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> structure that contains the configuration information for the RTC peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The RTC Prescaler register is write protected and can be written in initialization mode only. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC registers are initialized</para>
+</listitem><listitem>
+<para>ERROR: RTC registers are not initialized </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d4a/group___r_t_c___group1_1gab466f3348de3236976e9aec7d6025dff">
+                <title>void RTC_StructInit (RTC_InitTypeDef *RTC_InitStruct)</title> <emphasis>Fills each RTC_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d4a/group___r_t_c___group1_1ga9d4bdfd3ae6957630d15d2497573b7c7">
+                <title>void RTC_WriteProtectionCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the RTC registers write protection.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>All the RTC registers are write protected except for RTC_ISR[13:8], RTC_TAFCR and RTC_BKPxR. </para>
+<simplesect/>
+<para>Writing a wrong key reactivates the write protection. </para>
+<simplesect/>
+<para>The protection mechanism is not affected by system reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the write protection. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d4a/group___r_t_c___group1_1ga679f8883cbfb267a53ffb1ab4cc5c8c5">
+                <title>ErrorStatus RTC_EnterInitMode (void)</title> <emphasis>Enters the RTC Initialization mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The RTC Initialization mode is write protected, use the RTC_WriteProtectionCmd(DISABLE) before calling this function. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC is in Init mode</para>
+</listitem><listitem>
+<para>ERROR: RTC is not in Init mode </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d4a/group___r_t_c___group1_1ga87f86f3b794205f09a1eac51738d900f">
+                <title>void RTC_ExitInitMode (void)</title> <emphasis>Exits the RTC Initialization mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>When the initialization sequence is complete, the calendar restarts counting after 4 RTCCLK cycles. </para>
+<simplesect/>
+<para>The RTC Initialization mode is write protected, use the RTC_WriteProtectionCmd(DISABLE) before calling this function. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d4a/group___r_t_c___group1_1ga2938febeef6baf0d91cc066ca5caf095">
+                <title>ErrorStatus RTC_WaitForSynchro (void)</title> <emphasis>Waits until the RTC Time and Date registers (RTC_TR and RTC_DR) are 
+        synchronized with RTC APB clock.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The RTC Resynchronization mode is write protected, use the RTC_WriteProtectionCmd(DISABLE) before calling this function. </para>
+<simplesect/>
+<para>To read the calendar through the shadow registers after Calendar initialization, calendar update or after wakeup from low power modes the software must first clear the RSF flag. The software must then wait until it is set again before reading the calendar, which means that the calendar registers have been correctly copied into the RTC_TR and RTC_DR shadow registers. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC registers are synchronised</para>
+</listitem><listitem>
+<para>ERROR: RTC registers are not synchronised </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d4a/group___r_t_c___group1_1gaa60079ec257fb3a277d058ca8305533d">
+                <title>ErrorStatus RTC_RefClockCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the RTC reference clock detection.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the RTC reference clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC reference clock detection is enabled</para>
+</listitem><listitem>
+<para>ERROR: RTC reference clock detection is disabled </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d4a/group___r_t_c___group1_1gae5e7c682f15b8ae9ddd3b2a85a9df7db">
+                <title>void RTC_BypassShadowCmd (FunctionalState NewState)</title> <emphasis>Enables or Disables the Bypass Shadow feature.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>When the Bypass Shadow is enabled the calendar value are taken directly from the Calendar counter. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Bypass Shadow feature. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

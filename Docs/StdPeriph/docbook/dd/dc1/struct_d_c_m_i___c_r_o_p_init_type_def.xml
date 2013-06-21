@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dc1/struct_d_c_m_i___c_r_o_p_init_type_def">
+<title>DCMI_CROPInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d66/stm32f4xx__dcmi_8h">&lt;stm32f4xx_dcmi.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_VerticalStartLine</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_HorizontalOffsetCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_VerticalLineCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_CaptureCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DCMI CROP Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t DCMI_VerticalStartLine</title>                
+<para>Specifies the Vertical start line count from which the image capture will start. This parameter can be a value between 0x00 and 0x1FFF </para>
+
+                <para>Definition at line 74 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t DCMI_HorizontalOffsetCount</title>                
+<para>Specifies the number of pixel clocks to count before starting a capture. This parameter can be a value between 0x00 and 0x3FFF </para>
+
+                <para>Definition at line 77 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t DCMI_VerticalLineCount</title>                
+<para>Specifies the number of lines to be captured from the starting point. This parameter can be a value between 0x00 and 0x3FFF </para>
+
+                <para>Definition at line 80 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t DCMI_CaptureCount</title>                
+<para>Specifies the number of pixel clocks to be captured from the starting point on the same line. This parameter can be a value between 0x00 and 0x3FFF </para>
+
+                <para>Definition at line 83 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

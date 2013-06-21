@@ -1,0 +1,842 @@
+\hypertarget{group___s_p_i}{\section{S\-P\-I}
+\label{group___s_p_i}\index{S\-P\-I@{S\-P\-I}}
+}
+
+
+S\-P\-I driver modules.  
+
+
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___s_p_i___exported___constants}{S\-P\-I\-\_\-\-Exported\-\_\-\-Constants}
+\item 
+\hyperlink{group___s_p_i___private___functions}{S\-P\-I\-\_\-\-Private\-\_\-\-Functions}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_p_i___init_type_def}{S\-P\-I\-\_\-\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em S\-P\-I Init structure definition. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em I2\-S Init structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___s_p_i_ga8d425258898b4af4ebc820f52635fad8}{\#define {\bfseries C\-R1\-\_\-\-C\-L\-E\-A\-R\-\_\-\-M\-A\-S\-K}~((uint16\-\_\-t)0x3040)}\label{group___s_p_i_ga8d425258898b4af4ebc820f52635fad8}
+
+\item 
+\hypertarget{group___s_p_i_ga441f8283b9c46535e05ae7e520728033}{\#define {\bfseries I2\-S\-C\-F\-G\-R\-\_\-\-C\-L\-E\-A\-R\-\_\-\-M\-A\-S\-K}~((uint16\-\_\-t)0x\-F040)}\label{group___s_p_i_ga441f8283b9c46535e05ae7e520728033}
+
+\item 
+\hypertarget{group___s_p_i_ga7fb18a9c4bcfc2b92c8c58f6bfe99876}{\#define {\bfseries P\-L\-L\-C\-F\-G\-R\-\_\-\-P\-P\-L\-R\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x70000000)}\label{group___s_p_i_ga7fb18a9c4bcfc2b92c8c58f6bfe99876}
+
+\item 
+\hypertarget{group___s_p_i_ga7c3555ba01e070847f1475d2578332ed}{\#define {\bfseries P\-L\-L\-C\-F\-G\-R\-\_\-\-P\-P\-L\-N\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x00007\-F\-C0)}\label{group___s_p_i_ga7c3555ba01e070847f1475d2578332ed}
+
+\item 
+\hypertarget{group___s_p_i_ga09e3f41fa2150831afaac191046087f2}{\#define {\bfseries S\-P\-I\-\_\-\-C\-R2\-\_\-\-F\-R\-F}~((uint16\-\_\-t)0x0010)}\label{group___s_p_i_ga09e3f41fa2150831afaac191046087f2}
+
+\item 
+\hypertarget{group___s_p_i_gac2a833b915e27cd63a5fc416d9002472}{\#define {\bfseries S\-P\-I\-\_\-\-S\-R\-\_\-\-T\-I\-F\-R\-F\-E}~((uint16\-\_\-t)0x0100)}\label{group___s_p_i_gac2a833b915e27cd63a5fc416d9002472}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___s_p_i_gabe36880945fa56785283a9c0092124cc}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix)
+\begin{DoxyCompactList}\small\item\em Deinitialize the S\-P\-Ix peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga8dacc1dc48bf08c0f12da409f4889037}{S\-P\-I\-\_\-\-Init} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, \hyperlink{struct_s_p_i___init_type_def}{S\-P\-I\-\_\-\-Init\-Type\-Def} $\ast$S\-P\-I\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\-P\-Ix peripheral according to the specified parameters in the S\-P\-I\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga53661884ae4a9640df7cbc59187782f7}{I2\-S\-\_\-\-Init} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} $\ast$I2\-S\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\-P\-Ix peripheral according to the specified parameters in the I2\-S\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga9a0116f88cc2c4478c270f05608703f1}{S\-P\-I\-\_\-\-Struct\-Init} (\hyperlink{struct_s_p_i___init_type_def}{S\-P\-I\-\_\-\-Init\-Type\-Def} $\ast$S\-P\-I\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\-P\-I\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga7470ec1d0759fdeeb42c7fe71a3b41b7}{I2\-S\-\_\-\-Struct\-Init} (\hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} $\ast$I2\-S\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each I2\-S\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_gaa31357879a65ee1ed7223f3b9114dcf3}{S\-P\-I\-\_\-\-Cmd} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\-P\-I peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_gafe061c71bbc5b4224f3f2884dc53739e}{I2\-S\-\_\-\-Cmd} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\-P\-I peripheral (in I2\-S mode). \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_gafc82e90841d7879535d655c035709cb1}{S\-P\-I\-\_\-\-Data\-Size\-Config} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t S\-P\-I\-\_\-\-Data\-Size)
+\begin{DoxyCompactList}\small\item\em Configures the data size for the selected S\-P\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga166171c421fc51da7714723524d41b45}{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t S\-P\-I\-\_\-\-Direction)
+\begin{DoxyCompactList}\small\item\em Selects the data transfer direction in bidirectional mode for the specified S\-P\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga56fc508a482f032f9eb80e4c63184126}{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft)
+\begin{DoxyCompactList}\small\item\em Configures internally by software the N\-S\-S pin for the selected S\-P\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga4ec54abdedf6cd17403d853a926d91c1}{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-S output for the selected S\-P\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga74594bf32e3bf4905ac7a2deef8eb475}{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-P\-Ix/\-I2\-Sx D\-M\-A interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga60082947bedfe9efc233405be2a7bec2}{I2\-S\-\_\-\-Full\-Duplex\-Config} (S\-P\-I\-\_\-\-Type\-Def $\ast$I2\-Sxext, \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} $\ast$I2\-S\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Configures the full duplex mode for the I2\-Sx peripheral using its extension I2\-Sxext according to the specified parameters in the I2\-S\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_gad5af40bebe8dbe3fa8bd476489d7e3da}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Send\-Data} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Transmits a Data through the S\-P\-Ix/\-I2\-Sx peripheral. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{group___s_p_i_gab77de76547f3bff403236b263b070a30}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Receive\-Data} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix)
+\begin{DoxyCompactList}\small\item\em Returns the most recent received data by the S\-P\-Ix/\-I2\-Sx peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga64f7276d119e6cb58afc100f8832adb0}{S\-P\-I\-\_\-\-Calculate\-C\-R\-C} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the C\-R\-C value calculation of the transferred bytes. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_gace8b1058e09bab150b0dbe5978810273}{S\-P\-I\-\_\-\-Transmit\-C\-R\-C} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix)
+\begin{DoxyCompactList}\small\item\em Transmit the S\-P\-Ix C\-R\-C value. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{group___s_p_i_ga4c81c193516e82cf0a2fdc149ef20cc6}{S\-P\-I\-\_\-\-Get\-C\-R\-C} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint8\-\_\-t S\-P\-I\-\_\-\-C\-R\-C)
+\begin{DoxyCompactList}\small\item\em Returns the transmit or the receive C\-R\-C register value for the specified S\-P\-I. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{group___s_p_i_ga80fb9374cfce670f29128bb78568353f}{S\-P\-I\-\_\-\-Get\-C\-R\-C\-Polynomial} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix)
+\begin{DoxyCompactList}\small\item\em Returns the C\-R\-C Polynomial register value for the specified S\-P\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_gabed5b91a8576e6d578f364cc0e807e4a}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Cmd} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Req, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-P\-Ix/\-I2\-Sx D\-M\-A interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga17f4ef132e8ddbf94cb6b1688d181e41}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-Config} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint8\-\_\-t S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\-P\-I/\-I2\-S interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___s_p_i_ga1bd785d129e09c5734a876c8f2767204}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\-P\-Ix/\-I2\-Sx flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga3aabd9e2437e213056c0ed9bdfa1a724}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-Flag} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the S\-P\-Ix C\-R\-C Error (C\-R\-C\-E\-R\-R) flag. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___s_p_i_ga72decbc1cd79f8fad92a2204beca6bc5}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint8\-\_\-t S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified S\-P\-Ix/\-I2\-Sx interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i_ga35a524a49ff3d058137060f751e8749f}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-I\-T\-Pending\-Bit} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint8\-\_\-t S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the S\-P\-Ix C\-R\-C Error (C\-R\-C\-E\-R\-R) interrupt pending bit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\-P\-I driver modules. 
+
+\subsection{Function Documentation}
+\hypertarget{group___s_p_i_gafe061c71bbc5b4224f3f2884dc53739e}{\index{S\-P\-I@{S\-P\-I}!I2\-S\-\_\-\-Cmd@{I2\-S\-\_\-\-Cmd}}
+\index{I2\-S\-\_\-\-Cmd@{I2\-S\-\_\-\-Cmd}!SPI@{S\-P\-I}}
+\subsubsection[{I2\-S\-\_\-\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-S\-\_\-\-Cmd (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_gafe061c71bbc5b4224f3f2884dc53739e}
+
+
+Enables or disables the specified S\-P\-I peripheral (in I2\-S mode). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 2 or 3 to select the S\-P\-I peripheral (or I2\-Sxext for full duplex mode). \\
+\hline
+{\em New\-State,\-:} & new state of the S\-P\-Ix peripheral. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 535 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga60082947bedfe9efc233405be2a7bec2}{\index{S\-P\-I@{S\-P\-I}!I2\-S\-\_\-\-Full\-Duplex\-Config@{I2\-S\-\_\-\-Full\-Duplex\-Config}}
+\index{I2\-S\-\_\-\-Full\-Duplex\-Config@{I2\-S\-\_\-\-Full\-Duplex\-Config}!SPI@{S\-P\-I}}
+\subsubsection[{I2\-S\-\_\-\-Full\-Duplex\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-S\-\_\-\-Full\-Duplex\-Config (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{I2\-Sxext, }
+\item[{{\bf I2\-S\-\_\-\-Init\-Type\-Def} $\ast$}]{I2\-S\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga60082947bedfe9efc233405be2a7bec2}
+
+
+Configures the full duplex mode for the I2\-Sx peripheral using its extension I2\-Sxext according to the specified parameters in the I2\-S\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Sxext,\-:} & where x can be 2 or 3 to select the I2\-S peripheral extension block. \\
+\hline
+{\em I2\-S\-\_\-\-Init\-Struct,\-:} & pointer to an \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the specified I2\-S peripheral extension.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The structure pointed by I2\-S\-\_\-\-Init\-Struct parameter should be the same used for the master I2\-S peripheral. In this case, if the master is configured as transmitter, the slave will be receiver and vice versa. Or you can force a different mode by modifying the field I2\-S\-\_\-\-Mode to the value I2\-S\-\_\-\-Slave\-Rx or I2\-S\-\_\-\-Slave\-Tx indepedently of the master configuration.
+
+The I2\-S full duplex extension can be configured in slave mode only.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 700 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga53661884ae4a9640df7cbc59187782f7}{\index{S\-P\-I@{S\-P\-I}!I2\-S\-\_\-\-Init@{I2\-S\-\_\-\-Init}}
+\index{I2\-S\-\_\-\-Init@{I2\-S\-\_\-\-Init}!SPI@{S\-P\-I}}
+\subsubsection[{I2\-S\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-S\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{{\bf I2\-S\-\_\-\-Init\-Type\-Def} $\ast$}]{I2\-S\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga53661884ae4a9640df7cbc59187782f7}
+
+
+Initializes the S\-P\-Ix peripheral according to the specified parameters in the I2\-S\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 2 or 3 to select the S\-P\-I peripheral (configured in I2\-S mode). \\
+\hline
+{\em I2\-S\-\_\-\-Init\-Struct,\-:} & pointer to an \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the specified S\-P\-I peripheral configured in I2\-S mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The function calculates the optimal prescaler needed to obtain the most accurate audio frequency (depending on the I2\-S clock source, the P\-L\-L values and the product configuration). But in case the prescaler value is greater than 511, the default value (0x02) will be configured instead.
+
+if an external clock is used as source clock for the I2\-S, then the define I2\-S\-\_\-\-E\-X\-T\-E\-R\-N\-A\-L\-\_\-\-C\-L\-O\-C\-K\-\_\-\-V\-A\-L in file stm32f4xx\-\_\-conf.\-h should be enabled and set to the value of the the source clock frequency (in Hz).
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 321 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga7470ec1d0759fdeeb42c7fe71a3b41b7}{\index{S\-P\-I@{S\-P\-I}!I2\-S\-\_\-\-Struct\-Init@{I2\-S\-\_\-\-Struct\-Init}}
+\index{I2\-S\-\_\-\-Struct\-Init@{I2\-S\-\_\-\-Struct\-Init}!SPI@{S\-P\-I}}
+\subsubsection[{I2\-S\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-S\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf I2\-S\-\_\-\-Init\-Type\-Def} $\ast$}]{I2\-S\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga7470ec1d0759fdeeb42c7fe71a3b41b7}
+
+
+Fills each I2\-S\-\_\-\-Init\-Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-S\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 481 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga166171c421fc51da7714723524d41b45}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config@{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config}}
+\index{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config@{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{S\-P\-I\-\_\-\-Direction}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga166171c421fc51da7714723524d41b45}
+
+
+Selects the data transfer direction in bidirectional mode for the specified S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em S\-P\-I\-\_\-\-Direction,\-:} & specifies the data transfer direction in bidirectional mode. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-Direction\-\_\-\-Tx\-: Selects Tx transmission direction \item S\-P\-I\-\_\-\-Direction\-\_\-\-Rx\-: Selects Rx receive direction \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 582 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga64f7276d119e6cb58afc100f8832adb0}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-Calculate\-C\-R\-C@{S\-P\-I\-\_\-\-Calculate\-C\-R\-C}}
+\index{S\-P\-I\-\_\-\-Calculate\-C\-R\-C@{S\-P\-I\-\_\-\-Calculate\-C\-R\-C}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-Calculate\-C\-R\-C}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Calculate\-C\-R\-C (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga64f7276d119e6cb58afc100f8832adb0}
+
+
+Enables or disables the C\-R\-C value calculation of the transferred bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the S\-P\-Ix C\-R\-C value calculation. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 880 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_gaa31357879a65ee1ed7223f3b9114dcf3}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-Cmd@{S\-P\-I\-\_\-\-Cmd}}
+\index{S\-P\-I\-\_\-\-Cmd@{S\-P\-I\-\_\-\-Cmd}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Cmd (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_gaa31357879a65ee1ed7223f3b9114dcf3}
+
+
+Enables or disables the specified S\-P\-I peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the S\-P\-Ix peripheral. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 510 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_gafc82e90841d7879535d655c035709cb1}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-Data\-Size\-Config@{S\-P\-I\-\_\-\-Data\-Size\-Config}}
+\index{S\-P\-I\-\_\-\-Data\-Size\-Config@{S\-P\-I\-\_\-\-Data\-Size\-Config}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-Data\-Size\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Data\-Size\-Config (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{S\-P\-I\-\_\-\-Data\-Size}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_gafc82e90841d7879535d655c035709cb1}
+
+
+Configures the data size for the selected S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em S\-P\-I\-\_\-\-Data\-Size,\-:} & specifies the S\-P\-I data size. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-Data\-Size\-\_\-16b\-: Set data frame format to 16bit \item S\-P\-I\-\_\-\-Data\-Size\-\_\-8b\-: Set data frame format to 8bit \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 562 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga4c81c193516e82cf0a2fdc149ef20cc6}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-Get\-C\-R\-C@{S\-P\-I\-\_\-\-Get\-C\-R\-C}}
+\index{S\-P\-I\-\_\-\-Get\-C\-R\-C@{S\-P\-I\-\_\-\-Get\-C\-R\-C}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-Get\-C\-R\-C}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t S\-P\-I\-\_\-\-Get\-C\-R\-C (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint8\-\_\-t}]{S\-P\-I\-\_\-\-C\-R\-C}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga4c81c193516e82cf0a2fdc149ef20cc6}
+
+
+Returns the transmit or the receive C\-R\-C register value for the specified S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em S\-P\-I\-\_\-\-C\-R\-C,\-:} & specifies the C\-R\-C register to be read. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-C\-R\-C\-\_\-\-Tx\-: Selects Tx C\-R\-C register \item S\-P\-I\-\_\-\-C\-R\-C\-\_\-\-Rx\-: Selects Rx C\-R\-C register \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & selected C\-R\-C register value.. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 920 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga80fb9374cfce670f29128bb78568353f}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-Get\-C\-R\-C\-Polynomial@{S\-P\-I\-\_\-\-Get\-C\-R\-C\-Polynomial}}
+\index{S\-P\-I\-\_\-\-Get\-C\-R\-C\-Polynomial@{S\-P\-I\-\_\-\-Get\-C\-R\-C\-Polynomial}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-Get\-C\-R\-C\-Polynomial}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t S\-P\-I\-\_\-\-Get\-C\-R\-C\-Polynomial (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga80fb9374cfce670f29128bb78568353f}
+
+
+Returns the C\-R\-C Polynomial register value for the specified S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & C\-R\-C Polynomial register value. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 945 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga3aabd9e2437e213056c0ed9bdfa1a724}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-Flag@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-Flag}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-Flag@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-Flag}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga3aabd9e2437e213056c0ed9bdfa1a724}
+
+
+Clears the S\-P\-Ix C\-R\-C Error (C\-R\-C\-E\-R\-R) flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode or I2\-Sxext for I2\-S full duplex mode. \\
+\hline
+{\em S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G,\-:} & specifies the S\-P\-I flag to clear. This function clears only C\-R\-C\-E\-R\-R flag. \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-F\-L\-A\-G\-\_\-\-C\-R\-C\-E\-R\-R\-: C\-R\-C Error flag.\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+O\-V\-R (Over\-Run error) flag is cleared by software sequence\-: a read operation to S\-P\-I\-\_\-\-D\-R register (\hyperlink{group___s_p_i_gab77de76547f3bff403236b263b070a30}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Receive\-Data()}) followed by a read operation to S\-P\-I\-\_\-\-S\-R register (\hyperlink{group___s_p_i_ga1bd785d129e09c5734a876c8f2767204}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status()}). 
+
+U\-D\-R (Under\-Run error) flag is cleared by a read operation to S\-P\-I\-\_\-\-S\-R register (\hyperlink{group___s_p_i_ga1bd785d129e09c5734a876c8f2767204}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status()}). 
+
+M\-O\-D\-F (Mode Fault) flag is cleared by software sequence\-: a read/write operation to S\-P\-I\-\_\-\-S\-R register (\hyperlink{group___s_p_i_ga1bd785d129e09c5734a876c8f2767204}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status()}) followed by a write operation to S\-P\-I\-\_\-\-C\-R1 register (\hyperlink{group___s_p_i_gaa31357879a65ee1ed7223f3b9114dcf3}{S\-P\-I\-\_\-\-Cmd()} to enable the S\-P\-I).
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1176 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga35a524a49ff3d058137060f751e8749f}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-I\-T\-Pending\-Bit@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-I\-T\-Pending\-Bit@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-I\-T\-Pending\-Bit}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-I2\-S\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint8\-\_\-t}]{S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga35a524a49ff3d058137060f751e8749f}
+
+
+Clears the S\-P\-Ix C\-R\-C Error (C\-R\-C\-E\-R\-R) interrupt pending bit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode or I2\-Sxext for I2\-S full duplex mode. \\
+\hline
+{\em S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T,\-:} & specifies the S\-P\-I interrupt pending bit to clear. This function clears only C\-R\-C\-E\-R\-R interrupt pending bit. \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-I\-T\-\_\-\-C\-R\-C\-E\-R\-R\-: C\-R\-C Error interrupt.\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+O\-V\-R (Over\-Run Error) interrupt pending bit is cleared by software sequence\-: a read operation to S\-P\-I\-\_\-\-D\-R register (\hyperlink{group___s_p_i_gab77de76547f3bff403236b263b070a30}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Receive\-Data()}) followed by a read operation to S\-P\-I\-\_\-\-S\-R register (\hyperlink{group___s_p_i_ga72decbc1cd79f8fad92a2204beca6bc5}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status()}). 
+
+U\-D\-R (Under\-Run Error) interrupt pending bit is cleared by a read operation to S\-P\-I\-\_\-\-S\-R register (\hyperlink{group___s_p_i_ga72decbc1cd79f8fad92a2204beca6bc5}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status()}). 
+
+M\-O\-D\-F (Mode Fault) interrupt pending bit is cleared by software sequence\-: a read/write operation to S\-P\-I\-\_\-\-S\-R register (\hyperlink{group___s_p_i_ga72decbc1cd79f8fad92a2204beca6bc5}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status()}) followed by a write operation to S\-P\-I\-\_\-\-C\-R1 register (\hyperlink{group___s_p_i_gaa31357879a65ee1ed7223f3b9114dcf3}{S\-P\-I\-\_\-\-Cmd()} to enable the S\-P\-I). 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1256 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_gabe36880945fa56785283a9c0092124cc}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_gabe36880945fa56785283a9c0092124cc}
+
+
+Deinitialize the S\-P\-Ix peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The extended I2\-S blocks (ie. I2\-S2ext and I2\-S3ext blocks) are deinitialized when the relative I2\-S peripheral is deinitialized (the extended block's clock is managed by the I2\-S peripheral clock).
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 218 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_gabed5b91a8576e6d578f364cc0e807e4a}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Cmd@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Cmd}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Cmd@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Cmd}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Cmd (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Req, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_gabed5b91a8576e6d578f364cc0e807e4a}
+
+
+Enables or disables the S\-P\-Ix/\-I2\-Sx D\-M\-A interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode or I2\-Sxext for I2\-S full duplex mode. \\
+\hline
+{\em S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Req,\-:} & specifies the S\-P\-I D\-M\-A transfer request to be enabled or disabled. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Req\-\_\-\-Tx\-: Tx buffer D\-M\-A transfer request \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-D\-M\-A\-Req\-\_\-\-Rx\-: Rx buffer D\-M\-A transfer request \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the selected S\-P\-I D\-M\-A transfer request. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 982 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga1bd785d129e09c5734a876c8f2767204}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga1bd785d129e09c5734a876c8f2767204}
+
+
+Checks whether the specified S\-P\-Ix/\-I2\-Sx flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode or I2\-Sxext for I2\-S full duplex mode. \\
+\hline
+{\em S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G,\-:} & specifies the S\-P\-I flag to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G\-\_\-\-T\-X\-E\-: Transmit buffer empty flag. \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G\-\_\-\-R\-X\-N\-E\-: Receive buffer not empty flag. \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G\-\_\-\-B\-S\-Y\-: Busy flag. \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G\-\_\-\-O\-V\-R\-: Overrun flag. \item S\-P\-I\-\_\-\-F\-L\-A\-G\-\_\-\-M\-O\-D\-F\-: Mode Fault flag. \item S\-P\-I\-\_\-\-F\-L\-A\-G\-\_\-\-C\-R\-C\-E\-R\-R\-: C\-R\-C Error flag. \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G\-\_\-\-T\-I\-F\-R\-F\-E\-: Format Error. \item I2\-S\-\_\-\-F\-L\-A\-G\-\_\-\-U\-D\-R\-: Underrun Error flag. \item I2\-S\-\_\-\-F\-L\-A\-G\-\_\-\-C\-H\-S\-I\-D\-E\-: Channel Side flag. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of S\-P\-I\-\_\-\-I2\-S\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1135 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga72decbc1cd79f8fad92a2204beca6bc5}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status S\-P\-I\-\_\-\-I2\-S\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint8\-\_\-t}]{S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga72decbc1cd79f8fad92a2204beca6bc5}
+
+
+Checks whether the specified S\-P\-Ix/\-I2\-Sx interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode or I2\-Sxext for I2\-S full duplex mode. \\
+\hline
+{\em S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T,\-:} & specifies the S\-P\-I interrupt source to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-\_\-\-T\-X\-E\-: Transmit buffer empty interrupt. \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-\_\-\-R\-X\-N\-E\-: Receive buffer not empty interrupt. \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-\_\-\-O\-V\-R\-: Overrun interrupt. \item S\-P\-I\-\_\-\-I\-T\-\_\-\-M\-O\-D\-F\-: Mode Fault interrupt. \item S\-P\-I\-\_\-\-I\-T\-\_\-\-C\-R\-C\-E\-R\-R\-: C\-R\-C Error interrupt. \item I2\-S\-\_\-\-I\-T\-\_\-\-U\-D\-R\-: Underrun interrupt. \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-\_\-\-T\-I\-F\-R\-F\-E\-: Format Error interrupt. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1201 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga17f4ef132e8ddbf94cb6b1688d181e41}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-Config@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-Config}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-Config@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-Config}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint8\-\_\-t}]{S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga17f4ef132e8ddbf94cb6b1688d181e41}
+
+
+Enables or disables the specified S\-P\-I/\-I2\-S interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode or I2\-Sxext for I2\-S full duplex mode. \\
+\hline
+{\em S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T,\-:} & specifies the S\-P\-I interrupt source to be enabled or disabled. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-\_\-\-T\-X\-E\-: Tx buffer empty interrupt mask \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-\_\-\-R\-X\-N\-E\-: Rx buffer not empty interrupt mask \item S\-P\-I\-\_\-\-I2\-S\-\_\-\-I\-T\-\_\-\-E\-R\-R\-: Error interrupt mask \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified S\-P\-I interrupt. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1091 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_gab77de76547f3bff403236b263b070a30}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-Receive\-Data@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Receive\-Data}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Receive\-Data@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Receive\-Data}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Receive\-Data}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t S\-P\-I\-\_\-\-I2\-S\-\_\-\-Receive\-Data (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_gab77de76547f3bff403236b263b070a30}
+
+
+Returns the most recent received data by the S\-P\-Ix/\-I2\-Sx peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode or I2\-Sxext for I2\-S full duplex mode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & value of the received data. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 775 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_gad5af40bebe8dbe3fa8bd476489d7e3da}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-Send\-Data@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Send\-Data}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Send\-Data@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Send\-Data}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-Send\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-I2\-S\-\_\-\-Send\-Data (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{Data}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_gad5af40bebe8dbe3fa8bd476489d7e3da}
+
+
+Transmits a Data through the S\-P\-Ix/\-I2\-Sx peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode or I2\-Sxext for I2\-S full duplex mode. \\
+\hline
+{\em Data,\-:} & Data to be transmitted. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 791 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga8dacc1dc48bf08c0f12da409f4889037}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-Init@{S\-P\-I\-\_\-\-Init}}
+\index{S\-P\-I\-\_\-\-Init@{S\-P\-I\-\_\-\-Init}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{{\bf S\-P\-I\-\_\-\-Init\-Type\-Def} $\ast$}]{S\-P\-I\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga8dacc1dc48bf08c0f12da409f4889037}
+
+
+Initializes the S\-P\-Ix peripheral according to the specified parameters in the S\-P\-I\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em S\-P\-I\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_s_p_i___init_type_def}{S\-P\-I\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the specified S\-P\-I peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 257 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga56fc508a482f032f9eb80e4c63184126}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config@{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config}}
+\index{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config@{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga56fc508a482f032f9eb80e4c63184126}
+
+
+Configures internally by software the N\-S\-S pin for the selected S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft,\-:} & specifies the S\-P\-I N\-S\-S internal state. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft\-\_\-\-Set\-: Set N\-S\-S pin internally \item S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft\-\_\-\-Reset\-: Reset N\-S\-S pin internally \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 608 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga4ec54abdedf6cd17403d853a926d91c1}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-S\-S\-Output\-Cmd@{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd}}
+\index{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd@{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-S\-S\-Output\-Cmd (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga4ec54abdedf6cd17403d853a926d91c1}
+
+
+Enables or disables the S\-S output for the selected S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the S\-P\-Ix S\-S output. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 632 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga9a0116f88cc2c4478c270f05608703f1}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-Struct\-Init@{S\-P\-I\-\_\-\-Struct\-Init}}
+\index{S\-P\-I\-\_\-\-Struct\-Init@{S\-P\-I\-\_\-\-Struct\-Init}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-P\-I\-\_\-\-Init\-Type\-Def} $\ast$}]{S\-P\-I\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga9a0116f88cc2c4478c270f05608703f1}
+
+
+Fills each S\-P\-I\-\_\-\-Init\-Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-I\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_s_p_i___init_type_def}{S\-P\-I\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 453 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_ga74594bf32e3bf4905ac7a2deef8eb475}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd@{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd}}
+\index{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd@{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_ga74594bf32e3bf4905ac7a2deef8eb475}
+
+
+Enables or disables the S\-P\-Ix/\-I2\-Sx D\-M\-A interface. 
+
+\begin{DoxyNote}{Note}
+This function can be called only after the \hyperlink{group___s_p_i_ga8dacc1dc48bf08c0f12da409f4889037}{S\-P\-I\-\_\-\-Init()} function has been called. 
+
+When T\-I mode is selected, the control bits S\-S\-M, S\-S\-I, C\-P\-O\-L and C\-P\-H\-A are not taken into consideration and are configured by hardware respectively to the T\-I mode requirements.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 \\
+\hline
+{\em New\-State,\-:} & new state of the selected S\-P\-I T\-I communication mode. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 663 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i_gace8b1058e09bab150b0dbe5978810273}{\index{S\-P\-I@{S\-P\-I}!S\-P\-I\-\_\-\-Transmit\-C\-R\-C@{S\-P\-I\-\_\-\-Transmit\-C\-R\-C}}
+\index{S\-P\-I\-\_\-\-Transmit\-C\-R\-C@{S\-P\-I\-\_\-\-Transmit\-C\-R\-C}!SPI@{S\-P\-I}}
+\subsubsection[{S\-P\-I\-\_\-\-Transmit\-C\-R\-C}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Transmit\-C\-R\-C (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i_gace8b1058e09bab150b0dbe5978810273}
+
+
+Transmit the S\-P\-Ix C\-R\-C value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 902 of file stm32f4xx\-\_\-spi.\-c.
+

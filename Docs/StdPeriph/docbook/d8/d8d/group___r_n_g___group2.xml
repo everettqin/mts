@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d8d/group___r_n_g___group2">
+    <title>Get 32 bit Random number function</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Get 32 bit Random number function. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      Get 32 bit Random number function
+ ===============================================================================  
+  This section provides a function allowing to get the 32 bit Random number  
+  
+  @note  Before to call this function you have to wait till DRDY flag is set,
+         using RNG_GetFlagStatus(RNG_FLAG_DRDY) function. </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d8/d8d/group___r_n_g___group2_1ga2cead4780224fd74a3fc15543c98ed36">RNG_GetRandomNumber</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d8/d8d/group___r_n_g___group2_1ga2cead4780224fd74a3fc15543c98ed36">
+                <title>uint32_t RNG_GetRandomNumber (void)</title> <emphasis>Returns a 32-bit random number.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Before to call this function you have to wait till DRDY (data ready) flag is set, using RNG_GetFlagStatus(RNG_FLAG_DRDY) function. </para>
+<simplesect/>
+<para>Each time the the Random number data is read (using <link linkend="d7/de9/group___r_n_g_1ga2cead4780224fd74a3fc15543c98ed36">RNG_GetRandomNumber()</link> function), the RNG_FLAG_DRDY flag is automatically cleared. </para>
+<simplesect/>
+<para>In the case of a seed error, the generation of random numbers is interrupted for as long as the SECS bit is &apos;1&apos;. If a number is available in the RNG_DR register, it must not be used because it may not have enough entropy. In this case, it is recommended to clear the SEIS bit(using RNG_ClearFlag(RNG_FLAG_SECS) function), then disable and enable the RNG peripheral (using <link linkend="d7/de9/group___r_n_g_1ga6c1a8372da6e8a06819903c63faecd7b">RNG_Cmd()</link> function) to reinitialize and restart the RNG. </para>
+<simplesect/>
+<para>In the case of a clock error, the RNG is no more able to generate random numbers because the PLL48CLK clock is not correct. User have to check that the clock controller is correctly configured to provide the RNG clock and clear the CEIS bit (using RNG_ClearFlag(RNG_FLAG_CECS) function) . The clock error has no impact on the previously generated random numbers, and the RNG_DR register contents can be used.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>32-bit</entry>
+                                <entry>
+<para>random number. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

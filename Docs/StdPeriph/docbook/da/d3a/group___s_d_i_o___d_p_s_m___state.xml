@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d3a/group___s_d_i_o___d_p_s_m___state">
+    <title>SDIO_DPSM_State</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d3a/group___s_d_i_o___d_p_s_m___state_1ga156a9f6ab87a46dcb99ddd7462ca064b">SDIO_DPSM_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d3a/group___s_d_i_o___d_p_s_m___state_1ga22bc12465c1cf839145619a859276c37">SDIO_DPSM_Enable</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d3a/group___s_d_i_o___d_p_s_m___state_1gac87a2d7a8fc417a4514d733be50e6d63">IS_SDIO_DPSM</link> (((DPSM) == SDIO_DPSM_Enable) || ((DPSM) == SDIO_DPSM_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

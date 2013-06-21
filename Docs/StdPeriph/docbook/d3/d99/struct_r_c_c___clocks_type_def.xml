@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d99/struct_r_c_c___clocks_type_def">
+<title>RCC_ClocksTypeDef struct Reference</title>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SYSCLK_Frequency</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t HCLK_Frequency</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t PCLK1_Frequency</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t PCLK2_Frequency</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t SYSCLK_Frequency</title>                
+<para>SYSCLK clock frequency expressed in Hz </para>
+
+                <para>Definition at line 44 of file stm32f4xx_rcc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rcc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t HCLK_Frequency</title>                
+<para>HCLK clock frequency expressed in Hz </para>
+
+                <para>Definition at line 45 of file stm32f4xx_rcc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rcc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t PCLK1_Frequency</title>                
+<para>PCLK1 clock frequency expressed in Hz </para>
+
+                <para>Definition at line 46 of file stm32f4xx_rcc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rcc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t PCLK2_Frequency</title>                
+<para>PCLK2 clock frequency expressed in Hz </para>
+
+                <para>Definition at line 47 of file stm32f4xx_rcc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rcc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

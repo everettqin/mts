@@ -1,0 +1,447 @@
+\hypertarget{group___p_w_r___current_consumption}{\section{P\-W\-R\-\_\-\-Current\-Consumption}
+\label{group___p_w_r___current_consumption}\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___p_w_r___current_consumption_ga840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em Main program. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}{N\-M\-I\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles N\-M\-I exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga2bffc10d5bd4106753b7c30e86903bea}{Hard\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Hard Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga3150f74512510287a942624aa9b44cc5}{Mem\-Manage\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Memory Manage exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga850cefb17a977292ae5eb4cafa9976c3}{Bus\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Bus Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga1d98923de2ed6b7309b66f9ba2971647}{Usage\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Usage Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}{S\-V\-C\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles S\-V\-Call exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_gadbdfb05858cc36fc520974df37ec3cb0}{Debug\-Mon\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Debug Monitor exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga6303e1f258cbdc1f970ce579cc015623}{Pend\-S\-V\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Pend\-S\-V\-\_\-\-Handler exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_gab5e09814056d617c521549e542639b7e}{Sys\-Tick\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Sys\-Tick Handler. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga53a3fe340e323e2fec8d851cd2e83554}{R\-T\-C\-\_\-\-W\-K\-U\-P\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles R\-T\-C Auto wake-\/up interrupt request. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga17e9789a29a87d2df54f12b94dd1a0b6}{E\-X\-T\-I0\-\_\-\-I\-R\-Q\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles E\-X\-T\-I Lines 10 to 15 interrupts requests. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga2f529cc3e1d0252ce447c9cea539ca86}{Sleep\-Mode\-\_\-\-Measure} (void)
+\begin{DoxyCompactList}\small\item\em This function configures the system to enter Sleep mode for current consumption measurement purpose. \subsection*{Sleep Mode }\end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_gaf617a1f1e224179c8081c4055938e184}{Stop\-Mode\-\_\-\-Measure} (void)
+\begin{DoxyCompactList}\small\item\em This function configures the system to enter Stop mode with R\-T\-C clocked by L\-S\-I for current consumption measurement purpose. \subsection*{S\-T\-O\-P Mode with R\-T\-C clocked by L\-S\-I }\end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga160e808cb732d4a7a251ba2ce0277f58}{Standby\-Mode\-\_\-\-Measure} (void)
+\begin{DoxyCompactList}\small\item\em This function configures the system to enter Standby mode for current consumption measurement purpose. \subsection*{S\-T\-A\-N\-D\-B\-Y Mode }\end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_ga8f7b3afba9358f5104885be0e0cfb672}{Standby\-R\-T\-C\-Mode\-\_\-\-Measure} (void)
+\begin{DoxyCompactList}\small\item\em This function configures the system to enter Standby mode with R\-T\-C clocked by L\-S\-I for current consumption measurement purpose. \subsection*{S\-T\-A\-N\-D\-B\-Y Mode with R\-T\-C clocked by L\-S\-I }\end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___current_consumption_gab4868caa128b75221e08d781c93dbc26}{Standby\-R\-T\-C\-B\-K\-P\-S\-R\-A\-M\-Mode\-\_\-\-Measure} (void)
+\begin{DoxyCompactList}\small\item\em This function configures the system to enter Standby mode with R\-T\-C clocked by L\-S\-I and with Backup S\-R\-A\-M O\-N for current consumption measurement purpose. \subsection*{S\-T\-A\-N\-D\-B\-Y Mode with R\-T\-C clocked by L\-S\-I and B\-K\-P\-S\-R\-A\-M }\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___p_w_r___current_consumption_gacd78dc566f32a9c4a485a1a3d7a7974d}{\-\_\-\-\_\-\-I\-O uint32\-\_\-t {\bfseries i} = 0}\label{group___p_w_r___current_consumption_gacd78dc566f32a9c4a485a1a3d7a7974d}
+
+\item 
+\hypertarget{group___p_w_r___current_consumption_ga7e02bf093857fc0b7d91ace52123f9ec}{\-\_\-\-\_\-\-I\-O uint8\-\_\-t {\bfseries User\-Button\-Status} = 0}\label{group___p_w_r___current_consumption_ga7e02bf093857fc0b7d91ace52123f9ec}
+
+\item 
+\hypertarget{group___p_w_r___current_consumption_ga7e02bf093857fc0b7d91ace52123f9ec}{\-\_\-\-\_\-\-I\-O uint8\-\_\-t {\bfseries User\-Button\-Status}}\label{group___p_w_r___current_consumption_ga7e02bf093857fc0b7d91ace52123f9ec}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___p_w_r___current_consumption_ga850cefb17a977292ae5eb4cafa9976c3}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Bus\-Fault\-\_\-\-Handler@{Bus\-Fault\-\_\-\-Handler}}
+\index{Bus\-Fault\-\_\-\-Handler@{Bus\-Fault\-\_\-\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Bus\-Fault\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Bus\-Fault\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga850cefb17a977292ae5eb4cafa9976c3}
+
+
+This function handles Bus Fault exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_gadbdfb05858cc36fc520974df37ec3cb0}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Debug\-Mon\-\_\-\-Handler@{Debug\-Mon\-\_\-\-Handler}}
+\index{Debug\-Mon\-\_\-\-Handler@{Debug\-Mon\-\_\-\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Debug\-Mon\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Debug\-Mon\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_gadbdfb05858cc36fc520974df37ec3cb0}
+
+
+This function handles Debug Monitor exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga17e9789a29a87d2df54f12b94dd1a0b6}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!E\-X\-T\-I0\-\_\-\-I\-R\-Q\-Handler@{E\-X\-T\-I0\-\_\-\-I\-R\-Q\-Handler}}
+\index{E\-X\-T\-I0\-\_\-\-I\-R\-Q\-Handler@{E\-X\-T\-I0\-\_\-\-I\-R\-Q\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{E\-X\-T\-I0\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void E\-X\-T\-I0\-\_\-\-I\-R\-Q\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga17e9789a29a87d2df54f12b94dd1a0b6}
+
+
+This function handles E\-X\-T\-I Lines 10 to 15 interrupts requests. 
+
+This function handles P\-P\-P interrupt request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga2bffc10d5bd4106753b7c30e86903bea}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Hard\-Fault\-\_\-\-Handler@{Hard\-Fault\-\_\-\-Handler}}
+\index{Hard\-Fault\-\_\-\-Handler@{Hard\-Fault\-\_\-\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Hard\-Fault\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Hard\-Fault\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga2bffc10d5bd4106753b7c30e86903bea}
+
+
+This function handles Hard Fault exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga840291bc02cba5474a4cb46a9b9566fe}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!main@{main}}
+\index{main@{main}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga840291bc02cba5474a4cb46a9b9566fe}
+
+
+Main program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+$<$ At this stage the microcontroller clock setting is already configured, this is done through \hyperlink{group___s_t_m32_f4xx___system___private___functions_ga93f514700ccf00d08dbdcff7f1224eb2}{System\-Init()} function which is called from startup file (startup\-\_\-stm32f4xx.\-s) before to branch to application main. To reconfigure the default setting of \hyperlink{group___s_t_m32_f4xx___system___private___functions_ga93f514700ccf00d08dbdcff7f1224eb2}{System\-Init()} function, refer to system\-\_\-stm32f4xx.\-c file\hypertarget{group___p_w_r___current_consumption_ga3150f74512510287a942624aa9b44cc5}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Mem\-Manage\-\_\-\-Handler@{Mem\-Manage\-\_\-\-Handler}}
+\index{Mem\-Manage\-\_\-\-Handler@{Mem\-Manage\-\_\-\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Mem\-Manage\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Mem\-Manage\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga3150f74512510287a942624aa9b44cc5}
+
+
+This function handles Memory Manage exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!N\-M\-I\-\_\-\-Handler@{N\-M\-I\-\_\-\-Handler}}
+\index{N\-M\-I\-\_\-\-Handler@{N\-M\-I\-\_\-\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{N\-M\-I\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void N\-M\-I\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}
+
+
+This function handles N\-M\-I exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga6303e1f258cbdc1f970ce579cc015623}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Pend\-S\-V\-\_\-\-Handler@{Pend\-S\-V\-\_\-\-Handler}}
+\index{Pend\-S\-V\-\_\-\-Handler@{Pend\-S\-V\-\_\-\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Pend\-S\-V\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Pend\-S\-V\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga6303e1f258cbdc1f970ce579cc015623}
+
+
+This function handles Pend\-S\-V\-\_\-\-Handler exception. 
+
+This function handles Pend\-S\-V\-C exception.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga53a3fe340e323e2fec8d851cd2e83554}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!R\-T\-C\-\_\-\-W\-K\-U\-P\-\_\-\-I\-R\-Q\-Handler@{R\-T\-C\-\_\-\-W\-K\-U\-P\-\_\-\-I\-R\-Q\-Handler}}
+\index{R\-T\-C\-\_\-\-W\-K\-U\-P\-\_\-\-I\-R\-Q\-Handler@{R\-T\-C\-\_\-\-W\-K\-U\-P\-\_\-\-I\-R\-Q\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{R\-T\-C\-\_\-\-W\-K\-U\-P\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C\-\_\-\-W\-K\-U\-P\-\_\-\-I\-R\-Q\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga53a3fe340e323e2fec8d851cd2e83554}
+
+
+This function handles R\-T\-C Auto wake-\/up interrupt request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga2f529cc3e1d0252ce447c9cea539ca86}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Sleep\-Mode\-\_\-\-Measure@{Sleep\-Mode\-\_\-\-Measure}}
+\index{Sleep\-Mode\-\_\-\-Measure@{Sleep\-Mode\-\_\-\-Measure}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Sleep\-Mode\-\_\-\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}void Sleep\-Mode\-\_\-\-Measure (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga2f529cc3e1d0252ce447c9cea539ca86}
+
+
+This function configures the system to enter Sleep mode for current consumption measurement purpose. \subsection*{Sleep Mode }
+
+\begin{DoxyVerb}       - System Running at PLL (168MHz)
+       - Flash 3 wait state
+       - Prefetch and Cache enabled
+       - Code running from Internal FLASH
+       - All peripherals disabled.
+       - Wakeup using EXTI Line (User Button PA.00)
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga160e808cb732d4a7a251ba2ce0277f58}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Standby\-Mode\-\_\-\-Measure@{Standby\-Mode\-\_\-\-Measure}}
+\index{Standby\-Mode\-\_\-\-Measure@{Standby\-Mode\-\_\-\-Measure}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Standby\-Mode\-\_\-\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}void Standby\-Mode\-\_\-\-Measure (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga160e808cb732d4a7a251ba2ce0277f58}
+
+
+This function configures the system to enter Standby mode for current consumption measurement purpose. \subsection*{S\-T\-A\-N\-D\-B\-Y Mode }
+
+\begin{DoxyVerb}      - Backup SRAM and RTC OFF
+      - IWDG and LSI OFF
+      - Wakeup using WakeUp Pin (PA.00)
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_gab4868caa128b75221e08d781c93dbc26}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Standby\-R\-T\-C\-B\-K\-P\-S\-R\-A\-M\-Mode\-\_\-\-Measure@{Standby\-R\-T\-C\-B\-K\-P\-S\-R\-A\-M\-Mode\-\_\-\-Measure}}
+\index{Standby\-R\-T\-C\-B\-K\-P\-S\-R\-A\-M\-Mode\-\_\-\-Measure@{Standby\-R\-T\-C\-B\-K\-P\-S\-R\-A\-M\-Mode\-\_\-\-Measure}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Standby\-R\-T\-C\-B\-K\-P\-S\-R\-A\-M\-Mode\-\_\-\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}void Standby\-R\-T\-C\-B\-K\-P\-S\-R\-A\-M\-Mode\-\_\-\-Measure (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_gab4868caa128b75221e08d781c93dbc26}
+
+
+This function configures the system to enter Standby mode with R\-T\-C clocked by L\-S\-I and with Backup S\-R\-A\-M O\-N for current consumption measurement purpose. \subsection*{S\-T\-A\-N\-D\-B\-Y Mode with R\-T\-C clocked by L\-S\-I and B\-K\-P\-S\-R\-A\-M }
+
+\begin{DoxyVerb}      - RTC Clocked by LSI
+      - Backup SRAM ON
+      - IWDG OFF
+      - Automatic Wakeup using RTC clocked by LSI (after ~20s)
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga8f7b3afba9358f5104885be0e0cfb672}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Standby\-R\-T\-C\-Mode\-\_\-\-Measure@{Standby\-R\-T\-C\-Mode\-\_\-\-Measure}}
+\index{Standby\-R\-T\-C\-Mode\-\_\-\-Measure@{Standby\-R\-T\-C\-Mode\-\_\-\-Measure}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Standby\-R\-T\-C\-Mode\-\_\-\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}void Standby\-R\-T\-C\-Mode\-\_\-\-Measure (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga8f7b3afba9358f5104885be0e0cfb672}
+
+
+This function configures the system to enter Standby mode with R\-T\-C clocked by L\-S\-I for current consumption measurement purpose. \subsection*{S\-T\-A\-N\-D\-B\-Y Mode with R\-T\-C clocked by L\-S\-I }
+
+\begin{DoxyVerb}      - RTC Clocked by LSI
+      - IWDG OFF
+      - Backup SRAM OFF
+      - Automatic Wakeup using RTC clocked by LSI (after ~20s)
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_gaf617a1f1e224179c8081c4055938e184}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Stop\-Mode\-\_\-\-Measure@{Stop\-Mode\-\_\-\-Measure}}
+\index{Stop\-Mode\-\_\-\-Measure@{Stop\-Mode\-\_\-\-Measure}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Stop\-Mode\-\_\-\-Measure}]{\setlength{\rightskip}{0pt plus 5cm}void Stop\-Mode\-\_\-\-Measure (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_gaf617a1f1e224179c8081c4055938e184}
+
+
+This function configures the system to enter Stop mode with R\-T\-C clocked by L\-S\-I for current consumption measurement purpose. \subsection*{S\-T\-O\-P Mode with R\-T\-C clocked by L\-S\-I }
+
+\begin{DoxyVerb}      - RTC Clocked by LSI
+      - Regulator in LP mode
+      - HSI, HSE OFF and LSI OFF if not used as RTC Clock source
+      - No IWDG
+      - FLASH in deep power down mode
+      - Automatic Wakeup using RTC clocked by LSI (~20s)
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!S\-V\-C\-\_\-\-Handler@{S\-V\-C\-\_\-\-Handler}}
+\index{S\-V\-C\-\_\-\-Handler@{S\-V\-C\-\_\-\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{S\-V\-C\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void S\-V\-C\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}
+
+
+This function handles S\-V\-Call exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_gab5e09814056d617c521549e542639b7e}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Sys\-Tick\-\_\-\-Handler@{Sys\-Tick\-\_\-\-Handler}}
+\index{Sys\-Tick\-\_\-\-Handler@{Sys\-Tick\-\_\-\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Sys\-Tick\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Sys\-Tick\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_gab5e09814056d617c521549e542639b7e}
+
+
+This function handles Sys\-Tick Handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___p_w_r___current_consumption_ga1d98923de2ed6b7309b66f9ba2971647}{\index{P\-W\-R\-\_\-\-Current\-Consumption@{P\-W\-R\-\_\-\-Current\-Consumption}!Usage\-Fault\-\_\-\-Handler@{Usage\-Fault\-\_\-\-Handler}}
+\index{Usage\-Fault\-\_\-\-Handler@{Usage\-Fault\-\_\-\-Handler}!PWR_CurrentConsumption@{P\-W\-R\-\_\-\-Current\-Consumption}}
+\subsubsection[{Usage\-Fault\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Usage\-Fault\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___p_w_r___current_consumption_ga1d98923de2ed6b7309b66f9ba2971647}
+
+
+This function handles Usage Fault exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

@@ -1,0 +1,546 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dfe/stm32f4xx__cryp_8h">
+    <title>stm32f4xx_cryp.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/dc9/struct_c_r_y_p___context">CRYP_Context</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dea/group___c_r_y_p___algorithm___direction_1gafe38074cbbc3e45883962fd8d5698b4a">CRYP_AlgoDir_Encrypt</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dea/group___c_r_y_p___algorithm___direction_1gaaced3e33a4ee660cc07139481a90adb7">CRYP_AlgoDir_Decrypt</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dea/group___c_r_y_p___algorithm___direction_1ga6aeed434566ddf0c9a7c9f26a1abf1f3">IS_CRYP_ALGODIR</link> (((ALGODIR) == CRYP_AlgoDir_Encrypt) || \
+                                  ((ALGODIR) == CRYP_AlgoDir_Decrypt))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gac032fa07d83dc55d7babd4971d96d3cd">CRYP_AlgoMode_TDES_ECB</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga75c9e649ad171d1ee97b60b237946fc3">CRYP_AlgoMode_TDES_CBC</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gad7d3f6cbe5bdc4429fb6d793934a1f67">CRYP_AlgoMode_DES_ECB</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga54e4fe95b772fc6ab6015761d746ef9f">CRYP_AlgoMode_DES_CBC</link> ((uint16_t)0x0018)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga848f43e8f8c3dc5c6703e7bb5564d371">CRYP_AlgoMode_AES_ECB</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga323e924328e277dc86d4d12711671f89">CRYP_AlgoMode_AES_CBC</link> ((uint16_t)0x0028)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gaff5449a5005dca43408b5ecc7c7a44ac">CRYP_AlgoMode_AES_CTR</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gaa96d12461096fba7b3e7a25f036e0cf4">CRYP_AlgoMode_AES_Key</link> ((uint16_t)0x0038)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gab99e47004b9f412c7ef2b5cbf99472ea">IS_CRYP_ALGOMODE</link> (((ALGOMODE) == <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gac032fa07d83dc55d7babd4971d96d3cd">CRYP_AlgoMode_TDES_ECB</link>) || \
+                                   ((ALGOMODE) == <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga75c9e649ad171d1ee97b60b237946fc3">CRYP_AlgoMode_TDES_CBC</link>)|| \
+                                   ((ALGOMODE) == CRYP_AlgoMode_DES_ECB)|| \
+                                   ((ALGOMODE) == <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga54e4fe95b772fc6ab6015761d746ef9f">CRYP_AlgoMode_DES_CBC</link>) || \
+                                   ((ALGOMODE) == CRYP_AlgoMode_AES_ECB) || \
+                                   ((ALGOMODE) == CRYP_AlgoMode_AES_CBC) || \
+                                   ((ALGOMODE) == CRYP_AlgoMode_AES_CTR) || \
+                                   ((ALGOMODE) == CRYP_AlgoMode_AES_Key))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1gae15c7cabc8c325af4d547614ff24e2d8">CRYP_DataType_32b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1ga6af3c4d9f6f8c2b8cbf86c640fd053a7">CRYP_DataType_16b</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1ga6f4f176ec21c1670ae7a1af03e714367">CRYP_DataType_8b</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1gacc3a4c23852b4f4f647b6923d7384875">CRYP_DataType_1b</link> ((uint16_t)0x00C0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1ga4933d85931b7b8d0b290a1025a666486">IS_CRYP_DATATYPE</link> (((DATATYPE) == CRYP_DataType_32b) || \
+                                    ((DATATYPE) == CRYP_DataType_16b)|| \
+                                    ((DATATYPE) == CRYP_DataType_8b)|| \
+                                    ((DATATYPE) == CRYP_DataType_1b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only_1gacb2dbb80e15f19c40ed6718082e0dbdc">CRYP_KeySize_128b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only_1ga4da085b0764310a43cdcb5d2c9bc871e">CRYP_KeySize_192b</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only_1ga96e5c43517cc20077d01c25fb6045505">CRYP_KeySize_256b</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only_1ga129c62b908fd19c23c50fef20c1245d3">IS_CRYP_KEYSIZE</link> (((KEYSIZE) == CRYP_KeySize_128b)|| \
+                                  ((KEYSIZE) == CRYP_KeySize_192b)|| \
+                                  ((KEYSIZE) == CRYP_KeySize_256b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga701f57afbf29f56f57eadc76835008ce">CRYP_FLAG_BUSY</link> ((uint8_t)0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gac595f461b1eae355a5f22c6ddbb6b795">CRYP_FLAG_IFEM</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga0c5c1eb9236f373c522cbc407b18b7dd">CRYP_FLAG_IFNF</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gae78eb0d13fa041688f4b33479b632232">CRYP_FLAG_INRIS</link> ((uint8_t)0x22)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gaa0810704152c5810a2461acdec0cf13d">CRYP_FLAG_OFNE</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga6dd1f9ebfe8658ade0855f34607e0a6b">CRYP_FLAG_OFFU</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gae6f06dee9a989cfc664be879fed2ded2">CRYP_FLAG_OUTRIS</link> ((uint8_t)0x21)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga6d7454a0f4ff5bf286cc9dff95f6e849">IS_CRYP_GET_FLAG</link> (((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gac595f461b1eae355a5f22c6ddbb6b795">CRYP_FLAG_IFEM</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga0c5c1eb9236f373c522cbc407b18b7dd">CRYP_FLAG_IFNF</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gaa0810704152c5810a2461acdec0cf13d">CRYP_FLAG_OFNE</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga6dd1f9ebfe8658ade0855f34607e0a6b">CRYP_FLAG_OFFU</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga701f57afbf29f56f57eadc76835008ce">CRYP_FLAG_BUSY</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gae6f06dee9a989cfc664be879fed2ded2">CRYP_FLAG_OUTRIS</link>)|| \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gae78eb0d13fa041688f4b33479b632232">CRYP_FLAG_INRIS</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1gab6d24428b95658217df49013a81b4f7c">CRYP_IT_INI</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1ga53c211cbd38a3704dfc91aa8f3d20517">CRYP_IT_OUTI</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1ga4c4c82448160d94c95405f07a673d007">IS_CRYP_CONFIG_IT</link> ((((IT) &amp; (uint8_t)0xFC) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1gab6d354f835c9b0e88d2c0d46fc1880e9">IS_CRYP_GET_IT</link> (((IT) == <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1gab6d24428b95658217df49013a81b4f7c">CRYP_IT_INI</link>) || ((IT) == <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1ga53c211cbd38a3704dfc91aa8f3d20517">CRYP_IT_OUTI</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da3/group___c_r_y_p___encryption___decryption__modes__definition_1ga34ad77e4aded75365ecfe2be34077891">MODE_ENCRYPT</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/da3/group___c_r_y_p___encryption___decryption__modes__definition_1gad455c2c9a98406dfbde2635483da69a6">MODE_DECRYPT</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d4a/group___c_r_y_p___d_m_a__transfer__requests_1gae524983ae7dc12d0f91e73bac4dda8e9">CRYP_DMAReq_DataIN</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d4a/group___c_r_y_p___d_m_a__transfer__requests_1ga35ef833d8049278f5381681892a35df0">CRYP_DMAReq_DataOUT</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d4a/group___c_r_y_p___d_m_a__transfer__requests_1gaa382c78dd1657a151827830d946df578">IS_CRYP_DMAREQ</link> ((((DMAREQ) &amp; (uint8_t)0xFC) == 0x00) &amp;&amp; ((DMAREQ) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gae19e54c9910b697e38f6c7577704ffae">CRYP_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga7b72c458d95581ab0a36be3e017fcf02">CRYP_Init</link> (
+<link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> * CRYP_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga8fb8ec75fe72d55046c8220825dfe41e">CRYP_StructInit</link> (
+<link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> * CRYP_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gad4baa3865415215cae07c9fbfa131cb9">CRYP_KeyInit</link> (
+<link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> * CRYP_KeyInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gaeecd86b00d0d0137d97b06108789bcb2">CRYP_KeyStructInit</link> (
+<link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> * CRYP_KeyInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga133964b50a07db3a32864308f6355a8b">CRYP_IVInit</link> (
+<link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> * CRYP_IVInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga58899074e08bbd65f2ed304cf0f42987">CRYP_IVStructInit</link> (
+<link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> * CRYP_IVInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gad39ccd9b1f2e088e3a227d7a1c410d7c">CRYP_Cmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga16dc76244318d464357ee6ff208bf9a4">CRYP_DataIn</link> (
+uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d5/d52/group___c_r_y_p_1gacbe5fcf4c7e4919192376fa615588b54">CRYP_DataOut</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga23ada9d9464e1362299d7612a1409a57">CRYP_FIFOFlush</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga41a14be7fa43d500e7c94cce40910ea8">CRYP_SaveContext</link> (
+<link linkend="d8/dc9/struct_c_r_y_p___context">CRYP_Context</link> * CRYP_ContextSave, <link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> * CRYP_KeyInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gaf2986782fa66ea95b2a389595e17e0e5">CRYP_RestoreContext</link> (
+<link linkend="d8/dc9/struct_c_r_y_p___context">CRYP_Context</link> * CRYP_ContextRestore)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga111d0ec56facb27f8367ce6a33869115">CRYP_DMACmd</link> (
+uint8_t CRYP_DMAReq, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gafbf5ee5f2c3ae4404149a994e15b33d8">CRYP_ITConfig</link> (
+uint8_t CRYP_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d5/d52/group___c_r_y_p_1ga00a48b748ed127fa517cacec9dbf18f4">CRYP_GetITStatus</link> (
+uint8_t CRYP_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d5/d52/group___c_r_y_p_1ga993d568b626a74b2973d4a6848a681f6">CRYP_GetFlagStatus</link> (
+uint8_t CRYP_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga79ff82ece0e9620dc86d6e57abe639e1">CRYP_AES_ECB</link> (
+uint8_t Mode, uint8_t * Key, uint16_t Keysize, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1gaa43eadf707257710f6a53b3295b39d70">CRYP_AES_CBC</link> (
+uint8_t Mode, uint8_t InitVectors, uint8_t * Key, uint16_t Keysize, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga2f36aea6e94452e5e5e938547fb89d4c">CRYP_AES_CTR</link> (
+uint8_t Mode, uint8_t InitVectors, uint8_t * Key, uint16_t Keysize, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga17c03ab4f0566fcbc3dd8c052e6f9886">CRYP_TDES_ECB</link> (
+uint8_t Mode, uint8_t Key, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1gabe52a368c4882450c1e82f16bc1eb686">CRYP_TDES_CBC</link> (
+uint8_t Mode, uint8_t Key, uint8_t InitVectors, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga3b96b7608b39197209abed5f5845f590">CRYP_DES_ECB</link> (
+uint8_t Mode, uint8_t Key, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga75724391a8560c557e1152b805f5cad1">CRYP_DES_CBC</link> (
+uint8_t Mode, uint8_t Key, uint8_t InitVectors, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the Cryptographic processor(CRYP) firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cryp.h</para>
+    </simplesect>
+</section>

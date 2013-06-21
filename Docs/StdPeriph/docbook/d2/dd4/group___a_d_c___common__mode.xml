@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dd4/group___a_d_c___common__mode">
+    <title>ADC_Common_mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1ga2754d3a35559dc10e3d6a7d920e83432">ADC_Mode_Independent</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1ga38fa8229dfad1f0a5ba5fc970c26eb3e">ADC_DualMode_RegSimult_InjecSimult</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1ga72c43d1829ae3185c10371218ca44a10">ADC_DualMode_RegSimult_AlterTrig</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1ga5142663866a4056075238d1acb4131f4">ADC_DualMode_InjecSimult</link> ((uint32_t)0x00000005)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1ga1d1d124663bea9b961e6aa17ba8289c6">ADC_DualMode_RegSimult</link> ((uint32_t)0x00000006)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1gacd4ec897b0132d4add24e0b1f9936aa7">ADC_DualMode_Interl</link> ((uint32_t)0x00000007)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1gacb0bc560893b92647b797d3e142c94c5">ADC_DualMode_AlterTrig</link> ((uint32_t)0x00000009)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1gac0d121ce388a1e64471bf09e9732726a">ADC_TripleMode_RegSimult_InjecSimult</link> ((uint32_t)0x00000011)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1gadb5bb36fac8d08c5fd9274a2492800b5">ADC_TripleMode_RegSimult_AlterTrig</link> ((uint32_t)0x00000012)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1ga69124fd48774e61928d519247eaadb45">ADC_TripleMode_InjecSimult</link> ((uint32_t)0x00000015)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1ga1f12f12eda7ca6a3c246a4cf2ce62cff">ADC_TripleMode_RegSimult</link> ((uint32_t)0x00000016)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1gabe85b7b50d4ce2e3955efab8df9e2a50">ADC_TripleMode_Interl</link> ((uint32_t)0x00000017)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1gad455f7fcc1f7a3b50f7ec38b5a101a0c">ADC_TripleMode_AlterTrig</link> ((uint32_t)0x00000019)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dd4/group___a_d_c___common__mode_1ga4abf4c7de28a42d7b124c9e403a6e537">IS_ADC_MODE</link> (((MODE) == ADC_Mode_Independent) || \
+                           ((MODE) == ADC_DualMode_RegSimult_InjecSimult) || \
+                           ((MODE) == ADC_DualMode_RegSimult_AlterTrig) || \
+                           ((MODE) == ADC_DualMode_InjecSimult) || \
+                           ((MODE) == ADC_DualMode_RegSimult) || \
+                           ((MODE) == ADC_DualMode_Interl) || \
+                           ((MODE) == ADC_DualMode_AlterTrig) || \
+                           ((MODE) == ADC_TripleMode_RegSimult_InjecSimult) || \
+                           ((MODE) == ADC_TripleMode_RegSimult_AlterTrig) || \
+                           ((MODE) == ADC_TripleMode_InjecSimult) || \
+                           ((MODE) == ADC_TripleMode_RegSimult) || \
+                           ((MODE) == ADC_TripleMode_Interl) || \
+                           ((MODE) == ADC_TripleMode_AlterTrig))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

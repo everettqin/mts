@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d5e/group___p_w_r___group2">
+    <title>PVD configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>PVD configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                           PVD configuration functions
+ ===============================================================================  
+
+ - The PVD is used to monitor the VDD power supply by comparing it to a threshold
+   selected by the PVD Level (PLS[2:0] bits in the PWR_CR).
+ - A PVDO flag is available to indicate if VDD/VDDA is higher or lower than the 
+   PVD threshold. This event is internally connected to the EXTI line16
+   and can generate an interrupt if enabled through the EXTI registers.
+ - The PVD is stopped in Standby mode.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d5e/group___p_w_r___group2_1ga237c143ef6aa55abb8049fa7bf24ab8f">PWR_PVDLevelConfig</link> (
+uint32_t PWR_PVDLevel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d5e/group___p_w_r___group2_1ga42cad476b816e0a33594a933b3ed1acd">PWR_PVDCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d2/d5e/group___p_w_r___group2_1ga237c143ef6aa55abb8049fa7bf24ab8f">
+                <title>void PWR_PVDLevelConfig (uint32_t PWR_PVDLevel)</title> <emphasis>Configures the voltage threshold detected by the Power Voltage Detector(PVD).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>PWR_PVDLevel, :</entry>
+                                <entry>
+<para>specifies the PVD detection level This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>PWR_PVDLevel_0: PVD detection level set to 2.0V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_1: PVD detection level set to 2.2V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_2: PVD detection level set to 2.3V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_3: PVD detection level set to 2.5V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_4: PVD detection level set to 2.7V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_5: PVD detection level set to 2.8V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_6: PVD detection level set to 2.9V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_7: PVD detection level set to 3.0V </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>Refer to the electrical characteristics of you device datasheet for more details. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/d5e/group___p_w_r___group2_1ga42cad476b816e0a33594a933b3ed1acd">
+                <title>void PWR_PVDCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the Power Voltage Detector(PVD).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the PVD. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

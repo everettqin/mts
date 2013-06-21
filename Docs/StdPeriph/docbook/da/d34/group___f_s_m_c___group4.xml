@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d34/group___f_s_m_c___group4">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                     Interrupts and flags management functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d34/group___f_s_m_c___group4_1ga217027ae3cd213b9076b6a1be197064c">FSMC_ITConfig</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="da/d34/group___f_s_m_c___group4_1gae00355115b078f483f0771057bb849c4">FSMC_GetFlagStatus</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d34/group___f_s_m_c___group4_1ga697618f2de0ad9a8a82461ddbebd5264">FSMC_ClearFlag</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="da/d34/group___f_s_m_c___group4_1ga7fce9ca889d33cd8b8b7413875dd4d73">FSMC_GetITStatus</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d34/group___f_s_m_c___group4_1gad9387e7674b8a376256a3378649e004e">FSMC_ClearITPendingBit</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="da/d34/group___f_s_m_c___group4_1ga217027ae3cd213b9076b6a1be197064c">
+                <title>void FSMC_ITConfig (uint32_t FSMC_Bank, uint32_t FSMC_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified FSMC interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_IT, :</entry>
+                                <entry>
+<para>specifies the FSMC interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_IT_RisingEdge: Rising edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_Level: Level edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_FallingEdge: Falling edge detection interrupt. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified FSMC interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d34/group___f_s_m_c___group4_1gae00355115b078f483f0771057bb849c4">
+                <title>FlagStatus FSMC_GetFlagStatus (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</title> <emphasis>Checks whether the specified FSMC flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_FLAG_RisingEdge: Rising edge detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_Level: Level detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_FallingEdge: Falling edge detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_FEMPT: Fifo empty Flag. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of FSMC_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d34/group___f_s_m_c___group4_1ga697618f2de0ad9a8a82461ddbebd5264">
+                <title>void FSMC_ClearFlag (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</title> <emphasis>Clears the FSMC&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_FLAG_RisingEdge: Rising edge detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_Level: Level detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_FallingEdge: Falling edge detection Flag. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d34/group___f_s_m_c___group4_1ga7fce9ca889d33cd8b8b7413875dd4d73">
+                <title>ITStatus FSMC_GetITStatus (uint32_t FSMC_Bank, uint32_t FSMC_IT)</title> <emphasis>Checks whether the specified FSMC interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_IT, :</entry>
+                                <entry>
+<para>specifies the FSMC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_IT_RisingEdge: Rising edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_Level: Level edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_FallingEdge: Falling edge detection interrupt. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of FSMC_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d34/group___f_s_m_c___group4_1gad9387e7674b8a376256a3378649e004e">
+                <title>void FSMC_ClearITPendingBit (uint32_t FSMC_Bank, uint32_t FSMC_IT)</title> <emphasis>Clears the FSMC&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_IT, :</entry>
+                                <entry>
+<para>specifies the interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_IT_RisingEdge: Rising edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_Level: Level edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_FallingEdge: Falling edge detection interrupt. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

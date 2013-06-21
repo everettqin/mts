@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d00/group___r_t_c___private___functions">
+    <title>RTC_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d0/d4a/group___r_t_c___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d1/db1/group___r_t_c___group2">Time and Date configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d0/d0b/group___r_t_c___group3">Alarms configuration functions</link></para></listitem>
+            <listitem><para><link linkend="dc/d77/group___r_t_c___group4">WakeUp Timer configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d2/d16/group___r_t_c___group5">Daylight Saving configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d4/d85/group___r_t_c___group6">Output pin Configuration function</link></para></listitem>
+            <listitem><para><link linkend="de/dad/group___r_t_c___group7">Digital Calibration configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d7/d91/group___r_t_c___group8">TimeStamp configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d0/de3/group___r_t_c___group9">Tampers configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d2/d2e/group___r_t_c___group10">Backup Data Registers configuration functions</link></para></listitem>
+            <listitem><para><link linkend="de/d3a/group___r_t_c___group11">RTC Tamper and TimeStamp Pins Selection and Output Type Config configuration functions</link></para></listitem>
+            <listitem><para><link linkend="da/d9b/group___r_t_c___group12">Shift control synchronisation functions</link></para></listitem>
+            <listitem><para><link linkend="d1/d74/group___r_t_c___group13">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static uint8_t <link linkend="d3/d00/group___r_t_c___private___functions_1ga020add50c73f0a08516fef0eeee8cca9">RTC_ByteToBcd2</link> (
+uint8_t Value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static uint8_t <link linkend="d3/d00/group___r_t_c___private___functions_1ga39e7c20215c2f546a20cf5df25c72d72">RTC_Bcd2ToByte</link> (
+uint8_t Value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d3/d00/group___r_t_c___private___functions_1ga020add50c73f0a08516fef0eeee8cca9">
+                <title>static uint8_t RTC_ByteToBcd2 (uint8_t Value)</title> <emphasis>Converts a 2 digit decimal to BCD format.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Value, :</entry>
+                                <entry>
+<para>Byte to be converted. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Converted</entry>
+                                <entry>
+<para>byte </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d00/group___r_t_c___private___functions_1ga39e7c20215c2f546a20cf5df25c72d72">
+                <title>static uint8_t RTC_Bcd2ToByte (uint8_t Value)</title> <emphasis>Convert from 2 digit BCD to Binary.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Value, :</entry>
+                                <entry>
+<para>BCD value to be converted. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Converted</entry>
+                                <entry>
+<para>word </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="d0/d4a/group___r_t_c___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/db1/group___r_t_c___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d0b/group___r_t_c___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d77/group___r_t_c___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d16/group___r_t_c___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d85/group___r_t_c___group6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/dad/group___r_t_c___group7.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d91/group___r_t_c___group8.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/de3/group___r_t_c___group9.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d2e/group___r_t_c___group10.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d3a/group___r_t_c___group11.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d9b/group___r_t_c___group12.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d74/group___r_t_c___group13.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

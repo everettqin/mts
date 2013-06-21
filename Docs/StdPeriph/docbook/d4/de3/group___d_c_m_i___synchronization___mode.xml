@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/de3/group___d_c_m_i___synchronization___mode">
+    <title>DCMI_Synchronization_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga03d983bb911952d7f84783d5999a9559">DCMI_SynchroMode_Hardware</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga66d71596091ae2a6273100ffa50334d0">DCMI_SynchroMode_Embedded</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga0f713dc8c5762ecb08ca40f90f7cf1cb">IS_DCMI_SYNCHRO</link> (((MODE) == <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga03d983bb911952d7f84783d5999a9559">DCMI_SynchroMode_Hardware</link>) || \
+                              ((MODE) == <link linkend="d4/de3/group___d_c_m_i___synchronization___mode_1ga66d71596091ae2a6273100ffa50334d0">DCMI_SynchroMode_Embedded</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d4/de3/group___d_c_m_i___synchronization___mode_1ga03d983bb911952d7f84783d5999a9559">
+                <title>#define DCMI_SynchroMode_Hardware</title>                
+<para>Hardware synchronization data capture (frame/line start/stop) is synchronized with the HSYNC/VSYNC signals </para>
+
+                <para>Definition at line 123 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/de3/group___d_c_m_i___synchronization___mode_1ga66d71596091ae2a6273100ffa50334d0">
+                <title>#define DCMI_SynchroMode_Embedded</title>                
+<para>Embedded synchronization data capture is synchronized with synchronization codes embedded in the data flow </para>
+
+                <para>Definition at line 125 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

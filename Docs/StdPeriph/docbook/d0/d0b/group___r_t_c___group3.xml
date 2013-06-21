@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d0b/group___r_t_c___group3">
+    <title>Alarms configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Alarms (Alarm A and Alarm B) configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+              Alarms (Alarm A and Alarm B) configuration functions
+ ===============================================================================  
+
+  This section provide functions allowing to program and read the RTC Alarms.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d0b/group___r_t_c___group3_1ga44e3334f8e882df9b8a59b47f0857395">RTC_SetAlarm</link> (
+uint32_t RTC_Format, uint32_t RTC_Alarm, <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d0b/group___r_t_c___group3_1ga36ab6199e21fb415ab1ec4d7aa48ba45">RTC_AlarmStructInit</link> (
+<link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d0b/group___r_t_c___group3_1ga6e2888d2fd2e3ecb4ec50f5c955b362b">RTC_GetAlarm</link> (
+uint32_t RTC_Format, uint32_t RTC_Alarm, <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d0b/group___r_t_c___group3_1gac2c08f1aeeb664d3d245cb5aca1b8ca8">RTC_AlarmCmd</link> (
+uint32_t RTC_Alarm, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d0b/group___r_t_c___group3_1ga7b3e4e9e39262e9b0d1aadd895394e46">RTC_AlarmSubSecondConfig</link> (
+uint32_t RTC_Alarm, uint32_t RTC_AlarmSubSecondValue, uint32_t RTC_AlarmSubSecondMask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d0/d0b/group___r_t_c___group3_1gae7b5e7146be2710d619c8ed3cca464ad">RTC_GetAlarmSubSecond</link> (
+uint32_t RTC_Alarm)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d0/d0b/group___r_t_c___group3_1ga44e3334f8e882df9b8a59b47f0857395">
+                <title>void RTC_SetAlarm (uint32_t RTC_Format, uint32_t RTC_Alarm, RTC_AlarmTypeDef *RTC_AlarmStruct)</title> <emphasis>Set the specified RTC Alarm.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The Alarm register can only be written when the corresponding Alarm is disabled (Use the RTC_AlarmCmd(DISABLE)). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the returned parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be configured. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_AlarmStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> structure that contains the alarm configuration parameters. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d0b/group___r_t_c___group3_1ga36ab6199e21fb415ab1ec4d7aa48ba45">
+                <title>void RTC_AlarmStructInit (RTC_AlarmTypeDef *RTC_AlarmStruct)</title> <emphasis>Fills each RTC_AlarmStruct member with its default value
+        (Time = 00h:00mn:00sec / Date = 1st day of the month/Mask =
+        all fields are masked).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_AlarmStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d0b/group___r_t_c___group3_1ga6e2888d2fd2e3ecb4ec50f5c955b362b">
+                <title>void RTC_GetAlarm (uint32_t RTC_Format, uint32_t RTC_Alarm, RTC_AlarmTypeDef *RTC_AlarmStruct)</title> <emphasis>Get the RTC Alarm value and masks.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the output parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be read. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_AlarmStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> structure that will contains the output alarm configuration values. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d0b/group___r_t_c___group3_1gac2c08f1aeeb664d3d245cb5aca1b8ca8">
+                <title>ErrorStatus RTC_AlarmCmd (uint32_t RTC_Alarm, FunctionalState NewState)</title> <emphasis>Enables or disables the specified RTC Alarm.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be configured. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified alarm. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC Alarm is enabled/disabled</para>
+</listitem><listitem>
+<para>ERROR: RTC Alarm is not enabled/disabled </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d0b/group___r_t_c___group3_1ga7b3e4e9e39262e9b0d1aadd895394e46">
+                <title>void RTC_AlarmSubSecondConfig (uint32_t RTC_Alarm, uint32_t RTC_AlarmSubSecondValue, uint32_t RTC_AlarmSubSecondMask)</title> <emphasis>Configure the RTC AlarmA/B Subseconds value and mask.*.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function is performed only when the Alarm is disabled. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be configured. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_AlarmSubSecondValue, :</entry>
+                                <entry>
+<para>specifies the Subseconds value. This parameter can be a value from 0 to 0x00007FFF. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_AlarmSubSecondMask, :</entry>
+                                <entry>
+<para>specifies the Subseconds Mask. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_AlarmSubSecondMask_All : All Alarm SS fields are masked. There is no comparison on sub seconds for Alarm. </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_1 : SS[14:1] are don&apos;t care in Alarm comparison. Only SS[0] is compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_2 : SS[14:2] are don&apos;t care in Alarm comparison. Only SS[1:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_3 : SS[14:3] are don&apos;t care in Alarm comparison. Only SS[2:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_4 : SS[14:4] are don&apos;t care in Alarm comparison. Only SS[3:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_5 : SS[14:5] are don&apos;t care in Alarm comparison. Only SS[4:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_6 : SS[14:6] are don&apos;t care in Alarm comparison. Only SS[5:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_7 : SS[14:7] are don&apos;t care in Alarm comparison. Only SS[6:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_8 : SS[14:8] are don&apos;t care in Alarm comparison. Only SS[7:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_9 : SS[14:9] are don&apos;t care in Alarm comparison. Only SS[8:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_10: SS[14:10] are don&apos;t care in Alarm comparison. Only SS[9:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_11: SS[14:11] are don&apos;t care in Alarm comparison. Only SS[10:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_12: SS[14:12] are don&apos;t care in Alarm comparison. Only SS[11:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_13: SS[14:13] are don&apos;t care in Alarm comparison. Only SS[12:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14 : SS[14] is don&apos;t care in Alarm comparison. Only SS[13:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_None : SS[14:0] are compared and must match to activate alarm </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d0b/group___r_t_c___group3_1gae7b5e7146be2710d619c8ed3cca464ad">
+                <title>uint32_t RTC_GetAlarmSubSecond (uint32_t RTC_Alarm)</title> <emphasis>Gets the RTC Alarm Subseconds value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be read. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC</entry>
+                                <entry>
+<para>Alarm Subseconds value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

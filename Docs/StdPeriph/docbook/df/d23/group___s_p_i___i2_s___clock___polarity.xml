@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d23/group___s_p_i___i2_s___clock___polarity">
+    <title>SPI_I2S_Clock_Polarity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d23/group___s_p_i___i2_s___clock___polarity_1gae859a63575e4af3e007fc5123fa901ab">I2S_CPOL_Low</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d23/group___s_p_i___i2_s___clock___polarity_1gae26f7f9fbde299fbdc0b81a2cc38bfdb">I2S_CPOL_High</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d23/group___s_p_i___i2_s___clock___polarity_1ga6323375bf0b6fa6e2ee2a9ce6f9ef82f">IS_I2S_CPOL</link> (((CPOL) == I2S_CPOL_Low) || \
+                           ((CPOL) == I2S_CPOL_High))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

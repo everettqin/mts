@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d54/stm32f4xx__fsmc_8c">
+    <title>stm32f4xx_fsmc.c File Reference</title>
+    <programlisting>#include stm32f4xx_fsmc.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga74722cb031b5a30c066e627474507e1e">BCR_MBKEN_SET</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga6190926e03187065960cdbe9353632be">BCR_MBKEN_RESET</link> ((uint32_t)0x000FFFFE)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga298d32354d8909737fa2db42cec1d343">BCR_FACCEN_SET</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga99ff48346c662edaacb98c754dbe8ce1">PCR_PBKEN_SET</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga3c5233208c7403c4ab1751912519fb2b">PCR_PBKEN_RESET</link> ((uint32_t)0x000FFFFB)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga77fb3dbb94b45bf205281a3b8c7c57db">PCR_ECCEN_SET</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga5d750aba62d7faea82ce2b133f3ba84e">PCR_ECCEN_RESET</link> ((uint32_t)0x000FFFBF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1gaf02a07b484782f398b0684f0f0372f2f">PCR_MEMORYTYPE_NAND</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dad/group___f_s_m_c___group1_1gaab3e6648e8a584e73785361ac960eded">FSMC_NORSRAMDeInit</link> (
+uint32_t FSMC_Bank)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dad/group___f_s_m_c___group1_1ga9c27816e8b17394c9ee1ce9298917b4a">FSMC_NORSRAMInit</link> (
+<link linkend="d6/dd7/struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def">FSMC_NORSRAMInitTypeDef</link> * FSMC_NORSRAMInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dad/group___f_s_m_c___group1_1gaf33e6dfc34f62d16a0cb416de9e83d28">FSMC_NORSRAMStructInit</link> (
+<link linkend="d6/dd7/struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def">FSMC_NORSRAMInitTypeDef</link> * FSMC_NORSRAMInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dad/group___f_s_m_c___group1_1gaf943f0f2680168d3a95a3c2c9f3eca2a">FSMC_NORSRAMCmd</link> (
+uint32_t FSMC_Bank, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/dd0/group___f_s_m_c___group2_1gafb749503293474a68555961bd8f120e1">FSMC_NANDDeInit</link> (
+uint32_t FSMC_Bank)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/dd0/group___f_s_m_c___group2_1ga9f81ccc4e126c11f1eb33077b1a68e6f">FSMC_NANDInit</link> (
+<link linkend="dd/d5b/struct_f_s_m_c___n_a_n_d_init_type_def">FSMC_NANDInitTypeDef</link> * FSMC_NANDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/dd0/group___f_s_m_c___group2_1ga8283ad94ad8e83d49d5b77d1c7e17862">FSMC_NANDStructInit</link> (
+<link linkend="dd/d5b/struct_f_s_m_c___n_a_n_d_init_type_def">FSMC_NANDInitTypeDef</link> * FSMC_NANDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/dd0/group___f_s_m_c___group2_1ga33ec7c39ea4d42e92c72c6e517d8235c">FSMC_NANDCmd</link> (
+uint32_t FSMC_Bank, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/dd0/group___f_s_m_c___group2_1ga5800301fc39bbe998a18ebd9ff191cdc">FSMC_NANDECCCmd</link> (
+uint32_t FSMC_Bank, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d8/dd0/group___f_s_m_c___group2_1gaad6d4f5b5a41684ce053fea55bdb98d8">FSMC_GetECC</link> (
+uint32_t FSMC_Bank)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___f_s_m_c___group3_1ga2f53ccf3a4f3c80a5a56fb47ccd47ccd">FSMC_PCCARDDeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___f_s_m_c___group3_1gacee1351363e7700a296faa1734a910aa">FSMC_PCCARDInit</link> (
+<link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> * FSMC_PCCARDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___f_s_m_c___group3_1ga7a64ba0e0545b3f1913c9d1d28c05e62">FSMC_PCCARDStructInit</link> (
+<link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> * FSMC_PCCARDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___f_s_m_c___group3_1ga2d410151ceb3428c6a1bf374a0472cde">FSMC_PCCARDCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d34/group___f_s_m_c___group4_1ga217027ae3cd213b9076b6a1be197064c">FSMC_ITConfig</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="da/d34/group___f_s_m_c___group4_1gae00355115b078f483f0771057bb849c4">FSMC_GetFlagStatus</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d34/group___f_s_m_c___group4_1ga697618f2de0ad9a8a82461ddbebd5264">FSMC_ClearFlag</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="da/d34/group___f_s_m_c___group4_1ga7fce9ca889d33cd8b8b7413875dd4d73">FSMC_GetITStatus</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d34/group___f_s_m_c___group4_1gad9387e7674b8a376256a3378649e004e">FSMC_ClearITPendingBit</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the following functionalities of the FSMC peripheral: </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011<itemizedlist>
+<listitem>
+<para>Interface with SRAM, PSRAM, NOR and OneNAND memories</para>
+</listitem><listitem>
+<para>Interface with NAND memories</para>
+</listitem><listitem>
+<para>Interface with 16-bit PC Card compatible memories</para>
+</listitem><listitem>
+<para>Interrupts and flags management</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.c</para>
+    </simplesect>
+</section>

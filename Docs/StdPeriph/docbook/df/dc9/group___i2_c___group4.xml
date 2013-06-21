@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dc9/group___i2_c___group4">
+    <title>DMA transfers management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DMA transfers management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                         DMA transfers management functions
+ ===============================================================================  
+  This section provides functions allowing to configure the I2C DMA channels 
+  requests.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dc9/group___i2_c___group4_1ga38502ce11e5ec923e0f6476aaa35b45c">I2C_DMACmd</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dc9/group___i2_c___group4_1gab2e994c5681eb6ec7c26a03ffe1de060">I2C_DMALastTransferCmd</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="df/dc9/group___i2_c___group4_1ga38502ce11e5ec923e0f6476aaa35b45c">
+                <title>void I2C_DMACmd (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C DMA requests.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2C DMA transfer. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/dc9/group___i2_c___group4_1gab2e994c5681eb6ec7c26a03ffe1de060">
+                <title>void I2C_DMALastTransferCmd (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Specifies that the next DMA transfer is the last one.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2C DMA last transfer. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

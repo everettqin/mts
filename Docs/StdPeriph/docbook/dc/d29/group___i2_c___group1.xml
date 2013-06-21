@@ -1,0 +1,983 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d29/group___i2_c___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                   Initialization and Configuration functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga2ee214364603059ad5d9089f749f5bfd">I2C_DeInit</link> (
+I2C_TypeDef * I2Cx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1gaac29465bca70fbc91c2f922ab67bb88e">I2C_Init</link> (
+I2C_TypeDef * I2Cx, <link linkend="df/d5e/struct_i2_c___init_type_def">I2C_InitTypeDef</link> * I2C_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga08582aca6d7d7910cd5cbff0d9def350">I2C_StructInit</link> (
+<link linkend="df/d5e/struct_i2_c___init_type_def">I2C_InitTypeDef</link> * I2C_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga7e1323c9133c2cb424dfb5b10b7d2f0b">I2C_Cmd</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga36c522b471588be9779c878222ccb20f">I2C_GenerateSTART</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga5c92cb573ca0ae58cc465e5400246561">I2C_GenerateSTOP</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga009fc2a5b2313c36da39ece39a1156a6">I2C_Send7bitAddress</link> (
+I2C_TypeDef * I2Cx, uint8_t Address, uint8_t I2C_Direction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga7bb44e894d68a7991f564c43fb187486">I2C_AcknowledgeConfig</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga7be2cc634a613c8e3539137e897a22df">I2C_OwnAddress2Config</link> (
+I2C_TypeDef * I2Cx, uint8_t Address)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga02145a333a56e79557d6ef4ea03fc313">I2C_DualAddressCmd</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga65c740fc8d7b3b9f15cc432d8699d471">I2C_GeneralCallCmd</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga1289c908aeb882443aba323b459c638b">I2C_SoftwareResetCmd</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga7459feb3b1dfcd3e4f6574002ca7d3bd">I2C_StretchClockCmd</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1gaa570f76bc34e5b0531b29b1a90af1275">I2C_FastModeDutyCycleConfig</link> (
+I2C_TypeDef * I2Cx, uint16_t I2C_DutyCycle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1gad08ebffc3a234d84e6405ec115bd74f1">I2C_NACKPositionConfig</link> (
+I2C_TypeDef * I2Cx, uint16_t I2C_NACKPosition)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga75a810776d9710d2f6d9c5d9e93241c6">I2C_SMBusAlertConfig</link> (
+I2C_TypeDef * I2Cx, uint16_t I2C_SMBusAlert)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d29/group___i2_c___group1_1ga66d86742bf1be58b17ef8779ffc79d02">I2C_ARPCmd</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga2ee214364603059ad5d9089f749f5bfd">
+                <title>void I2C_DeInit (I2C_TypeDef *I2Cx)</title> <emphasis>Deinitialize the I2Cx peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1gaac29465bca70fbc91c2f922ab67bb88e">
+                <title>void I2C_Init (I2C_TypeDef *I2Cx, I2C_InitTypeDef *I2C_InitStruct)</title> <emphasis>Initializes the I2Cx peripheral according to the specified 
+        parameters in the I2C_InitStruct.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>To use the I2C at 400 KHz (in fast mode), the PCLK1 frequency (I2C peripheral input clock) must be a multiple of 10 MHz.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="df/d5e/struct_i2_c___init_type_def">I2C_InitTypeDef</link> structure that contains the configuration information for the specified I2C peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga08582aca6d7d7910cd5cbff0d9def350">
+                <title>void I2C_StructInit (I2C_InitTypeDef *I2C_InitStruct)</title> <emphasis>Fills each I2C_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2C_InitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="df/d5e/struct_i2_c___init_type_def">I2C_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga7e1323c9133c2cb424dfb5b10b7d2f0b">
+                <title>void I2C_Cmd (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2Cx peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga36c522b471588be9779c878222ccb20f">
+                <title>void I2C_GenerateSTART (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Generates I2Cx communication START condition.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2C START condition generation. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None.</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga5c92cb573ca0ae58cc465e5400246561">
+                <title>void I2C_GenerateSTOP (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Generates I2Cx communication STOP condition.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2C STOP condition generation. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None.</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga009fc2a5b2313c36da39ece39a1156a6">
+                <title>void I2C_Send7bitAddress (I2C_TypeDef *I2Cx, uint8_t Address, uint8_t I2C_Direction)</title> <emphasis>Transmits the address byte to select the slave device.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the slave address which will be transmitted </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_Direction, :</entry>
+                                <entry>
+<para>specifies whether the I2C device will be a Transmitter or a Receiver. This parameter can be one of the following values <itemizedlist>
+<listitem>
+<para>I2C_Direction_Transmitter: Transmitter mode </para>
+</listitem>
+<listitem>
+<para>I2C_Direction_Receiver: Receiver mode </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None.</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga7bb44e894d68a7991f564c43fb187486">
+                <title>void I2C_AcknowledgeConfig (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C acknowledge feature.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2C Acknowledgement. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None.</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga7be2cc634a613c8e3539137e897a22df">
+                <title>void I2C_OwnAddress2Config (I2C_TypeDef *I2Cx, uint8_t Address)</title> <emphasis>Configures the specified I2C own address2.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the 7bit I2C own address2. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None.</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga02145a333a56e79557d6ef4ea03fc313">
+                <title>void I2C_DualAddressCmd (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C dual addressing mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2C dual addressing mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga65c740fc8d7b3b9f15cc432d8699d471">
+                <title>void I2C_GeneralCallCmd (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C general call feature.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2C General call. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga1289c908aeb882443aba323b459c638b">
+                <title>void I2C_SoftwareResetCmd (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C software reset.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>When software reset is enabled, the I2C IOs are released (this can be useful to recover from bus errors). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2C software reset. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga7459feb3b1dfcd3e4f6574002ca7d3bd">
+                <title>void I2C_StretchClockCmd (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C Clock stretching.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2Cx Clock stretching. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1gaa570f76bc34e5b0531b29b1a90af1275">
+                <title>void I2C_FastModeDutyCycleConfig (I2C_TypeDef *I2Cx, uint16_t I2C_DutyCycle)</title> <emphasis>Selects the specified I2C fast mode duty cycle.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_DutyCycle, :</entry>
+                                <entry>
+<para>specifies the fast mode duty cycle. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>I2C_DutyCycle_2: I2C fast mode Tlow/Thigh = 2 </para>
+</listitem>
+<listitem>
+<para>I2C_DutyCycle_16_9: I2C fast mode Tlow/Thigh = 16/9 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1gad08ebffc3a234d84e6405ec115bd74f1">
+                <title>void I2C_NACKPositionConfig (I2C_TypeDef *I2Cx, uint16_t I2C_NACKPosition)</title> <emphasis>Selects the specified I2C NACK position in master receiver mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function is useful in I2C Master Receiver mode when the number of data to be received is equal to 2. In this case, this function should be called (with parameter I2C_NACKPosition_Next) before data reception starts,as described in the 2-byte reception procedure recommended in Reference Manual in Section: Master receiver. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_NACKPosition, :</entry>
+                                <entry>
+<para>specifies the NACK position. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>I2C_NACKPosition_Next: indicates that the next byte will be the last received byte. </para>
+</listitem>
+<listitem>
+<para>I2C_NACKPosition_Current: indicates that current byte is the last received byte.</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>This function configures the same bit (POS) as <link linkend="d0/d5b/group___i2_c_1ga5d0f939bdd45542502827bf408f24161">I2C_PECPositionConfig()</link> but is intended to be used in I2C mode while <link linkend="d0/d5b/group___i2_c_1ga5d0f939bdd45542502827bf408f24161">I2C_PECPositionConfig()</link> is intended to used in SMBUS mode.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga75a810776d9710d2f6d9c5d9e93241c6">
+                <title>void I2C_SMBusAlertConfig (I2C_TypeDef *I2Cx, uint16_t I2C_SMBusAlert)</title> <emphasis>Drives the SMBusAlert pin high or low for the specified I2C.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_SMBusAlert, :</entry>
+                                <entry>
+<para>specifies SMBAlert pin level. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>I2C_SMBusAlert_Low: SMBAlert pin driven low </para>
+</listitem>
+<listitem>
+<para>I2C_SMBusAlert_High: SMBAlert pin driven high </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/d29/group___i2_c___group1_1ga66d86742bf1be58b17ef8779ffc79d02">
+                <title>void I2C_ARPCmd (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C ARP.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2Cx ARP. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

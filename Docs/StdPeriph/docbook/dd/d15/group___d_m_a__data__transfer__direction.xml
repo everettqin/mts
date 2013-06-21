@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d15/group___d_m_a__data__transfer__direction">
+    <title>DMA_data_transfer_direction</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d15/group___d_m_a__data__transfer__direction_1ga4d7847b57371eef92ec5da34511416a7">DMA_DIR_PeripheralToMemory</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d15/group___d_m_a__data__transfer__direction_1gae1e6aa2722beb09b5be7140205244986">DMA_DIR_MemoryToPeripheral</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d15/group___d_m_a__data__transfer__direction_1gafb7d5b786f2fb56a903936cdc6d5e89a">DMA_DIR_MemoryToMemory</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d15/group___d_m_a__data__transfer__direction_1gae2b02e8e823854bcd7c5746cdd29e70d">IS_DMA_DIRECTION</link> (((DIRECTION) == DMA_DIR_PeripheralToMemory ) || \
+                                     ((DIRECTION) == DMA_DIR_MemoryToPeripheral)  || \
+                                     ((DIRECTION) == DMA_DIR_MemoryToMemory))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

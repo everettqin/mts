@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/da3/group___i_w_d_g__prescaler">
+    <title>IWDG_prescaler</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1ga82a058c196d5a9cd7ea2f2202b394ba0">IWDG_Prescaler_4</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1ga59763b9a127c67adf5d11474188996a1">IWDG_Prescaler_8</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1gafa81d30511ff5ec74bb38ed71f5bb66e">IWDG_Prescaler_16</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1gaa8b091b6e4102513b1e3a1c4eb6756ba">IWDG_Prescaler_32</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1ga7ea813c73ae0acb40acb60e7d3956910">IWDG_Prescaler_64</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1gaea6bf96c2fd5a6f3b9574e7898096641">IWDG_Prescaler_128</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1ga7d6e918748185639049644c970db2b43">IWDG_Prescaler_256</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1gab1e0695c1a22840d5be7c7fad283f4ba">IS_IWDG_PRESCALER</link> (((PRESCALER) == IWDG_Prescaler_4)  || \
+                                      ((PRESCALER) == IWDG_Prescaler_8)  || \
+                                      ((PRESCALER) == IWDG_Prescaler_16) || \
+                                      ((PRESCALER) == IWDG_Prescaler_32) || \
+                                      ((PRESCALER) == IWDG_Prescaler_64) || \
+                                      ((PRESCALER) == IWDG_Prescaler_128)|| \
+                                      ((PRESCALER) == IWDG_Prescaler_256))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

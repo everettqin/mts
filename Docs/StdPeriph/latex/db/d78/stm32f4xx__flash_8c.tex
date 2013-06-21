@@ -1,0 +1,146 @@
+\hypertarget{stm32f4xx__flash_8c}{\section{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.1.0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-flash.c File Reference}
+\label{stm32f4xx__flash_8c}\index{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-flash.\-c@{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-flash.\-c}}
+}
+
+
+This file provides firmware functions to manage the following functionalities of the F\-L\-A\-S\-H peripheral\-:  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx\-\_\-flash.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___f_l_a_s_h_gaa2c907f663ac6d7fb5c311d08589b4f5}{\#define {\bfseries S\-E\-C\-T\-O\-R\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F\-F07)}\label{group___f_l_a_s_h_gaa2c907f663ac6d7fb5c311d08589b4f5}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___f_l_a_s_h___group1_ga54bcb96270215c752c3479c8c9e438c0}{F\-L\-A\-S\-H\-\_\-\-Set\-Latency} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-Latency)
+\begin{DoxyCompactList}\small\item\em Sets the code latency value. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group1_gafaa24b6176b587bdda46abbe755af986}{F\-L\-A\-S\-H\-\_\-\-Prefetch\-Buffer\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Prefetch Buffer. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group1_ga7d5a9a35e792d844c329d7f1656b50ae}{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Instruction Cache feature. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group1_ga937a824493f3c6949289401a767a0360}{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Data Cache feature. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group1_gaf6f1e54d9df32f3c196d67e59eb80a49}{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Reset} (void)
+\begin{DoxyCompactList}\small\item\em Resets the Instruction Cache. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group1_ga8332da89b072373b7f116e0b7c137a22}{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Reset} (void)
+\begin{DoxyCompactList}\small\item\em Resets the Data Cache. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group2_ga4084d0184bab463a1579271bf474aaef}{F\-L\-A\-S\-H\-\_\-\-Unlock} (void)
+\begin{DoxyCompactList}\small\item\em Unlocks the F\-L\-A\-S\-H control register access. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group2_ga46899557353c4312ddbe3f25e65df1d8}{F\-L\-A\-S\-H\-\_\-\-Lock} (void)
+\begin{DoxyCompactList}\small\item\em Locks the F\-L\-A\-S\-H control register access. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h___group2_ga48f408290b32a3aebbcad83a00fc447c}{F\-L\-A\-S\-H\-\_\-\-Erase\-Sector} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-Sector, uint8\-\_\-t Voltage\-Range)
+\begin{DoxyCompactList}\small\item\em Erases a specified F\-L\-A\-S\-H Sector. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h___group2_ga2aee006e5f4db4280bdedd401dfa50f9}{F\-L\-A\-S\-H\-\_\-\-Erase\-All\-Sectors} (uint8\-\_\-t Voltage\-Range)
+\begin{DoxyCompactList}\small\item\em Erases all F\-L\-A\-S\-H Sectors. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h___group2_gab84b52121e58d0dbc8ff2a92145d20f2}{F\-L\-A\-S\-H\-\_\-\-Program\-Double\-Word} (uint32\-\_\-t Address, uint64\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Programs a double word (64-\/bit) at a specified address. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h___group2_gaac9a2f400b92537bd42a6bd7cc237b11}{F\-L\-A\-S\-H\-\_\-\-Program\-Word} (uint32\-\_\-t Address, uint32\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Programs a word (32-\/bit) at a specified address. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h___group2_ga5c1336f667950a8765887228f1d0d501}{F\-L\-A\-S\-H\-\_\-\-Program\-Half\-Word} (uint32\-\_\-t Address, uint16\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Programs a half word (16-\/bit) at a specified address. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h___group2_gac425adf52fe7f229ef6bb893fe386848}{F\-L\-A\-S\-H\-\_\-\-Program\-Byte} (uint32\-\_\-t Address, uint8\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Programs a byte (8-\/bit) at a specified address. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group3_ga518d6e3bbba2adf1523e8454f62348e9}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Unlock} (void)
+\begin{DoxyCompactList}\small\item\em Unlocks the F\-L\-A\-S\-H Option Control Registers access. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group3_ga63a33d9af7e29b64c3806e5505c59b74}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Lock} (void)
+\begin{DoxyCompactList}\small\item\em Locks the F\-L\-A\-S\-H Option Control Registers access. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group3_gaffe7e91bcce65ac079ae5afa1db568b5}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-W\-R\-P\-Config} (uint32\-\_\-t O\-B\-\_\-\-W\-R\-P, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the write protection of the desired sectors. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group3_ga12cb6799f725a49cd151eef4d6d1789b}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-R\-D\-P\-Config} (uint8\-\_\-t O\-B\-\_\-\-R\-D\-P)
+\begin{DoxyCompactList}\small\item\em Sets the read protection level. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group3_ga6b605409e4271b4cc6dfb56ed8108a1a}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-User\-Config} (uint8\-\_\-t O\-B\-\_\-\-I\-W\-D\-G, uint8\-\_\-t O\-B\-\_\-\-S\-T\-O\-P, uint8\-\_\-t O\-B\-\_\-\-S\-T\-D\-B\-Y)
+\begin{DoxyCompactList}\small\item\em Programs the F\-L\-A\-S\-H User Option Byte\-: I\-W\-D\-G\-\_\-\-S\-W / R\-S\-T\-\_\-\-S\-T\-O\-P / R\-S\-T\-\_\-\-S\-T\-D\-B\-Y. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group3_ga621bf052bc381c7a37fb1f8758f5ec2e}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-B\-O\-R\-Config} (uint8\-\_\-t O\-B\-\_\-\-B\-O\-R)
+\begin{DoxyCompactList}\small\item\em Sets the B\-O\-R Level. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h___group3_gabcbd44a62a2488d8b90aa8562a258ef1}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Launch} (void)
+\begin{DoxyCompactList}\small\item\em Launch the option byte loading. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___f_l_a_s_h___group3_ga737dd808489113af7f8df7f7e9f7baae}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-User} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H User Option Bytes values. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{group___f_l_a_s_h___group3_gafa2aec5fa1ea7a73c31f3405f465c525}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-W\-R\-P} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H Write Protection Option Bytes value. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___f_l_a_s_h___group3_ga2f0151c6c923396eaf96c554a5860c31}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-R\-D\-P} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H Read Protection level. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___f_l_a_s_h___group3_gab8a8804905929b2edd544d28c2e7b215}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-B\-O\-R} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H B\-O\-R level. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group4_ga94c1e51a9c3bf8d48eb6eb4a4d054861}{F\-L\-A\-S\-H\-\_\-\-I\-T\-Config} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified F\-L\-A\-S\-H interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___f_l_a_s_h___group4_gae3fb545e32f21501ca27d4380e0f2088}{F\-L\-A\-S\-H\-\_\-\-Get\-Flag\-Status} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified F\-L\-A\-S\-H flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h___group4_gac4be1d486483fa5cd70ec77d44ca8f87}{F\-L\-A\-S\-H\-\_\-\-Clear\-Flag} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the F\-L\-A\-S\-H's pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h___group4_gac265b8d1e7ea11e44ceee28797c3debb}{F\-L\-A\-S\-H\-\_\-\-Get\-Status} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H Status. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h___group4_gaaf8ea3b00c9a5f5eca0df9a795b83f22}{F\-L\-A\-S\-H\-\_\-\-Wait\-For\-Last\-Operation} (void)
+\begin{DoxyCompactList}\small\item\em Waits for a F\-L\-A\-S\-H operation to complete. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides firmware functions to manage the following functionalities of the F\-L\-A\-S\-H peripheral\-: \begin{DoxyAuthor}{Author}
+M\-C\-D Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+30-\/\-September-\/2011
+\begin{DoxyItemize}
+\item F\-L\-A\-S\-H Interface configuration
+\item F\-L\-A\-S\-H Memory Programming
+\item Option Bytes Programming
+\item Interrupts and flags management
+\end{DoxyItemize}
+\end{DoxyDate}
+\begin{DoxyVerb}*  
+*          ===================================================================
+*                                 How to use this driver
+*          ===================================================================
+*                           
+*          This driver provides functions to configure and program the FLASH 
+*          memory of all STM32F4xx devices.
+*          These functions are split in 4 groups:
+* 
+*           1. FLASH Interface configuration functions: this group includes the
+*              management of the following features:
+*                    - Set the latency
+*                    - Enable/Disable the prefetch buffer
+*                    - Enable/Disable the Instruction cache and the Data cache
+*                    - Reset the Instruction cache and the Data cache
+*  
+*           2. FLASH Memory Programming functions: this group includes all needed
+*              functions to erase and program the main memory:
+*                    - Lock and Unlock the FLASH interface
+*                    - Erase function: Erase sector, erase all sectors
+*                    - Program functions: byte, half word, word and double word
+*  
+*           3. Option Bytes Programming functions: this group includes all needed
+*              functions to manage the Option Bytes:
+*                    - Set/Reset the write protection
+*                    - Set the Read protection Level
+*                    - Set the BOR level
+*                    - Program the user Option Bytes
+*                    - Launch the Option Bytes loader
+*  
+*           4. Interrupts and flags management functions: this group 
+*              includes all needed functions to:
+*                    - Enable/Disable the FLASH interrupt sources
+*                    - Get flags status
+*                    - Clear flags
+*                    - Get FLASH operation status
+*                    - Wait for last FLASH operation
+* 
+*  \end{DoxyVerb}
+
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\-H\-E P\-R\-E\-S\-E\-N\-T F\-I\-R\-M\-W\-A\-R\-E W\-H\-I\-C\-H I\-S F\-O\-R G\-U\-I\-D\-A\-N\-C\-E O\-N\-L\-Y A\-I\-M\-S A\-T P\-R\-O\-V\-I\-D\-I\-N\-G C\-U\-S\-T\-O\-M\-E\-R\-S W\-I\-T\-H C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N R\-E\-G\-A\-R\-D\-I\-N\-G T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S I\-N O\-R\-D\-E\-R F\-O\-R T\-H\-E\-M T\-O S\-A\-V\-E T\-I\-M\-E. A\-S A R\-E\-S\-U\-L\-T, S\-T\-M\-I\-C\-R\-O\-E\-L\-E\-C\-T\-R\-O\-N\-I\-C\-S S\-H\-A\-L\-L N\-O\-T B\-E H\-E\-L\-D L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y D\-I\-R\-E\-C\-T, I\-N\-D\-I\-R\-E\-C\-T O\-R C\-O\-N\-S\-E\-Q\-U\-E\-N\-T\-I\-A\-L D\-A\-M\-A\-G\-E\-S W\-I\-T\-H R\-E\-S\-P\-E\-C\-T T\-O A\-N\-Y C\-L\-A\-I\-M\-S A\-R\-I\-S\-I\-N\-G F\-R\-O\-M T\-H\-E C\-O\-N\-T\-E\-N\-T O\-F S\-U\-C\-H F\-I\-R\-M\-W\-A\-R\-E A\-N\-D/\-O\-R T\-H\-E U\-S\-E M\-A\-D\-E B\-Y C\-U\-S\-T\-O\-M\-E\-R\-S O\-F T\-H\-E C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N C\-O\-N\-T\-A\-I\-N\-E\-D H\-E\-R\-E\-I\-N I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S.
+
+\subsubsection*{\begin{center}\copyright C\-O\-P\-Y\-R\-I\-G\-H\-T 2011 S\-T\-Microelectronics\end{center} }
+
+Definition in file \hyperlink{stm32f4xx__flash_8c_source}{stm32f4xx\-\_\-flash.\-c}.
+

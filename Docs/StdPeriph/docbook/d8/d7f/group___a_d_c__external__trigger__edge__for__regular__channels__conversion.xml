@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d7f/group___a_d_c__external__trigger__edge__for__regular__channels__conversion">
+    <title>ADC_external_trigger_edge_for_regular_channels_conversion</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d7f/group___a_d_c__external__trigger__edge__for__regular__channels__conversion_1ga43fb008d4ac755bf5d359e04614d413b">ADC_ExternalTrigConvEdge_None</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d7f/group___a_d_c__external__trigger__edge__for__regular__channels__conversion_1gac40e6cec3ca4a07c2e3d652cd1488d99">ADC_ExternalTrigConvEdge_Rising</link> ((uint32_t)0x10000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d7f/group___a_d_c__external__trigger__edge__for__regular__channels__conversion_1gaff5f4b6ab1dd64a9828c7e9137cc4a92">ADC_ExternalTrigConvEdge_Falling</link> ((uint32_t)0x20000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d7f/group___a_d_c__external__trigger__edge__for__regular__channels__conversion_1gad2bbb99714b093437e3d3aafed30518a">ADC_ExternalTrigConvEdge_RisingFalling</link> ((uint32_t)0x30000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d7f/group___a_d_c__external__trigger__edge__for__regular__channels__conversion_1gad4e7bd22759d723c50cda223ef2b9b82">IS_ADC_EXT_TRIG_EDGE</link> (((EDGE) == ADC_ExternalTrigConvEdge_None) || \
+                             ((EDGE) == ADC_ExternalTrigConvEdge_Rising) || \
+                             ((EDGE) == ADC_ExternalTrigConvEdge_Falling) || \
+                             ((EDGE) == ADC_ExternalTrigConvEdge_RisingFalling))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

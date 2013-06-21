@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dec/group___c_a_n__filter___f_i_f_o">
+    <title>CAN_filter_FIFO</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dec/group___c_a_n__filter___f_i_f_o_1ga8249c27978ca94676530540b88a6be8f">CAN_Filter_FIFO0</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dec/group___c_a_n__filter___f_i_f_o_1gaab8478c89a607c4b8baf68efc730e316">CAN_Filter_FIFO1</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dec/group___c_a_n__filter___f_i_f_o_1ga2df5ae0de841fc80c969e9147991ec9d">IS_CAN_FILTER_FIFO</link> (((FIFO) == CAN_FilterFIFO0) || \
+                                  ((FIFO) == CAN_FilterFIFO1))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dec/group___c_a_n__filter___f_i_f_o_1ga1b3d041dff9fed4dad75ed2a4a0e27e0">CAN_FilterFIFO0</link> <link linkend="d3/dec/group___c_a_n__filter___f_i_f_o_1ga8249c27978ca94676530540b88a6be8f">CAN_Filter_FIFO0</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dec/group___c_a_n__filter___f_i_f_o_1gada8f9b3a9c88f36539aaeb457039e666">CAN_FilterFIFO1</link> <link linkend="d3/dec/group___c_a_n__filter___f_i_f_o_1gaab8478c89a607c4b8baf68efc730e316">CAN_Filter_FIFO1</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d3/dec/group___c_a_n__filter___f_i_f_o_1ga8249c27978ca94676530540b88a6be8f">
+                <title>#define CAN_Filter_FIFO0</title>                
+<para>Filter FIFO 0 assignment for filter x </para>
+
+                <para>Definition at line 349 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dec/group___c_a_n__filter___f_i_f_o_1gaab8478c89a607c4b8baf68efc730e316">
+                <title>#define CAN_Filter_FIFO1</title>                
+<para>Filter FIFO 1 assignment for filter x </para>
+
+                <para>Definition at line 350 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

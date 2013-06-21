@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dbf/group___s_p_i___group2">
+    <title>Data transfers functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Data transfers functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                         Data transfers functions
+ ===============================================================================  
+
+  This section provides a set of functions allowing to manage the SPI data transfers
+  
+  In reception, data are received and then stored into an internal Rx buffer while 
+  In transmission, data are first stored into an internal Tx buffer before being 
+  transmitted.
+
+  The read access of the SPI_DR register can be done using the SPI_I2S_ReceiveData()
+  function and returns the Rx buffered value. Whereas a write access to the SPI_DR 
+  can be done using SPI_I2S_SendData() function and stores the written data into 
+  Tx buffer.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d9/dbf/group___s_p_i___group2_1gab77de76547f3bff403236b263b070a30">SPI_I2S_ReceiveData</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dbf/group___s_p_i___group2_1gad5af40bebe8dbe3fa8bd476489d7e3da">SPI_I2S_SendData</link> (
+SPI_TypeDef * SPIx, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d9/dbf/group___s_p_i___group2_1gab77de76547f3bff403236b263b070a30">
+                <title>uint16_t SPI_I2S_ReceiveData (SPI_TypeDef *SPIx)</title> <emphasis>Returns the most recent received data by the SPIx/I2Sx peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>To select the SPIx/I2Sx peripheral, where x can be: 1, 2 or 3 in SPI mode or 2 or 3 in I2S mode or I2Sxext for I2S full duplex mode. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>value of the received data. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dbf/group___s_p_i___group2_1gad5af40bebe8dbe3fa8bd476489d7e3da">
+                <title>void SPI_I2S_SendData (SPI_TypeDef *SPIx, uint16_t Data)</title> <emphasis>Transmits a Data through the SPIx/I2Sx peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>To select the SPIx/I2Sx peripheral, where x can be: 1, 2 or 3 in SPI mode or 2 or 3 in I2S mode or I2Sxext for I2S full duplex mode. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>Data to be transmitted. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

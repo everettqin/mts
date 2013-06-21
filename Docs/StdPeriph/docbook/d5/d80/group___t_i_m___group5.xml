@@ -1,0 +1,839 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d80/group___t_i_m___group5">
+    <title>Interrupts DMA and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts, DMA and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                 Interrupts, DMA and flags management functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga70e3d6c09d55ee69002e154c85cd40e4">TIM_ITConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga38bd4ffda920dd4f7655a0a2c6100a6e">TIM_GenerateEvent</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_EventSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d5/d80/group___t_i_m___group5_1ga0adcbbd5e838ec8642e7a9b80075f41f">TIM_GetFlagStatus</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga46568c7b254941dc53e785342d60baf3">TIM_ClearFlag</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d5/d80/group___t_i_m___group5_1ga0827a0b411707304f76d33050727c24d">TIM_GetITStatus</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga9eb1e95af71ed380f51a2c6d585cc5d6">TIM_ClearITPendingBit</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1gad7156f84c436c8ac92cd789611826d09">TIM_DMAConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_DMABase, uint16_t TIM_DMABurstLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga24700389cfa3ea9b42234933b23f1399">TIM_DMACmd</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_DMASource, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga5273cb65acb885fe7982827b1c6b7d75">TIM_SelectCCDMA</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d5/d80/group___t_i_m___group5_1ga70e3d6c09d55ee69002e154c85cd40e4">
+                <title>void TIM_ITConfig (TIM_TypeDef *TIMx, uint16_t TIM_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified TIM interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIMx peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_IT, :</entry>
+                                <entry>
+<para>specifies the TIM interrupts sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>TIM_IT_Update: TIM update Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC1: TIM Capture Compare 1 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC2: TIM Capture Compare 2 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC3: TIM Capture Compare 3 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC4: TIM Capture Compare 4 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_COM: TIM Commutation Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_Trigger: TIM Trigger Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_Break: TIM Break Interrupt source</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>For TIM6 and TIM7 only the parameter TIM_IT_Update can be used </para>
+<simplesect/>
+<para>For TIM9 and TIM12 only one of the following parameters can be used: TIM_IT_Update, TIM_IT_CC1, TIM_IT_CC2 or TIM_IT_Trigger. </para>
+<simplesect/>
+<para>For TIM10, TIM11, TIM13 and TIM14 only one of the following parameters can be used: TIM_IT_Update or TIM_IT_CC1 </para>
+<simplesect/>
+<para>TIM_IT_COM and TIM_IT_Break can be used only with TIM1 and TIM8</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the TIM interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d80/group___t_i_m___group5_1ga38bd4ffda920dd4f7655a0a2c6100a6e">
+                <title>void TIM_GenerateEvent (TIM_TypeDef *TIMx, uint16_t TIM_EventSource)</title> <emphasis>Configures the TIMx event to be generate by software.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_EventSource, :</entry>
+                                <entry>
+<para>specifies the event source. This parameter can be one or more of the following values: <itemizedlist>
+<listitem>
+<para>TIM_EventSource_Update: Timer update Event source </para>
+</listitem>
+<listitem>
+<para>TIM_EventSource_CC1: Timer Capture Compare 1 Event source </para>
+</listitem>
+<listitem>
+<para>TIM_EventSource_CC2: Timer Capture Compare 2 Event source </para>
+</listitem>
+<listitem>
+<para>TIM_EventSource_CC3: Timer Capture Compare 3 Event source </para>
+</listitem>
+<listitem>
+<para>TIM_EventSource_CC4: Timer Capture Compare 4 Event source </para>
+</listitem>
+<listitem>
+<para>TIM_EventSource_COM: Timer COM event source </para>
+</listitem>
+<listitem>
+<para>TIM_EventSource_Trigger: Timer Trigger Event source </para>
+</listitem>
+<listitem>
+<para>TIM_EventSource_Break: Timer Break event source</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>TIM6 and TIM7 can only generate an update event. </para>
+<simplesect/>
+<para>TIM_EventSource_COM and TIM_EventSource_Break are used only with TIM1 and TIM8.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d80/group___t_i_m___group5_1ga0adcbbd5e838ec8642e7a9b80075f41f">
+                <title>FlagStatus TIM_GetFlagStatus (TIM_TypeDef *TIMx, uint16_t TIM_FLAG)</title> <emphasis>Checks whether the specified TIM flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_FLAG_Update: TIM update Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC1: TIM Capture Compare 1 Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC2: TIM Capture Compare 2 Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC3: TIM Capture Compare 3 Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC4: TIM Capture Compare 4 Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_COM: TIM Commutation Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_Trigger: TIM Trigger Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_Break: TIM Break Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC1OF: TIM Capture Compare 1 over capture Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC2OF: TIM Capture Compare 2 over capture Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC3OF: TIM Capture Compare 3 over capture Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC4OF: TIM Capture Compare 4 over capture Flag</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>TIM6 and TIM7 can have only one update flag. </para>
+<simplesect/>
+<para>TIM_FLAG_COM and TIM_FLAG_Break are used only with TIM1 and TIM8.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of TIM_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d80/group___t_i_m___group5_1ga46568c7b254941dc53e785342d60baf3">
+                <title>void TIM_ClearFlag (TIM_TypeDef *TIMx, uint16_t TIM_FLAG)</title> <emphasis>Clears the TIMx&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>TIM_FLAG_Update: TIM update Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC1: TIM Capture Compare 1 Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC2: TIM Capture Compare 2 Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC3: TIM Capture Compare 3 Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC4: TIM Capture Compare 4 Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_COM: TIM Commutation Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_Trigger: TIM Trigger Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_Break: TIM Break Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC1OF: TIM Capture Compare 1 over capture Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC2OF: TIM Capture Compare 2 over capture Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC3OF: TIM Capture Compare 3 over capture Flag </para>
+</listitem>
+<listitem>
+<para>TIM_FLAG_CC4OF: TIM Capture Compare 4 over capture Flag</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>TIM6 and TIM7 can have only one update flag. </para>
+<simplesect/>
+<para>TIM_FLAG_COM and TIM_FLAG_Break are used only with TIM1 and TIM8.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d80/group___t_i_m___group5_1ga0827a0b411707304f76d33050727c24d">
+                <title>ITStatus TIM_GetITStatus (TIM_TypeDef *TIMx, uint16_t TIM_IT)</title> <emphasis>Checks whether the TIM interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_IT, :</entry>
+                                <entry>
+<para>specifies the TIM interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_IT_Update: TIM update Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC1: TIM Capture Compare 1 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC2: TIM Capture Compare 2 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC3: TIM Capture Compare 3 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC4: TIM Capture Compare 4 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_COM: TIM Commutation Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_Trigger: TIM Trigger Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_Break: TIM Break Interrupt source</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>TIM6 and TIM7 can generate only an update interrupt. </para>
+<simplesect/>
+<para>TIM_IT_COM and TIM_IT_Break are used only with TIM1 and TIM8.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of the TIM_IT(SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d80/group___t_i_m___group5_1ga9eb1e95af71ed380f51a2c6d585cc5d6">
+                <title>void TIM_ClearITPendingBit (TIM_TypeDef *TIMx, uint16_t TIM_IT)</title> <emphasis>Clears the TIMx&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_IT, :</entry>
+                                <entry>
+<para>specifies the pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>TIM_IT_Update: TIM1 update Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC1: TIM Capture Compare 1 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC2: TIM Capture Compare 2 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC3: TIM Capture Compare 3 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_CC4: TIM Capture Compare 4 Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_COM: TIM Commutation Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_Trigger: TIM Trigger Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_IT_Break: TIM Break Interrupt source</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>TIM6 and TIM7 can generate only an update interrupt. </para>
+<simplesect/>
+<para>TIM_IT_COM and TIM_IT_Break are used only with TIM1 and TIM8.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d80/group___t_i_m___group5_1gad7156f84c436c8ac92cd789611826d09">
+                <title>void TIM_DMAConfig (TIM_TypeDef *TIMx, uint16_t TIM_DMABase, uint16_t TIM_DMABurstLength)</title> <emphasis>Configures the TIMx&apos;s DMA interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_DMABase, :</entry>
+                                <entry>
+<para>DMA Base address. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_DMABase_CR1 </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_CR2 </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_SMCR </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_DIER </para>
+</listitem>
+<listitem>
+<para>TIM1_DMABase_SR </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_EGR </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_CCMR1 </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_CCMR2 </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_CCER </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_CNT </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_PSC </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_ARR </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_RCR </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_CCR1 </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_CCR2 </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_CCR3 </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_CCR4 </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_BDTR </para>
+</listitem>
+<listitem>
+<para>TIM_DMABase_DCR </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_DMABurstLength, :</entry>
+                                <entry>
+<para>DMA Burst length. This parameter can be one value between: TIM_DMABurstLength_1Transfer and TIM_DMABurstLength_18Transfers. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d80/group___t_i_m___group5_1ga24700389cfa3ea9b42234933b23f1399">
+                <title>void TIM_DMACmd (TIM_TypeDef *TIMx, uint16_t TIM_DMASource, FunctionalState NewState)</title> <emphasis>Enables or disables the TIMx&apos;s DMA Requests.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 6, 7 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_DMASource, :</entry>
+                                <entry>
+<para>specifies the DMA Request sources. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>TIM_DMA_Update: TIM update Interrupt source </para>
+</listitem>
+<listitem>
+<para>TIM_DMA_CC1: TIM Capture Compare 1 DMA source </para>
+</listitem>
+<listitem>
+<para>TIM_DMA_CC2: TIM Capture Compare 2 DMA source </para>
+</listitem>
+<listitem>
+<para>TIM_DMA_CC3: TIM Capture Compare 3 DMA source </para>
+</listitem>
+<listitem>
+<para>TIM_DMA_CC4: TIM Capture Compare 4 DMA source </para>
+</listitem>
+<listitem>
+<para>TIM_DMA_COM: TIM Commutation DMA source </para>
+</listitem>
+<listitem>
+<para>TIM_DMA_Trigger: TIM Trigger DMA source </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DMA Request sources. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d80/group___t_i_m___group5_1ga5273cb65acb885fe7982827b1c6b7d75">
+                <title>void TIM_SelectCCDMA (TIM_TypeDef *TIMx, FunctionalState NewState)</title> <emphasis>Selects the TIMx peripheral Capture Compare DMA source.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Capture Compare DMA source This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

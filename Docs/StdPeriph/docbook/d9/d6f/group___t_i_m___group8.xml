@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d6f/group___t_i_m___group8">
+    <title>Specific interface management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Specific interface management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                    Specific interface management functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d6f/group___t_i_m___group8_1ga0fc7e76c47a3bd1ba1ebc71427832b51">TIM_EncoderInterfaceConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_EncoderMode, uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d6f/group___t_i_m___group8_1ga42c2d1025a3937c9d9f38631af86ffa4">TIM_SelectHallSensor</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d9/d6f/group___t_i_m___group8_1ga0fc7e76c47a3bd1ba1ebc71427832b51">
+                <title>void TIM_EncoderInterfaceConfig (TIM_TypeDef *TIMx, uint16_t TIM_EncoderMode, uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity)</title> <emphasis>Configures the TIMx Encoder Interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_EncoderMode, :</entry>
+                                <entry>
+<para>specifies the TIMx Encoder Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_EncoderMode_TI1: Counter counts on TI1FP1 edge depending on TI2FP2 level. </para>
+</listitem>
+<listitem>
+<para>TIM_EncoderMode_TI2: Counter counts on TI2FP2 edge depending on TI1FP1 level. </para>
+</listitem>
+<listitem>
+<para>TIM_EncoderMode_TI12: Counter counts on both TI1FP1 and TI2FP2 edges depending on the level of the other input. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_IC1Polarity, :</entry>
+                                <entry>
+<para>specifies the IC1 Polarity This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICPolarity_Falling: IC Falling edge. </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_Rising: IC Rising edge. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_IC2Polarity, :</entry>
+                                <entry>
+<para>specifies the IC2 Polarity This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ICPolarity_Falling: IC Falling edge. </para>
+</listitem>
+<listitem>
+<para>TIM_ICPolarity_Rising: IC Rising edge. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d6f/group___t_i_m___group8_1ga42c2d1025a3937c9d9f38631af86ffa4">
+                <title>void TIM_SelectHallSensor (TIM_TypeDef *TIMx, FunctionalState NewState)</title> <emphasis>Enables or disables the TIMx&apos;s Hall sensor interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the TIMx Hall sensor interface. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

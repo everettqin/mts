@@ -1,0 +1,133 @@
+\hypertarget{group___l_i_s302_d_l___example}{\section{L\-I\-S302\-D\-L\-\_\-\-Example}
+\label{group___l_i_s302_d_l___example}\index{L\-I\-S302\-D\-L\-\_\-\-Example@{L\-I\-S302\-D\-L\-\_\-\-Example}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___l_i_s302_d_l___example_ga840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em Main program. \end{DoxyCompactList}\item 
+void \hyperlink{group___l_i_s302_d_l___example_gadf6ebc82af142bc201d3eb70e107f52e}{Delay} (\-\_\-\-\_\-\-I\-O uint32\-\_\-t n\-Time)
+\begin{DoxyCompactList}\small\item\em Inserts a delay time. \end{DoxyCompactList}\item 
+void \hyperlink{group___l_i_s302_d_l___example_gaeb4c4307d28035637f0280cce42553fe}{Timing\-Delay\-\_\-\-Decrement} (void)
+\begin{DoxyCompactList}\small\item\em Decrements the Timing\-Delay variable. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___l_i_s302_d_l___example_ga6ebadd4ac5226151b229303db49d2c0a}{L\-I\-S302\-D\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-User\-Callback} (void)
+\begin{DoxyCompactList}\small\item\em M\-E\-M\-S accelerometre management of the timeout situation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___l_i_s302_d_l___example_gad2b9d014ac15d04c276608d776531753}{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def {\bfseries T\-I\-M\-\_\-\-Time\-Base\-Structure}}\label{group___l_i_s302_d_l___example_gad2b9d014ac15d04c276608d776531753}
+
+\item 
+\hypertarget{group___l_i_s302_d_l___example_ga926539c31db1b9beef91893c9e44fd20}{uint16\-\_\-t {\bfseries Prescaler\-Value} = 0}\label{group___l_i_s302_d_l___example_ga926539c31db1b9beef91893c9e44fd20}
+
+\item 
+\hypertarget{group___l_i_s302_d_l___example_ga6d95c1c4c5febd83c41e4f1e4ffafc72}{uint8\-\_\-t {\bfseries Buffer} \mbox{[}6\mbox{]}}\label{group___l_i_s302_d_l___example_ga6d95c1c4c5febd83c41e4f1e4ffafc72}
+
+\item 
+\hypertarget{group___l_i_s302_d_l___example_gaf484abe0ca156dc40cf0fb5e79d4d6db}{\-\_\-\-\_\-\-I\-O uint32\-\_\-t {\bfseries Timing\-Delay} = 0}\label{group___l_i_s302_d_l___example_gaf484abe0ca156dc40cf0fb5e79d4d6db}
+
+\item 
+\hypertarget{group___l_i_s302_d_l___example_ga65ae650a8f9852583e5115c6cef63564}{\-\_\-\-\_\-\-I\-O int8\-\_\-t {\bfseries X\-Offset}}\label{group___l_i_s302_d_l___example_ga65ae650a8f9852583e5115c6cef63564}
+
+\item 
+\hypertarget{group___l_i_s302_d_l___example_gaabec2e8b238c68bcf7a52f977a738f04}{\-\_\-\-\_\-\-I\-O int8\-\_\-t {\bfseries Y\-Offset}}\label{group___l_i_s302_d_l___example_gaabec2e8b238c68bcf7a52f977a738f04}
+
+\item 
+\hypertarget{group___l_i_s302_d_l___example_gadd1e9305c0bb616ee59a705531d11bee}{\-\_\-\-\_\-\-I\-O uint8\-\_\-t {\bfseries Single\-Click\-Detect} = 0x00}\label{group___l_i_s302_d_l___example_gadd1e9305c0bb616ee59a705531d11bee}
+
+\item 
+\hypertarget{group___l_i_s302_d_l___example_ga67299a22e2291ffc112aa828744f08ea}{uint8\-\_\-t {\bfseries Click\-Reg}}\label{group___l_i_s302_d_l___example_ga67299a22e2291ffc112aa828744f08ea}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___l_i_s302_d_l___example_gadf6ebc82af142bc201d3eb70e107f52e}{\index{L\-I\-S302\-D\-L\-\_\-\-Example@{L\-I\-S302\-D\-L\-\_\-\-Example}!Delay@{Delay}}
+\index{Delay@{Delay}!LIS302DL_Example@{L\-I\-S302\-D\-L\-\_\-\-Example}}
+\subsubsection[{Delay}]{\setlength{\rightskip}{0pt plus 5cm}void Delay (
+\begin{DoxyParamCaption}
+\item[{\-\_\-\-\_\-\-I\-O uint32\-\_\-t}]{n\-Time}
+\end{DoxyParamCaption}
+)}}\label{group___l_i_s302_d_l___example_gadf6ebc82af142bc201d3eb70e107f52e}
+
+
+Inserts a delay time. 
+
+Delay Function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\-Time,\-:} & specifies the delay time length, in milliseconds. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___l_i_s302_d_l___example_ga6ebadd4ac5226151b229303db49d2c0a}{\index{L\-I\-S302\-D\-L\-\_\-\-Example@{L\-I\-S302\-D\-L\-\_\-\-Example}!L\-I\-S302\-D\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-User\-Callback@{L\-I\-S302\-D\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-User\-Callback}}
+\index{L\-I\-S302\-D\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-User\-Callback@{L\-I\-S302\-D\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-User\-Callback}!LIS302DL_Example@{L\-I\-S302\-D\-L\-\_\-\-Example}}
+\subsubsection[{L\-I\-S302\-D\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-User\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t L\-I\-S302\-D\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-User\-Callback (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___l_i_s302_d_l___example_ga6ebadd4ac5226151b229303db49d2c0a}
+
+
+M\-E\-M\-S accelerometre management of the timeout situation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___l_i_s302_d_l___example_ga840291bc02cba5474a4cb46a9b9566fe}{\index{L\-I\-S302\-D\-L\-\_\-\-Example@{L\-I\-S302\-D\-L\-\_\-\-Example}!main@{main}}
+\index{main@{main}!LIS302DL_Example@{L\-I\-S302\-D\-L\-\_\-\-Example}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___l_i_s302_d_l___example_ga840291bc02cba5474a4cb46a9b9566fe}
+
+
+Main program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{group___l_i_s302_d_l___example_gaeb4c4307d28035637f0280cce42553fe}{\index{L\-I\-S302\-D\-L\-\_\-\-Example@{L\-I\-S302\-D\-L\-\_\-\-Example}!Timing\-Delay\-\_\-\-Decrement@{Timing\-Delay\-\_\-\-Decrement}}
+\index{Timing\-Delay\-\_\-\-Decrement@{Timing\-Delay\-\_\-\-Decrement}!LIS302DL_Example@{L\-I\-S302\-D\-L\-\_\-\-Example}}
+\subsubsection[{Timing\-Delay\-\_\-\-Decrement}]{\setlength{\rightskip}{0pt plus 5cm}void Timing\-Delay\-\_\-\-Decrement (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___l_i_s302_d_l___example_gaeb4c4307d28035637f0280cce42553fe}
+
+
+Decrements the Timing\-Delay variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

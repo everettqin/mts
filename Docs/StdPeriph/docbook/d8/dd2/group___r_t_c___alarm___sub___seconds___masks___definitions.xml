@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions">
+    <title>RTC_Alarm_Sub_Seconds_Masks_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga7ca3d2cc7822e86a0397137400bff1e8">RTC_AlarmSubSecondMask_All</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae7d0420a85eea688e04bbccd27ee5ce9">RTC_AlarmSubSecondMask_SS14_1</link> ((uint32_t)0x01000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a31704b58e40877680090cca7bfeb29">RTC_AlarmSubSecondMask_SS14_2</link> ((uint32_t)0x02000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gaa5938e9c92c2467ce5c6fea0b05cb498">RTC_AlarmSubSecondMask_SS14_3</link> ((uint32_t)0x03000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gadefaba27e57718b2c164d0616e6ca0be">RTC_AlarmSubSecondMask_SS14_4</link> ((uint32_t)0x04000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga05e639e8796dd05b70ac3043cd578644">RTC_AlarmSubSecondMask_SS14_5</link> ((uint32_t)0x05000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gac4105d5f52321db4c5402a7f19e4cd40">RTC_AlarmSubSecondMask_SS14_6</link> ((uint32_t)0x06000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga65c2ed26d90ef3fe08cd938a5e7cec90">RTC_AlarmSubSecondMask_SS14_7</link> ((uint32_t)0x07000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a6d13dc2baaf30007f43d4086b6ccad">RTC_AlarmSubSecondMask_SS14_8</link> ((uint32_t)0x08000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga4a8e2fd87578d1357ec8f169766119ec">RTC_AlarmSubSecondMask_SS14_9</link> ((uint32_t)0x09000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga5eecab4e9eed9231aed9bf66b0b6efe8">RTC_AlarmSubSecondMask_SS14_10</link> ((uint32_t)0x0A000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae8a49e83d96a1651c202ccdf30d68f0d">RTC_AlarmSubSecondMask_SS14_11</link> ((uint32_t)0x0B000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga21da05a4b786c38755ff01564a4de83b">RTC_AlarmSubSecondMask_SS14_12</link> ((uint32_t)0x0C000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga00430f0eae750c0d41339d0dca26a8e5">RTC_AlarmSubSecondMask_SS14_13</link> ((uint32_t)0x0D000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga8d5f1d8afee279f519dccca14522fe27">RTC_AlarmSubSecondMask_SS14</link> ((uint32_t)0x0E000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga201f3ce456e20ffbc3f9af83c972aaa7">RTC_AlarmSubSecondMask_None</link> ((uint32_t)0x0F000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae6814af31d0cc72b784bc85f63ec4de7">IS_RTC_ALARM_SUB_SECOND_MASK</link> (((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga7ca3d2cc7822e86a0397137400bff1e8">RTC_AlarmSubSecondMask_All</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae7d0420a85eea688e04bbccd27ee5ce9">RTC_AlarmSubSecondMask_SS14_1</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a31704b58e40877680090cca7bfeb29">RTC_AlarmSubSecondMask_SS14_2</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gaa5938e9c92c2467ce5c6fea0b05cb498">RTC_AlarmSubSecondMask_SS14_3</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gadefaba27e57718b2c164d0616e6ca0be">RTC_AlarmSubSecondMask_SS14_4</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga05e639e8796dd05b70ac3043cd578644">RTC_AlarmSubSecondMask_SS14_5</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gac4105d5f52321db4c5402a7f19e4cd40">RTC_AlarmSubSecondMask_SS14_6</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga65c2ed26d90ef3fe08cd938a5e7cec90">RTC_AlarmSubSecondMask_SS14_7</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a6d13dc2baaf30007f43d4086b6ccad">RTC_AlarmSubSecondMask_SS14_8</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga4a8e2fd87578d1357ec8f169766119ec">RTC_AlarmSubSecondMask_SS14_9</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga5eecab4e9eed9231aed9bf66b0b6efe8">RTC_AlarmSubSecondMask_SS14_10</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae8a49e83d96a1651c202ccdf30d68f0d">RTC_AlarmSubSecondMask_SS14_11</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga21da05a4b786c38755ff01564a4de83b">RTC_AlarmSubSecondMask_SS14_12</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga00430f0eae750c0d41339d0dca26a8e5">RTC_AlarmSubSecondMask_SS14_13</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga8d5f1d8afee279f519dccca14522fe27">RTC_AlarmSubSecondMask_SS14</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga201f3ce456e20ffbc3f9af83c972aaa7">RTC_AlarmSubSecondMask_None</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga7ca3d2cc7822e86a0397137400bff1e8">
+                <title>#define RTC_AlarmSubSecondMask_All</title>                
+<para>All Alarm SS fields are masked. There is no comparison on sub seconds for Alarm </para>
+
+                <para>Definition at line 296 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae7d0420a85eea688e04bbccd27ee5ce9">
+                <title>#define RTC_AlarmSubSecondMask_SS14_1</title>                
+<para>SS[14:1] are don&apos;t care in Alarm comparison. Only SS[0] is compared. </para>
+
+                <para>Definition at line 298 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a31704b58e40877680090cca7bfeb29">
+                <title>#define RTC_AlarmSubSecondMask_SS14_2</title>                
+<para>SS[14:2] are don&apos;t care in Alarm comparison. Only SS[1:0] are compared </para>
+
+                <para>Definition at line 300 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gaa5938e9c92c2467ce5c6fea0b05cb498">
+                <title>#define RTC_AlarmSubSecondMask_SS14_3</title>                
+<para>SS[14:3] are don&apos;t care in Alarm comparison. Only SS[2:0] are compared </para>
+
+                <para>Definition at line 302 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gadefaba27e57718b2c164d0616e6ca0be">
+                <title>#define RTC_AlarmSubSecondMask_SS14_4</title>                
+<para>SS[14:4] are don&apos;t care in Alarm comparison. Only SS[3:0] are compared </para>
+
+                <para>Definition at line 304 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga05e639e8796dd05b70ac3043cd578644">
+                <title>#define RTC_AlarmSubSecondMask_SS14_5</title>                
+<para>SS[14:5] are don&apos;t care in Alarm comparison. Only SS[4:0] are compared </para>
+
+                <para>Definition at line 306 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gac4105d5f52321db4c5402a7f19e4cd40">
+                <title>#define RTC_AlarmSubSecondMask_SS14_6</title>                
+<para>SS[14:6] are don&apos;t care in Alarm comparison. Only SS[5:0] are compared </para>
+
+                <para>Definition at line 308 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga65c2ed26d90ef3fe08cd938a5e7cec90">
+                <title>#define RTC_AlarmSubSecondMask_SS14_7</title>                
+<para>SS[14:7] are don&apos;t care in Alarm comparison. Only SS[6:0] are compared </para>
+
+                <para>Definition at line 310 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a6d13dc2baaf30007f43d4086b6ccad">
+                <title>#define RTC_AlarmSubSecondMask_SS14_8</title>                
+<para>SS[14:8] are don&apos;t care in Alarm comparison. Only SS[7:0] are compared </para>
+
+                <para>Definition at line 312 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga4a8e2fd87578d1357ec8f169766119ec">
+                <title>#define RTC_AlarmSubSecondMask_SS14_9</title>                
+<para>SS[14:9] are don&apos;t care in Alarm comparison. Only SS[8:0] are compared </para>
+
+                <para>Definition at line 314 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga5eecab4e9eed9231aed9bf66b0b6efe8">
+                <title>#define RTC_AlarmSubSecondMask_SS14_10</title>                
+<para>SS[14:10] are don&apos;t care in Alarm comparison. Only SS[9:0] are compared </para>
+
+                <para>Definition at line 316 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae8a49e83d96a1651c202ccdf30d68f0d">
+                <title>#define RTC_AlarmSubSecondMask_SS14_11</title>                
+<para>SS[14:11] are don&apos;t care in Alarm comparison. Only SS[10:0] are compared </para>
+
+                <para>Definition at line 318 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga21da05a4b786c38755ff01564a4de83b">
+                <title>#define RTC_AlarmSubSecondMask_SS14_12</title>                
+<para>SS[14:12] are don&apos;t care in Alarm comparison.Only SS[11:0] are compared </para>
+
+                <para>Definition at line 320 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga00430f0eae750c0d41339d0dca26a8e5">
+                <title>#define RTC_AlarmSubSecondMask_SS14_13</title>                
+<para>SS[14:13] are don&apos;t care in Alarm comparison. Only SS[12:0] are compared </para>
+
+                <para>Definition at line 322 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga8d5f1d8afee279f519dccca14522fe27">
+                <title>#define RTC_AlarmSubSecondMask_SS14</title>                
+<para>SS[14] is don&apos;t care in Alarm comparison.Only SS[13:0] are compared </para>
+
+                <para>Definition at line 324 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga201f3ce456e20ffbc3f9af83c972aaa7">
+                <title>#define RTC_AlarmSubSecondMask_None</title>                
+<para>SS[14:0] are compared and must match to activate alarm. </para>
+
+                <para>Definition at line 326 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

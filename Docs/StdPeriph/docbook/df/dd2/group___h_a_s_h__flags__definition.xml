@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dd2/group___h_a_s_h__flags__definition">
+    <title>HASH_flags_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga0f63115b39daba0d413c79f324923dd7">HASH_FLAG_DINIS</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga030c3298c0c54a79e5360e216bc257df">HASH_FLAG_DCIS</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga576ba8b2dca0ec25fb6c53a07b285af7">HASH_FLAG_DMAS</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga7638e6048806f6ba361f162db23c2a53">HASH_FLAG_BUSY</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd2/group___h_a_s_h__flags__definition_1gadca9225b146f649a24d34cc813fe0c92">HASH_FLAG_DINNE</link> ((uint16_t)0x1000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd2/group___h_a_s_h__flags__definition_1gad2b0be65f07e279eaa3a1069aa434936">IS_HASH_GET_FLAG</link> (((FLAG) == <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga0f63115b39daba0d413c79f324923dd7">HASH_FLAG_DINIS</link>) || \
+                                ((FLAG) == <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga030c3298c0c54a79e5360e216bc257df">HASH_FLAG_DCIS</link>)  || \
+                                ((FLAG) == <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga576ba8b2dca0ec25fb6c53a07b285af7">HASH_FLAG_DMAS</link>)  || \
+                                ((FLAG) == <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga7638e6048806f6ba361f162db23c2a53">HASH_FLAG_BUSY</link>)  || \
+                                ((FLAG) == <link linkend="df/dd2/group___h_a_s_h__flags__definition_1gadca9225b146f649a24d34cc813fe0c92">HASH_FLAG_DINNE</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga623bf3c2fd7d031a4f6c31cc9d00a159">IS_HASH_CLEAR_FLAG</link> (((FLAG) == <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga0f63115b39daba0d413c79f324923dd7">HASH_FLAG_DINIS</link>) || \
+                                 ((FLAG) == <link linkend="df/dd2/group___h_a_s_h__flags__definition_1ga030c3298c0c54a79e5360e216bc257df">HASH_FLAG_DCIS</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="df/dd2/group___h_a_s_h__flags__definition_1ga0f63115b39daba0d413c79f324923dd7">
+                <title>#define HASH_FLAG_DINIS</title>                
+<para>16 locations are free in the DIN : A new block can be entered into the input buffer. </para>
+
+                <para>Definition at line 163 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/dd2/group___h_a_s_h__flags__definition_1ga030c3298c0c54a79e5360e216bc257df">
+                <title>#define HASH_FLAG_DCIS</title>                
+<para>Digest calculation complete </para>
+
+                <para>Definition at line 164 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/dd2/group___h_a_s_h__flags__definition_1ga576ba8b2dca0ec25fb6c53a07b285af7">
+                <title>#define HASH_FLAG_DMAS</title>                
+<para>DMA interface is enabled (DMAE=1) or a transfer is ongoing </para>
+
+                <para>Definition at line 165 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/dd2/group___h_a_s_h__flags__definition_1ga7638e6048806f6ba361f162db23c2a53">
+                <title>#define HASH_FLAG_BUSY</title>                
+<para>The hash core is Busy : processing a block of data </para>
+
+                <para>Definition at line 166 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/dd2/group___h_a_s_h__flags__definition_1gadca9225b146f649a24d34cc813fe0c92">
+                <title>#define HASH_FLAG_DINNE</title>                
+<para>DIN not empty : The input buffer contains at least one word of data </para>
+
+                <para>Definition at line 167 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

@@ -1,0 +1,547 @@
+\hypertarget{group___i2_c___group1}{\section{Initialization and Configuration functions}
+\label{group___i2_c___group1}\index{Initialization and Configuration functions@{Initialization and Configuration functions}}
+}
+
+
+Initialization and Configuration functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___i2_c___group1_ga2ee214364603059ad5d9089f749f5bfd}{I2\-C\-\_\-\-De\-Init} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx)
+\begin{DoxyCompactList}\small\item\em Deinitialize the I2\-Cx peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_gaac29465bca70fbc91c2f922ab67bb88e}{I2\-C\-\_\-\-Init} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, \hyperlink{struct_i2_c___init_type_def}{I2\-C\-\_\-\-Init\-Type\-Def} $\ast$I2\-C\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the I2\-Cx peripheral according to the specified parameters in the I2\-C\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga08582aca6d7d7910cd5cbff0d9def350}{I2\-C\-\_\-\-Struct\-Init} (\hyperlink{struct_i2_c___init_type_def}{I2\-C\-\_\-\-Init\-Type\-Def} $\ast$I2\-C\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each I2\-C\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga7e1323c9133c2cb424dfb5b10b7d2f0b}{I2\-C\-\_\-\-Cmd} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2\-C peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga36c522b471588be9779c878222ccb20f}{I2\-C\-\_\-\-Generate\-S\-T\-A\-R\-T} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Generates I2\-Cx communication S\-T\-A\-R\-T condition. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga5c92cb573ca0ae58cc465e5400246561}{I2\-C\-\_\-\-Generate\-S\-T\-O\-P} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Generates I2\-Cx communication S\-T\-O\-P condition. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga009fc2a5b2313c36da39ece39a1156a6}{I2\-C\-\_\-\-Send7bit\-Address} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, uint8\-\_\-t Address, uint8\-\_\-t I2\-C\-\_\-\-Direction)
+\begin{DoxyCompactList}\small\item\em Transmits the address byte to select the slave device. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga7bb44e894d68a7991f564c43fb187486}{I2\-C\-\_\-\-Acknowledge\-Config} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2\-C acknowledge feature. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga7be2cc634a613c8e3539137e897a22df}{I2\-C\-\_\-\-Own\-Address2\-Config} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, uint8\-\_\-t Address)
+\begin{DoxyCompactList}\small\item\em Configures the specified I2\-C own address2. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga02145a333a56e79557d6ef4ea03fc313}{I2\-C\-\_\-\-Dual\-Address\-Cmd} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2\-C dual addressing mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga65c740fc8d7b3b9f15cc432d8699d471}{I2\-C\-\_\-\-General\-Call\-Cmd} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2\-C general call feature. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga1289c908aeb882443aba323b459c638b}{I2\-C\-\_\-\-Software\-Reset\-Cmd} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2\-C software reset. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga7459feb3b1dfcd3e4f6574002ca7d3bd}{I2\-C\-\_\-\-Stretch\-Clock\-Cmd} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2\-C Clock stretching. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_gaa570f76bc34e5b0531b29b1a90af1275}{I2\-C\-\_\-\-Fast\-Mode\-Duty\-Cycle\-Config} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, uint16\-\_\-t I2\-C\-\_\-\-Duty\-Cycle)
+\begin{DoxyCompactList}\small\item\em Selects the specified I2\-C fast mode duty cycle. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_gad08ebffc3a234d84e6405ec115bd74f1}{I2\-C\-\_\-\-N\-A\-C\-K\-Position\-Config} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, uint16\-\_\-t I2\-C\-\_\-\-N\-A\-C\-K\-Position)
+\begin{DoxyCompactList}\small\item\em Selects the specified I2\-C N\-A\-C\-K position in master receiver mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga75a810776d9710d2f6d9c5d9e93241c6}{I2\-C\-\_\-\-S\-M\-Bus\-Alert\-Config} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, uint16\-\_\-t I2\-C\-\_\-\-S\-M\-Bus\-Alert)
+\begin{DoxyCompactList}\small\item\em Drives the S\-M\-Bus\-Alert pin high or low for the specified I2\-C. \end{DoxyCompactList}\item 
+void \hyperlink{group___i2_c___group1_ga66d86742bf1be58b17ef8779ffc79d02}{I2\-C\-\_\-\-A\-R\-P\-Cmd} (I2\-C\-\_\-\-Type\-Def $\ast$I2\-Cx, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I2\-C A\-R\-P. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Initialization and Configuration functions. \begin{DoxyVerb} ===============================================================================
+                   Initialization and Configuration functions
+ ===============================================================================  \end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\hypertarget{group___i2_c___group1_ga7bb44e894d68a7991f564c43fb187486}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Acknowledge\-Config@{I2\-C\-\_\-\-Acknowledge\-Config}}
+\index{I2\-C\-\_\-\-Acknowledge\-Config@{I2\-C\-\_\-\-Acknowledge\-Config}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Acknowledge\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Acknowledge\-Config (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga7bb44e894d68a7991f564c43fb187486}
+
+
+Enables or disables the specified I2\-C acknowledge feature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the I2\-C Acknowledgement. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 411 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga66d86742bf1be58b17ef8779ffc79d02}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-A\-R\-P\-Cmd@{I2\-C\-\_\-\-A\-R\-P\-Cmd}}
+\index{I2\-C\-\_\-\-A\-R\-P\-Cmd@{I2\-C\-\_\-\-A\-R\-P\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-A\-R\-P\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-A\-R\-P\-Cmd (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga66d86742bf1be58b17ef8779ffc79d02}
+
+
+Enables or disables the specified I2\-C A\-R\-P. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the I2\-Cx A\-R\-P. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 651 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga7e1323c9133c2cb424dfb5b10b7d2f0b}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Cmd@{I2\-C\-\_\-\-Cmd}}
+\index{I2\-C\-\_\-\-Cmd@{I2\-C\-\_\-\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Cmd (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga7e1323c9133c2cb424dfb5b10b7d2f0b}
+
+
+Enables or disables the specified I2\-C peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the I2\-Cx peripheral. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 308 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga2ee214364603059ad5d9089f749f5bfd}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-De\-Init@{I2\-C\-\_\-\-De\-Init}}
+\index{I2\-C\-\_\-\-De\-Init@{I2\-C\-\_\-\-De\-Init}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga2ee214364603059ad5d9089f749f5bfd}
+
+
+Deinitialize the I2\-Cx peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 132 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga02145a333a56e79557d6ef4ea03fc313}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Dual\-Address\-Cmd@{I2\-C\-\_\-\-Dual\-Address\-Cmd}}
+\index{I2\-C\-\_\-\-Dual\-Address\-Cmd@{I2\-C\-\_\-\-Dual\-Address\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Dual\-Address\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Dual\-Address\-Cmd (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga02145a333a56e79557d6ef4ea03fc313}
+
+
+Enables or disables the specified I2\-C dual addressing mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the I2\-C dual addressing mode. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 461 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_gaa570f76bc34e5b0531b29b1a90af1275}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Fast\-Mode\-Duty\-Cycle\-Config@{I2\-C\-\_\-\-Fast\-Mode\-Duty\-Cycle\-Config}}
+\index{I2\-C\-\_\-\-Fast\-Mode\-Duty\-Cycle\-Config@{I2\-C\-\_\-\-Fast\-Mode\-Duty\-Cycle\-Config}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Fast\-Mode\-Duty\-Cycle\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Fast\-Mode\-Duty\-Cycle\-Config (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{uint16\-\_\-t}]{I2\-C\-\_\-\-Duty\-Cycle}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_gaa570f76bc34e5b0531b29b1a90af1275}
+
+
+Selects the specified I2\-C fast mode duty cycle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em I2\-C\-\_\-\-Duty\-Cycle,\-:} & specifies the fast mode duty cycle. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item I2\-C\-\_\-\-Duty\-Cycle\-\_\-2\-: I2\-C fast mode Tlow/\-Thigh = 2 \item I2\-C\-\_\-\-Duty\-Cycle\-\_\-16\-\_\-9\-: I2\-C fast mode Tlow/\-Thigh = 16/9 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 561 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga65c740fc8d7b3b9f15cc432d8699d471}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-General\-Call\-Cmd@{I2\-C\-\_\-\-General\-Call\-Cmd}}
+\index{I2\-C\-\_\-\-General\-Call\-Cmd@{I2\-C\-\_\-\-General\-Call\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-General\-Call\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-General\-Call\-Cmd (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga65c740fc8d7b3b9f15cc432d8699d471}
+
+
+Enables or disables the specified I2\-C general call feature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the I2\-C General call. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 485 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga36c522b471588be9779c878222ccb20f}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Generate\-S\-T\-A\-R\-T@{I2\-C\-\_\-\-Generate\-S\-T\-A\-R\-T}}
+\index{I2\-C\-\_\-\-Generate\-S\-T\-A\-R\-T@{I2\-C\-\_\-\-Generate\-S\-T\-A\-R\-T}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Generate\-S\-T\-A\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Generate\-S\-T\-A\-R\-T (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga36c522b471588be9779c878222ccb20f}
+
+
+Generates I2\-Cx communication S\-T\-A\-R\-T condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the I2\-C S\-T\-A\-R\-T condition generation. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 332 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga5c92cb573ca0ae58cc465e5400246561}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Generate\-S\-T\-O\-P@{I2\-C\-\_\-\-Generate\-S\-T\-O\-P}}
+\index{I2\-C\-\_\-\-Generate\-S\-T\-O\-P@{I2\-C\-\_\-\-Generate\-S\-T\-O\-P}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Generate\-S\-T\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Generate\-S\-T\-O\-P (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga5c92cb573ca0ae58cc465e5400246561}
+
+
+Generates I2\-Cx communication S\-T\-O\-P condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the I2\-C S\-T\-O\-P condition generation. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 356 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_gaac29465bca70fbc91c2f922ab67bb88e}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Init@{I2\-C\-\_\-\-Init}}
+\index{I2\-C\-\_\-\-Init@{I2\-C\-\_\-\-Init}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{{\bf I2\-C\-\_\-\-Init\-Type\-Def} $\ast$}]{I2\-C\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_gaac29465bca70fbc91c2f922ab67bb88e}
+
+
+Initializes the I2\-Cx peripheral according to the specified parameters in the I2\-C\-\_\-\-Init\-Struct. 
+
+\begin{DoxyNote}{Note}
+To use the I2\-C at 400 K\-Hz (in fast mode), the P\-C\-L\-K1 frequency (I2\-C peripheral input clock) must be a multiple of 10 M\-Hz.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em I2\-C\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_i2_c___init_type_def}{I2\-C\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the specified I2\-C peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 175 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_gad08ebffc3a234d84e6405ec115bd74f1}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-N\-A\-C\-K\-Position\-Config@{I2\-C\-\_\-\-N\-A\-C\-K\-Position\-Config}}
+\index{I2\-C\-\_\-\-N\-A\-C\-K\-Position\-Config@{I2\-C\-\_\-\-N\-A\-C\-K\-Position\-Config}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-N\-A\-C\-K\-Position\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-N\-A\-C\-K\-Position\-Config (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{uint16\-\_\-t}]{I2\-C\-\_\-\-N\-A\-C\-K\-Position}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_gad08ebffc3a234d84e6405ec115bd74f1}
+
+
+Selects the specified I2\-C N\-A\-C\-K position in master receiver mode. 
+
+\begin{DoxyNote}{Note}
+This function is useful in I2\-C Master Receiver mode when the number of data to be received is equal to 2. In this case, this function should be called (with parameter I2\-C\-\_\-\-N\-A\-C\-K\-Position\-\_\-\-Next) before data reception starts,as described in the 2-\/byte reception procedure recommended in Reference Manual in Section\-: Master receiver. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em I2\-C\-\_\-\-N\-A\-C\-K\-Position,\-:} & specifies the N\-A\-C\-K position. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item I2\-C\-\_\-\-N\-A\-C\-K\-Position\-\_\-\-Next\-: indicates that the next byte will be the last received byte. \item I2\-C\-\_\-\-N\-A\-C\-K\-Position\-\_\-\-Current\-: indicates that current byte is the last received byte.\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function configures the same bit (P\-O\-S) as \hyperlink{group___i2_c_ga5d0f939bdd45542502827bf408f24161}{I2\-C\-\_\-\-P\-E\-C\-Position\-Config()} but is intended to be used in I2\-C mode while \hyperlink{group___i2_c_ga5d0f939bdd45542502827bf408f24161}{I2\-C\-\_\-\-P\-E\-C\-Position\-Config()} is intended to used in S\-M\-B\-U\-S mode.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 599 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga7be2cc634a613c8e3539137e897a22df}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Own\-Address2\-Config@{I2\-C\-\_\-\-Own\-Address2\-Config}}
+\index{I2\-C\-\_\-\-Own\-Address2\-Config@{I2\-C\-\_\-\-Own\-Address2\-Config}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Own\-Address2\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Own\-Address2\-Config (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{uint8\-\_\-t}]{Address}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga7be2cc634a613c8e3539137e897a22df}
+
+
+Configures the specified I2\-C own address2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em Address,\-:} & specifies the 7bit I2\-C own address2. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 434 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga009fc2a5b2313c36da39ece39a1156a6}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Send7bit\-Address@{I2\-C\-\_\-\-Send7bit\-Address}}
+\index{I2\-C\-\_\-\-Send7bit\-Address@{I2\-C\-\_\-\-Send7bit\-Address}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Send7bit\-Address}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Send7bit\-Address (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{uint8\-\_\-t}]{Address, }
+\item[{uint8\-\_\-t}]{I2\-C\-\_\-\-Direction}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga009fc2a5b2313c36da39ece39a1156a6}
+
+
+Transmits the address byte to select the slave device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em Address,\-:} & specifies the slave address which will be transmitted \\
+\hline
+{\em I2\-C\-\_\-\-Direction,\-:} & specifies whether the I2\-C device will be a Transmitter or a Receiver. This parameter can be one of the following values \begin{DoxyItemize}
+\item I2\-C\-\_\-\-Direction\-\_\-\-Transmitter\-: Transmitter mode \item I2\-C\-\_\-\-Direction\-\_\-\-Receiver\-: Receiver mode \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None.} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 384 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga75a810776d9710d2f6d9c5d9e93241c6}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-S\-M\-Bus\-Alert\-Config@{I2\-C\-\_\-\-S\-M\-Bus\-Alert\-Config}}
+\index{I2\-C\-\_\-\-S\-M\-Bus\-Alert\-Config@{I2\-C\-\_\-\-S\-M\-Bus\-Alert\-Config}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-S\-M\-Bus\-Alert\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-S\-M\-Bus\-Alert\-Config (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{uint16\-\_\-t}]{I2\-C\-\_\-\-S\-M\-Bus\-Alert}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga75a810776d9710d2f6d9c5d9e93241c6}
+
+
+Drives the S\-M\-Bus\-Alert pin high or low for the specified I2\-C. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em I2\-C\-\_\-\-S\-M\-Bus\-Alert,\-:} & specifies S\-M\-B\-Alert pin level. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item I2\-C\-\_\-\-S\-M\-Bus\-Alert\-\_\-\-Low\-: S\-M\-B\-Alert pin driven low \item I2\-C\-\_\-\-S\-M\-Bus\-Alert\-\_\-\-High\-: S\-M\-B\-Alert pin driven high \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 627 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga1289c908aeb882443aba323b459c638b}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Software\-Reset\-Cmd@{I2\-C\-\_\-\-Software\-Reset\-Cmd}}
+\index{I2\-C\-\_\-\-Software\-Reset\-Cmd@{I2\-C\-\_\-\-Software\-Reset\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Software\-Reset\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Software\-Reset\-Cmd (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga1289c908aeb882443aba323b459c638b}
+
+
+Enables or disables the specified I2\-C software reset. 
+
+\begin{DoxyNote}{Note}
+When software reset is enabled, the I2\-C I\-Os are released (this can be useful to recover from bus errors). 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the I2\-C software reset. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 511 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga7459feb3b1dfcd3e4f6574002ca7d3bd}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Stretch\-Clock\-Cmd@{I2\-C\-\_\-\-Stretch\-Clock\-Cmd}}
+\index{I2\-C\-\_\-\-Stretch\-Clock\-Cmd@{I2\-C\-\_\-\-Stretch\-Clock\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Stretch\-Clock\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Stretch\-Clock\-Cmd (
+\begin{DoxyParamCaption}
+\item[{I2\-C\-\_\-\-Type\-Def $\ast$}]{I2\-Cx, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga7459feb3b1dfcd3e4f6574002ca7d3bd}
+
+
+Enables or disables the specified I2\-C Clock stretching. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Cx,\-:} & where x can be 1, 2 or 3 to select the I2\-C peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the I2\-Cx Clock stretching. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 535 of file stm32f4xx\-\_\-i2c.\-c.
+
+\hypertarget{group___i2_c___group1_ga08582aca6d7d7910cd5cbff0d9def350}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-C\-\_\-\-Struct\-Init@{I2\-C\-\_\-\-Struct\-Init}}
+\index{I2\-C\-\_\-\-Struct\-Init@{I2\-C\-\_\-\-Struct\-Init}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-C\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-C\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf I2\-C\-\_\-\-Init\-Type\-Def} $\ast$}]{I2\-C\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___i2_c___group1_ga08582aca6d7d7910cd5cbff0d9def350}
+
+
+Fills each I2\-C\-\_\-\-Init\-Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-C\-\_\-\-Init\-Struct,\-:} & pointer to an \hyperlink{struct_i2_c___init_type_def}{I2\-C\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 284 of file stm32f4xx\-\_\-i2c.\-c.
+

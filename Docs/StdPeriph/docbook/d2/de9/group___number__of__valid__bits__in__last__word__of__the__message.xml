@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/de9/group___number__of__valid__bits__in__last__word__of__the__message">
+    <title>Number_of_valid_bits_in_last_word_of_the_message</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/de9/group___number__of__valid__bits__in__last__word__of__the__message_1gafd2b91c276bd9174867b2b33b4a08c8c">IS_HASH_VALIDBITSNUMBER</link> ((VALIDBITS) &lt;= 0x1F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d56/group___d_a_c__output__buffer">
+    <title>DAC_output_buffer</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d56/group___d_a_c__output__buffer_1gab3f92803a8b6bc5fb3e4859908b5161f">DAC_OutputBuffer_Enable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d56/group___d_a_c__output__buffer_1gad41f919d7141398cfdedf8218ce64450">DAC_OutputBuffer_Disable</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d56/group___d_a_c__output__buffer_1gaa5a56816d641129fb62d11133c9dcccd">IS_DAC_OUTPUT_BUFFER_STATE</link> (((STATE) == DAC_OutputBuffer_Enable) || \
+                                           ((STATE) == DAC_OutputBuffer_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

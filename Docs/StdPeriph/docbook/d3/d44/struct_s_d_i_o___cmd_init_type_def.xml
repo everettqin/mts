@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d44/struct_s_d_i_o___cmd_init_type_def">
+<title>SDIO_CmdInitTypeDef struct Reference</title>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_Argument</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_CmdIndex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_Response</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_Wait</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_CPSM</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t SDIO_Argument</title>                
+<para>Specifies the SDIO command argument which is sent to a card as part of a command message. If a command contains an argument, it must be loaded into this register before writing the command to the command register </para>
+
+                <para>Definition at line 70 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_CmdIndex</title>                
+<para>Specifies the SDIO command index. It must be lower than 0x40. </para>
+
+                <para>Definition at line 75 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_Response</title>                
+<para>Specifies the SDIO response type. This parameter can be a value of <link linkend="de/d50/group___s_d_i_o___response___type">SDIO_Response_Type</link> </para>
+
+                <para>Definition at line 77 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_Wait</title>                
+<para>Specifies whether SDIO wait-for-interrupt request is enabled or disabled. This parameter can be a value of <link linkend="dd/d2d/group___s_d_i_o___wait___interrupt___state">SDIO_Wait_Interrupt_State</link> </para>
+
+                <para>Definition at line 80 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_CPSM</title>                
+<para>Specifies whether SDIO Command path state machine (CPSM) is enabled or disabled. This parameter can be a value of <link linkend="da/d46/group___s_d_i_o___c_p_s_m___state">SDIO_CPSM_State</link> </para>
+
+                <para>Definition at line 83 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d3a/group___d_a_c__interrupts__definition">
+    <title>DAC_interrupts_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d3a/group___d_a_c__interrupts__definition_1ga100561d5004f54f09f988ed31a499d44">DAC_IT_DMAUDR</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d3a/group___d_a_c__interrupts__definition_1ga274509cac59a8ee23ce3acb12e73e9ea">IS_DAC_IT</link> (((IT) == DAC_IT_DMAUDR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

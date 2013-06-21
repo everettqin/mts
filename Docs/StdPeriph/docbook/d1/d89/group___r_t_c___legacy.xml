@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d89/group___r_t_c___legacy">
+    <title>RTC_Legacy</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d89/group___r_t_c___legacy_1ga6fd6ce83a6c888a7613e641d4478c0cc">RTC_DigitalCalibConfig</link> <link linkend="de/dad/group___r_t_c___group7_1gaa3bb10170a2c70ac9ce3e41c611bdd43">RTC_CoarseCalibConfig</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d89/group___r_t_c___legacy_1ga8a04a24beeae55e24cf8d2f3dbb5ead5">RTC_DigitalCalibCmd</link> <link linkend="de/dad/group___r_t_c___group7_1ga008ae7173b2befe876f5e76686bc9089">RTC_CoarseCalibCmd</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dba/group___t_i_m___master___slave___mode">
+    <title>TIM_Master_Slave_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dba/group___t_i_m___master___slave___mode_1gaef5da910ae6952fce424b440ea39f69a">TIM_MasterSlaveMode_Enable</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dba/group___t_i_m___master___slave___mode_1ga8d4c7c0f57469f384b1327bb323d28a3">TIM_MasterSlaveMode_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dba/group___t_i_m___master___slave___mode_1ga53146701cf287a0eca43b9232dffac60">IS_TIM_MSM_STATE</link> (((STATE) == TIM_MasterSlaveMode_Enable) || \
+                                 ((STATE) == TIM_MasterSlaveMode_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

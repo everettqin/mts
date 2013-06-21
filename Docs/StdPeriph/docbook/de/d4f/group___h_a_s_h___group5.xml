@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d4f/group___h_a_s_h___group5">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                   Interrupts and flags management functions
+ ===============================================================================  
+
+  This section provides functions allowing to configure the HASH Interrupts and 
+  to get the status and clear flags and Interrupts pending bits.
+  
+  The HASH provides 2 Interrupts sources and 5 Flags:
+  
+  Flags :
+  ---------- 
+     1. HASH_FLAG_DINIS : set when 16 locations are free in the Data IN FIFO 
+                          which means that a  new block (512 bit) can be entered 
+                          into the input buffer.
+                          
+     2. HASH_FLAG_DCIS :  set when Digest calculation is complete
+      
+     3. HASH_FLAG_DMAS :  set when HASH&apos;s DMA interface is enabled (DMAE=1) or 
+                          a transfer is ongoing.
+                          This Flag is cleared only by hardware.
+                           
+     4. HASH_FLAG_BUSY :  set when The hash core is processing a block of data
+                          This Flag is cleared only by hardware. 
+                           
+     5. HASH_FLAG_DINNE : set when Data IN FIFO is not empty which means that 
+                          the Data IN FIFO contains at least one word of data.
+                          This Flag is cleared only by hardware.
+     
+  Interrupts :
+  ------------
+    
+   1. HASH_IT_DINI  : if enabled, this interrupt source is pending when 16 
+                      locations are free in the Data IN FIFO  which means that 
+                      a new block (512 bit) can be entered into the input buffer.
+                      This interrupt source is cleared using 
+                      HASH_ClearITPendingBit(HASH_IT_DINI) function.
+   
+   2. HASH_IT_DCI   : if enabled, this interrupt source is pending when Digest 
+                      calculation is complete.
+                      This interrupt source is cleared using 
+                      HASH_ClearITPendingBit(HASH_IT_DCI) function.
+
+  Managing the HASH controller events :
+  ------------------------------------ 
+  The user should identify which mode will be used in his application to manage 
+  the HASH controller events: Polling mode or Interrupt mode.
+  
+  1.  In the Polling Mode it is advised to use the following functions:
+      - HASH_GetFlagStatus() : to check if flags events occur. 
+      - HASH_ClearFlag()     : to clear the flags events.
+    
+  2.  In the Interrupt Mode it is advised to use the following functions:
+      - HASH_ITConfig()       : to enable or disable the interrupt source.
+      - HASH_GetITStatus()    : to check if Interrupt occurs.
+      - HASH_ClearITPendingBit() : to clear the Interrupt pending Bit 
+                                (corresponding Flag). </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d4f/group___h_a_s_h___group5_1gaed111ba67a4f4afc8c9cf389adc574ac">HASH_ITConfig</link> (
+uint8_t HASH_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="de/d4f/group___h_a_s_h___group5_1gae994fb4be1977f6ebb823f38839f7bd1">HASH_GetFlagStatus</link> (
+uint16_t HASH_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d4f/group___h_a_s_h___group5_1ga0ec1269a1f30a1e7be0e3045d72ebcf6">HASH_ClearFlag</link> (
+uint16_t HASH_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="de/d4f/group___h_a_s_h___group5_1ga49a9d1ad196112cd3614b8c428a4c4cf">HASH_GetITStatus</link> (
+uint8_t HASH_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d4f/group___h_a_s_h___group5_1ga97b9508f09c6fb572f65832f124da26d">HASH_ClearITPendingBit</link> (
+uint8_t HASH_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="de/d4f/group___h_a_s_h___group5_1gaed111ba67a4f4afc8c9cf389adc574ac">
+                <title>void HASH_ITConfig (uint8_t HASH_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified HASH interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_IT, :</entry>
+                                <entry>
+<para>specifies the HASH interrupt source to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>HASH_IT_DINI: Data Input interrupt </para>
+</listitem>
+<listitem>
+<para>HASH_IT_DCI: Digest Calculation Completion Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified HASH interrupt. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d4f/group___h_a_s_h___group5_1gae994fb4be1977f6ebb823f38839f7bd1">
+                <title>FlagStatus HASH_GetFlagStatus (uint16_t HASH_FLAG)</title> <emphasis>Checks whether the specified HASH flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_FLAG, :</entry>
+                                <entry>
+<para>specifies the HASH flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>HASH_FLAG_DINIS: Data input interrupt status flag </para>
+</listitem>
+<listitem>
+<para>HASH_FLAG_DCIS: Digest calculation completion interrupt status flag </para>
+</listitem>
+<listitem>
+<para>HASH_FLAG_BUSY: Busy flag </para>
+</listitem>
+<listitem>
+<para>HASH_FLAG_DMAS: DMAS Status flag </para>
+</listitem>
+<listitem>
+<para>HASH_FLAG_DINNE: Data Input register (DIN) not empty status flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of HASH_FLAG (SET or RESET) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d4f/group___h_a_s_h___group5_1ga0ec1269a1f30a1e7be0e3045d72ebcf6">
+                <title>void HASH_ClearFlag (uint16_t HASH_FLAG)</title> <emphasis>Clears the HASH flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>HASH_FLAG_DINIS: Data Input Flag </para>
+</listitem>
+<listitem>
+<para>HASH_FLAG_DCIS: Digest Calculation Completion Flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d4f/group___h_a_s_h___group5_1ga49a9d1ad196112cd3614b8c428a4c4cf">
+                <title>ITStatus HASH_GetITStatus (uint8_t HASH_IT)</title> <emphasis>Checks whether the specified HASH interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_IT, :</entry>
+                                <entry>
+<para>specifies the HASH interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>HASH_IT_DINI: Data Input interrupt </para>
+</listitem>
+<listitem>
+<para>HASH_IT_DCI: Digest Calculation Completion Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of HASH_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d4f/group___h_a_s_h___group5_1ga97b9508f09c6fb572f65832f124da26d">
+                <title>void HASH_ClearITPendingBit (uint8_t HASH_IT)</title> <emphasis>Clears the HASH interrupt pending bit(s).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_IT, :</entry>
+                                <entry>
+<para>specifies the HASH interrupt pending bit(s) to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>HASH_IT_DINI: Data Input interrupt </para>
+</listitem>
+<listitem>
+<para>HASH_IT_DCI: Digest Calculation Completion Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

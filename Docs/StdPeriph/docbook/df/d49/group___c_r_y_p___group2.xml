@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d49/group___c_r_y_p___group2">
+    <title>CRYP Data processing functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CRYP Data processing functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      CRYP Data processing functions
+ ===============================================================================  
+  This section provides functions allowing the encryption and decryption 
+  operations: 
+  - Enter data to be treated in the IN FIFO : using CRYP_DataIn() function.
+  - Get the data result from the OUT FIFO : using CRYP_DataOut() function.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d49/group___c_r_y_p___group2_1ga16dc76244318d464357ee6ff208bf9a4">CRYP_DataIn</link> (
+uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="df/d49/group___c_r_y_p___group2_1gacbe5fcf4c7e4919192376fa615588b54">CRYP_DataOut</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="df/d49/group___c_r_y_p___group2_1ga16dc76244318d464357ee6ff208bf9a4">
+                <title>void CRYP_DataIn (uint32_t Data)</title> <emphasis>Writes data in the Data Input register (DIN).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>After the DIN register has been read once or several times, the FIFO must be flushed (using <link linkend="d5/d52/group___c_r_y_p_1ga23ada9d9464e1362299d7612a1409a57">CRYP_FIFOFlush()</link> function). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>data to write in Data Input register </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/d49/group___c_r_y_p___group2_1gacbe5fcf4c7e4919192376fa615588b54">
+                <title>uint32_t CRYP_DataOut (void)</title> <emphasis>Returns the last data entered into the output FIFO.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Last</entry>
+                                <entry>
+<para>data entered into the output FIFO. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

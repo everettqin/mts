@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dd1/group___t_i_m___output___compare___idle___state">
+    <title>TIM_Output_Compare_Idle_State</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd1/group___t_i_m___output___compare___idle___state_1ga86d8f895a1ec584323f6c02c7edfad4c">TIM_OCIdleState_Set</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd1/group___t_i_m___output___compare___idle___state_1gace5465bc9e90ba7862b3af9e6cc9b97e">TIM_OCIdleState_Reset</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd1/group___t_i_m___output___compare___idle___state_1ga69c62dcc15f9d39108b19b64205d689e">IS_TIM_OCIDLE_STATE</link> (((STATE) == TIM_OCIdleState_Set) || \
+                                    ((STATE) == TIM_OCIdleState_Reset))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

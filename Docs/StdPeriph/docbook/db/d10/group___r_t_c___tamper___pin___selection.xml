@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d10/group___r_t_c___tamper___pin___selection">
+    <title>RTC_Tamper_Pin_Selection</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d10/group___r_t_c___tamper___pin___selection_1ga40931f48b0d647e0a1e96f12e1321bd1">RTC_TamperPin_PC13</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d10/group___r_t_c___tamper___pin___selection_1gafef092b812feb1d759c7b6cd0ca8d858">RTC_TamperPin_PI8</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d10/group___r_t_c___tamper___pin___selection_1gafee4c4fb7be2053b14b061e5725561ee">IS_RTC_TAMPER_PIN</link> (((PIN) == RTC_TamperPin_PC13) || \
+                                ((PIN) == RTC_TamperPin_PI8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

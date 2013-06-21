@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dc4/struct_s_p_i___init_type_def">
+<title>SPI_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/d84/stm32f4xx__spi_8h">&lt;stm32f4xx_spi.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t SPI_Direction</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t SPI_Mode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t SPI_DataSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t SPI_CPOL</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t SPI_CPHA</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t SPI_NSS</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t SPI_BaudRatePrescaler</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t SPI_FirstBit</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t SPI_CRCPolynomial</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>SPI Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t SPI_Direction</title>                
+<para>Specifies the SPI unidirectional or bidirectional data mode. This parameter can be a value of <link linkend="db/d1c/group___s_p_i__data__direction">SPI_data_direction</link> </para>
+
+                <para>Definition at line 50 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t SPI_Mode</title>                
+<para>Specifies the SPI operating mode. This parameter can be a value of <link linkend="dc/d6d/group___s_p_i__mode">SPI_mode</link> </para>
+
+                <para>Definition at line 53 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t SPI_DataSize</title>                
+<para>Specifies the SPI data size. This parameter can be a value of <link linkend="d1/d33/group___s_p_i__data__size">SPI_data_size</link> </para>
+
+                <para>Definition at line 56 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t SPI_CPOL</title>                
+<para>Specifies the serial clock steady state. This parameter can be a value of <link linkend="d1/d24/group___s_p_i___clock___polarity">SPI_Clock_Polarity</link> </para>
+
+                <para>Definition at line 59 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t SPI_CPHA</title>                
+<para>Specifies the clock active edge for the bit capture. This parameter can be a value of <link linkend="d0/d3a/group___s_p_i___clock___phase">SPI_Clock_Phase</link> </para>
+
+                <para>Definition at line 62 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t SPI_NSS</title>                
+<para>Specifies whether the NSS signal is managed by hardware (NSS pin) or by software using the SSI bit. This parameter can be a value of <link linkend="d8/dde/group___s_p_i___slave___select__management">SPI_Slave_Select_management</link> </para>
+
+                <para>Definition at line 65 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t SPI_BaudRatePrescaler</title>                
+<para>Specifies the Baud Rate prescaler value which will be used to configure the transmit and receive SCK clock. This parameter can be a value of <link linkend="d0/d36/group___s_p_i___baud_rate___prescaler">SPI_BaudRate_Prescaler</link> <formalpara><title>Note: </title>
+
+<para>The communication clock is derived from the master clock. The slave clock does not need to be set. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 69 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t SPI_FirstBit</title>                
+<para>Specifies whether data transfers start from MSB or LSB bit. This parameter can be a value of <link linkend="da/d82/group___s_p_i___m_s_b___l_s_b__transmission">SPI_MSB_LSB_transmission</link> </para>
+
+                <para>Definition at line 75 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t SPI_CRCPolynomial</title>                
+<para>Specifies the polynomial used for the CRC calculation. </para>
+
+                <para>Definition at line 78 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

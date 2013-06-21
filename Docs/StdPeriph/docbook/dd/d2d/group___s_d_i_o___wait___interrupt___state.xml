@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d2d/group___s_d_i_o___wait___interrupt___state">
+    <title>SDIO_Wait_Interrupt_State</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga266294e1ffd7a4b45e62bff753ca44b2">SDIO_Wait_No</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga3914bbe26a656c8e151272ccdc12c71c">SDIO_Wait_IT</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga2a4104023a7f8403ddd159ec3bbb8592">SDIO_Wait_Pend</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga7ee5c289c8e06a76b849808d15b03810">IS_SDIO_WAIT</link> (((WAIT) == <link linkend="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga266294e1ffd7a4b45e62bff753ca44b2">SDIO_Wait_No</link>) || ((WAIT) == <link linkend="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga3914bbe26a656c8e151272ccdc12c71c">SDIO_Wait_IT</link>) || \
+                            ((WAIT) == <link linkend="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga2a4104023a7f8403ddd159ec3bbb8592">SDIO_Wait_Pend</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga266294e1ffd7a4b45e62bff753ca44b2">
+                <title>#define SDIO_Wait_No</title>                
+<para>SDIO No Wait, TimeOut is enabled </para>
+
+                <para>Definition at line 250 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga3914bbe26a656c8e151272ccdc12c71c">
+                <title>#define SDIO_Wait_IT</title>                
+<para>SDIO Wait Interrupt Request </para>
+
+                <para>Definition at line 251 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="dd/d2d/group___s_d_i_o___wait___interrupt___state_1ga2a4104023a7f8403ddd159ec3bbb8592">
+                <title>#define SDIO_Wait_Pend</title>                
+<para>SDIO Wait End of transfer </para>
+
+                <para>Definition at line 252 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dba/group___t_i_m___group7">
+    <title>Synchronization management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Synchronization management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                       Synchronization management functions
+ ===============================================================================  
+                   
+       ===================================================================      
+              TIM Driver: how to use it in synchronization Mode
+       =================================================================== 
+       Case of two/several Timers
+       **************************
+       1. Configure the Master Timers using the following functions:
+          - void TIM_SelectOutputTrigger(TIM_TypeDef* TIMx, uint16_t TIM_TRGOSource); 
+          - void TIM_SelectMasterSlaveMode(TIM_TypeDef* TIMx, uint16_t TIM_MasterSlaveMode);  
+       2. Configure the Slave Timers using the following functions: 
+          - void TIM_SelectInputTrigger(TIM_TypeDef* TIMx, uint16_t TIM_InputTriggerSource);  
+          - void TIM_SelectSlaveMode(TIM_TypeDef* TIMx, uint16_t TIM_SlaveMode); 
+          
+       Case of Timers and external trigger(ETR pin)
+       ********************************************       
+       1. Configure the External trigger using this function:
+          - void TIM_ETRConfig(TIM_TypeDef* TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity,
+                               uint16_t ExtTRGFilter);
+       2. Configure the Slave Timers using the following functions: 
+          - void TIM_SelectInputTrigger(TIM_TypeDef* TIMx, uint16_t TIM_InputTriggerSource);  
+          - void TIM_SelectSlaveMode(TIM_TypeDef* TIMx, uint16_t TIM_SlaveMode); </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga4252583c6ae8a73d6fc66f7e951dbc35">TIM_SelectInputTrigger</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_InputTriggerSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga28745aaa549e2067e42c19569209e6c6">TIM_SelectOutputTrigger</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_TRGOSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga2f19ce1d90990691cf037e419ba08003">TIM_SelectSlaveMode</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_SlaveMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga4dcc3d11b670c381d0ff9cb7e9fd01e2">TIM_SelectMasterSlaveMode</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_MasterSlaveMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga8bdde400b7a30f3e747fe8e4962c0abe">TIM_ETRConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="df/dba/group___t_i_m___group7_1ga4252583c6ae8a73d6fc66f7e951dbc35">
+                <title>void TIM_SelectInputTrigger (TIM_TypeDef *TIMx, uint16_t TIM_InputTriggerSource)</title> <emphasis>Selects the Input Trigger source.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13 or 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_InputTriggerSource, :</entry>
+                                <entry>
+<para>The Input Trigger source. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_TS_ITR0: Internal Trigger 0 </para>
+</listitem>
+<listitem>
+<para>TIM_TS_ITR1: Internal Trigger 1 </para>
+</listitem>
+<listitem>
+<para>TIM_TS_ITR2: Internal Trigger 2 </para>
+</listitem>
+<listitem>
+<para>TIM_TS_ITR3: Internal Trigger 3 </para>
+</listitem>
+<listitem>
+<para>TIM_TS_TI1F_ED: TI1 Edge Detector </para>
+</listitem>
+<listitem>
+<para>TIM_TS_TI1FP1: Filtered Timer Input 1 </para>
+</listitem>
+<listitem>
+<para>TIM_TS_TI2FP2: Filtered Timer Input 2 </para>
+</listitem>
+<listitem>
+<para>TIM_TS_ETRF: External Trigger input </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/dba/group___t_i_m___group7_1ga28745aaa549e2067e42c19569209e6c6">
+                <title>void TIM_SelectOutputTrigger (TIM_TypeDef *TIMx, uint16_t TIM_TRGOSource)</title> <emphasis>Selects the TIMx Trigger Output Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 6, 7 or 8 to select the TIM peripheral.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_TRGOSource, :</entry>
+                                <entry>
+<para>specifies the Trigger Output source. This parameter can be one of the following values:<itemizedlist>
+<listitem>
+<para>For all TIMx <itemizedlist>
+<listitem>
+<para>TIM_TRGOSource_Reset: The UG bit in the TIM_EGR register is used as the trigger output(TRGO) </para>
+</listitem>
+<listitem>
+<para>TIM_TRGOSource_Enable: The Counter Enable CEN is used as the trigger output(TRGO) </para>
+</listitem>
+<listitem>
+<para>TIM_TRGOSource_Update: The update event is selected as the trigger output(TRGO)</para>
+</listitem>
+</itemizedlist>
+</para>
+</listitem><listitem>
+<para>For all TIMx except TIM6 and TIM7 <itemizedlist>
+<listitem>
+<para>TIM_TRGOSource_OC1: The trigger output sends a positive pulse when the CC1IF flag is to be set, as soon as a capture or compare match occurs(TRGO) </para>
+</listitem>
+<listitem>
+<para>TIM_TRGOSource_OC1Ref: OC1REF signal is used as the trigger output(TRGO) </para>
+</listitem>
+<listitem>
+<para>TIM_TRGOSource_OC2Ref: OC2REF signal is used as the trigger output(TRGO) </para>
+</listitem>
+<listitem>
+<para>TIM_TRGOSource_OC3Ref: OC3REF signal is used as the trigger output(TRGO) </para>
+</listitem>
+<listitem>
+<para>TIM_TRGOSource_OC4Ref: OC4REF signal is used as the trigger output(TRGO)</para>
+</listitem>
+</itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/dba/group___t_i_m___group7_1ga2f19ce1d90990691cf037e419ba08003">
+                <title>void TIM_SelectSlaveMode (TIM_TypeDef *TIMx, uint16_t TIM_SlaveMode)</title> <emphasis>Selects the TIMx Slave Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_SlaveMode, :</entry>
+                                <entry>
+<para>specifies the Timer Slave Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_SlaveMode_Reset: Rising edge of the selected trigger signal(TRGI) reinitialize the counter and triggers an update of the registers </para>
+</listitem>
+<listitem>
+<para>TIM_SlaveMode_Gated: The counter clock is enabled when the trigger signal (TRGI) is high </para>
+</listitem>
+<listitem>
+<para>TIM_SlaveMode_Trigger: The counter starts at a rising edge of the trigger TRGI </para>
+</listitem>
+<listitem>
+<para>TIM_SlaveMode_External1: Rising edges of the selected trigger (TRGI) clock the counter </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/dba/group___t_i_m___group7_1ga4dcc3d11b670c381d0ff9cb7e9fd01e2">
+                <title>void TIM_SelectMasterSlaveMode (TIM_TypeDef *TIMx, uint16_t TIM_MasterSlaveMode)</title> <emphasis>Sets or Resets the TIMx Master/Slave Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_MasterSlaveMode, :</entry>
+                                <entry>
+<para>specifies the Timer Master Slave Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_MasterSlaveMode_Enable: synchronization between the current timer and its slaves (through TRGO) </para>
+</listitem>
+<listitem>
+<para>TIM_MasterSlaveMode_Disable: No action </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/dba/group___t_i_m___group7_1ga8bdde400b7a30f3e747fe8e4962c0abe">
+                <title>void TIM_ETRConfig (TIM_TypeDef *TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)</title> <emphasis>Configures the TIMx External Trigger (ETR).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ExtTRGPrescaler, :</entry>
+                                <entry>
+<para>The external Trigger Prescaler. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ExtTRGPSC_OFF: ETRP Prescaler OFF. </para>
+</listitem>
+<listitem>
+<para>TIM_ExtTRGPSC_DIV2: ETRP frequency divided by 2. </para>
+</listitem>
+<listitem>
+<para>TIM_ExtTRGPSC_DIV4: ETRP frequency divided by 4. </para>
+</listitem>
+<listitem>
+<para>TIM_ExtTRGPSC_DIV8: ETRP frequency divided by 8. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ExtTRGPolarity, :</entry>
+                                <entry>
+<para>The external Trigger Polarity. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ExtTRGPolarity_Inverted: active low or falling edge active. </para>
+</listitem>
+<listitem>
+<para>TIM_ExtTRGPolarity_NonInverted: active high or rising edge active. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ExtTRGFilter, :</entry>
+                                <entry>
+<para>External Trigger Filter. This parameter must be a value between 0x00 and 0x0F </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

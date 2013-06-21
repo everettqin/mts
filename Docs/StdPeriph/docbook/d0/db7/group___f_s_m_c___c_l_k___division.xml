@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/db7/group___f_s_m_c___c_l_k___division">
+    <title>FSMC_CLK_Division</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/db7/group___f_s_m_c___c_l_k___division_1ga9e5321b02ea049fd076ba705acd06b5f">IS_FSMC_CLK_DIV</link> ((DIV) &lt;= 0xF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,121 @@
+\hypertarget{stm32f4xx__pwr_8c}{\section{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.1.0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-pwr.c File Reference}
+\label{stm32f4xx__pwr_8c}\index{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-pwr.\-c@{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-pwr.\-c}}
+}
+
+
+This file provides firmware functions to manage the following functionalities of the Power Controller (P\-W\-R) peripheral\-:  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx\-\_\-pwr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stm32f4xx\-\_\-rcc.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___p_w_r_ga7f88bce73931300319824f22578f90de}{\#define {\bfseries P\-W\-R\-\_\-\-O\-F\-F\-S\-E\-T}~(P\-W\-R\-\_\-\-B\-A\-S\-E -\/ P\-E\-R\-I\-P\-H\-\_\-\-B\-A\-S\-E)}\label{group___p_w_r_ga7f88bce73931300319824f22578f90de}
+
+\item 
+\hypertarget{group___p_w_r_gafa1d3d0ea72132df651c76fc1bdffffc}{\#define {\bfseries C\-R\-\_\-\-O\-F\-F\-S\-E\-T}~(P\-W\-R\-\_\-\-O\-F\-F\-S\-E\-T + 0x00)}\label{group___p_w_r_gafa1d3d0ea72132df651c76fc1bdffffc}
+
+\item 
+\hypertarget{group___p_w_r_ga36ff45d972bf94f31f172fd53cf44d23}{\#define {\bfseries D\-B\-P\-\_\-\-Bit\-Number}~0x08}\label{group___p_w_r_ga36ff45d972bf94f31f172fd53cf44d23}
+
+\item 
+\hypertarget{group___p_w_r_ga799ab60bdbcfc1076cf2d7f206d09b0c}{\#define {\bfseries C\-R\-\_\-\-D\-B\-P\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (D\-B\-P\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___p_w_r_ga799ab60bdbcfc1076cf2d7f206d09b0c}
+
+\item 
+\hypertarget{group___p_w_r_ga17d618eb800c401ef9c6789c9374eaf8}{\#define {\bfseries P\-V\-D\-E\-\_\-\-Bit\-Number}~0x04}\label{group___p_w_r_ga17d618eb800c401ef9c6789c9374eaf8}
+
+\item 
+\hypertarget{group___p_w_r_ga49f51ef8285a6be76fd204d49a00709c}{\#define {\bfseries C\-R\-\_\-\-P\-V\-D\-E\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (P\-V\-D\-E\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___p_w_r_ga49f51ef8285a6be76fd204d49a00709c}
+
+\item 
+\hypertarget{group___p_w_r_gad99a3da921e3e64587f6b9505ecba665}{\#define {\bfseries F\-P\-D\-S\-\_\-\-Bit\-Number}~0x09}\label{group___p_w_r_gad99a3da921e3e64587f6b9505ecba665}
+
+\item 
+\hypertarget{group___p_w_r_ga57d7041b5d1bf0ec94fa18152a7fa208}{\#define {\bfseries C\-R\-\_\-\-F\-P\-D\-S\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (F\-P\-D\-S\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___p_w_r_ga57d7041b5d1bf0ec94fa18152a7fa208}
+
+\item 
+\hypertarget{group___p_w_r_ga15fea9df1b0d324394336f70b319b377}{\#define {\bfseries P\-M\-O\-D\-E\-\_\-\-Bit\-Number}~0x0\-E}\label{group___p_w_r_ga15fea9df1b0d324394336f70b319b377}
+
+\item 
+\hypertarget{group___p_w_r_ga2e7c040f5c63f0fce3e274d9a03f1d1a}{\#define {\bfseries C\-R\-\_\-\-P\-M\-O\-D\-E\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (P\-M\-O\-D\-E\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___p_w_r_ga2e7c040f5c63f0fce3e274d9a03f1d1a}
+
+\item 
+\hypertarget{group___p_w_r_ga984cbe73312b6d3d355c5053763d499a}{\#define {\bfseries C\-S\-R\-\_\-\-O\-F\-F\-S\-E\-T}~(P\-W\-R\-\_\-\-O\-F\-F\-S\-E\-T + 0x04)}\label{group___p_w_r_ga984cbe73312b6d3d355c5053763d499a}
+
+\item 
+\hypertarget{group___p_w_r_ga94fe0520e8f9b71fa2b99c0565ec70ea}{\#define {\bfseries E\-W\-U\-P\-\_\-\-Bit\-Number}~0x08}\label{group___p_w_r_ga94fe0520e8f9b71fa2b99c0565ec70ea}
+
+\item 
+\hypertarget{group___p_w_r_gaaff864595f697850b19173b0bca991b0}{\#define {\bfseries C\-S\-R\-\_\-\-E\-W\-U\-P\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-S\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (E\-W\-U\-P\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___p_w_r_gaaff864595f697850b19173b0bca991b0}
+
+\item 
+\hypertarget{group___p_w_r_ga1a0832bfe421cdd6f2640ffb625cc2d8}{\#define {\bfseries B\-R\-E\-\_\-\-Bit\-Number}~0x09}\label{group___p_w_r_ga1a0832bfe421cdd6f2640ffb625cc2d8}
+
+\item 
+\hypertarget{group___p_w_r_ga1451a5ec810860a7c2e28c23f0c0e928}{\#define {\bfseries C\-S\-R\-\_\-\-B\-R\-E\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-S\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (B\-R\-E\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___p_w_r_ga1451a5ec810860a7c2e28c23f0c0e928}
+
+\item 
+\hypertarget{group___p_w_r_ga8ee6bf9218f3c476629dd9ee70deef21}{\#define {\bfseries C\-R\-\_\-\-D\-S\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F\-F\-F\-C)}\label{group___p_w_r_ga8ee6bf9218f3c476629dd9ee70deef21}
+
+\item 
+\hypertarget{group___p_w_r_gac4a30eebdd1d292331a578b189962e77}{\#define {\bfseries C\-R\-\_\-\-P\-L\-S\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F\-F1\-F)}\label{group___p_w_r_gac4a30eebdd1d292331a578b189962e77}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___p_w_r___group1_gad03a0aac7bc3bc3a9fd012f3769a6990}{P\-W\-R\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the P\-W\-R peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group1_ga0741aea35572b1a75f82b74de12df800}{P\-W\-R\-\_\-\-Backup\-Access\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables access to the backup domain (R\-T\-C registers, R\-T\-C backup data registers and backup S\-R\-A\-M). \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group2_ga237c143ef6aa55abb8049fa7bf24ab8f}{P\-W\-R\-\_\-\-P\-V\-D\-Level\-Config} (uint32\-\_\-t P\-W\-R\-\_\-\-P\-V\-D\-Level)
+\begin{DoxyCompactList}\small\item\em Configures the voltage threshold detected by the Power Voltage Detector(\-P\-V\-D). \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group2_ga42cad476b816e0a33594a933b3ed1acd}{P\-W\-R\-\_\-\-P\-V\-D\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Power Voltage Detector(\-P\-V\-D). \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group3_gae5fd6f9336ef8c60d5483651cb0d1a00}{P\-W\-R\-\_\-\-Wake\-Up\-Pin\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Wake\-Up Pin functionality. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group4_ga83a4d6c5b048f2dab18e8fb04f5368d7}{P\-W\-R\-\_\-\-Backup\-Regulator\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Backup Regulator. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group4_gada193dea79762f379d4e666a98f28d89}{P\-W\-R\-\_\-\-Main\-Regulator\-Mode\-Config} (uint32\-\_\-t P\-W\-R\-\_\-\-Regulator\-\_\-\-Voltage)
+\begin{DoxyCompactList}\small\item\em Configures the main internal regulator output voltage. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group5_gaf0af19a9fdf0324f2ada60c9bce1aab5}{P\-W\-R\-\_\-\-Flash\-Power\-Down\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Flash Power Down in S\-T\-O\-P mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group6_ga694676ac06a9baf50eae45adae0118ab}{P\-W\-R\-\_\-\-Enter\-S\-T\-O\-P\-Mode} (uint32\-\_\-t P\-W\-R\-\_\-\-Regulator, uint8\-\_\-t P\-W\-R\-\_\-\-S\-T\-O\-P\-Entry)
+\begin{DoxyCompactList}\small\item\em Enters S\-T\-O\-P mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group6_ga00ddae00a9c327b81b24d2597b0052f3}{P\-W\-R\-\_\-\-Enter\-S\-T\-A\-N\-D\-B\-Y\-Mode} (void)
+\begin{DoxyCompactList}\small\item\em Enters S\-T\-A\-N\-D\-B\-Y mode. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___p_w_r___group7_gaa980163a4d83304280ee34942464b4ec}{P\-W\-R\-\_\-\-Get\-Flag\-Status} (uint32\-\_\-t P\-W\-R\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified P\-W\-R flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___p_w_r___group7_ga01c4b2fbd16514b993324e101c3ddf7c}{P\-W\-R\-\_\-\-Clear\-Flag} (uint32\-\_\-t P\-W\-R\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the P\-W\-R's pending flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides firmware functions to manage the following functionalities of the Power Controller (P\-W\-R) peripheral\-: \begin{DoxyAuthor}{Author}
+M\-C\-D Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+30-\/\-September-\/2011
+\begin{DoxyItemize}
+\item Backup Domain Access
+\item P\-V\-D configuration
+\item Wake\-Up pin configuration
+\item Main and Backup Regulators configuration
+\item F\-L\-A\-S\-H Power Down configuration
+\item Low Power modes configuration
+\item Flags management
+\end{DoxyItemize}
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\-H\-E P\-R\-E\-S\-E\-N\-T F\-I\-R\-M\-W\-A\-R\-E W\-H\-I\-C\-H I\-S F\-O\-R G\-U\-I\-D\-A\-N\-C\-E O\-N\-L\-Y A\-I\-M\-S A\-T P\-R\-O\-V\-I\-D\-I\-N\-G C\-U\-S\-T\-O\-M\-E\-R\-S W\-I\-T\-H C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N R\-E\-G\-A\-R\-D\-I\-N\-G T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S I\-N O\-R\-D\-E\-R F\-O\-R T\-H\-E\-M T\-O S\-A\-V\-E T\-I\-M\-E. A\-S A R\-E\-S\-U\-L\-T, S\-T\-M\-I\-C\-R\-O\-E\-L\-E\-C\-T\-R\-O\-N\-I\-C\-S S\-H\-A\-L\-L N\-O\-T B\-E H\-E\-L\-D L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y D\-I\-R\-E\-C\-T, I\-N\-D\-I\-R\-E\-C\-T O\-R C\-O\-N\-S\-E\-Q\-U\-E\-N\-T\-I\-A\-L D\-A\-M\-A\-G\-E\-S W\-I\-T\-H R\-E\-S\-P\-E\-C\-T T\-O A\-N\-Y C\-L\-A\-I\-M\-S A\-R\-I\-S\-I\-N\-G F\-R\-O\-M T\-H\-E C\-O\-N\-T\-E\-N\-T O\-F S\-U\-C\-H F\-I\-R\-M\-W\-A\-R\-E A\-N\-D/\-O\-R T\-H\-E U\-S\-E M\-A\-D\-E B\-Y C\-U\-S\-T\-O\-M\-E\-R\-S O\-F T\-H\-E C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N C\-O\-N\-T\-A\-I\-N\-E\-D H\-E\-R\-E\-I\-N I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S.
+
+\subsubsection*{\begin{center}\copyright C\-O\-P\-Y\-R\-I\-G\-H\-T 2011 S\-T\-Microelectronics\end{center} }
+
+Definition in file \hyperlink{stm32f4xx__pwr_8c_source}{stm32f4xx\-\_\-pwr.\-c}.
+

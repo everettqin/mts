@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d9e/group___r_c_c___p_l_l___clock___source">
+    <title>RCC_PLL_Clock_Source</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source_1ga1cbb1ae8d9e282a763a0070b251921f9">RCC_PLLSource_HSI</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source_1ga3706d0db7fe1836c65dc2ea7deded721">RCC_PLLSource_HSE</link> ((uint32_t)0x00400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source_1ga8a8a84a16989bb4e5aca1af65ccf9a1b">IS_RCC_PLL_SOURCE</link> (((SOURCE) == RCC_PLLSource_HSI) || \
+                                   ((SOURCE) == RCC_PLLSource_HSE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source_1ga8db327c085e20aeb673a9784f8508597">IS_RCC_PLLM_VALUE</link> ((VALUE) &lt;= 63)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source_1ga12835741fbedd278ad1e91abebe00837">IS_RCC_PLLN_VALUE</link> ((192 &lt;= (VALUE)) &amp;&amp; ((VALUE) &lt;= 432))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source_1gad808f83505f4e802e5bafab7831f0235">IS_RCC_PLLP_VALUE</link> (((VALUE) == 2) || ((VALUE) == 4) || ((VALUE) == 6) || ((VALUE) == 8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source_1gad66dbe75bf8ab2b64b200e796281a851">IS_RCC_PLLQ_VALUE</link> ((4 &lt;= (VALUE)) &amp;&amp; ((VALUE) &lt;= 15))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source_1gac30fb7f6fe9f22a7d6c5585909db5c3c">IS_RCC_PLLI2SN_VALUE</link> ((192 &lt;= (VALUE)) &amp;&amp; ((VALUE) &lt;= 432))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source_1gaa2fece4b24f6219b423e1b092b7705c8">IS_RCC_PLLI2SR_VALUE</link> ((2 &lt;= (VALUE)) &amp;&amp; ((VALUE) &lt;= 7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

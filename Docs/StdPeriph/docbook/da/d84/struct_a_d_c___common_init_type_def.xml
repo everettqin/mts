@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d84/struct_a_d_c___common_init_type_def">
+<title>ADC_CommonInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d0d/stm32f4xx__adc_8h">&lt;stm32f4xx_adc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t ADC_Mode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t ADC_Prescaler</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t ADC_DMAAccessMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t ADC_TwoSamplingDelay</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>ADC Common Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t ADC_Mode</title>                
+<para>Configures the ADC to operate in independent or multi mode. This parameter can be a value of <link linkend="d2/dd4/group___a_d_c___common__mode">ADC_Common_mode</link> </para>
+
+                <para>Definition at line 80 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t ADC_Prescaler</title>                
+<para>Select the frequency of the clock to the ADC. The clock is common for all the ADCs. This parameter can be a value of <link linkend="d9/d58/group___a_d_c___prescaler">ADC_Prescaler</link> </para>
+
+                <para>Definition at line 83 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t ADC_DMAAccessMode</title>                
+<para>Configures the Direct memory access mode for multi ADC mode. This parameter can be a value of <link linkend="d4/d95/group___a_d_c___direct__memory__access__mode__for__multi__mode">ADC_Direct_memory_access_mode_for_multi_mode</link> </para>
+
+                <para>Definition at line 86 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t ADC_TwoSamplingDelay</title>                
+<para>Configures the Delay between 2 sampling phases. This parameter can be a value of <link linkend="da/d30/group___a_d_c__delay__between__2__sampling__phases">ADC_delay_between_2_sampling_phases</link> </para>
+
+                <para>Definition at line 90 of file stm32f4xx_adc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_adc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

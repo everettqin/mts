@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/ddc/group___c_a_n__filter__scale">
+    <title>CAN_filter_scale</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/ddc/group___c_a_n__filter__scale_1ga9e0493937e73bcf9a4127eef2f255a95">CAN_FilterScale_16bit</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/ddc/group___c_a_n__filter__scale_1gac63dfb0e11713c59268ee9f4aebab60e">CAN_FilterScale_32bit</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/ddc/group___c_a_n__filter__scale_1gaf64c93166af0eb5ec7e804116f10783a">IS_CAN_FILTER_SCALE</link> (((SCALE) == <link linkend="db/ddc/group___c_a_n__filter__scale_1ga9e0493937e73bcf9a4127eef2f255a95">CAN_FilterScale_16bit</link>) || \
+                                    ((SCALE) == <link linkend="db/ddc/group___c_a_n__filter__scale_1gac63dfb0e11713c59268ee9f4aebab60e">CAN_FilterScale_32bit</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="db/ddc/group___c_a_n__filter__scale_1ga9e0493937e73bcf9a4127eef2f255a95">
+                <title>#define CAN_FilterScale_16bit</title>                
+<para>Two 16-bit filters </para>
+
+                <para>Definition at line 337 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/ddc/group___c_a_n__filter__scale_1gac63dfb0e11713c59268ee9f4aebab60e">
+                <title>#define CAN_FilterScale_32bit</title>                
+<para>One 32-bit filter </para>
+
+                <para>Definition at line 338 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

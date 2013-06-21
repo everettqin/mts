@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dfa/group___c_a_n__sleep__constants">
+    <title>CAN_sleep_constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dfa/group___c_a_n__sleep__constants_1ga169500ab7169c4e9c7e9e4ea34b3e070">CAN_Sleep_Failed</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dfa/group___c_a_n__sleep__constants_1gaf5c4e9d32d4faff9d0bf61e153ed7998">CAN_Sleep_Ok</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dfa/group___c_a_n__sleep__constants_1ga4d5e8e0c57febb024b30e5f24866a117">CANSLEEPFAILED</link> <link linkend="d4/dfa/group___c_a_n__sleep__constants_1ga169500ab7169c4e9c7e9e4ea34b3e070">CAN_Sleep_Failed</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dfa/group___c_a_n__sleep__constants_1ga2f8d34f8f60a6c84d8e436d4d37708ab">CANSLEEPOK</link> <link linkend="d4/dfa/group___c_a_n__sleep__constants_1gaf5c4e9d32d4faff9d0bf61e153ed7998">CAN_Sleep_Ok</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d4/dfa/group___c_a_n__sleep__constants_1ga169500ab7169c4e9c7e9e4ea34b3e070">
+                <title>#define CAN_Sleep_Failed</title>                
+<para>CAN did not enter the sleep mode </para>
+
+                <para>Definition at line 440 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/dfa/group___c_a_n__sleep__constants_1gaf5c4e9d32d4faff9d0bf61e153ed7998">
+                <title>#define CAN_Sleep_Ok</title>                
+<para>CAN entered the sleep mode </para>
+
+                <para>Definition at line 441 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

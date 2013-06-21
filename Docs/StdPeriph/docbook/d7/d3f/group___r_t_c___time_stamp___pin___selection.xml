@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d3f/group___r_t_c___time_stamp___pin___selection">
+    <title>RTC_TimeStamp_Pin_Selection</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3f/group___r_t_c___time_stamp___pin___selection_1gac71b083719de65957ef1577e047bdc74">RTC_TimeStampPin_PC13</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3f/group___r_t_c___time_stamp___pin___selection_1ga82b60e881b00b0106a2e75df19760ad0">RTC_TimeStampPin_PI8</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3f/group___r_t_c___time_stamp___pin___selection_1ga5558a9d932619b51a5a60fa4746dd852">IS_RTC_TIMESTAMP_PIN</link> (((PIN) == RTC_TimeStampPin_PC13) || \
+                                   ((PIN) == RTC_TimeStampPin_PI8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

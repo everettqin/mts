@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d5f/group___f_l_a_s_h___b_o_r___reset___level">
+    <title>FLASH_BOR_Reset_Level</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3132b8202c0a345e9dd33d136714b046">OB_BOR_LEVEL3</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gad678e849fcf817f6ed2d837538e8ebc2">OB_BOR_LEVEL2</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3a888b788e75f0bc1f9add85c9ccd9d6">OB_BOR_LEVEL1</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gaabc231cb1d05a94fe860f67bb5a37b12">OB_BOR_OFF</link> ((uint8_t)0x0C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga1fbf304e1564edd30259c5ea069afc93">IS_OB_BOR</link> (((LEVEL) == <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3a888b788e75f0bc1f9add85c9ccd9d6">OB_BOR_LEVEL1</link>) || ((LEVEL) == <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gad678e849fcf817f6ed2d837538e8ebc2">OB_BOR_LEVEL2</link>) ||\
+                          ((LEVEL) == <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3132b8202c0a345e9dd33d136714b046">OB_BOR_LEVEL3</link>) || ((LEVEL) == <link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gaabc231cb1d05a94fe860f67bb5a37b12">OB_BOR_OFF</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3132b8202c0a345e9dd33d136714b046">
+                <title>#define OB_BOR_LEVEL3</title>                
+<para>Supply voltage ranges from 2.70 to 3.60 V </para>
+
+                <para>Definition at line 201 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gad678e849fcf817f6ed2d837538e8ebc2">
+                <title>#define OB_BOR_LEVEL2</title>                
+<para>Supply voltage ranges from 2.40 to 2.70 V </para>
+
+                <para>Definition at line 202 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1ga3a888b788e75f0bc1f9add85c9ccd9d6">
+                <title>#define OB_BOR_LEVEL1</title>                
+<para>Supply voltage ranges from 2.10 to 2.40 V </para>
+
+                <para>Definition at line 203 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d5f/group___f_l_a_s_h___b_o_r___reset___level_1gaabc231cb1d05a94fe860f67bb5a37b12">
+                <title>#define OB_BOR_OFF</title>                
+<para>Supply voltage ranges from 1.62 to 2.10 V </para>
+
+                <para>Definition at line 204 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

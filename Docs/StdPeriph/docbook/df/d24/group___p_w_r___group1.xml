@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d24/group___p_w_r___group1">
+    <title>Backup Domain Access function</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Backup Domain Access function. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                            Backup Domain Access function 
+ ===============================================================================  
+
+  After reset, the backup domain (RTC registers, RTC backup data 
+  registers and backup SRAM) is protected against possible unwanted 
+  write accesses. 
+  To enable access to the RTC Domain and RTC registers, proceed as follows:
+    - Enable the Power Controller (PWR) APB1 interface clock using the
+      RCC_APB1PeriphClockCmd() function.
+    - Enable access to RTC domain using the PWR_BackupAccessCmd() function.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d24/group___p_w_r___group1_1gad03a0aac7bc3bc3a9fd012f3769a6990">PWR_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d24/group___p_w_r___group1_1ga0741aea35572b1a75f82b74de12df800">PWR_BackupAccessCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="df/d24/group___p_w_r___group1_1gad03a0aac7bc3bc3a9fd012f3769a6990">
+                <title>void PWR_DeInit (void)</title> <emphasis>Deinitializes the PWR peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/d24/group___p_w_r___group1_1ga0741aea35572b1a75f82b74de12df800">
+                <title>void PWR_BackupAccessCmd (FunctionalState NewState)</title> <emphasis>Enables or disables access to the backup domain (RTC registers, RTC 
+        backup data registers and backup SRAM).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>If the HSE divided by 2, 3, ..31 is used as the RTC clock, the Backup Domain Access should be kept enabled. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the access to the backup domain. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

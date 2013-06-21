@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d9b/group___r_t_c___group12">
+    <title>Shift control synchronisation functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Shift control synchronisation functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                   Shift control synchronisation functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="da/d9b/group___r_t_c___group12_1gaad434ed2a268f05662f0613e8e9717f3">RTC_SynchroShiftConfig</link> (
+uint32_t RTC_ShiftAdd1S, uint32_t RTC_ShiftSubFS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="da/d9b/group___r_t_c___group12_1gaad434ed2a268f05662f0613e8e9717f3">
+                <title>ErrorStatus RTC_SynchroShiftConfig (uint32_t RTC_ShiftAdd1S, uint32_t RTC_ShiftSubFS)</title> <emphasis>Configures the Synchronization Shift Control Settings.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>When REFCKON is set, firmware must not write to Shift control register </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_ShiftAdd1S</entry>
+                                <entry>
+<para>: Select to add or not 1 second to the time Calendar. This parameter can be one of the following values : <itemizedlist>
+<listitem>
+<para>RTC_ShiftAdd1S_Set : Add one second to the clock calendar. </para>
+</listitem>
+<listitem>
+<para>RTC_ShiftAdd1S_Reset: No effect. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_ShiftSubFS, :</entry>
+                                <entry>
+<para>Select the number of Second Fractions to Substitute. This parameter can be one any value from 0 to 0x7FFF. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC Shift registers are configured</para>
+</listitem><listitem>
+<para>ERROR: RTC Shift registers are not configured </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

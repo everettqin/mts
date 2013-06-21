@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dd6/group___s_p_i___i2_s__interrupts__definition">
+    <title>SPI_I2S_interrupts_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga0f192977fdb12c40d35672b8ae074724">SPI_I2S_IT_TXE</link> ((uint8_t)0x71)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1gae46dd53cd2e4ad8b8a7836d3dcec57ea">SPI_I2S_IT_RXNE</link> ((uint8_t)0x60)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga1d9d4916bf7ae315f23a54ecfbcd9157">SPI_I2S_IT_ERR</link> ((uint8_t)0x50)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga54aba7dc06f97fb4839de5f42bd5a47d">I2S_IT_UDR</link> ((uint8_t)0x53)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1gab147fb8ba6913106e06ac80dcf4005a4">SPI_I2S_IT_TIFRFE</link> ((uint8_t)0x58)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga3ec2f6950d7ff801f992e65593c3365e">IS_SPI_I2S_CONFIG_IT</link> (((IT) == SPI_I2S_IT_TXE) || \
+                                  ((IT) == SPI_I2S_IT_RXNE) || \
+                                  ((IT) == SPI_I2S_IT_ERR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga279c30176e8ff7e2ec299774a2e88f45">SPI_I2S_IT_OVR</link> ((uint8_t)0x56)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga0b9780d5f31fd80f4d0fa7d6860041e9">SPI_IT_MODF</link> ((uint8_t)0x55)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1ga9aa97a5ce8d3500dc14ca4e30eada199">SPI_IT_CRCERR</link> ((uint8_t)0x54)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1gabeb917a0a708af0439f753a5f4af4c5e">IS_SPI_I2S_CLEAR_IT</link> (((IT) == SPI_IT_CRCERR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition_1gacb2949c066a74f1c4ef8c6a0d4e14a0c">IS_SPI_I2S_GET_IT</link> (((IT) == SPI_I2S_IT_RXNE)|| ((IT) == SPI_I2S_IT_TXE) || \
+                               ((IT) == SPI_IT_CRCERR)  || ((IT) == SPI_IT_MODF) || \
+                               ((IT) == SPI_I2S_IT_OVR) || ((IT) == I2S_IT_UDR) ||\
+                               ((IT) == SPI_I2S_IT_TIFRFE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

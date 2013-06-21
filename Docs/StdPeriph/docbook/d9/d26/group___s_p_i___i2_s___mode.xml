@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d26/group___s_p_i___i2_s___mode">
+    <title>SPI_I2S_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1gadd5b20277198fcdb6aa53ea48e802ae5">I2S_Mode_SlaveTx</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1gaaf62ee0353476afc9612dc2933e1c5c5">I2S_Mode_SlaveRx</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1ga3a62ee8964033a3f6fd030da9e40fba6">I2S_Mode_MasterTx</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1gabf9f872cda7c0f159c5fc18aed44e973">I2S_Mode_MasterRx</link> ((uint16_t)0x0300)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d26/group___s_p_i___i2_s___mode_1ga942c37b2c1274c4c5773ddcf8b46d9b5">IS_I2S_MODE</link> (((MODE) == I2S_Mode_SlaveTx) || \
+                           ((MODE) == I2S_Mode_SlaveRx) || \
+                           ((MODE) == I2S_Mode_MasterTx)|| \
+                           ((MODE) == I2S_Mode_MasterRx))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

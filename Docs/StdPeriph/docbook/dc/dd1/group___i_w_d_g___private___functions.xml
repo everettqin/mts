@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dd1/group___i_w_d_g___private___functions">
+    <title>IWDG_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="da/d52/group___i_w_d_g___group1">Prescaler and Counter configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d8/d9b/group___i_w_d_g___group2">IWDG activation function</link></para></listitem>
+            <listitem><para><link linkend="d1/da7/group___i_w_d_g___group3">Flag management function</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="da/d52/group___i_w_d_g___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d9b/group___i_w_d_g___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/da7/group___i_w_d_g___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/dee/group___r_t_c___alarm_date_week_day___definitions">
+    <title>RTC_AlarmDateWeekDay_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dee/group___r_t_c___alarm_date_week_day___definitions_1ga45ef2c9d40689e0f89bea8c92b6c9a60">RTC_AlarmDateWeekDaySel_Date</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dee/group___r_t_c___alarm_date_week_day___definitions_1ga1e4d253a3bc6210e6b6af62a1d0fc4d8">RTC_AlarmDateWeekDaySel_WeekDay</link> ((uint32_t)0x40000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dee/group___r_t_c___alarm_date_week_day___definitions_1gac5d3e2182217ad6c5a75eba5c88cb335">IS_RTC_ALARM_DATE_WEEKDAY_SEL</link> (((SEL) == RTC_AlarmDateWeekDaySel_Date) || \
+                                            ((SEL) == RTC_AlarmDateWeekDaySel_WeekDay))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

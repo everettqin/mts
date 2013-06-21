@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d02/group___s_y_s_c_f_g___private___functions">
+    <title>SYSCFG_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1gaf2f9faa2df9a59a68ae17fae23bc478e">SYSCFG_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1ga09a5712f6c66ba5f0e0eeba30bc1e20d">SYSCFG_MemoryRemapConfig</link> (
+uint8_t SYSCFG_MemoryRemap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1gafedab1f64cef720aeafeafd409ba6ae7">SYSCFG_EXTILineConfig</link> (
+uint8_t EXTI_PortSourceGPIOx, uint8_t EXTI_PinSourcex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1gabec494266ebbbde0279ad1d16c3065d0">SYSCFG_ETH_MediaInterfaceConfig</link> (
+uint32_t SYSCFG_ETH_MediaInterface)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1ga85e423de2ee76b615120bde37881bb93">SYSCFG_CompensationCellCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="da/d02/group___s_y_s_c_f_g___private___functions_1ga2541640bdf35f63e4bb55f7dc8be9d16">SYSCFG_GetCompensationCellStatus</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="da/d02/group___s_y_s_c_f_g___private___functions_1gaf2f9faa2df9a59a68ae17fae23bc478e">
+                <title>void SYSCFG_DeInit (void)</title> <emphasis>Deinitializes the Alternate Functions (remap and EXTI configuration)
+  registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d02/group___s_y_s_c_f_g___private___functions_1ga09a5712f6c66ba5f0e0eeba30bc1e20d">
+                <title>void SYSCFG_MemoryRemapConfig (uint8_t SYSCFG_MemoryRemap)</title> <emphasis>Changes the mapping of the specified pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SYSCFG_Memory, :</entry>
+                                <entry>
+<para>selects the memory remapping. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SYSCFG_MemoryRemap_Flash: Main Flash memory mapped at 0x00000000 </para>
+</listitem>
+<listitem>
+<para>SYSCFG_MemoryRemap_SystemFlash: System Flash memory mapped at 0x00000000 </para>
+</listitem>
+<listitem>
+<para>SYSCFG_MemoryRemap_FSMC: FSMC (Bank1 (NOR/PSRAM 1 and 2) mapped at 0x00000000 </para>
+</listitem>
+<listitem>
+<para>SYSCFG_MemoryRemap_SRAM: Embedded SRAM (112kB) mapped at 0x00000000 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d02/group___s_y_s_c_f_g___private___functions_1gafedab1f64cef720aeafeafd409ba6ae7">
+                <title>void SYSCFG_EXTILineConfig (uint8_t EXTI_PortSourceGPIOx, uint8_t EXTI_PinSourcex)</title> <emphasis>Selects the GPIO pin used as EXTI Line.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>EXTI_PortSourceGPIOx</entry>
+                                <entry>
+<para>: selects the GPIO port to be used as source for EXTI lines where x can be (A..I). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>EXTI_PinSourcex, :</entry>
+                                <entry>
+<para>specifies the EXTI line to be configured. This parameter can be EXTI_PinSourcex where x can be (0..15, except for EXTI_PortSourceGPIOI x can be (0..11). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d02/group___s_y_s_c_f_g___private___functions_1gabec494266ebbbde0279ad1d16c3065d0">
+                <title>void SYSCFG_ETH_MediaInterfaceConfig (uint32_t SYSCFG_ETH_MediaInterface)</title> <emphasis>Selects the ETHERNET media interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SYSCFG_ETH_MediaInterface, :</entry>
+                                <entry>
+<para>specifies the Media Interface mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SYSCFG_ETH_MediaInterface_MII: MII mode selected </para>
+</listitem>
+<listitem>
+<para>SYSCFG_ETH_MediaInterface_RMII: RMII mode selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d02/group___s_y_s_c_f_g___private___functions_1ga85e423de2ee76b615120bde37881bb93">
+                <title>void SYSCFG_CompensationCellCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the I/O Compensation Cell.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The I/O compensation cell can be used only when the device supply voltage ranges from 2.4 to 3.6 V. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I/O Compensation Cell. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ENABLE: I/O compensation cell enabled </para>
+</listitem>
+<listitem>
+<para>DISABLE: I/O compensation cell power-down mode </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d02/group___s_y_s_c_f_g___private___functions_1ga2541640bdf35f63e4bb55f7dc8be9d16">
+                <title>FlagStatus SYSCFG_GetCompensationCellStatus (void)</title> <emphasis>Checks whether the I/O Compensation Cell ready flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of the I/O Compensation Cell ready flag (SET or RESET) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

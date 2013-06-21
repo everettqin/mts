@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/de3/group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state">
+    <title>TIM_OSSR_Off_State_Selection_for_Run_mode_state</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/de3/group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state_1ga3703ba6189db045bec48c864289f997e">TIM_OSSRState_Enable</link> ((uint16_t)0x0800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/de3/group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state_1ga766dfd8b3c32ec1b8b446f0e2dbe7b97">TIM_OSSRState_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/de3/group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state_1ga48b4f15f6346e28087edbb9af2ba4f63">IS_TIM_OSSR_STATE</link> (((STATE) == TIM_OSSRState_Enable) || \
+                                  ((STATE) == TIM_OSSRState_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

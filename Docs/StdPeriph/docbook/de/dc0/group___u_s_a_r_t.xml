@@ -1,0 +1,1842 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dc0/group___u_s_a_r_t">
+    <title>USART</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>USART driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="dc/db2/group___u_s_a_r_t___exported___constants">USART_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="d1/daf/group___u_s_a_r_t___private___functions">USART_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga2f8e1ce72da21b6539d8e1f299ec3b0d">USART_DeInit</link> (
+USART_TypeDef * USARTx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga98da340ea0324002ba1b4263e91ab2ff">USART_Init</link> (
+USART_TypeDef * USARTx, <link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> * USART_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga34e1faa2f312496c16cfd05155f4c8b1">USART_StructInit</link> (
+<link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> * USART_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1gadb50c7a2175c91acd3728f8eefd0c63d">USART_ClockInit</link> (
+USART_TypeDef * USARTx, <link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> * USART_ClockInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga59df27d0adda18b16ee28d47672cc724">USART_ClockStructInit</link> (
+<link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> * USART_ClockInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga45e51626739c5f22a6567c8a85d1d85e">USART_Cmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1gaf5da8f2eee8245425584d85d4f62cc33">USART_SetPrescaler</link> (
+USART_TypeDef * USARTx, uint8_t USART_Prescaler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga3897bab07491d9239f8a238a9a7cddea">USART_OverSampling8Cmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga3ed89ea8765d851510cfe90f7d90cbbb">USART_OneBitMethodCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga0b43d42da9540f446d494bf69823c6fb">USART_SendData</link> (
+USART_TypeDef * USARTx, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="de/dc0/group___u_s_a_r_t_1gac67a91845b0b1d54d31bdfb1c5e9867c">USART_ReceiveData</link> (
+USART_TypeDef * USARTx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga65ec9928817f3f031dd9a4dfc95d6666">USART_SetAddress</link> (
+USART_TypeDef * USARTx, uint8_t USART_Address)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga4965417c2412c36e462fcad50a8d5393">USART_WakeUpConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_WakeUp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1gac27b78ce445a16fe33851d2f87781c02">USART_ReceiverWakeUpCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga7bc2d291831cbc5e53e73337308029b5">USART_LINBreakDetectLengthConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_LINBreakDetectLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga9fdd6296f4ca4acdfcbd58bf56bd4185">USART_LINCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga39a3d33e23ee28529fa8f7259ce6811e">USART_SendBreak</link> (
+USART_TypeDef * USARTx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1gaaa23b05fe0e1896bad90da7f82750831">USART_HalfDuplexCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1gabd1347e244c623447151ba3a5e986c5f">USART_SmartCardCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga62e22f47e38aa53f2edce8771f7a5dfa">USART_SmartCardNACKCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1gac4a35c6acd71ae7e0d67c1f03f0a8777">USART_SetGuardTime</link> (
+USART_TypeDef * USARTx, uint8_t USART_GuardTime)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga81a0cd36199040bf6d266b57babd678e">USART_IrDAConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_IrDAMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1gabff56ebb494fdfadcc6ef4fe9ac8dd24">USART_IrDACmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga902857f199ebfba21c63d725354af66f">USART_DMACmd</link> (
+USART_TypeDef * USARTx, uint16_t USART_DMAReq, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga6d8f2dd1f34060ae7e386e3e5d56b6f6">USART_ITConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="de/dc0/group___u_s_a_r_t_1ga144630722defc9e312f0ad280b68e9da">USART_GetFlagStatus</link> (
+USART_TypeDef * USARTx, uint16_t USART_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1gad962e148fc466ae1b45b288f6c91d966">USART_ClearFlag</link> (
+USART_TypeDef * USARTx, uint16_t USART_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="de/dc0/group___u_s_a_r_t_1ga93d8f031241bcdbe938d091a85295445">USART_GetITStatus</link> (
+USART_TypeDef * USARTx, uint16_t USART_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc0/group___u_s_a_r_t_1ga1fc25d0338695063be5e50156955d9bc">USART_ClearITPendingBit</link> (
+USART_TypeDef * USARTx, uint16_t USART_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc0/group___u_s_a_r_t_1ga8d425258898b4af4ebc820f52635fad8">CR1_CLEAR_MASK</link> ((uint16_t)(USART_CR1_M | USART_CR1_PCE | \
+                                              USART_CR1_PS | USART_CR1_TE | \
+                                              USART_CR1_RE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc0/group___u_s_a_r_t_1ga7834b3d9be4875de242f87c12fd79f02">CR2_CLOCK_CLEAR_MASK</link> ((uint16_t)(USART_CR2_CLKEN | USART_CR2_CPOL | \
+                                              USART_CR2_CPHA | USART_CR2_LBCL))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc0/group___u_s_a_r_t_1ga5c882571db73abc5d1837368a1cb0a64">CR3_CLEAR_MASK</link> ((uint16_t)(USART_CR3_RTSE | USART_CR3_CTSE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc0/group___u_s_a_r_t_1gacde7fc0e46b3a5fc7e2002b2915884d5">IT_MASK</link> ((uint16_t)0x001F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga2f8e1ce72da21b6539d8e1f299ec3b0d">
+                <title>void USART_DeInit (USART_TypeDef *USARTx)</title> <emphasis>Deinitializes the USARTx peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga98da340ea0324002ba1b4263e91ab2ff">
+                <title>void USART_Init (USART_TypeDef *USARTx, USART_InitTypeDef *USART_InitStruct)</title> <emphasis>Initializes the USARTx peripheral according to the specified
+        parameters in the USART_InitStruct .</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> structure that contains the configuration information for the specified USART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga34e1faa2f312496c16cfd05155f4c8b1">
+                <title>void USART_StructInit (USART_InitTypeDef *USART_InitStruct)</title> <emphasis>Fills each USART_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USART_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1gadb50c7a2175c91acd3728f8eefd0c63d">
+                <title>void USART_ClockInit (USART_TypeDef *USARTx, USART_ClockInitTypeDef *USART_ClockInitStruct)</title> <emphasis>Initializes the USARTx peripheral Clock according to the 
+        specified parameters in the USART_ClockInitStruct .</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3 or 6 to select the USART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_ClockInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> structure that contains the configuration information for the specified USART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The Smart Card and Synchronous modes are not available for UART4 and UART5. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga59df27d0adda18b16ee28d47672cc724">
+                <title>void USART_ClockStructInit (USART_ClockInitTypeDef *USART_ClockInitStruct)</title> <emphasis>Fills each USART_ClockInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USART_ClockInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga45e51626739c5f22a6567c8a85d1d85e">
+                <title>void USART_Cmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified USART peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USARTx peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1gaf5da8f2eee8245425584d85d4f62cc33">
+                <title>void USART_SetPrescaler (USART_TypeDef *USARTx, uint8_t USART_Prescaler)</title> <emphasis>Sets the system clock prescaler.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_Prescaler, :</entry>
+                                <entry>
+<para>specifies the prescaler clock. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The function is used for IrDA mode with UART4 and UART5. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga3897bab07491d9239f8a238a9a7cddea">
+                <title>void USART_OverSampling8Cmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s 8x oversampling mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function has to be called before calling <link linkend="de/dc0/group___u_s_a_r_t_1ga98da340ea0324002ba1b4263e91ab2ff">USART_Init()</link> function in order to have correct baudrate Divider value. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART 8x oversampling mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga3ed89ea8765d851510cfe90f7d90cbbb">
+                <title>void USART_OneBitMethodCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s one bit sampling method.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART one bit sampling method. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga0b43d42da9540f446d494bf69823c6fb">
+                <title>void USART_SendData (USART_TypeDef *USARTx, uint16_t Data)</title> <emphasis>Transmits single data through the USARTx peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>the data to transmit. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1gac67a91845b0b1d54d31bdfb1c5e9867c">
+                <title>uint16_t USART_ReceiveData (USART_TypeDef *USARTx)</title> <emphasis>Returns the most recent received data by the USARTx peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>received data. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga65ec9928817f3f031dd9a4dfc95d6666">
+                <title>void USART_SetAddress (USART_TypeDef *USARTx, uint8_t USART_Address)</title> <emphasis>Sets the address of the USART node.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_Address, :</entry>
+                                <entry>
+<para>Indicates the address of the USART node. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga4965417c2412c36e462fcad50a8d5393">
+                <title>void USART_WakeUpConfig (USART_TypeDef *USARTx, uint16_t USART_WakeUp)</title> <emphasis>Selects the USART WakeUp method.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_WakeUp, :</entry>
+                                <entry>
+<para>specifies the USART wakeup method. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>USART_WakeUp_IdleLine: WakeUp by an idle line detection </para>
+</listitem>
+<listitem>
+<para>USART_WakeUp_AddressMark: WakeUp by an address mark </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1gac27b78ce445a16fe33851d2f87781c02">
+                <title>void USART_ReceiverWakeUpCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Determines if the USART is in mute mode or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART mute mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga7bc2d291831cbc5e53e73337308029b5">
+                <title>void USART_LINBreakDetectLengthConfig (USART_TypeDef *USARTx, uint16_t USART_LINBreakDetectLength)</title> <emphasis>Sets the USART LIN Break detection length.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_LINBreakDetectLength, :</entry>
+                                <entry>
+<para>specifies the LIN break detection length. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>USART_LINBreakDetectLength_10b: 10-bit break detection </para>
+</listitem>
+<listitem>
+<para>USART_LINBreakDetectLength_11b: 11-bit break detection </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga9fdd6296f4ca4acdfcbd58bf56bd4185">
+                <title>void USART_LINCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s LIN mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART LIN mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga39a3d33e23ee28529fa8f7259ce6811e">
+                <title>void USART_SendBreak (USART_TypeDef *USARTx)</title> <emphasis>Transmits break characters.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1gaaa23b05fe0e1896bad90da7f82750831">
+                <title>void USART_HalfDuplexCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s Half Duplex communication.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART Communication. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1gabd1347e244c623447151ba3a5e986c5f">
+                <title>void USART_SmartCardCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s Smart Card mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Smart Card mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga62e22f47e38aa53f2edce8771f7a5dfa">
+                <title>void USART_SmartCardNACKCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables NACK transmission.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the NACK transmission. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1gac4a35c6acd71ae7e0d67c1f03f0a8777">
+                <title>void USART_SetGuardTime (USART_TypeDef *USARTx, uint8_t USART_GuardTime)</title> <emphasis>Sets the specified USART guard time.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_GuardTime, :</entry>
+                                <entry>
+<para>specifies the guard time. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga81a0cd36199040bf6d266b57babd678e">
+                <title>void USART_IrDAConfig (USART_TypeDef *USARTx, uint16_t USART_IrDAMode)</title> <emphasis>Configures the USART&apos;s IrDA interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_IrDAMode, :</entry>
+                                <entry>
+<para>specifies the IrDA mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>USART_IrDAMode_LowPower </para>
+</listitem>
+<listitem>
+<para>USART_IrDAMode_Normal </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1gabff56ebb494fdfadcc6ef4fe9ac8dd24">
+                <title>void USART_IrDACmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s IrDA interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the IrDA mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga902857f199ebfba21c63d725354af66f">
+                <title>void USART_DMACmd (USART_TypeDef *USARTx, uint16_t USART_DMAReq, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s DMA interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_DMAReq, :</entry>
+                                <entry>
+<para>specifies the DMA request. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>USART_DMAReq_Tx: USART DMA transmit request </para>
+</listitem>
+<listitem>
+<para>USART_DMAReq_Rx: USART DMA receive request </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DMA Request sources. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga6d8f2dd1f34060ae7e386e3e5d56b6f6">
+                <title>void USART_ITConfig (USART_TypeDef *USARTx, uint16_t USART_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified USART interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_IT, :</entry>
+                                <entry>
+<para>specifies the USART interrupt sources to be enabled or disabled. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>USART_IT_CTS: CTS change interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_LBD: LIN Break detection interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_TXE: Transmit Data Register empty interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_TC: Transmission complete interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_RXNE: Receive Data register not empty interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_IDLE: Idle line detection interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_PE: Parity Error interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_ERR: Error interrupt(Frame error, noise error, overrun error) </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified USARTx interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga144630722defc9e312f0ad280b68e9da">
+                <title>FlagStatus USART_GetFlagStatus (USART_TypeDef *USARTx, uint16_t USART_FLAG)</title> <emphasis>Checks whether the specified USART flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>USART_FLAG_CTS: CTS Change flag (not available for UART4 and UART5) </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_LBD: LIN Break detection flag </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_TXE: Transmit data register empty flag </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_TC: Transmission Complete flag </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_RXNE: Receive data register not empty flag </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_IDLE: Idle Line detection flag </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_ORE: OverRun Error flag </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_NE: Noise Error flag </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_FE: Framing Error flag </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_PE: Parity Error flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of USART_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1gad962e148fc466ae1b45b288f6c91d966">
+                <title>void USART_ClearFlag (USART_TypeDef *USARTx, uint16_t USART_FLAG)</title> <emphasis>Clears the USARTx&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>USART_FLAG_CTS: CTS Change flag (not available for UART4 and UART5). </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_LBD: LIN Break detection flag. </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_TC: Transmission Complete flag. </para>
+</listitem>
+<listitem>
+<para>USART_FLAG_RXNE: Receive data register not empty flag.</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>PE (Parity error), FE (Framing error), NE (Noise error), ORE (OverRun error) and IDLE (Idle line detected) flags are cleared by software sequence: a read operation to USART_SR register (<link linkend="de/dc0/group___u_s_a_r_t_1ga144630722defc9e312f0ad280b68e9da">USART_GetFlagStatus()</link>) followed by a read operation to USART_DR register (<link linkend="de/dc0/group___u_s_a_r_t_1gac67a91845b0b1d54d31bdfb1c5e9867c">USART_ReceiveData()</link>). </para>
+<simplesect/>
+<para>RXNE flag can be also cleared by a read to the USART_DR register (<link linkend="de/dc0/group___u_s_a_r_t_1gac67a91845b0b1d54d31bdfb1c5e9867c">USART_ReceiveData()</link>). </para>
+<simplesect/>
+<para>TC flag can be also cleared by software sequence: a read operation to USART_SR register (<link linkend="de/dc0/group___u_s_a_r_t_1ga144630722defc9e312f0ad280b68e9da">USART_GetFlagStatus()</link>) followed by a write operation to USART_DR register (<link linkend="de/dc0/group___u_s_a_r_t_1ga0b43d42da9540f446d494bf69823c6fb">USART_SendData()</link>). </para>
+<simplesect/>
+<para>TXE flag is cleared only by a write to the USART_DR register (<link linkend="de/dc0/group___u_s_a_r_t_1ga0b43d42da9540f446d494bf69823c6fb">USART_SendData()</link>).</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga93d8f031241bcdbe938d091a85295445">
+                <title>ITStatus USART_GetITStatus (USART_TypeDef *USARTx, uint16_t USART_IT)</title> <emphasis>Checks whether the specified USART interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_IT, :</entry>
+                                <entry>
+<para>specifies the USART interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>USART_IT_CTS: CTS change interrupt (not available for UART4 and UART5) </para>
+</listitem>
+<listitem>
+<para>USART_IT_LBD: LIN Break detection interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_TXE: Transmit Data Register empty interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_TC: Transmission complete interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_RXNE: Receive Data register not empty interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_IDLE: Idle line detection interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_ORE_RX : OverRun Error interrupt if the RXNEIE bit is set </para>
+</listitem>
+<listitem>
+<para>USART_IT_ORE_ER : OverRun Error interrupt if the EIE bit is set </para>
+</listitem>
+<listitem>
+<para>USART_IT_NE: Noise Error interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_FE: Framing Error interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_PE: Parity Error interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of USART_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga1fc25d0338695063be5e50156955d9bc">
+                <title>void USART_ClearITPendingBit (USART_TypeDef *USARTx, uint16_t USART_IT)</title> <emphasis>Clears the USARTx&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_IT, :</entry>
+                                <entry>
+<para>specifies the interrupt pending bit to clear. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>USART_IT_CTS: CTS change interrupt (not available for UART4 and UART5) </para>
+</listitem>
+<listitem>
+<para>USART_IT_LBD: LIN Break detection interrupt </para>
+</listitem>
+<listitem>
+<para>USART_IT_TC: Transmission complete interrupt. </para>
+</listitem>
+<listitem>
+<para>USART_IT_RXNE: Receive Data register not empty interrupt.</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>PE (Parity error), FE (Framing error), NE (Noise error), ORE (OverRun error) and IDLE (Idle line detected) pending bits are cleared by software sequence: a read operation to USART_SR register (<link linkend="de/dc0/group___u_s_a_r_t_1ga93d8f031241bcdbe938d091a85295445">USART_GetITStatus()</link>) followed by a read operation to USART_DR register (<link linkend="de/dc0/group___u_s_a_r_t_1gac67a91845b0b1d54d31bdfb1c5e9867c">USART_ReceiveData()</link>). </para>
+<simplesect/>
+<para>RXNE pending bit can be also cleared by a read to the USART_DR register (<link linkend="de/dc0/group___u_s_a_r_t_1gac67a91845b0b1d54d31bdfb1c5e9867c">USART_ReceiveData()</link>). </para>
+<simplesect/>
+<para>TC pending bit can be also cleared by software sequence: a read operation to USART_SR register (<link linkend="de/dc0/group___u_s_a_r_t_1ga93d8f031241bcdbe938d091a85295445">USART_GetITStatus()</link>) followed by a write operation to USART_DR register (<link linkend="de/dc0/group___u_s_a_r_t_1ga0b43d42da9540f446d494bf69823c6fb">USART_SendData()</link>). </para>
+<simplesect/>
+<para>TXE pending bit is cleared only by a write to the USART_DR register (<link linkend="de/dc0/group___u_s_a_r_t_1ga0b43d42da9540f446d494bf69823c6fb">USART_SendData()</link>).</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga8d425258898b4af4ebc820f52635fad8">
+                <title>#define CR1_CLEAR_MASK</title>                
+<para>&lt; USART CR1 register clear Mask ((~(uint16_t)0xE9F3)) USART CR2 register clock bits clear Mask ((~(uint16_t)0xF0FF)) </para>
+
+                <para>Definition at line 101 of file stm32f4xx_usart.c</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.c</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga7834b3d9be4875de242f87c12fd79f02">
+                <title>#define CR2_CLOCK_CLEAR_MASK</title>                
+<para>USART CR3 register clear Mask ((~(uint16_t)0xFCFF)) </para>
+
+                <para>Definition at line 106 of file stm32f4xx_usart.c</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.c</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/dc0/group___u_s_a_r_t_1ga5c882571db73abc5d1837368a1cb0a64">
+                <title>#define CR3_CLEAR_MASK</title>                
+<para>USART Interrupts mask </para>
+
+                <para>Definition at line 110 of file stm32f4xx_usart.c</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.c</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+<xi:include href="dc/db2/group___u_s_a_r_t___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/daf/group___u_s_a_r_t___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

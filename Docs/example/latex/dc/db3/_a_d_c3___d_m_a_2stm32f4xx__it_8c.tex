@@ -1,0 +1,48 @@
+\hypertarget{_a_d_c3___d_m_a_2stm32f4xx__it_8c}{\section{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.1.0/\-Project/\-Peripheral\-\_\-\-Examples/\-A\-D\-C3\-\_\-\-D\-M\-A/stm32f4xx\-\_\-it.c File Reference}
+\label{_a_d_c3___d_m_a_2stm32f4xx__it_8c}\index{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Project/\-Peripheral\-\_\-\-Examples/\-A\-D\-C3\-\_\-\-D\-M\-A/stm32f4xx\-\_\-it.\-c@{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Project/\-Peripheral\-\_\-\-Examples/\-A\-D\-C3\-\_\-\-D\-M\-A/stm32f4xx\-\_\-it.\-c}}
+}
+
+
+Main Interrupt Service Routines. This file provides template for all exceptions handler and peripherals interrupt service routine.  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx\-\_\-it.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___a_d_c___a_d_c3___d_m_a_ga6ad7a5e3ee69cb6db6a6b9111ba898bc}{N\-M\-I\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles N\-M\-I exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___a_d_c3___d_m_a_ga2bffc10d5bd4106753b7c30e86903bea}{Hard\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Hard Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___a_d_c3___d_m_a_ga3150f74512510287a942624aa9b44cc5}{Mem\-Manage\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Memory Manage exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___a_d_c3___d_m_a_ga850cefb17a977292ae5eb4cafa9976c3}{Bus\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Bus Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___a_d_c3___d_m_a_ga1d98923de2ed6b7309b66f9ba2971647}{Usage\-Fault\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Usage Fault exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___a_d_c3___d_m_a_ga3e5ddb3df0d62f2dc357e64a3f04a6ce}{S\-V\-C\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles S\-V\-Call exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___a_d_c3___d_m_a_gadbdfb05858cc36fc520974df37ec3cb0}{Debug\-Mon\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Debug Monitor exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___a_d_c3___d_m_a_ga6303e1f258cbdc1f970ce579cc015623}{Pend\-S\-V\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Pend\-S\-V\-C exception. \end{DoxyCompactList}\item 
+void \hyperlink{group___a_d_c___a_d_c3___d_m_a_gab5e09814056d617c521549e542639b7e}{Sys\-Tick\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Sys\-Tick Handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main Interrupt Service Routines. This file provides template for all exceptions handler and peripherals interrupt service routine. \begin{DoxyAuthor}{Author}
+M\-C\-D Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+19-\/\-September-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\-H\-E P\-R\-E\-S\-E\-N\-T F\-I\-R\-M\-W\-A\-R\-E W\-H\-I\-C\-H I\-S F\-O\-R G\-U\-I\-D\-A\-N\-C\-E O\-N\-L\-Y A\-I\-M\-S A\-T P\-R\-O\-V\-I\-D\-I\-N\-G C\-U\-S\-T\-O\-M\-E\-R\-S W\-I\-T\-H C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N R\-E\-G\-A\-R\-D\-I\-N\-G T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S I\-N O\-R\-D\-E\-R F\-O\-R T\-H\-E\-M T\-O S\-A\-V\-E T\-I\-M\-E. A\-S A R\-E\-S\-U\-L\-T, S\-T\-M\-I\-C\-R\-O\-E\-L\-E\-C\-T\-R\-O\-N\-I\-C\-S S\-H\-A\-L\-L N\-O\-T B\-E H\-E\-L\-D L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y D\-I\-R\-E\-C\-T, I\-N\-D\-I\-R\-E\-C\-T O\-R C\-O\-N\-S\-E\-Q\-U\-E\-N\-T\-I\-A\-L D\-A\-M\-A\-G\-E\-S W\-I\-T\-H R\-E\-S\-P\-E\-C\-T T\-O A\-N\-Y C\-L\-A\-I\-M\-S A\-R\-I\-S\-I\-N\-G F\-R\-O\-M T\-H\-E C\-O\-N\-T\-E\-N\-T O\-F S\-U\-C\-H F\-I\-R\-M\-W\-A\-R\-E A\-N\-D/\-O\-R T\-H\-E U\-S\-E M\-A\-D\-E B\-Y C\-U\-S\-T\-O\-M\-E\-R\-S O\-F T\-H\-E C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N C\-O\-N\-T\-A\-I\-N\-E\-D H\-E\-R\-E\-I\-N I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S.
+
+\subsubsection*{\begin{center}\copyright C\-O\-P\-Y\-R\-I\-G\-H\-T 2011 S\-T\-Microelectronics\end{center} }

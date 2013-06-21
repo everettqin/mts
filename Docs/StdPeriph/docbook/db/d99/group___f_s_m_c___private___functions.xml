@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d99/group___f_s_m_c___private___functions">
+    <title>FSMC_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d9/dad/group___f_s_m_c___group1">NOR/SRAM Controller functions</link></para></listitem>
+            <listitem><para><link linkend="d8/dd0/group___f_s_m_c___group2">NAND Controller functions</link></para></listitem>
+            <listitem><para><link linkend="dd/d1b/group___f_s_m_c___group3">PCCARD Controller functions</link></para></listitem>
+            <listitem><para><link linkend="da/d34/group___f_s_m_c___group4">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d9/dad/group___f_s_m_c___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/dd0/group___f_s_m_c___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d1b/group___f_s_m_c___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d34/group___f_s_m_c___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

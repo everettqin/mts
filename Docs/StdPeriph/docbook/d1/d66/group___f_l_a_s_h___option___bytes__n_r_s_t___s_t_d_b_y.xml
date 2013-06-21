@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y">
+    <title>FLASH_Option_Bytes_nRST_STDBY</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga9588443b20719498422aeb72b65de839">OB_STDBY_NoRST</link> ((uint8_t)0x80)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga69451a6f69247528f58735c9c83499ce">OB_STDBY_RST</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga8a05393df3a5e89551b4e2e1e8c5b884">IS_OB_STDBY_SOURCE</link> (((SOURCE) == <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga9588443b20719498422aeb72b65de839">OB_STDBY_NoRST</link>) || ((SOURCE) == <link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga69451a6f69247528f58735c9c83499ce">OB_STDBY_RST</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga9588443b20719498422aeb72b65de839">
+                <title>#define OB_STDBY_NoRST</title>                
+<para>No reset generated when entering in STANDBY </para>
+
+                <para>Definition at line 191 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y_1ga69451a6f69247528f58735c9c83499ce">
+                <title>#define OB_STDBY_RST</title>                
+<para>Reset generated when entering in STANDBY </para>
+
+                <para>Definition at line 192 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

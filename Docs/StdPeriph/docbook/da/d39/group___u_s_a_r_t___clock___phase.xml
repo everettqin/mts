@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d39/group___u_s_a_r_t___clock___phase">
+    <title>USART_Clock_Phase</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d39/group___u_s_a_r_t___clock___phase_1gab6c0fb052fb9bc418cf368c1a0e4643b">USART_CPHA_1Edge</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d39/group___u_s_a_r_t___clock___phase_1ga66344d0725f1300e9d0f8f1708111f25">USART_CPHA_2Edge</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d39/group___u_s_a_r_t___clock___phase_1ga66fa1a3a757025fcd8dd069a90689f88">IS_USART_CPHA</link> (((CPHA) == USART_CPHA_1Edge) || ((CPHA) == USART_CPHA_2Edge))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d38/group___f_s_m_c___write___burst">
+    <title>FSMC_Write_Burst</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d38/group___f_s_m_c___write___burst_1ga65a49ecd05b3a128e8908c6a625adae7">FSMC_WriteBurst_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d38/group___f_s_m_c___write___burst_1ga1b2b66a0eb42778c2cc9a05003cf7655">FSMC_WriteBurst_Enable</link> ((uint32_t)0x00080000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d38/group___f_s_m_c___write___burst_1gab7b03a33fab765827832abbf07d01a10">IS_FSMC_WRITE_BURST</link> (((BURST) == FSMC_WriteBurst_Disable) || \
+                                    ((BURST) == FSMC_WriteBurst_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

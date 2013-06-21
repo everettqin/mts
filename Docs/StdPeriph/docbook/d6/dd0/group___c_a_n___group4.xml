@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dd0/group___c_a_n___group4">
+    <title>CAN Operation modes functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CAN Operation modes functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      CAN Operation modes functions
+ ===============================================================================  
+  This section provides functions allowing to select the CAN Operation modes
+  - sleep mode
+  - normal mode 
+  - initialization mode</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="d6/dd0/group___c_a_n___group4_1gab2a3630e9e3024114eb117d14e514208">CAN_OperatingModeRequest</link> (
+CAN_TypeDef * CANx, uint8_t CAN_OperatingMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="d6/dd0/group___c_a_n___group4_1ga640215e38765759d7eceb8a039046667">CAN_Sleep</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="d6/dd0/group___c_a_n___group4_1ga78cdfbf1884b9e33c552bcbca15bed10">CAN_WakeUp</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d6/dd0/group___c_a_n___group4_1gab2a3630e9e3024114eb117d14e514208">
+                <title>uint8_t CAN_OperatingModeRequest (CAN_TypeDef *CANx, uint8_t CAN_OperatingMode)</title> <emphasis>Selects the CAN Operation mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_OperatingMode, :</entry>
+                                <entry>
+<para>CAN Operating Mode. This parameter can be one of CAN_OperatingMode_TypeDef enumeration. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>status</entry>
+                                <entry>
+<para>of the requested mode which can be<itemizedlist>
+<listitem>
+<para>CAN_ModeStatus_Failed: CAN failed entering the specific mode</para>
+</listitem><listitem>
+<para>CAN_ModeStatus_Success: CAN Succeed entering the specific mode </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dd0/group___c_a_n___group4_1ga640215e38765759d7eceb8a039046667">
+                <title>uint8_t CAN_Sleep (CAN_TypeDef *CANx)</title> <emphasis>Enters the Sleep (low power) mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_Sleep_Ok</entry>
+                                <entry>
+<para>if sleep entered, CAN_Sleep_Failed otherwise. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dd0/group___c_a_n___group4_1ga78cdfbf1884b9e33c552bcbca15bed10">
+                <title>uint8_t CAN_WakeUp (CAN_TypeDef *CANx)</title> <emphasis>Wakes up the CAN peripheral from sleep mode .</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_WakeUp_Ok</entry>
+                                <entry>
+<para>if sleep mode left, CAN_WakeUp_Failed otherwise. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

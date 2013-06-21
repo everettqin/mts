@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants">
+    <title>CAN_receive_FIFO_number_constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants_1ga8f52eeefb86b2af5b7c3b4b75fa4d114">CAN_FIFO0</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants_1gafbcf3f13dbf61030ab7a812595ba9850">CAN_FIFO1</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants_1gaeeb94bf58bd48b8928f964eaaa20a24a">IS_CAN_FIFO</link> (((FIFO) == <link linkend="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants_1ga8f52eeefb86b2af5b7c3b4b75fa4d114">CAN_FIFO0</link>) || ((FIFO) == <link linkend="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants_1gafbcf3f13dbf61030ab7a812595ba9850">CAN_FIFO1</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants_1ga8f52eeefb86b2af5b7c3b4b75fa4d114">
+                <title>#define CAN_FIFO0</title>                
+<para>CAN FIFO 0 used to receive </para>
+
+                <para>Definition at line 429 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants_1gafbcf3f13dbf61030ab7a812595ba9850">
+                <title>#define CAN_FIFO1</title>                
+<para>CAN FIFO 1 used to receive </para>
+
+                <para>Definition at line 430 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

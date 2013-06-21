@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/dc1/group___t_i_m___group4">
+    <title>Advanced-control timers (TIM1 and TIM8) specific features</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Advanced-control timers (TIM1 and TIM8) specific features. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+          Advanced-control timers (TIM1 and TIM8) specific features
+ ===============================================================================  
+  
+       ===================================================================      
+              TIM Driver: how to use the Break feature
+       =================================================================== 
+       After configuring the Timer channel(s) in the appropriate Output Compare mode: 
+                         
+       1. Fill the TIM_BDTRInitStruct with the desired parameters for the Timer
+          Break Polarity, dead time, Lock level, the OSSI/OSSR State and the 
+          AOE(automatic output enable).
+               
+       2. Call TIM_BDTRConfig(TIMx, &amp;TIM_BDTRInitStruct) to configure the Timer
+          
+       3. Enable the Main Output using TIM_CtrlPWMOutputs(TIM1, ENABLE) 
+          
+       4. Once the break even occurs, the Timer&apos;s output signals are put in reset
+          state or in a known state (according to the configuration made in
+          TIM_BDTRConfig() function).</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1ga3df4ba3f0727f63ce621e2b2e6035d4f">TIM_BDTRConfig</link> (
+TIM_TypeDef * TIMx, <link linkend="d8/d23/struct_t_i_m___b_d_t_r_init_type_def">TIM_BDTRInitTypeDef</link> * TIM_BDTRInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1gaea0f49938cda8ae0738162194798afc6">TIM_BDTRStructInit</link> (
+<link linkend="d8/d23/struct_t_i_m___b_d_t_r_init_type_def">TIM_BDTRInitTypeDef</link> * TIM_BDTRInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1ga3e59ebced2ab8e0b817c460f1670e97d">TIM_CtrlPWMOutputs</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1gaff2e7f9959b1b36e830df028c14accc8">TIM_SelectCOM</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1ga0a935254e44312b1d78e8684a58db3c1">TIM_CCPreloadControl</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d5/dc1/group___t_i_m___group4_1ga3df4ba3f0727f63ce621e2b2e6035d4f">
+                <title>void TIM_BDTRConfig (TIM_TypeDef *TIMx, TIM_BDTRInitTypeDef *TIM_BDTRInitStruct)</title> <emphasis>Configures the Break feature, dead time, Lock level, OSSI/OSSR State
+        and the AOE(automatic output enable).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 or 8 to select the TIM </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_BDTRInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/d23/struct_t_i_m___b_d_t_r_init_type_def">TIM_BDTRInitTypeDef</link> structure that contains the BDTR Register configuration information for the TIM peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dc1/group___t_i_m___group4_1gaea0f49938cda8ae0738162194798afc6">
+                <title>void TIM_BDTRStructInit (TIM_BDTRInitTypeDef *TIM_BDTRInitStruct)</title> <emphasis>Fills each TIM_BDTRInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIM_BDTRInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/d23/struct_t_i_m___b_d_t_r_init_type_def">TIM_BDTRInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dc1/group___t_i_m___group4_1ga3e59ebced2ab8e0b817c460f1670e97d">
+                <title>void TIM_CtrlPWMOutputs (TIM_TypeDef *TIMx, FunctionalState NewState)</title> <emphasis>Enables or disables the TIM peripheral Main Outputs.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 or 8 to select the TIMx peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the TIM peripheral Main Outputs. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dc1/group___t_i_m___group4_1gaff2e7f9959b1b36e830df028c14accc8">
+                <title>void TIM_SelectCOM (TIM_TypeDef *TIMx, FunctionalState NewState)</title> <emphasis>Selects the TIM peripheral Commutation event.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 or 8 to select the TIMx peripheral </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Commutation event. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dc1/group___t_i_m___group4_1ga0a935254e44312b1d78e8684a58db3c1">
+                <title>void TIM_CCPreloadControl (TIM_TypeDef *TIMx, FunctionalState NewState)</title> <emphasis>Sets or Resets the TIM peripheral Capture Compare Preload Control bit.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 or 8 to select the TIMx peripheral </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Capture Compare Preload Control bit This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

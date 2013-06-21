@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d8d/group___a_d_c__resolution">
+    <title>ADC_resolution</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d8d/group___a_d_c__resolution_1gac75d52ba1d748fa0b62da488490d98d0">ADC_Resolution_12b</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d8d/group___a_d_c__resolution_1ga783949335d175a2c32cdf46e1313ddac">ADC_Resolution_10b</link> ((uint32_t)0x01000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d8d/group___a_d_c__resolution_1ga79f3c525ef11971c3b8287f6a4a2307d">ADC_Resolution_8b</link> ((uint32_t)0x02000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d8d/group___a_d_c__resolution_1gacda91713c1e31de3142a86e3e1714e97">ADC_Resolution_6b</link> ((uint32_t)0x03000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d8d/group___a_d_c__resolution_1ga346d83dd4af81b36a6dbd78c7bf2ff0a">IS_ADC_RESOLUTION</link> (((RESOLUTION) == ADC_Resolution_12b) || \
+                                       ((RESOLUTION) == ADC_Resolution_10b) || \
+                                       ((RESOLUTION) == ADC_Resolution_8b) || \
+                                       ((RESOLUTION) == ADC_Resolution_6b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

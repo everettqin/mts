@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d0e/group___s_d_i_o___clock___bypass">
+    <title>SDIO_Clock_Bypass</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0e/group___s_d_i_o___clock___bypass_1gacc168d55136a0c6575e5afd7a6550343">SDIO_ClockBypass_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0e/group___s_d_i_o___clock___bypass_1ga5e1e9f7e05ea62dd2315eb556bc10e5c">SDIO_ClockBypass_Enable</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0e/group___s_d_i_o___clock___bypass_1ga5d5a2fcdd3150e4a89c5aa1efd738dec">IS_SDIO_CLOCK_BYPASS</link> (((BYPASS) == SDIO_ClockBypass_Disable) || \
+                                     ((BYPASS) == SDIO_ClockBypass_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

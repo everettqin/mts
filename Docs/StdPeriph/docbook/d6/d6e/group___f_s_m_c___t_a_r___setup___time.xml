@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d6e/group___f_s_m_c___t_a_r___setup___time">
+    <title>FSMC_TAR_Setup_Time</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d6e/group___f_s_m_c___t_a_r___setup___time_1ga5b9e0f64c44ab68afca90cd28dedd8e3">IS_FSMC_TAR_TIME</link> ((TIME) &lt;= 0xFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

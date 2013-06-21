@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dde/group___i2_c___group3">
+    <title>PEC management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>PEC management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                         PEC management functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dde/group___i2_c___group3_1gaa27d1440290fe601e730b6980999afe3">I2C_TransmitPEC</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dde/group___i2_c___group3_1ga5d0f939bdd45542502827bf408f24161">I2C_PECPositionConfig</link> (
+I2C_TypeDef * I2Cx, uint16_t I2C_PECPosition)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dde/group___i2_c___group3_1gae86801251359226c35745e0a258388b0">I2C_CalculatePEC</link> (
+I2C_TypeDef * I2Cx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/dde/group___i2_c___group3_1ga7bf75e7c27c0e1d73e70fc0e1c7cd1dd">I2C_GetPEC</link> (
+I2C_TypeDef * I2Cx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="df/dde/group___i2_c___group3_1gaa27d1440290fe601e730b6980999afe3">
+                <title>void I2C_TransmitPEC (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C PEC transfer.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2C PEC transmission. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/dde/group___i2_c___group3_1ga5d0f939bdd45542502827bf408f24161">
+                <title>void I2C_PECPositionConfig (I2C_TypeDef *I2Cx, uint16_t I2C_PECPosition)</title> <emphasis>Selects the specified I2C PEC position.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_PECPosition, :</entry>
+                                <entry>
+<para>specifies the PEC position. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>I2C_PECPosition_Next: indicates that the next byte is PEC </para>
+</listitem>
+<listitem>
+<para>I2C_PECPosition_Current: indicates that current byte is PEC</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>This function configures the same bit (POS) as <link linkend="d0/d5b/group___i2_c_1gad08ebffc3a234d84e6405ec115bd74f1">I2C_NACKPositionConfig()</link> but is intended to be used in SMBUS mode while <link linkend="d0/d5b/group___i2_c_1gad08ebffc3a234d84e6405ec115bd74f1">I2C_NACKPositionConfig()</link> is intended to used in I2C mode.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/dde/group___i2_c___group3_1gae86801251359226c35745e0a258388b0">
+                <title>void I2C_CalculatePEC (I2C_TypeDef *I2Cx, FunctionalState NewState)</title> <emphasis>Enables or disables the PEC value calculation of the transferred bytes.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the I2Cx PEC value calculation. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/dde/group___i2_c___group3_1ga7bf75e7c27c0e1d73e70fc0e1c7cd1dd">
+                <title>uint8_t I2C_GetPEC (I2C_TypeDef *I2Cx)</title> <emphasis>Returns the PEC value for the specified I2C.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>PEC value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dde/group___f_l_a_s_h___voltage___range">
+    <title>FLASH_Voltage_Range</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga0ed013741f9d88425fe97da49f4980c1">VoltageRange_1</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga4c080832b4c8c992acb645f2c39561e0">VoltageRange_2</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1gadd249fb08c69b11cea3a6b7c22865b99">VoltageRange_3</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga3197950f6bfefc8b9a784db5439a0498">VoltageRange_4</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1gaa9682aea9d9ceebca83c48e53f9f6028">IS_VOLTAGERANGE</link> (((RANGE) == <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga0ed013741f9d88425fe97da49f4980c1">VoltageRange_1</link>) || \
+                               ((RANGE) == <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga4c080832b4c8c992acb645f2c39561e0">VoltageRange_2</link>) || \
+                               ((RANGE) == <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1gadd249fb08c69b11cea3a6b7c22865b99">VoltageRange_3</link>) || \
+                               ((RANGE) == <link linkend="d7/dde/group___f_l_a_s_h___voltage___range_1ga3197950f6bfefc8b9a784db5439a0498">VoltageRange_4</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d7/dde/group___f_l_a_s_h___voltage___range_1ga0ed013741f9d88425fe97da49f4980c1">
+                <title>#define VoltageRange_1</title>                
+<para>Device operating range: 1.8V to 2.1V </para>
+
+                <para>Definition at line 91 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d7/dde/group___f_l_a_s_h___voltage___range_1ga4c080832b4c8c992acb645f2c39561e0">
+                <title>#define VoltageRange_2</title>                
+<para>Device operating range: 2.1V to 2.7V </para>
+
+                <para>Definition at line 92 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d7/dde/group___f_l_a_s_h___voltage___range_1gadd249fb08c69b11cea3a6b7c22865b99">
+                <title>#define VoltageRange_3</title>                
+<para>Device operating range: 2.7V to 3.6V </para>
+
+                <para>Definition at line 93 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d7/dde/group___f_l_a_s_h___voltage___range_1ga3197950f6bfefc8b9a784db5439a0498">
+                <title>#define VoltageRange_4</title>                
+<para>Device operating range: 2.7V to 3.6V + External Vpp </para>
+
+                <para>Definition at line 94 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

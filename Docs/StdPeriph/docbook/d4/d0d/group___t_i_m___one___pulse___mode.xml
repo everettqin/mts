@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d0d/group___t_i_m___one___pulse___mode">
+    <title>TIM_One_Pulse_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d0d/group___t_i_m___one___pulse___mode_1ga99d934fdbc54ea4ee2cf5c86860f9227">TIM_OPMode_Single</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d0d/group___t_i_m___one___pulse___mode_1gad921d739c86bf48dca12442a81ad68ad">TIM_OPMode_Repetitive</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d0d/group___t_i_m___one___pulse___mode_1ga3f4a4305b4feacb4322eb4a358e54637">IS_TIM_OPM_MODE</link> (((MODE) == TIM_OPMode_Single) || \
+                               ((MODE) == TIM_OPMode_Repetitive))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,433 @@
+\hypertarget{group___s_p_i___group1}{\section{Initialization and Configuration functions}
+\label{group___s_p_i___group1}\index{Initialization and Configuration functions@{Initialization and Configuration functions}}
+}
+
+
+Initialization and Configuration functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___s_p_i___group1_gabe36880945fa56785283a9c0092124cc}{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix)
+\begin{DoxyCompactList}\small\item\em Deinitialize the S\-P\-Ix peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_ga8dacc1dc48bf08c0f12da409f4889037}{S\-P\-I\-\_\-\-Init} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, \hyperlink{struct_s_p_i___init_type_def}{S\-P\-I\-\_\-\-Init\-Type\-Def} $\ast$S\-P\-I\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\-P\-Ix peripheral according to the specified parameters in the S\-P\-I\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_ga53661884ae4a9640df7cbc59187782f7}{I2\-S\-\_\-\-Init} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} $\ast$I2\-S\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the S\-P\-Ix peripheral according to the specified parameters in the I2\-S\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_ga9a0116f88cc2c4478c270f05608703f1}{S\-P\-I\-\_\-\-Struct\-Init} (\hyperlink{struct_s_p_i___init_type_def}{S\-P\-I\-\_\-\-Init\-Type\-Def} $\ast$S\-P\-I\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each S\-P\-I\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_ga7470ec1d0759fdeeb42c7fe71a3b41b7}{I2\-S\-\_\-\-Struct\-Init} (\hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} $\ast$I2\-S\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each I2\-S\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_gaa31357879a65ee1ed7223f3b9114dcf3}{S\-P\-I\-\_\-\-Cmd} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\-P\-I peripheral. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_gafe061c71bbc5b4224f3f2884dc53739e}{I2\-S\-\_\-\-Cmd} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified S\-P\-I peripheral (in I2\-S mode). \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_gafc82e90841d7879535d655c035709cb1}{S\-P\-I\-\_\-\-Data\-Size\-Config} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t S\-P\-I\-\_\-\-Data\-Size)
+\begin{DoxyCompactList}\small\item\em Configures the data size for the selected S\-P\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_ga166171c421fc51da7714723524d41b45}{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t S\-P\-I\-\_\-\-Direction)
+\begin{DoxyCompactList}\small\item\em Selects the data transfer direction in bidirectional mode for the specified S\-P\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_ga56fc508a482f032f9eb80e4c63184126}{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, uint16\-\_\-t S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft)
+\begin{DoxyCompactList}\small\item\em Configures internally by software the N\-S\-S pin for the selected S\-P\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_ga4ec54abdedf6cd17403d853a926d91c1}{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-S output for the selected S\-P\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_ga74594bf32e3bf4905ac7a2deef8eb475}{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd} (S\-P\-I\-\_\-\-Type\-Def $\ast$S\-P\-Ix, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the S\-P\-Ix/\-I2\-Sx D\-M\-A interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_p_i___group1_ga60082947bedfe9efc233405be2a7bec2}{I2\-S\-\_\-\-Full\-Duplex\-Config} (S\-P\-I\-\_\-\-Type\-Def $\ast$I2\-Sxext, \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} $\ast$I2\-S\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Configures the full duplex mode for the I2\-Sx peripheral using its extension I2\-Sxext according to the specified parameters in the I2\-S\-\_\-\-Init\-Struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Initialization and Configuration functions. \begin{DoxyVerb} ===============================================================================
+                  Initialization and Configuration functions
+ ===============================================================================  
+
+  This section provides a set of functions allowing to initialize the SPI Direction,
+  SPI Mode, SPI Data Size, SPI Polarity, SPI Phase, SPI NSS Management, SPI Baud
+  Rate Prescaler, SPI First Bit and SPI CRC Polynomial.
+  
+  The SPI_Init() function follows the SPI configuration procedures for Master mode
+  and Slave mode (details for these procedures are available in reference manual
+  (RM0090)).\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\hypertarget{group___s_p_i___group1_gafe061c71bbc5b4224f3f2884dc53739e}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-S\-\_\-\-Cmd@{I2\-S\-\_\-\-Cmd}}
+\index{I2\-S\-\_\-\-Cmd@{I2\-S\-\_\-\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-S\-\_\-\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-S\-\_\-\-Cmd (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_gafe061c71bbc5b4224f3f2884dc53739e}
+
+
+Enables or disables the specified S\-P\-I peripheral (in I2\-S mode). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 2 or 3 to select the S\-P\-I peripheral (or I2\-Sxext for full duplex mode). \\
+\hline
+{\em New\-State,\-:} & new state of the S\-P\-Ix peripheral. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 535 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_ga60082947bedfe9efc233405be2a7bec2}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-S\-\_\-\-Full\-Duplex\-Config@{I2\-S\-\_\-\-Full\-Duplex\-Config}}
+\index{I2\-S\-\_\-\-Full\-Duplex\-Config@{I2\-S\-\_\-\-Full\-Duplex\-Config}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-S\-\_\-\-Full\-Duplex\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-S\-\_\-\-Full\-Duplex\-Config (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{I2\-Sxext, }
+\item[{{\bf I2\-S\-\_\-\-Init\-Type\-Def} $\ast$}]{I2\-S\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_ga60082947bedfe9efc233405be2a7bec2}
+
+
+Configures the full duplex mode for the I2\-Sx peripheral using its extension I2\-Sxext according to the specified parameters in the I2\-S\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-Sxext,\-:} & where x can be 2 or 3 to select the I2\-S peripheral extension block. \\
+\hline
+{\em I2\-S\-\_\-\-Init\-Struct,\-:} & pointer to an \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the specified I2\-S peripheral extension.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The structure pointed by I2\-S\-\_\-\-Init\-Struct parameter should be the same used for the master I2\-S peripheral. In this case, if the master is configured as transmitter, the slave will be receiver and vice versa. Or you can force a different mode by modifying the field I2\-S\-\_\-\-Mode to the value I2\-S\-\_\-\-Slave\-Rx or I2\-S\-\_\-\-Slave\-Tx indepedently of the master configuration.
+
+The I2\-S full duplex extension can be configured in slave mode only.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 700 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_ga53661884ae4a9640df7cbc59187782f7}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-S\-\_\-\-Init@{I2\-S\-\_\-\-Init}}
+\index{I2\-S\-\_\-\-Init@{I2\-S\-\_\-\-Init}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-S\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-S\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{{\bf I2\-S\-\_\-\-Init\-Type\-Def} $\ast$}]{I2\-S\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_ga53661884ae4a9640df7cbc59187782f7}
+
+
+Initializes the S\-P\-Ix peripheral according to the specified parameters in the I2\-S\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 2 or 3 to select the S\-P\-I peripheral (configured in I2\-S mode). \\
+\hline
+{\em I2\-S\-\_\-\-Init\-Struct,\-:} & pointer to an \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the specified S\-P\-I peripheral configured in I2\-S mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The function calculates the optimal prescaler needed to obtain the most accurate audio frequency (depending on the I2\-S clock source, the P\-L\-L values and the product configuration). But in case the prescaler value is greater than 511, the default value (0x02) will be configured instead.
+
+if an external clock is used as source clock for the I2\-S, then the define I2\-S\-\_\-\-E\-X\-T\-E\-R\-N\-A\-L\-\_\-\-C\-L\-O\-C\-K\-\_\-\-V\-A\-L in file stm32f4xx\-\_\-conf.\-h should be enabled and set to the value of the the source clock frequency (in Hz).
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 321 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_ga7470ec1d0759fdeeb42c7fe71a3b41b7}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!I2\-S\-\_\-\-Struct\-Init@{I2\-S\-\_\-\-Struct\-Init}}
+\index{I2\-S\-\_\-\-Struct\-Init@{I2\-S\-\_\-\-Struct\-Init}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{I2\-S\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void I2\-S\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf I2\-S\-\_\-\-Init\-Type\-Def} $\ast$}]{I2\-S\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_ga7470ec1d0759fdeeb42c7fe71a3b41b7}
+
+
+Fills each I2\-S\-\_\-\-Init\-Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I2\-S\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_i2_s___init_type_def}{I2\-S\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 481 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_ga166171c421fc51da7714723524d41b45}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config@{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config}}
+\index{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config@{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Bi\-Directional\-Line\-Config (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{S\-P\-I\-\_\-\-Direction}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_ga166171c421fc51da7714723524d41b45}
+
+
+Selects the data transfer direction in bidirectional mode for the specified S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em S\-P\-I\-\_\-\-Direction,\-:} & specifies the data transfer direction in bidirectional mode. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-Direction\-\_\-\-Tx\-: Selects Tx transmission direction \item S\-P\-I\-\_\-\-Direction\-\_\-\-Rx\-: Selects Rx receive direction \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 582 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_gaa31357879a65ee1ed7223f3b9114dcf3}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!S\-P\-I\-\_\-\-Cmd@{S\-P\-I\-\_\-\-Cmd}}
+\index{S\-P\-I\-\_\-\-Cmd@{S\-P\-I\-\_\-\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{S\-P\-I\-\_\-\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Cmd (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_gaa31357879a65ee1ed7223f3b9114dcf3}
+
+
+Enables or disables the specified S\-P\-I peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the S\-P\-Ix peripheral. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 510 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_gafc82e90841d7879535d655c035709cb1}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!S\-P\-I\-\_\-\-Data\-Size\-Config@{S\-P\-I\-\_\-\-Data\-Size\-Config}}
+\index{S\-P\-I\-\_\-\-Data\-Size\-Config@{S\-P\-I\-\_\-\-Data\-Size\-Config}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{S\-P\-I\-\_\-\-Data\-Size\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Data\-Size\-Config (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{S\-P\-I\-\_\-\-Data\-Size}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_gafc82e90841d7879535d655c035709cb1}
+
+
+Configures the data size for the selected S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em S\-P\-I\-\_\-\-Data\-Size,\-:} & specifies the S\-P\-I data size. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-Data\-Size\-\_\-16b\-: Set data frame format to 16bit \item S\-P\-I\-\_\-\-Data\-Size\-\_\-8b\-: Set data frame format to 8bit \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 562 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_gabe36880945fa56785283a9c0092124cc}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init}}
+\index{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init@{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-I2\-S\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_gabe36880945fa56785283a9c0092124cc}
+
+
+Deinitialize the S\-P\-Ix peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & To select the S\-P\-Ix/\-I2\-Sx peripheral, where x can be\-: 1, 2 or 3 in S\-P\-I mode or 2 or 3 in I2\-S mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The extended I2\-S blocks (ie. I2\-S2ext and I2\-S3ext blocks) are deinitialized when the relative I2\-S peripheral is deinitialized (the extended block's clock is managed by the I2\-S peripheral clock).
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 218 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_ga8dacc1dc48bf08c0f12da409f4889037}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!S\-P\-I\-\_\-\-Init@{S\-P\-I\-\_\-\-Init}}
+\index{S\-P\-I\-\_\-\-Init@{S\-P\-I\-\_\-\-Init}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{S\-P\-I\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{{\bf S\-P\-I\-\_\-\-Init\-Type\-Def} $\ast$}]{S\-P\-I\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_ga8dacc1dc48bf08c0f12da409f4889037}
+
+
+Initializes the S\-P\-Ix peripheral according to the specified parameters in the S\-P\-I\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em S\-P\-I\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_s_p_i___init_type_def}{S\-P\-I\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the specified S\-P\-I peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 257 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_ga56fc508a482f032f9eb80e4c63184126}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config@{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config}}
+\index{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config@{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Software\-Config (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{uint16\-\_\-t}]{S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_ga56fc508a482f032f9eb80e4c63184126}
+
+
+Configures internally by software the N\-S\-S pin for the selected S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft,\-:} & specifies the S\-P\-I N\-S\-S internal state. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft\-\_\-\-Set\-: Set N\-S\-S pin internally \item S\-P\-I\-\_\-\-N\-S\-S\-Internal\-Soft\-\_\-\-Reset\-: Reset N\-S\-S pin internally \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 608 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_ga4ec54abdedf6cd17403d853a926d91c1}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!S\-P\-I\-\_\-\-S\-S\-Output\-Cmd@{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd}}
+\index{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd@{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{S\-P\-I\-\_\-\-S\-S\-Output\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-S\-S\-Output\-Cmd (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_ga4ec54abdedf6cd17403d853a926d91c1}
+
+
+Enables or disables the S\-S output for the selected S\-P\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 to select the S\-P\-I peripheral. \\
+\hline
+{\em New\-State,\-:} & new state of the S\-P\-Ix S\-S output. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 632 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_ga9a0116f88cc2c4478c270f05608703f1}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!S\-P\-I\-\_\-\-Struct\-Init@{S\-P\-I\-\_\-\-Struct\-Init}}
+\index{S\-P\-I\-\_\-\-Struct\-Init@{S\-P\-I\-\_\-\-Struct\-Init}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{S\-P\-I\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-P\-I\-\_\-\-Init\-Type\-Def} $\ast$}]{S\-P\-I\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_ga9a0116f88cc2c4478c270f05608703f1}
+
+
+Fills each S\-P\-I\-\_\-\-Init\-Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-I\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_s_p_i___init_type_def}{S\-P\-I\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 453 of file stm32f4xx\-\_\-spi.\-c.
+
+\hypertarget{group___s_p_i___group1_ga74594bf32e3bf4905ac7a2deef8eb475}{\index{Initialization and Configuration functions@{Initialization and Configuration functions}!S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd@{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd}}
+\index{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd@{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd}!Initialization and Configuration functions@{Initialization and Configuration functions}}
+\subsubsection[{S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-T\-I\-Mode\-Cmd (
+\begin{DoxyParamCaption}
+\item[{S\-P\-I\-\_\-\-Type\-Def $\ast$}]{S\-P\-Ix, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___s_p_i___group1_ga74594bf32e3bf4905ac7a2deef8eb475}
+
+
+Enables or disables the S\-P\-Ix/\-I2\-Sx D\-M\-A interface. 
+
+\begin{DoxyNote}{Note}
+This function can be called only after the \hyperlink{group___s_p_i_ga8dacc1dc48bf08c0f12da409f4889037}{S\-P\-I\-\_\-\-Init()} function has been called. 
+
+When T\-I mode is selected, the control bits S\-S\-M, S\-S\-I, C\-P\-O\-L and C\-P\-H\-A are not taken into consideration and are configured by hardware respectively to the T\-I mode requirements.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em S\-P\-Ix,\-:} & where x can be 1, 2 or 3 \\
+\hline
+{\em New\-State,\-:} & new state of the selected S\-P\-I T\-I communication mode. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 663 of file stm32f4xx\-\_\-spi.\-c.
+

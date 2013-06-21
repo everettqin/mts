@@ -1,0 +1,888 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d65/group___t_i_m___group1">
+    <title>TimeBase management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>TimeBase management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                       TimeBase management functions
+ ===============================================================================  
+  
+       ===================================================================      
+              TIM Driver: how to use it in Timing(Time base) Mode
+       =================================================================== 
+       To use the Timer in Timing(Time base) mode, the following steps are mandatory:
+       
+       1. Enable TIM clock using RCC_APBxPeriphClockCmd(RCC_APBxPeriph_TIMx, ENABLE) function
+                    
+       2. Fill the TIM_TimeBaseInitStruct with the desired parameters.
+       
+       3. Call TIM_TimeBaseInit(TIMx, &amp;TIM_TimeBaseInitStruct) to configure the Time Base unit
+          with the corresponding configuration
+          
+       4. Enable the NVIC if you need to generate the update interrupt. 
+          
+       5. Enable the corresponding interrupt using the function TIM_ITConfig(TIMx, TIM_IT_Update) 
+       
+       6. Call the TIM_Cmd(ENABLE) function to enable the TIM counter.
+             
+       Note1: All other functions can be used separately to modify, if needed,
+          a specific feature of the Timer. </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga1659cc0ce503ac151568e0c7c02b1ba5">TIM_DeInit</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga83fd58c9416802d9638bbe1715c98932">TIM_TimeBaseInit</link> (
+TIM_TypeDef * TIMx, <link linkend="dc/da6/struct_t_i_m___time_base_init_type_def">TIM_TimeBaseInitTypeDef</link> * TIM_TimeBaseInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga1556a0b9a5d53506875fd7de0cbc6b1f">TIM_TimeBaseStructInit</link> (
+<link linkend="dc/da6/struct_t_i_m___time_base_init_type_def">TIM_TimeBaseInitTypeDef</link> * TIM_TimeBaseInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga45c6fd9041baf7f64c121e0172f305c7">TIM_PrescalerConfig</link> (
+TIM_TypeDef * TIMx, uint16_t Prescaler, uint16_t TIM_PSCReloadMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga93941c1db20bf3794f377307df90a67b">TIM_CounterModeConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_CounterMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga18173e7955a85d5c2598c643eada2692">TIM_SetCounter</link> (
+TIM_TypeDef * TIMx, uint32_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1gad6a388d498c7f299d00a9d0871943041">TIM_SetAutoreload</link> (
+TIM_TypeDef * TIMx, uint32_t Autoreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d1/d65/group___t_i_m___group1_1ga53607976e0866ab424e294cda9f6036e">TIM_GetCounter</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d1/d65/group___t_i_m___group1_1ga427eb6e533480e02a27cd0ca876183d6">TIM_GetPrescaler</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1gace2384dd33e849a054f61b8e1fc7e7c3">TIM_UpdateDisableConfig</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga1d7a8f952e209de142499e67a653fc1f">TIM_UpdateRequestConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_UpdateSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga42b44b9fc2b0798d733720dd6bac1ac0">TIM_ARRPreloadConfig</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1gadd2cca5fac6c1291dc4339098d5c9562">TIM_SelectOnePulseMode</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OPMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga20ef804dc32c723662d11ee7da3baab2">TIM_SetClockDivision</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_CKD)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga2bdc275bcbd2ce9d1ba632e6c89896b7">TIM_Cmd</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga1659cc0ce503ac151568e0c7c02b1ba5">
+                <title>void TIM_DeInit (TIM_TypeDef *TIMx)</title> <emphasis>Deinitializes the TIMx peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga83fd58c9416802d9638bbe1715c98932">
+                <title>void TIM_TimeBaseInit (TIM_TypeDef *TIMx, TIM_TimeBaseInitTypeDef *TIM_TimeBaseInitStruct)</title> <emphasis>Initializes the TIMx Time Base Unit peripheral according to 
+        the specified parameters in the TIM_TimeBaseInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_TimeBaseInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dc/da6/struct_t_i_m___time_base_init_type_def">TIM_TimeBaseInitTypeDef</link> structure that contains the configuration information for the specified TIM peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga1556a0b9a5d53506875fd7de0cbc6b1f">
+                <title>void TIM_TimeBaseStructInit (TIM_TimeBaseInitTypeDef *TIM_TimeBaseInitStruct)</title> <emphasis>Fills each TIM_TimeBaseInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIM_TimeBaseInitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="dc/da6/struct_t_i_m___time_base_init_type_def">TIM_TimeBaseInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga45c6fd9041baf7f64c121e0172f305c7">
+                <title>void TIM_PrescalerConfig (TIM_TypeDef *TIMx, uint16_t Prescaler, uint16_t TIM_PSCReloadMode)</title> <emphasis>Configures the TIMx Prescaler.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Prescaler, :</entry>
+                                <entry>
+<para>specifies the Prescaler Register value </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_PSCReloadMode, :</entry>
+                                <entry>
+<para>specifies the TIM Prescaler Reload mode This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_PSCReloadMode_Update: The Prescaler is loaded at the update event. </para>
+</listitem>
+<listitem>
+<para>TIM_PSCReloadMode_Immediate: The Prescaler is loaded immediatly. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga93941c1db20bf3794f377307df90a67b">
+                <title>void TIM_CounterModeConfig (TIM_TypeDef *TIMx, uint16_t TIM_CounterMode)</title> <emphasis>Specifies the TIMx Counter Mode to be used.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_CounterMode, :</entry>
+                                <entry>
+<para>specifies the Counter Mode to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_CounterMode_Up: TIM Up Counting Mode </para>
+</listitem>
+<listitem>
+<para>TIM_CounterMode_Down: TIM Down Counting Mode </para>
+</listitem>
+<listitem>
+<para>TIM_CounterMode_CenterAligned1: TIM Center Aligned Mode1 </para>
+</listitem>
+<listitem>
+<para>TIM_CounterMode_CenterAligned2: TIM Center Aligned Mode2 </para>
+</listitem>
+<listitem>
+<para>TIM_CounterMode_CenterAligned3: TIM Center Aligned Mode3 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga18173e7955a85d5c2598c643eada2692">
+                <title>void TIM_SetCounter (TIM_TypeDef *TIMx, uint32_t Counter)</title> <emphasis>Sets the TIMx Counter Register value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Counter, :</entry>
+                                <entry>
+<para>specifies the Counter register new value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1gad6a388d498c7f299d00a9d0871943041">
+                <title>void TIM_SetAutoreload (TIM_TypeDef *TIMx, uint32_t Autoreload)</title> <emphasis>Sets the TIMx Autoreload Register value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Autoreload, :</entry>
+                                <entry>
+<para>specifies the Autoreload register new value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga53607976e0866ab424e294cda9f6036e">
+                <title>uint32_t TIM_GetCounter (TIM_TypeDef *TIMx)</title> <emphasis>Gets the TIMx Counter value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Counter</entry>
+                                <entry>
+<para>Register value </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga427eb6e533480e02a27cd0ca876183d6">
+                <title>uint16_t TIM_GetPrescaler (TIM_TypeDef *TIMx)</title> <emphasis>Gets the TIMx Prescaler value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Prescaler</entry>
+                                <entry>
+<para>Register value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1gace2384dd33e849a054f61b8e1fc7e7c3">
+                <title>void TIM_UpdateDisableConfig (TIM_TypeDef *TIMx, FunctionalState NewState)</title> <emphasis>Enables or Disables the TIMx Update event.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the TIMx UDIS bit This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga1d7a8f952e209de142499e67a653fc1f">
+                <title>void TIM_UpdateRequestConfig (TIM_TypeDef *TIMx, uint16_t TIM_UpdateSource)</title> <emphasis>Configures the TIMx Update Request Interrupt source.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_UpdateSource, :</entry>
+                                <entry>
+<para>specifies the Update source. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_UpdateSource_Global: Source of update is the counter overflow/underflow or the setting of UG bit, or an update generation through the slave mode controller. </para>
+</listitem>
+<listitem>
+<para>TIM_UpdateSource_Regular: Source of update is counter overflow/underflow. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga42b44b9fc2b0798d733720dd6bac1ac0">
+                <title>void TIM_ARRPreloadConfig (TIM_TypeDef *TIMx, FunctionalState NewState)</title> <emphasis>Enables or disables TIMx peripheral Preload register on ARR.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the TIMx peripheral Preload register This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1gadd2cca5fac6c1291dc4339098d5c9562">
+                <title>void TIM_SelectOnePulseMode (TIM_TypeDef *TIMx, uint16_t TIM_OPMode)</title> <emphasis>Selects the TIMx&apos;s One Pulse Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OPMode, :</entry>
+                                <entry>
+<para>specifies the OPM Mode to be used. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OPMode_Single </para>
+</listitem>
+<listitem>
+<para>TIM_OPMode_Repetitive </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga20ef804dc32c723662d11ee7da3baab2">
+                <title>void TIM_SetClockDivision (TIM_TypeDef *TIMx, uint16_t TIM_CKD)</title> <emphasis>Sets the TIMx Clock Division value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_CKD, :</entry>
+                                <entry>
+<para>specifies the clock division value. This parameter can be one of the following value: <itemizedlist>
+<listitem>
+<para>TIM_CKD_DIV1: TDTS = Tck_tim </para>
+</listitem>
+<listitem>
+<para>TIM_CKD_DIV2: TDTS = 2*Tck_tim </para>
+</listitem>
+<listitem>
+<para>TIM_CKD_DIV4: TDTS = 4*Tck_tim </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d65/group___t_i_m___group1_1ga2bdc275bcbd2ce9d1ba632e6c89896b7">
+                <title>void TIM_Cmd (TIM_TypeDef *TIMx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified TIM peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 to select the TIMx peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the TIMx peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

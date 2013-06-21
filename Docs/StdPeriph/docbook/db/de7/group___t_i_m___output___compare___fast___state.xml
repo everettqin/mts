@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/de7/group___t_i_m___output___compare___fast___state">
+    <title>TIM_Output_Compare_Fast_State</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/de7/group___t_i_m___output___compare___fast___state_1ga0cfb598c985363ee7004e52c97c524a3">TIM_OCFast_Enable</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/de7/group___t_i_m___output___compare___fast___state_1gab3d39f8797953cb58754205169d8278e">TIM_OCFast_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/de7/group___t_i_m___output___compare___fast___state_1ga65ad85cb4ba48660e8f519a1f6c298d2">IS_TIM_OCFAST_STATE</link> (((STATE) == TIM_OCFast_Enable) || \
+                                    ((STATE) == TIM_OCFast_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

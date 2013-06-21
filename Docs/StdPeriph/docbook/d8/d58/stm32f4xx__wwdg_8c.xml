@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d58/stm32f4xx__wwdg_8c">
+    <title>stm32f4xx_wwdg.c File Reference</title>
+    <programlisting>#include stm32f4xx_wwdg.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1gab6dcdf2385dd7317ec775e146cff40ca">WWDG_OFFSET</link> (WWDG_BASE - PERIPH_BASE)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1ga3e0f9d9f7f69a6d133bba721e25aca4a">CFR_OFFSET</link> (WWDG_OFFSET + 0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1ga97c9005823520f5aaefe211923b48215">EWI_BitNumber</link> 0x09</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1gaa48804210cea547f0e0f4ca49c44fc94">CFR_EWI_BB</link> (PERIPH_BB_BASE + (CFR_OFFSET * 32) + (EWI_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1gab500f6978b5964c1de28e59e7ac98012">CFR_WDGTB_MASK</link> ((uint32_t)0xFFFFFE7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1gab99b48f5d1720c22c2ef8d8a5f934a11">CFR_W_MASK</link> ((uint32_t)0xFFFFFF80)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d76/group___w_w_d_g_1ga7d4a1875576135ebdd354a816679d45c">BIT_MASK</link> ((uint8_t)0x7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d05/group___w_w_d_g___group1_1ga7130f4dc861b9234b62e73f9f57f89a1">WWDG_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d05/group___w_w_d_g___group1_1gafeaa2b52c31ba7baca7eb61d2d42e07b">WWDG_SetPrescaler</link> (
+uint32_t WWDG_Prescaler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d05/group___w_w_d_g___group1_1gaf44a7bf8bf6b11b41cd89ff521fdd5a5">WWDG_SetWindowValue</link> (
+uint8_t WindowValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d05/group___w_w_d_g___group1_1gac8af66ea5254d3d78b60b9b7c7f29521">WWDG_EnableIT</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d05/group___w_w_d_g___group1_1ga6e44cc35f133b28b9ad861f459bf8d76">WWDG_SetCounter</link> (
+uint8_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d39/group___w_w_d_g___group2_1ga10dc2554d0b504b5472e3ecf0f02a9e6">WWDG_Enable</link> (
+uint8_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d4/d86/group___w_w_d_g___group3_1ga7df4882d45918b9b8249dfca1e44fabc">WWDG_GetFlagStatus</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d86/group___w_w_d_g___group3_1gabd2b5a6317c2e1a3ab0795838ce59dd2">WWDG_ClearFlag</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the following functionalities of the Window watchdog (WWDG) peripheral: </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011<itemizedlist>
+<listitem>
+<para>Prescaler, Refresh window and Counter configuration</para>
+</listitem><listitem>
+<para>WWDG activation</para>
+</listitem><listitem>
+<para>Interrupts and flags management</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<programlisting><literallayout>*    
+*          ===================================================================
+*                                     WWDG features
+*          ===================================================================
+*                                        
+*          Once enabled the WWDG generates a system reset on expiry of a programmed
+*          time period, unless the program refreshes the counter (downcounter) 
+*          before to reach 0x3F value (i.e. a reset is generated when the counter
+*          value rolls over from 0x40 to 0x3F). 
+*          An MCU reset is also generated if the counter value is refreshed
+*          before the counter has reached the refresh window value. This 
+*          implies that the counter must be refreshed in a limited window.
+*            
+*          Once enabled the WWDG cannot be disabled except by a system reset.                          
+*          
+*          WWDGRST flag in RCC_CSR register can be used to inform when a WWDG
+*          reset occurs.
+*            
+*          The WWDG counter input clock is derived from the APB clock divided 
+*          by a programmable prescaler.
+*              
+*          WWDG counter clock = PCLK1 / Prescaler
+*          WWDG timeout = (WWDG counter clock) * (counter value)
+*                      
+*          Min-max timeout value @42 MHz(PCLK1): ~97.5 us / ~49.9 ms
+*                            
+*          ===================================================================
+*                                 How to use this driver
+*          =================================================================== 
+*          1. Enable WWDG clock using RCC_APB1PeriphClockCmd(RCC_APB1Periph_WWDG, ENABLE) function
+*            
+*          2. Configure the WWDG prescaler using WWDG_SetPrescaler() function
+*                           
+*          3. Configure the WWDG refresh window using WWDG_SetWindowValue() function
+*            
+*          4. Set the WWDG counter value and start it using WWDG_Enable() function.
+*             When the WWDG is enabled the counter value should be configured to 
+*             a value greater than 0x40 to prevent generating an immediate reset.     
+*            
+*          5. Optionally you can enable the Early wakeup interrupt which is 
+*             generated when the counter reach 0x40.
+*             Once enabled this interrupt cannot be disabled except by a system reset.
+*                 
+*          6. Then the application program must refresh the WWDG counter at regular
+*             intervals during normal operation to prevent an MCU reset, using
+*             WWDG_SetCounter() function. This operation must occur only when
+*             the counter value is lower than the refresh window value, 
+*             programmed using WWDG_SetWindowValue().         
+*
+*  </literallayout></programlisting></para>
+
+<para><formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.c</para>
+    </simplesect>
+</section>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dc8/group___h_a_s_h__processor___algorithm___mode">
+    <title>HASH_processor_Algorithm_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/dc8/group___h_a_s_h__processor___algorithm___mode_1ga4de18ef48bad8fe403226abe769bd921">HASH_AlgoMode_HASH</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/dc8/group___h_a_s_h__processor___algorithm___mode_1ga70224c1ea0eef2f45363f92fc001a875">HASH_AlgoMode_HMAC</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/dc8/group___h_a_s_h__processor___algorithm___mode_1gaa17b749f9495382d0188cc3583500756">IS_HASH_ALGOMODE</link> (((ALGOMODE) == <link linkend="dd/dc8/group___h_a_s_h__processor___algorithm___mode_1ga4de18ef48bad8fe403226abe769bd921">HASH_AlgoMode_HASH</link>) || \
+                                    ((ALGOMODE) == <link linkend="dd/dc8/group___h_a_s_h__processor___algorithm___mode_1ga70224c1ea0eef2f45363f92fc001a875">HASH_AlgoMode_HMAC</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="dd/dc8/group___h_a_s_h__processor___algorithm___mode_1ga4de18ef48bad8fe403226abe769bd921">
+                <title>#define HASH_AlgoMode_HASH</title>                
+<para>Algorithm is HASH </para>
+
+                <para>Definition at line 101 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="dd/dc8/group___h_a_s_h__processor___algorithm___mode_1ga70224c1ea0eef2f45363f92fc001a875">
+                <title>#define HASH_AlgoMode_HMAC</title>                
+<para>Algorithm is HMAC </para>
+
+                <para>Definition at line 102 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

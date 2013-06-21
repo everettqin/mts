@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d40/group___a_d_c__regular__discontinuous__mode__number">
+    <title>ADC_regular_discontinuous_mode_number</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d40/group___a_d_c__regular__discontinuous__mode__number_1gab8dfaacb2f25e65ca755de71050ff270">IS_ADC_REGULAR_DISC_NUMBER</link> (((NUMBER) &gt;= 0x1) &amp;&amp; ((NUMBER) &lt;= 0x8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

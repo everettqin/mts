@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d17/struct_d_a_c___init_type_def">
+<title>DAC_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/d32/stm32f4xx__dac_8h">&lt;stm32f4xx_dac.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DAC_Trigger</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DAC_WaveGeneration</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DAC_LFSRUnmask_TriangleAmplitude</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DAC_OutputBuffer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DAC Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t DAC_Trigger</title>                
+<para>Specifies the external trigger for the selected DAC channel. This parameter can be a value of <link linkend="d0/d12/group___d_a_c__trigger__selection">DAC_trigger_selection</link> </para>
+
+                <para>Definition at line 50 of file stm32f4xx_dac.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dac.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DAC_WaveGeneration</title>                
+<para>Specifies whether DAC channel noise waves or triangle waves are generated, or whether no wave is generated. This parameter can be a value of <link linkend="d2/d11/group___d_a_c__wave__generation">DAC_wave_generation</link> </para>
+
+                <para>Definition at line 53 of file stm32f4xx_dac.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dac.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DAC_LFSRUnmask_TriangleAmplitude</title>                
+<para>Specifies the LFSR mask for noise wave generation or the maximum amplitude triangle generation for the DAC channel. This parameter can be a value of <link linkend="d3/ddc/group___d_a_c__lfsrunmask__triangleamplitude">DAC_lfsrunmask_triangleamplitude</link> </para>
+
+                <para>Definition at line 57 of file stm32f4xx_dac.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dac.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DAC_OutputBuffer</title>                
+<para>Specifies whether the DAC channel output buffer is enabled or disabled. This parameter can be a value of <link linkend="d5/d56/group___d_a_c__output__buffer">DAC_output_buffer</link> </para>
+
+                <para>Definition at line 61 of file stm32f4xx_dac.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dac.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

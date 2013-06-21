@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/dcf/group___f_s_m_c___n_a_n_d___bank">
+    <title>FSMC_NAND_Bank</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/dcf/group___f_s_m_c___n_a_n_d___bank_1ga294e7134aa329a09e56b61eec9882a27">FSMC_Bank2_NAND</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/dcf/group___f_s_m_c___n_a_n_d___bank_1gaf72def0732c026b0245d721ee371c85b">FSMC_Bank3_NAND</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

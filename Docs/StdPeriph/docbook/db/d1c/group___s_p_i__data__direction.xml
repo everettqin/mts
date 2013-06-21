@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d1c/group___s_p_i__data__direction">
+    <title>SPI_data_direction</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1gab6bdb82e315a90210c4425c46bbdf5f1">SPI_Direction_2Lines_FullDuplex</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1gab8ab942f7240394f50e4c86c5288516a">SPI_Direction_2Lines_RxOnly</link> ((uint16_t)0x0400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1ga42ea8306cfc1f23ffc51efae6f66320e">SPI_Direction_1Line_Rx</link> ((uint16_t)0x8000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1ga70cc710a771065b2ed11c2ac9697defe">SPI_Direction_1Line_Tx</link> ((uint16_t)0xC000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d1c/group___s_p_i__data__direction_1ga536857c68ce1d9806c04046707448b3e">IS_SPI_DIRECTION_MODE</link> (((MODE) == SPI_Direction_2Lines_FullDuplex) || \
+                                     ((MODE) == SPI_Direction_2Lines_RxOnly) || \
+                                     ((MODE) == SPI_Direction_1Line_Rx) || \
+                                     ((MODE) == SPI_Direction_1Line_Tx))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

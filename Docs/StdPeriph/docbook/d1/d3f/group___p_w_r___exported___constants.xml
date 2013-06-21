@@ -1,0 +1,714 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d3f/group___p_w_r___exported___constants">
+    <title>PWR_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d2/d18/group___p_w_r___p_v_d__detection__level">PWR_PVD_detection_level</link></para></listitem>
+            <listitem><para><link linkend="dd/da9/group___p_w_r___regulator__state__in___s_t_o_p__mode">PWR_Regulator_state_in_STOP_mode</link></para></listitem>
+            <listitem><para><link linkend="dd/d35/group___p_w_r___s_t_o_p__mode__entry">PWR_STOP_mode_entry</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1gad03a0aac7bc3bc3a9fd012f3769a6990">PWR_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga0741aea35572b1a75f82b74de12df800">PWR_BackupAccessCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga237c143ef6aa55abb8049fa7bf24ab8f">PWR_PVDLevelConfig</link> (
+uint32_t PWR_PVDLevel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga42cad476b816e0a33594a933b3ed1acd">PWR_PVDCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1gae5fd6f9336ef8c60d5483651cb0d1a00">PWR_WakeUpPinCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga83a4d6c5b048f2dab18e8fb04f5368d7">PWR_BackupRegulatorCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1gada193dea79762f379d4e666a98f28d89">PWR_MainRegulatorModeConfig</link> (
+uint32_t PWR_Regulator_Voltage)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1gaf0af19a9fdf0324f2ada60c9bce1aab5">PWR_FlashPowerDownCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga694676ac06a9baf50eae45adae0118ab">PWR_EnterSTOPMode</link> (
+uint32_t PWR_Regulator, uint8_t PWR_STOPEntry)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga00ddae00a9c327b81b24d2597b0052f3">PWR_EnterSTANDBYMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d1/d3f/group___p_w_r___exported___constants_1gaa980163a4d83304280ee34942464b4ec">PWR_GetFlagStatus</link> (
+uint32_t PWR_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga01c4b2fbd16514b993324e101c3ddf7c">PWR_ClearFlag</link> (
+uint32_t PWR_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1gad03a0aac7bc3bc3a9fd012f3769a6990">
+                <title>void PWR_DeInit (void)</title> <emphasis>Deinitializes the PWR peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1ga0741aea35572b1a75f82b74de12df800">
+                <title>void PWR_BackupAccessCmd (FunctionalState NewState)</title> <emphasis>Enables or disables access to the backup domain (RTC registers, RTC 
+        backup data registers and backup SRAM).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>If the HSE divided by 2, 3, ..31 is used as the RTC clock, the Backup Domain Access should be kept enabled. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the access to the backup domain. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1ga237c143ef6aa55abb8049fa7bf24ab8f">
+                <title>void PWR_PVDLevelConfig (uint32_t PWR_PVDLevel)</title> <emphasis>Configures the voltage threshold detected by the Power Voltage Detector(PVD).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>PWR_PVDLevel, :</entry>
+                                <entry>
+<para>specifies the PVD detection level This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>PWR_PVDLevel_0: PVD detection level set to 2.0V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_1: PVD detection level set to 2.2V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_2: PVD detection level set to 2.3V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_3: PVD detection level set to 2.5V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_4: PVD detection level set to 2.7V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_5: PVD detection level set to 2.8V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_6: PVD detection level set to 2.9V </para>
+</listitem>
+<listitem>
+<para>PWR_PVDLevel_7: PVD detection level set to 3.0V </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>Refer to the electrical characteristics of you device datasheet for more details. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1ga42cad476b816e0a33594a933b3ed1acd">
+                <title>void PWR_PVDCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the Power Voltage Detector(PVD).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the PVD. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1gae5fd6f9336ef8c60d5483651cb0d1a00">
+                <title>void PWR_WakeUpPinCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the WakeUp Pin functionality.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the WakeUp Pin functionality. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1ga83a4d6c5b048f2dab18e8fb04f5368d7">
+                <title>void PWR_BackupRegulatorCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the Backup Regulator.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Backup Regulator. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1gada193dea79762f379d4e666a98f28d89">
+                <title>void PWR_MainRegulatorModeConfig (uint32_t PWR_Regulator_Voltage)</title> <emphasis>Configures the main internal regulator output voltage.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>PWR_Regulator_Voltage, :</entry>
+                                <entry>
+<para>specifies the regulator output voltage to achieve a tradeoff between performance and power consumption when the device does not operate at the maximum frequency (refer to the datasheets for more details). This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>PWR_Regulator_Voltage_Scale1: Regulator voltage output Scale 1 mode, System frequency up to 168 MHz. </para>
+</listitem>
+<listitem>
+<para>PWR_Regulator_Voltage_Scale2: Regulator voltage output Scale 2 mode, System frequency up to 144 MHz. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1gaf0af19a9fdf0324f2ada60c9bce1aab5">
+                <title>void PWR_FlashPowerDownCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the Flash Power Down in STOP mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Flash power mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1ga694676ac06a9baf50eae45adae0118ab">
+                <title>void PWR_EnterSTOPMode (uint32_t PWR_Regulator, uint8_t PWR_STOPEntry)</title> <emphasis>Enters STOP mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>In Stop mode, all I/O pins keep the same state as in Run mode. </para>
+<simplesect/>
+<para>When exiting Stop mode by issuing an interrupt or a wakeup event, the HSI RC oscillator is selected as system clock. </para>
+<simplesect/>
+<para>When the voltage regulator operates in low power mode, an additional startup delay is incurred when waking up from Stop mode. By keeping the internal regulator ON during Stop mode, the consumption is higher although the startup time is reduced.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>PWR_Regulator, :</entry>
+                                <entry>
+<para>specifies the regulator state in STOP mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>PWR_Regulator_ON: STOP mode with regulator ON </para>
+</listitem>
+<listitem>
+<para>PWR_Regulator_LowPower: STOP mode with regulator in low power mode </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>PWR_STOPEntry, :</entry>
+                                <entry>
+<para>specifies if STOP mode in entered with WFI or WFE instruction. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>PWR_STOPEntry_WFI: enter STOP mode with WFI instruction </para>
+</listitem>
+<listitem>
+<para>PWR_STOPEntry_WFE: enter STOP mode with WFE instruction </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1ga00ddae00a9c327b81b24d2597b0052f3">
+                <title>void PWR_EnterSTANDBYMode (void)</title> <emphasis>Enters STANDBY mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>In Standby mode, all I/O pins are high impedance except for:<itemizedlist>
+<listitem>
+<para>Reset pad (still available)</para>
+</listitem><listitem>
+<para>RTC_AF1 pin (PC13) if configured for tamper, time-stamp, RTC Alarm out, or RTC clock calibration out.</para>
+</listitem><listitem>
+<para>RTC_AF2 pin (PI8) if configured for tamper or time-stamp.</para>
+</listitem><listitem>
+<para>WKUP pin 1 (PA0) if enabled. </para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1gaa980163a4d83304280ee34942464b4ec">
+                <title>FlagStatus PWR_GetFlagStatus (uint32_t PWR_FLAG)</title> <emphasis>Checks whether the specified PWR flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>PWR_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>PWR_FLAG_WU: Wake Up flag. This flag indicates that a wakeup event was received from the WKUP pin or from the RTC alarm (Alarm A or Alarm B), RTC Tamper event, RTC TimeStamp event or RTC Wakeup. An additional wakeup event is detected if the WKUP pin is enabled (by setting the EWUP bit) when the WKUP pin level is already high. </para>
+</listitem>
+<listitem>
+<para>PWR_FLAG_SB: StandBy flag. This flag indicates that the system was resumed from StandBy mode. </para>
+</listitem>
+<listitem>
+<para>PWR_FLAG_PVDO: PVD Output. This flag is valid only if PVD is enabled by the <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga42cad476b816e0a33594a933b3ed1acd">PWR_PVDCmd()</link> function. The PVD is stopped by Standby mode For this reason, this bit is equal to 0 after Standby or reset until the PVDE bit is set. </para>
+</listitem>
+<listitem>
+<para>PWR_FLAG_BRR: Backup regulator ready flag. This bit is not reset when the device wakes up from Standby mode or by a system reset or power reset. </para>
+</listitem>
+<listitem>
+<para>PWR_FLAG_VOSRDY: This flag indicates that the Regulator voltage scaling output selection is ready. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of PWR_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d3f/group___p_w_r___exported___constants_1ga01c4b2fbd16514b993324e101c3ddf7c">
+                <title>void PWR_ClearFlag (uint32_t PWR_FLAG)</title> <emphasis>Clears the PWR&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>PWR_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>PWR_FLAG_WU: Wake Up flag </para>
+</listitem>
+<listitem>
+<para>PWR_FLAG_SB: StandBy flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="d2/d18/group___p_w_r___p_v_d__detection__level.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/da9/group___p_w_r___regulator__state__in___s_t_o_p__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d35/group___p_w_r___s_t_o_p__mode__entry.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d40/group___s_p_i___n_s_s__internal__software__management">
+    <title>SPI_NSS_internal_software_management</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d40/group___s_p_i___n_s_s__internal__software__management_1ga6b2102816167d12140648dba49a192a7">SPI_NSSInternalSoft_Set</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d40/group___s_p_i___n_s_s__internal__software__management_1ga292ec7bc0cd362d61b3b5eed620522c2">SPI_NSSInternalSoft_Reset</link> ((uint16_t)0xFEFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d40/group___s_p_i___n_s_s__internal__software__management_1ga7036de442206fb8b365528c115345b36">IS_SPI_NSS_INTERNAL</link> (((INTERNAL) == SPI_NSSInternalSoft_Set) || \
+                                       ((INTERNAL) == SPI_NSSInternalSoft_Reset))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

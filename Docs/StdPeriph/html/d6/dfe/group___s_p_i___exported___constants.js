@@ -1,0 +1,25 @@
+var group___s_p_i___exported___constants =
+[
+    [ "SPI_data_direction", "db/d1c/group___s_p_i__data__direction.html", null ],
+    [ "SPI_mode", "dc/d6d/group___s_p_i__mode.html", null ],
+    [ "SPI_data_size", "d1/d33/group___s_p_i__data__size.html", null ],
+    [ "SPI_Clock_Polarity", "d1/d24/group___s_p_i___clock___polarity.html", null ],
+    [ "SPI_Clock_Phase", "d0/d3a/group___s_p_i___clock___phase.html", null ],
+    [ "SPI_Slave_Select_management", "d8/dde/group___s_p_i___slave___select__management.html", null ],
+    [ "SPI_BaudRate_Prescaler", "d0/d36/group___s_p_i___baud_rate___prescaler.html", null ],
+    [ "SPI_MSB_LSB_transmission", "da/d82/group___s_p_i___m_s_b___l_s_b__transmission.html", null ],
+    [ "SPI_I2S_Mode", "d9/d26/group___s_p_i___i2_s___mode.html", null ],
+    [ "SPI_I2S_Standard", "dd/d0a/group___s_p_i___i2_s___standard.html", null ],
+    [ "SPI_I2S_Data_Format", "d3/dfc/group___s_p_i___i2_s___data___format.html", null ],
+    [ "SPI_I2S_MCLK_Output", "d7/d6b/group___s_p_i___i2_s___m_c_l_k___output.html", null ],
+    [ "SPI_I2S_Audio_Frequency", "d8/d83/group___s_p_i___i2_s___audio___frequency.html", null ],
+    [ "SPI_I2S_Clock_Polarity", "df/d23/group___s_p_i___i2_s___clock___polarity.html", null ],
+    [ "SPI_I2S_DMA_transfer_requests", "d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests.html", null ],
+    [ "SPI_NSS_internal_software_management", "d8/d40/group___s_p_i___n_s_s__internal__software__management.html", null ],
+    [ "SPI_CRC_Transmit_Receive", "d4/d4e/group___s_p_i___c_r_c___transmit___receive.html", null ],
+    [ "SPI_direction_transmit_receive", "d3/d61/group___s_p_i__direction__transmit__receive.html", null ],
+    [ "SPI_I2S_interrupts_definition", "d3/dd6/group___s_p_i___i2_s__interrupts__definition.html", null ],
+    [ "SPI_I2S_flags_definition", "d1/d0d/group___s_p_i___i2_s__flags__definition.html", null ],
+    [ "SPI_CRC_polynomial", "d4/d4c/group___s_p_i___c_r_c__polynomial.html", null ],
+    [ "SPI_I2S_Legacy", "d8/daa/group___s_p_i___i2_s___legacy.html", null ]
+];

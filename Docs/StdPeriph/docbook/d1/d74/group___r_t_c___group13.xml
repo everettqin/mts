@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d74/group___r_t_c___group13">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                       Interrupts and flags management functions
+ ===============================================================================  
+ All RTC interrupts are connected to the EXTI controller.
+ 
+ - To enable the RTC Alarm interrupt, the following sequence is required:
+   - Configure and enable the EXTI Line 17 in interrupt mode and select the rising 
+     edge sensitivity using the EXTI_Init() function.
+   - Configure and enable the RTC_Alarm IRQ channel in the NVIC using the NVIC_Init()
+     function.
+   - Configure the RTC to generate RTC alarms (Alarm A and/or Alarm B) using
+     the RTC_SetAlarm() and RTC_AlarmCmd() functions.
+
+ - To enable the RTC Wakeup interrupt, the following sequence is required:
+   - Configure and enable the EXTI Line 22 in interrupt mode and select the rising 
+     edge sensitivity using the EXTI_Init() function.
+   - Configure and enable the RTC_WKUP IRQ channel in the NVIC using the NVIC_Init()
+     function.
+   - Configure the RTC to generate the RTC wakeup timer event using the 
+     RTC_WakeUpClockConfig(), RTC_SetWakeUpCounter() and RTC_WakeUpCmd() functions.
+
+ - To enable the RTC Tamper interrupt, the following sequence is required:
+   - Configure and enable the EXTI Line 21 in interrupt mode and select the rising 
+     edge sensitivity using the EXTI_Init() function.
+   - Configure and enable the TAMP_STAMP IRQ channel in the NVIC using the NVIC_Init()
+     function.
+   - Configure the RTC to detect the RTC tamper event using the 
+     RTC_TamperTriggerConfig() and RTC_TamperCmd() functions.
+
+ - To enable the RTC TimeStamp interrupt, the following sequence is required:
+   - Configure and enable the EXTI Line 21 in interrupt mode and select the rising 
+     edge sensitivity using the EXTI_Init() function.
+   - Configure and enable the TAMP_STAMP IRQ channel in the NVIC using the NVIC_Init()
+     function.
+   - Configure the RTC to detect the RTC time-stamp event using the 
+     RTC_TimeStampCmd() functions.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d74/group___r_t_c___group13_1gaa8469b33b3a99025baf52f007683b925">RTC_ITConfig</link> (
+uint32_t RTC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d1/d74/group___r_t_c___group13_1gaf2a7f11aa7160e95650fd10845e7780b">RTC_GetFlagStatus</link> (
+uint32_t RTC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d74/group___r_t_c___group13_1ga9be3325e05418d05c8c5a5ad369c7d50">RTC_ClearFlag</link> (
+uint32_t RTC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d1/d74/group___r_t_c___group13_1gaab81adc6d2a5a5c1e37a49707c6bf640">RTC_GetITStatus</link> (
+uint32_t RTC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d74/group___r_t_c___group13_1gacac6accc75ae54f1b799fa8e7e83ccdb">RTC_ClearITPendingBit</link> (
+uint32_t RTC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d1/d74/group___r_t_c___group13_1gaa8469b33b3a99025baf52f007683b925">
+                <title>void RTC_ITConfig (uint32_t RTC_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified RTC interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_IT, :</entry>
+                                <entry>
+<para>specifies the RTC interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_IT_TS: Time Stamp interrupt mask </para>
+</listitem>
+<listitem>
+<para>RTC_IT_WUT: WakeUp Timer interrupt mask </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRB: Alarm B interrupt mask </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRA: Alarm A interrupt mask </para>
+</listitem>
+<listitem>
+<para>RTC_IT_TAMP: Tamper event interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified RTC interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d74/group___r_t_c___group13_1gaf2a7f11aa7160e95650fd10845e7780b">
+                <title>FlagStatus RTC_GetFlagStatus (uint32_t RTC_FLAG)</title> <emphasis>Checks whether the specified RTC flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_FLAG_TAMP1F: Tamper 1 event flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_TSOVF: Time Stamp OverFlow flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_TSF: Time Stamp event flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_WUTF: WakeUp Timer flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRBF: Alarm B flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRAF: Alarm A flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_INITF: Initialization mode flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_RSF: Registers Synchronized flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_INITS: Registers Configured flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_WUTWF: WakeUp Timer Write flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRBWF: Alarm B Write flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRAWF: Alarm A write flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of RTC_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d74/group___r_t_c___group13_1ga9be3325e05418d05c8c5a5ad369c7d50">
+                <title>void RTC_ClearFlag (uint32_t RTC_FLAG)</title> <emphasis>Clears the RTC&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_FLAG, :</entry>
+                                <entry>
+<para>specifies the RTC flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_FLAG_TAMP1F: Tamper 1 event flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_TSOVF: Time Stamp Overflow flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_TSF: Time Stamp event flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_WUTF: WakeUp Timer flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRBF: Alarm B flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRAF: Alarm A flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_RSF: Registers Synchronized flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d74/group___r_t_c___group13_1gaab81adc6d2a5a5c1e37a49707c6bf640">
+                <title>ITStatus RTC_GetITStatus (uint32_t RTC_IT)</title> <emphasis>Checks whether the specified RTC interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_IT, :</entry>
+                                <entry>
+<para>specifies the RTC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_IT_TS: Time Stamp interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_WUT: WakeUp Timer interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRB: Alarm B interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRA: Alarm A interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_TAMP1: Tamper 1 event interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of RTC_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d74/group___r_t_c___group13_1gacac6accc75ae54f1b799fa8e7e83ccdb">
+                <title>void RTC_ClearITPendingBit (uint32_t RTC_IT)</title> <emphasis>Clears the RTC&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_IT, :</entry>
+                                <entry>
+<para>specifies the RTC interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_IT_TS: Time Stamp interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_WUT: WakeUp Timer interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRB: Alarm B interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRA: Alarm A interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_TAMP1: Tamper 1 event interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

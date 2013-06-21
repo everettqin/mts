@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d50/group___c_r_y_p___private___functions">
+    <title>CRYP_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d2/da0/group___c_r_y_p___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="df/d49/group___c_r_y_p___group2">CRYP Data processing functions</link></para></listitem>
+            <listitem><para><link linkend="d1/d47/group___c_r_y_p___group3">Context swapping functions</link></para></listitem>
+            <listitem><para><link linkend="d6/d05/group___c_r_y_p___group4">CRYP&apos;s DMA interface Configuration function</link></para></listitem>
+            <listitem><para><link linkend="d1/d2e/group___c_r_y_p___group5">Interrupts and flags management functions</link></para></listitem>
+            <listitem><para><link linkend="df/d36/group___c_r_y_p___group6">High Level AES functions</link></para></listitem>
+            <listitem><para><link linkend="de/d40/group___c_r_y_p___group8">High Level DES functions</link></para></listitem>
+            <listitem><para><link linkend="d3/dca/group___c_r_y_p___group7">High Level TDES functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d2/da0/group___c_r_y_p___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d49/group___c_r_y_p___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d47/group___c_r_y_p___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d05/group___c_r_y_p___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d2e/group___c_r_y_p___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d36/group___c_r_y_p___group6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d40/group___c_r_y_p___group8.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/dca/group___c_r_y_p___group7.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

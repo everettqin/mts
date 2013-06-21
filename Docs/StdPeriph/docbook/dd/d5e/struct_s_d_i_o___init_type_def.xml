@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d5e/struct_s_d_i_o___init_type_def">
+<title>SDIO_InitTypeDef struct Reference</title>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_ClockEdge</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_ClockBypass</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_ClockPowerSave</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_BusWide</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t SDIO_HardwareFlowControl</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t SDIO_ClockDiv</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t SDIO_ClockEdge</title>                
+<para>Specifies the clock transition on which the bit capture is made. This parameter can be a value of <link linkend="df/d6c/group___s_d_i_o___clock___edge">SDIO_Clock_Edge</link> </para>
+
+                <para>Definition at line 46 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_ClockBypass</title>                
+<para>Specifies whether the SDIO Clock divider bypass is enabled or disabled. This parameter can be a value of <link linkend="d1/d0e/group___s_d_i_o___clock___bypass">SDIO_Clock_Bypass</link> </para>
+
+                <para>Definition at line 49 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_ClockPowerSave</title>                
+<para>Specifies whether SDIO Clock output is enabled or disabled when the bus is idle. This parameter can be a value of <link linkend="df/dd3/group___s_d_i_o___clock___power___save">SDIO_Clock_Power_Save</link> </para>
+
+                <para>Definition at line 53 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_BusWide</title>                
+<para>Specifies the SDIO bus width. This parameter can be a value of <link linkend="de/db9/group___s_d_i_o___bus___wide">SDIO_Bus_Wide</link> </para>
+
+                <para>Definition at line 57 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t SDIO_HardwareFlowControl</title>                
+<para>Specifies whether the SDIO hardware flow control is enabled or disabled. This parameter can be a value of <link linkend="de/d0e/group___s_d_i_o___hardware___flow___control">SDIO_Hardware_Flow_Control</link> </para>
+
+                <para>Definition at line 60 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t SDIO_ClockDiv</title>                
+<para>Specifies the clock frequency of the SDIO controller. This parameter can be a value between 0x00 and 0xFF. </para>
+
+                <para>Definition at line 63 of file stm32f4xx_sdio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_sdio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

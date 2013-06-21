@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dd9/group___c_r_y_p___data___type">
+    <title>CRYP_Data_Type</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1gae15c7cabc8c325af4d547614ff24e2d8">CRYP_DataType_32b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1ga6af3c4d9f6f8c2b8cbf86c640fd053a7">CRYP_DataType_16b</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1ga6f4f176ec21c1670ae7a1af03e714367">CRYP_DataType_8b</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1gacc3a4c23852b4f4f647b6923d7384875">CRYP_DataType_1b</link> ((uint16_t)0x00C0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dd9/group___c_r_y_p___data___type_1ga4933d85931b7b8d0b290a1025a666486">IS_CRYP_DATATYPE</link> (((DATATYPE) == CRYP_DataType_32b) || \
+                                    ((DATATYPE) == CRYP_DataType_16b)|| \
+                                    ((DATATYPE) == CRYP_DataType_8b)|| \
+                                    ((DATATYPE) == CRYP_DataType_1b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

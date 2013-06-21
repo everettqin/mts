@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d57/group___r_t_c___calib___output__selection___definitions">
+    <title>RTC_Calib_Output_selection_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d57/group___r_t_c___calib___output__selection___definitions_1gab689d5d180e58a9d5054481d59d45767">RTC_CalibOutput_512Hz</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d57/group___r_t_c___calib___output__selection___definitions_1gaea4082d5ce14a94a602e40e0398125bd">RTC_CalibOutput_1Hz</link> ((uint32_t)0x00080000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d57/group___r_t_c___calib___output__selection___definitions_1gae8326e278569669e6880388c85cd890a">IS_RTC_CALIB_OUTPUT</link> (((OUTPUT) == RTC_CalibOutput_512Hz) || \
+                                      ((OUTPUT) == RTC_CalibOutput_1Hz))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

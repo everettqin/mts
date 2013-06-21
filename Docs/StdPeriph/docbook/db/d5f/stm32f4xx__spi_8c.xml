@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d5f/stm32f4xx__spi_8c">
+    <title>stm32f4xx_spi.c File Reference</title>
+    <programlisting>#include stm32f4xx_spi.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d3c/group___s_p_i_1ga8d425258898b4af4ebc820f52635fad8">CR1_CLEAR_MASK</link> ((uint16_t)0x3040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d3c/group___s_p_i_1ga441f8283b9c46535e05ae7e520728033">I2SCFGR_CLEAR_MASK</link> ((uint16_t)0xF040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d3c/group___s_p_i_1ga7fb18a9c4bcfc2b92c8c58f6bfe99876">PLLCFGR_PPLR_MASK</link> ((uint32_t)0x70000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d3c/group___s_p_i_1ga7c3555ba01e070847f1475d2578332ed">PLLCFGR_PPLN_MASK</link> ((uint32_t)0x00007FC0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d3c/group___s_p_i_1ga09e3f41fa2150831afaac191046087f2">SPI_CR2_FRF</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d3c/group___s_p_i_1gac2a833b915e27cd63a5fc416d9002472">SPI_SR_TIFRFE</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1gabe36880945fa56785283a9c0092124cc">SPI_I2S_DeInit</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga8dacc1dc48bf08c0f12da409f4889037">SPI_Init</link> (
+SPI_TypeDef * SPIx, <link linkend="dc/dc4/struct_s_p_i___init_type_def">SPI_InitTypeDef</link> * SPI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga53661884ae4a9640df7cbc59187782f7">I2S_Init</link> (
+SPI_TypeDef * SPIx, <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> * I2S_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga9a0116f88cc2c4478c270f05608703f1">SPI_StructInit</link> (
+<link linkend="dc/dc4/struct_s_p_i___init_type_def">SPI_InitTypeDef</link> * SPI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga7470ec1d0759fdeeb42c7fe71a3b41b7">I2S_StructInit</link> (
+<link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> * I2S_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1gaa31357879a65ee1ed7223f3b9114dcf3">SPI_Cmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1gafe061c71bbc5b4224f3f2884dc53739e">I2S_Cmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1gafc82e90841d7879535d655c035709cb1">SPI_DataSizeConfig</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_DataSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga166171c421fc51da7714723524d41b45">SPI_BiDirectionalLineConfig</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_Direction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga56fc508a482f032f9eb80e4c63184126">SPI_NSSInternalSoftwareConfig</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_NSSInternalSoft)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga4ec54abdedf6cd17403d853a926d91c1">SPI_SSOutputCmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga74594bf32e3bf4905ac7a2deef8eb475">SPI_TIModeCmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga60082947bedfe9efc233405be2a7bec2">I2S_FullDuplexConfig</link> (
+SPI_TypeDef * I2Sxext, <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> * I2S_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d9/dbf/group___s_p_i___group2_1gab77de76547f3bff403236b263b070a30">SPI_I2S_ReceiveData</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dbf/group___s_p_i___group2_1gad5af40bebe8dbe3fa8bd476489d7e3da">SPI_I2S_SendData</link> (
+SPI_TypeDef * SPIx, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d3b/group___s_p_i___group3_1ga64f7276d119e6cb58afc100f8832adb0">SPI_CalculateCRC</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d3b/group___s_p_i___group3_1gace8b1058e09bab150b0dbe5978810273">SPI_TransmitCRC</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d8/d3b/group___s_p_i___group3_1ga4c81c193516e82cf0a2fdc149ef20cc6">SPI_GetCRC</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_CRC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d8/d3b/group___s_p_i___group3_1ga80fb9374cfce670f29128bb78568353f">SPI_GetCRCPolynomial</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d31/group___s_p_i___group4_1gabed5b91a8576e6d578f364cc0e807e4a">SPI_I2S_DMACmd</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_I2S_DMAReq, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d34/group___s_p_i___group5_1ga17f4ef132e8ddbf94cb6b1688d181e41">SPI_I2S_ITConfig</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_I2S_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d9/d34/group___s_p_i___group5_1ga1bd785d129e09c5734a876c8f2767204">SPI_I2S_GetFlagStatus</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_I2S_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d34/group___s_p_i___group5_1ga3aabd9e2437e213056c0ed9bdfa1a724">SPI_I2S_ClearFlag</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_I2S_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d9/d34/group___s_p_i___group5_1ga72decbc1cd79f8fad92a2204beca6bc5">SPI_I2S_GetITStatus</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_I2S_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d34/group___s_p_i___group5_1ga35a524a49ff3d058137060f751e8749f">SPI_I2S_ClearITPendingBit</link> (
+SPI_TypeDef * SPIx, uint8_t SPI_I2S_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the following functionalities of the Serial peripheral interface (SPI): </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011<itemizedlist>
+<listitem>
+<para>Initialization and Configuration</para>
+</listitem><listitem>
+<para>Data transfers functions</para>
+</listitem><listitem>
+<para>Hardware CRC Calculation</para>
+</listitem><listitem>
+<para>DMA transfers management</para>
+</listitem><listitem>
+<para>Interrupts and flags management</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<programlisting><literallayout>*          
+*                    
+*          ===================================================================
+*                                 How to use this driver
+*          ===================================================================
+*    
+*          1. Enable peripheral clock using the following functions 
+*             RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE) for SPI1
+*             RCC_APB1PeriphClockCmd(RCC_APB1Periph_SPI2, ENABLE) for SPI2
+*             RCC_APB1PeriphResetCmd(RCC_APB1Periph_SPI3, ENABLE) for SPI3.
+*
+*          2. Enable SCK, MOSI, MISO and NSS GPIO clocks using RCC_AHB1PeriphClockCmd()
+*             function.
+*             In I2S mode, if an external clock source is used then the I2S CKIN pin GPIO
+*             clock should also be enabled.
+*
+*          3. Peripherals alternate function: 
+*                 - Connect the pin to the desired peripherals&apos; Alternate 
+*                   Function (AF) using GPIO_PinAFConfig() function
+*                 - Configure the desired pin in alternate function by:
+*                   GPIO_InitStruct-&gt;GPIO_Mode = GPIO_Mode_AF
+*                 - Select the type, pull-up/pull-down and output speed via 
+*                   GPIO_PuPd, GPIO_OType and GPIO_Speed members
+*                 - Call GPIO_Init() function
+*              In I2S mode, if an external clock source is used then the I2S CKIN pin
+*              should be also configured in Alternate function Push-pull pull-up mode. 
+*        
+*          4. Program the Polarity, Phase, First Data, Baud Rate Prescaler, Slave 
+*             Management, Peripheral Mode and CRC Polynomial values using the SPI_Init()
+*             function.
+*             In I2S mode, program the Mode, Standard, Data Format, MCLK Output, Audio 
+*             frequency and Polarity using I2S_Init() function.
+*             For I2S mode, make sure that either:
+*              - I2S PLL is configured using the functions RCC_I2SCLKConfig(RCC_I2S2CLKSource_PLLI2S), 
+*                RCC_PLLI2SCmd(ENABLE) and RCC_GetFlagStatus(RCC_FLAG_PLLI2SRDY).
+*              or 
+*              - External clock source is configured using the function 
+*                RCC_I2SCLKConfig(RCC_I2S2CLKSource_Ext) and after setting correctly the define constant
+*                I2S_EXTERNAL_CLOCK_VAL in the stm32f4xx_conf.h file. 
+*
+*          5. Enable the NVIC and the corresponding interrupt using the function 
+*             SPI_ITConfig() if you need to use interrupt mode. 
+*
+*          6. When using the DMA mode 
+*                   - Configure the DMA using DMA_Init() function
+*                   - Active the needed channel Request using SPI_I2S_DMACmd() function
+* 
+*          7. Enable the SPI using the SPI_Cmd() function or enable the I2S using
+*             I2S_Cmd().
+* 
+*          8. Enable the DMA using the DMA_Cmd() function when using DMA mode. 
+*
+*          9. Optionally, you can enable/configure the following parameters without
+*             re-initialization (i.e there is no need to call again SPI_Init() function):
+*              - When bidirectional mode (SPI_Direction_1Line_Rx or SPI_Direction_1Line_Tx)
+*                is programmed as Data direction parameter using the SPI_Init() function
+*                it can be possible to switch between SPI_Direction_Tx or SPI_Direction_Rx
+*                using the SPI_BiDirectionalLineConfig() function.
+*              - When SPI_NSS_Soft is selected as Slave Select Management parameter 
+*                using the SPI_Init() function it can be possible to manage the 
+*                NSS internal signal using the SPI_NSSInternalSoftwareConfig() function.
+*              - Reconfigure the data size using the SPI_DataSizeConfig() function  
+*              - Enable or disable the SS output using the SPI_SSOutputCmd() function  
+*          
+*          10. To use the CRC Hardware calculation feature refer to the Peripheral 
+*              CRC hardware Calculation subsection.
+*   
+*
+*          It is possible to use SPI in I2S full duplex mode, in this case, each SPI 
+*          peripheral is able to manage sending and receiving data simultaneously
+*          using two data lines. Each SPI peripheral has an extended block called I2Sxext
+*          (ie. I2S2ext for SPI2 and I2S3ext for SPI3).
+*          The extension block is not a full SPI IP, it is used only as I2S slave to
+*          implement full duplex mode. The extension block uses the same clock sources
+*          as its master.          
+*          To configure I2S full duplex you have to:
+*            
+*          1. Configure SPIx in I2S mode (I2S_Init() function) as described above. 
+*           
+*          2. Call the I2S_FullDuplexConfig() function using the same strucutre passed to  
+*             I2S_Init() function.
+*            
+*          3. Call I2S_Cmd() for SPIx then for its extended block.
+*          
+*          4. To configure interrupts or DMA requests and to get/clear flag status, 
+*             use I2Sxext instance for the extension block.
+*             
+*          Functions that can be called with I2Sxext instances are:
+*          I2S_Cmd(), I2S_FullDuplexConfig(), SPI_I2S_ReceiveData(), SPI_I2S_SendData(), 
+*          SPI_I2S_DMACmd(), SPI_I2S_ITConfig(), SPI_I2S_GetFlagStatus(), SPI_I2S_ClearFlag(),
+*          SPI_I2S_GetITStatus() and SPI_I2S_ClearITPendingBit().
+*                 
+*          Example: To use SPI3 in Full duplex mode (SPI3 is Master Tx, I2S3ext is Slave Rx):
+*            
+*          RCC_APB1PeriphClockCmd(RCC_APB1Periph_SPI3, ENABLE);   
+*          I2S_StructInit(&amp;I2SInitStruct);
+*          I2SInitStruct.Mode = I2S_Mode_MasterTx;     
+*          I2S_Init(SPI3, &amp;I2SInitStruct);
+*          I2S_FullDuplexConfig(SPI3ext, &amp;I2SInitStruct)
+*          I2S_Cmd(SPI3, ENABLE);
+*          I2S_Cmd(SPI3ext, ENABLE);
+*          ...
+*          while (SPI_I2S_GetFlagStatus(SPI2, SPI_FLAG_TXE) == RESET)
+*          {}
+*          SPI_I2S_SendData(SPI3, txdata[i]);
+*          ...  
+*          while (SPI_I2S_GetFlagStatus(I2S3ext, SPI_FLAG_RXNE) == RESET)
+*          {}
+*          rxdata[i] = SPI_I2S_ReceiveData(I2S3ext);
+*          ...          
+*              
+*     
+* @note    In I2S mode: if an external clock is used as source clock for the I2S,  
+*          then the define I2S_EXTERNAL_CLOCK_VAL in file stm32f4xx_conf.h should 
+*          be enabled and set to the value of the source clock frequency (in Hz).
+* 
+* @note    In SPI mode: To use the SPI TI mode, call the function SPI_TIModeCmd() 
+*          just after calling the function SPI_Init().
+*
+*  </literallayout></programlisting></para>
+
+<para><formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c</para>
+    </simplesect>
+</section>

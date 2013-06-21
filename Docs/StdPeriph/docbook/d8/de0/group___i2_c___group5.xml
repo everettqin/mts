@@ -1,0 +1,834 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/de0/group___i2_c___group5">
+    <title>Interrupts events and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts, events and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                Interrupts, events and flags management functions
+ ===============================================================================  
+  This section provides functions allowing to configure the I2C Interrupts 
+  sources and check or clear the flags or pending bits status.
+  The user should identify which mode will be used in his application to manage 
+  the communication: Polling mode, Interrupt mode or DMA mode. 
+
+ ===============================================================================
+                          I2C State Monitoring Functions                    
+ ===============================================================================   
+  This I2C driver provides three different ways for I2C state monitoring
+  depending on the application requirements and constraints:
+         
+   
+     1. Basic state monitoring (Using I2C_CheckEvent() function)
+     -----------------------------------------------------------
+        It compares the status registers (SR1 and SR2) content to a given event
+        (can be the combination of one or more flags).
+        It returns SUCCESS if the current status includes the given flags 
+        and returns ERROR if one or more flags are missing in the current status.
+
+          - When to use
+             - This function is suitable for most applications as well as for startup 
+               activity since the events are fully described in the product reference 
+               manual (RM0090).
+             - It is also suitable for users who need to define their own events.
+
+          - Limitations
+             - If an error occurs (ie. error flags are set besides to the monitored 
+               flags), the I2C_CheckEvent() function may return SUCCESS despite 
+               the communication hold or corrupted real state. 
+               In this case, it is advised to use error interrupts to monitor 
+               the error events and handle them in the interrupt IRQ handler.
+         
+     @note 
+         For error management, it is advised to use the following functions:
+           - I2C_ITConfig() to configure and enable the error interrupts (I2C_IT_ERR).
+           - I2Cx_ER_IRQHandler() which is called when the error interrupt occurs.
+             Where x is the peripheral instance (I2C1, I2C2 ...)
+           - I2C_GetFlagStatus() or I2C_GetITStatus()  to be called into the 
+             I2Cx_ER_IRQHandler() function in order to determine which error occurred.
+           - I2C_ClearFlag() or I2C_ClearITPendingBit() and/or I2C_SoftwareResetCmd() 
+             and/or I2C_GenerateStop() in order to clear the error flag and source 
+             and return to correct  communication status.
+             
+ 
+     2. Advanced state monitoring (Using the function I2C_GetLastEvent())
+     -------------------------------------------------------------------- 
+        Using the function I2C_GetLastEvent() which returns the image of both status 
+        registers in a single word (uint32_t) (Status Register 2 value is shifted left 
+        by 16 bits and concatenated to Status Register 1).
+
+          - When to use
+             - This function is suitable for the same applications above but it 
+               allows to overcome the mentioned limitation of I2C_GetFlagStatus() 
+               function.
+             - The returned value could be compared to events already defined in 
+               the library (stm32f4xx_i2c.h) or to custom values defined by user.
+               This function is suitable when multiple flags are monitored at the 
+               same time.
+             - At the opposite of I2C_CheckEvent() function, this function allows 
+               user to choose when an event is accepted (when all events flags are 
+               set and no other flags are set or just when the needed flags are set 
+               like I2C_CheckEvent() function.
+
+          - Limitations
+             - User may need to define his own events.
+             - Same remark concerning the error management is applicable for this 
+               function if user decides to check only regular communication flags 
+               (and ignores error flags).
+      
+ 
+     3. Flag-based state monitoring (Using the function I2C_GetFlagStatus())
+     -----------------------------------------------------------------------
+     
+      Using the function I2C_GetFlagStatus() which simply returns the status of 
+      one single flag (ie. I2C_FLAG_RXNE ...). 
+
+          - When to use
+             - This function could be used for specific applications or in debug 
+               phase.
+             - It is suitable when only one flag checking is needed (most I2C 
+               events are monitored through multiple flags).
+          - Limitations: 
+             - When calling this function, the Status register is accessed. 
+               Some flags are cleared when the status register is accessed. 
+               So checking the status of one Flag, may clear other ones.
+             - Function may need to be called twice or more in order to monitor 
+               one single event.
+ 
+   For detailed description of Events, please refer to section I2C_Events in 
+   stm32f4xx_i2c.h file.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d8/de0/group___i2_c___group5_1ga8021dc796d15f997356b0583d6346805">I2C_ReadRegister</link> (
+I2C_TypeDef * I2Cx, uint8_t I2C_Register)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de0/group___i2_c___group5_1ga58fed146a06cb81d2940604e460de047">I2C_ITConfig</link> (
+I2C_TypeDef * I2Cx, uint16_t I2C_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d8/de0/group___i2_c___group5_1ga2d5701342f9d4c1f09bf9d3cdcacc326">I2C_CheckEvent</link> (
+I2C_TypeDef * I2Cx, uint32_t I2C_EVENT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d8/de0/group___i2_c___group5_1ga29237aea9b5a3ead33167e1d027e9f1a">I2C_GetLastEvent</link> (
+I2C_TypeDef * I2Cx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d8/de0/group___i2_c___group5_1ga15c95d0ed124f029621a2061b1677ee7">I2C_GetFlagStatus</link> (
+I2C_TypeDef * I2Cx, uint32_t I2C_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de0/group___i2_c___group5_1ga9d4f8fe9f7232696114b5578b1223963">I2C_ClearFlag</link> (
+I2C_TypeDef * I2Cx, uint32_t I2C_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d8/de0/group___i2_c___group5_1ga447771fbbd94a56f3570b9f430a069ba">I2C_GetITStatus</link> (
+I2C_TypeDef * I2Cx, uint32_t I2C_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de0/group___i2_c___group5_1ga110dda440fa200b5f77349df19b3e6bb">I2C_ClearITPendingBit</link> (
+I2C_TypeDef * I2Cx, uint32_t I2C_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d8/de0/group___i2_c___group5_1ga8021dc796d15f997356b0583d6346805">
+                <title>uint16_t I2C_ReadRegister (I2C_TypeDef *I2Cx, uint8_t I2C_Register)</title> <emphasis>Reads the specified I2C register and returns its value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2C_Register, :</entry>
+                                <entry>
+<para>specifies the register to read. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>I2C_Register_CR1: CR1 register. </para>
+</listitem>
+<listitem>
+<para>I2C_Register_CR2: CR2 register. </para>
+</listitem>
+<listitem>
+<para>I2C_Register_OAR1: OAR1 register. </para>
+</listitem>
+<listitem>
+<para>I2C_Register_OAR2: OAR2 register. </para>
+</listitem>
+<listitem>
+<para>I2C_Register_DR: DR register. </para>
+</listitem>
+<listitem>
+<para>I2C_Register_SR1: SR1 register. </para>
+</listitem>
+<listitem>
+<para>I2C_Register_SR2: SR2 register. </para>
+</listitem>
+<listitem>
+<para>I2C_Register_CCR: CCR register. </para>
+</listitem>
+<listitem>
+<para>I2C_Register_TRISE: TRISE register. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>value of the read register. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/de0/group___i2_c___group5_1ga58fed146a06cb81d2940604e460de047">
+                <title>void I2C_ITConfig (I2C_TypeDef *I2Cx, uint16_t I2C_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified I2C interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_IT, :</entry>
+                                <entry>
+<para>specifies the I2C interrupts sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>I2C_IT_BUF: Buffer interrupt mask </para>
+</listitem>
+<listitem>
+<para>I2C_IT_EVT: Event interrupt mask </para>
+</listitem>
+<listitem>
+<para>I2C_IT_ERR: Error interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified I2C interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/de0/group___i2_c___group5_1ga2d5701342f9d4c1f09bf9d3cdcacc326">
+                <title>ErrorStatus I2C_CheckEvent (I2C_TypeDef *I2Cx, uint32_t I2C_EVENT)</title> <emphasis>Checks whether the last I2Cx Event is equal to the one passed
+        as parameter.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_EVENT, :</entry>
+                                <entry>
+<para>specifies the event to be checked. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED: EV1 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED: EV1 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_SLAVE_TRANSMITTER_SECONDADDRESS_MATCHED: EV1 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_SLAVE_RECEIVER_SECONDADDRESS_MATCHED: EV1 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_SLAVE_GENERALCALLADDRESS_MATCHED: EV1 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_SLAVE_BYTE_RECEIVED: EV2 </para>
+</listitem>
+<listitem>
+<para>(I2C_EVENT_SLAVE_BYTE_RECEIVED | I2C_FLAG_DUALF): EV2 </para>
+</listitem>
+<listitem>
+<para>(I2C_EVENT_SLAVE_BYTE_RECEIVED | I2C_FLAG_GENCALL): EV2 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_SLAVE_BYTE_TRANSMITTED: EV3 </para>
+</listitem>
+<listitem>
+<para>(I2C_EVENT_SLAVE_BYTE_TRANSMITTED | I2C_FLAG_DUALF): EV3 </para>
+</listitem>
+<listitem>
+<para>(I2C_EVENT_SLAVE_BYTE_TRANSMITTED | I2C_FLAG_GENCALL): EV3 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_SLAVE_ACK_FAILURE: EV3_2 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_SLAVE_STOP_DETECTED: EV4 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_MASTER_MODE_SELECT: EV5 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED: EV6 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED: EV6 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_MASTER_BYTE_RECEIVED: EV7 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_MASTER_BYTE_TRANSMITTING: EV8 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_MASTER_BYTE_TRANSMITTED: EV8_2 </para>
+</listitem>
+<listitem>
+<para>I2C_EVENT_MASTER_MODE_ADDRESS10: EV9</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>For detailed description of Events, please refer to section I2C_Events in <link linkend="dc/dfa/stm32f4xx__i2c_8h">stm32f4xx_i2c.h</link> file.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: Last event is equal to the I2C_EVENT</para>
+</listitem><listitem>
+<para>ERROR: Last event is different from the I2C_EVENT </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/de0/group___i2_c___group5_1ga29237aea9b5a3ead33167e1d027e9f1a">
+                <title>uint32_t I2C_GetLastEvent (I2C_TypeDef *I2Cx)</title> <emphasis>Returns the last I2Cx Event.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>For detailed description of Events, please refer to section I2C_Events in <link linkend="dc/dfa/stm32f4xx__i2c_8h">stm32f4xx_i2c.h</link> file.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>last event </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/de0/group___i2_c___group5_1ga15c95d0ed124f029621a2061b1677ee7">
+                <title>FlagStatus I2C_GetFlagStatus (I2C_TypeDef *I2Cx, uint32_t I2C_FLAG)</title> <emphasis>Checks whether the specified I2C flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>I2C_FLAG_DUALF: Dual flag (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_SMBHOST: SMBus host header (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_SMBDEFAULT: SMBus default header (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_GENCALL: General call header flag (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_TRA: Transmitter/Receiver flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_BUSY: Bus busy flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_MSL: Master/Slave flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_SMBALERT: SMBus Alert flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_TIMEOUT: Timeout or Tlow error flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_PECERR: PEC error in reception flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_OVR: Overrun/Underrun flag (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_AF: Acknowledge failure flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_ARLO: Arbitration lost flag (Master mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_BERR: Bus error flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_TXE: Data register empty flag (Transmitter) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_RXNE: Data register not empty (Receiver) flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_STOPF: Stop detection flag (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_ADD10: 10-bit header sent flag (Master mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_BTF: Byte transfer finished flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_ADDR: Address sent flag (Master mode) &quot;ADSL&quot; Address matched flag (Slave mode)&quot;ENDAD&quot; </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_SB: Start bit flag (Master mode) </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of I2C_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/de0/group___i2_c___group5_1ga9d4f8fe9f7232696114b5578b1223963">
+                <title>void I2C_ClearFlag (I2C_TypeDef *I2Cx, uint32_t I2C_FLAG)</title> <emphasis>Clears the I2Cx&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>I2C_FLAG_SMBALERT: SMBus Alert flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_TIMEOUT: Timeout or Tlow error flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_PECERR: PEC error in reception flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_OVR: Overrun/Underrun flag (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_AF: Acknowledge failure flag </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_ARLO: Arbitration lost flag (Master mode) </para>
+</listitem>
+<listitem>
+<para>I2C_FLAG_BERR: Bus error flag</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>STOPF (STOP detection) is cleared by software sequence: a read operation to I2C_SR1 register (<link linkend="d0/d5b/group___i2_c_1ga15c95d0ed124f029621a2061b1677ee7">I2C_GetFlagStatus()</link>) followed by a write operation to I2C_CR1 register (<link linkend="d0/d5b/group___i2_c_1ga7e1323c9133c2cb424dfb5b10b7d2f0b">I2C_Cmd()</link> to re-enable the I2C peripheral). </para>
+<simplesect/>
+<para>ADD10 (10-bit header sent) is cleared by software sequence: a read operation to I2C_SR1 (<link linkend="d0/d5b/group___i2_c_1ga15c95d0ed124f029621a2061b1677ee7">I2C_GetFlagStatus()</link>) followed by writing the second byte of the address in DR register. </para>
+<simplesect/>
+<para>BTF (Byte Transfer Finished) is cleared by software sequence: a read operation to I2C_SR1 register (<link linkend="d0/d5b/group___i2_c_1ga15c95d0ed124f029621a2061b1677ee7">I2C_GetFlagStatus()</link>) followed by a read/write to I2C_DR register (<link linkend="d0/d5b/group___i2_c_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9">I2C_SendData()</link>). </para>
+<simplesect/>
+<para>ADDR (Address sent) is cleared by software sequence: a read operation to I2C_SR1 register (<link linkend="d0/d5b/group___i2_c_1ga15c95d0ed124f029621a2061b1677ee7">I2C_GetFlagStatus()</link>) followed by a read operation to I2C_SR2 register ((void)(I2Cx-&gt;SR2)). </para>
+<simplesect/>
+<para>SB (Start Bit) is cleared software sequence: a read operation to I2C_SR1 register (<link linkend="d0/d5b/group___i2_c_1ga15c95d0ed124f029621a2061b1677ee7">I2C_GetFlagStatus()</link>) followed by a write operation to I2C_DR register (<link linkend="d0/d5b/group___i2_c_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9">I2C_SendData()</link>).</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/de0/group___i2_c___group5_1ga447771fbbd94a56f3570b9f430a069ba">
+                <title>ITStatus I2C_GetITStatus (I2C_TypeDef *I2Cx, uint32_t I2C_IT)</title> <emphasis>Checks whether the specified I2C interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_IT, :</entry>
+                                <entry>
+<para>specifies the interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>I2C_IT_SMBALERT: SMBus Alert flag </para>
+</listitem>
+<listitem>
+<para>I2C_IT_TIMEOUT: Timeout or Tlow error flag </para>
+</listitem>
+<listitem>
+<para>I2C_IT_PECERR: PEC error in reception flag </para>
+</listitem>
+<listitem>
+<para>I2C_IT_OVR: Overrun/Underrun flag (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_IT_AF: Acknowledge failure flag </para>
+</listitem>
+<listitem>
+<para>I2C_IT_ARLO: Arbitration lost flag (Master mode) </para>
+</listitem>
+<listitem>
+<para>I2C_IT_BERR: Bus error flag </para>
+</listitem>
+<listitem>
+<para>I2C_IT_TXE: Data register empty flag (Transmitter) </para>
+</listitem>
+<listitem>
+<para>I2C_IT_RXNE: Data register not empty (Receiver) flag </para>
+</listitem>
+<listitem>
+<para>I2C_IT_STOPF: Stop detection flag (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_IT_ADD10: 10-bit header sent flag (Master mode) </para>
+</listitem>
+<listitem>
+<para>I2C_IT_BTF: Byte transfer finished flag </para>
+</listitem>
+<listitem>
+<para>I2C_IT_ADDR: Address sent flag (Master mode) &quot;ADSL&quot; Address matched flag (Slave mode)&quot;ENDAD&quot; </para>
+</listitem>
+<listitem>
+<para>I2C_IT_SB: Start bit flag (Master mode) </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of I2C_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/de0/group___i2_c___group5_1ga110dda440fa200b5f77349df19b3e6bb">
+                <title>void I2C_ClearITPendingBit (I2C_TypeDef *I2Cx, uint32_t I2C_IT)</title> <emphasis>Clears the I2Cx&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Cx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the I2C peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2C_IT, :</entry>
+                                <entry>
+<para>specifies the interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>I2C_IT_SMBALERT: SMBus Alert interrupt </para>
+</listitem>
+<listitem>
+<para>I2C_IT_TIMEOUT: Timeout or Tlow error interrupt </para>
+</listitem>
+<listitem>
+<para>I2C_IT_PECERR: PEC error in reception interrupt </para>
+</listitem>
+<listitem>
+<para>I2C_IT_OVR: Overrun/Underrun interrupt (Slave mode) </para>
+</listitem>
+<listitem>
+<para>I2C_IT_AF: Acknowledge failure interrupt </para>
+</listitem>
+<listitem>
+<para>I2C_IT_ARLO: Arbitration lost interrupt (Master mode) </para>
+</listitem>
+<listitem>
+<para>I2C_IT_BERR: Bus error interrupt</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>STOPF (STOP detection) is cleared by software sequence: a read operation to I2C_SR1 register (<link linkend="d0/d5b/group___i2_c_1ga447771fbbd94a56f3570b9f430a069ba">I2C_GetITStatus()</link>) followed by a write operation to I2C_CR1 register (<link linkend="d0/d5b/group___i2_c_1ga7e1323c9133c2cb424dfb5b10b7d2f0b">I2C_Cmd()</link> to re-enable the I2C peripheral). </para>
+<simplesect/>
+<para>ADD10 (10-bit header sent) is cleared by software sequence: a read operation to I2C_SR1 (<link linkend="d0/d5b/group___i2_c_1ga447771fbbd94a56f3570b9f430a069ba">I2C_GetITStatus()</link>) followed by writing the second byte of the address in I2C_DR register. </para>
+<simplesect/>
+<para>BTF (Byte Transfer Finished) is cleared by software sequence: a read operation to I2C_SR1 register (<link linkend="d0/d5b/group___i2_c_1ga447771fbbd94a56f3570b9f430a069ba">I2C_GetITStatus()</link>) followed by a read/write to I2C_DR register (<link linkend="d0/d5b/group___i2_c_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9">I2C_SendData()</link>). </para>
+<simplesect/>
+<para>ADDR (Address sent) is cleared by software sequence: a read operation to I2C_SR1 register (<link linkend="d0/d5b/group___i2_c_1ga447771fbbd94a56f3570b9f430a069ba">I2C_GetITStatus()</link>) followed by a read operation to I2C_SR2 register ((void)(I2Cx-&gt;SR2)). </para>
+<simplesect/>
+<para>SB (Start Bit) is cleared by software sequence: a read operation to I2C_SR1 register (<link linkend="d0/d5b/group___i2_c_1ga447771fbbd94a56f3570b9f430a069ba">I2C_GetITStatus()</link>) followed by a write operation to I2C_DR register (<link linkend="d0/d5b/group___i2_c_1ga7bd9e70b8eafde0dd5eb42b0d95fe1a9">I2C_SendData()</link>). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d51/group___t_i_m__interrupt__sources">
+    <title>TIM_interrupt_sources</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1ga8fb63577fec9a3e7c7f5f3eb775ee624">TIM_IT_Update</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1ga02267a938ab4722c5013fffa447cf5a6">TIM_IT_CC1</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1ga60f6b6c424b62ca58d3fafd8f5955e4f">TIM_IT_CC2</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1ga6aef020aebafd9e585283fbbaf8b841f">TIM_IT_CC3</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1ga1dce7f1bc32a258f2964cb7c05f413a6">TIM_IT_CC4</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1gaeb7eff6c39922814e7ee47c0820c3d9f">TIM_IT_COM</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1ga339629d21f2490729b28905f5c04bad1">TIM_IT_Trigger</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1gad16adab3ac1a4a552a86da069702f24b">TIM_IT_Break</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1ga14fce0f8dbe0925e45b415b34bd162c9">IS_TIM_IT</link> ((((IT) &amp; (uint16_t)0xFF00) == 0x0000) &amp;&amp; ((IT) != 0x0000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d51/group___t_i_m__interrupt__sources_1ga38e9d740c8d4ed8fcaced73816c124e6">IS_TIM_GET_IT</link> (((IT) == TIM_IT_Update) || \
+                           ((IT) == TIM_IT_CC1) || \
+                           ((IT) == TIM_IT_CC2) || \
+                           ((IT) == TIM_IT_CC3) || \
+                           ((IT) == TIM_IT_CC4) || \
+                           ((IT) == TIM_IT_COM) || \
+                           ((IT) == TIM_IT_Trigger) || \
+                           ((IT) == TIM_IT_Break))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/de0/group___t_i_m___output___compare___n___state">
+    <title>TIM_Output_Compare_N_State</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de0/group___t_i_m___output___compare___n___state_1gade8506a50fd6ba58273e9da81f6b0b54">TIM_OutputNState_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de0/group___t_i_m___output___compare___n___state_1gac4c08f9d66ce138c6978668020526c6f">TIM_OutputNState_Enable</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de0/group___t_i_m___output___compare___n___state_1ga81e27a982d9707f699451f30314c4274">IS_TIM_OUTPUTN_STATE</link> (((STATE) == TIM_OutputNState_Disable) || \
+                                     ((STATE) == TIM_OutputNState_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d7c/group___u_s_a_r_t___hardware___flow___control">
+    <title>USART_Hardware_Flow_Control</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d7c/group___u_s_a_r_t___hardware___flow___control_1gaf3deaf4429b88db7753ee203f4797bd3">USART_HardwareFlowControl_None</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d7c/group___u_s_a_r_t___hardware___flow___control_1ga22d4339693e3356d992abca259b0418e">USART_HardwareFlowControl_RTS</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d7c/group___u_s_a_r_t___hardware___flow___control_1ga4d989f112f94009c0849fe4dbe829d81">USART_HardwareFlowControl_CTS</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d7c/group___u_s_a_r_t___hardware___flow___control_1ga2986aed8c6cba414ac8afe0180ab553e">USART_HardwareFlowControl_RTS_CTS</link> ((uint16_t)0x0300)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d7c/group___u_s_a_r_t___hardware___flow___control_1ga9b905eb465780173a2e98bc8b602c030">IS_USART_HARDWARE_FLOW_CONTROL</link> (((CONTROL) == USART_HardwareFlowControl_None) || \
+                               ((CONTROL) == USART_HardwareFlowControl_RTS) || \
+                               ((CONTROL) == USART_HardwareFlowControl_CTS) || \
+                               ((CONTROL) == USART_HardwareFlowControl_RTS_CTS))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

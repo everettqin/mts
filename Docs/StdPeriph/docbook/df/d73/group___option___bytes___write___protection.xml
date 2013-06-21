@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d73/group___option___bytes___write___protection">
+    <title>Option_Bytes_Write_Protection</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gaff0ba34d35179bdc6e2f09d6813290f6">OB_WRP_Sector_0</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gac9644173d5d7d5f67f5b623fcfb3b40f">OB_WRP_Sector_1</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga7753cebe1a52745ff90147970f7ec32e">OB_WRP_Sector_2</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga0c5703b7294cccd7a1db08075032c863">OB_WRP_Sector_3</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gabb50050de92ef1fb2d0d0927323d8206">OB_WRP_Sector_4</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gae1d6cf3e35d5a75934dec6ce9a5e33c3">OB_WRP_Sector_5</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga383d910c0be9c8ec4577b4fd4a6c8954">OB_WRP_Sector_6</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga23f59fa8ec37ea1072e617ac50f09632">OB_WRP_Sector_7</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gaf351164510a07ba8cdcfde8473100c05">OB_WRP_Sector_8</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga5441787d51d48a73f85f2f8efe7f2992">OB_WRP_Sector_9</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga886ff84dee003a1fbb6de64bf9465455">OB_WRP_Sector_10</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1gadd07be676785c86096ad546f2e792d17">OB_WRP_Sector_11</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga049185e634497456e6d3c7b3dca214d6">OB_WRP_Sector_All</link> ((uint32_t)0x00000FFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d73/group___option___bytes___write___protection_1ga4bd8f8ce63ce60bac832efbfbb4fa564">IS_OB_WRP</link> ((((SECTOR) &amp; (uint32_t)0xFFFFF000) == 0x00000000) &amp;&amp; ((SECTOR) != 0x00000000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1gaff0ba34d35179bdc6e2f09d6813290f6">
+                <title>#define OB_WRP_Sector_0</title>                
+<para>Write protection of Sector0 </para>
+
+                <para>Definition at line 134 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1gac9644173d5d7d5f67f5b623fcfb3b40f">
+                <title>#define OB_WRP_Sector_1</title>                
+<para>Write protection of Sector1 </para>
+
+                <para>Definition at line 135 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1ga7753cebe1a52745ff90147970f7ec32e">
+                <title>#define OB_WRP_Sector_2</title>                
+<para>Write protection of Sector2 </para>
+
+                <para>Definition at line 136 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1ga0c5703b7294cccd7a1db08075032c863">
+                <title>#define OB_WRP_Sector_3</title>                
+<para>Write protection of Sector3 </para>
+
+                <para>Definition at line 137 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1gabb50050de92ef1fb2d0d0927323d8206">
+                <title>#define OB_WRP_Sector_4</title>                
+<para>Write protection of Sector4 </para>
+
+                <para>Definition at line 138 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1gae1d6cf3e35d5a75934dec6ce9a5e33c3">
+                <title>#define OB_WRP_Sector_5</title>                
+<para>Write protection of Sector5 </para>
+
+                <para>Definition at line 139 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1ga383d910c0be9c8ec4577b4fd4a6c8954">
+                <title>#define OB_WRP_Sector_6</title>                
+<para>Write protection of Sector6 </para>
+
+                <para>Definition at line 140 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1ga23f59fa8ec37ea1072e617ac50f09632">
+                <title>#define OB_WRP_Sector_7</title>                
+<para>Write protection of Sector7 </para>
+
+                <para>Definition at line 141 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1gaf351164510a07ba8cdcfde8473100c05">
+                <title>#define OB_WRP_Sector_8</title>                
+<para>Write protection of Sector8 </para>
+
+                <para>Definition at line 142 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1ga5441787d51d48a73f85f2f8efe7f2992">
+                <title>#define OB_WRP_Sector_9</title>                
+<para>Write protection of Sector9 </para>
+
+                <para>Definition at line 143 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1ga886ff84dee003a1fbb6de64bf9465455">
+                <title>#define OB_WRP_Sector_10</title>                
+<para>Write protection of Sector10 </para>
+
+                <para>Definition at line 144 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1gadd07be676785c86096ad546f2e792d17">
+                <title>#define OB_WRP_Sector_11</title>                
+<para>Write protection of Sector11 </para>
+
+                <para>Definition at line 145 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d73/group___option___bytes___write___protection_1ga049185e634497456e6d3c7b3dca214d6">
+                <title>#define OB_WRP_Sector_All</title>                
+<para>Write protection of all Sectors </para>
+
+                <para>Definition at line 146 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

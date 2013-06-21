@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d0e/group___s_d_i_o___hardware___flow___control">
+    <title>SDIO_Hardware_Flow_Control</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d0e/group___s_d_i_o___hardware___flow___control_1ga7529a3c8a11ac685bde4aafa12c8a977">SDIO_HardwareFlowControl_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d0e/group___s_d_i_o___hardware___flow___control_1gab6cfef6778d829f3dcefc6c2bad7c9aa">SDIO_HardwareFlowControl_Enable</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d0e/group___s_d_i_o___hardware___flow___control_1gad8be549f8348479d064dff21343ae411">IS_SDIO_HARDWARE_FLOW_CONTROL</link> (((CONTROL) == SDIO_HardwareFlowControl_Disable) || \
+                                                ((CONTROL) == SDIO_HardwareFlowControl_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

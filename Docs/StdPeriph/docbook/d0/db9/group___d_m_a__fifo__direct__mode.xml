@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/db9/group___d_m_a__fifo__direct__mode">
+    <title>DMA_fifo_direct_mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/db9/group___d_m_a__fifo__direct__mode_1gadad9e503fa9867a981e3090d333483d7">DMA_FIFOMode_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/db9/group___d_m_a__fifo__direct__mode_1ga482bc2af420602d1a8c2aa35049a3857">DMA_FIFOMode_Enable</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/db9/group___d_m_a__fifo__direct__mode_1gadb90a893aeb49fd4bc14af750af3837c">IS_DMA_FIFO_MODE_STATE</link> (((STATE) == DMA_FIFOMode_Disable ) || \
+                                       ((STATE) == DMA_FIFOMode_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

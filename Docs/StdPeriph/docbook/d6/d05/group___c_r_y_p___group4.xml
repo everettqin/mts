@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d05/group___c_r_y_p___group4">
+    <title>CRYP&apos;s DMA interface Configuration function</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CRYP&apos;s DMA interface Configuration function. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                   CRYP&apos;s DMA interface Configuration function
+ ===============================================================================  
+
+  This section provides functions allowing to configure the DMA interface for 
+  CRYP data input and output transfer.
+   
+  When the DMA mode is enabled (using the CRYP_DMACmd() function), data can be 
+  transferred:
+  - From memory to the CRYP IN FIFO using the DMA peripheral by enabling 
+    the CRYP_DMAReq_DataIN request.
+  - From the CRYP OUT FIFO to the memory using the DMA peripheral by enabling 
+    the CRYP_DMAReq_DataOUT request.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d05/group___c_r_y_p___group4_1ga111d0ec56facb27f8367ce6a33869115">CRYP_DMACmd</link> (
+uint8_t CRYP_DMAReq, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d6/d05/group___c_r_y_p___group4_1ga111d0ec56facb27f8367ce6a33869115">
+                <title>void CRYP_DMACmd (uint8_t CRYP_DMAReq, FunctionalState NewState)</title> <emphasis>Enables or disables the CRYP DMA interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_DMAReq, :</entry>
+                                <entry>
+<para>specifies the CRYP DMA transfer request to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>CRYP_DMAReq_DataOUT: DMA for outgoing(Tx) data transfer </para>
+</listitem>
+<listitem>
+<para>CRYP_DMAReq_DataIN: DMA for incoming(Rx) data transfer </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected CRYP DMA transfer request. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

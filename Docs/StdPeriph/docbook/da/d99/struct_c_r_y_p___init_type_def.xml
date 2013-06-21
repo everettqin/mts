@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d99/struct_c_r_y_p___init_type_def">
+<title>CRYP_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/dfe/stm32f4xx__cryp_8h">&lt;stm32f4xx_cryp.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t CRYP_AlgoDir</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t CRYP_AlgoMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t CRYP_DataType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t CRYP_KeySize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CRYP Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t CRYP_AlgoDir</title>                
+<para>Encrypt or Decrypt. This parameter can be a value of <link linkend="db/dea/group___c_r_y_p___algorithm___direction">CRYP_Algorithm_Direction</link> </para>
+
+                <para>Definition at line 49 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t CRYP_AlgoMode</title>                
+<para>TDES-ECB, TDES-CBC, DES-ECB, DES-CBC, AES-ECB, AES-CBC, AES-CTR, AES-Key. This parameter can be a value of <link linkend="d3/d86/group___c_r_y_p___algorithm___mode">CRYP_Algorithm_Mode</link> </para>
+
+                <para>Definition at line 51 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t CRYP_DataType</title>                
+<para>32-bit data, 16-bit data, bit data or bit-string. This parameter can be a value of <link linkend="d6/dd9/group___c_r_y_p___data___type">CRYP_Data_Type</link> </para>
+
+                <para>Definition at line 54 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t CRYP_KeySize</title>                
+<para>Used only in AES mode only : 128, 192 or 256 bit key length. This parameter can be a value of <link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only">CRYP_Key_Size_for_AES_only</link> </para>
+
+                <para>Definition at line 56 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

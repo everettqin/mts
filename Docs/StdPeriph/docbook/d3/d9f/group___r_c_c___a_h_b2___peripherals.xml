@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d9f/group___r_c_c___a_h_b2___peripherals">
+    <title>RCC_AHB2_Peripherals</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d9f/group___r_c_c___a_h_b2___peripherals_1ga514e63d5f3ced29ca4014d84e269ea6e">RCC_AHB2Periph_DCMI</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d9f/group___r_c_c___a_h_b2___peripherals_1ga99893bb6ef0cc504fbbc6236ae883410">RCC_AHB2Periph_CRYP</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d9f/group___r_c_c___a_h_b2___peripherals_1gad235f25cf07339b1486e95adf4e2111c">RCC_AHB2Periph_HASH</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d9f/group___r_c_c___a_h_b2___peripherals_1gae6c14647792757c0b3a4339c74f9ce96">RCC_AHB2Periph_RNG</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d9f/group___r_c_c___a_h_b2___peripherals_1ga95977679051aa7428d823404bff63aea">RCC_AHB2Periph_OTG_FS</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d9f/group___r_c_c___a_h_b2___peripherals_1ga90f3f337a5f503e36280ab4504d31c39">IS_RCC_AHB2_PERIPH</link> ((((PERIPH) &amp; 0xFFFFFF0E) == 0x00) &amp;&amp; ((PERIPH) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

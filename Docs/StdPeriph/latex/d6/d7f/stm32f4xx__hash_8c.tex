@@ -1,0 +1,168 @@
+\hypertarget{stm32f4xx__hash_8c}{\section{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.1.0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-hash.c File Reference}
+\label{stm32f4xx__hash_8c}\index{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-hash.\-c@{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/src/stm32f4xx\-\_\-hash.\-c}}
+}
+
+
+This file provides firmware functions to manage the following functionalities of the H\-A\-S\-H / H\-M\-A\-C Processor (H\-A\-S\-H) peripheral\-:  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx\-\_\-hash.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stm32f4xx\-\_\-rcc.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___h_a_s_h___group1_ga88717fe3a4f557182841a958e1dcd9c7}{H\-A\-S\-H\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the H\-A\-S\-H peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group1_ga4a7d33f0954ac0463a6cda81121635cf}{H\-A\-S\-H\-\_\-\-Init} (\hyperlink{struct_h_a_s_h___init_type_def}{H\-A\-S\-H\-\_\-\-Init\-Type\-Def} $\ast$H\-A\-S\-H\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the H\-A\-S\-H peripheral according to the specified parameters in the H\-A\-S\-H\-\_\-\-Init\-Struct structure. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group1_ga9cfaaa73eafec40a06154f58d48adeb5}{H\-A\-S\-H\-\_\-\-Struct\-Init} (\hyperlink{struct_h_a_s_h___init_type_def}{H\-A\-S\-H\-\_\-\-Init\-Type\-Def} $\ast$H\-A\-S\-H\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each H\-A\-S\-H\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group1_ga11745813cf85a08b2058aac3bd026e4d}{H\-A\-S\-H\-\_\-\-Reset} (void)
+\begin{DoxyCompactList}\small\item\em Resets the H\-A\-S\-H processor core, so that the H\-A\-S\-H will be ready to compute the message digest of a new message. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group2_gac4d1fa51c9240ad0287b371564b5d2a6}{H\-A\-S\-H\-\_\-\-Set\-Last\-Word\-Valid\-Bits\-Nbr} (uint16\-\_\-t Valid\-Number)
+\begin{DoxyCompactList}\small\item\em Configure the Number of valid bits in last word of the message. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group2_ga9c4c0cebdeb1ce2631dd2eeab82107ef}{H\-A\-S\-H\-\_\-\-Data\-In} (uint32\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Writes data in the Data Input F\-I\-F\-O. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___h_a_s_h___group2_ga37bec5e637a57124f3179185d03537ab}{H\-A\-S\-H\-\_\-\-Get\-In\-F\-I\-F\-O\-Words\-Nbr} (void)
+\begin{DoxyCompactList}\small\item\em Returns the number of words already pushed into the I\-N F\-I\-F\-O. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group2_ga23018d770837d6ab9f46941f105cc017}{H\-A\-S\-H\-\_\-\-Get\-Digest} (\hyperlink{struct_h_a_s_h___msg_digest}{H\-A\-S\-H\-\_\-\-Msg\-Digest} $\ast$H\-A\-S\-H\-\_\-\-Message\-Digest)
+\begin{DoxyCompactList}\small\item\em Provides the message digest result. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group2_ga84ac2b64179fd37b75c4d5f665126e93}{H\-A\-S\-H\-\_\-\-Start\-Digest} (void)
+\begin{DoxyCompactList}\small\item\em Starts the message padding and calculation of the final message. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group3_ga9432b2b66e223414c840e9313c388bc5}{H\-A\-S\-H\-\_\-\-Save\-Context} (\hyperlink{struct_h_a_s_h___context}{H\-A\-S\-H\-\_\-\-Context} $\ast$H\-A\-S\-H\-\_\-\-Context\-Save)
+\begin{DoxyCompactList}\small\item\em Save the Hash peripheral Context. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group3_ga1d8412a13601376c968aec63212ca54e}{H\-A\-S\-H\-\_\-\-Restore\-Context} (\hyperlink{struct_h_a_s_h___context}{H\-A\-S\-H\-\_\-\-Context} $\ast$H\-A\-S\-H\-\_\-\-Context\-Restore)
+\begin{DoxyCompactList}\small\item\em Restore the Hash peripheral Context. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group4_ga6bc756803b0b3a03eecc47cb570e1bd3}{H\-A\-S\-H\-\_\-\-D\-M\-A\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the H\-A\-S\-H D\-M\-A interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group5_gaed111ba67a4f4afc8c9cf389adc574ac}{H\-A\-S\-H\-\_\-\-I\-T\-Config} (uint8\-\_\-t H\-A\-S\-H\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified H\-A\-S\-H interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___h_a_s_h___group5_gae994fb4be1977f6ebb823f38839f7bd1}{H\-A\-S\-H\-\_\-\-Get\-Flag\-Status} (uint16\-\_\-t H\-A\-S\-H\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified H\-A\-S\-H flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group5_ga0ec1269a1f30a1e7be0e3045d72ebcf6}{H\-A\-S\-H\-\_\-\-Clear\-Flag} (uint16\-\_\-t H\-A\-S\-H\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the H\-A\-S\-H flags. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___h_a_s_h___group5_ga49a9d1ad196112cd3614b8c428a4c4cf}{H\-A\-S\-H\-\_\-\-Get\-I\-T\-Status} (uint8\-\_\-t H\-A\-S\-H\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified H\-A\-S\-H interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h___group5_ga97b9508f09c6fb572f65832f124da26d}{H\-A\-S\-H\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint8\-\_\-t H\-A\-S\-H\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the H\-A\-S\-H interrupt pending bit(s). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides firmware functions to manage the following functionalities of the H\-A\-S\-H / H\-M\-A\-C Processor (H\-A\-S\-H) peripheral\-: \begin{DoxyAuthor}{Author}
+M\-C\-D Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+30-\/\-September-\/2011
+\begin{DoxyItemize}
+\item Initialization and Configuration functions
+\item Message Digest generation functions
+\item context swapping functions
+\item D\-M\-A interface function
+\item Interrupts and flags management
+\end{DoxyItemize}
+\end{DoxyDate}
+\begin{DoxyVerb}*                               
+*          ===================================================================      
+*                                   How to use this driver
+*          ===================================================================
+*          HASH operation : 
+*          ----------------                   
+*         1. Enable the HASH controller clock using 
+*            RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_HASH, ENABLE) function.
+*           
+*         2. Initialise the HASH using HASH_Init() function. 
+*               
+*         3 . Reset the HASH processor core, so that the HASH will be ready 
+*             to compute he message digest of a new message by using 
+*             HASH_Reset() function.
+*
+*         4. Enable the HASH controller using the HASH_Cmd() function. 
+*                
+*         5. if using DMA for Data input transfer, Activate the DMA Request 
+*            using HASH_DMACmd() function 
+*                    
+*         6. if DMA is not used for data transfer, use HASH_DataIn() function 
+*            to enter data to IN FIFO.
+*             
+*          
+*         7. Configure the Number of valid bits in last word of the message 
+*            using HASH_SetLastWordValidBitsNbr() function.
+*             
+*         8. if the message length is not an exact multiple of 512 bits, 
+*            then the function HASH_StartDigest() must be called to 
+*            launch the computation of the final digest.     
+*             
+*         9. Once computed, the digest can be read using HASH_GetDigest() 
+*            function.         
+*                   
+*        10. To control HASH events you can use one of the following 
+*              two methods:
+*               a- Check on HASH flags using the HASH_GetFlagStatus() function.  
+*               b- Use HASH interrupts through the function HASH_ITConfig() at 
+*                  initialization phase and HASH_GetITStatus() function into 
+*                  interrupt routines in hashing phase.
+*          After checking on a flag you should clear it using HASH_ClearFlag()
+*          function. And after checking on an interrupt event you should 
+*          clear it using HASH_ClearITPendingBit() function.     
+*                     
+*        11. Save and restore hash processor context using 
+*            HASH_SaveContext() and HASH_RestoreContext() functions.     
+*              
+*
+*            
+*          HMAC operation : 
+*          ----------------  
+*          The HMAC algorithm is used for message authentication, by 
+*          irreversibly binding the message being processed to a key chosen 
+*          by the user. 
+*          For HMAC specifications, refer to "HMAC: keyed-hashing for message 
+*          authentication, H. Krawczyk, M. Bellare, R. Canetti, February 1997"
+*          
+*          Basically, the HMAC algorithm consists of two nested hash operations:
+*          HMAC(message) = Hash[((key | pad) XOR 0x5C) | Hash(((key | pad) XOR 0x36) | message)]
+*          where:
+*          - "pad" is a sequence of zeroes needed to extend the key to the 
+*                  length of the underlying hash function data block (that is 
+*                  512 bits for both the SHA-1 and MD5 hash algorithms)
+*          - "|"   represents the concatenation operator 
+*          
+*         
+*         To compute the HMAC, four different phases are required:
+*                    
+*         1.  Initialise the HASH using HASH_Init() function to do HMAC 
+*             operation. 
+*                
+*         2.  The key (to be used for the inner hash function) is then given 
+*             to the core. This operation follows the same mechanism as the 
+*             one used to send the message in the hash operation (that is, 
+*             by HASH_DataIn() function and, finally, 
+*             HASH_StartDigest() function.
+*          
+*         3.  Once the last word has been entered and computation has started, 
+*             the hash processor elaborates the key. It is then ready to 
+*             accept the message text using the same mechanism as the one 
+*             used to send the message in the hash operation.
+*       
+*         4.  After the first hash round, the hash processor returns "ready" 
+*             to indicate that it is ready to receive the key to be used for 
+*             the outer hash function (normally, this key is the same as the 
+*             one used for the inner hash function). When the last word of 
+*             the key is entered and computation starts, the HMAC result is 
+*             made available using HASH_GetDigest() function.
+*               
+*              
+*  \end{DoxyVerb}
+
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\-H\-E P\-R\-E\-S\-E\-N\-T F\-I\-R\-M\-W\-A\-R\-E W\-H\-I\-C\-H I\-S F\-O\-R G\-U\-I\-D\-A\-N\-C\-E O\-N\-L\-Y A\-I\-M\-S A\-T P\-R\-O\-V\-I\-D\-I\-N\-G C\-U\-S\-T\-O\-M\-E\-R\-S W\-I\-T\-H C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N R\-E\-G\-A\-R\-D\-I\-N\-G T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S I\-N O\-R\-D\-E\-R F\-O\-R T\-H\-E\-M T\-O S\-A\-V\-E T\-I\-M\-E. A\-S A R\-E\-S\-U\-L\-T, S\-T\-M\-I\-C\-R\-O\-E\-L\-E\-C\-T\-R\-O\-N\-I\-C\-S S\-H\-A\-L\-L N\-O\-T B\-E H\-E\-L\-D L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y D\-I\-R\-E\-C\-T, I\-N\-D\-I\-R\-E\-C\-T O\-R C\-O\-N\-S\-E\-Q\-U\-E\-N\-T\-I\-A\-L D\-A\-M\-A\-G\-E\-S W\-I\-T\-H R\-E\-S\-P\-E\-C\-T T\-O A\-N\-Y C\-L\-A\-I\-M\-S A\-R\-I\-S\-I\-N\-G F\-R\-O\-M T\-H\-E C\-O\-N\-T\-E\-N\-T O\-F S\-U\-C\-H F\-I\-R\-M\-W\-A\-R\-E A\-N\-D/\-O\-R T\-H\-E U\-S\-E M\-A\-D\-E B\-Y C\-U\-S\-T\-O\-M\-E\-R\-S O\-F T\-H\-E C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N C\-O\-N\-T\-A\-I\-N\-E\-D H\-E\-R\-E\-I\-N I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S.
+
+\subsubsection*{\begin{center}\copyright C\-O\-P\-Y\-R\-I\-G\-H\-T 2011 S\-T\-Microelectronics\end{center} }
+
+Definition in file \hyperlink{stm32f4xx__hash_8c_source}{stm32f4xx\-\_\-hash.\-c}.
+

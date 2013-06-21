@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d99/group___e_x_t_i___private___functions">
+    <title>EXTI_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d8/d41/group___e_x_t_i___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d3/d1b/group___e_x_t_i___group2">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d8/d41/group___e_x_t_i___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d1b/group___e_x_t_i___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

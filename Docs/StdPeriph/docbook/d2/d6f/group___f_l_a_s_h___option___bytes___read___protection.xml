@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection">
+    <title>FLASH_Option_Bytes_Read_Protection</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection_1gae0417128469ebd025ef619bb9bd28271">OB_RDP_Level_0</link> ((uint8_t)0xAA)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection_1gaeee87887410dcc3d47f0e6416f1d49d5">OB_RDP_Level_1</link> ((uint8_t)0x55)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection_1ga9f6200da3a5294668e1b24b65f85b34a">IS_OB_RDP</link> (((LEVEL) == OB_RDP_Level_0)||\
+                          ((LEVEL) == OB_RDP_Level_1))/*||\
+                          ((LEVEL) == OB_RDP_Level_2))*/</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection_1ga9f6200da3a5294668e1b24b65f85b34a">
+                <title>#define IS_OB_RDP</title>                
+<para>&lt; Warning: When enabling read protection level 2 it&apos;s no more possible to go back to level 1 or 0 </para>
+
+                <para>Definition at line 161 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

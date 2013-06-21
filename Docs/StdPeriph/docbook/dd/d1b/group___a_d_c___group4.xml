@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d1b/group___a_d_c___group4">
+    <title>Regular Channels Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Regular Channels Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                  Regular Channels Configuration functions
+ ===============================================================================  
+
+  This section provides functions allowing to manage the ADC&apos;s regular channels,
+  it is composed of 2 sub sections : 
+  
+  1. Configuration and management functions for regular channels: This subsection 
+     provides functions allowing to configure the ADC regular channels :    
+          - Configure the rank in the regular group sequencer for each channel
+          - Configure the sampling time for each channel
+          - select the conversion Trigger for regular channels
+          - select the desired EOC event behavior configuration
+          - Activate the continuous Mode  (*)
+          - Activate the Discontinuous Mode 
+     Please Note that the following features for regular channels are configurated
+     using the ADC_Init() function : 
+          - scan mode activation 
+          - continuous mode activation (**) 
+          - External trigger source  
+          - External trigger edge 
+          - number of conversion in the regular channels group sequencer.
+     
+     @note (*) and (**) are performing the same configuration
+     
+  2. Get the conversion data: This subsection provides an important function in 
+     the ADC peripheral since it returns the converted data of the current 
+     regular channel. When the Conversion value is read, the EOC Flag is 
+     automatically cleared.
+     
+     @note For multi ADC mode, the last ADC1, ADC2 and ADC3 regular conversions 
+           results data (in the selected multi mode) can be returned in the same 
+           time using ADC_GetMultiModeConversionValue() function. </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___a_d_c___group4_1gac531adb577b648d4bb8881f2ed627d52">ADC_RegularChannelConfig</link> (
+ADC_TypeDef * ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___a_d_c___group4_1gac1cd466e725595812c1bbfdad2459ff1">ADC_SoftwareStartConv</link> (
+ADC_TypeDef * ADCx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="dd/d1b/group___a_d_c___group4_1gaf1119583782ecbcec380efcb7eb74883">ADC_GetSoftwareStartConvStatus</link> (
+ADC_TypeDef * ADCx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___a_d_c___group4_1ga5316caaa170415ef171c486d8f0bf22d">ADC_EOCOnEachRegularChannelCmd</link> (
+ADC_TypeDef * ADCx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___a_d_c___group4_1ga879d70e9345d35688590938503f961db">ADC_ContinuousModeCmd</link> (
+ADC_TypeDef * ADCx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___a_d_c___group4_1ga6eb241ba82d67d1371136c9132083937">ADC_DiscModeChannelCountConfig</link> (
+ADC_TypeDef * ADCx, uint8_t Number)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___a_d_c___group4_1ga1909649d10253ce88d986ffbb94a4be6">ADC_DiscModeCmd</link> (
+ADC_TypeDef * ADCx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="dd/d1b/group___a_d_c___group4_1gaaf74221c285ec5dab5e66baf7bec6bd3">ADC_GetConversionValue</link> (
+ADC_TypeDef * ADCx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="dd/d1b/group___a_d_c___group4_1ga989f4365b56be99999b8ec096aba2081">ADC_GetMultiModeConversionValue</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dd/d1b/group___a_d_c___group4_1gac531adb577b648d4bb8881f2ed627d52">
+                <title>void ADC_RegularChannelConfig (ADC_TypeDef *ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime)</title> <emphasis>Configures for the selected ADC regular channel its corresponding
+        rank in the sequencer and its sample time.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_Channel, :</entry>
+                                <entry>
+<para>the ADC channel to configure. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_Channel_0: ADC Channel0 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_1: ADC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_2: ADC Channel2 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_3: ADC Channel3 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_4: ADC Channel4 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_5: ADC Channel5 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_6: ADC Channel6 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_7: ADC Channel7 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_8: ADC Channel8 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_9: ADC Channel9 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_10: ADC Channel10 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_11: ADC Channel11 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_12: ADC Channel12 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_13: ADC Channel13 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_14: ADC Channel14 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_15: ADC Channel15 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_16: ADC Channel16 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_17: ADC Channel17 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_18: ADC Channel18 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Rank, :</entry>
+                                <entry>
+<para>The rank in the regular group sequencer. This parameter must be between 1 to 16. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_SampleTime, :</entry>
+                                <entry>
+<para>The sample time value to be set for the selected channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_SampleTime_3Cycles: Sample time equal to 3 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_15Cycles: Sample time equal to 15 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_28Cycles: Sample time equal to 28 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_56Cycles: Sample time equal to 56 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_84Cycles: Sample time equal to 84 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_112Cycles: Sample time equal to 112 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_144Cycles: Sample time equal to 144 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_480Cycles: Sample time equal to 480 cycles </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___a_d_c___group4_1gac1cd466e725595812c1bbfdad2459ff1">
+                <title>void ADC_SoftwareStartConv (ADC_TypeDef *ADCx)</title> <emphasis>Enables the selected ADC software start conversion of the regular channels.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___a_d_c___group4_1gaf1119583782ecbcec380efcb7eb74883">
+                <title>FlagStatus ADC_GetSoftwareStartConvStatus (ADC_TypeDef *ADCx)</title> <emphasis>Gets the selected ADC Software start regular conversion Status.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of ADC software start conversion (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___a_d_c___group4_1ga5316caaa170415ef171c486d8f0bf22d">
+                <title>void ADC_EOCOnEachRegularChannelCmd (ADC_TypeDef *ADCx, FunctionalState NewState)</title> <emphasis>Enables or disables the EOC on each regular channel conversion.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected ADC EOC flag rising This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___a_d_c___group4_1ga879d70e9345d35688590938503f961db">
+                <title>void ADC_ContinuousModeCmd (ADC_TypeDef *ADCx, FunctionalState NewState)</title> <emphasis>Enables or disables the ADC continuous conversion mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected ADC continuous conversion mode This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___a_d_c___group4_1ga6eb241ba82d67d1371136c9132083937">
+                <title>void ADC_DiscModeChannelCountConfig (ADC_TypeDef *ADCx, uint8_t Number)</title> <emphasis>Configures the discontinuous mode for the selected ADC regular group 
+        channel.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Number, :</entry>
+                                <entry>
+<para>specifies the discontinuous mode regular channel count value. This number must be between 1 and 8. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___a_d_c___group4_1ga1909649d10253ce88d986ffbb94a4be6">
+                <title>void ADC_DiscModeCmd (ADC_TypeDef *ADCx, FunctionalState NewState)</title> <emphasis>Enables or disables the discontinuous mode on regular group channel 
+        for the specified ADC.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected ADC discontinuous mode on regular group channel. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___a_d_c___group4_1gaaf74221c285ec5dab5e66baf7bec6bd3">
+                <title>uint16_t ADC_GetConversionValue (ADC_TypeDef *ADCx)</title> <emphasis>Returns the last ADCx conversion result data for regular channel.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>Data conversion value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___a_d_c___group4_1ga989f4365b56be99999b8ec096aba2081">
+                <title>uint32_t ADC_GetMultiModeConversionValue (void)</title> <emphasis>Returns the last ADC1, ADC2 and ADC3 regular conversions results 
+        data in the selected multi mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>Data conversion value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>In dual mode, the value returned by this function is as following Data[15:0] : these bits contain the regular data of ADC1. Data[31:16]: these bits contain the regular data of ADC2. </para>
+<simplesect/>
+<para>In triple mode, the value returned by this function is as following Data[15:0] : these bits contain alternatively the regular data of ADC1, ADC3 and ADC2. Data[31:16]: these bits contain alternatively the regular data of ADC2, ADC1 and ADC3. </para>
+</formalpara>
+</para>
+
+            </section>
+        </section>
+</section>

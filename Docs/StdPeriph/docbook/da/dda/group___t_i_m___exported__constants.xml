@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/dda/group___t_i_m___exported__constants">
+    <title>TIM_Exported_constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes">TIM_Output_Compare_and_PWM_modes</link></para></listitem>
+            <listitem><para><link linkend="d4/d0d/group___t_i_m___one___pulse___mode">TIM_One_Pulse_Mode</link></para></listitem>
+            <listitem><para><link linkend="da/d81/group___t_i_m___channel">TIM_Channel</link></para></listitem>
+            <listitem><para><link linkend="d1/d9f/group___t_i_m___clock___division___c_k_d">TIM_Clock_Division_CKD</link></para></listitem>
+            <listitem><para><link linkend="dd/d74/group___t_i_m___counter___mode">TIM_Counter_Mode</link></para></listitem>
+            <listitem><para><link linkend="d1/d89/group___t_i_m___output___compare___polarity">TIM_Output_Compare_Polarity</link></para></listitem>
+            <listitem><para><link linkend="dc/ddf/group___t_i_m___output___compare___n___polarity">TIM_Output_Compare_N_Polarity</link></para></listitem>
+            <listitem><para><link linkend="d9/d82/group___t_i_m___output___compare___state">TIM_Output_Compare_State</link></para></listitem>
+            <listitem><para><link linkend="de/de0/group___t_i_m___output___compare___n___state">TIM_Output_Compare_N_State</link></para></listitem>
+            <listitem><para><link linkend="d7/d94/group___t_i_m___capture___compare___state">TIM_Capture_Compare_State</link></para></listitem>
+            <listitem><para><link linkend="d8/ddc/group___t_i_m___capture___compare___n___state">TIM_Capture_Compare_N_State</link></para></listitem>
+            <listitem><para><link linkend="d4/df8/group___t_i_m___break___input__enable__disable">TIM_Break_Input_enable_disable</link></para></listitem>
+            <listitem><para><link linkend="dd/d4c/group___t_i_m___break___polarity">TIM_Break_Polarity</link></para></listitem>
+            <listitem><para><link linkend="de/d41/group___t_i_m___a_o_e___bit___set___reset">TIM_AOE_Bit_Set_Reset</link></para></listitem>
+            <listitem><para><link linkend="d8/d8a/group___t_i_m___lock__level">TIM_Lock_level</link></para></listitem>
+            <listitem><para><link linkend="d0/d54/group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state">TIM_OSSI_Off_State_Selection_for_Idle_mode_state</link></para></listitem>
+            <listitem><para><link linkend="d9/de3/group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state">TIM_OSSR_Off_State_Selection_for_Run_mode_state</link></para></listitem>
+            <listitem><para><link linkend="db/dd1/group___t_i_m___output___compare___idle___state">TIM_Output_Compare_Idle_State</link></para></listitem>
+            <listitem><para><link linkend="de/d46/group___t_i_m___output___compare___n___idle___state">TIM_Output_Compare_N_Idle_State</link></para></listitem>
+            <listitem><para><link linkend="d0/d35/group___t_i_m___input___capture___polarity">TIM_Input_Capture_Polarity</link></para></listitem>
+            <listitem><para><link linkend="de/dc7/group___t_i_m___input___capture___selection">TIM_Input_Capture_Selection</link></para></listitem>
+            <listitem><para><link linkend="db/d17/group___t_i_m___input___capture___prescaler">TIM_Input_Capture_Prescaler</link></para></listitem>
+            <listitem><para><link linkend="d0/d51/group___t_i_m__interrupt__sources">TIM_interrupt_sources</link></para></listitem>
+            <listitem><para><link linkend="d5/d35/group___t_i_m___d_m_a___base__address">TIM_DMA_Base_address</link></para></listitem>
+            <listitem><para><link linkend="d0/d31/group___t_i_m___d_m_a___burst___length">TIM_DMA_Burst_Length</link></para></listitem>
+            <listitem><para><link linkend="d2/d48/group___t_i_m___d_m_a__sources">TIM_DMA_sources</link></para></listitem>
+            <listitem><para><link linkend="d9/d01/group___t_i_m___external___trigger___prescaler">TIM_External_Trigger_Prescaler</link></para></listitem>
+            <listitem><para><link linkend="de/dcd/group___t_i_m___internal___trigger___selection">TIM_Internal_Trigger_Selection</link></para></listitem>
+            <listitem><para><link linkend="d9/df7/group___t_i_m___t_ix___external___clock___source">TIM_TIx_External_Clock_Source</link></para></listitem>
+            <listitem><para><link linkend="d1/d3d/group___t_i_m___external___trigger___polarity">TIM_External_Trigger_Polarity</link></para></listitem>
+            <listitem><para><link linkend="da/dd3/group___t_i_m___prescaler___reload___mode">TIM_Prescaler_Reload_Mode</link></para></listitem>
+            <listitem><para><link linkend="df/d08/group___t_i_m___forced___action">TIM_Forced_Action</link></para></listitem>
+            <listitem><para><link linkend="d4/d99/group___t_i_m___encoder___mode">TIM_Encoder_Mode</link></para></listitem>
+            <listitem><para><link linkend="d0/d6a/group___t_i_m___event___source">TIM_Event_Source</link></para></listitem>
+            <listitem><para><link linkend="d8/d2f/group___t_i_m___update___source">TIM_Update_Source</link></para></listitem>
+            <listitem><para><link linkend="dd/d6b/group___t_i_m___output___compare___preload___state">TIM_Output_Compare_Preload_State</link></para></listitem>
+            <listitem><para><link linkend="db/de7/group___t_i_m___output___compare___fast___state">TIM_Output_Compare_Fast_State</link></para></listitem>
+            <listitem><para><link linkend="d6/d29/group___t_i_m___output___compare___clear___state">TIM_Output_Compare_Clear_State</link></para></listitem>
+            <listitem><para><link linkend="db/d8c/group___t_i_m___trigger___output___source">TIM_Trigger_Output_Source</link></para></listitem>
+            <listitem><para><link linkend="d5/db1/group___t_i_m___slave___mode">TIM_Slave_Mode</link></para></listitem>
+            <listitem><para><link linkend="df/dba/group___t_i_m___master___slave___mode">TIM_Master_Slave_Mode</link></para></listitem>
+            <listitem><para><link linkend="d5/db4/group___t_i_m___remap">TIM_Remap</link></para></listitem>
+            <listitem><para><link linkend="d9/d42/group___t_i_m___flags">TIM_Flags</link></para></listitem>
+            <listitem><para><link linkend="d7/d2b/group___t_i_m___input___capture___filer___value">TIM_Input_Capture_Filer_Value</link></para></listitem>
+            <listitem><para><link linkend="d3/d6a/group___t_i_m___external___trigger___filter">TIM_External_Trigger_Filter</link></para></listitem>
+            <listitem><para><link linkend="d7/ddd/group___t_i_m___legacy">TIM_Legacy</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dda/group___t_i_m___exported__constants_1ga71710da28a59c007a1d2ddee18a5ffcc">IS_TIM_ALL_PERIPH</link> (((PERIPH) == TIM1) || \
+                                   ((PERIPH) == TIM2) || \
+                                   ((PERIPH) == TIM3) || \
+                                   ((PERIPH) == TIM4) || \
+                                   ((PERIPH) == TIM5) || \
+                                   ((PERIPH) == TIM6) || \
+                                   ((PERIPH) == TIM7) || \
+                                   ((PERIPH) == TIM8) || \
+                                   ((PERIPH) == TIM9) || \
+                                   ((PERIPH) == TIM10) || \
+                                   ((PERIPH) == TIM11) || \
+                                   ((PERIPH) == TIM12) || \
+                                   (((PERIPH) == TIM13) || \
+                                   ((PERIPH) == TIM14)))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dda/group___t_i_m___exported__constants_1ga1abea04e3837b7683d8e8dc33441677f">IS_TIM_LIST1_PERIPH</link> (((PERIPH) == TIM1) || \
+                                     ((PERIPH) == TIM2) || \
+                                     ((PERIPH) == TIM3) || \
+                                     ((PERIPH) == TIM4) || \
+                                     ((PERIPH) == TIM5) || \
+                                     ((PERIPH) == TIM8) || \
+                                     ((PERIPH) == TIM9) || \
+                                     ((PERIPH) == TIM10) || \
+                                     ((PERIPH) == TIM11) || \
+                                     ((PERIPH) == TIM12) || \
+                                     ((PERIPH) == TIM13) || \
+                                     ((PERIPH) == TIM14))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dda/group___t_i_m___exported__constants_1ga3c489ac3294f0d8f2ec097da909bc8e0">IS_TIM_LIST2_PERIPH</link> (((PERIPH) == TIM1) || \
+                                     ((PERIPH) == TIM2) || \
+                                     ((PERIPH) == TIM3) || \
+                                     ((PERIPH) == TIM4) || \
+                                     ((PERIPH) == TIM5) || \
+                                     ((PERIPH) == TIM8) || \
+                                     ((PERIPH) == TIM9) || \
+                                     ((PERIPH) == TIM12))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dda/group___t_i_m___exported__constants_1ga2d80541c542755ac3f2aca078bd98adb">IS_TIM_LIST3_PERIPH</link> (((PERIPH) == TIM1) || \
+                                     ((PERIPH) == TIM2) || \
+                                     ((PERIPH) == TIM3) || \
+                                     ((PERIPH) == TIM4) || \
+                                     ((PERIPH) == TIM5) || \
+                                     ((PERIPH) == TIM8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dda/group___t_i_m___exported__constants_1ga9c2699fd3d0c0901f8ac706c3d2dfe10">IS_TIM_LIST4_PERIPH</link> (((PERIPH) == TIM1) || \
+                                     ((PERIPH) == TIM8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dda/group___t_i_m___exported__constants_1ga90232c3966a578fbd9be2b228f225cb4">IS_TIM_LIST5_PERIPH</link> (((PERIPH) == TIM1) || \
+                                     ((PERIPH) == TIM2) || \
+                                     ((PERIPH) == TIM3) || \
+                                     ((PERIPH) == TIM4) || \
+                                     ((PERIPH) == TIM5) || \
+                                     ((PERIPH) == TIM6) || \
+                                     ((PERIPH) == TIM7) || \
+                                     ((PERIPH) == TIM8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dda/group___t_i_m___exported__constants_1ga9449f429a84af2291f431b990361e639">IS_TIM_LIST6_PERIPH</link> (((TIMx) == TIM2) || \
+                                 ((TIMx) == TIM5) || \
+                                 ((TIMx) == TIM11))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d0d/group___t_i_m___one___pulse___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d81/group___t_i_m___channel.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d9f/group___t_i_m___clock___division___c_k_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d74/group___t_i_m___counter___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d89/group___t_i_m___output___compare___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/ddf/group___t_i_m___output___compare___n___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d82/group___t_i_m___output___compare___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/de0/group___t_i_m___output___compare___n___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d94/group___t_i_m___capture___compare___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/ddc/group___t_i_m___capture___compare___n___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/df8/group___t_i_m___break___input__enable__disable.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d4c/group___t_i_m___break___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d41/group___t_i_m___a_o_e___bit___set___reset.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d8a/group___t_i_m___lock__level.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d54/group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/de3/group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/dd1/group___t_i_m___output___compare___idle___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d46/group___t_i_m___output___compare___n___idle___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d35/group___t_i_m___input___capture___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/dc7/group___t_i_m___input___capture___selection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d17/group___t_i_m___input___capture___prescaler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d51/group___t_i_m__interrupt__sources.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d35/group___t_i_m___d_m_a___base__address.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d31/group___t_i_m___d_m_a___burst___length.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d48/group___t_i_m___d_m_a__sources.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d01/group___t_i_m___external___trigger___prescaler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/dcd/group___t_i_m___internal___trigger___selection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/df7/group___t_i_m___t_ix___external___clock___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d3d/group___t_i_m___external___trigger___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/dd3/group___t_i_m___prescaler___reload___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d08/group___t_i_m___forced___action.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d99/group___t_i_m___encoder___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d6a/group___t_i_m___event___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d2f/group___t_i_m___update___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d6b/group___t_i_m___output___compare___preload___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/de7/group___t_i_m___output___compare___fast___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d29/group___t_i_m___output___compare___clear___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d8c/group___t_i_m___trigger___output___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/db1/group___t_i_m___slave___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/dba/group___t_i_m___master___slave___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/db4/group___t_i_m___remap.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d42/group___t_i_m___flags.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d2b/group___t_i_m___input___capture___filer___value.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d6a/group___t_i_m___external___trigger___filter.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/ddd/group___t_i_m___legacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

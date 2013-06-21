@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/df8/group___r_t_c___synchronous___predivider">
+    <title>RTC_Synchronous_Predivider</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/df8/group___r_t_c___synchronous___predivider_1ga32fccaa6ec65f9fceb3e6e4f31ab11cf">IS_RTC_SYNCH_PREDIV</link> ((PREDIV) &lt;= 0x7FFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

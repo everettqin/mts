@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dc8/group___u_s_a_r_t___group4">
+    <title>LIN mode functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>LIN mode functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                                LIN mode functions
+ ===============================================================================  
+
+  This subsection provides a set of functions allowing to manage the USART LIN 
+  Mode communication.
+  
+  In LIN mode, 8-bit data format with 1 stop bit is required in accordance with 
+  the LIN standard.
+
+  Only this LIN Feature is supported by the USART IP:
+    - LIN Master Synchronous Break send capability and LIN slave break detection
+      capability :  13-bit break generation and 10/11 bit break detection
+
+
+  USART LIN Master transmitter communication is possible through the following procedure:
+     1. Program the Baud rate, Word length = 8bits, Stop bits = 1bit, Parity, 
+        Mode transmitter or Mode receiver and hardware flow control values using 
+        the USART_Init() function.
+     2. Enable the USART using the USART_Cmd() function.
+     3. Enable the LIN mode using the USART_LINCmd() function.
+     4. Send the break character using USART_SendBreak() function.
+
+  USART LIN Master receiver communication is possible through the following procedure:
+     1. Program the Baud rate, Word length = 8bits, Stop bits = 1bit, Parity, 
+        Mode transmitter or Mode receiver and hardware flow control values using 
+        the USART_Init() function.
+     2. Enable the USART using the USART_Cmd() function.
+     3. Configures the break detection length using the USART_LINBreakDetectLengthConfig()
+        function.
+     4. Enable the LIN mode using the USART_LINCmd() function.
+
+
+@note In LIN mode, the following bits must be kept cleared:
+        - CLKEN in the USART_CR2 register,
+        - STOP[1:0], SCEN, HDSEL and IREN in the USART_CR3 register.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dc8/group___u_s_a_r_t___group4_1ga7bc2d291831cbc5e53e73337308029b5">USART_LINBreakDetectLengthConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_LINBreakDetectLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dc8/group___u_s_a_r_t___group4_1ga9fdd6296f4ca4acdfcbd58bf56bd4185">USART_LINCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dc8/group___u_s_a_r_t___group4_1ga39a3d33e23ee28529fa8f7259ce6811e">USART_SendBreak</link> (
+USART_TypeDef * USARTx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d9/dc8/group___u_s_a_r_t___group4_1ga7bc2d291831cbc5e53e73337308029b5">
+                <title>void USART_LINBreakDetectLengthConfig (USART_TypeDef *USARTx, uint16_t USART_LINBreakDetectLength)</title> <emphasis>Sets the USART LIN Break detection length.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_LINBreakDetectLength, :</entry>
+                                <entry>
+<para>specifies the LIN break detection length. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>USART_LINBreakDetectLength_10b: 10-bit break detection </para>
+</listitem>
+<listitem>
+<para>USART_LINBreakDetectLength_11b: 11-bit break detection </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dc8/group___u_s_a_r_t___group4_1ga9fdd6296f4ca4acdfcbd58bf56bd4185">
+                <title>void USART_LINCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s LIN mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART LIN mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dc8/group___u_s_a_r_t___group4_1ga39a3d33e23ee28529fa8f7259ce6811e">
+                <title>void USART_SendBreak (USART_TypeDef *USARTx)</title> <emphasis>Transmits break characters.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['par',['PAR',['../dd/d7f/struct_d_m_a___stream___type_def.html#aef55be3d948c22dd32a97e8d4f8761fd',1,'DMA_Stream_TypeDef']]],
+  ['patt2',['PATT2',['../dd/ded/struct_f_s_m_c___bank2___type_def.html#a9c1bc909ec5ed32df45444488ea6668b',1,'FSMC_Bank2_TypeDef']]],
+  ['patt3',['PATT3',['../de/dbe/struct_f_s_m_c___bank3___type_def.html#aba03fea9c1bb2242d963e29f1b94d25e',1,'FSMC_Bank3_TypeDef']]],
+  ['patt4',['PATT4',['../d5/d52/struct_f_s_m_c___bank4___type_def.html#a955cad1aab7fb2d5b6e216cb29b5e7e2',1,'FSMC_Bank4_TypeDef']]],
+  ['pcr2',['PCR2',['../dd/ded/struct_f_s_m_c___bank2___type_def.html#ab0cb1d704ee64c62ad5be55522a2683a',1,'FSMC_Bank2_TypeDef']]],
+  ['pcr3',['PCR3',['../de/dbe/struct_f_s_m_c___bank3___type_def.html#a73861fa74b83973fa1b5f92735c042ef',1,'FSMC_Bank3_TypeDef']]],
+  ['pcr4',['PCR4',['../d5/d52/struct_f_s_m_c___bank4___type_def.html#a2f02e7acfbd7e549ede84633215eb6a1',1,'FSMC_Bank4_TypeDef']]],
+  ['pio4',['PIO4',['../d5/d52/struct_f_s_m_c___bank4___type_def.html#ac53cd7a08093a4ae8f4de4bcff67a64f',1,'FSMC_Bank4_TypeDef']]],
+  ['pllcfgr',['PLLCFGR',['../d7/d46/struct_r_c_c___type_def.html#ae6ff257862eba6b4b367feea786bf1fd',1,'RCC_TypeDef']]],
+  ['plli2scfgr',['PLLI2SCFGR',['../d7/d46/struct_r_c_c___type_def.html#a2d08d5f995ed77228eb56741184a1bb6',1,'RCC_TypeDef']]],
+  ['pmc',['PMC',['../d4/dd3/struct_s_y_s_c_f_g___type_def.html#a2130abf1fefb63ce4c4b138fd8c9822a',1,'SYSCFG_TypeDef']]],
+  ['pmem2',['PMEM2',['../dd/ded/struct_f_s_m_c___bank2___type_def.html#a2e5a7a96de68a6612affa6df8c309c3d',1,'FSMC_Bank2_TypeDef']]],
+  ['pmem3',['PMEM3',['../de/dbe/struct_f_s_m_c___bank3___type_def.html#aba8981e4f06cfb3db7d9959242052f80',1,'FSMC_Bank3_TypeDef']]],
+  ['pmem4',['PMEM4',['../d5/d52/struct_f_s_m_c___bank4___type_def.html#a3f82cc749845fb0dd7dfa8121d96b663',1,'FSMC_Bank4_TypeDef']]],
+  ['power',['POWER',['../d3/df0/struct_s_d_i_o___type_def.html#a65bff76f3af24c37708a1006d54720c7',1,'SDIO_TypeDef']]],
+  ['pr',['PR',['../db/ddd/struct_e_x_t_i___type_def.html#af8d25514079514d38c104402f46470af',1,'EXTI_TypeDef::PR()'],['../d4/da9/struct_i_w_d_g___type_def.html#af8d25514079514d38c104402f46470af',1,'IWDG_TypeDef::PR()']]],
+  ['prer',['PRER',['../d5/db2/struct_r_t_c___type_def.html#ac9b4c6c5b29f3461ce3f875eea69f35b',1,'RTC_TypeDef']]],
+  ['psc',['PSC',['../dd/d2a/struct_t_i_m___type_def.html#aba5df4ecbb3ecb97b966b188c3681600',1,'TIM_TypeDef']]],
+  ['pupdr',['PUPDR',['../d6/d59/struct_g_p_i_o___type_def.html#abeed38529bd7b8de082e490e5d4f1727',1,'GPIO_TypeDef']]]
+];

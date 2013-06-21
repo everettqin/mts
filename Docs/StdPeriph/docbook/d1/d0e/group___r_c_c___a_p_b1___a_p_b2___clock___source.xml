@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d0e/group___r_c_c___a_p_b1___a_p_b2___clock___source">
+    <title>RCC_APB1_APB2_Clock_Source</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0e/group___r_c_c___a_p_b1___a_p_b2___clock___source_1gae62b4a39ae69cc221f2ab7d4518bfb76">RCC_HCLK_Div1</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0e/group___r_c_c___a_p_b1___a_p_b2___clock___source_1ga177bb3648def9a961c16f93f15ca0f62">RCC_HCLK_Div2</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0e/group___r_c_c___a_p_b1___a_p_b2___clock___source_1gafd8cf0e32a3ea5648cdc054766bc2017">RCC_HCLK_Div4</link> ((uint32_t)0x00001400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0e/group___r_c_c___a_p_b1___a_p_b2___clock___source_1gab2e2b6e0b8fe22d6638b672918b22097">RCC_HCLK_Div8</link> ((uint32_t)0x00001800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0e/group___r_c_c___a_p_b1___a_p_b2___clock___source_1ga6353aaa0b302fdd5d946fd21756e2273">RCC_HCLK_Div16</link> ((uint32_t)0x00001C00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d0e/group___r_c_c___a_p_b1___a_p_b2___clock___source_1gab70f1257ea47c1da4def8e351af4d9f2">IS_RCC_PCLK</link> (((PCLK) == RCC_HCLK_Div1) || ((PCLK) == RCC_HCLK_Div2) || \
+                           ((PCLK) == RCC_HCLK_Div4) || ((PCLK) == RCC_HCLK_Div8) || \
+                           ((PCLK) == RCC_HCLK_Div16))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

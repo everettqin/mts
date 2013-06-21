@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/de5/group___s_d_i_o___transfer___direction">
+    <title>SDIO_Transfer_Direction</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de5/group___s_d_i_o___transfer___direction_1gaef8af0ffa4ea04b3362338d268cc0935">SDIO_TransferDir_ToCard</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de5/group___s_d_i_o___transfer___direction_1ga55a6d9613d3e2e7762296b45d0d13222">SDIO_TransferDir_ToSDIO</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de5/group___s_d_i_o___transfer___direction_1gaf84b8004cfef6a5a525b20db8a83c2f7">IS_SDIO_TRANSFER_DIR</link> (((DIR) == SDIO_TransferDir_ToCard) || \
+                                   ((DIR) == SDIO_TransferDir_ToSDIO))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

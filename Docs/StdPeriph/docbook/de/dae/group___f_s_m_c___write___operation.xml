@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dae/group___f_s_m_c___write___operation">
+    <title>FSMC_Write_Operation</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dae/group___f_s_m_c___write___operation_1ga74176320484248f06abae854170f9d9f">FSMC_WriteOperation_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dae/group___f_s_m_c___write___operation_1ga2478beb6dd8861b34a16b8a57a795e56">FSMC_WriteOperation_Enable</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dae/group___f_s_m_c___write___operation_1ga87fc20d11761caa66c3e7d77a3a7d3e3">IS_FSMC_WRITE_OPERATION</link> (((OPERATION) == FSMC_WriteOperation_Disable) || \
+                                            ((OPERATION) == FSMC_WriteOperation_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

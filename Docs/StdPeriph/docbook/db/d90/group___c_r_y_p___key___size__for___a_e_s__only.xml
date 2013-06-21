@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d90/group___c_r_y_p___key___size__for___a_e_s__only">
+    <title>CRYP_Key_Size_for_AES_only</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only_1gacb2dbb80e15f19c40ed6718082e0dbdc">CRYP_KeySize_128b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only_1ga4da085b0764310a43cdcb5d2c9bc871e">CRYP_KeySize_192b</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only_1ga96e5c43517cc20077d01c25fb6045505">CRYP_KeySize_256b</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d90/group___c_r_y_p___key___size__for___a_e_s__only_1ga129c62b908fd19c23c50fef20c1245d3">IS_CRYP_KEYSIZE</link> (((KEYSIZE) == CRYP_KeySize_128b)|| \
+                                  ((KEYSIZE) == CRYP_KeySize_192b)|| \
+                                  ((KEYSIZE) == CRYP_KeySize_256b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

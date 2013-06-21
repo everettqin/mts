@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d81/group___t_i_m___channel">
+    <title>TIM_Channel</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d81/group___t_i_m___channel_1ga69ea7f558f02c63dd1082d784d2449bd">TIM_Channel_1</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d81/group___t_i_m___channel_1ga03d7da8269a87a560f68985b4bd80931">TIM_Channel_2</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d81/group___t_i_m___channel_1ga012711b19e8c91f6f352801a3dc0bcc9">TIM_Channel_3</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d81/group___t_i_m___channel_1ga7414888c40d066af235bc1f80b99bd9d">TIM_Channel_4</link> ((uint16_t)0x000C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d81/group___t_i_m___channel_1gae9721e3731e5fd983c83a9c1d32ef03d">IS_TIM_CHANNEL</link> (((CHANNEL) == TIM_Channel_1) || \
+                                 ((CHANNEL) == TIM_Channel_2) || \
+                                 ((CHANNEL) == TIM_Channel_3) || \
+                                 ((CHANNEL) == TIM_Channel_4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d81/group___t_i_m___channel_1gacbf272b7a14f63b38bdbf18577835dce">IS_TIM_PWMI_CHANNEL</link> (((CHANNEL) == TIM_Channel_1) || \
+                                      ((CHANNEL) == TIM_Channel_2))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d81/group___t_i_m___channel_1ga6f44459b7dfc4138bbc2c3795311c48c">IS_TIM_COMPLEMENTARY_CHANNEL</link> (((CHANNEL) == TIM_Channel_1) || \
+                                               ((CHANNEL) == TIM_Channel_2) || \
+                                               ((CHANNEL) == TIM_Channel_3))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

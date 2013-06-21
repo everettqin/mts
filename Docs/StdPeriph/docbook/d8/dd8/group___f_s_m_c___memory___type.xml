@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/dd8/group___f_s_m_c___memory___type">
+    <title>FSMC_Memory_Type</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd8/group___f_s_m_c___memory___type_1ga8a24e8da42e67dcf6fb2f43659aa49cf">FSMC_MemoryType_SRAM</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd8/group___f_s_m_c___memory___type_1gae3e680998b2fee8d56222634f5268a75">FSMC_MemoryType_PSRAM</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd8/group___f_s_m_c___memory___type_1ga8b9390abe7c281947c550bf4365649e5">FSMC_MemoryType_NOR</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd8/group___f_s_m_c___memory___type_1ga255cd500e141f4ac024cf5f896921233">IS_FSMC_MEMORY</link> (((MEMORY) == FSMC_MemoryType_SRAM) || \
+                                ((MEMORY) == FSMC_MemoryType_PSRAM)|| \
+                                ((MEMORY) == FSMC_MemoryType_NOR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

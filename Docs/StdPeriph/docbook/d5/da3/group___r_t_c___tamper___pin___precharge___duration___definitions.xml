@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions">
+    <title>RTC_Tamper_Pin_Precharge_Duration_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga776e4f1a1a30d81e4333462ff49b10d6">RTC_TamperPrechargeDuration_1RTCCLK</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gacd4ef118bfdfad143f4ca228c7a2dccb">RTC_TamperPrechargeDuration_2RTCCLK</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gaaad3b9cb77e5218cc271e68b2f5e6b44">RTC_TamperPrechargeDuration_4RTCCLK</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga5b5b8e47db4271d3ab7e8ca16dbb645c">RTC_TamperPrechargeDuration_8RTCCLK</link> ((uint32_t)0x00006000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gafcbbdc089fbfc3c82a12d0fcdcee8473">IS_RTC_TAMPER_PRECHARGE_DURATION</link> (((DURATION) == <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga776e4f1a1a30d81e4333462ff49b10d6">RTC_TamperPrechargeDuration_1RTCCLK</link>) || \
+                                                    ((DURATION) == <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gacd4ef118bfdfad143f4ca228c7a2dccb">RTC_TamperPrechargeDuration_2RTCCLK</link>) || \
+                                                    ((DURATION) == <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gaaad3b9cb77e5218cc271e68b2f5e6b44">RTC_TamperPrechargeDuration_4RTCCLK</link>) || \
+                                                    ((DURATION) == <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga5b5b8e47db4271d3ab7e8ca16dbb645c">RTC_TamperPrechargeDuration_8RTCCLK</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga776e4f1a1a30d81e4333462ff49b10d6">
+                <title>#define RTC_TamperPrechargeDuration_1RTCCLK</title>                
+<para>Tamper pins are pre-charged before sampling during 1 RTCCLK cycle </para>
+
+                <para>Definition at line 569 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gacd4ef118bfdfad143f4ca228c7a2dccb">
+                <title>#define RTC_TamperPrechargeDuration_2RTCCLK</title>                
+<para>Tamper pins are pre-charged before sampling during 2 RTCCLK cycles </para>
+
+                <para>Definition at line 571 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gaaad3b9cb77e5218cc271e68b2f5e6b44">
+                <title>#define RTC_TamperPrechargeDuration_4RTCCLK</title>                
+<para>Tamper pins are pre-charged before sampling during 4 RTCCLK cycles </para>
+
+                <para>Definition at line 573 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga5b5b8e47db4271d3ab7e8ca16dbb645c">
+                <title>#define RTC_TamperPrechargeDuration_8RTCCLK</title>                
+<para>Tamper pins are pre-charged before sampling during 8 RTCCLK cycles </para>
+
+                <para>Definition at line 575 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

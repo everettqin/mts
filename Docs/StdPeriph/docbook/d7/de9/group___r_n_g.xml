@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/de9/group___r_n_g">
+    <title>RNG</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>RNG driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="db/d9c/group___r_n_g___exported___constants">RNG_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="d7/d84/group___r_n_g___private___functions">RNG_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de9/group___r_n_g_1ga15ff5e649080076eebd51143b9ac4491">RNG_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de9/group___r_n_g_1ga6c1a8372da6e8a06819903c63faecd7b">RNG_Cmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d7/de9/group___r_n_g_1ga2cead4780224fd74a3fc15543c98ed36">RNG_GetRandomNumber</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de9/group___r_n_g_1ga41d9be4c303ba0875a82c62dc7085f08">RNG_ITConfig</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d7/de9/group___r_n_g_1gab70d6cc7d943dfb8eac15ccecf6cd7b3">RNG_GetFlagStatus</link> (
+uint8_t RNG_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de9/group___r_n_g_1gac3c67fe6bacdc4529f1707025224f954">RNG_ClearFlag</link> (
+uint8_t RNG_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d7/de9/group___r_n_g_1gab58eaab67698770d9ea9775fb280271f">RNG_GetITStatus</link> (
+uint8_t RNG_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de9/group___r_n_g_1ga2b1c78c003cd5c886e09fdbc2c89cacb">RNG_ClearITPendingBit</link> (
+uint8_t RNG_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d7/de9/group___r_n_g_1ga15ff5e649080076eebd51143b9ac4491">
+                <title>void RNG_DeInit (void)</title> <emphasis>Deinitializes the RNG peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/de9/group___r_n_g_1ga6c1a8372da6e8a06819903c63faecd7b">
+                <title>void RNG_Cmd (FunctionalState NewState)</title> <emphasis>Enables or disables the RNG peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the RNG peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/de9/group___r_n_g_1ga2cead4780224fd74a3fc15543c98ed36">
+                <title>uint32_t RNG_GetRandomNumber (void)</title> <emphasis>Returns a 32-bit random number.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Before to call this function you have to wait till DRDY (data ready) flag is set, using RNG_GetFlagStatus(RNG_FLAG_DRDY) function. </para>
+<simplesect/>
+<para>Each time the the Random number data is read (using <link linkend="d7/de9/group___r_n_g_1ga2cead4780224fd74a3fc15543c98ed36">RNG_GetRandomNumber()</link> function), the RNG_FLAG_DRDY flag is automatically cleared. </para>
+<simplesect/>
+<para>In the case of a seed error, the generation of random numbers is interrupted for as long as the SECS bit is &apos;1&apos;. If a number is available in the RNG_DR register, it must not be used because it may not have enough entropy. In this case, it is recommended to clear the SEIS bit(using RNG_ClearFlag(RNG_FLAG_SECS) function), then disable and enable the RNG peripheral (using <link linkend="d7/de9/group___r_n_g_1ga6c1a8372da6e8a06819903c63faecd7b">RNG_Cmd()</link> function) to reinitialize and restart the RNG. </para>
+<simplesect/>
+<para>In the case of a clock error, the RNG is no more able to generate random numbers because the PLL48CLK clock is not correct. User have to check that the clock controller is correctly configured to provide the RNG clock and clear the CEIS bit (using RNG_ClearFlag(RNG_FLAG_CECS) function) . The clock error has no impact on the previously generated random numbers, and the RNG_DR register contents can be used.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>32-bit</entry>
+                                <entry>
+<para>random number. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/de9/group___r_n_g_1ga41d9be4c303ba0875a82c62dc7085f08">
+                <title>void RNG_ITConfig (FunctionalState NewState)</title> <emphasis>Enables or disables the RNG interrupt.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The RNG provides 3 interrupt sources,<itemizedlist>
+<listitem>
+<para>Computed data is ready event (DRDY), and</para>
+</listitem><listitem>
+<para>Seed error Interrupt (SEI) and</para>
+</listitem><listitem>
+<para>Clock error Interrupt (CEI), all these interrupts sources are enabled by setting the IE bit in CR register. However, each interrupt have its specific status bit (see <link linkend="d7/de9/group___r_n_g_1gab58eaab67698770d9ea9775fb280271f">RNG_GetITStatus()</link> function) and clear bit except the DRDY event (see <link linkend="d7/de9/group___r_n_g_1ga2b1c78c003cd5c886e09fdbc2c89cacb">RNG_ClearITPendingBit()</link> function). </para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the RNG interrupt. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/de9/group___r_n_g_1gab70d6cc7d943dfb8eac15ccecf6cd7b3">
+                <title>FlagStatus RNG_GetFlagStatus (uint8_t RNG_FLAG)</title> <emphasis>Checks whether the specified RNG flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RNG_FLAG, :</entry>
+                                <entry>
+<para>specifies the RNG flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RNG_FLAG_DRDY: Data Ready flag. </para>
+</listitem>
+<listitem>
+<para>RNG_FLAG_CECS: Clock Error Current flag. </para>
+</listitem>
+<listitem>
+<para>RNG_FLAG_SECS: Seed Error Current flag. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of RNG_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/de9/group___r_n_g_1gac3c67fe6bacdc4529f1707025224f954">
+                <title>void RNG_ClearFlag (uint8_t RNG_FLAG)</title> <emphasis>Clears the RNG flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RNG_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RNG_FLAG_CECS: Clock Error Current flag. </para>
+</listitem>
+<listitem>
+<para>RNG_FLAG_SECS: Seed Error Current flag. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>RNG_FLAG_DRDY can not be cleared by <link linkend="d7/de9/group___r_n_g_1gac3c67fe6bacdc4529f1707025224f954">RNG_ClearFlag()</link> function. This flag is cleared only by reading the Random number data (using <link linkend="d7/de9/group___r_n_g_1ga2cead4780224fd74a3fc15543c98ed36">RNG_GetRandomNumber()</link> function). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/de9/group___r_n_g_1gab58eaab67698770d9ea9775fb280271f">
+                <title>ITStatus RNG_GetITStatus (uint8_t RNG_IT)</title> <emphasis>Checks whether the specified RNG interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RNG_IT, :</entry>
+                                <entry>
+<para>specifies the RNG interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RNG_IT_CEI: Clock Error Interrupt. </para>
+</listitem>
+<listitem>
+<para>RNG_IT_SEI: Seed Error Interrupt. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of RNG_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/de9/group___r_n_g_1ga2b1c78c003cd5c886e09fdbc2c89cacb">
+                <title>void RNG_ClearITPendingBit (uint8_t RNG_IT)</title> <emphasis>Clears the RNG interrupt pending bit(s).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RNG_IT, :</entry>
+                                <entry>
+<para>specifies the RNG interrupt pending bit(s) to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RNG_IT_CEI: Clock Error Interrupt. </para>
+</listitem>
+<listitem>
+<para>RNG_IT_SEI: Seed Error Interrupt. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="db/d9c/group___r_n_g___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d84/group___r_n_g___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

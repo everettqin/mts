@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d4a/group___c_r_y_p___d_m_a__transfer__requests">
+    <title>CRYP_DMA_transfer_requests</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d4a/group___c_r_y_p___d_m_a__transfer__requests_1gae524983ae7dc12d0f91e73bac4dda8e9">CRYP_DMAReq_DataIN</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d4a/group___c_r_y_p___d_m_a__transfer__requests_1ga35ef833d8049278f5381681892a35df0">CRYP_DMAReq_DataOUT</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d4a/group___c_r_y_p___d_m_a__transfer__requests_1gaa382c78dd1657a151827830d946df578">IS_CRYP_DMAREQ</link> ((((DMAREQ) &amp; (uint8_t)0xFC) == 0x00) &amp;&amp; ((DMAREQ) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

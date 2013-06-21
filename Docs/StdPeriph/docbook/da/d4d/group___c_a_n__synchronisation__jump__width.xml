@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d4d/group___c_a_n__synchronisation__jump__width">
+    <title>CAN_synchronisation_jump_width</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d4d/group___c_a_n__synchronisation__jump__width_1ga4e03d22ae683b63cb4df238449ec967c">CAN_SJW_1tq</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d4d/group___c_a_n__synchronisation__jump__width_1gad39e7656c555cc00bc4d7c1bff39916f">CAN_SJW_2tq</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d4d/group___c_a_n__synchronisation__jump__width_1gab4de740e2184aac71c2c8cba22a8ecd2">CAN_SJW_3tq</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d4d/group___c_a_n__synchronisation__jump__width_1ga7f26a36d478c7ba1a1441b369d62f693">CAN_SJW_4tq</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d4d/group___c_a_n__synchronisation__jump__width_1ga4e4f344712d3bcac1975318d4ab9a383">IS_CAN_SJW</link> (((SJW) == <link linkend="da/d4d/group___c_a_n__synchronisation__jump__width_1ga4e03d22ae683b63cb4df238449ec967c">CAN_SJW_1tq</link>) || ((SJW) == <link linkend="da/d4d/group___c_a_n__synchronisation__jump__width_1gad39e7656c555cc00bc4d7c1bff39916f">CAN_SJW_2tq</link>)|| \
+                         ((SJW) == <link linkend="da/d4d/group___c_a_n__synchronisation__jump__width_1gab4de740e2184aac71c2c8cba22a8ecd2">CAN_SJW_3tq</link>) || ((SJW) == <link linkend="da/d4d/group___c_a_n__synchronisation__jump__width_1ga7f26a36d478c7ba1a1441b369d62f693">CAN_SJW_4tq</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="da/d4d/group___c_a_n__synchronisation__jump__width_1ga4e03d22ae683b63cb4df238449ec967c">
+                <title>#define CAN_SJW_1tq</title>                
+<para>1 time quantum </para>
+
+                <para>Definition at line 253 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d4d/group___c_a_n__synchronisation__jump__width_1gad39e7656c555cc00bc4d7c1bff39916f">
+                <title>#define CAN_SJW_2tq</title>                
+<para>2 time quantum </para>
+
+                <para>Definition at line 254 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d4d/group___c_a_n__synchronisation__jump__width_1gab4de740e2184aac71c2c8cba22a8ecd2">
+                <title>#define CAN_SJW_3tq</title>                
+<para>3 time quantum </para>
+
+                <para>Definition at line 255 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d4d/group___c_a_n__synchronisation__jump__width_1ga7f26a36d478c7ba1a1441b369d62f693">
+                <title>#define CAN_SJW_4tq</title>                
+<para>4 time quantum </para>
+
+                <para>Definition at line 256 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

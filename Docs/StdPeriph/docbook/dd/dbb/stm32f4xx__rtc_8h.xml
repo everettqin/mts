@@ -1,0 +1,1995 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dbb/stm32f4xx__rtc_8h">
+    <title>stm32f4xx_rtc.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d0d/group___r_t_c___hour___formats_1gac5fb0d24ad4f04e90b8c3b704900e588">RTC_HourFormat_24</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d0d/group___r_t_c___hour___formats_1gade7bf50ded5ef23dbd8de64d1657a4bf">RTC_HourFormat_12</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d0d/group___r_t_c___hour___formats_1ga597042eec4479e028c32973bc69f4a26">IS_RTC_HOUR_FORMAT</link> (((FORMAT) == RTC_HourFormat_12) || \
+                                        ((FORMAT) == RTC_HourFormat_24))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d83/group___r_t_c___asynchronous___predivider_1gac20f6c94ede2d474df8ba4acb7328d93">IS_RTC_ASYNCH_PREDIV</link> ((PREDIV) &lt;= 0x7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/df8/group___r_t_c___synchronous___predivider_1ga32fccaa6ec65f9fceb3e6e4f31ab11cf">IS_RTC_SYNCH_PREDIV</link> ((PREDIV) &lt;= 0x7FFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d52/group___r_t_c___time___definitions_1ga6bdfe3bed0a57dfafc2d1de785d48a62">IS_RTC_HOUR12</link> (((HOUR) &gt; 0) &amp;&amp; ((HOUR) &lt;= 12))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d52/group___r_t_c___time___definitions_1ga4883613bec76074ac62608b89e3f48a8">IS_RTC_HOUR24</link> ((HOUR) &lt;= 23)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d52/group___r_t_c___time___definitions_1ga8475ceaf2d35d98be0b3401812aef445">IS_RTC_MINUTES</link> ((MINUTES) &lt;= 59)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d52/group___r_t_c___time___definitions_1gadb5a39d98fc906a8ea035bd29308bc5c">IS_RTC_SECONDS</link> ((SECONDS) &lt;= 59)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d24/group___r_t_c___a_m___p_m___definitions_1ga86861d15dab24bfbf2ea9c1aec7b492f">RTC_H12_AM</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d24/group___r_t_c___a_m___p_m___definitions_1ga82a5381a1d266841a7fb75820dcad5de">RTC_H12_PM</link> ((uint8_t)0x40)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d24/group___r_t_c___a_m___p_m___definitions_1ga98f8d66c8fed6039f9a58d78b8c512b5">IS_RTC_H12</link> (((PM) == RTC_H12_AM) || ((PM) == RTC_H12_PM))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d09/group___r_t_c___year___date___definitions_1gae59c9cfe6f9532ab26d74c25bcbe814b">IS_RTC_YEAR</link> ((YEAR) &lt;= 99)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga2a33537460ebe3cf38bf5e1cf75df306">RTC_Month_January</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga00224b67848d0c679f1353373061f400">RTC_Month_February</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga842c0d17229fc43d4571307b8466e50e">RTC_Month_March</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1gabdf30fd0fafd83af7630bc5e653b876e">RTC_Month_April</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga1a14ee22b8202e3faefc9b1d41ae91e6">RTC_Month_May</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga3b02772afa467bf8d1e4ccbc64486506">RTC_Month_June</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1gac1a6c0474aeb703c29bb0f1c22011b01">RTC_Month_July</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga03e76764a3d7b01ef13c6cdabb6e05c8">RTC_Month_August</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga49e0cdf9d6f449872944ee63acab3dd0">RTC_Month_September</link> ((uint8_t)0x09)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga862ea2da95dd5a040ee5e6da1079ccc9">RTC_Month_October</link> ((uint8_t)0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga0d944af7d193e8bc1bbdfc8764be49cb">RTC_Month_November</link> ((uint8_t)0x11)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga5bda2ebb05c99e18e819c8582592ac00">RTC_Month_December</link> ((uint8_t)0x12)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga7fa60f17b2ae529c35b1fa3dd4d6853f">IS_RTC_MONTH</link> (((MONTH) &gt;= 1) &amp;&amp; ((MONTH) &lt;= 12))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d14/group___r_t_c___month___date___definitions_1ga3b6e966e144cb0495563ef0283d16510">IS_RTC_DATE</link> (((DATE) &gt;= 1) &amp;&amp; ((DATE) &lt;= 31))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1ga7401371e61060e5d5fa2bf81f5369f02">RTC_Weekday_Monday</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1ga23f9646fb7114c436d4e822b88101757">RTC_Weekday_Tuesday</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1gaa8de8244a8b3e44001871aa74282d3ae">RTC_Weekday_Wednesday</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1gac2413b21a6893d2003334f19b59e137d">RTC_Weekday_Thursday</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1ga556885ed7436fd0128e21ff48d7d0044">RTC_Weekday_Friday</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1gafdca8b8c2b9c56f9715efdf6ba96a8a9">RTC_Weekday_Saturday</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1ga9a6a6992dfefab667878480f5565c928">RTC_Weekday_Sunday</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1gaf17712ffb0834287f23c19235d53c7ec">IS_RTC_WEEKDAY</link> (((WEEKDAY) == RTC_Weekday_Monday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Tuesday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Wednesday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Thursday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Friday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Saturday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Sunday))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc2/group___r_t_c___alarm___definitions_1ga8b6cb39fac113de7c5d2b05a93093243">IS_RTC_ALARM_DATE_WEEKDAY_DATE</link> (((DATE) &gt; 0) &amp;&amp; ((DATE) &lt;= 31))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc2/group___r_t_c___alarm___definitions_1gabc968cd70cf33e06b8e2886c98099021">IS_RTC_ALARM_DATE_WEEKDAY_WEEKDAY</link> (((WEEKDAY) == RTC_Weekday_Monday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Tuesday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Wednesday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Thursday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Friday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Saturday) || \
+                                                    ((WEEKDAY) == RTC_Weekday_Sunday))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dee/group___r_t_c___alarm_date_week_day___definitions_1ga45ef2c9d40689e0f89bea8c92b6c9a60">RTC_AlarmDateWeekDaySel_Date</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dee/group___r_t_c___alarm_date_week_day___definitions_1ga1e4d253a3bc6210e6b6af62a1d0fc4d8">RTC_AlarmDateWeekDaySel_WeekDay</link> ((uint32_t)0x40000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dee/group___r_t_c___alarm_date_week_day___definitions_1gac5d3e2182217ad6c5a75eba5c88cb335">IS_RTC_ALARM_DATE_WEEKDAY_SEL</link> (((SEL) == RTC_AlarmDateWeekDaySel_Date) || \
+                                            ((SEL) == RTC_AlarmDateWeekDaySel_WeekDay))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc9/group___r_t_c___alarm_mask___definitions_1ga64ab58463d1595424151b6043f5c9650">RTC_AlarmMask_None</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc9/group___r_t_c___alarm_mask___definitions_1gae172289e90e0b7ffaebc1fab3183d8f6">RTC_AlarmMask_DateWeekDay</link> ((uint32_t)0x80000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc9/group___r_t_c___alarm_mask___definitions_1ga458d363397ba3c1b7bc77543b32f0e7b">RTC_AlarmMask_Hours</link> ((uint32_t)0x00800000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc9/group___r_t_c___alarm_mask___definitions_1gad9433880f20b69b62ac8fe35e133b205">RTC_AlarmMask_Minutes</link> ((uint32_t)0x00008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc9/group___r_t_c___alarm_mask___definitions_1ga8e70c31ba21d8504d2c1e8d6f7929c14">RTC_AlarmMask_Seconds</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc9/group___r_t_c___alarm_mask___definitions_1gacbb8cfb5a883b02dd2c025f0745f9bdf">RTC_AlarmMask_All</link> ((uint32_t)0x80808080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dc9/group___r_t_c___alarm_mask___definitions_1gac119b97b072bf9c12e008011ff202a19">IS_ALARM_MASK</link> (((MASK) &amp; 0x7F7F7F7F) == (uint32_t)RESET)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d24/group___r_t_c___alarms___definitions_1ga8d6daed1177365822e9f4e443ec394c7">RTC_Alarm_A</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d24/group___r_t_c___alarms___definitions_1gaf51f54c28f0052d97a8764741218d372">RTC_Alarm_B</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d24/group___r_t_c___alarms___definitions_1gab101ad18b0bcde557eb8caac469d7725">IS_RTC_ALARM</link> (((ALARM) == RTC_Alarm_A) || ((ALARM) == RTC_Alarm_B))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d24/group___r_t_c___alarms___definitions_1gae6b65274a46fc3a9f64eb0c9ed4c13e4">IS_RTC_CMD_ALARM</link> (((ALARM) &amp; (RTC_Alarm_A | RTC_Alarm_B)) != (uint32_t)RESET)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga7ca3d2cc7822e86a0397137400bff1e8">RTC_AlarmSubSecondMask_All</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae7d0420a85eea688e04bbccd27ee5ce9">RTC_AlarmSubSecondMask_SS14_1</link> ((uint32_t)0x01000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a31704b58e40877680090cca7bfeb29">RTC_AlarmSubSecondMask_SS14_2</link> ((uint32_t)0x02000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gaa5938e9c92c2467ce5c6fea0b05cb498">RTC_AlarmSubSecondMask_SS14_3</link> ((uint32_t)0x03000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gadefaba27e57718b2c164d0616e6ca0be">RTC_AlarmSubSecondMask_SS14_4</link> ((uint32_t)0x04000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga05e639e8796dd05b70ac3043cd578644">RTC_AlarmSubSecondMask_SS14_5</link> ((uint32_t)0x05000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gac4105d5f52321db4c5402a7f19e4cd40">RTC_AlarmSubSecondMask_SS14_6</link> ((uint32_t)0x06000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga65c2ed26d90ef3fe08cd938a5e7cec90">RTC_AlarmSubSecondMask_SS14_7</link> ((uint32_t)0x07000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a6d13dc2baaf30007f43d4086b6ccad">RTC_AlarmSubSecondMask_SS14_8</link> ((uint32_t)0x08000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga4a8e2fd87578d1357ec8f169766119ec">RTC_AlarmSubSecondMask_SS14_9</link> ((uint32_t)0x09000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga5eecab4e9eed9231aed9bf66b0b6efe8">RTC_AlarmSubSecondMask_SS14_10</link> ((uint32_t)0x0A000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae8a49e83d96a1651c202ccdf30d68f0d">RTC_AlarmSubSecondMask_SS14_11</link> ((uint32_t)0x0B000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga21da05a4b786c38755ff01564a4de83b">RTC_AlarmSubSecondMask_SS14_12</link> ((uint32_t)0x0C000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga00430f0eae750c0d41339d0dca26a8e5">RTC_AlarmSubSecondMask_SS14_13</link> ((uint32_t)0x0D000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga8d5f1d8afee279f519dccca14522fe27">RTC_AlarmSubSecondMask_SS14</link> ((uint32_t)0x0E000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga201f3ce456e20ffbc3f9af83c972aaa7">RTC_AlarmSubSecondMask_None</link> ((uint32_t)0x0F000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae6814af31d0cc72b784bc85f63ec4de7">IS_RTC_ALARM_SUB_SECOND_MASK</link> (((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga7ca3d2cc7822e86a0397137400bff1e8">RTC_AlarmSubSecondMask_All</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae7d0420a85eea688e04bbccd27ee5ce9">RTC_AlarmSubSecondMask_SS14_1</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a31704b58e40877680090cca7bfeb29">RTC_AlarmSubSecondMask_SS14_2</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gaa5938e9c92c2467ce5c6fea0b05cb498">RTC_AlarmSubSecondMask_SS14_3</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gadefaba27e57718b2c164d0616e6ca0be">RTC_AlarmSubSecondMask_SS14_4</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga05e639e8796dd05b70ac3043cd578644">RTC_AlarmSubSecondMask_SS14_5</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gac4105d5f52321db4c5402a7f19e4cd40">RTC_AlarmSubSecondMask_SS14_6</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga65c2ed26d90ef3fe08cd938a5e7cec90">RTC_AlarmSubSecondMask_SS14_7</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga9a6d13dc2baaf30007f43d4086b6ccad">RTC_AlarmSubSecondMask_SS14_8</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga4a8e2fd87578d1357ec8f169766119ec">RTC_AlarmSubSecondMask_SS14_9</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga5eecab4e9eed9231aed9bf66b0b6efe8">RTC_AlarmSubSecondMask_SS14_10</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1gae8a49e83d96a1651c202ccdf30d68f0d">RTC_AlarmSubSecondMask_SS14_11</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga21da05a4b786c38755ff01564a4de83b">RTC_AlarmSubSecondMask_SS14_12</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga00430f0eae750c0d41339d0dca26a8e5">RTC_AlarmSubSecondMask_SS14_13</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga8d5f1d8afee279f519dccca14522fe27">RTC_AlarmSubSecondMask_SS14</link>) || \
+                                              ((MASK) == <link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions_1ga201f3ce456e20ffbc3f9af83c972aaa7">RTC_AlarmSubSecondMask_None</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d12/group___r_t_c___alarm___sub___seconds___value_1gae7cd07c18cdb2946a2b06f6606ede93c">IS_RTC_ALARM_SUB_SECOND_VALUE</link> ((VALUE) &lt;= 0x00007FFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga3bdf3ccdb6fe77e36def1091619fd4a0">RTC_WakeUpClock_RTCCLK_Div16</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1gaac36e5571c3523da94c05698e9c6a5e1">RTC_WakeUpClock_RTCCLK_Div8</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga5fc37ef693f9a015bfb0e6dd8706fef0">RTC_WakeUpClock_RTCCLK_Div4</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga26b1be336e8cea784dfc7d9d0347f3f7">RTC_WakeUpClock_RTCCLK_Div2</link> ((uint32_t)0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga310ac1a50bca0c799f4e34c51a785f84">RTC_WakeUpClock_CK_SPRE_16bits</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga586423d0381e6822eaa030e9272708a2">RTC_WakeUpClock_CK_SPRE_17bits</link> ((uint32_t)0x00000006)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1gab847ce0346dc26930a3b2c1da3ed9e28">IS_RTC_WAKEUP_CLOCK</link> (((CLOCK) == RTC_WakeUpClock_RTCCLK_Div16) || \
+                                    ((CLOCK) == RTC_WakeUpClock_RTCCLK_Div8) || \
+                                    ((CLOCK) == RTC_WakeUpClock_RTCCLK_Div4) || \
+                                    ((CLOCK) == RTC_WakeUpClock_RTCCLK_Div2) || \
+                                    ((CLOCK) == RTC_WakeUpClock_CK_SPRE_16bits) || \
+                                    ((CLOCK) == RTC_WakeUpClock_CK_SPRE_17bits))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga6254b48843bdcb83b5b5cd640aeb6f9c">IS_RTC_WAKEUP_COUNTER</link> ((COUNTER) &lt;= 0xFFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/db4/group___r_t_c___time___stamp___edges__definitions_1gac3d8bb0310a1d86a4d1dc80ea6241218">RTC_TimeStampEdge_Rising</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/db4/group___r_t_c___time___stamp___edges__definitions_1ga786fa99accdef27c983845f2de750357">RTC_TimeStampEdge_Falling</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/db4/group___r_t_c___time___stamp___edges__definitions_1ga3ea7a85adeb5ff0bdc926156e4a92c5e">IS_RTC_TIMESTAMP_EDGE</link> (((EDGE) == RTC_TimeStampEdge_Rising) || \
+                                     ((EDGE) == RTC_TimeStampEdge_Falling))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1gac822a3040c6e8a503118bba51593e489">RTC_Output_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1ga56386ce37ad43c8b09a07437fa248483">RTC_Output_AlarmA</link> ((uint32_t)0x00200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1ga7fecea40e71cbadf6821bb5cc9f24e39">RTC_Output_AlarmB</link> ((uint32_t)0x00400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1ga1a48ec12a6fc320c8e18cc0f3c89b97a">RTC_Output_WakeUp</link> ((uint32_t)0x00600000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1gabc8a868f360abe629c8d8de8b44b3b63">IS_RTC_OUTPUT</link> (((OUTPUT) == RTC_Output_Disable) || \
+                               ((OUTPUT) == RTC_Output_AlarmA) || \
+                               ((OUTPUT) == RTC_Output_AlarmB) || \
+                               ((OUTPUT) == RTC_Output_WakeUp))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6a/group___r_t_c___output___polarity___definitions_1ga0c9b36bf812f02f67d82c02594cc93b3">RTC_OutputPolarity_High</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6a/group___r_t_c___output___polarity___definitions_1ga6900b0eb6f2e3abe65245c49661d55af">RTC_OutputPolarity_Low</link> ((uint32_t)0x00100000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6a/group___r_t_c___output___polarity___definitions_1ga1bc0fee899de25a9c1bcbb6c2b21b35d">IS_RTC_OUTPUT_POL</link> (((POL) == RTC_OutputPolarity_High) || \
+                                ((POL) == RTC_OutputPolarity_Low))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d5a/group___r_t_c___digital___calibration___definitions_1gaf3e952081f1b3e73b9abc9a53ce465bb">RTC_CalibSign_Positive</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d5a/group___r_t_c___digital___calibration___definitions_1ga362c7fef775bee9999bc19a9b47175f7">RTC_CalibSign_Negative</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d5a/group___r_t_c___digital___calibration___definitions_1ga8e9688a85c6708500b5f56ddc056beb1">IS_RTC_CALIB_SIGN</link> (((SIGN) == RTC_CalibSign_Positive) || \
+                                 ((SIGN) == RTC_CalibSign_Negative))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d5a/group___r_t_c___digital___calibration___definitions_1gafa25555b5daedee7b1fcba41afa6ed8b">IS_RTC_CALIB_VALUE</link> ((VALUE) &lt; 0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d57/group___r_t_c___calib___output__selection___definitions_1gab689d5d180e58a9d5054481d59d45767">RTC_CalibOutput_512Hz</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d57/group___r_t_c___calib___output__selection___definitions_1gaea4082d5ce14a94a602e40e0398125bd">RTC_CalibOutput_1Hz</link> ((uint32_t)0x00080000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d57/group___r_t_c___calib___output__selection___definitions_1gae8326e278569669e6880388c85cd890a">IS_RTC_CALIB_OUTPUT</link> (((OUTPUT) == RTC_CalibOutput_512Hz) || \
+                                      ((OUTPUT) == RTC_CalibOutput_1Hz))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga1410c28a3644ce52dfbdf2f21a037eef">RTC_SmoothCalibPeriod_32sec</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga31b86cd48a0ef55f1837ab5175c52eb9">RTC_SmoothCalibPeriod_16sec</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga8a34f8b7e145649bad2ec36b69eccbd3">RTC_SmoothCalibPeriod_8sec</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga65c64189fd22cb803ffe35cce640071a">IS_RTC_SMOOTH_CALIB_PERIOD</link> (((PERIOD) == <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga1410c28a3644ce52dfbdf2f21a037eef">RTC_SmoothCalibPeriod_32sec</link>) || \
+                                             ((PERIOD) == <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga31b86cd48a0ef55f1837ab5175c52eb9">RTC_SmoothCalibPeriod_16sec</link>) || \
+                                             ((PERIOD) == <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga8a34f8b7e145649bad2ec36b69eccbd3">RTC_SmoothCalibPeriod_8sec</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d90/group___r_t_c___smooth__calib___plus__pulses___definitions_1ga48a2b554e653139e8fda1d4ffd470144">RTC_SmoothCalibPlusPulses_Set</link> ((uint32_t)0x00008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d90/group___r_t_c___smooth__calib___plus__pulses___definitions_1ga13d843306f6d3cd22e2443f45f191fe8">RTC_SmoothCalibPlusPulses_Reset</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d90/group___r_t_c___smooth__calib___plus__pulses___definitions_1gad0081b479cf6d71ac588a483d09d7b75">IS_RTC_SMOOTH_CALIB_PLUS</link> (((PLUS) == <link linkend="d8/d90/group___r_t_c___smooth__calib___plus__pulses___definitions_1ga48a2b554e653139e8fda1d4ffd470144">RTC_SmoothCalibPlusPulses_Set</link>) || \
+                                         ((PLUS) == <link linkend="d8/d90/group___r_t_c___smooth__calib___plus__pulses___definitions_1ga13d843306f6d3cd22e2443f45f191fe8">RTC_SmoothCalibPlusPulses_Reset</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd1/group___r_t_c___smooth__calib___minus__pulses___definitions_1ga257f8bd6835bee480a80416bf086e200">IS_RTC_SMOOTH_CALIB_MINUS</link> ((VALUE) &lt;= 0x000001FF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dab/group___r_t_c___day_light_saving___definitions_1gaa037e9c81c2ebae4c30dbe000bc01532">RTC_DayLightSaving_SUB1H</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dab/group___r_t_c___day_light_saving___definitions_1ga72c25e9ad533dfc00185ebdc359d0c5a">RTC_DayLightSaving_ADD1H</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dab/group___r_t_c___day_light_saving___definitions_1ga4922f8f31df54481bc002b16bc1effc3">IS_RTC_DAYLIGHT_SAVING</link> (((SAVE) == RTC_DayLightSaving_SUB1H) || \
+                                      ((SAVE) == RTC_DayLightSaving_ADD1H))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dab/group___r_t_c___day_light_saving___definitions_1ga8355e1ca7bd8ccc5130d29605fe3a2cc">RTC_StoreOperation_Reset</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dab/group___r_t_c___day_light_saving___definitions_1ga4c8817bed02ba11bbe542180b572b0b2">RTC_StoreOperation_Set</link> ((uint32_t)0x00040000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dab/group___r_t_c___day_light_saving___definitions_1ga550da5c8a2382badcb391507fd6f07f4">IS_RTC_STORE_OPERATION</link> (((OPERATION) == RTC_StoreOperation_Reset) || \
+                                           ((OPERATION) == RTC_StoreOperation_Set))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1ga92ced18ec15722a30334a4df73ab046e">RTC_TamperTrigger_RisingEdge</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1ga9c78b3d15d85c5bd32c3003effe84b3d">RTC_TamperTrigger_FallingEdge</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1ga823f204682b5fab1d5b8aa053c53f97d">RTC_TamperTrigger_LowLevel</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1gac7d32f8fc0730428bbeaa1927fb36d01">RTC_TamperTrigger_HighLevel</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1ga4b0308730f7fa04b8db39270d0b90ca5">IS_RTC_TAMPER_TRIGGER</link> (((TRIGGER) == RTC_TamperTrigger_RisingEdge) || \
+                                        ((TRIGGER) == RTC_TamperTrigger_FallingEdge) || \
+                                        ((TRIGGER) == RTC_TamperTrigger_LowLevel) || \
+                                        ((TRIGGER) == RTC_TamperTrigger_HighLevel))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da7/group___r_t_c___tamper___filter___definitions_1ga606745baf6ebc29dec3ab8f4af69f9e7">RTC_TamperFilter_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da7/group___r_t_c___tamper___filter___definitions_1gae036968e2f4d9ed7d71587df94bd2f41">RTC_TamperFilter_2Sample</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da7/group___r_t_c___tamper___filter___definitions_1ga1d36f9a5326a4ed71de0f28365ee65e6">RTC_TamperFilter_4Sample</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da7/group___r_t_c___tamper___filter___definitions_1gae84bc688a4eca9fd17ece6df6436c9ca">RTC_TamperFilter_8Sample</link> ((uint32_t)0x00001800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da7/group___r_t_c___tamper___filter___definitions_1gaa695f102d84ff00aef2b7539f1293b00">IS_RTC_TAMPER_FILTER</link> (((FILTER) == <link linkend="d7/da7/group___r_t_c___tamper___filter___definitions_1ga606745baf6ebc29dec3ab8f4af69f9e7">RTC_TamperFilter_Disable</link>) || \
+                                      ((FILTER) == <link linkend="d7/da7/group___r_t_c___tamper___filter___definitions_1gae036968e2f4d9ed7d71587df94bd2f41">RTC_TamperFilter_2Sample</link>) || \
+                                      ((FILTER) == <link linkend="d7/da7/group___r_t_c___tamper___filter___definitions_1ga1d36f9a5326a4ed71de0f28365ee65e6">RTC_TamperFilter_4Sample</link>) || \
+                                      ((FILTER) == <link linkend="d7/da7/group___r_t_c___tamper___filter___definitions_1gae84bc688a4eca9fd17ece6df6436c9ca">RTC_TamperFilter_8Sample</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8111f838f023394683814baebbd6a018">RTC_TamperSamplingFreq_RTCCLK_Div32768</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4ecb6f350e1f309458365ac4d9d3775d">RTC_TamperSamplingFreq_RTCCLK_Div16384</link> ((uint32_t)0x000000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga63de5a2c30540bd2b0d6bd9074f1c650">RTC_TamperSamplingFreq_RTCCLK_Div8192</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga07cc43608fbf68df4159b0e4d759feeb">RTC_TamperSamplingFreq_RTCCLK_Div4096</link> ((uint32_t)0x00000300)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4bc9217c856fc9e4dc15c83f826d67ba">RTC_TamperSamplingFreq_RTCCLK_Div2048</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga39c88776ba8589000ab94b6d5da5de90">RTC_TamperSamplingFreq_RTCCLK_Div1024</link> ((uint32_t)0x00000500)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8528f31207c85d0ed76c9678f11e7e49">RTC_TamperSamplingFreq_RTCCLK_Div512</link> ((uint32_t)0x00000600)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1gad0f904e57e4d060e005a5bbceceb51f7">RTC_TamperSamplingFreq_RTCCLK_Div256</link> ((uint32_t)0x00000700)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1gaf355fb7bd95d7cffb14a212b4507cbdb">IS_RTC_TAMPER_SAMPLING_FREQ</link> (((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8111f838f023394683814baebbd6a018">RTC_TamperSamplingFreq_RTCCLK_Div32768</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4ecb6f350e1f309458365ac4d9d3775d">RTC_TamperSamplingFreq_RTCCLK_Div16384</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga63de5a2c30540bd2b0d6bd9074f1c650">RTC_TamperSamplingFreq_RTCCLK_Div8192</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga07cc43608fbf68df4159b0e4d759feeb">RTC_TamperSamplingFreq_RTCCLK_Div4096</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4bc9217c856fc9e4dc15c83f826d67ba">RTC_TamperSamplingFreq_RTCCLK_Div2048</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga39c88776ba8589000ab94b6d5da5de90">RTC_TamperSamplingFreq_RTCCLK_Div1024</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8528f31207c85d0ed76c9678f11e7e49">RTC_TamperSamplingFreq_RTCCLK_Div512</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1gad0f904e57e4d060e005a5bbceceb51f7">RTC_TamperSamplingFreq_RTCCLK_Div256</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga776e4f1a1a30d81e4333462ff49b10d6">RTC_TamperPrechargeDuration_1RTCCLK</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gacd4ef118bfdfad143f4ca228c7a2dccb">RTC_TamperPrechargeDuration_2RTCCLK</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gaaad3b9cb77e5218cc271e68b2f5e6b44">RTC_TamperPrechargeDuration_4RTCCLK</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga5b5b8e47db4271d3ab7e8ca16dbb645c">RTC_TamperPrechargeDuration_8RTCCLK</link> ((uint32_t)0x00006000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gafcbbdc089fbfc3c82a12d0fcdcee8473">IS_RTC_TAMPER_PRECHARGE_DURATION</link> (((DURATION) == <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga776e4f1a1a30d81e4333462ff49b10d6">RTC_TamperPrechargeDuration_1RTCCLK</link>) || \
+                                                    ((DURATION) == <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gacd4ef118bfdfad143f4ca228c7a2dccb">RTC_TamperPrechargeDuration_2RTCCLK</link>) || \
+                                                    ((DURATION) == <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1gaaad3b9cb77e5218cc271e68b2f5e6b44">RTC_TamperPrechargeDuration_4RTCCLK</link>) || \
+                                                    ((DURATION) == <link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions_1ga5b5b8e47db4271d3ab7e8ca16dbb645c">RTC_TamperPrechargeDuration_8RTCCLK</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d28/group___r_t_c___tamper___pins___definitions_1ga536970a32944a7a76f976ffb5b9c6a1f">RTC_Tamper_1</link> RTC_TAFCR_TAMP1E</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d28/group___r_t_c___tamper___pins___definitions_1ga8cb706b03efeeb8534eca0a20450d377">IS_RTC_TAMPER</link> (((TAMPER) == RTC_Tamper_1))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d10/group___r_t_c___tamper___pin___selection_1ga40931f48b0d647e0a1e96f12e1321bd1">RTC_TamperPin_PC13</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d10/group___r_t_c___tamper___pin___selection_1gafef092b812feb1d759c7b6cd0ca8d858">RTC_TamperPin_PI8</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d10/group___r_t_c___tamper___pin___selection_1gafee4c4fb7be2053b14b061e5725561ee">IS_RTC_TAMPER_PIN</link> (((PIN) == RTC_TamperPin_PC13) || \
+                                ((PIN) == RTC_TamperPin_PI8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3f/group___r_t_c___time_stamp___pin___selection_1gac71b083719de65957ef1577e047bdc74">RTC_TimeStampPin_PC13</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3f/group___r_t_c___time_stamp___pin___selection_1ga82b60e881b00b0106a2e75df19760ad0">RTC_TimeStampPin_PI8</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3f/group___r_t_c___time_stamp___pin___selection_1ga5558a9d932619b51a5a60fa4746dd852">IS_RTC_TIMESTAMP_PIN</link> (((PIN) == RTC_TimeStampPin_PC13) || \
+                                   ((PIN) == RTC_TimeStampPin_PI8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d1a/group___r_t_c___output___type___a_l_a_r_m___o_u_t_1gafe3640c3f98b1ad3a609623088335aeb">RTC_OutputType_OpenDrain</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d1a/group___r_t_c___output___type___a_l_a_r_m___o_u_t_1ga16861daafb18357d884baf2133adcc17">RTC_OutputType_PushPull</link> ((uint32_t)0x00040000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d1a/group___r_t_c___output___type___a_l_a_r_m___o_u_t_1ga69e263212d90ca91ccfc72e930f26cd8">IS_RTC_OUTPUT_TYPE</link> (((TYPE) == RTC_OutputType_OpenDrain) || \
+                                  ((TYPE) == RTC_OutputType_PushPull))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d89/group___r_t_c___add__1___second___parameter___definitions_1ga8b202b701dc12f88a628345b40146f78">RTC_ShiftAdd1S_Reset</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d89/group___r_t_c___add__1___second___parameter___definitions_1gafcf0fac6c5dafc3d1cd3c9ce6ec196be">RTC_ShiftAdd1S_Set</link> ((uint32_t)0x80000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d89/group___r_t_c___add__1___second___parameter___definitions_1ga26df4ba48afac04a9798cb24bb0a5823">IS_RTC_SHIFT_ADD1S</link> (((SEL) == RTC_ShiftAdd1S_Reset) || \
+                                 ((SEL) == RTC_ShiftAdd1S_Set))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dc6/group___r_t_c___substract___fraction___of___second___value_1ga8ad118d512f7dc9ce3d4b6669fd3f4b4">IS_RTC_SHIFT_SUBFS</link> ((FS) &lt;= 0x00007FFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga519bec4c7714e123cf2664f7394dc1ab">RTC_BKP_DR0</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga6988b61b031e1407787095b0ff214ea8">RTC_BKP_DR1</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga09963fdfb90ed5b7e32db13671447abb">RTC_BKP_DR2</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga014a39228ba4783b62ac8f11929ecd6a">RTC_BKP_DR3</link> ((uint32_t)0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga97545ebe0827a8650f953c371368f3f5">RTC_BKP_DR4</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gacab50ce68839698c48b8e2e143656ae7">RTC_BKP_DR5</link> ((uint32_t)0x00000005)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga538b0ac64fb4da2d54c12022a12243da">RTC_BKP_DR6</link> ((uint32_t)0x00000006)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gad2affc46e98b9ff69fc2af2c57c05a72">RTC_BKP_DR7</link> ((uint32_t)0x00000007)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gaba511d0dc16dedb9042081a9b905b597">RTC_BKP_DR8</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga59e9b9ec6b37ff46e557a3be4cd4fadb">RTC_BKP_DR9</link> ((uint32_t)0x00000009)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gac34f41f78e5602c406abf8382e1bab0c">RTC_BKP_DR10</link> ((uint32_t)0x0000000A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gab7f34c893833149de14908f22827a5dc">RTC_BKP_DR11</link> ((uint32_t)0x0000000B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga45c34c6e6c42068b2dbdf312cb8f3515">RTC_BKP_DR12</link> ((uint32_t)0x0000000C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga492ace75e9be2cf43fde1ae911d9651d">RTC_BKP_DR13</link> ((uint32_t)0x0000000D)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga718011f7c07a8a734fd51de0161fcddb">RTC_BKP_DR14</link> ((uint32_t)0x0000000E)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga01ad7db765e52ecd13f24bb09db27789">RTC_BKP_DR15</link> ((uint32_t)0x0000000F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga767f5e169b56f4a2364deb705d322a7b">RTC_BKP_DR16</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gabba03a6ab599f5f45db95244500177ff">RTC_BKP_DR17</link> ((uint32_t)0x00000011)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga9fc8a8a86892e0c517a56b2804b53006">RTC_BKP_DR18</link> ((uint32_t)0x00000012)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga384af548d7386c490e6a65b2600c8c2b">RTC_BKP_DR19</link> ((uint32_t)0x00000013)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga7dfcd70f7d46d2a71155b4e4e12d0a60">IS_RTC_BKP</link> (((BKP) == RTC_BKP_DR0) || \
+                                           ((BKP) == RTC_BKP_DR1) || \
+                                           ((BKP) == RTC_BKP_DR2) || \
+                                           ((BKP) == RTC_BKP_DR3) || \
+                                           ((BKP) == RTC_BKP_DR4) || \
+                                           ((BKP) == RTC_BKP_DR5) || \
+                                           ((BKP) == RTC_BKP_DR6) || \
+                                           ((BKP) == RTC_BKP_DR7) || \
+                                           ((BKP) == RTC_BKP_DR8) || \
+                                           ((BKP) == RTC_BKP_DR9) || \
+                                           ((BKP) == RTC_BKP_DR10) || \
+                                           ((BKP) == RTC_BKP_DR11) || \
+                                           ((BKP) == RTC_BKP_DR12) || \
+                                           ((BKP) == RTC_BKP_DR13) || \
+                                           ((BKP) == RTC_BKP_DR14) || \
+                                           ((BKP) == RTC_BKP_DR15) || \
+                                           ((BKP) == RTC_BKP_DR16) || \
+                                           ((BKP) == RTC_BKP_DR17) || \
+                                           ((BKP) == RTC_BKP_DR18) || \
+                                           ((BKP) == RTC_BKP_DR19))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d4e/group___r_t_c___input__parameter__format__definitions_1gaa0d76a1ae008c8e3602e45a1d4675174">RTC_Format_BIN</link> ((uint32_t)0x000000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d4e/group___r_t_c___input__parameter__format__definitions_1gac40ea19c2fee09cf26beaa29140a771e">RTC_Format_BCD</link> ((uint32_t)0x000000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d4e/group___r_t_c___input__parameter__format__definitions_1ga05a1ca8558058d71322ccf1045b8fb1c">IS_RTC_FORMAT</link> (((FORMAT) == RTC_Format_BIN) || ((FORMAT) == RTC_Format_BCD))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga01cba90a7ca51a928f72d28b6fe0d2ac">RTC_FLAG_RECALPF</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga3abf1af75c6ae88ddabe4b8a26634f99">RTC_FLAG_TAMP1F</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga74656ea8ff41be61a3734dc27367e039">RTC_FLAG_TSOVF</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga9b9ac7de7718bfe0ff77e1fd1193744b">RTC_FLAG_TSF</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gafcadab331b0193e82c7f6b037044f194">RTC_FLAG_WUTF</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gabb7bd65e83b346f42e28091ef1e643f5">RTC_FLAG_ALRBF</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gaf9e1a4b5eedd674d7b35ae334877ba12">RTC_FLAG_ALRAF</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga8d973d7f6b07e80743e05d6822ff2147">RTC_FLAG_INITF</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga78c4245996bef8d5f39226b6e37ed9c0">RTC_FLAG_RSF</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gae6a2d26d4b10670f6506b14971f52fd2">RTC_FLAG_INITS</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga8fd11878d6285ab5d35966d598d5e6f9">RTC_FLAG_SHPF</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga24648116b32442d30da74c497e2e88ae">RTC_FLAG_WUTWF</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gae9dd4b5b8059937c3422bc1e3eae3ced">RTC_FLAG_ALRBWF</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gaf4913efa96d03ded991b1cdddd6b7823">RTC_FLAG_ALRAWF</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga2126725a0d48f1c40f42566e249620ef">IS_RTC_GET_FLAG</link> (((FLAG) == RTC_FLAG_TSOVF) || ((FLAG) == RTC_FLAG_TSF) || \
+                               ((FLAG) == RTC_FLAG_WUTF) || ((FLAG) == RTC_FLAG_ALRBF) || \
+                               ((FLAG) == RTC_FLAG_ALRAF) || ((FLAG) == RTC_FLAG_INITF) || \
+                               ((FLAG) == RTC_FLAG_RSF) || ((FLAG) == RTC_FLAG_WUTWF) || \
+                               ((FLAG) == RTC_FLAG_ALRBWF) || ((FLAG) == RTC_FLAG_ALRAWF) || \
+                               ((FLAG) == RTC_FLAG_TAMP1F) || ((FLAG) == RTC_FLAG_RECALPF) || \
+                                ((FLAG) == RTC_FLAG_SHPF))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga5f8a9327a258f16f29703fa3e3cc8af7">IS_RTC_CLEAR_FLAG</link> (((FLAG) != (uint32_t)RESET) &amp;&amp; (((FLAG) &amp; 0xFFFF00DF) == (uint32_t)RESET))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga2c4632667c515e366a79df6341d5f3d1">RTC_IT_TS</link> ((uint32_t)0x00008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1gadc90686ace99992f4775c0198a1c6591">RTC_IT_WUT</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1gaeb47520af65e995ddad232f3a846aba8">RTC_IT_ALRB</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga0ba352559e4eb6a5430e1254851a0dfb">RTC_IT_ALRA</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1gada511402e0227932824cdc95711ebd55">RTC_IT_TAMP</link> ((uint32_t)0x00000004) /* Used only to Enable the Tamper Interrupt */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1gaae1bc95e46b6951e45c4d857a6701a8a">RTC_IT_TAMP1</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga9dacc14e5cef6806a69a6edd094bc151">IS_RTC_CONFIG_IT</link> (((IT) != (uint32_t)RESET) &amp;&amp; (((IT) &amp; 0xFFFF0FFB) == (uint32_t)RESET))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga2e10d8ccb2aa398ac14bde526f98dbc9">IS_RTC_GET_IT</link> (((IT) == RTC_IT_TS) || ((IT) == RTC_IT_WUT) || \
+                           ((IT) == RTC_IT_ALRB) || ((IT) == RTC_IT_ALRA) || \
+                           ((IT) == RTC_IT_TAMP1))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga1289cb21107c648b293aee4a4f8cba70">IS_RTC_CLEAR_IT</link> (((IT) != (uint32_t)RESET) &amp;&amp; (((IT) &amp; 0xFFFD0FFF) == (uint32_t)RESET))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d89/group___r_t_c___legacy_1ga6fd6ce83a6c888a7613e641d4478c0cc">RTC_DigitalCalibConfig</link> <link linkend="de/dad/group___r_t_c___group7_1gaa3bb10170a2c70ac9ce3e41c611bdd43">RTC_CoarseCalibConfig</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d89/group___r_t_c___legacy_1ga8a04a24beeae55e24cf8d2f3dbb5ead5">RTC_DigitalCalibCmd</link> <link linkend="de/dad/group___r_t_c___group7_1ga008ae7173b2befe876f5e76686bc9089">RTC_CoarseCalibCmd</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga9777c6cc4a99c339ebc527a791b2ebe7">RTC_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga8eb747bf9698b2482ba6ef4d811de8e0">RTC_Init</link> (
+<link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> * RTC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gab466f3348de3236976e9aec7d6025dff">RTC_StructInit</link> (
+<link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> * RTC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga9d4bdfd3ae6957630d15d2497573b7c7">RTC_WriteProtectionCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga679f8883cbfb267a53ffb1ab4cc5c8c5">RTC_EnterInitMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga87f86f3b794205f09a1eac51738d900f">RTC_ExitInitMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga2938febeef6baf0d91cc066ca5caf095">RTC_WaitForSynchro</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1gaa60079ec257fb3a277d058ca8305533d">RTC_RefClockCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gae5e7c682f15b8ae9ddd3b2a85a9df7db">RTC_BypassShadowCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga9f9df80cfa82f7a4dd9f4d0cf2ffb3a6">RTC_SetTime</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_TimeStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga0404db6e0c70e5a6bbbe4fa58a577365">RTC_TimeStructInit</link> (
+<link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_TimeStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga1fcc101339c77aebd25ec3621fd1b61a">RTC_GetTime</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_TimeStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1gae59c33fb19e36b6abab0bad58072c01a">RTC_GetSubSecond</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga69d08538147f3d89c818dcfabf50e362">RTC_SetDate</link> (
+uint32_t RTC_Format, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_DateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga6e4e99be910d7759f8910056a2985056">RTC_DateStructInit</link> (
+<link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_DateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga582645d554cdd4a316213e90f0b4c8ae">RTC_GetDate</link> (
+uint32_t RTC_Format, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_DateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga44e3334f8e882df9b8a59b47f0857395">RTC_SetAlarm</link> (
+uint32_t RTC_Format, uint32_t RTC_Alarm, <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga36ab6199e21fb415ab1ec4d7aa48ba45">RTC_AlarmStructInit</link> (
+<link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga6e2888d2fd2e3ecb4ec50f5c955b362b">RTC_GetAlarm</link> (
+uint32_t RTC_Format, uint32_t RTC_Alarm, <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1gac2c08f1aeeb664d3d245cb5aca1b8ca8">RTC_AlarmCmd</link> (
+uint32_t RTC_Alarm, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga7b3e4e9e39262e9b0d1aadd895394e46">RTC_AlarmSubSecondConfig</link> (
+uint32_t RTC_Alarm, uint32_t RTC_AlarmSubSecondValue, uint32_t RTC_AlarmSubSecondMask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1gae7b5e7146be2710d619c8ed3cca464ad">RTC_GetAlarmSubSecond</link> (
+uint32_t RTC_Alarm)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga2557b02b318211112731a91a190c4b26">RTC_WakeUpClockConfig</link> (
+uint32_t RTC_WakeUpClock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga1412044eb756a166c1cf341f3d46ed6b">RTC_SetWakeUpCounter</link> (
+uint32_t RTC_WakeUpCounter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1gae63aab672e917cc48e298162c3dec049">RTC_GetWakeUpCounter</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga2ce05293303e0d7879c6d755c5355b4c">RTC_WakeUpCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga812feddea77990b5dc336a4989ae61b8">RTC_DayLightSavingConfig</link> (
+uint32_t RTC_DayLightSaving, uint32_t RTC_StoreOperation)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1gaba0c1361790203e9dca43846f0d9bc15">RTC_GetStoreOperation</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gae3165ef19ef3bd63789e59130ad8d89b">RTC_OutputConfig</link> (
+uint32_t RTC_Output, uint32_t RTC_OutputPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1gaa3bb10170a2c70ac9ce3e41c611bdd43">RTC_CoarseCalibConfig</link> (
+uint32_t RTC_CalibSign, uint32_t Value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga008ae7173b2befe876f5e76686bc9089">RTC_CoarseCalibCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga25eaa2de5ee858a4572d5fb1eb146ff8">RTC_CalibOutputCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga2139adc802bdb6882904c0b855d50b29">RTC_CalibOutputConfig</link> (
+uint32_t RTC_CalibOutput)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga91a28dcc7d45340a469dd8b8c029f841">RTC_SmoothCalibConfig</link> (
+uint32_t RTC_SmoothCalibPeriod, uint32_t RTC_SmoothCalibPlusPulses, uint32_t RTC_SmouthCalibMinusPulsesValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga7d80fa4a2c87654598d8207154ac8e96">RTC_TimeStampCmd</link> (
+uint32_t RTC_TimeStampEdge, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga44c38b0c74e9e960a4263b2905f44796">RTC_GetTimeStamp</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_StampTimeStruct, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_StampDateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1ga2b0ef81f4959a2f9fc6361fbda759b00">RTC_GetTimeStampSubSecond</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gad547d636cfc4fd8d4d673325571e0ffb">RTC_TamperTriggerConfig</link> (
+uint32_t RTC_Tamper, uint32_t RTC_TamperTrigger)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gaf85cc696d624da0de9fbe99779402833">RTC_TamperCmd</link> (
+uint32_t RTC_Tamper, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga1e87b9ae757ad12d7585e4fbcbf2c4b8">RTC_TamperFilterConfig</link> (
+uint32_t RTC_TamperFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gadc7f33a31df80b5deac313fc8af8d7f7">RTC_TamperSamplingFreqConfig</link> (
+uint32_t RTC_TamperSamplingFreq)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gafc176a013076a651862dc6a957286025">RTC_TamperPinsPrechargeDuration</link> (
+uint32_t RTC_TamperPrechargeDuration)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga29c82fceefd21a78dc55ccc5bcc1ed59">RTC_TimeStampOnTamperDetectionCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga981b9c654e521282a2020a81118c8c3c">RTC_TamperPullUpCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gaa1241e2b47d04acc116b50d7b031c3aa">RTC_WriteBackupRegister</link> (
+uint32_t RTC_BKP_DR, uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1ga504489fd91a66e392beb82bb8230b37f">RTC_ReadBackupRegister</link> (
+uint32_t RTC_BKP_DR)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga46777272ae77eb9dc38610481e12b0ed">RTC_TamperPinSelection</link> (
+uint32_t RTC_TamperPin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gaedf9830bdaaaa50ea5d45d2ff7bb43a9">RTC_TimeStampPinSelection</link> (
+uint32_t RTC_TimeStampPin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga95263b7acf7168d52f66ef9121f14760">RTC_OutputTypeConfig</link> (
+uint32_t RTC_OutputType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1gaad434ed2a268f05662f0613e8e9717f3">RTC_SynchroShiftConfig</link> (
+uint32_t RTC_ShiftAdd1S, uint32_t RTC_ShiftSubFS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gaa8469b33b3a99025baf52f007683b925">RTC_ITConfig</link> (
+uint32_t RTC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d9/dfc/group___r_t_c_1gaf2a7f11aa7160e95650fd10845e7780b">RTC_GetFlagStatus</link> (
+uint32_t RTC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga9be3325e05418d05c8c5a5ad369c7d50">RTC_ClearFlag</link> (
+uint32_t RTC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d9/dfc/group___r_t_c_1gaab81adc6d2a5a5c1e37a49707c6bf640">RTC_GetITStatus</link> (
+uint32_t RTC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gacac6accc75ae54f1b799fa8e7e83ccdb">RTC_ClearITPendingBit</link> (
+uint32_t RTC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the RTC firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rtc.h</para>
+    </simplesect>
+</section>

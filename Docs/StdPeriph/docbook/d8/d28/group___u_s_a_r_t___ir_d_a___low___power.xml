@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d28/group___u_s_a_r_t___ir_d_a___low___power">
+    <title>USART_IrDA_Low_Power</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d28/group___u_s_a_r_t___ir_d_a___low___power_1ga00c2635d0e6ca1a5b158f1c1673e862f">USART_IrDAMode_LowPower</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d28/group___u_s_a_r_t___ir_d_a___low___power_1ga796cd5451deb896741206986bd6d03e6">USART_IrDAMode_Normal</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d28/group___u_s_a_r_t___ir_d_a___low___power_1ga7790838ff8ee71089da2c0e5bceee569">IS_USART_IRDA_MODE</link> (((MODE) == USART_IrDAMode_LowPower) || \
+                                  ((MODE) == USART_IrDAMode_Normal))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

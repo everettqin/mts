@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d6a/group___t_i_m___external___trigger___filter">
+    <title>TIM_External_Trigger_Filter</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d6a/group___t_i_m___external___trigger___filter_1ga500df0646edcf07316a55a652502ca87">IS_TIM_EXT_FILTER</link> ((EXTFILTER) &lt;= 0xF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

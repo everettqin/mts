@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d16/group___h_a_s_h___group7">
+    <title>High Level MD5 functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>High Level MD5 Hash and HMAC functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                          High Level MD5 Hash and HMAC functions
+ ===============================================================================</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="da/d16/group___h_a_s_h___group7_1ga82a155884e458cc6b7c1a4565c1ac8e9">HASH_MD5</link> (
+uint8_t * Input, uint32_t Ilen, uint8_t Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="da/d16/group___h_a_s_h___group7_1gac61733e7aa66bdd2f21be4b34165b5be">HMAC_MD5</link> (
+uint8_t * Key, uint32_t Keylen, uint8_t * Input, uint32_t Ilen, uint8_t Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="da/d16/group___h_a_s_h___group7_1ga82a155884e458cc6b7c1a4565c1ac8e9">
+                <title>ErrorStatus HASH_MD5 (uint8_t *Input, uint32_t Ilen, uint8_t Output[16])</title> <emphasis>Compute the HASH MD5 digest.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Input, :</entry>
+                                <entry>
+<para>pointer to the Input buffer to be treated. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Ilen, :</entry>
+                                <entry>
+<para>length of the Input buffer. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Output, :</entry>
+                                <entry>
+<para>the returned digest </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: digest computation done</para>
+</listitem><listitem>
+<para>ERROR: digest computation failed </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d16/group___h_a_s_h___group7_1gac61733e7aa66bdd2f21be4b34165b5be">
+                <title>ErrorStatus HMAC_MD5 (uint8_t *Key, uint32_t Keylen, uint8_t *Input, uint32_t Ilen, uint8_t Output[16])</title> <emphasis>Compute the HMAC MD5 digest.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Key, :</entry>
+                                <entry>
+<para>pointer to the Key used for HMAC. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Keylen, :</entry>
+                                <entry>
+<para>length of the Key used for HMAC. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Input, :</entry>
+                                <entry>
+<para>pointer to the Input buffer to be treated. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Ilen, :</entry>
+                                <entry>
+<para>length of the Input buffer. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Output, :</entry>
+                                <entry>
+<para>the returned digest </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: digest computation done</para>
+</listitem><listitem>
+<para>ERROR: digest computation failed </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

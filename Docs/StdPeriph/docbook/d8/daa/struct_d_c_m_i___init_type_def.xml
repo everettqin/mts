@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/daa/struct_d_c_m_i___init_type_def">
+<title>DCMI_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/d66/stm32f4xx__dcmi_8h">&lt;stm32f4xx_dcmi.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_CaptureMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_SynchroMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_PCKPolarity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_VSPolarity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_HSPolarity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_CaptureRate</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t DCMI_ExtendedDataMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DCMI Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t DCMI_CaptureMode</title>                
+<para>Specifies the Capture Mode: Continuous or Snapshot. This parameter can be a value of <link linkend="d8/de7/group___d_c_m_i___capture___mode">DCMI_Capture_Mode</link> </para>
+
+                <para>Definition at line 47 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t DCMI_SynchroMode</title>                
+<para>Specifies the Synchronization Mode: Hardware or Embedded. This parameter can be a value of <link linkend="d4/de3/group___d_c_m_i___synchronization___mode">DCMI_Synchronization_Mode</link> </para>
+
+                <para>Definition at line 50 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t DCMI_PCKPolarity</title>                
+<para>Specifies the Pixel clock polarity: Falling or Rising. This parameter can be a value of <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity">DCMI_PIXCK_Polarity</link> </para>
+
+                <para>Definition at line 53 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t DCMI_VSPolarity</title>                
+<para>Specifies the Vertical synchronization polarity: High or Low. This parameter can be a value of <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity">DCMI_VSYNC_Polarity</link> </para>
+
+                <para>Definition at line 56 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t DCMI_HSPolarity</title>                
+<para>Specifies the Horizontal synchronization polarity: High or Low. This parameter can be a value of <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity">DCMI_HSYNC_Polarity</link> </para>
+
+                <para>Definition at line 59 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t DCMI_CaptureRate</title>                
+<para>Specifies the frequency of frame capture: All, 1/2 or 1/4. This parameter can be a value of <link linkend="d6/ded/group___d_c_m_i___capture___rate">DCMI_Capture_Rate</link> </para>
+
+                <para>Definition at line 62 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t DCMI_ExtendedDataMode</title>                
+<para>Specifies the data width: 8-bit, 10-bit, 12-bit or 14-bit. This parameter can be a value of <link linkend="dd/da5/group___d_c_m_i___extended___data___mode">DCMI_Extended_Data_Mode</link> </para>
+
+                <para>Definition at line 65 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

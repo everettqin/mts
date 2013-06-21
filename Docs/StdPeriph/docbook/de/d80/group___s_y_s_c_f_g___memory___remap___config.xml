@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d80/group___s_y_s_c_f_g___memory___remap___config">
+    <title>SYSCFG_Memory_Remap_Config</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1gaca6b4b48448ddf67fdaa37412a0202ff">SYSCFG_MemoryRemap_Flash</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1gadabfec4d205f0a25ede0e6ee8ebfcfab">SYSCFG_MemoryRemap_SystemFlash</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1ga7ed56d4bd566e0d97cce3962461673cf">SYSCFG_MemoryRemap_FSMC</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1ga3dc9c7f02f9457d344ffe377df125ee2">SYSCFG_MemoryRemap_SRAM</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1ga6c9e6ea1798ba9dc317e2b814228652e">IS_SYSCFG_MEMORY_REMAP_CONFING</link> (((REMAP) == SYSCFG_MemoryRemap_Flash) || \
+                                                     ((REMAP) == SYSCFG_MemoryRemap_SystemFlash) || \
+                                                     ((REMAP) == SYSCFG_MemoryRemap_SRAM) || \
+                                                     ((REMAP) == SYSCFG_MemoryRemap_FSMC))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

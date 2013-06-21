@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d2c/group___a_d_c__flags__definition">
+    <title>ADC_flags_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d2c/group___a_d_c__flags__definition_1gadb75a4b430fb84950232b7a8f3a6a877">ADC_FLAG_AWD</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d2c/group___a_d_c__flags__definition_1gaf2c6fdf7e9ab63b778149e5fb56413d4">ADC_FLAG_EOC</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d2c/group___a_d_c__flags__definition_1ga4df8eea8ab83d98104ee15a339743a4e">ADC_FLAG_JEOC</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d2c/group___a_d_c__flags__definition_1ga278f4e866f4322c1120bf0db5301c432">ADC_FLAG_JSTRT</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d2c/group___a_d_c__flags__definition_1gad0c59ae7749c69b5b91f2c533db1b619">ADC_FLAG_STRT</link> ((uint8_t)0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d2c/group___a_d_c__flags__definition_1ga6e8f399d2af342bd18b9f5803cb986e7">ADC_FLAG_OVR</link> ((uint8_t)0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d2c/group___a_d_c__flags__definition_1gac5b6fb60ec921255b05261ec04573470">IS_ADC_CLEAR_FLAG</link> ((((FLAG) &amp; (uint8_t)0xC0) == 0x00) &amp;&amp; ((FLAG) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d2c/group___a_d_c__flags__definition_1ga597eb68dfef9dbe0928ed14a1aedc710">IS_ADC_GET_FLAG</link> (((FLAG) == ADC_FLAG_AWD) || \
+                               ((FLAG) == ADC_FLAG_EOC) || \
+                               ((FLAG) == ADC_FLAG_JEOC) || \
+                               ((FLAG)== ADC_FLAG_JSTRT) || \
+                               ((FLAG) == ADC_FLAG_STRT) || \
+                               ((FLAG)== ADC_FLAG_OVR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

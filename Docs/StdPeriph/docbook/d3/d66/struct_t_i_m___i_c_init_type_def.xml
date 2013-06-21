@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d66/struct_t_i_m___i_c_init_type_def">
+<title>TIM_ICInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dec/stm32f4xx__tim_8h">&lt;stm32f4xx_tim.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_Channel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_ICPolarity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_ICSelection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_ICPrescaler</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_ICFilter</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>TIM Input Capture Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t TIM_Channel</title>                
+<para>Specifies the TIM channel. This parameter can be a value of <link linkend="da/d81/group___t_i_m___channel">TIM_Channel</link> </para>
+
+                <para>Definition at line 116 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_ICPolarity</title>                
+<para>Specifies the active edge of the input signal. This parameter can be a value of <link linkend="d0/d35/group___t_i_m___input___capture___polarity">TIM_Input_Capture_Polarity</link> </para>
+
+                <para>Definition at line 119 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_ICSelection</title>                
+<para>Specifies the input. This parameter can be a value of <link linkend="de/dc7/group___t_i_m___input___capture___selection">TIM_Input_Capture_Selection</link> </para>
+
+                <para>Definition at line 122 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_ICPrescaler</title>                
+<para>Specifies the Input Capture Prescaler. This parameter can be a value of <link linkend="db/d17/group___t_i_m___input___capture___prescaler">TIM_Input_Capture_Prescaler</link> </para>
+
+                <para>Definition at line 125 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_ICFilter</title>                
+<para>Specifies the input capture filter. This parameter can be a number between 0x0 and 0xF </para>
+
+                <para>Definition at line 128 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

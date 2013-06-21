@@ -1,0 +1,1824 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/da6/group___f_l_a_s_h">
+    <title>FLASH</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>FLASH driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="db/d4a/group___f_l_a_s_h___exported___constants">FLASH_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="d5/de4/group___f_l_a_s_h___private___functions">FLASH_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>enum <link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link>{<link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099">FLASH_BUSY</link>== 1, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0aee7da388d2f5c589a3cb34efea767ad2">FLASH_ERROR_PGS</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ae4f20fb81a812fb65473373c3c36765d">FLASH_ERROR_PGP</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ab2ac5838863aa3dcf727587bc3264d95">FLASH_ERROR_PGA</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ac9e2d95d3ba415fb7392d72a2458f4d8">FLASH_ERROR_WRP</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0a9564434dba379dc864805dc964a05e03">FLASH_ERROR_PROGRAM</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0a22a777a65972676f311e20de5a0f0beb">FLASH_ERROR_OPERATION</link>, <link linkend="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf">FLASH_COMPLETE</link>}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga54bcb96270215c752c3479c8c9e438c0">FLASH_SetLatency</link> (
+uint32_t FLASH_Latency)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1gafaa24b6176b587bdda46abbe755af986">FLASH_PrefetchBufferCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga7d5a9a35e792d844c329d7f1656b50ae">FLASH_InstructionCacheCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga937a824493f3c6949289401a767a0360">FLASH_DataCacheCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1gaf6f1e54d9df32f3c196d67e59eb80a49">FLASH_InstructionCacheReset</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga8332da89b072373b7f116e0b7c137a22">FLASH_DataCacheReset</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga4084d0184bab463a1579271bf474aaef">FLASH_Unlock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga46899557353c4312ddbe3f25e65df1d8">FLASH_Lock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1ga48f408290b32a3aebbcad83a00fc447c">FLASH_EraseSector</link> (
+uint32_t FLASH_Sector, uint8_t VoltageRange)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1ga2aee006e5f4db4280bdedd401dfa50f9">FLASH_EraseAllSectors</link> (
+uint8_t VoltageRange)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gab84b52121e58d0dbc8ff2a92145d20f2">FLASH_ProgramDoubleWord</link> (
+uint32_t Address, uint64_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gaac9a2f400b92537bd42a6bd7cc237b11">FLASH_ProgramWord</link> (
+uint32_t Address, uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1ga5c1336f667950a8765887228f1d0d501">FLASH_ProgramHalfWord</link> (
+uint32_t Address, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gac425adf52fe7f229ef6bb893fe386848">FLASH_ProgramByte</link> (
+uint32_t Address, uint8_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga518d6e3bbba2adf1523e8454f62348e9">FLASH_OB_Unlock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga63a33d9af7e29b64c3806e5505c59b74">FLASH_OB_Lock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1gaffe7e91bcce65ac079ae5afa1db568b5">FLASH_OB_WRPConfig</link> (
+uint32_t OB_WRP, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga12cb6799f725a49cd151eef4d6d1789b">FLASH_OB_RDPConfig</link> (
+uint8_t OB_RDP)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga6b605409e4271b4cc6dfb56ed8108a1a">FLASH_OB_UserConfig</link> (
+uint8_t OB_IWDG, uint8_t OB_STOP, uint8_t OB_STDBY)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga621bf052bc381c7a37fb1f8758f5ec2e">FLASH_OB_BORConfig</link> (
+uint8_t OB_BOR)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gabcbd44a62a2488d8b90aa8562a258ef1">FLASH_OB_Launch</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="dc/da6/group___f_l_a_s_h_1ga737dd808489113af7f8df7f7e9f7baae">FLASH_OB_GetUser</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="dc/da6/group___f_l_a_s_h_1gafa2aec5fa1ea7a73c31f3405f465c525">FLASH_OB_GetWRP</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="dc/da6/group___f_l_a_s_h_1ga2f0151c6c923396eaf96c554a5860c31">FLASH_OB_GetRDP</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="dc/da6/group___f_l_a_s_h_1gab8a8804905929b2edd544d28c2e7b215">FLASH_OB_GetBOR</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1ga94c1e51a9c3bf8d48eb6eb4a4d054861">FLASH_ITConfig</link> (
+uint32_t FLASH_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="dc/da6/group___f_l_a_s_h_1gae3fb545e32f21501ca27d4380e0f2088">FLASH_GetFlagStatus</link> (
+uint32_t FLASH_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/da6/group___f_l_a_s_h_1gac4be1d486483fa5cd70ec77d44ca8f87">FLASH_ClearFlag</link> (
+uint32_t FLASH_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gac265b8d1e7ea11e44ceee28797c3debb">FLASH_GetStatus</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="dc/da6/group___f_l_a_s_h_1gaaf8ea3b00c9a5f5eca0df9a795b83f22">FLASH_WaitForLastOperation</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/da6/group___f_l_a_s_h_1gaa2c907f663ac6d7fb5c311d08589b4f5">SECTOR_MASK</link> ((uint32_t)0xFFFFFF07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Enumeration Type documentation</title>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">
+               <title>enum FLASH_Status </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0aa25021d41842af8a68cefcb65949e099">
+                            <term>FLASH_BUSY</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0aee7da388d2f5c589a3cb34efea767ad2">
+                            <term>FLASH_ERROR_PGS</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ae4f20fb81a812fb65473373c3c36765d">
+                            <term>FLASH_ERROR_PGP</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ab2ac5838863aa3dcf727587bc3264d95">
+                            <term>FLASH_ERROR_PGA</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ac9e2d95d3ba415fb7392d72a2458f4d8">
+                            <term>FLASH_ERROR_WRP</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0a9564434dba379dc864805dc964a05e03">
+                            <term>FLASH_ERROR_PROGRAM</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0a22a777a65972676f311e20de5a0f0beb">
+                            <term>FLASH_ERROR_OPERATION</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dc/da6/group___f_l_a_s_h_1ggadc63a6f3404ff1f71229a66915e9cdc0ab0e88e9f59edee379a1a710a8b7deebf">
+                            <term>FLASH_COMPLETE</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 47 of file stm32f4xx_flash.h
+                    <programlisting>
+{
+FLASH_BUSY== 1, 
+FLASH_ERROR_PGS, 
+FLASH_ERROR_PGP, 
+FLASH_ERROR_PGA, 
+FLASH_ERROR_WRP, 
+FLASH_ERROR_PROGRAM, 
+FLASH_ERROR_OPERATION, 
+FLASH_COMPLETE, 
+}FLASH_Status;
+                    </programlisting>
+                </para>
+            </section>
+        </section>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga54bcb96270215c752c3479c8c9e438c0">
+                <title>void FLASH_SetLatency (uint32_t FLASH_Latency)</title> <emphasis>Sets the code latency value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH_Latency, :</entry>
+                                <entry>
+<para>specifies the FLASH Latency value. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FLASH_Latency_0: FLASH Zero Latency cycle </para>
+</listitem>
+<listitem>
+<para>FLASH_Latency_1: FLASH One Latency cycle </para>
+</listitem>
+<listitem>
+<para>FLASH_Latency_2: FLASH Two Latency cycles </para>
+</listitem>
+<listitem>
+<para>FLASH_Latency_3: FLASH Three Latency cycles </para>
+</listitem>
+<listitem>
+<para>FLASH_Latency_4: FLASH Four Latency cycles </para>
+</listitem>
+<listitem>
+<para>FLASH_Latency_5: FLASH Five Latency cycles </para>
+</listitem>
+<listitem>
+<para>FLASH_Latency_6: FLASH Six Latency cycles </para>
+</listitem>
+<listitem>
+<para>FLASH_Latency_7: FLASH Seven Latency cycles </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gafaa24b6176b587bdda46abbe755af986">
+                <title>void FLASH_PrefetchBufferCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the Prefetch Buffer.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Prefetch Buffer. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga7d5a9a35e792d844c329d7f1656b50ae">
+                <title>void FLASH_InstructionCacheCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the Instruction Cache feature.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Instruction Cache. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga937a824493f3c6949289401a767a0360">
+                <title>void FLASH_DataCacheCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the Data Cache feature.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Data Cache. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gaf6f1e54d9df32f3c196d67e59eb80a49">
+                <title>void FLASH_InstructionCacheReset (void)</title> <emphasis>Resets the Instruction Cache.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be used only when the Instruction Cache is disabled. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga8332da89b072373b7f116e0b7c137a22">
+                <title>void FLASH_DataCacheReset (void)</title> <emphasis>Resets the Data Cache.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be used only when the Data Cache is disabled. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga4084d0184bab463a1579271bf474aaef">
+                <title>void FLASH_Unlock (void)</title> <emphasis>Unlocks the FLASH control register access.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga46899557353c4312ddbe3f25e65df1d8">
+                <title>void FLASH_Lock (void)</title> <emphasis>Locks the FLASH control register access.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga48f408290b32a3aebbcad83a00fc447c">
+                <title>FLASH_Status FLASH_EraseSector (uint32_t FLASH_Sector, uint8_t VoltageRange)</title> <emphasis>Erases a specified FLASH Sector.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH_Sector, :</entry>
+                                <entry>
+<para>The Sector number to be erased. This parameter can be a value between FLASH_Sector_0 and FLASH_Sector_11</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>VoltageRange, :</entry>
+                                <entry>
+<para>The device voltage range which defines the erase parallelism. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>VoltageRange_1: when the device voltage range is 1.8V to 2.1V, the operation will be done by byte (8-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_2: when the device voltage range is 2.1V to 2.7V, the operation will be done by half word (16-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_3: when the device voltage range is 2.7V to 3.6V, the operation will be done by word (32-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_4: when the device voltage range is 2.7V to 3.6V + External Vpp, the operation will be done by double word (64-bit)</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga2aee006e5f4db4280bdedd401dfa50f9">
+                <title>FLASH_Status FLASH_EraseAllSectors (uint8_t VoltageRange)</title> <emphasis>Erases all FLASH Sectors.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>VoltageRange, :</entry>
+                                <entry>
+<para>The device voltage range which defines the erase parallelism. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>VoltageRange_1: when the device voltage range is 1.8V to 2.1V, the operation will be done by byte (8-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_2: when the device voltage range is 2.1V to 2.7V, the operation will be done by half word (16-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_3: when the device voltage range is 2.7V to 3.6V, the operation will be done by word (32-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_4: when the device voltage range is 2.7V to 3.6V + External Vpp, the operation will be done by double word (64-bit)</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gab84b52121e58d0dbc8ff2a92145d20f2">
+                <title>FLASH_Status FLASH_ProgramDoubleWord (uint32_t Address, uint64_t Data)</title> <emphasis>Programs a double word (64-bit) at a specified address.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be used when the device voltage range is from 2.7V to 3.6V and an External Vpp is present. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the address to be programmed. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>specifies the data to be programmed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gaac9a2f400b92537bd42a6bd7cc237b11">
+                <title>FLASH_Status FLASH_ProgramWord (uint32_t Address, uint32_t Data)</title> <emphasis>Programs a word (32-bit) at a specified address.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the address to be programmed. This parameter can be any address in Program memory zone or in OTP zone. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>This function must be used when the device voltage range is from 2.7V to 3.6V. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>specifies the data to be programmed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga5c1336f667950a8765887228f1d0d501">
+                <title>FLASH_Status FLASH_ProgramHalfWord (uint32_t Address, uint16_t Data)</title> <emphasis>Programs a half word (16-bit) at a specified address.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be used when the device voltage range is from 2.1V to 3.6V. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the address to be programmed. This parameter can be any address in Program memory zone or in OTP zone. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>specifies the data to be programmed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gac425adf52fe7f229ef6bb893fe386848">
+                <title>FLASH_Status FLASH_ProgramByte (uint32_t Address, uint8_t Data)</title> <emphasis>Programs a byte (8-bit) at a specified address.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function can be used within all the device supply voltage ranges. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the address to be programmed. This parameter can be any address in Program memory zone or in OTP zone. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>specifies the data to be programmed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga518d6e3bbba2adf1523e8454f62348e9">
+                <title>void FLASH_OB_Unlock (void)</title> <emphasis>Unlocks the FLASH Option Control Registers access.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga63a33d9af7e29b64c3806e5505c59b74">
+                <title>void FLASH_OB_Lock (void)</title> <emphasis>Locks the FLASH Option Control Registers access.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gaffe7e91bcce65ac079ae5afa1db568b5">
+                <title>void FLASH_OB_WRPConfig (uint32_t OB_WRP, FunctionalState NewState)</title> <emphasis>Enables or disables the write protection of the desired sectors.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>OB_WRP, :</entry>
+                                <entry>
+<para>specifies the sector(s) to be write protected or unprotected. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_WRP: A value between OB_WRP_Sector0 and OB_WRP_Sector11 </para>
+</listitem>
+<listitem>
+<para>OB_WRP_Sector_All </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Newstate, :</entry>
+                                <entry>
+<para>new state of the Write Protection. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga12cb6799f725a49cd151eef4d6d1789b">
+                <title>void FLASH_OB_RDPConfig (uint8_t OB_RDP)</title> <emphasis>Sets the read protection level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>OB_RDP, :</entry>
+                                <entry>
+<para>specifies the read protection level. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_RDP_Level_0: No protection </para>
+</listitem>
+<listitem>
+<para>OB_RDP_Level_1: Read protection of the memory </para>
+</listitem>
+<listitem>
+<para>OB_RDP_Level_2: Full chip protection</para>
+</listitem>
+</itemizedlist>
+!!!Warning!!! When enabling OB_RDP level 2 it&apos;s no more possible to go back to level 1 or 0</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga6b605409e4271b4cc6dfb56ed8108a1a">
+                <title>void FLASH_OB_UserConfig (uint8_t OB_IWDG, uint8_t OB_STOP, uint8_t OB_STDBY)</title> <emphasis>Programs the FLASH User Option Byte: IWDG_SW / RST_STOP / RST_STDBY.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>OB_IWDG, :</entry>
+                                <entry>
+<para>Selects the IWDG mode This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_IWDG_SW: Software IWDG selected </para>
+</listitem>
+<listitem>
+<para>OB_IWDG_HW: Hardware IWDG selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>OB_STOP, :</entry>
+                                <entry>
+<para>Reset event when entering STOP mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_STOP_NoRST: No reset generated when entering in STOP </para>
+</listitem>
+<listitem>
+<para>OB_STOP_RST: Reset generated when entering in STOP </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>OB_STDBY, :</entry>
+                                <entry>
+<para>Reset event when entering Standby mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_STDBY_NoRST: No reset generated when entering in STANDBY </para>
+</listitem>
+<listitem>
+<para>OB_STDBY_RST: Reset generated when entering in STANDBY </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga621bf052bc381c7a37fb1f8758f5ec2e">
+                <title>void FLASH_OB_BORConfig (uint8_t OB_BOR)</title> <emphasis>Sets the BOR Level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>OB_BOR, :</entry>
+                                <entry>
+<para>specifies the Option Bytes BOR Reset Level. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_BOR_LEVEL3: Supply voltage ranges from 2.7 to 3.6 V </para>
+</listitem>
+<listitem>
+<para>OB_BOR_LEVEL2: Supply voltage ranges from 2.4 to 2.7 V </para>
+</listitem>
+<listitem>
+<para>OB_BOR_LEVEL1: Supply voltage ranges from 2.1 to 2.4 V </para>
+</listitem>
+<listitem>
+<para>OB_BOR_OFF: Supply voltage ranges from 1.62 to 2.1 V </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gabcbd44a62a2488d8b90aa8562a258ef1">
+                <title>FLASH_Status FLASH_OB_Launch (void)</title> <emphasis>Launch the option byte loading.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga737dd808489113af7f8df7f7e9f7baae">
+                <title>uint8_t FLASH_OB_GetUser (void)</title> <emphasis>Returns the FLASH User Option Bytes values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>FLASH User Option Bytes values: IWDG_SW(Bit0), RST_STOP(Bit1) and RST_STDBY(Bit2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gafa2aec5fa1ea7a73c31f3405f465c525">
+                <title>uint16_t FLASH_OB_GetWRP (void)</title> <emphasis>Returns the FLASH Write Protection Option Bytes value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>FLASH Write Protection Option Bytes value </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga2f0151c6c923396eaf96c554a5860c31">
+                <title>FlagStatus FLASH_OB_GetRDP (void)</title> <emphasis>Returns the FLASH Read Protection level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>ReadOut Protection Status:<itemizedlist>
+<listitem>
+<para>SET, when OB_RDP_Level_1 or OB_RDP_Level_2 is set</para>
+</listitem><listitem>
+<para>RESET, when OB_RDP_Level_0 is set </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gab8a8804905929b2edd544d28c2e7b215">
+                <title>uint8_t FLASH_OB_GetBOR (void)</title> <emphasis>Returns the FLASH BOR level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>FLASH BOR level:<itemizedlist>
+<listitem>
+<para>OB_BOR_LEVEL3: Supply voltage ranges from 2.7 to 3.6 V</para>
+</listitem><listitem>
+<para>OB_BOR_LEVEL2: Supply voltage ranges from 2.4 to 2.7 V</para>
+</listitem><listitem>
+<para>OB_BOR_LEVEL1: Supply voltage ranges from 2.1 to 2.4 V</para>
+</listitem><listitem>
+<para>OB_BOR_OFF : Supply voltage ranges from 1.62 to 2.1 V </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1ga94c1e51a9c3bf8d48eb6eb4a4d054861">
+                <title>void FLASH_ITConfig (uint32_t FLASH_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified FLASH interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH_IT, :</entry>
+                                <entry>
+<para>specifies the FLASH interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>FLASH_IT_ERR: FLASH Error Interrupt </para>
+</listitem>
+<listitem>
+<para>FLASH_IT_EOP: FLASH end of operation Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gae3fb545e32f21501ca27d4380e0f2088">
+                <title>FlagStatus FLASH_GetFlagStatus (uint32_t FLASH_FLAG)</title> <emphasis>Checks whether the specified FLASH flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH_FLAG, :</entry>
+                                <entry>
+<para>specifies the FLASH flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FLASH_FLAG_EOP: FLASH End of Operation flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_OPERR: FLASH operation Error flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_WRPERR: FLASH Write protected error flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_PGAERR: FLASH Programming Alignment error flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_PGPERR: FLASH Programming Parallelism error flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_PGSERR: FLASH Programming Sequence error flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_BSY: FLASH Busy flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of FLASH_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gac4be1d486483fa5cd70ec77d44ca8f87">
+                <title>void FLASH_ClearFlag (uint32_t FLASH_FLAG)</title> <emphasis>Clears the FLASH&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH_FLAG, :</entry>
+                                <entry>
+<para>specifies the FLASH flags to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>FLASH_FLAG_EOP: FLASH End of Operation flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_OPERR: FLASH operation Error flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_WRPERR: FLASH Write protected error flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_PGAERR: FLASH Programming Alignment error flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_PGPERR: FLASH Programming Parallelism error flag </para>
+</listitem>
+<listitem>
+<para>FLASH_FLAG_PGSERR: FLASH Programming Sequence error flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gac265b8d1e7ea11e44ceee28797c3debb">
+                <title>FLASH_Status FLASH_GetStatus (void)</title> <emphasis>Returns the FLASH Status.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/da6/group___f_l_a_s_h_1gaaf8ea3b00c9a5f5eca0df9a795b83f22">
+                <title>FLASH_Status FLASH_WaitForLastOperation (void)</title> <emphasis>Waits for a FLASH operation to complete.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="db/d4a/group___f_l_a_s_h___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/de4/group___f_l_a_s_h___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

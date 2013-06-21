@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/df7/group___t_i_m___t_ix___external___clock___source">
+    <title>TIM_TIx_External_Clock_Source</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/df7/group___t_i_m___t_ix___external___clock___source_1ga237daecde6e1f75509acc80a9ccce820">TIM_TIxExternalCLK1Source_TI1</link> ((uint16_t)0x0050)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/df7/group___t_i_m___t_ix___external___clock___source_1gafa3c6345a7e1c3668b2e7e4d61a79491">TIM_TIxExternalCLK1Source_TI2</link> ((uint16_t)0x0060)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/df7/group___t_i_m___t_ix___external___clock___source_1gaa1a749bc38d434902b69a45d50ee0889">TIM_TIxExternalCLK1Source_TI1ED</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

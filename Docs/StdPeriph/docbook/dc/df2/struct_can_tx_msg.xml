@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/df2/struct_can_tx_msg">
+<title>CanTxMsg struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/dbc/stm32f4xx__can_8h">&lt;stm32f4xx_can.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t StdId</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t ExtId</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t IDE</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTR</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t DLC</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t Data[8]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CAN Tx message structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t StdId</title>                
+<para>Specifies the standard identifier. This parameter can be a value between 0 to 0x7FF. </para>
+
+                <para>Definition at line 132 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t ExtId</title>                
+<para>Specifies the extended identifier. This parameter can be a value between 0 to 0x1FFFFFFF. </para>
+
+                <para>Definition at line 135 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t IDE</title>                
+<para>Specifies the type of identifier for the message that will be transmitted. This parameter can be a value of <link linkend="d0/d55/group___c_a_n__identifier__type">CAN_identifier_type</link> </para>
+
+                <para>Definition at line 138 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t RTR</title>                
+<para>Specifies the type of frame for the message that will be transmitted. This parameter can be a value of <link linkend="da/d2b/group___c_a_n__remote__transmission__request">CAN_remote_transmission_request</link> </para>
+
+                <para>Definition at line 142 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t DLC</title>                
+<para>Specifies the length of the frame that will be transmitted. This parameter can be a value between 0 to 8 </para>
+
+                <para>Definition at line 146 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t Data[8]</title>                
+<para>Contains the data to be transmitted. It ranges from 0 to 0xFF. </para>
+
+                <para>Definition at line 150 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

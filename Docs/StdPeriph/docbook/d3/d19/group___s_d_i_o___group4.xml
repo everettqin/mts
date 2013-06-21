@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d19/group___s_d_i_o___group4">
+    <title>SDIO IO Cards mode management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>SDIO IO Cards mode management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+              SDIO IO Cards mode management functions
+ ===============================================================================  
+
+  This section provide functions allowing to program and read the SDIO IO Cards.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d19/group___s_d_i_o___group4_1gac88f914d9a68a83abc2265ec8a7b79fc">SDIO_StartSDIOReadWait</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d19/group___s_d_i_o___group4_1gaca6b25eb2debb73ac827c66f0ebcf837">SDIO_StopSDIOReadWait</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d19/group___s_d_i_o___group4_1ga2baac4ea1bb6c2d94345d2712604338a">SDIO_SetSDIOReadWaitMode</link> (
+uint32_t SDIO_ReadWaitMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d19/group___s_d_i_o___group4_1ga24e210c185d5a7855cbaff4472a8f8d1">SDIO_SetSDIOOperation</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d19/group___s_d_i_o___group4_1ga9264137a01a1ab81d03bc80a3b3120fc">SDIO_SendSDIOSuspendCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d3/d19/group___s_d_i_o___group4_1gac88f914d9a68a83abc2265ec8a7b79fc">
+                <title>void SDIO_StartSDIOReadWait (FunctionalState NewState)</title> <emphasis>Starts the SD I/O Read Wait operation.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Start SDIO Read Wait operation. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d19/group___s_d_i_o___group4_1gaca6b25eb2debb73ac827c66f0ebcf837">
+                <title>void SDIO_StopSDIOReadWait (FunctionalState NewState)</title> <emphasis>Stops the SD I/O Read Wait operation.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Stop SDIO Read Wait operation. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d19/group___s_d_i_o___group4_1ga2baac4ea1bb6c2d94345d2712604338a">
+                <title>void SDIO_SetSDIOReadWaitMode (uint32_t SDIO_ReadWaitMode)</title> <emphasis>Sets one of the two options of inserting read wait interval.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_ReadWaitMode, :</entry>
+                                <entry>
+<para>SD I/O Read Wait operation mode. This parameter can be: <itemizedlist>
+<listitem>
+<para>SDIO_ReadWaitMode_CLK: Read Wait control by stopping SDIOCLK </para>
+</listitem>
+<listitem>
+<para>SDIO_ReadWaitMode_DATA2: Read Wait control using SDIO_DATA2 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d19/group___s_d_i_o___group4_1ga24e210c185d5a7855cbaff4472a8f8d1">
+                <title>void SDIO_SetSDIOOperation (FunctionalState NewState)</title> <emphasis>Enables or disables the SD I/O Mode Operation.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of SDIO specific operation. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d19/group___s_d_i_o___group4_1ga9264137a01a1ab81d03bc80a3b3120fc">
+                <title>void SDIO_SendSDIOSuspendCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the SD I/O Mode suspend command sending.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the SD I/O Mode suspend command. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

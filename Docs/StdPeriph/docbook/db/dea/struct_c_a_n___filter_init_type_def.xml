@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dea/struct_c_a_n___filter_init_type_def">
+<title>CAN_FilterInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/dbc/stm32f4xx__can_8h">&lt;stm32f4xx_can.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t CAN_FilterIdHigh</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t CAN_FilterIdLow</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t CAN_FilterMaskIdHigh</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t CAN_FilterMaskIdLow</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t CAN_FilterFIFOAssignment</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t CAN_FilterNumber</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t CAN_FilterMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t CAN_FilterScale</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FunctionalState CAN_FilterActivation</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CAN filter init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t CAN_FilterIdHigh</title>                
+<para>Specifies the filter identification number (MSBs for a 32-bit configuration, first one for a 16-bit configuration). This parameter can be a value between 0x0000 and 0xFFFF </para>
+
+                <para>Definition at line 94 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t CAN_FilterIdLow</title>                
+<para>Specifies the filter identification number (LSBs for a 32-bit configuration, second one for a 16-bit configuration). This parameter can be a value between 0x0000 and 0xFFFF </para>
+
+                <para>Definition at line 98 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t CAN_FilterMaskIdHigh</title>                
+<para>Specifies the filter mask number or identification number, according to the mode (MSBs for a 32-bit configuration, first one for a 16-bit configuration). This parameter can be a value between 0x0000 and 0xFFFF </para>
+
+                <para>Definition at line 102 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t CAN_FilterMaskIdLow</title>                
+<para>Specifies the filter mask number or identification number, according to the mode (LSBs for a 32-bit configuration, second one for a 16-bit configuration). This parameter can be a value between 0x0000 and 0xFFFF </para>
+
+                <para>Definition at line 107 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t CAN_FilterFIFOAssignment</title>                
+<para>Specifies the FIFO (0 or 1) which will be assigned to the filter. This parameter can be a value of <link linkend="d3/dec/group___c_a_n__filter___f_i_f_o">CAN_filter_FIFO</link> </para>
+
+                <para>Definition at line 112 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t CAN_FilterNumber</title>                
+<para>Specifies the filter which will be initialized. It ranges from 0 to 13. </para>
+
+                <para>Definition at line 115 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t CAN_FilterMode</title>                
+<para>Specifies the filter mode to be initialized. This parameter can be a value of <link linkend="d2/df5/group___c_a_n__filter__mode">CAN_filter_mode</link> </para>
+
+                <para>Definition at line 117 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t CAN_FilterScale</title>                
+<para>Specifies the filter scale. This parameter can be a value of <link linkend="db/ddc/group___c_a_n__filter__scale">CAN_filter_scale</link> </para>
+
+                <para>Definition at line 120 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>FunctionalState CAN_FilterActivation</title>                
+<para>Enable or disable the filter. This parameter can be set either to ENABLE or DISABLE. </para>
+
+                <para>Definition at line 123 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

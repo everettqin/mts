@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/de9/group___i2_c__mode">
+    <title>I2C_mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/de9/group___i2_c__mode_1ga8bc3b0555ca31b6f8423bc2ada45d1ac">I2C_Mode_I2C</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/de9/group___i2_c__mode_1gaf0cf66bc1f4986ba8a9925da924e06da">I2C_Mode_SMBusDevice</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/de9/group___i2_c__mode_1gacfd37619c8d91dea5dec2921840acede">I2C_Mode_SMBusHost</link> ((uint16_t)0x000A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/de9/group___i2_c__mode_1ga58464e1fe94a79bab721137a544baf79">IS_I2C_MODE</link> (((MODE) == I2C_Mode_I2C) || \
+                           ((MODE) == I2C_Mode_SMBusDevice) || \
+                           ((MODE) == I2C_Mode_SMBusHost))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

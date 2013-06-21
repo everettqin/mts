@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d61/group___s_p_i__direction__transmit__receive">
+    <title>SPI_direction_transmit_receive</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d61/group___s_p_i__direction__transmit__receive_1ga9a59d225a8cf42eebafbec6ad95c078c">SPI_Direction_Rx</link> ((uint16_t)0xBFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d61/group___s_p_i__direction__transmit__receive_1gabd76982a7e305c13f7ad8ea1789d3c0c">SPI_Direction_Tx</link> ((uint16_t)0x4000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d61/group___s_p_i__direction__transmit__receive_1gae96b69403c4206e347cde77b9a30e207">IS_SPI_DIRECTION</link> (((DIRECTION) == SPI_Direction_Rx) || \
+                                     ((DIRECTION) == SPI_Direction_Tx))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

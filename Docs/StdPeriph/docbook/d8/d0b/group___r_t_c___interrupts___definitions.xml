@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d0b/group___r_t_c___interrupts___definitions">
+    <title>RTC_Interrupts_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga2c4632667c515e366a79df6341d5f3d1">RTC_IT_TS</link> ((uint32_t)0x00008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1gadc90686ace99992f4775c0198a1c6591">RTC_IT_WUT</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1gaeb47520af65e995ddad232f3a846aba8">RTC_IT_ALRB</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga0ba352559e4eb6a5430e1254851a0dfb">RTC_IT_ALRA</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1gada511402e0227932824cdc95711ebd55">RTC_IT_TAMP</link> ((uint32_t)0x00000004) /* Used only to Enable the Tamper Interrupt */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1gaae1bc95e46b6951e45c4d857a6701a8a">RTC_IT_TAMP1</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga9dacc14e5cef6806a69a6edd094bc151">IS_RTC_CONFIG_IT</link> (((IT) != (uint32_t)RESET) &amp;&amp; (((IT) &amp; 0xFFFF0FFB) == (uint32_t)RESET))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga2e10d8ccb2aa398ac14bde526f98dbc9">IS_RTC_GET_IT</link> (((IT) == RTC_IT_TS) || ((IT) == RTC_IT_WUT) || \
+                           ((IT) == RTC_IT_ALRB) || ((IT) == RTC_IT_ALRA) || \
+                           ((IT) == RTC_IT_TAMP1))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d0b/group___r_t_c___interrupts___definitions_1ga1289cb21107c648b293aee4a4f8cba70">IS_RTC_CLEAR_IT</link> (((IT) != (uint32_t)RESET) &amp;&amp; (((IT) &amp; 0xFFFD0FFF) == (uint32_t)RESET))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

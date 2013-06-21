@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/db6/group___a_d_c___group2">
+    <title>Analog Watchdog configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Analog Watchdog configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                    Analog Watchdog configuration functions
+ ===============================================================================  
+
+  This section provides functions allowing to configure the Analog Watchdog
+  (AWD) feature in the ADC.
+  
+  A typical configuration Analog Watchdog is done following these steps :
+   1. the ADC guarded channel(s) is (are) selected using the 
+      ADC_AnalogWatchdogSingleChannelConfig() function.
+   2. The Analog watchdog lower and higher threshold are configured using the  
+     ADC_AnalogWatchdogThresholdsConfig() function.
+   3. The Analog watchdog is enabled and configured to enable the check, on one
+      or more channels, using the  ADC_AnalogWatchdogCmd() function.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/db6/group___a_d_c___group2_1gad017d69bec6e497afd35ba25ea22d86e">ADC_AnalogWatchdogCmd</link> (
+ADC_TypeDef * ADCx, uint32_t ADC_AnalogWatchdog)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/db6/group___a_d_c___group2_1ga79588d02aa8e4147f21cb90a4708366d">ADC_AnalogWatchdogThresholdsConfig</link> (
+ADC_TypeDef * ADCx, uint16_t HighThreshold, uint16_t LowThreshold)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/db6/group___a_d_c___group2_1ga03cef3d12292ffa2b8520524d5b0226c">ADC_AnalogWatchdogSingleChannelConfig</link> (
+ADC_TypeDef * ADCx, uint8_t ADC_Channel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dc/db6/group___a_d_c___group2_1gad017d69bec6e497afd35ba25ea22d86e">
+                <title>void ADC_AnalogWatchdogCmd (ADC_TypeDef *ADCx, uint32_t ADC_AnalogWatchdog)</title> <emphasis>Enables or disables the analog watchdog on single/all regular or 
+        injected channels.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_AnalogWatchdog, :</entry>
+                                <entry>
+<para>the ADC analog watchdog configuration. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_AnalogWatchdog_SingleRegEnable: Analog watchdog on a single regular channel </para>
+</listitem>
+<listitem>
+<para>ADC_AnalogWatchdog_SingleInjecEnable: Analog watchdog on a single injected channel </para>
+</listitem>
+<listitem>
+<para>ADC_AnalogWatchdog_SingleRegOrInjecEnable: Analog watchdog on a single regular or injected channel </para>
+</listitem>
+<listitem>
+<para>ADC_AnalogWatchdog_AllRegEnable: Analog watchdog on all regular channel </para>
+</listitem>
+<listitem>
+<para>ADC_AnalogWatchdog_AllInjecEnable: Analog watchdog on all injected channel </para>
+</listitem>
+<listitem>
+<para>ADC_AnalogWatchdog_AllRegAllInjecEnable: Analog watchdog on all regular and injected channels </para>
+</listitem>
+<listitem>
+<para>ADC_AnalogWatchdog_None: No channel guarded by the analog watchdog </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/db6/group___a_d_c___group2_1ga79588d02aa8e4147f21cb90a4708366d">
+                <title>void ADC_AnalogWatchdogThresholdsConfig (ADC_TypeDef *ADCx, uint16_t HighThreshold, uint16_t LowThreshold)</title> <emphasis>Configures the high and low thresholds of the analog watchdog.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>HighThreshold, :</entry>
+                                <entry>
+<para>the ADC analog watchdog High threshold value. This parameter must be a 12-bit value. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>LowThreshold, :</entry>
+                                <entry>
+<para>the ADC analog watchdog Low threshold value. This parameter must be a 12-bit value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/db6/group___a_d_c___group2_1ga03cef3d12292ffa2b8520524d5b0226c">
+                <title>void ADC_AnalogWatchdogSingleChannelConfig (ADC_TypeDef *ADCx, uint8_t ADC_Channel)</title> <emphasis>Configures the analog watchdog guarded single channel.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_Channel, :</entry>
+                                <entry>
+<para>the ADC channel to configure for the analog watchdog. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_Channel_0: ADC Channel0 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_1: ADC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_2: ADC Channel2 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_3: ADC Channel3 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_4: ADC Channel4 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_5: ADC Channel5 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_6: ADC Channel6 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_7: ADC Channel7 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_8: ADC Channel8 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_9: ADC Channel9 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_10: ADC Channel10 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_11: ADC Channel11 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_12: ADC Channel12 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_13: ADC Channel13 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_14: ADC Channel14 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_15: ADC Channel15 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_16: ADC Channel16 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_17: ADC Channel17 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_18: ADC Channel18 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

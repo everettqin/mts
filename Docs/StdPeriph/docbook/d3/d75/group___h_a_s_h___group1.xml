@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d75/group___h_a_s_h___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      Initialization and Configuration functions
+ ===============================================================================  
+  This section provides functions allowing to 
+   - Initialize the HASH peripheral
+   - Configure the HASH Processor 
+      - MD5/SHA1, 
+      - HASH/HMAC, 
+      - datatype 
+      - HMAC Key (if mode = HMAC)
+   - Reset the HASH Processor </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d75/group___h_a_s_h___group1_1ga88717fe3a4f557182841a958e1dcd9c7">HASH_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d75/group___h_a_s_h___group1_1ga4a7d33f0954ac0463a6cda81121635cf">HASH_Init</link> (
+<link linkend="d8/da7/struct_h_a_s_h___init_type_def">HASH_InitTypeDef</link> * HASH_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d75/group___h_a_s_h___group1_1ga9cfaaa73eafec40a06154f58d48adeb5">HASH_StructInit</link> (
+<link linkend="d8/da7/struct_h_a_s_h___init_type_def">HASH_InitTypeDef</link> * HASH_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d75/group___h_a_s_h___group1_1ga11745813cf85a08b2058aac3bd026e4d">HASH_Reset</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d3/d75/group___h_a_s_h___group1_1ga88717fe3a4f557182841a958e1dcd9c7">
+                <title>void HASH_DeInit (void)</title> <emphasis>Deinitializes the HASH peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d75/group___h_a_s_h___group1_1ga4a7d33f0954ac0463a6cda81121635cf">
+                <title>void HASH_Init (HASH_InitTypeDef *HASH_InitStruct)</title> <emphasis>Initializes the HASH peripheral according to the specified parameters
+        in the HASH_InitStruct structure.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>the hash processor is reset when calling this function so that the HASH will be ready to compute the message digest of a new message. There is no need to call <link linkend="d5/d95/group___h_a_s_h_1ga11745813cf85a08b2058aac3bd026e4d">HASH_Reset()</link> function. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/da7/struct_h_a_s_h___init_type_def">HASH_InitTypeDef</link> structure that contains the configuration information for the HASH peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The field HASH_HMACKeyType in <link linkend="d8/da7/struct_h_a_s_h___init_type_def">HASH_InitTypeDef</link> must be filled only if the algorithm mode is HMAC. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d75/group___h_a_s_h___group1_1ga9cfaaa73eafec40a06154f58d48adeb5">
+                <title>void HASH_StructInit (HASH_InitTypeDef *HASH_InitStruct)</title> <emphasis>Fills each HASH_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_InitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="d8/da7/struct_h_a_s_h___init_type_def">HASH_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The default values set are : Processor mode is HASH, Algorithm selected is SHA1, Data type selected is 32b and HMAC Key Type is short key. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d75/group___h_a_s_h___group1_1ga11745813cf85a08b2058aac3bd026e4d">
+                <title>void HASH_Reset (void)</title> <emphasis>Resets the HASH processor core, so that the HASH will be ready
+        to compute the message digest of a new message.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Calling this function will clear the HASH_SR_DCIS (Digest calculation completion interrupt status) bit corresponding to HASH_IT_DCI interrupt and HASH_FLAG_DCIS flag. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

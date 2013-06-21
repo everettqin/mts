@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/db4/group___r_t_c___time___stamp___edges__definitions">
+    <title>RTC_Time_Stamp_Edges_definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/db4/group___r_t_c___time___stamp___edges__definitions_1gac3d8bb0310a1d86a4d1dc80ea6241218">RTC_TimeStampEdge_Rising</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/db4/group___r_t_c___time___stamp___edges__definitions_1ga786fa99accdef27c983845f2de750357">RTC_TimeStampEdge_Falling</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/db4/group___r_t_c___time___stamp___edges__definitions_1ga3ea7a85adeb5ff0bdc926156e4a92c5e">IS_RTC_TIMESTAMP_EDGE</link> (((EDGE) == RTC_TimeStampEdge_Rising) || \
+                                     ((EDGE) == RTC_TimeStampEdge_Falling))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

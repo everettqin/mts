@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d86/group___d_m_a__peripheral__burst">
+    <title>DMA_peripheral_burst</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1ga524cdc5efb8978b586637f35e38a850b">DMA_PeripheralBurst_Single</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1gaa8eba5161b3927f1ffb81157f3e39b71">DMA_PeripheralBurst_INC4</link> ((uint32_t)0x00200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1gaf04ba122268e0f54085ca8e45410fe69">DMA_PeripheralBurst_INC8</link> ((uint32_t)0x00400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1ga04ff56ff0a2a5470fc2c4817be4213c2">DMA_PeripheralBurst_INC16</link> ((uint32_t)0x00600000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1ga7c60961178e2a32e9e364a220a8aca88">IS_DMA_PERIPHERAL_BURST</link> (((BURST) == DMA_PeripheralBurst_Single) || \
+                                        ((BURST) == DMA_PeripheralBurst_INC4)  || \
+                                        ((BURST) == DMA_PeripheralBurst_INC8)  || \
+                                        ((BURST) == DMA_PeripheralBurst_INC16))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

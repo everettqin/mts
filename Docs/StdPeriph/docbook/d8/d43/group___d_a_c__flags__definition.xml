@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d43/group___d_a_c__flags__definition">
+    <title>DAC_flags_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d43/group___d_a_c__flags__definition_1ga9d216400f8dba560f11077e108346120">DAC_FLAG_DMAUDR</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d43/group___d_a_c__flags__definition_1ga5499552af0e1ad31870315a489ab3ff0">IS_DAC_FLAG</link> (((FLAG) == DAC_FLAG_DMAUDR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

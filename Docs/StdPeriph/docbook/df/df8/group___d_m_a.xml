@@ -1,0 +1,1317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/df8/group___d_m_a">
+    <title>DMA</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DMA driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d1/d2c/group___d_m_a___exported___constants">DMA_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="de/dd4/group___d_m_a___private___functions">DMA_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga38d4a4ab8990299f8a6cf064e1e811d0">DMA_DeInit</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, <link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> * DMA_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga0f7f95f750a90a6824f4e9b6f58adc7e">DMA_StructInit</link> (
+<link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> * DMA_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1gab2bea22f9f6dc62fdd7afb385a0c1f73">DMA_Cmd</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga210a9861460b3c9b3fa14fdc1a949744">DMA_PeriphIncOffsetSizeConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_Pincos)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga77f7628f6be9d6d088127eceb090b8b2">DMA_FlowControllerConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_FlowCtrl)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga6a11a2c951cff59b125ba8857d44e3f3">DMA_SetCurrDataCounter</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint16_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="df/df8/group___d_m_a_1ga4a76444a92423f5f15a4328738d6dc46">DMA_GetCurrDataCounter</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga8d0957e50302efaf48a16c62d14c9ca8">DMA_DoubleBufferModeConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t Memory1BaseAddr, uint32_t DMA_CurrentMemory)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga7fe09e62ea3125db384829dab59ebe3e">DMA_DoubleBufferModeCmd</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga4ebcffd32eb6968ac61cfb64a6bae258">DMA_MemoryTargetConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t MemoryBaseAddr, uint32_t DMA_MemoryTarget)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="df/df8/group___d_m_a_1ga74b6624f9faa2f43c9369ddbdeab241c">DMA_GetCurrentMemoryTarget</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FunctionalState <link linkend="df/df8/group___d_m_a_1gaa4d631cdd6cd020106435f30c0c6fb15">DMA_GetCmdStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="df/df8/group___d_m_a_1ga9893809a7067861ec111f7d712ebf28d">DMA_GetFIFOStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="df/df8/group___d_m_a_1ga10cfc0fe31d64a1fd8fb3efb4ae2a411">DMA_GetFlagStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga510d62b4051f5a5de164e84b266b851d">DMA_ClearFlag</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1gab9c469a3f5d4aca5c97dee798ffc2f05">DMA_ITConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="df/df8/group___d_m_a_1gad0ccf5f6548bd7cf8f2cae30393bb716">DMA_GetITStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1gad5433018889cd36140d98bb380c4e76e">DMA_ClearITPendingBit</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga65f8cdee3cc2302bafb0a32a15692a81">TRANSFER_IT_ENABLE_MASK</link> (uint32_t)(DMA_SxCR_TCIE | DMA_SxCR_HTIE | \
+                                           DMA_SxCR_TEIE | DMA_SxCR_DMEIE)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga0a11ce367da8e19eb27cf7f129da4b3d">DMA_Stream0_IT_MASK</link> (uint32_t)(DMA_LISR_FEIF0 | DMA_LISR_DMEIF0 | \
+                                           DMA_LISR_TEIF0 | DMA_LISR_HTIF0 | \
+                                           DMA_LISR_TCIF0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga145798f7c0cffc0effe3b6588f7a5812">DMA_Stream1_IT_MASK</link> (uint32_t)(DMA_Stream0_IT_MASK &lt;&lt; 6)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1gab7e71eaed70613ad592acfb37eb37777">DMA_Stream2_IT_MASK</link> (uint32_t)(DMA_Stream0_IT_MASK &lt;&lt; 16)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga83a5c838038ce61242f8beaf8d9fff43">DMA_Stream3_IT_MASK</link> (uint32_t)(DMA_Stream0_IT_MASK &lt;&lt; 22)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga55d28ead27e0af7d17db2b749695abe2">DMA_Stream4_IT_MASK</link> (uint32_t)(DMA_Stream0_IT_MASK | (uint32_t)0x20000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1gaceb30b7dcde1275d843ea932a00f44d7">DMA_Stream5_IT_MASK</link> (uint32_t)(DMA_Stream1_IT_MASK | (uint32_t)0x20000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga085aa754247e62f4b95111ea4ebf4f6f">DMA_Stream6_IT_MASK</link> (uint32_t)(DMA_Stream2_IT_MASK | (uint32_t)0x20000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga1fe8cb133c442e62bd082adee93a890e">DMA_Stream7_IT_MASK</link> (uint32_t)(DMA_Stream3_IT_MASK | (uint32_t)0x20000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga802b72c1de784e703af80a6910592a5e">TRANSFER_IT_MASK</link> (uint32_t)0x0F3C0F3C</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga375c64407de662589e2b12ac4e5e0489">HIGH_ISR_MASK</link> (uint32_t)0x20000000</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df8/group___d_m_a_1ga1092a089e682f72660b95df5ee92a167">RESERVED_MASK</link> (uint32_t)0x0F7D0F7D</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="df/df8/group___d_m_a_1ga38d4a4ab8990299f8a6cf064e1e811d0">
+                <title>void DMA_DeInit (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Deinitialize the DMAy Streamx registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">
+                <title>void DMA_Init (DMA_Stream_TypeDef *DMAy_Streamx, DMA_InitTypeDef *DMA_InitStruct)</title> <emphasis>Initializes the DMAy Streamx according to the specified parameters in 
+        the DMA_InitStruct structure.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Before calling this function, it is recommended to check that the Stream is actually disabled using the function <link linkend="df/df8/group___d_m_a_1gaa4d631cdd6cd020106435f30c0c6fb15">DMA_GetCmdStatus()</link>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> structure that contains the configuration information for the specified DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga0f7f95f750a90a6824f4e9b6f58adc7e">
+                <title>void DMA_StructInit (DMA_InitTypeDef *DMA_InitStruct)</title> <emphasis>Fills each DMA_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMA_InitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1gab2bea22f9f6dc62fdd7afb385a0c1f73">
+                <title>void DMA_Cmd (DMA_Stream_TypeDef *DMAy_Streamx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified DMAy Streamx.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DMAy Streamx. This parameter can be: ENABLE or DISABLE.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>This function may be used to perform Pause-Resume operation. When a transfer is ongoing, calling this function to disable the Stream will cause the transfer to be paused. All configuration registers and the number of remaining data will be preserved. When calling again this function to re-enable the Stream, the transfer will be resumed from the point where it was paused.</para>
+<simplesect/>
+<para>After configuring the DMA Stream (<link linkend="df/df8/group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init()</link> function) and enabling the stream, it is recommended to check (or wait until) the DMA Stream is effectively enabled. A Stream may remain disabled if a configuration parameter is wrong. After disabling a DMA Stream, it is also recommended to check (or wait until) the DMA Stream is effectively disabled. If a Stream is disabled while a data transfer is ongoing, the current data will be transferred and the Stream will be effectively disabled only after the transfer of this single data is finished.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga210a9861460b3c9b3fa14fdc1a949744">
+                <title>void DMA_PeriphIncOffsetSizeConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_Pincos)</title> <emphasis>Configures, when the PINC (Peripheral Increment address mode) bit is
+        set, if the peripheral address should be incremented with the data 
+        size (configured with PSIZE bits) or by a fixed offset equal to 4
+        (32-bit aligned addresses).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function has no effect if the Peripheral Increment mode is disabled.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_Pincos, :</entry>
+                                <entry>
+<para>specifies the Peripheral increment offset size. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_PINCOS_Psize: Peripheral address increment is done accordingly to PSIZE parameter. </para>
+</listitem>
+<listitem>
+<para>DMA_PINCOS_WordAligned: Peripheral address increment offset is fixed to 4 (32-bit aligned addresses). </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga77f7628f6be9d6d088127eceb090b8b2">
+                <title>void DMA_FlowControllerConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_FlowCtrl)</title> <emphasis>Configures, when the DMAy Streamx is disabled, the flow controller for
+        the next transactions (Peripheral or Memory).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Before enabling this feature, check if the used peripheral supports the Flow Controller mode or not.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_FlowCtrl, :</entry>
+                                <entry>
+<para>specifies the DMA flow controller. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_FlowCtrl_Memory: DMAy_Streamx transactions flow controller is the DMA controller. </para>
+</listitem>
+<listitem>
+<para>DMA_FlowCtrl_Peripheral: DMAy_Streamx transactions flow controller is the peripheral. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga6a11a2c951cff59b125ba8857d44e3f3">
+                <title>void DMA_SetCurrDataCounter (DMA_Stream_TypeDef *DMAy_Streamx, uint16_t Counter)</title> <emphasis>Writes the number of data units to be transferred on the DMAy Streamx.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Counter, :</entry>
+                                <entry>
+<para>Number of data units to be transferred (from 0 to 65535) Number of data items depends only on the Peripheral data format.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>If Peripheral data format is Bytes: number of data units is equal to total number of bytes to be transferred.</para>
+<simplesect/>
+<para>If Peripheral data format is Half-Word: number of data units is equal to total number of bytes to be transferred / 2.</para>
+<simplesect/>
+<para>If Peripheral data format is Word: number of data units is equal to total number of bytes to be transferred / 4.</para>
+<simplesect/>
+<para>In Memory-to-Memory transfer mode, the memory buffer pointed by DMAy_SxPAR register is considered as Peripheral.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>number of remaining data units in the current DMAy Streamx transfer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga4a76444a92423f5f15a4328738d6dc46">
+                <title>uint16_t DMA_GetCurrDataCounter (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Returns the number of remaining data units in the current DMAy Streamx transfer.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>number of remaining data units in the current DMAy Streamx transfer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga8d0957e50302efaf48a16c62d14c9ca8">
+                <title>void DMA_DoubleBufferModeConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t Memory1BaseAddr, uint32_t DMA_CurrentMemory)</title> <emphasis>Configures, when the DMAy Streamx is disabled, the double buffer mode 
+        and the current memory target.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Memory1BaseAddr, :</entry>
+                                <entry>
+<para>the base address of the second buffer (Memory 1) </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_CurrentMemory, :</entry>
+                                <entry>
+<para>specifies which memory will be first buffer for the transactions when the Stream will be enabled. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_Memory_0: Memory 0 is the current buffer. </para>
+</listitem>
+<listitem>
+<para>DMA_Memory_1: Memory 1 is the current buffer.</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>Memory0BaseAddr is set by the DMA structure configuration in <link linkend="df/df8/group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init()</link>.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga7fe09e62ea3125db384829dab59ebe3e">
+                <title>void DMA_DoubleBufferModeCmd (DMA_Stream_TypeDef *DMAy_Streamx, FunctionalState NewState)</title> <emphasis>Enables or disables the double buffer mode for the selected DMA stream.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function can be called only when the DMA Stream is disabled. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DMAy Streamx double buffer mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga4ebcffd32eb6968ac61cfb64a6bae258">
+                <title>void DMA_MemoryTargetConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t MemoryBaseAddr, uint32_t DMA_MemoryTarget)</title> <emphasis>Configures the Memory address for the next buffer transfer in double
+        buffer mode (for dynamic use). This function can be called when the
+        DMA Stream is enabled and when the transfer is ongoing.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>MemoryBaseAddr, :</entry>
+                                <entry>
+<para>The base address of the target memory buffer </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_MemoryTarget, :</entry>
+                                <entry>
+<para>Next memory target to be used. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_Memory_0: To use the memory address 0 </para>
+</listitem>
+<listitem>
+<para>DMA_Memory_1: To use the memory address 1</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>It is not allowed to modify the Base Address of a target Memory when this target is involved in the current transfer. ie. If the DMA Stream is currently transferring to/from Memory 1, then it not possible to modify Base address of Memory 1, but it is possible to modify Base address of Memory 0. To know which Memory is currently used, you can use the function <link linkend="df/df8/group___d_m_a_1ga74b6624f9faa2f43c9369ddbdeab241c">DMA_GetCurrentMemoryTarget()</link>.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga74b6624f9faa2f43c9369ddbdeab241c">
+                <title>uint32_t DMA_GetCurrentMemoryTarget (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Returns the current memory target used by double buffer transfer.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>memory target number: 0 for Memory0 or 1 for Memory1. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1gaa4d631cdd6cd020106435f30c0c6fb15">
+                <title>FunctionalState DMA_GetCmdStatus (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Returns the status of EN bit for the specified DMAy Streamx.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>After configuring the DMA Stream (<link linkend="df/df8/group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init()</link> function) and enabling the stream, it is recommended to check (or wait until) the DMA Stream is effectively enabled. A Stream may remain disabled if a configuration parameter is wrong. After disabling a DMA Stream, it is also recommended to check (or wait until) the DMA Stream is effectively disabled. If a Stream is disabled while a data transfer is ongoing, the current data will be transferred and the Stream will be effectively disabled only after the transfer of this single data is finished.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Current</entry>
+                                <entry>
+<para>state of the DMAy Streamx (ENABLE or DISABLE). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga9893809a7067861ec111f7d712ebf28d">
+                <title>uint32_t DMA_GetFIFOStatus (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Returns the current DMAy Streamx FIFO filled level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>FIFO filling state.<itemizedlist>
+<listitem>
+<para>DMA_FIFOStatus_Less1QuarterFull: when FIFO is less than 1 quarter-full and not empty.</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_1QuarterFull: if more than 1 quarter-full.</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_HalfFull: if more than 1 half-full.</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_3QuartersFull: if more than 3 quarters-full.</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_Empty: when FIFO is empty</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_Full: when FIFO is full </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga10cfc0fe31d64a1fd8fb3efb4ae2a411">
+                <title>FlagStatus DMA_GetFlagStatus (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_FLAG)</title> <emphasis>Checks whether the specified DMAy Streamx flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_FLAG_TCIFx: Streamx transfer complete flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_HTIFx: Streamx half transfer complete flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_TEIFx: Streamx transfer error flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_DMEIFx: Streamx direct mode error flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_FEIFx: Streamx FIFO error flag Where x can be 0 to 7 to select the DMA Stream. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of DMA_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1ga510d62b4051f5a5de164e84b266b851d">
+                <title>void DMA_ClearFlag (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_FLAG)</title> <emphasis>Clears the DMAy Streamx&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DMA_FLAG_TCIFx: Streamx transfer complete flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_HTIFx: Streamx half transfer complete flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_TEIFx: Streamx transfer error flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_DMEIFx: Streamx direct mode error flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_FEIFx: Streamx FIFO error flag Where x can be 0 to 7 to select the DMA Stream. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1gab9c469a3f5d4aca5c97dee798ffc2f05">
+                <title>void DMA_ITConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified DMAy Streamx interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_IT, :</entry>
+                                <entry>
+<para>specifies the DMA interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DMA_IT_TC: Transfer complete interrupt mask </para>
+</listitem>
+<listitem>
+<para>DMA_IT_HT: Half transfer complete interrupt mask </para>
+</listitem>
+<listitem>
+<para>DMA_IT_TE: Transfer error interrupt mask </para>
+</listitem>
+<listitem>
+<para>DMA_IT_FE: FIFO error interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified DMA interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1gad0ccf5f6548bd7cf8f2cae30393bb716">
+                <title>ITStatus DMA_GetITStatus (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_IT)</title> <emphasis>Checks whether the specified DMAy Streamx interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_IT, :</entry>
+                                <entry>
+<para>specifies the DMA interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_IT_TCIFx: Streamx transfer complete interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_HTIFx: Streamx half transfer complete interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_TEIFx: Streamx transfer error interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_DMEIFx: Streamx direct mode error interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_FEIFx: Streamx FIFO error interrupt Where x can be 0 to 7 to select the DMA Stream. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of DMA_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df8/group___d_m_a_1gad5433018889cd36140d98bb380c4e76e">
+                <title>void DMA_ClearITPendingBit (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_IT)</title> <emphasis>Clears the DMAy Streamx&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_IT, :</entry>
+                                <entry>
+<para>specifies the DMA interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DMA_IT_TCIFx: Streamx transfer complete interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_HTIFx: Streamx half transfer complete interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_TEIFx: Streamx transfer error interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_DMEIFx: Streamx direct mode error interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_FEIFx: Streamx FIFO error interrupt Where x can be 0 to 7 to select the DMA Stream. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="d1/d2c/group___d_m_a___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/dd4/group___d_m_a___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

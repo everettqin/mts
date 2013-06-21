@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dd2/group___p_w_r___flag">
+    <title>PWR_Flag</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="dd/da2/group___p_w_r___flag___legacy">PWR_Flag_Legacy</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga2d06760a5769e729b06d41e37036d58e">PWR_FLAG_WU</link> PWR_CSR_WUF</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga9e55f0b5dec2346d5c8dee3ab3c0c2df">PWR_FLAG_SB</link> PWR_CSR_SBF</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1gaefd05d58cc050eeef83a1b5c520b2c2a">PWR_FLAG_PVDO</link> PWR_CSR_PVDO</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga4d4937c0a493bc2ff70e7e66c301c191">PWR_FLAG_BRR</link> PWR_CSR_BRR</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga7c0f807d7e91750a9bb571ca94dc5f71">PWR_FLAG_VOSRDY</link> PWR_CSR_VOSRDY</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1gadc822638d0dd52d2f920808dd96c00a1">IS_PWR_GET_FLAG</link> (((FLAG) == PWR_FLAG_WU) || ((FLAG) == PWR_FLAG_SB) || \
+                               ((FLAG) == PWR_FLAG_PVDO) || ((FLAG) == PWR_FLAG_BRR) || \
+                               ((FLAG) == PWR_FLAG_VOSRDY))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga36d35a770e683e4a0baf3aac350fcb5a">IS_PWR_CLEAR_FLAG</link> (((FLAG) == PWR_FLAG_WU) || ((FLAG) == PWR_FLAG_SB))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="dd/da2/group___p_w_r___flag___legacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

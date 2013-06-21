@@ -1,0 +1,3533 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dfc/group___r_t_c">
+    <title>RTC</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>RTC driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="dc/dbc/group___r_t_c___exported___constants">RTC_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="d3/d00/group___r_t_c___private___functions">RTC_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga9777c6cc4a99c339ebc527a791b2ebe7">RTC_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga8eb747bf9698b2482ba6ef4d811de8e0">RTC_Init</link> (
+<link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> * RTC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gab466f3348de3236976e9aec7d6025dff">RTC_StructInit</link> (
+<link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> * RTC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga9d4bdfd3ae6957630d15d2497573b7c7">RTC_WriteProtectionCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga679f8883cbfb267a53ffb1ab4cc5c8c5">RTC_EnterInitMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga87f86f3b794205f09a1eac51738d900f">RTC_ExitInitMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga2938febeef6baf0d91cc066ca5caf095">RTC_WaitForSynchro</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1gaa60079ec257fb3a277d058ca8305533d">RTC_RefClockCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gae5e7c682f15b8ae9ddd3b2a85a9df7db">RTC_BypassShadowCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga9f9df80cfa82f7a4dd9f4d0cf2ffb3a6">RTC_SetTime</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_TimeStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga0404db6e0c70e5a6bbbe4fa58a577365">RTC_TimeStructInit</link> (
+<link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_TimeStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga1fcc101339c77aebd25ec3621fd1b61a">RTC_GetTime</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_TimeStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1gae59c33fb19e36b6abab0bad58072c01a">RTC_GetSubSecond</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga69d08538147f3d89c818dcfabf50e362">RTC_SetDate</link> (
+uint32_t RTC_Format, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_DateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga6e4e99be910d7759f8910056a2985056">RTC_DateStructInit</link> (
+<link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_DateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga582645d554cdd4a316213e90f0b4c8ae">RTC_GetDate</link> (
+uint32_t RTC_Format, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_DateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga44e3334f8e882df9b8a59b47f0857395">RTC_SetAlarm</link> (
+uint32_t RTC_Format, uint32_t RTC_Alarm, <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga36ab6199e21fb415ab1ec4d7aa48ba45">RTC_AlarmStructInit</link> (
+<link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga6e2888d2fd2e3ecb4ec50f5c955b362b">RTC_GetAlarm</link> (
+uint32_t RTC_Format, uint32_t RTC_Alarm, <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1gac2c08f1aeeb664d3d245cb5aca1b8ca8">RTC_AlarmCmd</link> (
+uint32_t RTC_Alarm, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga7b3e4e9e39262e9b0d1aadd895394e46">RTC_AlarmSubSecondConfig</link> (
+uint32_t RTC_Alarm, uint32_t RTC_AlarmSubSecondValue, uint32_t RTC_AlarmSubSecondMask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1gae7b5e7146be2710d619c8ed3cca464ad">RTC_GetAlarmSubSecond</link> (
+uint32_t RTC_Alarm)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga2557b02b318211112731a91a190c4b26">RTC_WakeUpClockConfig</link> (
+uint32_t RTC_WakeUpClock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga1412044eb756a166c1cf341f3d46ed6b">RTC_SetWakeUpCounter</link> (
+uint32_t RTC_WakeUpCounter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1gae63aab672e917cc48e298162c3dec049">RTC_GetWakeUpCounter</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga2ce05293303e0d7879c6d755c5355b4c">RTC_WakeUpCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga812feddea77990b5dc336a4989ae61b8">RTC_DayLightSavingConfig</link> (
+uint32_t RTC_DayLightSaving, uint32_t RTC_StoreOperation)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1gaba0c1361790203e9dca43846f0d9bc15">RTC_GetStoreOperation</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gae3165ef19ef3bd63789e59130ad8d89b">RTC_OutputConfig</link> (
+uint32_t RTC_Output, uint32_t RTC_OutputPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1gaa3bb10170a2c70ac9ce3e41c611bdd43">RTC_CoarseCalibConfig</link> (
+uint32_t RTC_CalibSign, uint32_t Value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga008ae7173b2befe876f5e76686bc9089">RTC_CoarseCalibCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga25eaa2de5ee858a4572d5fb1eb146ff8">RTC_CalibOutputCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga2139adc802bdb6882904c0b855d50b29">RTC_CalibOutputConfig</link> (
+uint32_t RTC_CalibOutput)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1ga91a28dcc7d45340a469dd8b8c029f841">RTC_SmoothCalibConfig</link> (
+uint32_t RTC_SmoothCalibPeriod, uint32_t RTC_SmoothCalibPlusPulses, uint32_t RTC_SmouthCalibMinusPulsesValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga7d80fa4a2c87654598d8207154ac8e96">RTC_TimeStampCmd</link> (
+uint32_t RTC_TimeStampEdge, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga44c38b0c74e9e960a4263b2905f44796">RTC_GetTimeStamp</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_StampTimeStruct, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_StampDateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1ga2b0ef81f4959a2f9fc6361fbda759b00">RTC_GetTimeStampSubSecond</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gad547d636cfc4fd8d4d673325571e0ffb">RTC_TamperTriggerConfig</link> (
+uint32_t RTC_Tamper, uint32_t RTC_TamperTrigger)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gaf85cc696d624da0de9fbe99779402833">RTC_TamperCmd</link> (
+uint32_t RTC_Tamper, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga1e87b9ae757ad12d7585e4fbcbf2c4b8">RTC_TamperFilterConfig</link> (
+uint32_t RTC_TamperFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gadc7f33a31df80b5deac313fc8af8d7f7">RTC_TamperSamplingFreqConfig</link> (
+uint32_t RTC_TamperSamplingFreq)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gafc176a013076a651862dc6a957286025">RTC_TamperPinsPrechargeDuration</link> (
+uint32_t RTC_TamperPrechargeDuration)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga29c82fceefd21a78dc55ccc5bcc1ed59">RTC_TimeStampOnTamperDetectionCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga981b9c654e521282a2020a81118c8c3c">RTC_TamperPullUpCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gaa1241e2b47d04acc116b50d7b031c3aa">RTC_WriteBackupRegister</link> (
+uint32_t RTC_BKP_DR, uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d9/dfc/group___r_t_c_1ga504489fd91a66e392beb82bb8230b37f">RTC_ReadBackupRegister</link> (
+uint32_t RTC_BKP_DR)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga46777272ae77eb9dc38610481e12b0ed">RTC_TamperPinSelection</link> (
+uint32_t RTC_TamperPin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gaedf9830bdaaaa50ea5d45d2ff7bb43a9">RTC_TimeStampPinSelection</link> (
+uint32_t RTC_TimeStampPin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga95263b7acf7168d52f66ef9121f14760">RTC_OutputTypeConfig</link> (
+uint32_t RTC_OutputType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d9/dfc/group___r_t_c_1gaad434ed2a268f05662f0613e8e9717f3">RTC_SynchroShiftConfig</link> (
+uint32_t RTC_ShiftAdd1S, uint32_t RTC_ShiftSubFS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gaa8469b33b3a99025baf52f007683b925">RTC_ITConfig</link> (
+uint32_t RTC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d9/dfc/group___r_t_c_1gaf2a7f11aa7160e95650fd10845e7780b">RTC_GetFlagStatus</link> (
+uint32_t RTC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1ga9be3325e05418d05c8c5a5ad369c7d50">RTC_ClearFlag</link> (
+uint32_t RTC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d9/dfc/group___r_t_c_1gaab81adc6d2a5a5c1e37a49707c6bf640">RTC_GetITStatus</link> (
+uint32_t RTC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dfc/group___r_t_c_1gacac6accc75ae54f1b799fa8e7e83ccdb">RTC_ClearITPendingBit</link> (
+uint32_t RTC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1gacc08d7d212e235f4b04bb88f5567fa54">RTC_TR_RESERVED_MASK</link> ((uint32_t)0x007F7F7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga16855eaae542f992c93170492822d058">RTC_DR_RESERVED_MASK</link> ((uint32_t)0x00FFFF3F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga0dbaf639bc171f2055c9055d538f13df">RTC_INIT_MASK</link> ((uint32_t)0xFFFFFFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga3a1033490aaf8304e1522d551bd1a7b9">RTC_RSF_MASK</link> ((uint32_t)0xFFFFFF5F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga0c7513e50528d7b5a52e88340a4e7b25">RTC_FLAGS_MASK</link> ((uint32_t)(RTC_FLAG_TSOVF | RTC_FLAG_TSF | RTC_FLAG_WUTF | \
+                                            RTC_FLAG_ALRBF | RTC_FLAG_ALRAF | RTC_FLAG_INITF | \
+                                            RTC_FLAG_RSF | RTC_FLAG_INITS | RTC_FLAG_WUTWF | \
+                                            RTC_FLAG_ALRBWF | RTC_FLAG_ALRAWF | RTC_FLAG_TAMP1F ))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1gab89243e1f23e45fedc6357396b26827d">INITMODE_TIMEOUT</link> ((uint32_t) 0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga017f8fc40e791545ae1dfebf84567ed8">SYNCHRO_TIMEOUT</link> ((uint32_t) 0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1gae578d94ca54a697f9d26b20944f036bc">RECALPF_TIMEOUT</link> ((uint32_t) 0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga911218ae83f22129a4df0087d98db3cd">SHPF_TIMEOUT</link> ((uint32_t) 0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d9/dfc/group___r_t_c_1ga9777c6cc4a99c339ebc527a791b2ebe7">
+                <title>ErrorStatus RTC_DeInit (void)</title> <emphasis>Deinitializes the RTC registers to their default reset values.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function doesn&apos;t reset the RTC Clock source and RTC Backup Data registers. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC registers are deinitialized</para>
+</listitem><listitem>
+<para>ERROR: RTC registers are not deinitialized </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga8eb747bf9698b2482ba6ef4d811de8e0">
+                <title>ErrorStatus RTC_Init (RTC_InitTypeDef *RTC_InitStruct)</title> <emphasis>Initializes the RTC registers according to the specified parameters 
+        in RTC_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> structure that contains the configuration information for the RTC peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The RTC Prescaler register is write protected and can be written in initialization mode only. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC registers are initialized</para>
+</listitem><listitem>
+<para>ERROR: RTC registers are not initialized </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gab466f3348de3236976e9aec7d6025dff">
+                <title>void RTC_StructInit (RTC_InitTypeDef *RTC_InitStruct)</title> <emphasis>Fills each RTC_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga9d4bdfd3ae6957630d15d2497573b7c7">
+                <title>void RTC_WriteProtectionCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the RTC registers write protection.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>All the RTC registers are write protected except for RTC_ISR[13:8], RTC_TAFCR and RTC_BKPxR. </para>
+<simplesect/>
+<para>Writing a wrong key reactivates the write protection. </para>
+<simplesect/>
+<para>The protection mechanism is not affected by system reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the write protection. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga679f8883cbfb267a53ffb1ab4cc5c8c5">
+                <title>ErrorStatus RTC_EnterInitMode (void)</title> <emphasis>Enters the RTC Initialization mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The RTC Initialization mode is write protected, use the RTC_WriteProtectionCmd(DISABLE) before calling this function. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC is in Init mode</para>
+</listitem><listitem>
+<para>ERROR: RTC is not in Init mode </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga87f86f3b794205f09a1eac51738d900f">
+                <title>void RTC_ExitInitMode (void)</title> <emphasis>Exits the RTC Initialization mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>When the initialization sequence is complete, the calendar restarts counting after 4 RTCCLK cycles. </para>
+<simplesect/>
+<para>The RTC Initialization mode is write protected, use the RTC_WriteProtectionCmd(DISABLE) before calling this function. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga2938febeef6baf0d91cc066ca5caf095">
+                <title>ErrorStatus RTC_WaitForSynchro (void)</title> <emphasis>Waits until the RTC Time and Date registers (RTC_TR and RTC_DR) are 
+        synchronized with RTC APB clock.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The RTC Resynchronization mode is write protected, use the RTC_WriteProtectionCmd(DISABLE) before calling this function. </para>
+<simplesect/>
+<para>To read the calendar through the shadow registers after Calendar initialization, calendar update or after wakeup from low power modes the software must first clear the RSF flag. The software must then wait until it is set again before reading the calendar, which means that the calendar registers have been correctly copied into the RTC_TR and RTC_DR shadow registers. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC registers are synchronised</para>
+</listitem><listitem>
+<para>ERROR: RTC registers are not synchronised </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaa60079ec257fb3a277d058ca8305533d">
+                <title>ErrorStatus RTC_RefClockCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the RTC reference clock detection.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the RTC reference clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC reference clock detection is enabled</para>
+</listitem><listitem>
+<para>ERROR: RTC reference clock detection is disabled </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gae5e7c682f15b8ae9ddd3b2a85a9df7db">
+                <title>void RTC_BypassShadowCmd (FunctionalState NewState)</title> <emphasis>Enables or Disables the Bypass Shadow feature.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>When the Bypass Shadow is enabled the calendar value are taken directly from the Calendar counter. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Bypass Shadow feature. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga9f9df80cfa82f7a4dd9f4d0cf2ffb3a6">
+                <title>ErrorStatus RTC_SetTime (uint32_t RTC_Format, RTC_TimeTypeDef *RTC_TimeStruct)</title> <emphasis>Set the RTC current time.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the entered parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_TimeStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> structure that contains the time configuration information for the RTC. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC Time register is configured</para>
+</listitem><listitem>
+<para>ERROR: RTC Time register is not configured </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga0404db6e0c70e5a6bbbe4fa58a577365">
+                <title>void RTC_TimeStructInit (RTC_TimeTypeDef *RTC_TimeStruct)</title> <emphasis>Fills each RTC_TimeStruct member with its default value
+        (Time = 00h:00min:00sec).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TimeStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga1fcc101339c77aebd25ec3621fd1b61a">
+                <title>void RTC_GetTime (uint32_t RTC_Format, RTC_TimeTypeDef *RTC_TimeStruct)</title> <emphasis>Get the RTC current Time.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the returned parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_TimeStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> structure that will contain the returned current time configuration. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gae59c33fb19e36b6abab0bad58072c01a">
+                <title>uint32_t RTC_GetSubSecond (void)</title> <emphasis>Gets the RTC current Calendar Subseconds value.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function freeze the Time and Date registers after reading the SSR register. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC</entry>
+                                <entry>
+<para>current Calendar Subseconds value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga69d08538147f3d89c818dcfabf50e362">
+                <title>ErrorStatus RTC_SetDate (uint32_t RTC_Format, RTC_DateTypeDef *RTC_DateStruct)</title> <emphasis>Set the RTC current date.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the entered parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_DateStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> structure that contains the date configuration information for the RTC. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC Date register is configured</para>
+</listitem><listitem>
+<para>ERROR: RTC Date register is not configured </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga6e4e99be910d7759f8910056a2985056">
+                <title>void RTC_DateStructInit (RTC_DateTypeDef *RTC_DateStruct)</title> <emphasis>Fills each RTC_DateStruct member with its default value
+        (Monday, January 01 xx00).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_DateStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga582645d554cdd4a316213e90f0b4c8ae">
+                <title>void RTC_GetDate (uint32_t RTC_Format, RTC_DateTypeDef *RTC_DateStruct)</title> <emphasis>Get the RTC current date.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the returned parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_DateStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> structure that will contain the returned current date configuration. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga44e3334f8e882df9b8a59b47f0857395">
+                <title>void RTC_SetAlarm (uint32_t RTC_Format, uint32_t RTC_Alarm, RTC_AlarmTypeDef *RTC_AlarmStruct)</title> <emphasis>Set the specified RTC Alarm.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The Alarm register can only be written when the corresponding Alarm is disabled (Use the RTC_AlarmCmd(DISABLE)). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the returned parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be configured. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_AlarmStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> structure that contains the alarm configuration parameters. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga36ab6199e21fb415ab1ec4d7aa48ba45">
+                <title>void RTC_AlarmStructInit (RTC_AlarmTypeDef *RTC_AlarmStruct)</title> <emphasis>Fills each RTC_AlarmStruct member with its default value
+        (Time = 00h:00mn:00sec / Date = 1st day of the month/Mask =
+        all fields are masked).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_AlarmStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga6e2888d2fd2e3ecb4ec50f5c955b362b">
+                <title>void RTC_GetAlarm (uint32_t RTC_Format, uint32_t RTC_Alarm, RTC_AlarmTypeDef *RTC_AlarmStruct)</title> <emphasis>Get the RTC Alarm value and masks.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the output parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be read. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_AlarmStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> structure that will contains the output alarm configuration values. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gac2c08f1aeeb664d3d245cb5aca1b8ca8">
+                <title>ErrorStatus RTC_AlarmCmd (uint32_t RTC_Alarm, FunctionalState NewState)</title> <emphasis>Enables or disables the specified RTC Alarm.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be configured. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified alarm. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC Alarm is enabled/disabled</para>
+</listitem><listitem>
+<para>ERROR: RTC Alarm is not enabled/disabled </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga7b3e4e9e39262e9b0d1aadd895394e46">
+                <title>void RTC_AlarmSubSecondConfig (uint32_t RTC_Alarm, uint32_t RTC_AlarmSubSecondValue, uint32_t RTC_AlarmSubSecondMask)</title> <emphasis>Configure the RTC AlarmA/B Subseconds value and mask.*.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function is performed only when the Alarm is disabled. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be configured. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_AlarmSubSecondValue, :</entry>
+                                <entry>
+<para>specifies the Subseconds value. This parameter can be a value from 0 to 0x00007FFF. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_AlarmSubSecondMask, :</entry>
+                                <entry>
+<para>specifies the Subseconds Mask. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_AlarmSubSecondMask_All : All Alarm SS fields are masked. There is no comparison on sub seconds for Alarm. </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_1 : SS[14:1] are don&apos;t care in Alarm comparison. Only SS[0] is compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_2 : SS[14:2] are don&apos;t care in Alarm comparison. Only SS[1:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_3 : SS[14:3] are don&apos;t care in Alarm comparison. Only SS[2:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_4 : SS[14:4] are don&apos;t care in Alarm comparison. Only SS[3:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_5 : SS[14:5] are don&apos;t care in Alarm comparison. Only SS[4:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_6 : SS[14:6] are don&apos;t care in Alarm comparison. Only SS[5:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_7 : SS[14:7] are don&apos;t care in Alarm comparison. Only SS[6:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_8 : SS[14:8] are don&apos;t care in Alarm comparison. Only SS[7:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_9 : SS[14:9] are don&apos;t care in Alarm comparison. Only SS[8:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_10: SS[14:10] are don&apos;t care in Alarm comparison. Only SS[9:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_11: SS[14:11] are don&apos;t care in Alarm comparison. Only SS[10:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_12: SS[14:12] are don&apos;t care in Alarm comparison. Only SS[11:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14_13: SS[14:13] are don&apos;t care in Alarm comparison. Only SS[12:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_SS14 : SS[14] is don&apos;t care in Alarm comparison. Only SS[13:0] are compared </para>
+</listitem>
+<listitem>
+<para>RTC_AlarmSubSecondMask_None : SS[14:0] are compared and must match to activate alarm </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gae7b5e7146be2710d619c8ed3cca464ad">
+                <title>uint32_t RTC_GetAlarmSubSecond (uint32_t RTC_Alarm)</title> <emphasis>Gets the RTC Alarm Subseconds value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Alarm, :</entry>
+                                <entry>
+<para>specifies the alarm to be read. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Alarm_A: to select Alarm A </para>
+</listitem>
+<listitem>
+<para>RTC_Alarm_B: to select Alarm B </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC</entry>
+                                <entry>
+<para>Alarm Subseconds value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga2557b02b318211112731a91a190c4b26">
+                <title>void RTC_WakeUpClockConfig (uint32_t RTC_WakeUpClock)</title> <emphasis>Configures the RTC Wakeup clock source.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The WakeUp Clock source can only be changed when the RTC WakeUp is disabled (Use the RTC_WakeUpCmd(DISABLE)). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_WakeUpClock, :</entry>
+                                <entry>
+<para>Wakeup Clock source. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_WakeUpClock_RTCCLK_Div16: RTC Wakeup Counter Clock = RTCCLK/16 </para>
+</listitem>
+<listitem>
+<para>RTC_WakeUpClock_RTCCLK_Div8: RTC Wakeup Counter Clock = RTCCLK/8 </para>
+</listitem>
+<listitem>
+<para>RTC_WakeUpClock_RTCCLK_Div4: RTC Wakeup Counter Clock = RTCCLK/4 </para>
+</listitem>
+<listitem>
+<para>RTC_WakeUpClock_RTCCLK_Div2: RTC Wakeup Counter Clock = RTCCLK/2 </para>
+</listitem>
+<listitem>
+<para>RTC_WakeUpClock_CK_SPRE_16bits: RTC Wakeup Counter Clock = CK_SPRE </para>
+</listitem>
+<listitem>
+<para>RTC_WakeUpClock_CK_SPRE_17bits: RTC Wakeup Counter Clock = CK_SPRE </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga1412044eb756a166c1cf341f3d46ed6b">
+                <title>void RTC_SetWakeUpCounter (uint32_t RTC_WakeUpCounter)</title> <emphasis>Configures the RTC Wakeup counter.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The RTC WakeUp counter can only be written when the RTC WakeUp is disabled (Use the RTC_WakeUpCmd(DISABLE)). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_WakeUpCounter, :</entry>
+                                <entry>
+<para>specifies the WakeUp counter. This parameter can be a value from 0x0000 to 0xFFFF. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gae63aab672e917cc48e298162c3dec049">
+                <title>uint32_t RTC_GetWakeUpCounter (void)</title> <emphasis>Returns the RTC WakeUp timer counter value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>RTC WakeUp Counter value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga2ce05293303e0d7879c6d755c5355b4c">
+                <title>ErrorStatus RTC_WakeUpCmd (FunctionalState NewState)</title> <emphasis>Enables or Disables the RTC WakeUp timer.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the WakeUp timer. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga812feddea77990b5dc336a4989ae61b8">
+                <title>void RTC_DayLightSavingConfig (uint32_t RTC_DayLightSaving, uint32_t RTC_StoreOperation)</title> <emphasis>Adds or substract one hour from the current time.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_DayLightSaveOperation, :</entry>
+                                <entry>
+<para>the value of hour adjustment. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_DayLightSaving_SUB1H: Substract one hour (winter time) </para>
+</listitem>
+<listitem>
+<para>RTC_DayLightSaving_ADD1H: Add one hour (summer time) </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_StoreOperation, :</entry>
+                                <entry>
+<para>Specifies the value to be written in the BCK bit in CR register to store the operation. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_StoreOperation_Reset: BCK Bit Reset </para>
+</listitem>
+<listitem>
+<para>RTC_StoreOperation_Set: BCK Bit Set </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaba0c1361790203e9dca43846f0d9bc15">
+                <title>uint32_t RTC_GetStoreOperation (void)</title> <emphasis>Returns the RTC Day Light Saving stored operation.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC</entry>
+                                <entry>
+<para>Day Light Saving stored operation.<itemizedlist>
+<listitem>
+<para>RTC_StoreOperation_Reset</para>
+</listitem><listitem>
+<para>RTC_StoreOperation_Set </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gae3165ef19ef3bd63789e59130ad8d89b">
+                <title>void RTC_OutputConfig (uint32_t RTC_Output, uint32_t RTC_OutputPolarity)</title> <emphasis>Configures the RTC output source (AFO_ALARM).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Output, :</entry>
+                                <entry>
+<para>Specifies which signal will be routed to the RTC output. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Output_Disable: No output selected </para>
+</listitem>
+<listitem>
+<para>RTC_Output_AlarmA: signal of AlarmA mapped to output </para>
+</listitem>
+<listitem>
+<para>RTC_Output_AlarmB: signal of AlarmB mapped to output </para>
+</listitem>
+<listitem>
+<para>RTC_Output_WakeUp: signal of WakeUp mapped to output </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_OutputPolarity, :</entry>
+                                <entry>
+<para>Specifies the polarity of the output signal. This parameter can be one of the following: <itemizedlist>
+<listitem>
+<para>RTC_OutputPolarity_High: The output pin is high when the ALRAF/ALRBF/WUTF is high (depending on OSEL) </para>
+</listitem>
+<listitem>
+<para>RTC_OutputPolarity_Low: The output pin is low when the ALRAF/ALRBF/WUTF is high (depending on OSEL) </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaa3bb10170a2c70ac9ce3e41c611bdd43">
+                <title>ErrorStatus RTC_CoarseCalibConfig (uint32_t RTC_CalibSign, uint32_t Value)</title> <emphasis>Configures the Coarse calibration parameters.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_CalibSign, :</entry>
+                                <entry>
+<para>specifies the sign of the coarse calibration value. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_CalibSign_Positive: The value sign is positive </para>
+</listitem>
+<listitem>
+<para>RTC_CalibSign_Negative: The value sign is negative </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Value, :</entry>
+                                <entry>
+<para>value of coarse calibration expressed in ppm (coded on 5 bits).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>This Calibration value should be between 0 and 63 when using negative sign with a 2-ppm step.</para>
+<simplesect/>
+<para>This Calibration value should be between 0 and 126 when using positive sign with a 4-ppm step.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC Coarse calibration are initialized</para>
+</listitem><listitem>
+<para>ERROR: RTC Coarse calibration are not initialized </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga008ae7173b2befe876f5e76686bc9089">
+                <title>ErrorStatus RTC_CoarseCalibCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the Coarse calibration process.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Coarse calibration. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC Coarse calibration are enabled/disabled</para>
+</listitem><listitem>
+<para>ERROR: RTC Coarse calibration are not enabled/disabled </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga25eaa2de5ee858a4572d5fb1eb146ff8">
+                <title>void RTC_CalibOutputCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the RTC clock to be output through the relative pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the digital calibration Output. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga2139adc802bdb6882904c0b855d50b29">
+                <title>void RTC_CalibOutputConfig (uint32_t RTC_CalibOutput)</title> <emphasis>Configure the Calibration Pinout (RTC_CALIB) Selection (1Hz or 512Hz).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_CalibOutput</entry>
+                                <entry>
+<para>: Select the Calibration output Selection . This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_CalibOutput_512Hz: A signal has a regular waveform at 512Hz. </para>
+</listitem>
+<listitem>
+<para>RTC_CalibOutput_1Hz : A signal has a regular waveform at 1Hz. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga91a28dcc7d45340a469dd8b8c029f841">
+                <title>ErrorStatus RTC_SmoothCalibConfig (uint32_t RTC_SmoothCalibPeriod, uint32_t RTC_SmoothCalibPlusPulses, uint32_t RTC_SmouthCalibMinusPulsesValue)</title> <emphasis>Configures the Smooth Calibration Settings.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_SmoothCalibPeriod</entry>
+                                <entry>
+<para>: Select the Smooth Calibration Period. This parameter can be can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_SmoothCalibPeriod_32sec : The smooth calibration periode is 32s. </para>
+</listitem>
+<listitem>
+<para>RTC_SmoothCalibPeriod_16sec : The smooth calibration periode is 16s. </para>
+</listitem>
+<listitem>
+<para>RTC_SmoothCalibPeriod_8sec : The smooth calibartion periode is 8s. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_SmoothCalibPlusPulses</entry>
+                                <entry>
+<para>: Select to Set or reset the CALP bit. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_SmoothCalibPlusPulses_Set : Add one RTCCLK puls every 2**11 pulses. </para>
+</listitem>
+<listitem>
+<para>RTC_SmoothCalibPlusPulses_Reset: No RTCCLK pulses are added. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_SmouthCalibMinusPulsesValue, :</entry>
+                                <entry>
+<para>Select the value of CALM[8:0] bits. This parameter can be one any value from 0 to 0x000001FF. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC Calib registers are configured</para>
+</listitem><listitem>
+<para>ERROR: RTC Calib registers are not configured </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga7d80fa4a2c87654598d8207154ac8e96">
+                <title>void RTC_TimeStampCmd (uint32_t RTC_TimeStampEdge, FunctionalState NewState)</title> <emphasis>Enables or Disables the RTC TimeStamp functionality with the 
+        specified time stamp pin stimulating edge.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TimeStampEdge, :</entry>
+                                <entry>
+<para>Specifies the pin edge on which the TimeStamp is activated. This parameter can be one of the following: <itemizedlist>
+<listitem>
+<para>RTC_TimeStampEdge_Rising: the Time stamp event occurs on the rising edge of the related pin. </para>
+</listitem>
+<listitem>
+<para>RTC_TimeStampEdge_Falling: the Time stamp event occurs on the falling edge of the related pin. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the TimeStamp. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga44c38b0c74e9e960a4263b2905f44796">
+                <title>void RTC_GetTimeStamp (uint32_t RTC_Format, RTC_TimeTypeDef *RTC_StampTimeStruct, RTC_DateTypeDef *RTC_StampDateStruct)</title> <emphasis>Get the RTC TimeStamp value and masks.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the output parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_StampTimeStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> structure that will contains the TimeStamp time values. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_StampDateStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> structure that will contains the TimeStamp date values. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga2b0ef81f4959a2f9fc6361fbda759b00">
+                <title>uint32_t RTC_GetTimeStampSubSecond (void)</title> <emphasis>Get the RTC timestamp Subseconds value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC</entry>
+                                <entry>
+<para>current timestamp Subseconds value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gad547d636cfc4fd8d4d673325571e0ffb">
+                <title>void RTC_TamperTriggerConfig (uint32_t RTC_Tamper, uint32_t RTC_TamperTrigger)</title> <emphasis>Configures the select Tamper pin edge.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Tamper, :</entry>
+                                <entry>
+<para>Selected tamper pin. This parameter can be RTC_Tamper_1. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_TamperTrigger, :</entry>
+                                <entry>
+<para>Specifies the trigger on the tamper pin that stimulates tamper event. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TamperTrigger_RisingEdge: Rising Edge of the tamper pin causes tamper event. </para>
+</listitem>
+<listitem>
+<para>RTC_TamperTrigger_FallingEdge: Falling Edge of the tamper pin causes tamper event. </para>
+</listitem>
+<listitem>
+<para>RTC_TamperTrigger_LowLevel: Low Level of the tamper pin causes tamper event. </para>
+</listitem>
+<listitem>
+<para>RTC_TamperTrigger_HighLevel: High Level of the tamper pin causes tamper event. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaf85cc696d624da0de9fbe99779402833">
+                <title>void RTC_TamperCmd (uint32_t RTC_Tamper, FunctionalState NewState)</title> <emphasis>Enables or Disables the Tamper detection.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Tamper, :</entry>
+                                <entry>
+<para>Selected tamper pin. This parameter can be RTC_Tamper_1. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the tamper pin. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga1e87b9ae757ad12d7585e4fbcbf2c4b8">
+                <title>void RTC_TamperFilterConfig (uint32_t RTC_TamperFilter)</title> <emphasis>Configures the Tampers Filter.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TamperFilter, :</entry>
+                                <entry>
+<para>Specifies the tampers filter. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TamperFilter_Disable: Tamper filter is disabled. </para>
+</listitem>
+<listitem>
+<para>RTC_TamperFilter_2Sample: Tamper is activated after 2 consecutive samples at the active level </para>
+</listitem>
+<listitem>
+<para>RTC_TamperFilter_4Sample: Tamper is activated after 4 consecutive samples at the active level </para>
+</listitem>
+<listitem>
+<para>RTC_TamperFilter_8Sample: Tamper is activated after 8 consecutive samples at the active level </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gadc7f33a31df80b5deac313fc8af8d7f7">
+                <title>void RTC_TamperSamplingFreqConfig (uint32_t RTC_TamperSamplingFreq)</title> <emphasis>Configures the Tampers Sampling Frequency.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TamperSamplingFreq, :</entry>
+                                <entry>
+<para>Specifies the tampers Sampling Frequency. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div32768: Each of the tamper inputs are sampled with a frequency = RTCCLK / 32768 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div16384: Each of the tamper inputs are sampled with a frequency = RTCCLK / 16384 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div8192: Each of the tamper inputs are sampled with a frequency = RTCCLK / 8192 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div4096: Each of the tamper inputs are sampled with a frequency = RTCCLK / 4096 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div2048: Each of the tamper inputs are sampled with a frequency = RTCCLK / 2048 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div1024: Each of the tamper inputs are sampled with a frequency = RTCCLK / 1024 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div512: Each of the tamper inputs are sampled with a frequency = RTCCLK / 512 </para>
+</listitem>
+<listitem>
+<para>RTC_TamperSamplingFreq_RTCCLK_Div256: Each of the tamper inputs are sampled with a frequency = RTCCLK / 256 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gafc176a013076a651862dc6a957286025">
+                <title>void RTC_TamperPinsPrechargeDuration (uint32_t RTC_TamperPrechargeDuration)</title> <emphasis>Configures the Tampers Pins input Precharge Duration.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TamperPrechargeDuration, :</entry>
+                                <entry>
+<para>Specifies the Tampers Pins input Precharge Duration. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TamperPrechargeDuration_1RTCCLK: Tamper pins are pre-charged before sampling during 1 RTCCLK cycle </para>
+</listitem>
+<listitem>
+<para>RTC_TamperPrechargeDuration_2RTCCLK: Tamper pins are pre-charged before sampling during 2 RTCCLK cycle </para>
+</listitem>
+<listitem>
+<para>RTC_TamperPrechargeDuration_4RTCCLK: Tamper pins are pre-charged before sampling during 4 RTCCLK cycle </para>
+</listitem>
+<listitem>
+<para>RTC_TamperPrechargeDuration_8RTCCLK: Tamper pins are pre-charged before sampling during 8 RTCCLK cycle </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga29c82fceefd21a78dc55ccc5bcc1ed59">
+                <title>void RTC_TimeStampOnTamperDetectionCmd (FunctionalState NewState)</title> <emphasis>Enables or Disables the TimeStamp on Tamper Detection Event.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The timestamp is valid even the TSE bit in tamper control register is reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the timestamp on tamper event. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga981b9c654e521282a2020a81118c8c3c">
+                <title>void RTC_TamperPullUpCmd (FunctionalState NewState)</title> <emphasis>Enables or Disables the Precharge of Tamper pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of tamper pull up. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaa1241e2b47d04acc116b50d7b031c3aa">
+                <title>void RTC_WriteBackupRegister (uint32_t RTC_BKP_DR, uint32_t Data)</title> <emphasis>Writes a data in a specified RTC Backup data register.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_BKP_DR, :</entry>
+                                <entry>
+<para>RTC Backup data Register number. This parameter can be: RTC_BKP_DRx where x can be from 0 to 19 to specify the register. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>Data to be written in the specified RTC Backup data register. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga504489fd91a66e392beb82bb8230b37f">
+                <title>uint32_t RTC_ReadBackupRegister (uint32_t RTC_BKP_DR)</title> <emphasis>Reads data from the specified RTC Backup data Register.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_BKP_DR, :</entry>
+                                <entry>
+<para>RTC Backup data Register number. This parameter can be: RTC_BKP_DRx where x can be from 0 to 19 to specify the register. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga46777272ae77eb9dc38610481e12b0ed">
+                <title>void RTC_TamperPinSelection (uint32_t RTC_TamperPin)</title> <emphasis>Selects the RTC Tamper Pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TamperPin, :</entry>
+                                <entry>
+<para>specifies the RTC Tamper Pin. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TamperPin_PC13: PC13 is selected as RTC Tamper Pin. </para>
+</listitem>
+<listitem>
+<para>RTC_TamperPin_PI8: PI8 is selected as RTC Tamper Pin. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaedf9830bdaaaa50ea5d45d2ff7bb43a9">
+                <title>void RTC_TimeStampPinSelection (uint32_t RTC_TimeStampPin)</title> <emphasis>Selects the RTC TimeStamp Pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TimeStampPin, :</entry>
+                                <entry>
+<para>specifies the RTC TimeStamp Pin. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_TimeStampPin_PC13: PC13 is selected as RTC TimeStamp Pin. </para>
+</listitem>
+<listitem>
+<para>RTC_TimeStampPin_PI8: PI8 is selected as RTC TimeStamp Pin. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga95263b7acf7168d52f66ef9121f14760">
+                <title>void RTC_OutputTypeConfig (uint32_t RTC_OutputType)</title> <emphasis>Configures the RTC Output Pin mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_OutputType, :</entry>
+                                <entry>
+<para>specifies the RTC Output (PC13) pin mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_OutputType_OpenDrain: RTC Output (PC13) is configured in Open Drain mode. </para>
+</listitem>
+<listitem>
+<para>RTC_OutputType_PushPull: RTC Output (PC13) is configured in Push Pull mode. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaad434ed2a268f05662f0613e8e9717f3">
+                <title>ErrorStatus RTC_SynchroShiftConfig (uint32_t RTC_ShiftAdd1S, uint32_t RTC_ShiftSubFS)</title> <emphasis>Configures the Synchronization Shift Control Settings.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>When REFCKON is set, firmware must not write to Shift control register </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_ShiftAdd1S</entry>
+                                <entry>
+<para>: Select to add or not 1 second to the time Calendar. This parameter can be one of the following values : <itemizedlist>
+<listitem>
+<para>RTC_ShiftAdd1S_Set : Add one second to the clock calendar. </para>
+</listitem>
+<listitem>
+<para>RTC_ShiftAdd1S_Reset: No effect. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_ShiftSubFS, :</entry>
+                                <entry>
+<para>Select the number of Second Fractions to Substitute. This parameter can be one any value from 0 to 0x7FFF. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: RTC Shift registers are configured</para>
+</listitem><listitem>
+<para>ERROR: RTC Shift registers are not configured </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaa8469b33b3a99025baf52f007683b925">
+                <title>void RTC_ITConfig (uint32_t RTC_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified RTC interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_IT, :</entry>
+                                <entry>
+<para>specifies the RTC interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_IT_TS: Time Stamp interrupt mask </para>
+</listitem>
+<listitem>
+<para>RTC_IT_WUT: WakeUp Timer interrupt mask </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRB: Alarm B interrupt mask </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRA: Alarm A interrupt mask </para>
+</listitem>
+<listitem>
+<para>RTC_IT_TAMP: Tamper event interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified RTC interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaf2a7f11aa7160e95650fd10845e7780b">
+                <title>FlagStatus RTC_GetFlagStatus (uint32_t RTC_FLAG)</title> <emphasis>Checks whether the specified RTC flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_FLAG_TAMP1F: Tamper 1 event flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_TSOVF: Time Stamp OverFlow flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_TSF: Time Stamp event flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_WUTF: WakeUp Timer flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRBF: Alarm B flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRAF: Alarm A flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_INITF: Initialization mode flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_RSF: Registers Synchronized flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_INITS: Registers Configured flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_WUTWF: WakeUp Timer Write flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRBWF: Alarm B Write flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRAWF: Alarm A write flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of RTC_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1ga9be3325e05418d05c8c5a5ad369c7d50">
+                <title>void RTC_ClearFlag (uint32_t RTC_FLAG)</title> <emphasis>Clears the RTC&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_FLAG, :</entry>
+                                <entry>
+<para>specifies the RTC flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_FLAG_TAMP1F: Tamper 1 event flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_TSOVF: Time Stamp Overflow flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_TSF: Time Stamp event flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_WUTF: WakeUp Timer flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRBF: Alarm B flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_ALRAF: Alarm A flag </para>
+</listitem>
+<listitem>
+<para>RTC_FLAG_RSF: Registers Synchronized flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gaab81adc6d2a5a5c1e37a49707c6bf640">
+                <title>ITStatus RTC_GetITStatus (uint32_t RTC_IT)</title> <emphasis>Checks whether the specified RTC interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_IT, :</entry>
+                                <entry>
+<para>specifies the RTC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_IT_TS: Time Stamp interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_WUT: WakeUp Timer interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRB: Alarm B interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRA: Alarm A interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_TAMP1: Tamper 1 event interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of RTC_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/dfc/group___r_t_c_1gacac6accc75ae54f1b799fa8e7e83ccdb">
+                <title>void RTC_ClearITPendingBit (uint32_t RTC_IT)</title> <emphasis>Clears the RTC&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_IT, :</entry>
+                                <entry>
+<para>specifies the RTC interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RTC_IT_TS: Time Stamp interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_WUT: WakeUp Timer interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRB: Alarm B interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_ALRA: Alarm A interrupt </para>
+</listitem>
+<listitem>
+<para>RTC_IT_TAMP1: Tamper 1 event interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="dc/dbc/group___r_t_c___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d00/group___r_t_c___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

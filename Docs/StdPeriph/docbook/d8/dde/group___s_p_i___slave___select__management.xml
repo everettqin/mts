@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/dde/group___s_p_i___slave___select__management">
+    <title>SPI_Slave_Select_management</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dde/group___s_p_i___slave___select__management_1ga105969ee7eb635414da35b41e942e383">SPI_NSS_Soft</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dde/group___s_p_i___slave___select__management_1ga07c547459d39fb7a6e0322147a60b74a">SPI_NSS_Hard</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/dde/group___s_p_i___slave___select__management_1gabbeedf42eccef1bae4f88c606fc3b261">IS_SPI_NSS</link> (((NSS) == SPI_NSS_Soft) || \
+                         ((NSS) == SPI_NSS_Hard))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

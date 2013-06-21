@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d53/group___s_d_i_o___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                 Initialization and Configuration functions
+ ===============================================================================</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d53/group___s_d_i_o___group1_1gac359d2c6c67a2590f8f9b720c0e4ff1b">SDIO_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d53/group___s_d_i_o___group1_1gad40764a8e37c0ed5c9141ae338ff0203">SDIO_Init</link> (
+<link linkend="dd/d5e/struct_s_d_i_o___init_type_def">SDIO_InitTypeDef</link> * SDIO_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d53/group___s_d_i_o___group1_1ga778d338c29df4fae9ef69432e6df32ad">SDIO_StructInit</link> (
+<link linkend="dd/d5e/struct_s_d_i_o___init_type_def">SDIO_InitTypeDef</link> * SDIO_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d53/group___s_d_i_o___group1_1ga7243b857d6b323748ff3a493b265bedc">SDIO_ClockCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d53/group___s_d_i_o___group1_1ga36ecca32b904de74218fbe65cd5f5270">SDIO_SetPowerState</link> (
+uint32_t SDIO_PowerState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d3/d53/group___s_d_i_o___group1_1ga3a19de2c7cd51645702213f64a1758ed">SDIO_GetPowerState</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d3/d53/group___s_d_i_o___group1_1gac359d2c6c67a2590f8f9b720c0e4ff1b">
+                <title>void SDIO_DeInit (void)</title> <emphasis>Deinitializes the SDIO peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d53/group___s_d_i_o___group1_1gad40764a8e37c0ed5c9141ae338ff0203">
+                <title>void SDIO_Init (SDIO_InitTypeDef *SDIO_InitStruct)</title> <emphasis>Initializes the SDIO peripheral according to the specified 
+        parameters in the SDIO_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_InitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="dd/d5e/struct_s_d_i_o___init_type_def">SDIO_InitTypeDef</link> structure that contains the configuration information for the SDIO peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d53/group___s_d_i_o___group1_1ga778d338c29df4fae9ef69432e6df32ad">
+                <title>void SDIO_StructInit (SDIO_InitTypeDef *SDIO_InitStruct)</title> <emphasis>Fills each SDIO_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_InitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="dd/d5e/struct_s_d_i_o___init_type_def">SDIO_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d53/group___s_d_i_o___group1_1ga7243b857d6b323748ff3a493b265bedc">
+                <title>void SDIO_ClockCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the SDIO Clock.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the SDIO Clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d53/group___s_d_i_o___group1_1ga36ecca32b904de74218fbe65cd5f5270">
+                <title>void SDIO_SetPowerState (uint32_t SDIO_PowerState)</title> <emphasis>Sets the power status of the controller.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_PowerState, :</entry>
+                                <entry>
+<para>new state of the Power state. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SDIO_PowerState_OFF: SDIO Power OFF </para>
+</listitem>
+<listitem>
+<para>SDIO_PowerState_ON: SDIO Power ON </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d53/group___s_d_i_o___group1_1ga3a19de2c7cd51645702213f64a1758ed">
+                <title>uint32_t SDIO_GetPowerState (void)</title> <emphasis>Gets the power status of the controller.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Power</entry>
+                                <entry>
+<para>status of the controller. The returned value can be one of the following values:<itemizedlist>
+<listitem>
+<para>0x00: Power OFF</para>
+</listitem><listitem>
+<para>0x02: Power UP</para>
+</listitem><listitem>
+<para>0x03: Power ON </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

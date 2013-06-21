@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/da9/struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def">
+<title>FSMC_NORSRAMTimingInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d3/d3a/stm32f4xx__fsmc_8h">&lt;stm32f4xx_fsmc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_AddressSetupTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_AddressHoldTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_DataSetupTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_BusTurnAroundDuration</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_CLKDivision</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_DataLatency</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_AccessMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Timing parameters For NOR/SRAM Banks. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t FSMC_AddressSetupTime</title>                
+<para>Defines the number of HCLK cycles to configure the duration of the address setup time. This parameter can be a value between 0 and 0xF. <formalpara><title>Note: </title>
+
+<para>This parameter is not used with synchronous NOR Flash memories. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 49 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_AddressHoldTime</title>                
+<para>Defines the number of HCLK cycles to configure the duration of the address hold time. This parameter can be a value between 0 and 0xF. <formalpara><title>Note: </title>
+
+<para>This parameter is not used with synchronous NOR Flash memories. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 54 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_DataSetupTime</title>                
+<para>Defines the number of HCLK cycles to configure the duration of the data setup time. This parameter can be a value between 0 and 0xFF. <formalpara><title>Note: </title>
+
+<para>This parameter is used for SRAMs, ROMs and asynchronous multiplexed NOR Flash memories. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 59 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_BusTurnAroundDuration</title>                
+<para>Defines the number of HCLK cycles to configure the duration of the bus turnaround. This parameter can be a value between 0 and 0xF. <formalpara><title>Note: </title>
+
+<para>This parameter is only used for multiplexed NOR Flash memories. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 64 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_CLKDivision</title>                
+<para>Defines the period of CLK clock output signal, expressed in number of HCLK cycles. This parameter can be a value between 1 and 0xF. <formalpara><title>Note: </title>
+
+<para>This parameter is not used for asynchronous NOR Flash, SRAM or ROM accesses. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 69 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_DataLatency</title>                
+<para>Defines the number of memory clock cycles to issue to the memory before getting the first data. The parameter value depends on the memory type as shown below:<itemizedlist>
+<listitem>
+<para>It must be set to 0 in case of a CRAM</para>
+</listitem><listitem>
+<para>It is don&apos;t care in asynchronous NOR, SRAM or ROM accesses</para>
+</listitem><listitem>
+<para>It may assume a value between 0 and 0xF in NOR Flash memories with synchronous burst mode enable </para>
+</listitem></itemizedlist>
+</para>
+
+                <para>Definition at line 73 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_AccessMode</title>                
+<para>Specifies the asynchronous access mode. This parameter can be a value of <link linkend="d4/dce/group___f_s_m_c___access___mode">FSMC_Access_Mode</link> </para>
+
+                <para>Definition at line 81 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

@@ -1,0 +1,66 @@
+\hypertarget{struct_s_d_i_o___cmd_init_type_def}{\section{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def Struct Reference}
+\label{struct_s_d_i_o___cmd_init_type_def}\index{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}}
+}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\-\_\-t \hyperlink{struct_s_d_i_o___cmd_init_type_def_ab40e564f8fc0dcbf89ce34beb325d774}{S\-D\-I\-O\-\_\-\-Argument}
+\item 
+uint32\-\_\-t \hyperlink{struct_s_d_i_o___cmd_init_type_def_a8b55bd6b004ba9105f153e0147fbaa25}{S\-D\-I\-O\-\_\-\-Cmd\-Index}
+\item 
+uint32\-\_\-t \hyperlink{struct_s_d_i_o___cmd_init_type_def_aeff6d745f123c5f75fd094a856426aae}{S\-D\-I\-O\-\_\-\-Response}
+\item 
+uint32\-\_\-t \hyperlink{struct_s_d_i_o___cmd_init_type_def_afd47828b3053d2c3bf582fe8d092ab27}{S\-D\-I\-O\-\_\-\-Wait}
+\item 
+uint32\-\_\-t \hyperlink{struct_s_d_i_o___cmd_init_type_def_a67da149308b7fcafddd7b3d62513845f}{S\-D\-I\-O\-\_\-\-C\-P\-S\-M}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 68 of file stm32f4xx\-\_\-sdio.\-h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{struct_s_d_i_o___cmd_init_type_def_ab40e564f8fc0dcbf89ce34beb325d774}{\index{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}!S\-D\-I\-O\-\_\-\-Argument@{S\-D\-I\-O\-\_\-\-Argument}}
+\index{S\-D\-I\-O\-\_\-\-Argument@{S\-D\-I\-O\-\_\-\-Argument}!SDIO_CmdInitTypeDef@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}}
+\subsubsection[{S\-D\-I\-O\-\_\-\-Argument}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t S\-D\-I\-O\-\_\-\-Argument}}\label{struct_s_d_i_o___cmd_init_type_def_ab40e564f8fc0dcbf89ce34beb325d774}
+Specifies the S\-D\-I\-O command argument which is sent to a card as part of a command message. If a command contains an argument, it must be loaded into this register before writing the command to the command register 
+
+Definition at line 70 of file stm32f4xx\-\_\-sdio.\-h.
+
+\hypertarget{struct_s_d_i_o___cmd_init_type_def_a8b55bd6b004ba9105f153e0147fbaa25}{\index{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}!S\-D\-I\-O\-\_\-\-Cmd\-Index@{S\-D\-I\-O\-\_\-\-Cmd\-Index}}
+\index{S\-D\-I\-O\-\_\-\-Cmd\-Index@{S\-D\-I\-O\-\_\-\-Cmd\-Index}!SDIO_CmdInitTypeDef@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}}
+\subsubsection[{S\-D\-I\-O\-\_\-\-Cmd\-Index}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t S\-D\-I\-O\-\_\-\-Cmd\-Index}}\label{struct_s_d_i_o___cmd_init_type_def_a8b55bd6b004ba9105f153e0147fbaa25}
+Specifies the S\-D\-I\-O command index. It must be lower than 0x40. 
+
+Definition at line 75 of file stm32f4xx\-\_\-sdio.\-h.
+
+\hypertarget{struct_s_d_i_o___cmd_init_type_def_a67da149308b7fcafddd7b3d62513845f}{\index{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}!S\-D\-I\-O\-\_\-\-C\-P\-S\-M@{S\-D\-I\-O\-\_\-\-C\-P\-S\-M}}
+\index{S\-D\-I\-O\-\_\-\-C\-P\-S\-M@{S\-D\-I\-O\-\_\-\-C\-P\-S\-M}!SDIO_CmdInitTypeDef@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}}
+\subsubsection[{S\-D\-I\-O\-\_\-\-C\-P\-S\-M}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t S\-D\-I\-O\-\_\-\-C\-P\-S\-M}}\label{struct_s_d_i_o___cmd_init_type_def_a67da149308b7fcafddd7b3d62513845f}
+Specifies whether S\-D\-I\-O Command path state machine (C\-P\-S\-M) is enabled or disabled. This parameter can be a value of \hyperlink{group___s_d_i_o___c_p_s_m___state}{S\-D\-I\-O\-\_\-\-C\-P\-S\-M\-\_\-\-State} 
+
+Definition at line 83 of file stm32f4xx\-\_\-sdio.\-h.
+
+\hypertarget{struct_s_d_i_o___cmd_init_type_def_aeff6d745f123c5f75fd094a856426aae}{\index{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}!S\-D\-I\-O\-\_\-\-Response@{S\-D\-I\-O\-\_\-\-Response}}
+\index{S\-D\-I\-O\-\_\-\-Response@{S\-D\-I\-O\-\_\-\-Response}!SDIO_CmdInitTypeDef@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}}
+\subsubsection[{S\-D\-I\-O\-\_\-\-Response}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t S\-D\-I\-O\-\_\-\-Response}}\label{struct_s_d_i_o___cmd_init_type_def_aeff6d745f123c5f75fd094a856426aae}
+Specifies the S\-D\-I\-O response type. This parameter can be a value of \hyperlink{group___s_d_i_o___response___type}{S\-D\-I\-O\-\_\-\-Response\-\_\-\-Type} 
+
+Definition at line 77 of file stm32f4xx\-\_\-sdio.\-h.
+
+\hypertarget{struct_s_d_i_o___cmd_init_type_def_afd47828b3053d2c3bf582fe8d092ab27}{\index{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}!S\-D\-I\-O\-\_\-\-Wait@{S\-D\-I\-O\-\_\-\-Wait}}
+\index{S\-D\-I\-O\-\_\-\-Wait@{S\-D\-I\-O\-\_\-\-Wait}!SDIO_CmdInitTypeDef@{S\-D\-I\-O\-\_\-\-Cmd\-Init\-Type\-Def}}
+\subsubsection[{S\-D\-I\-O\-\_\-\-Wait}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t S\-D\-I\-O\-\_\-\-Wait}}\label{struct_s_d_i_o___cmd_init_type_def_afd47828b3053d2c3bf582fe8d092ab27}
+Specifies whether S\-D\-I\-O wait-\/for-\/interrupt request is enabled or disabled. This parameter can be a value of \hyperlink{group___s_d_i_o___wait___interrupt___state}{S\-D\-I\-O\-\_\-\-Wait\-\_\-\-Interrupt\-\_\-\-State} 
+
+Definition at line 80 of file stm32f4xx\-\_\-sdio.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/inc/\hyperlink{stm32f4xx__sdio_8h}{stm32f4xx\-\_\-sdio.\-h}\end{DoxyCompactItemize}

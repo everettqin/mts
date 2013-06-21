@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d2c/group___d_m_a___exported___constants">
+    <title>DMA_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="df/dbb/group___d_m_a__channel">DMA_channel</link></para></listitem>
+            <listitem><para><link linkend="dd/d15/group___d_m_a__data__transfer__direction">DMA_data_transfer_direction</link></para></listitem>
+            <listitem><para><link linkend="d6/d0b/group___d_m_a__data__buffer__size">DMA_data_buffer_size</link></para></listitem>
+            <listitem><para><link linkend="d5/ddb/group___d_m_a__peripheral__incremented__mode">DMA_peripheral_incremented_mode</link></para></listitem>
+            <listitem><para><link linkend="d4/d3c/group___d_m_a__memory__incremented__mode">DMA_memory_incremented_mode</link></para></listitem>
+            <listitem><para><link linkend="d9/dfd/group___d_m_a__peripheral__data__size">DMA_peripheral_data_size</link></para></listitem>
+            <listitem><para><link linkend="db/d35/group___d_m_a__memory__data__size">DMA_memory_data_size</link></para></listitem>
+            <listitem><para><link linkend="d1/dba/group___d_m_a__circular__normal__mode">DMA_circular_normal_mode</link></para></listitem>
+            <listitem><para><link linkend="d8/da7/group___d_m_a__priority__level">DMA_priority_level</link></para></listitem>
+            <listitem><para><link linkend="d0/db9/group___d_m_a__fifo__direct__mode">DMA_fifo_direct_mode</link></para></listitem>
+            <listitem><para><link linkend="d4/de4/group___d_m_a__fifo__threshold__level">DMA_fifo_threshold_level</link></para></listitem>
+            <listitem><para><link linkend="d7/d63/group___d_m_a__memory__burst">DMA_memory_burst</link></para></listitem>
+            <listitem><para><link linkend="d1/d86/group___d_m_a__peripheral__burst">DMA_peripheral_burst</link></para></listitem>
+            <listitem><para><link linkend="d5/d42/group___d_m_a__fifo__status__level">DMA_fifo_status_level</link></para></listitem>
+            <listitem><para><link linkend="de/d17/group___d_m_a__flags__definition">DMA_flags_definition</link></para></listitem>
+            <listitem><para><link linkend="d2/dcc/group___d_m_a__interrupt__enable__definitions">DMA_interrupt_enable_definitions</link></para></listitem>
+            <listitem><para><link linkend="d4/d46/group___d_m_a__interrupts__definitions">DMA_interrupts_definitions</link></para></listitem>
+            <listitem><para><link linkend="dc/d99/group___d_m_a__peripheral__increment__offset">DMA_peripheral_increment_offset</link></para></listitem>
+            <listitem><para><link linkend="de/d34/group___d_m_a__flow__controller__definitions">DMA_flow_controller_definitions</link></para></listitem>
+            <listitem><para><link linkend="d8/d5c/group___d_m_a__memory__targets__definitions">DMA_memory_targets_definitions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d2c/group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8">IS_DMA_ALL_PERIPH</link> (((PERIPH) == DMA1_Stream0) || \
+                                   ((PERIPH) == DMA1_Stream1) || \
+                                   ((PERIPH) == DMA1_Stream2) || \
+                                   ((PERIPH) == DMA1_Stream3) || \
+                                   ((PERIPH) == DMA1_Stream4) || \
+                                   ((PERIPH) == DMA1_Stream5) || \
+                                   ((PERIPH) == DMA1_Stream6) || \
+                                   ((PERIPH) == DMA1_Stream7) || \
+                                   ((PERIPH) == DMA2_Stream0) || \
+                                   ((PERIPH) == DMA2_Stream1) || \
+                                   ((PERIPH) == DMA2_Stream2) || \
+                                   ((PERIPH) == DMA2_Stream3) || \
+                                   ((PERIPH) == DMA2_Stream4) || \
+                                   ((PERIPH) == DMA2_Stream5) || \
+                                   ((PERIPH) == DMA2_Stream6) || \
+                                   ((PERIPH) == DMA2_Stream7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d2c/group___d_m_a___exported___constants_1gaad08400369c8c129927cdb9cf1baae29">IS_DMA_ALL_CONTROLLER</link> (((CONTROLLER) == DMA1) || \
+                                           ((CONTROLLER) == DMA2))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="df/dbb/group___d_m_a__channel.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d15/group___d_m_a__data__transfer__direction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d0b/group___d_m_a__data__buffer__size.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/ddb/group___d_m_a__peripheral__incremented__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d3c/group___d_m_a__memory__incremented__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/dfd/group___d_m_a__peripheral__data__size.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d35/group___d_m_a__memory__data__size.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/dba/group___d_m_a__circular__normal__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/da7/group___d_m_a__priority__level.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/db9/group___d_m_a__fifo__direct__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/de4/group___d_m_a__fifo__threshold__level.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d63/group___d_m_a__memory__burst.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d86/group___d_m_a__peripheral__burst.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d42/group___d_m_a__fifo__status__level.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d17/group___d_m_a__flags__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/dcc/group___d_m_a__interrupt__enable__definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d46/group___d_m_a__interrupts__definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d99/group___d_m_a__peripheral__increment__offset.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d34/group___d_m_a__flow__controller__definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d5c/group___d_m_a__memory__targets__definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

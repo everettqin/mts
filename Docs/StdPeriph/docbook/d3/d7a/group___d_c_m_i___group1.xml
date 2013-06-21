@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d7a/group___d_c_m_i___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                  Initialization and Configuration functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1gab8f501f117d5695017e1dc5a611a5015">DCMI_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga1299076f1459525053ba4f2fa408ed2a">DCMI_Init</link> (
+<link linkend="d8/daa/struct_d_c_m_i___init_type_def">DCMI_InitTypeDef</link> * DCMI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga268eb4266fe7f294ee748e86f7b8add2">DCMI_StructInit</link> (
+<link linkend="d8/daa/struct_d_c_m_i___init_type_def">DCMI_InitTypeDef</link> * DCMI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga3bd4eb06314ed06dcb71ee91391b7ec4">DCMI_CROPConfig</link> (
+<link linkend="dd/dc1/struct_d_c_m_i___c_r_o_p_init_type_def">DCMI_CROPInitTypeDef</link> * DCMI_CROPInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga7139eecdc0f7975b42cd2f9c5644d0a5">DCMI_CROPCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga8888b27bd5aca62d250642468ea6cd6d">DCMI_SetEmbeddedSynchroCodes</link> (
+<link linkend="d4/de2/struct_d_c_m_i___codes_init_type_def">DCMI_CodesInitTypeDef</link> * DCMI_CodesInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga30a38a4858273c05e8f1b4677d744c13">DCMI_JPEGCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d3/d7a/group___d_c_m_i___group1_1gab8f501f117d5695017e1dc5a611a5015">
+                <title>void DCMI_DeInit (void)</title> <emphasis>Deinitializes the DCMI registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d7a/group___d_c_m_i___group1_1ga1299076f1459525053ba4f2fa408ed2a">
+                <title>void DCMI_Init (DCMI_InitTypeDef *DCMI_InitStruct)</title> <emphasis>Initializes the DCMI according to the specified parameters in the DCMI_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DCMI_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/daa/struct_d_c_m_i___init_type_def">DCMI_InitTypeDef</link> structure that contains the configuration information for the DCMI. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d7a/group___d_c_m_i___group1_1ga268eb4266fe7f294ee748e86f7b8add2">
+                <title>void DCMI_StructInit (DCMI_InitTypeDef *DCMI_InitStruct)</title> <emphasis>Fills each DCMI_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DCMI_InitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="d8/daa/struct_d_c_m_i___init_type_def">DCMI_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d7a/group___d_c_m_i___group1_1ga3bd4eb06314ed06dcb71ee91391b7ec4">
+                <title>void DCMI_CROPConfig (DCMI_CROPInitTypeDef *DCMI_CROPInitStruct)</title> <emphasis>Initializes the DCMI peripheral CROP mode according to the specified
+        parameters in the DCMI_CROPInitStruct.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function should be called before to enable and start the DCMI interface. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DCMI_CROPInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dd/dc1/struct_d_c_m_i___c_r_o_p_init_type_def">DCMI_CROPInitTypeDef</link> structure that contains the configuration information for the DCMI peripheral CROP mode. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d7a/group___d_c_m_i___group1_1ga7139eecdc0f7975b42cd2f9c5644d0a5">
+                <title>void DCMI_CROPCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the DCMI Crop feature.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function should be called before to enable and start the DCMI interface. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DCMI Crop feature. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d7a/group___d_c_m_i___group1_1ga8888b27bd5aca62d250642468ea6cd6d">
+                <title>void DCMI_SetEmbeddedSynchroCodes (DCMI_CodesInitTypeDef *DCMI_CodesInitStruct)</title> <emphasis>Sets the embedded synchronization codes.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry><link linkend="d4/de2/struct_d_c_m_i___codes_init_type_def">DCMI_CodesInitTypeDef</link>, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/de2/struct_d_c_m_i___codes_init_type_def">DCMI_CodesInitTypeDef</link> structure that contains the embedded synchronization codes for the DCMI peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d7a/group___d_c_m_i___group1_1ga30a38a4858273c05e8f1b4677d744c13">
+                <title>void DCMI_JPEGCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the DCMI JPEG format.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The Crop and Embedded Synchronization features cannot be used in this mode. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DCMI JPEG format. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

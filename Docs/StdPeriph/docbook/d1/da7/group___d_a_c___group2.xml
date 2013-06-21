@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/da7/group___d_a_c___group2">
+    <title>DMA management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DMA management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                          DMA management functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/da7/group___d_a_c___group2_1ga194cba38f60ace11658824f0250121f4">DAC_DMACmd</link> (
+uint32_t DAC_Channel, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d1/da7/group___d_a_c___group2_1ga194cba38f60ace11658824f0250121f4">
+                <title>void DAC_DMACmd (uint32_t DAC_Channel, FunctionalState NewState)</title> <emphasis>Enables or disables the specified DAC channel DMA request.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>When enabled DMA1 is generated when an external trigger (EXTI Line9, TIM2, TIM4, TIM5, TIM6, TIM7 or TIM8 but not a software trigger) occurs. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DAC_Channel, :</entry>
+                                <entry>
+<para>The selected DAC channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DAC_Channel_1: DAC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>DAC_Channel_2: DAC Channel2 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected DAC channel DMA request. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The DAC channel1 is mapped on DMA1 Stream 5 channel7 which must be already configured. </para>
+<simplesect/>
+<para>The DAC channel2 is mapped on DMA1 Stream 6 channel7 which must be already configured. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

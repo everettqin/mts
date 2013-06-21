@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d93/group___f_s_m_c___t_c_l_r___setup___time">
+    <title>FSMC_TCLR_Setup_Time</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d93/group___f_s_m_c___t_c_l_r___setup___time_1ga324848d0d9c0d2aad7ab70873b4a15e9">IS_FSMC_TCLR_TIME</link> ((TIME) &lt;= 0xFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

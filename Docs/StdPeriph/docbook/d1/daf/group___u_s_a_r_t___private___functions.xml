@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/daf/group___u_s_a_r_t___private___functions">
+    <title>USART_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d4/dab/group___u_s_a_r_t___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d4/da1/group___u_s_a_r_t___group2">Data transfers functions</link></para></listitem>
+            <listitem><para><link linkend="dd/df1/group___u_s_a_r_t___group3">MultiProcessor Communication functions</link></para></listitem>
+            <listitem><para><link linkend="d9/dc8/group___u_s_a_r_t___group4">LIN mode functions</link></para></listitem>
+            <listitem><para><link linkend="d1/dee/group___u_s_a_r_t___group5">Halfduplex mode function</link></para></listitem>
+            <listitem><para><link linkend="de/df6/group___u_s_a_r_t___group6">Smartcard mode functions</link></para></listitem>
+            <listitem><para><link linkend="d5/d1e/group___u_s_a_r_t___group7">IrDA mode functions</link></para></listitem>
+            <listitem><para><link linkend="d9/db5/group___u_s_a_r_t___group8">DMA transfers management functions</link></para></listitem>
+            <listitem><para><link linkend="db/d6c/group___u_s_a_r_t___group9">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d4/dab/group___u_s_a_r_t___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/da1/group___u_s_a_r_t___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/df1/group___u_s_a_r_t___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/dc8/group___u_s_a_r_t___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/dee/group___u_s_a_r_t___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/df6/group___u_s_a_r_t___group6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d1e/group___u_s_a_r_t___group7.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/db5/group___u_s_a_r_t___group8.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d6c/group___u_s_a_r_t___group9.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

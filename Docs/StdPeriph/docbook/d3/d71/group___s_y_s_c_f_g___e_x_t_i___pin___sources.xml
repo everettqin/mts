@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources">
+    <title>SYSCFG_EXTI_Pin_Sources</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga85e9f2bccca02c8f63fa5d486bb42393">EXTI_PinSource0</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gadc4c0152b4bd194f872061c03cc9f5d5">EXTI_PinSource1</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga6306a0c8e41b63c45387146670e63fbd">EXTI_PinSource2</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga3c1315cbd350e6da814124d523657202">EXTI_PinSource3</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gad540175ce80056822bd017d03fe64bb7">EXTI_PinSource4</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga95d0ef8a0d250cf48ca1fa7d9787f362">EXTI_PinSource5</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gaa3d69b7d174bf6bffcb9f83c96b0cdad">EXTI_PinSource6</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga976aa2587515a7008eeaefd56c202669">EXTI_PinSource7</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga8847240d3d4539b3ad228f313500947a">EXTI_PinSource8</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga38ab8ede0a3daa3678176804cd1f0965">EXTI_PinSource9</link> ((uint8_t)0x09)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga7480fcdcea08747b4a1fa26fe8593faa">EXTI_PinSource10</link> ((uint8_t)0x0A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga823961e32c95720bbcac6511dce36eca">EXTI_PinSource11</link> ((uint8_t)0x0B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga87dd83e2e115acaed3f9d4770a731c38">EXTI_PinSource12</link> ((uint8_t)0x0C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga21c2e799449919491f56b774dcb547e2">EXTI_PinSource13</link> ((uint8_t)0x0D)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gadf2623bff33cc8e7697fdb2641998b22">EXTI_PinSource14</link> ((uint8_t)0x0E)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gace55270207b97b533ac87ab0a7047857">EXTI_PinSource15</link> ((uint8_t)0x0F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga8d63ba3b1a3f9d69c8539304431793c1">IS_EXTI_PIN_SOURCE</link> (((PINSOURCE) == EXTI_PinSource0) || \
+                                       ((PINSOURCE) == EXTI_PinSource1) || \
+                                       ((PINSOURCE) == EXTI_PinSource2) || \
+                                       ((PINSOURCE) == EXTI_PinSource3) || \
+                                       ((PINSOURCE) == EXTI_PinSource4) || \
+                                       ((PINSOURCE) == EXTI_PinSource5) || \
+                                       ((PINSOURCE) == EXTI_PinSource6) || \
+                                       ((PINSOURCE) == EXTI_PinSource7) || \
+                                       ((PINSOURCE) == EXTI_PinSource8) || \
+                                       ((PINSOURCE) == EXTI_PinSource9) || \
+                                       ((PINSOURCE) == EXTI_PinSource10) || \
+                                       ((PINSOURCE) == EXTI_PinSource11) || \
+                                       ((PINSOURCE) == EXTI_PinSource12) || \
+                                       ((PINSOURCE) == EXTI_PinSource13) || \
+                                       ((PINSOURCE) == EXTI_PinSource14) || \
+                                       ((PINSOURCE) == EXTI_PinSource15))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

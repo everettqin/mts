@@ -1,0 +1,764 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/deb/group___s_p_i___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                  Initialization and Configuration functions
+ ===============================================================================  
+
+  This section provides a set of functions allowing to initialize the SPI Direction,
+  SPI Mode, SPI Data Size, SPI Polarity, SPI Phase, SPI NSS Management, SPI Baud
+  Rate Prescaler, SPI First Bit and SPI CRC Polynomial.
+  
+  The SPI_Init() function follows the SPI configuration procedures for Master mode
+  and Slave mode (details for these procedures are available in reference manual
+  (RM0090)).</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1gabe36880945fa56785283a9c0092124cc">SPI_I2S_DeInit</link> (
+SPI_TypeDef * SPIx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga8dacc1dc48bf08c0f12da409f4889037">SPI_Init</link> (
+SPI_TypeDef * SPIx, <link linkend="dc/dc4/struct_s_p_i___init_type_def">SPI_InitTypeDef</link> * SPI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga53661884ae4a9640df7cbc59187782f7">I2S_Init</link> (
+SPI_TypeDef * SPIx, <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> * I2S_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga9a0116f88cc2c4478c270f05608703f1">SPI_StructInit</link> (
+<link linkend="dc/dc4/struct_s_p_i___init_type_def">SPI_InitTypeDef</link> * SPI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga7470ec1d0759fdeeb42c7fe71a3b41b7">I2S_StructInit</link> (
+<link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> * I2S_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1gaa31357879a65ee1ed7223f3b9114dcf3">SPI_Cmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1gafe061c71bbc5b4224f3f2884dc53739e">I2S_Cmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1gafc82e90841d7879535d655c035709cb1">SPI_DataSizeConfig</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_DataSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga166171c421fc51da7714723524d41b45">SPI_BiDirectionalLineConfig</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_Direction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga56fc508a482f032f9eb80e4c63184126">SPI_NSSInternalSoftwareConfig</link> (
+SPI_TypeDef * SPIx, uint16_t SPI_NSSInternalSoft)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga4ec54abdedf6cd17403d853a926d91c1">SPI_SSOutputCmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga74594bf32e3bf4905ac7a2deef8eb475">SPI_TIModeCmd</link> (
+SPI_TypeDef * SPIx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/deb/group___s_p_i___group1_1ga60082947bedfe9efc233405be2a7bec2">I2S_FullDuplexConfig</link> (
+SPI_TypeDef * I2Sxext, <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> * I2S_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d8/deb/group___s_p_i___group1_1gabe36880945fa56785283a9c0092124cc">
+                <title>void SPI_I2S_DeInit (SPI_TypeDef *SPIx)</title> <emphasis>Deinitialize the SPIx peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>To select the SPIx/I2Sx peripheral, where x can be: 1, 2 or 3 in SPI mode or 2 or 3 in I2S mode.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The extended I2S blocks (ie. I2S2ext and I2S3ext blocks) are deinitialized when the relative I2S peripheral is deinitialized (the extended block&apos;s clock is managed by the I2S peripheral clock).</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1ga8dacc1dc48bf08c0f12da409f4889037">
+                <title>void SPI_Init (SPI_TypeDef *SPIx, SPI_InitTypeDef *SPI_InitStruct)</title> <emphasis>Initializes the SPIx peripheral according to the specified 
+        parameters in the SPI_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the SPI peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dc/dc4/struct_s_p_i___init_type_def">SPI_InitTypeDef</link> structure that contains the configuration information for the specified SPI peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1ga53661884ae4a9640df7cbc59187782f7">
+                <title>void I2S_Init (SPI_TypeDef *SPIx, I2S_InitTypeDef *I2S_InitStruct)</title> <emphasis>Initializes the SPIx peripheral according to the specified 
+        parameters in the I2S_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>where x can be 2 or 3 to select the SPI peripheral (configured in I2S mode). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2S_InitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> structure that contains the configuration information for the specified SPI peripheral configured in I2S mode.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The function calculates the optimal prescaler needed to obtain the most accurate audio frequency (depending on the I2S clock source, the PLL values and the product configuration). But in case the prescaler value is greater than 511, the default value (0x02) will be configured instead.</para>
+<simplesect/>
+<para>if an external clock is used as source clock for the I2S, then the define I2S_EXTERNAL_CLOCK_VAL in file stm32f4xx_conf.h should be enabled and set to the value of the the source clock frequency (in Hz).</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1ga9a0116f88cc2c4478c270f05608703f1">
+                <title>void SPI_StructInit (SPI_InitTypeDef *SPI_InitStruct)</title> <emphasis>Fills each SPI_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPI_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dc/dc4/struct_s_p_i___init_type_def">SPI_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1ga7470ec1d0759fdeeb42c7fe71a3b41b7">
+                <title>void I2S_StructInit (I2S_InitTypeDef *I2S_InitStruct)</title> <emphasis>Fills each I2S_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2S_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1gaa31357879a65ee1ed7223f3b9114dcf3">
+                <title>void SPI_Cmd (SPI_TypeDef *SPIx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified SPI peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the SPI peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the SPIx peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1gafe061c71bbc5b4224f3f2884dc53739e">
+                <title>void I2S_Cmd (SPI_TypeDef *SPIx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified SPI peripheral (in I2S mode).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>where x can be 2 or 3 to select the SPI peripheral (or I2Sxext for full duplex mode). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the SPIx peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1gafc82e90841d7879535d655c035709cb1">
+                <title>void SPI_DataSizeConfig (SPI_TypeDef *SPIx, uint16_t SPI_DataSize)</title> <emphasis>Configures the data size for the selected SPI.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the SPI peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_DataSize, :</entry>
+                                <entry>
+<para>specifies the SPI data size. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SPI_DataSize_16b: Set data frame format to 16bit </para>
+</listitem>
+<listitem>
+<para>SPI_DataSize_8b: Set data frame format to 8bit </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1ga166171c421fc51da7714723524d41b45">
+                <title>void SPI_BiDirectionalLineConfig (SPI_TypeDef *SPIx, uint16_t SPI_Direction)</title> <emphasis>Selects the data transfer direction in bidirectional mode for the specified SPI.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the SPI peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_Direction, :</entry>
+                                <entry>
+<para>specifies the data transfer direction in bidirectional mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SPI_Direction_Tx: Selects Tx transmission direction </para>
+</listitem>
+<listitem>
+<para>SPI_Direction_Rx: Selects Rx receive direction </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1ga56fc508a482f032f9eb80e4c63184126">
+                <title>void SPI_NSSInternalSoftwareConfig (SPI_TypeDef *SPIx, uint16_t SPI_NSSInternalSoft)</title> <emphasis>Configures internally by software the NSS pin for the selected SPI.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the SPI peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>SPI_NSSInternalSoft, :</entry>
+                                <entry>
+<para>specifies the SPI NSS internal state. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SPI_NSSInternalSoft_Set: Set NSS pin internally </para>
+</listitem>
+<listitem>
+<para>SPI_NSSInternalSoft_Reset: Reset NSS pin internally </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1ga4ec54abdedf6cd17403d853a926d91c1">
+                <title>void SPI_SSOutputCmd (SPI_TypeDef *SPIx, FunctionalState NewState)</title> <emphasis>Enables or disables the SS output for the selected SPI.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the SPI peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the SPIx SS output. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1ga74594bf32e3bf4905ac7a2deef8eb475">
+                <title>void SPI_TIModeCmd (SPI_TypeDef *SPIx, FunctionalState NewState)</title> <emphasis>Enables or disables the SPIx/I2Sx DMA interface.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function can be called only after the <link linkend="dd/d3c/group___s_p_i_1ga8dacc1dc48bf08c0f12da409f4889037">SPI_Init()</link> function has been called. </para>
+<simplesect/>
+<para>When TI mode is selected, the control bits SSM, SSI, CPOL and CPHA are not taken into consideration and are configured by hardware respectively to the TI mode requirements.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SPIx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected SPI TI communication mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/deb/group___s_p_i___group1_1ga60082947bedfe9efc233405be2a7bec2">
+                <title>void I2S_FullDuplexConfig (SPI_TypeDef *I2Sxext, I2S_InitTypeDef *I2S_InitStruct)</title> <emphasis>Configures the full duplex mode for the I2Sx peripheral using its
+        extension I2Sxext according to the specified parameters in the 
+        I2S_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>I2Sxext, :</entry>
+                                <entry>
+<para>where x can be 2 or 3 to select the I2S peripheral extension block. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>I2S_InitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="db/dae/struct_i2_s___init_type_def">I2S_InitTypeDef</link> structure that contains the configuration information for the specified I2S peripheral extension.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The structure pointed by I2S_InitStruct parameter should be the same used for the master I2S peripheral. In this case, if the master is configured as transmitter, the slave will be receiver and vice versa. Or you can force a different mode by modifying the field I2S_Mode to the value I2S_SlaveRx or I2S_SlaveTx indepedently of the master configuration.</para>
+<simplesect/>
+<para>The I2S full duplex extension can be configured in slave mode only.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

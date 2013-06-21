@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d8a/group___f_l_a_s_h___flags">
+    <title>FLASH_Flags</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9">FLASH_FLAG_EOP</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1">FLASH_FLAG_OPERR</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266">FLASH_FLAG_WRPERR</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd">FLASH_FLAG_PGAERR</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga88a93907641f5eeb4091a26b84c94897">FLASH_FLAG_PGPERR</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68">FLASH_FLAG_PGSERR</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7">FLASH_FLAG_BSY</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga82f8c6104c348d6aa47c7658ed3b6b36">IS_FLASH_CLEAR_FLAG</link> ((((FLAG) &amp; (uint32_t)0xFFFFFF0C) == 0x00000000) &amp;&amp; ((FLAG) != 0x00000000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga61b60325cd94e1608e34afc7aff20ee4">IS_FLASH_GET_FLAG</link> (((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9">FLASH_FLAG_EOP</link>) || ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1">FLASH_FLAG_OPERR</link>) || \
+                                  ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266">FLASH_FLAG_WRPERR</link>) || ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd">FLASH_FLAG_PGAERR</link>) || \
+                                  ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga88a93907641f5eeb4091a26b84c94897">FLASH_FLAG_PGPERR</link>) || ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68">FLASH_FLAG_PGSERR</link>) || \
+                                  ((FLAG) == <link linkend="d1/d8a/group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7">FLASH_FLAG_BSY</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d1/d8a/group___f_l_a_s_h___flags_1gaf043ba4d8f837350bfc7754a99fae5a9">
+                <title>#define FLASH_FLAG_EOP</title>                
+<para>FLASH End of Operation flag </para>
+
+                <para>Definition at line 224 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d1/d8a/group___f_l_a_s_h___flags_1gad8a96ceda91fcf0d1299da933b5816f1">
+                <title>#define FLASH_FLAG_OPERR</title>                
+<para>FLASH operation Error flag </para>
+
+                <para>Definition at line 225 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d1/d8a/group___f_l_a_s_h___flags_1ga6abf64f916992585899369166db3f266">
+                <title>#define FLASH_FLAG_WRPERR</title>                
+<para>FLASH Write protected error flag </para>
+
+                <para>Definition at line 226 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d1/d8a/group___f_l_a_s_h___flags_1ga2c3f4dbea065f8ea2987eada4dab30bd">
+                <title>#define FLASH_FLAG_PGAERR</title>                
+<para>FLASH Programming Alignment error flag </para>
+
+                <para>Definition at line 227 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d1/d8a/group___f_l_a_s_h___flags_1ga88a93907641f5eeb4091a26b84c94897">
+                <title>#define FLASH_FLAG_PGPERR</title>                
+<para>FLASH Programming Parallelism error flag </para>
+
+                <para>Definition at line 228 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d1/d8a/group___f_l_a_s_h___flags_1ga25b80c716320e667162846da8be09b68">
+                <title>#define FLASH_FLAG_PGSERR</title>                
+<para>FLASH Programming Sequence error flag </para>
+
+                <para>Definition at line 229 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d1/d8a/group___f_l_a_s_h___flags_1gad3bc368f954ad7744deda3315da2fff7">
+                <title>#define FLASH_FLAG_BSY</title>                
+<para>FLASH Busy flag </para>
+
+                <para>Definition at line 230 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

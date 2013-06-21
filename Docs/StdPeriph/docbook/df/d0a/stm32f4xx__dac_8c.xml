@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d0a/stm32f4xx__dac_8c">
+    <title>stm32f4xx_dac.c File Reference</title>
+    <programlisting>#include stm32f4xx_dac.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga8a5812a1d5ced986bb997a4bb7ae697d">CR_CLEAR_MASK</link> ((uint32_t)0x00000FFE)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga6401668f65168b2b689b49155f380bdd">DUAL_SWTRIG_SET</link> ((uint32_t)0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1gacd3ce00f8b25892532af267f26932ed7">DUAL_SWTRIG_RESET</link> ((uint32_t)0xFFFFFFFC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1gaf1305e3b7cfb0f898678baeab6e91cbf">DHR12R1_OFFSET</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga157b0fbccea090637eea09172fdd6a39">DHR12R2_OFFSET</link> ((uint32_t)0x00000014)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga2893b0491ec29a95fd061e5e0fa029e3">DHR12RD_OFFSET</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc4/group___d_a_c_1ga051bab7263211bd232d13665339c1745">DOR_OFFSET</link> ((uint32_t)0x0000002C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1ga1fae225204e1e049d6795319e99ba8bc">DAC_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1ga7c59850468ed4bf0659663fe495441da">DAC_Init</link> (
+uint32_t DAC_Channel, <link linkend="da/d17/struct_d_a_c___init_type_def">DAC_InitTypeDef</link> * DAC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1gadfc270974d54cb5fa5f92556015c4046">DAC_StructInit</link> (
+<link linkend="da/d17/struct_d_a_c___init_type_def">DAC_InitTypeDef</link> * DAC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1ga323e61530d7fa9396c3bce9edb61f733">DAC_Cmd</link> (
+uint32_t DAC_Channel, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1ga46f9f7f6b9520a86e300fe966afe5fb3">DAC_SoftwareTriggerCmd</link> (
+uint32_t DAC_Channel, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1gab4d3b364a6b184dcd65f3b294ebf56dc">DAC_DualSoftwareTriggerCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1gabd51ae6880821d4dcd923969ec19a19e">DAC_WaveGenerationCmd</link> (
+uint32_t DAC_Channel, uint32_t DAC_Wave, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1gad06b4230d2b17d1d13f41dce4c782461">DAC_SetChannel1Data</link> (
+uint32_t DAC_Align, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1ga44e12006ec186791378d132da8541552">DAC_SetChannel2Data</link> (
+uint32_t DAC_Align, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d11/group___d_a_c___group1_1ga4ca2cfdf56ab35a23f2517f23d7fbb24">DAC_SetDualChannelData</link> (
+uint32_t DAC_Align, uint16_t Data2, uint16_t Data1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="df/d11/group___d_a_c___group1_1ga51274838de1e5dd012a82d7f44d7a50b">DAC_GetDataOutputValue</link> (
+uint32_t DAC_Channel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/da7/group___d_a_c___group2_1ga194cba38f60ace11658824f0250121f4">DAC_DMACmd</link> (
+uint32_t DAC_Channel, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d7d/group___d_a_c___group3_1ga12d7495b30eae40c2570118cabbda1c3">DAC_ITConfig</link> (
+uint32_t DAC_Channel, uint32_t DAC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d2/d7d/group___d_a_c___group3_1ga9ee60b78f0ccd23bfbe54bce2a2f909b">DAC_GetFlagStatus</link> (
+uint32_t DAC_Channel, uint32_t DAC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d7d/group___d_a_c___group3_1ga49543c52786d70d6b6311f3fee856d37">DAC_ClearFlag</link> (
+uint32_t DAC_Channel, uint32_t DAC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d2/d7d/group___d_a_c___group3_1ga541aac3b50db3a8a806ec5ef30679aca">DAC_GetITStatus</link> (
+uint32_t DAC_Channel, uint32_t DAC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d7d/group___d_a_c___group3_1ga12d90e69a2642997136b23224d180641">DAC_ClearITPendingBit</link> (
+uint32_t DAC_Channel, uint32_t DAC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the following functionalities of the Digital-to-Analog Converter (DAC) peripheral: </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011<itemizedlist>
+<listitem>
+<para>DAC channels configuration: trigger, output buffer, data format</para>
+</listitem><listitem>
+<para>DMA management</para>
+</listitem><listitem>
+<para>Interrupts and flags management</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<programlisting><literallayout>*    
+*          ===================================================================
+*                             DAC Peripheral features
+*          ===================================================================
+*          
+*          DAC Channels
+*          =============  
+*          The device integrates two 12-bit Digital Analog Converters that can 
+*          be used independently or simultaneously (dual mode):
+*            1- DAC channel1 with DAC_OUT1 (PA4) as output
+*            1- DAC channel2 with DAC_OUT2 (PA5) as output
+*
+*          DAC Triggers
+*          =============
+*          Digital to Analog conversion can be non-triggered using DAC_Trigger_None
+*          and DAC_OUT1/DAC_OUT2 is available once writing to DHRx register 
+*          using DAC_SetChannel1Data() / DAC_SetChannel2Data() functions.
+*   
+*         Digital to Analog conversion can be triggered by:
+*             1- External event: EXTI Line 9 (any GPIOx_Pin9) using DAC_Trigger_Ext_IT9.
+*                The used pin (GPIOx_Pin9) must be configured in input mode.
+*
+*             2- Timers TRGO: TIM2, TIM4, TIM5, TIM6, TIM7 and TIM8 
+*                (DAC_Trigger_T2_TRGO, DAC_Trigger_T4_TRGO...)
+*                The timer TRGO event should be selected using TIM_SelectOutputTrigger()
+*
+*             3- Software using DAC_Trigger_Software
+*
+*          DAC Buffer mode feature
+*          ========================  
+*          Each DAC channel integrates an output buffer that can be used to 
+*          reduce the output impedance, and to drive external loads directly
+*          without having to add an external operational amplifier.
+*          To enable, the output buffer use  
+*              DAC_InitStructure.DAC_OutputBuffer = DAC_OutputBuffer_Enable;
+*          
+*          Refer to the device datasheet for more details about output 
+*          impedance value with and without output buffer.
+*          
+*          DAC wave generation feature
+*          =============================      
+*          Both DAC channels can be used to generate
+*             1- Noise wave using DAC_WaveGeneration_Noise
+*             2- Triangle wave using DAC_WaveGeneration_Triangle
+*        
+*          Wave generation can be disabled using DAC_WaveGeneration_None
+*
+*          DAC data format
+*          ================   
+*          The DAC data format can be:
+*             1- 8-bit right alignment using DAC_Align_8b_R
+*             2- 12-bit left alignment using DAC_Align_12b_L
+*             3- 12-bit right alignment using DAC_Align_12b_R
+*
+*          DAC data value to voltage correspondence  
+*          ========================================  
+*          The analog output voltage on each DAC channel pin is determined
+*          by the following equation: 
+*          DAC_OUTx = VREF+ * DOR / 4095
+*          with  DOR is the Data Output Register
+*                VEF+ is the input voltage reference (refer to the device datasheet)
+*          e.g. To set DAC_OUT1 to 0.7V, use
+*            DAC_SetChannel1Data(DAC_Align_12b_R, 868);
+*          Assuming that VREF+ = 3.3V, DAC_OUT1 = (3.3 * 868) / 4095 = 0.7V
+*
+*          DMA requests 
+*          =============    
+*          A DMA1 request can be generated when an external trigger (but not
+*          a software trigger) occurs if DMA1 requests are enabled using
+*          DAC_DMACmd()
+*          DMA1 requests are mapped as following:
+*             1- DAC channel1 : mapped on DMA1 Stream5 channel7 which must be 
+*                               already configured
+*             2- DAC channel2 : mapped on DMA1 Stream6 channel7 which must be 
+*                               already configured
+*
+*          ===================================================================      
+*                              How to use this driver 
+*          ===================================================================          
+*            - DAC APB clock must be enabled to get write access to DAC
+*              registers using
+*              RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE)
+*            - Configure DAC_OUTx (DAC_OUT1: PA4, DAC_OUT2: PA5) in analog mode.
+*            - Configure the DAC channel using DAC_Init() function
+*            - Enable the DAC channel using DAC_Cmd() function
+* 
+*  </literallayout></programlisting></para>
+
+<para><formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.c</para>
+    </simplesect>
+</section>

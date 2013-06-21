@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d5e/struct_i2_c___init_type_def">
+<title>I2C_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dfa/stm32f4xx__i2c_8h">&lt;stm32f4xx_i2c.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t I2C_ClockSpeed</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2C_Mode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2C_DutyCycle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2C_OwnAddress1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2C_Ack</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2C_AcknowledgedAddress</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>I2C Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t I2C_ClockSpeed</title>                
+<para>Specifies the clock frequency. This parameter must be set to a value lower than 400kHz </para>
+
+                <para>Definition at line 50 of file stm32f4xx_i2c.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_i2c.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t I2C_Mode</title>                
+<para>Specifies the I2C mode. This parameter can be a value of <link linkend="d3/de9/group___i2_c__mode">I2C_mode</link> </para>
+
+                <para>Definition at line 53 of file stm32f4xx_i2c.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_i2c.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t I2C_DutyCycle</title>                
+<para>Specifies the I2C fast mode duty cycle. This parameter can be a value of <link linkend="d0/d14/group___i2_c__duty__cycle__in__fast__mode">I2C_duty_cycle_in_fast_mode</link> </para>
+
+                <para>Definition at line 56 of file stm32f4xx_i2c.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_i2c.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t I2C_OwnAddress1</title>                
+<para>Specifies the first device own address. This parameter can be a 7-bit or 10-bit address. </para>
+
+                <para>Definition at line 59 of file stm32f4xx_i2c.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_i2c.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t I2C_Ack</title>                
+<para>Enables or disables the acknowledgement. This parameter can be a value of <link linkend="dd/d07/group___i2_c__acknowledgement">I2C_acknowledgement</link> </para>
+
+                <para>Definition at line 62 of file stm32f4xx_i2c.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_i2c.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t I2C_AcknowledgedAddress</title>                
+<para>Specifies if 7-bit or 10-bit address is acknowledged. This parameter can be a value of <link linkend="d0/dde/group___i2_c__acknowledged__address">I2C_acknowledged_address</link> </para>
+
+                <para>Definition at line 65 of file stm32f4xx_i2c.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_i2c.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

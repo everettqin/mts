@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/de7/struct_u_s_a_r_t___clock_init_type_def">
+<title>USART_ClockInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/d3d/stm32f4xx__usart_8h">&lt;stm32f4xx_usart.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t USART_Clock</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t USART_CPOL</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t USART_CPHA</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t USART_LastBit</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>USART Clock Init Structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t USART_Clock</title>                
+<para>Specifies whether the USART clock is enabled or disabled. This parameter can be a value of <link linkend="d2/dad/group___u_s_a_r_t___clock">USART_Clock</link> </para>
+
+                <para>Definition at line 84 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t USART_CPOL</title>                
+<para>Specifies the steady state of the serial clock. This parameter can be a value of <link linkend="d4/df5/group___u_s_a_r_t___clock___polarity">USART_Clock_Polarity</link> </para>
+
+                <para>Definition at line 87 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t USART_CPHA</title>                
+<para>Specifies the clock transition on which the bit capture is made. This parameter can be a value of <link linkend="da/d39/group___u_s_a_r_t___clock___phase">USART_Clock_Phase</link> </para>
+
+                <para>Definition at line 90 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t USART_LastBit</title>                
+<para>Specifies whether the clock pulse corresponding to the last transmitted data bit (MSB) has to be output on the SCLK pin in synchronous mode. This parameter can be a value of <link linkend="d0/df2/group___u_s_a_r_t___last___bit">USART_Last_Bit</link> </para>
+
+                <para>Definition at line 93 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

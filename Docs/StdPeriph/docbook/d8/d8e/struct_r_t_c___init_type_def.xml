@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d8e/struct_r_t_c___init_type_def">
+<title>RTC_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/dbb/stm32f4xx__rtc_8h">&lt;stm32f4xx_rtc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t RTC_HourFormat</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t RTC_AsynchPrediv</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t RTC_SynchPrediv</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>RTC Init structures definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t RTC_HourFormat</title>                
+<para><programlisting><literallayout> Specifies the RTC Hour Format.
+</literallayout></programlisting> This parameter can be a value of <link linkend="df/d0d/group___r_t_c___hour___formats">RTC_Hour_Formats</link> </para>
+
+                <para>Definition at line 49 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t RTC_AsynchPrediv</title>                
+<para><programlisting><literallayout> Specifies the RTC Asynchronous Predivider value.
+</literallayout></programlisting> This parameter must be set to a value lower than 0x7F </para>
+
+                <para>Definition at line 52 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t RTC_SynchPrediv</title>                
+<para><programlisting><literallayout> Specifies the RTC Synchronous Predivider value.
+</literallayout></programlisting> This parameter must be set to a value lower than 0x7FFF </para>
+
+                <para>Definition at line 55 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

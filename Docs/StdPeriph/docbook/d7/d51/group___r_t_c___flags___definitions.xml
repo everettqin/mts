@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d51/group___r_t_c___flags___definitions">
+    <title>RTC_Flags_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga01cba90a7ca51a928f72d28b6fe0d2ac">RTC_FLAG_RECALPF</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga3abf1af75c6ae88ddabe4b8a26634f99">RTC_FLAG_TAMP1F</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga74656ea8ff41be61a3734dc27367e039">RTC_FLAG_TSOVF</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga9b9ac7de7718bfe0ff77e1fd1193744b">RTC_FLAG_TSF</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gafcadab331b0193e82c7f6b037044f194">RTC_FLAG_WUTF</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gabb7bd65e83b346f42e28091ef1e643f5">RTC_FLAG_ALRBF</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gaf9e1a4b5eedd674d7b35ae334877ba12">RTC_FLAG_ALRAF</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga8d973d7f6b07e80743e05d6822ff2147">RTC_FLAG_INITF</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga78c4245996bef8d5f39226b6e37ed9c0">RTC_FLAG_RSF</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gae6a2d26d4b10670f6506b14971f52fd2">RTC_FLAG_INITS</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga8fd11878d6285ab5d35966d598d5e6f9">RTC_FLAG_SHPF</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga24648116b32442d30da74c497e2e88ae">RTC_FLAG_WUTWF</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gae9dd4b5b8059937c3422bc1e3eae3ced">RTC_FLAG_ALRBWF</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1gaf4913efa96d03ded991b1cdddd6b7823">RTC_FLAG_ALRAWF</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga2126725a0d48f1c40f42566e249620ef">IS_RTC_GET_FLAG</link> (((FLAG) == RTC_FLAG_TSOVF) || ((FLAG) == RTC_FLAG_TSF) || \
+                               ((FLAG) == RTC_FLAG_WUTF) || ((FLAG) == RTC_FLAG_ALRBF) || \
+                               ((FLAG) == RTC_FLAG_ALRAF) || ((FLAG) == RTC_FLAG_INITF) || \
+                               ((FLAG) == RTC_FLAG_RSF) || ((FLAG) == RTC_FLAG_WUTWF) || \
+                               ((FLAG) == RTC_FLAG_ALRBWF) || ((FLAG) == RTC_FLAG_ALRAWF) || \
+                               ((FLAG) == RTC_FLAG_TAMP1F) || ((FLAG) == RTC_FLAG_RECALPF) || \
+                                ((FLAG) == RTC_FLAG_SHPF))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d51/group___r_t_c___flags___definitions_1ga5f8a9327a258f16f29703fa3e3cc8af7">IS_RTC_CLEAR_FLAG</link> (((FLAG) != (uint32_t)RESET) &amp;&amp; (((FLAG) &amp; 0xFFFF00DF) == (uint32_t)RESET))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

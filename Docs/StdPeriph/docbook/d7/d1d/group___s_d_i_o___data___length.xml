@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d1d/group___s_d_i_o___data___length">
+    <title>SDIO_Data_Length</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d1d/group___s_d_i_o___data___length_1ga57dd64db3f69d18625ea8ca82c009fad">IS_SDIO_DATA_LENGTH</link> ((LENGTH) &lt;= 0x01FFFFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

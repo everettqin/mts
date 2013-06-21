@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d2e/group___c_a_n___tx">
+    <title>CAN_Tx</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d2e/group___c_a_n___tx_1ga218b3e1380c4d49163c91a1af904e44c">IS_CAN_TRANSMITMAILBOX</link> ((TRANSMITMAILBOX) &lt;= ((uint8_t)0x02))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d2e/group___c_a_n___tx_1gaf059e4383fa69dec6e18216b22a87f51">IS_CAN_STDID</link> ((STDID) &lt;= ((uint32_t)0x7FF))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d2e/group___c_a_n___tx_1ga62dbc2163ad6751b3f921e717b00e9f2">IS_CAN_EXTID</link> ((EXTID) &lt;= ((uint32_t)0x1FFFFFFF))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d2e/group___c_a_n___tx_1ga6109469a6a2792b3e7c6be520ea50d36">IS_CAN_DLC</link> ((DLC) &lt;= ((uint8_t)0x08))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d95/group___r_c_c___private___functions">
+    <title>RCC_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="dd/d51/group___r_c_c___group1">Internal and external clocks, PLL, CSS and MCO configuration functions</link></para></listitem>
+            <listitem><para><link linkend="de/dbb/group___r_c_c___group2">System AHB and APB busses clocks configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d4/dca/group___r_c_c___group3">Peripheral clocks configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d8/dfc/group___r_c_c___group4">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="dd/d51/group___r_c_c___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/dbb/group___r_c_c___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/dca/group___r_c_c___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/dfc/group___r_c_c___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

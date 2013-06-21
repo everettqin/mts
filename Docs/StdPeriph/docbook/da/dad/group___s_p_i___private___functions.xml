@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/dad/group___s_p_i___private___functions">
+    <title>SPI_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d8/deb/group___s_p_i___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d9/dbf/group___s_p_i___group2">Data transfers functions</link></para></listitem>
+            <listitem><para><link linkend="d8/d3b/group___s_p_i___group3">Hardware CRC Calculation functions</link></para></listitem>
+            <listitem><para><link linkend="d6/d31/group___s_p_i___group4">DMA transfers management functions</link></para></listitem>
+            <listitem><para><link linkend="d9/d34/group___s_p_i___group5">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d8/deb/group___s_p_i___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/dbf/group___s_p_i___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d3b/group___s_p_i___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d31/group___s_p_i___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d34/group___s_p_i___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

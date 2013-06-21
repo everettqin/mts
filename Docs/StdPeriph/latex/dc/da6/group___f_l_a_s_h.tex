@@ -1,0 +1,935 @@
+\hypertarget{group___f_l_a_s_h}{\section{F\-L\-A\-S\-H}
+\label{group___f_l_a_s_h}\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}}
+}
+
+
+F\-L\-A\-S\-H driver modules.  
+
+
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___f_l_a_s_h___exported___constants}{F\-L\-A\-S\-H\-\_\-\-Exported\-\_\-\-Constants}
+\item 
+\hyperlink{group___f_l_a_s_h___private___functions}{F\-L\-A\-S\-H\-\_\-\-Private\-\_\-\-Functions}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___f_l_a_s_h_gaa2c907f663ac6d7fb5c311d08589b4f5}{\#define {\bfseries S\-E\-C\-T\-O\-R\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F\-F07)}\label{group___f_l_a_s_h_gaa2c907f663ac6d7fb5c311d08589b4f5}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \{ \\*
+{\bfseries F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y} = 1, 
+{\bfseries F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-G\-S}, 
+{\bfseries F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-G\-P}, 
+{\bfseries F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-G\-A}, 
+\\*
+{\bfseries F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P}, 
+{\bfseries F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M}, 
+{\bfseries F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N}, 
+{\bfseries F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E}
+ \}
+\begin{DoxyCompactList}\small\item\em F\-L\-A\-S\-H Status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___f_l_a_s_h_ga54bcb96270215c752c3479c8c9e438c0}{F\-L\-A\-S\-H\-\_\-\-Set\-Latency} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-Latency)
+\begin{DoxyCompactList}\small\item\em Sets the code latency value. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_gafaa24b6176b587bdda46abbe755af986}{F\-L\-A\-S\-H\-\_\-\-Prefetch\-Buffer\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Prefetch Buffer. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga7d5a9a35e792d844c329d7f1656b50ae}{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Instruction Cache feature. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga937a824493f3c6949289401a767a0360}{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Data Cache feature. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_gaf6f1e54d9df32f3c196d67e59eb80a49}{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Reset} (void)
+\begin{DoxyCompactList}\small\item\em Resets the Instruction Cache. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga8332da89b072373b7f116e0b7c137a22}{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Reset} (void)
+\begin{DoxyCompactList}\small\item\em Resets the Data Cache. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga4084d0184bab463a1579271bf474aaef}{F\-L\-A\-S\-H\-\_\-\-Unlock} (void)
+\begin{DoxyCompactList}\small\item\em Unlocks the F\-L\-A\-S\-H control register access. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga46899557353c4312ddbe3f25e65df1d8}{F\-L\-A\-S\-H\-\_\-\-Lock} (void)
+\begin{DoxyCompactList}\small\item\em Locks the F\-L\-A\-S\-H control register access. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h_ga48f408290b32a3aebbcad83a00fc447c}{F\-L\-A\-S\-H\-\_\-\-Erase\-Sector} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-Sector, uint8\-\_\-t Voltage\-Range)
+\begin{DoxyCompactList}\small\item\em Erases a specified F\-L\-A\-S\-H Sector. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h_ga2aee006e5f4db4280bdedd401dfa50f9}{F\-L\-A\-S\-H\-\_\-\-Erase\-All\-Sectors} (uint8\-\_\-t Voltage\-Range)
+\begin{DoxyCompactList}\small\item\em Erases all F\-L\-A\-S\-H Sectors. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h_gab84b52121e58d0dbc8ff2a92145d20f2}{F\-L\-A\-S\-H\-\_\-\-Program\-Double\-Word} (uint32\-\_\-t Address, uint64\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Programs a double word (64-\/bit) at a specified address. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h_gaac9a2f400b92537bd42a6bd7cc237b11}{F\-L\-A\-S\-H\-\_\-\-Program\-Word} (uint32\-\_\-t Address, uint32\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Programs a word (32-\/bit) at a specified address. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h_ga5c1336f667950a8765887228f1d0d501}{F\-L\-A\-S\-H\-\_\-\-Program\-Half\-Word} (uint32\-\_\-t Address, uint16\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Programs a half word (16-\/bit) at a specified address. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h_gac425adf52fe7f229ef6bb893fe386848}{F\-L\-A\-S\-H\-\_\-\-Program\-Byte} (uint32\-\_\-t Address, uint8\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Programs a byte (8-\/bit) at a specified address. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga518d6e3bbba2adf1523e8454f62348e9}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Unlock} (void)
+\begin{DoxyCompactList}\small\item\em Unlocks the F\-L\-A\-S\-H Option Control Registers access. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga63a33d9af7e29b64c3806e5505c59b74}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Lock} (void)
+\begin{DoxyCompactList}\small\item\em Locks the F\-L\-A\-S\-H Option Control Registers access. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_gaffe7e91bcce65ac079ae5afa1db568b5}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-W\-R\-P\-Config} (uint32\-\_\-t O\-B\-\_\-\-W\-R\-P, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the write protection of the desired sectors. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga12cb6799f725a49cd151eef4d6d1789b}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-R\-D\-P\-Config} (uint8\-\_\-t O\-B\-\_\-\-R\-D\-P)
+\begin{DoxyCompactList}\small\item\em Sets the read protection level. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga6b605409e4271b4cc6dfb56ed8108a1a}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-User\-Config} (uint8\-\_\-t O\-B\-\_\-\-I\-W\-D\-G, uint8\-\_\-t O\-B\-\_\-\-S\-T\-O\-P, uint8\-\_\-t O\-B\-\_\-\-S\-T\-D\-B\-Y)
+\begin{DoxyCompactList}\small\item\em Programs the F\-L\-A\-S\-H User Option Byte\-: I\-W\-D\-G\-\_\-\-S\-W / R\-S\-T\-\_\-\-S\-T\-O\-P / R\-S\-T\-\_\-\-S\-T\-D\-B\-Y. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga621bf052bc381c7a37fb1f8758f5ec2e}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-B\-O\-R\-Config} (uint8\-\_\-t O\-B\-\_\-\-B\-O\-R)
+\begin{DoxyCompactList}\small\item\em Sets the B\-O\-R Level. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h_gabcbd44a62a2488d8b90aa8562a258ef1}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Launch} (void)
+\begin{DoxyCompactList}\small\item\em Launch the option byte loading. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___f_l_a_s_h_ga737dd808489113af7f8df7f7e9f7baae}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-User} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H User Option Bytes values. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{group___f_l_a_s_h_gafa2aec5fa1ea7a73c31f3405f465c525}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-W\-R\-P} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H Write Protection Option Bytes value. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___f_l_a_s_h_ga2f0151c6c923396eaf96c554a5860c31}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-R\-D\-P} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H Read Protection level. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___f_l_a_s_h_gab8a8804905929b2edd544d28c2e7b215}{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-B\-O\-R} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H B\-O\-R level. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_ga94c1e51a9c3bf8d48eb6eb4a4d054861}{F\-L\-A\-S\-H\-\_\-\-I\-T\-Config} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified F\-L\-A\-S\-H interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___f_l_a_s_h_gae3fb545e32f21501ca27d4380e0f2088}{F\-L\-A\-S\-H\-\_\-\-Get\-Flag\-Status} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified F\-L\-A\-S\-H flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_l_a_s_h_gac4be1d486483fa5cd70ec77d44ca8f87}{F\-L\-A\-S\-H\-\_\-\-Clear\-Flag} (uint32\-\_\-t F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the F\-L\-A\-S\-H's pending flags. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h_gac265b8d1e7ea11e44ceee28797c3debb}{F\-L\-A\-S\-H\-\_\-\-Get\-Status} (void)
+\begin{DoxyCompactList}\small\item\em Returns the F\-L\-A\-S\-H Status. \end{DoxyCompactList}\item 
+\hyperlink{group___f_l_a_s_h_gadc63a6f3404ff1f71229a66915e9cdc0}{F\-L\-A\-S\-H\-\_\-\-Status} \hyperlink{group___f_l_a_s_h_gaaf8ea3b00c9a5f5eca0df9a795b83f22}{F\-L\-A\-S\-H\-\_\-\-Wait\-For\-Last\-Operation} (void)
+\begin{DoxyCompactList}\small\item\em Waits for a F\-L\-A\-S\-H operation to complete. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\-L\-A\-S\-H driver modules. 
+
+\subsection{Function Documentation}
+\hypertarget{group___f_l_a_s_h_gac4be1d486483fa5cd70ec77d44ca8f87}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Clear\-Flag@{F\-L\-A\-S\-H\-\_\-\-Clear\-Flag}}
+\index{F\-L\-A\-S\-H\-\_\-\-Clear\-Flag@{F\-L\-A\-S\-H\-\_\-\-Clear\-Flag}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gac4be1d486483fa5cd70ec77d44ca8f87}
+
+
+Clears the F\-L\-A\-S\-H's pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G,\-:} & specifies the F\-L\-A\-S\-H flags to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-E\-O\-P\-: F\-L\-A\-S\-H End of Operation flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-O\-P\-E\-R\-R\-: F\-L\-A\-S\-H operation Error flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-W\-R\-P\-E\-R\-R\-: F\-L\-A\-S\-H Write protected error flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-P\-G\-A\-E\-R\-R\-: F\-L\-A\-S\-H Programming Alignment error flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-P\-G\-P\-E\-R\-R\-: F\-L\-A\-S\-H Programming Parallelism error flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-P\-G\-S\-E\-R\-R\-: F\-L\-A\-S\-H Programming Sequence error flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 964 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga937a824493f3c6949289401a767a0360}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Cmd@{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Cmd}}
+\index{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Cmd@{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Cmd}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga937a824493f3c6949289401a767a0360}
+
+
+Enables or disables the Data Cache feature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the Data Cache. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 224 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga8332da89b072373b7f116e0b7c137a22}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Reset@{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Reset}}
+\index{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Reset@{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Reset}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-Data\-Cache\-Reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga8332da89b072373b7f116e0b7c137a22}
+
+
+Resets the Data Cache. 
+
+\begin{DoxyNote}{Note}
+This function must be used only when the Data Cache is disabled. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 256 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga2aee006e5f4db4280bdedd401dfa50f9}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Erase\-All\-Sectors@{F\-L\-A\-S\-H\-\_\-\-Erase\-All\-Sectors}}
+\index{F\-L\-A\-S\-H\-\_\-\-Erase\-All\-Sectors@{F\-L\-A\-S\-H\-\_\-\-Erase\-All\-Sectors}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Erase\-All\-Sectors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-Status} F\-L\-A\-S\-H\-\_\-\-Erase\-All\-Sectors (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{Voltage\-Range}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga2aee006e5f4db4280bdedd401dfa50f9}
+
+
+Erases all F\-L\-A\-S\-H Sectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Voltage\-Range,\-:} & The device voltage range which defines the erase parallelism. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item Voltage\-Range\-\_\-1\-: when the device voltage range is 1.\-8\-V to 2.\-1\-V, the operation will be done by byte (8-\/bit) \item Voltage\-Range\-\_\-2\-: when the device voltage range is 2.\-1\-V to 2.\-7\-V, the operation will be done by half word (16-\/bit) \item Voltage\-Range\-\_\-3\-: when the device voltage range is 2.\-7\-V to 3.\-6\-V, the operation will be done by word (32-\/bit) \item Voltage\-Range\-\_\-4\-: when the device voltage range is 2.\-7\-V to 3.\-6\-V + External Vpp, the operation will be done by double word (64-\/bit)\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Status\-: The returned value can be\-: F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N or F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 406 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga48f408290b32a3aebbcad83a00fc447c}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Erase\-Sector@{F\-L\-A\-S\-H\-\_\-\-Erase\-Sector}}
+\index{F\-L\-A\-S\-H\-\_\-\-Erase\-Sector@{F\-L\-A\-S\-H\-\_\-\-Erase\-Sector}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Erase\-Sector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-Status} F\-L\-A\-S\-H\-\_\-\-Erase\-Sector (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-L\-A\-S\-H\-\_\-\-Sector, }
+\item[{uint8\-\_\-t}]{Voltage\-Range}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga48f408290b32a3aebbcad83a00fc447c}
+
+
+Erases a specified F\-L\-A\-S\-H Sector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-L\-A\-S\-H\-\_\-\-Sector,\-:} & The Sector number to be erased. This parameter can be a value between F\-L\-A\-S\-H\-\_\-\-Sector\-\_\-0 and F\-L\-A\-S\-H\-\_\-\-Sector\-\_\-11\\
+\hline
+{\em Voltage\-Range,\-:} & The device voltage range which defines the erase parallelism. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item Voltage\-Range\-\_\-1\-: when the device voltage range is 1.\-8\-V to 2.\-1\-V, the operation will be done by byte (8-\/bit) \item Voltage\-Range\-\_\-2\-: when the device voltage range is 2.\-1\-V to 2.\-7\-V, the operation will be done by half word (16-\/bit) \item Voltage\-Range\-\_\-3\-: when the device voltage range is 2.\-7\-V to 3.\-6\-V, the operation will be done by word (32-\/bit) \item Voltage\-Range\-\_\-4\-: when the device voltage range is 2.\-7\-V to 3.\-6\-V + External Vpp, the operation will be done by double word (64-\/bit)\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Status\-: The returned value can be\-: F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N or F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 341 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gae3fb545e32f21501ca27d4380e0f2088}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Get\-Flag\-Status@{F\-L\-A\-S\-H\-\_\-\-Get\-Flag\-Status}}
+\index{F\-L\-A\-S\-H\-\_\-\-Get\-Flag\-Status@{F\-L\-A\-S\-H\-\_\-\-Get\-Flag\-Status}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status F\-L\-A\-S\-H\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gae3fb545e32f21501ca27d4380e0f2088}
+
+
+Checks whether the specified F\-L\-A\-S\-H flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G,\-:} & specifies the F\-L\-A\-S\-H flag to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-E\-O\-P\-: F\-L\-A\-S\-H End of Operation flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-O\-P\-E\-R\-R\-: F\-L\-A\-S\-H operation Error flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-W\-R\-P\-E\-R\-R\-: F\-L\-A\-S\-H Write protected error flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-P\-G\-A\-E\-R\-R\-: F\-L\-A\-S\-H Programming Alignment error flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-P\-G\-P\-E\-R\-R\-: F\-L\-A\-S\-H Programming Parallelism error flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-P\-G\-S\-E\-R\-R\-: F\-L\-A\-S\-H Programming Sequence error flag \item F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-B\-S\-Y\-: F\-L\-A\-S\-H Busy flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of F\-L\-A\-S\-H\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 934 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gac265b8d1e7ea11e44ceee28797c3debb}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Get\-Status@{F\-L\-A\-S\-H\-\_\-\-Get\-Status}}
+\index{F\-L\-A\-S\-H\-\_\-\-Get\-Status@{F\-L\-A\-S\-H\-\_\-\-Get\-Status}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Get\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-Status} F\-L\-A\-S\-H\-\_\-\-Get\-Status (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gac265b8d1e7ea11e44ceee28797c3debb}
+
+
+Returns the F\-L\-A\-S\-H Status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Status\-: The returned value can be\-: F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N or F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 979 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga7d5a9a35e792d844c329d7f1656b50ae}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Cmd@{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Cmd}}
+\index{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Cmd@{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Cmd}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga7d5a9a35e792d844c329d7f1656b50ae}
+
+
+Enables or disables the Instruction Cache feature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the Instruction Cache. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 203 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gaf6f1e54d9df32f3c196d67e59eb80a49}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Reset@{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Reset}}
+\index{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Reset@{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Reset}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-Instruction\-Cache\-Reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gaf6f1e54d9df32f3c196d67e59eb80a49}
+
+
+Resets the Instruction Cache. 
+
+\begin{DoxyNote}{Note}
+This function must be used only when the Instruction Cache is disabled. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 245 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga94c1e51a9c3bf8d48eb6eb4a4d054861}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-I\-T\-Config@{F\-L\-A\-S\-H\-\_\-\-I\-T\-Config}}
+\index{F\-L\-A\-S\-H\-\_\-\-I\-T\-Config@{F\-L\-A\-S\-H\-\_\-\-I\-T\-Config}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-L\-A\-S\-H\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga94c1e51a9c3bf8d48eb6eb4a4d054861}
+
+
+Enables or disables the specified F\-L\-A\-S\-H interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-L\-A\-S\-H\-\_\-\-I\-T,\-:} & specifies the F\-L\-A\-S\-H interrupt sources to be enabled or disabled. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item F\-L\-A\-S\-H\-\_\-\-I\-T\-\_\-\-E\-R\-R\-: F\-L\-A\-S\-H Error Interrupt \item F\-L\-A\-S\-H\-\_\-\-I\-T\-\_\-\-E\-O\-P\-: F\-L\-A\-S\-H end of operation Interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 903 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga46899557353c4312ddbe3f25e65df1d8}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Lock@{F\-L\-A\-S\-H\-\_\-\-Lock}}
+\index{F\-L\-A\-S\-H\-\_\-\-Lock@{F\-L\-A\-S\-H\-\_\-\-Lock}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-Lock (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga46899557353c4312ddbe3f25e65df1d8}
+
+
+Locks the F\-L\-A\-S\-H control register access. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 315 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga621bf052bc381c7a37fb1f8758f5ec2e}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-B\-O\-R\-Config@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-B\-O\-R\-Config}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-B\-O\-R\-Config@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-B\-O\-R\-Config}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-B\-O\-R\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-B\-O\-R\-Config (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{O\-B\-\_\-\-B\-O\-R}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga621bf052bc381c7a37fb1f8758f5ec2e}
+
+
+Sets the B\-O\-R Level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em O\-B\-\_\-\-B\-O\-R,\-:} & specifies the Option Bytes B\-O\-R Reset Level. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item O\-B\-\_\-\-B\-O\-R\-\_\-\-L\-E\-V\-E\-L3\-: Supply voltage ranges from 2.\-7 to 3.\-6 V \item O\-B\-\_\-\-B\-O\-R\-\_\-\-L\-E\-V\-E\-L2\-: Supply voltage ranges from 2.\-4 to 2.\-7 V \item O\-B\-\_\-\-B\-O\-R\-\_\-\-L\-E\-V\-E\-L1\-: Supply voltage ranges from 2.\-1 to 2.\-4 V \item O\-B\-\_\-\-B\-O\-R\-\_\-\-O\-F\-F\-: Supply voltage ranges from 1.\-62 to 2.\-1 V \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 789 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gab8a8804905929b2edd544d28c2e7b215}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-B\-O\-R@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-B\-O\-R}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-B\-O\-R@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-B\-O\-R}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-B\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-B\-O\-R (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gab8a8804905929b2edd544d28c2e7b215}
+
+
+Returns the F\-L\-A\-S\-H B\-O\-R level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & F\-L\-A\-S\-H B\-O\-R level\-:
+\begin{DoxyItemize}
+\item O\-B\-\_\-\-B\-O\-R\-\_\-\-L\-E\-V\-E\-L3\-: Supply voltage ranges from 2.\-7 to 3.\-6 V
+\item O\-B\-\_\-\-B\-O\-R\-\_\-\-L\-E\-V\-E\-L2\-: Supply voltage ranges from 2.\-4 to 2.\-7 V
+\item O\-B\-\_\-\-B\-O\-R\-\_\-\-L\-E\-V\-E\-L1\-: Supply voltage ranges from 2.\-1 to 2.\-4 V
+\item O\-B\-\_\-\-B\-O\-R\-\_\-\-O\-F\-F \-: Supply voltage ranges from 1.\-62 to 2.\-1 V 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 873 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga2f0151c6c923396eaf96c554a5860c31}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-R\-D\-P@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-R\-D\-P}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-R\-D\-P@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-R\-D\-P}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-R\-D\-P}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-R\-D\-P (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga2f0151c6c923396eaf96c554a5860c31}
+
+
+Returns the F\-L\-A\-S\-H Read Protection level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Read\-Out Protection Status\-:
+\begin{DoxyItemize}
+\item S\-E\-T, when O\-B\-\_\-\-R\-D\-P\-\_\-\-Level\-\_\-1 or O\-B\-\_\-\-R\-D\-P\-\_\-\-Level\-\_\-2 is set
+\item R\-E\-S\-E\-T, when O\-B\-\_\-\-R\-D\-P\-\_\-\-Level\-\_\-0 is set 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 849 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga737dd808489113af7f8df7f7e9f7baae}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-User@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-User}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-User@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-User}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-User}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-User (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga737dd808489113af7f8df7f7e9f7baae}
+
+
+Returns the F\-L\-A\-S\-H User Option Bytes values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & F\-L\-A\-S\-H User Option Bytes values\-: I\-W\-D\-G\-\_\-\-S\-W(\-Bit0), R\-S\-T\-\_\-\-S\-T\-O\-P(\-Bit1) and R\-S\-T\-\_\-\-S\-T\-D\-B\-Y(\-Bit2). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 825 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gafa2aec5fa1ea7a73c31f3405f465c525}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-W\-R\-P@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-W\-R\-P}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-W\-R\-P@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-W\-R\-P}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-W\-R\-P}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Get\-W\-R\-P (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gafa2aec5fa1ea7a73c31f3405f465c525}
+
+
+Returns the F\-L\-A\-S\-H Write Protection Option Bytes value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & F\-L\-A\-S\-H Write Protection Option Bytes value \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 836 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gabcbd44a62a2488d8b90aa8562a258ef1}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Launch@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Launch}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Launch@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Launch}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Launch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-Status} F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Launch (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gabcbd44a62a2488d8b90aa8562a258ef1}
+
+
+Launch the option byte loading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Status\-: The returned value can be\-: F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N or F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 806 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga63a33d9af7e29b64c3806e5505c59b74}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Lock@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Lock}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Lock@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Lock}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Lock (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga63a33d9af7e29b64c3806e5505c59b74}
+
+
+Locks the F\-L\-A\-S\-H Option Control Registers access. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 673 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga12cb6799f725a49cd151eef4d6d1789b}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-R\-D\-P\-Config@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-R\-D\-P\-Config}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-R\-D\-P\-Config@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-R\-D\-P\-Config}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-R\-D\-P\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-R\-D\-P\-Config (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{O\-B\-\_\-\-R\-D\-P}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga12cb6799f725a49cd151eef4d6d1789b}
+
+
+Sets the read protection level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em O\-B\-\_\-\-R\-D\-P,\-:} & specifies the read protection level. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item O\-B\-\_\-\-R\-D\-P\-\_\-\-Level\-\_\-0\-: No protection \item O\-B\-\_\-\-R\-D\-P\-\_\-\-Level\-\_\-1\-: Read protection of the memory \item O\-B\-\_\-\-R\-D\-P\-\_\-\-Level\-\_\-2\-: Full chip protection\end{DoxyItemize}
+!!!\-Warning!!! When enabling O\-B\-\_\-\-R\-D\-P level 2 it's no more possible to go back to level 1 or 0\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 724 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga518d6e3bbba2adf1523e8454f62348e9}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Unlock@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Unlock}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Unlock@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Unlock}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Unlock}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-Unlock (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga518d6e3bbba2adf1523e8454f62348e9}
+
+
+Unlocks the F\-L\-A\-S\-H Option Control Registers access. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 658 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga6b605409e4271b4cc6dfb56ed8108a1a}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-User\-Config@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-User\-Config}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-User\-Config@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-User\-Config}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-User\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-User\-Config (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{O\-B\-\_\-\-I\-W\-D\-G, }
+\item[{uint8\-\_\-t}]{O\-B\-\_\-\-S\-T\-O\-P, }
+\item[{uint8\-\_\-t}]{O\-B\-\_\-\-S\-T\-D\-B\-Y}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga6b605409e4271b4cc6dfb56ed8108a1a}
+
+
+Programs the F\-L\-A\-S\-H User Option Byte\-: I\-W\-D\-G\-\_\-\-S\-W / R\-S\-T\-\_\-\-S\-T\-O\-P / R\-S\-T\-\_\-\-S\-T\-D\-B\-Y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em O\-B\-\_\-\-I\-W\-D\-G,\-:} & Selects the I\-W\-D\-G mode This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item O\-B\-\_\-\-I\-W\-D\-G\-\_\-\-S\-W\-: Software I\-W\-D\-G selected \item O\-B\-\_\-\-I\-W\-D\-G\-\_\-\-H\-W\-: Hardware I\-W\-D\-G selected \end{DoxyItemize}
+\\
+\hline
+{\em O\-B\-\_\-\-S\-T\-O\-P,\-:} & Reset event when entering S\-T\-O\-P mode. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item O\-B\-\_\-\-S\-T\-O\-P\-\_\-\-No\-R\-S\-T\-: No reset generated when entering in S\-T\-O\-P \item O\-B\-\_\-\-S\-T\-O\-P\-\_\-\-R\-S\-T\-: Reset generated when entering in S\-T\-O\-P \end{DoxyItemize}
+\\
+\hline
+{\em O\-B\-\_\-\-S\-T\-D\-B\-Y,\-:} & Reset event when entering Standby mode. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item O\-B\-\_\-\-S\-T\-D\-B\-Y\-\_\-\-No\-R\-S\-T\-: No reset generated when entering in S\-T\-A\-N\-D\-B\-Y \item O\-B\-\_\-\-S\-T\-D\-B\-Y\-\_\-\-R\-S\-T\-: Reset generated when entering in S\-T\-A\-N\-D\-B\-Y \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 756 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gaffe7e91bcce65ac079ae5afa1db568b5}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-W\-R\-P\-Config@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-W\-R\-P\-Config}}
+\index{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-W\-R\-P\-Config@{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-W\-R\-P\-Config}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-W\-R\-P\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-O\-B\-\_\-\-W\-R\-P\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{O\-B\-\_\-\-W\-R\-P, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gaffe7e91bcce65ac079ae5afa1db568b5}
+
+
+Enables or disables the write protection of the desired sectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em O\-B\-\_\-\-W\-R\-P,\-:} & specifies the sector(s) to be write protected or unprotected. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item O\-B\-\_\-\-W\-R\-P\-: A value between O\-B\-\_\-\-W\-R\-P\-\_\-\-Sector0 and O\-B\-\_\-\-W\-R\-P\-\_\-\-Sector11 \item O\-B\-\_\-\-W\-R\-P\-\_\-\-Sector\-\_\-\-All \end{DoxyItemize}
+\\
+\hline
+{\em Newstate,\-:} & new state of the Write Protection. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 689 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gafaa24b6176b587bdda46abbe755af986}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Prefetch\-Buffer\-Cmd@{F\-L\-A\-S\-H\-\_\-\-Prefetch\-Buffer\-Cmd}}
+\index{F\-L\-A\-S\-H\-\_\-\-Prefetch\-Buffer\-Cmd@{F\-L\-A\-S\-H\-\_\-\-Prefetch\-Buffer\-Cmd}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Prefetch\-Buffer\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-Prefetch\-Buffer\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gafaa24b6176b587bdda46abbe755af986}
+
+
+Enables or disables the Prefetch Buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the Prefetch Buffer. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 181 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gac425adf52fe7f229ef6bb893fe386848}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Program\-Byte@{F\-L\-A\-S\-H\-\_\-\-Program\-Byte}}
+\index{F\-L\-A\-S\-H\-\_\-\-Program\-Byte@{F\-L\-A\-S\-H\-\_\-\-Program\-Byte}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Program\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-Status} F\-L\-A\-S\-H\-\_\-\-Program\-Byte (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Address, }
+\item[{uint8\-\_\-t}]{Data}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gac425adf52fe7f229ef6bb893fe386848}
+
+
+Programs a byte (8-\/bit) at a specified address. 
+
+\begin{DoxyNote}{Note}
+This function can be used within all the device supply voltage ranges. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em Address,\-:} & specifies the address to be programmed. This parameter can be any address in Program memory zone or in O\-T\-P zone. \\
+\hline
+{\em Data,\-:} & specifies the data to be programmed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Status\-: The returned value can be\-: F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N or F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 573 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gab84b52121e58d0dbc8ff2a92145d20f2}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Program\-Double\-Word@{F\-L\-A\-S\-H\-\_\-\-Program\-Double\-Word}}
+\index{F\-L\-A\-S\-H\-\_\-\-Program\-Double\-Word@{F\-L\-A\-S\-H\-\_\-\-Program\-Double\-Word}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Program\-Double\-Word}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-Status} F\-L\-A\-S\-H\-\_\-\-Program\-Double\-Word (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Address, }
+\item[{uint64\-\_\-t}]{Data}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gab84b52121e58d0dbc8ff2a92145d20f2}
+
+
+Programs a double word (64-\/bit) at a specified address. 
+
+\begin{DoxyNote}{Note}
+This function must be used when the device voltage range is from 2.\-7\-V to 3.\-6\-V and an External Vpp is present. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em Address,\-:} & specifies the address to be programmed. \\
+\hline
+{\em Data,\-:} & specifies the data to be programmed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Status\-: The returned value can be\-: F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N or F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 459 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga5c1336f667950a8765887228f1d0d501}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Program\-Half\-Word@{F\-L\-A\-S\-H\-\_\-\-Program\-Half\-Word}}
+\index{F\-L\-A\-S\-H\-\_\-\-Program\-Half\-Word@{F\-L\-A\-S\-H\-\_\-\-Program\-Half\-Word}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Program\-Half\-Word}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-Status} F\-L\-A\-S\-H\-\_\-\-Program\-Half\-Word (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Address, }
+\item[{uint16\-\_\-t}]{Data}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga5c1336f667950a8765887228f1d0d501}
+
+
+Programs a half word (16-\/bit) at a specified address. 
+
+\begin{DoxyNote}{Note}
+This function must be used when the device voltage range is from 2.\-1\-V to 3.\-6\-V. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em Address,\-:} & specifies the address to be programmed. This parameter can be any address in Program memory zone or in O\-T\-P zone. \\
+\hline
+{\em Data,\-:} & specifies the data to be programmed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Status\-: The returned value can be\-: F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N or F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 535 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gaac9a2f400b92537bd42a6bd7cc237b11}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Program\-Word@{F\-L\-A\-S\-H\-\_\-\-Program\-Word}}
+\index{F\-L\-A\-S\-H\-\_\-\-Program\-Word@{F\-L\-A\-S\-H\-\_\-\-Program\-Word}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Program\-Word}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-Status} F\-L\-A\-S\-H\-\_\-\-Program\-Word (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Address, }
+\item[{uint32\-\_\-t}]{Data}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gaac9a2f400b92537bd42a6bd7cc237b11}
+
+
+Programs a word (32-\/bit) at a specified address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Address,\-:} & specifies the address to be programmed. This parameter can be any address in Program memory zone or in O\-T\-P zone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function must be used when the device voltage range is from 2.\-7\-V to 3.\-6\-V. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em Data,\-:} & specifies the data to be programmed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Status\-: The returned value can be\-: F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N or F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 497 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga54bcb96270215c752c3479c8c9e438c0}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Set\-Latency@{F\-L\-A\-S\-H\-\_\-\-Set\-Latency}}
+\index{F\-L\-A\-S\-H\-\_\-\-Set\-Latency@{F\-L\-A\-S\-H\-\_\-\-Set\-Latency}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Set\-Latency}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-Set\-Latency (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-L\-A\-S\-H\-\_\-\-Latency}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga54bcb96270215c752c3479c8c9e438c0}
+
+
+Sets the code latency value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-L\-A\-S\-H\-\_\-\-Latency,\-:} & specifies the F\-L\-A\-S\-H Latency value. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item F\-L\-A\-S\-H\-\_\-\-Latency\-\_\-0\-: F\-L\-A\-S\-H Zero Latency cycle \item F\-L\-A\-S\-H\-\_\-\-Latency\-\_\-1\-: F\-L\-A\-S\-H One Latency cycle \item F\-L\-A\-S\-H\-\_\-\-Latency\-\_\-2\-: F\-L\-A\-S\-H Two Latency cycles \item F\-L\-A\-S\-H\-\_\-\-Latency\-\_\-3\-: F\-L\-A\-S\-H Three Latency cycles \item F\-L\-A\-S\-H\-\_\-\-Latency\-\_\-4\-: F\-L\-A\-S\-H Four Latency cycles \item F\-L\-A\-S\-H\-\_\-\-Latency\-\_\-5\-: F\-L\-A\-S\-H Five Latency cycles \item F\-L\-A\-S\-H\-\_\-\-Latency\-\_\-6\-: F\-L\-A\-S\-H Six Latency cycles \item F\-L\-A\-S\-H\-\_\-\-Latency\-\_\-7\-: F\-L\-A\-S\-H Seven Latency cycles \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 166 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_ga4084d0184bab463a1579271bf474aaef}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Unlock@{F\-L\-A\-S\-H\-\_\-\-Unlock}}
+\index{F\-L\-A\-S\-H\-\_\-\-Unlock@{F\-L\-A\-S\-H\-\_\-\-Unlock}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Unlock}]{\setlength{\rightskip}{0pt plus 5cm}void F\-L\-A\-S\-H\-\_\-\-Unlock (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_ga4084d0184bab463a1579271bf474aaef}
+
+
+Unlocks the F\-L\-A\-S\-H control register access. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 300 of file stm32f4xx\-\_\-flash.\-c.
+
+\hypertarget{group___f_l_a_s_h_gaaf8ea3b00c9a5f5eca0df9a795b83f22}{\index{F\-L\-A\-S\-H@{F\-L\-A\-S\-H}!F\-L\-A\-S\-H\-\_\-\-Wait\-For\-Last\-Operation@{F\-L\-A\-S\-H\-\_\-\-Wait\-For\-Last\-Operation}}
+\index{F\-L\-A\-S\-H\-\_\-\-Wait\-For\-Last\-Operation@{F\-L\-A\-S\-H\-\_\-\-Wait\-For\-Last\-Operation}!FLASH@{F\-L\-A\-S\-H}}
+\subsubsection[{F\-L\-A\-S\-H\-\_\-\-Wait\-For\-Last\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-Status} F\-L\-A\-S\-H\-\_\-\-Wait\-For\-Last\-Operation (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___f_l_a_s_h_gaaf8ea3b00c9a5f5eca0df9a795b83f22}
+
+
+Waits for a F\-L\-A\-S\-H operation to complete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\-L\-A\-S\-H} & Status\-: The returned value can be\-: F\-L\-A\-S\-H\-\_\-\-B\-U\-S\-Y, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-R\-O\-G\-R\-A\-M, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-W\-R\-P, F\-L\-A\-S\-H\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N or F\-L\-A\-S\-H\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1022 of file stm32f4xx\-\_\-flash.\-c.
+

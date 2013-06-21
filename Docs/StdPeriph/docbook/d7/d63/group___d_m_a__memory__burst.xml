@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d63/group___d_m_a__memory__burst">
+    <title>DMA_memory_burst</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1gab3353b3a85b555f826fe567ce68c3fc3">DMA_MemoryBurst_Single</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1gacf7f57731c663fdc6ca8a6fb18ff31b0">DMA_MemoryBurst_INC4</link> ((uint32_t)0x00800000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1ga33aca825c5a81e83753ff6fadb3634c0">DMA_MemoryBurst_INC8</link> ((uint32_t)0x01000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1ga4ffd4960f794b187229fac1cea3d81c9">DMA_MemoryBurst_INC16</link> ((uint32_t)0x01800000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1ga921ebf06447dc036180fff50b7e4846a">IS_DMA_MEMORY_BURST</link> (((BURST) == DMA_MemoryBurst_Single) || \
+                                    ((BURST) == DMA_MemoryBurst_INC4)  || \
+                                    ((BURST) == DMA_MemoryBurst_INC8)  || \
+                                    ((BURST) == DMA_MemoryBurst_INC16))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

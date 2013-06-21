@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dad/group___u_s_a_r_t___clock">
+    <title>USART_Clock</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dad/group___u_s_a_r_t___clock_1ga56c12b81d19853c093e0a373d0c52fb5">USART_Clock_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dad/group___u_s_a_r_t___clock_1gacfe029e2ec4f49ddde031fd031654caa">USART_Clock_Enable</link> ((uint16_t)0x0800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dad/group___u_s_a_r_t___clock_1ga0f1e1ba37690b21b7338ed3b06614cf6">IS_USART_CLOCK</link> (((CLOCK) == USART_Clock_Disable) || \
+                               ((CLOCK) == USART_Clock_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity">
+    <title>DCMI_HSYNC_Polarity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1ga8be508108ba5f8982a63632c0525b105">DCMI_HSPolarity_Low</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1gab7d13846b01ffa41fdfc1987f0a91a67">DCMI_HSPolarity_High</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1gae8b194321ecb049f708454f6d16b343e">IS_DCMI_HSPOLARITY</link> (((POLARITY) == <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1ga8be508108ba5f8982a63632c0525b105">DCMI_HSPolarity_Low</link>) || \
+                                     ((POLARITY) == <link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1gab7d13846b01ffa41fdfc1987f0a91a67">DCMI_HSPolarity_High</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1ga8be508108ba5f8982a63632c0525b105">
+                <title>#define DCMI_HSPolarity_Low</title>                
+<para>Horizontal synchronization active Low </para>
+
+                <para>Definition at line 160 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity_1gab7d13846b01ffa41fdfc1987f0a91a67">
+                <title>#define DCMI_HSPolarity_High</title>                
+<para>Horizontal synchronization active High </para>
+
+                <para>Definition at line 161 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

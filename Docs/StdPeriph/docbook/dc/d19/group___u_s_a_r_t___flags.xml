@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d19/group___u_s_a_r_t___flags">
+    <title>USART_Flags</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga94b7272319cca88a65075d5cb6048441">USART_FLAG_CTS</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga27be6517de20ce14711f71dcd5a7b91f">USART_FLAG_LBD</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga7129f13333f2a7218838cc32fe507bfa">USART_FLAG_TXE</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1gae7b85c9e2cc86af5bbc8b8d8b854410f">USART_FLAG_TC</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga11d6b70c8f00216b6d8a43790dfdcf2f">USART_FLAG_RXNE</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1gac2f1ccc91a834f9cbec3f058872b972a">USART_FLAG_IDLE</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1gabdb285b5c1876d93f9c802f9304538d5">USART_FLAG_ORE</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga81781d27ffc8b85dfaf7b7b791229547">USART_FLAG_NE</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga3551a32bac49a2ec040e5fdafcc9c4bd">USART_FLAG_FE</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga5e87fde5704f27c75df25395e23404ad">USART_FLAG_PE</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga3e20747ce7c97a36718933c0cb3dac29">IS_USART_FLAG</link> (((FLAG) == USART_FLAG_PE) || ((FLAG) == USART_FLAG_TXE) || \
+                             ((FLAG) == USART_FLAG_TC) || ((FLAG) == USART_FLAG_RXNE) || \
+                             ((FLAG) == USART_FLAG_IDLE) || ((FLAG) == USART_FLAG_LBD) || \
+                             ((FLAG) == USART_FLAG_CTS) || ((FLAG) == USART_FLAG_ORE) || \
+                             ((FLAG) == USART_FLAG_NE) || ((FLAG) == USART_FLAG_FE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1gadc905fdce8defba31c00c95554a26bc3">IS_USART_CLEAR_FLAG</link> ((((FLAG) &amp; (uint16_t)0xFC9F) == 0x00) &amp;&amp; ((FLAG) != (uint16_t)0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga9dc365e0a1e01031a8e0757a34b9d420">IS_USART_BAUDRATE</link> (((BAUDRATE) &gt; 0) &amp;&amp; ((BAUDRATE) &lt; 7500001))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1ga194e771c3324f9e130b2887c701460a7">IS_USART_ADDRESS</link> ((ADDRESS) &lt;= 0xF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d19/group___u_s_a_r_t___flags_1gafd6307e41818e076d31f3c24cb5ba135">IS_USART_DATA</link> ((DATA) &lt;= 0x1FF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d4a/group___e_x_t_i___lines">
+    <title>EXTI_Lines</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gac2a65680200dd5f4f7eab29cd4091a75">EXTI_Line0</link> ((uint32_t)0x00001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gae7c6ab2a0880ce3810641ee0585104cd">EXTI_Line1</link> ((uint32_t)0x00002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gaec4189bb2709c8c15a0339d1b0b9865a">EXTI_Line2</link> ((uint32_t)0x00004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gadea3ef6ab7e8bacc686689de8711b98c">EXTI_Line3</link> ((uint32_t)0x00008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gab33b1fe19306e9e60f8f8d0928b800be">EXTI_Line4</link> ((uint32_t)0x00010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga6b4c6292e3abd521cab2bf99d37a15c6">EXTI_Line5</link> ((uint32_t)0x00020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga97a5145d1d2612dd53bdd9db3d366873">EXTI_Line6</link> ((uint32_t)0x00040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga3b7155d54a4a98394b599718901ccbe5">EXTI_Line7</link> ((uint32_t)0x00080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gacd51e087a088c3315049394cddf79e88">EXTI_Line8</link> ((uint32_t)0x00100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga340ca6bb77b7a2d7747c78e7d3370360">EXTI_Line9</link> ((uint32_t)0x00200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gaefb90b266f5fc1571ed4606bbff1f1d7">EXTI_Line10</link> ((uint32_t)0x00400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga6157b34c53e9b5cb8ee0d7ac3f5ba292">EXTI_Line11</link> ((uint32_t)0x00800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gab73a0a31f1814118955099b9dd3bdfef">EXTI_Line12</link> ((uint32_t)0x01000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gae382388ac34b78917a7bd06562e35c42">EXTI_Line13</link> ((uint32_t)0x02000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga7b3821ad1b7a00b49c27075688f48101">EXTI_Line14</link> ((uint32_t)0x04000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gafc5ea85d1fc095a855fde8977a338c4c">EXTI_Line15</link> ((uint32_t)0x08000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga21326db7db8ca614c746b7f52dc45ead">EXTI_Line16</link> ((uint32_t)0x10000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga3e0fc18bc0722adc09605e3093b24c6a">EXTI_Line17</link> ((uint32_t)0x20000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga6cdf346a3e7a3c8dbb036aca6741207c">EXTI_Line18</link> ((uint32_t)0x40000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga49ac0744621f88d432d85838483ad1de">EXTI_Line19</link> ((uint32_t)0x80000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga3ebc4564ac4ca4e1613f98d81a707f2a">EXTI_Line20</link> ((uint32_t)0x00100000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga273edacd18e521e5a702c642c5b824af">EXTI_Line21</link> ((uint32_t)0x00200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gabc65f8a90a3d5595896505ef2c59bec6">EXTI_Line22</link> ((uint32_t)0x00400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1gaade8b8717a1d78f83d3cf180e2817557">IS_EXTI_LINE</link> ((((LINE) &amp; (uint32_t)0xFF800000) == 0x00) &amp;&amp; ((LINE) != (uint16_t)0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___e_x_t_i___lines_1ga77c85c7b8426c6cfe91b4f5a2c58ecda">IS_GET_EXTI_LINE</link> (((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gac2a65680200dd5f4f7eab29cd4091a75">EXTI_Line0</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gae7c6ab2a0880ce3810641ee0585104cd">EXTI_Line1</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gaec4189bb2709c8c15a0339d1b0b9865a">EXTI_Line2</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gadea3ef6ab7e8bacc686689de8711b98c">EXTI_Line3</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gab33b1fe19306e9e60f8f8d0928b800be">EXTI_Line4</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga6b4c6292e3abd521cab2bf99d37a15c6">EXTI_Line5</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga97a5145d1d2612dd53bdd9db3d366873">EXTI_Line6</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga3b7155d54a4a98394b599718901ccbe5">EXTI_Line7</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gacd51e087a088c3315049394cddf79e88">EXTI_Line8</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga340ca6bb77b7a2d7747c78e7d3370360">EXTI_Line9</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gaefb90b266f5fc1571ed4606bbff1f1d7">EXTI_Line10</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga6157b34c53e9b5cb8ee0d7ac3f5ba292">EXTI_Line11</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gab73a0a31f1814118955099b9dd3bdfef">EXTI_Line12</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gae382388ac34b78917a7bd06562e35c42">EXTI_Line13</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga7b3821ad1b7a00b49c27075688f48101">EXTI_Line14</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gafc5ea85d1fc095a855fde8977a338c4c">EXTI_Line15</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga21326db7db8ca614c746b7f52dc45ead">EXTI_Line16</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga3e0fc18bc0722adc09605e3093b24c6a">EXTI_Line17</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga6cdf346a3e7a3c8dbb036aca6741207c">EXTI_Line18</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga49ac0744621f88d432d85838483ad1de">EXTI_Line19</link>) || \
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga3ebc4564ac4ca4e1613f98d81a707f2a">EXTI_Line20</link>) || ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1ga273edacd18e521e5a702c642c5b824af">EXTI_Line21</link>) ||\
+                                ((LINE) == <link linkend="db/d4a/group___e_x_t_i___lines_1gabc65f8a90a3d5595896505ef2c59bec6">EXTI_Line22</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gac2a65680200dd5f4f7eab29cd4091a75">
+                <title>#define EXTI_Line0</title>                
+<para>External interrupt line 0 </para>
+
+                <para>Definition at line 99 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gae7c6ab2a0880ce3810641ee0585104cd">
+                <title>#define EXTI_Line1</title>                
+<para>External interrupt line 1 </para>
+
+                <para>Definition at line 100 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gaec4189bb2709c8c15a0339d1b0b9865a">
+                <title>#define EXTI_Line2</title>                
+<para>External interrupt line 2 </para>
+
+                <para>Definition at line 101 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gadea3ef6ab7e8bacc686689de8711b98c">
+                <title>#define EXTI_Line3</title>                
+<para>External interrupt line 3 </para>
+
+                <para>Definition at line 102 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gab33b1fe19306e9e60f8f8d0928b800be">
+                <title>#define EXTI_Line4</title>                
+<para>External interrupt line 4 </para>
+
+                <para>Definition at line 103 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga6b4c6292e3abd521cab2bf99d37a15c6">
+                <title>#define EXTI_Line5</title>                
+<para>External interrupt line 5 </para>
+
+                <para>Definition at line 104 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga97a5145d1d2612dd53bdd9db3d366873">
+                <title>#define EXTI_Line6</title>                
+<para>External interrupt line 6 </para>
+
+                <para>Definition at line 105 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga3b7155d54a4a98394b599718901ccbe5">
+                <title>#define EXTI_Line7</title>                
+<para>External interrupt line 7 </para>
+
+                <para>Definition at line 106 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gacd51e087a088c3315049394cddf79e88">
+                <title>#define EXTI_Line8</title>                
+<para>External interrupt line 8 </para>
+
+                <para>Definition at line 107 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga340ca6bb77b7a2d7747c78e7d3370360">
+                <title>#define EXTI_Line9</title>                
+<para>External interrupt line 9 </para>
+
+                <para>Definition at line 108 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gaefb90b266f5fc1571ed4606bbff1f1d7">
+                <title>#define EXTI_Line10</title>                
+<para>External interrupt line 10 </para>
+
+                <para>Definition at line 109 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga6157b34c53e9b5cb8ee0d7ac3f5ba292">
+                <title>#define EXTI_Line11</title>                
+<para>External interrupt line 11 </para>
+
+                <para>Definition at line 110 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gab73a0a31f1814118955099b9dd3bdfef">
+                <title>#define EXTI_Line12</title>                
+<para>External interrupt line 12 </para>
+
+                <para>Definition at line 111 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gae382388ac34b78917a7bd06562e35c42">
+                <title>#define EXTI_Line13</title>                
+<para>External interrupt line 13 </para>
+
+                <para>Definition at line 112 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga7b3821ad1b7a00b49c27075688f48101">
+                <title>#define EXTI_Line14</title>                
+<para>External interrupt line 14 </para>
+
+                <para>Definition at line 113 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gafc5ea85d1fc095a855fde8977a338c4c">
+                <title>#define EXTI_Line15</title>                
+<para>External interrupt line 15 </para>
+
+                <para>Definition at line 114 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga21326db7db8ca614c746b7f52dc45ead">
+                <title>#define EXTI_Line16</title>                
+<para>External interrupt line 16 Connected to the PVD Output </para>
+
+                <para>Definition at line 115 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga3e0fc18bc0722adc09605e3093b24c6a">
+                <title>#define EXTI_Line17</title>                
+<para>External interrupt line 17 Connected to the RTC Alarm event </para>
+
+                <para>Definition at line 116 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga6cdf346a3e7a3c8dbb036aca6741207c">
+                <title>#define EXTI_Line18</title>                
+<para>External interrupt line 18 Connected to the USB OTG FS Wakeup from suspend event </para>
+
+                <para>Definition at line 117 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga49ac0744621f88d432d85838483ad1de">
+                <title>#define EXTI_Line19</title>                
+<para>External interrupt line 19 Connected to the Ethernet Wakeup event </para>
+
+                <para>Definition at line 118 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga3ebc4564ac4ca4e1613f98d81a707f2a">
+                <title>#define EXTI_Line20</title>                
+<para>External interrupt line 20 Connected to the USB OTG HS (configured in FS) Wakeup event </para>
+
+                <para>Definition at line 119 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1ga273edacd18e521e5a702c642c5b824af">
+                <title>#define EXTI_Line21</title>                
+<para>External interrupt line 21 Connected to the RTC Tamper and Time Stamp events </para>
+
+                <para>Definition at line 120 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d4a/group___e_x_t_i___lines_1gabc65f8a90a3d5595896505ef2c59bec6">
+                <title>#define EXTI_Line22</title>                
+<para>External interrupt line 22 Connected to the RTC Wakeup event </para>
+
+                <para>Definition at line 121 of file stm32f4xx_exti.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_exti.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

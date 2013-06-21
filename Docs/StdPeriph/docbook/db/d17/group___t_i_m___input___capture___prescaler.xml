@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d17/group___t_i_m___input___capture___prescaler">
+    <title>TIM_Input_Capture_Prescaler</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d17/group___t_i_m___input___capture___prescaler_1ga8acb44abe3147d883685c1f9f1ce410e">TIM_ICPSC_DIV1</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d17/group___t_i_m___input___capture___prescaler_1ga1d8a7b66add914e2ddd910d2d700978f">TIM_ICPSC_DIV2</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d17/group___t_i_m___input___capture___prescaler_1gaf5a675046430fa0f0c95b0dac612828f">TIM_ICPSC_DIV4</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d17/group___t_i_m___input___capture___prescaler_1ga5086cb03c89a5c67b199d20b605f00cb">TIM_ICPSC_DIV8</link> ((uint16_t)0x000C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d17/group___t_i_m___input___capture___prescaler_1ga91d219d7a210eb0a4bb49d72bda6b321">IS_TIM_IC_PRESCALER</link> (((PRESCALER) == <link linkend="db/d17/group___t_i_m___input___capture___prescaler_1ga8acb44abe3147d883685c1f9f1ce410e">TIM_ICPSC_DIV1</link>) || \
+                                        ((PRESCALER) == <link linkend="db/d17/group___t_i_m___input___capture___prescaler_1ga1d8a7b66add914e2ddd910d2d700978f">TIM_ICPSC_DIV2</link>) || \
+                                        ((PRESCALER) == <link linkend="db/d17/group___t_i_m___input___capture___prescaler_1gaf5a675046430fa0f0c95b0dac612828f">TIM_ICPSC_DIV4</link>) || \
+                                        ((PRESCALER) == <link linkend="db/d17/group___t_i_m___input___capture___prescaler_1ga5086cb03c89a5c67b199d20b605f00cb">TIM_ICPSC_DIV8</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="db/d17/group___t_i_m___input___capture___prescaler_1ga8acb44abe3147d883685c1f9f1ce410e">
+                <title>#define TIM_ICPSC_DIV1</title>                
+<para>Capture performed each time an edge is detected on the capture input. </para>
+
+                <para>Definition at line 531 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d17/group___t_i_m___input___capture___prescaler_1ga1d8a7b66add914e2ddd910d2d700978f">
+                <title>#define TIM_ICPSC_DIV2</title>                
+<para>Capture performed once every 2 events. </para>
+
+                <para>Definition at line 532 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d17/group___t_i_m___input___capture___prescaler_1gaf5a675046430fa0f0c95b0dac612828f">
+                <title>#define TIM_ICPSC_DIV4</title>                
+<para>Capture performed once every 4 events. </para>
+
+                <para>Definition at line 533 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="db/d17/group___t_i_m___input___capture___prescaler_1ga5086cb03c89a5c67b199d20b605f00cb">
+                <title>#define TIM_ICPSC_DIV8</title>                
+<para>Capture performed once every 8 events. </para>
+
+                <para>Definition at line 534 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

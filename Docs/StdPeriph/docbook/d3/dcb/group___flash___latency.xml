@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dcb/group___flash___latency">
+    <title>Flash_Latency</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga09afe6e52b819cc074f6111ec42ac3c3">FLASH_Latency_0</link> ((uint8_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga6b7281665340fe8f7919bdfcfd06f8e6">FLASH_Latency_1</link> ((uint8_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga55173ebb5c978459ce18d5e2516e3e89">FLASH_Latency_2</link> ((uint8_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga13fbc5a6423848be5bf631dc437bbc3f">FLASH_Latency_3</link> ((uint8_t)0x0003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga74a5deaec2020e484ce576925ff7de16">FLASH_Latency_4</link> ((uint8_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga8e52670ad258b0a95c94b99b8d7eab27">FLASH_Latency_5</link> ((uint8_t)0x0005)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga053dfbef3307536ff40a5ceb2576a4a3">FLASH_Latency_6</link> ((uint8_t)0x0006)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1ga352a374f6ae41d2cae767ed95efc6ae5">FLASH_Latency_7</link> ((uint8_t)0x0007)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dcb/group___flash___latency_1gafcbd098d482318a622a58bf168547389">IS_FLASH_LATENCY</link> (((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga09afe6e52b819cc074f6111ec42ac3c3">FLASH_Latency_0</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga6b7281665340fe8f7919bdfcfd06f8e6">FLASH_Latency_1</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga55173ebb5c978459ce18d5e2516e3e89">FLASH_Latency_2</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga13fbc5a6423848be5bf631dc437bbc3f">FLASH_Latency_3</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga74a5deaec2020e484ce576925ff7de16">FLASH_Latency_4</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga8e52670ad258b0a95c94b99b8d7eab27">FLASH_Latency_5</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga053dfbef3307536ff40a5ceb2576a4a3">FLASH_Latency_6</link>) || \
+                                   ((LATENCY) == <link linkend="d3/dcb/group___flash___latency_1ga352a374f6ae41d2cae767ed95efc6ae5">FLASH_Latency_7</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d3/dcb/group___flash___latency_1ga09afe6e52b819cc074f6111ec42ac3c3">
+                <title>#define FLASH_Latency_0</title>                
+<para>FLASH Zero Latency cycle </para>
+
+                <para>Definition at line 67 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dcb/group___flash___latency_1ga6b7281665340fe8f7919bdfcfd06f8e6">
+                <title>#define FLASH_Latency_1</title>                
+<para>FLASH One Latency cycle </para>
+
+                <para>Definition at line 68 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dcb/group___flash___latency_1ga55173ebb5c978459ce18d5e2516e3e89">
+                <title>#define FLASH_Latency_2</title>                
+<para>FLASH Two Latency cycles </para>
+
+                <para>Definition at line 69 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dcb/group___flash___latency_1ga13fbc5a6423848be5bf631dc437bbc3f">
+                <title>#define FLASH_Latency_3</title>                
+<para>FLASH Three Latency cycles </para>
+
+                <para>Definition at line 70 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dcb/group___flash___latency_1ga74a5deaec2020e484ce576925ff7de16">
+                <title>#define FLASH_Latency_4</title>                
+<para>FLASH Four Latency cycles </para>
+
+                <para>Definition at line 71 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dcb/group___flash___latency_1ga8e52670ad258b0a95c94b99b8d7eab27">
+                <title>#define FLASH_Latency_5</title>                
+<para>FLASH Five Latency cycles </para>
+
+                <para>Definition at line 72 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dcb/group___flash___latency_1ga053dfbef3307536ff40a5ceb2576a4a3">
+                <title>#define FLASH_Latency_6</title>                
+<para>FLASH Six Latency cycles </para>
+
+                <para>Definition at line 73 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/dcb/group___flash___latency_1ga352a374f6ae41d2cae767ed95efc6ae5">
+                <title>#define FLASH_Latency_7</title>                
+<para>FLASH Seven Latency cycles </para>
+
+                <para>Definition at line 74 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

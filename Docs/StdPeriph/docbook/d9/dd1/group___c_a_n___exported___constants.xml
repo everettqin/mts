@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dd1/group___c_a_n___exported___constants">
+    <title>CAN_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d7/d8f/group___c_a_n___init_status">CAN_InitStatus</link></para></listitem>
+            <listitem><para><link linkend="de/d4f/group___c_a_n__operating__mode">CAN_operating_mode</link></para></listitem>
+            <listitem><para><link linkend="d8/dbd/group___c_a_n__operating__mode__status">CAN_operating_mode_status</link></para></listitem>
+            <listitem><para><link linkend="da/d4d/group___c_a_n__synchronisation__jump__width">CAN_synchronisation_jump_width</link></para></listitem>
+            <listitem><para><link linkend="d3/d2c/group___c_a_n__time__quantum__in__bit__segment__1">CAN_time_quantum_in_bit_segment_1</link></para></listitem>
+            <listitem><para><link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2">CAN_time_quantum_in_bit_segment_2</link></para></listitem>
+            <listitem><para><link linkend="d3/d77/group___c_a_n__clock__prescaler">CAN_clock_prescaler</link></para></listitem>
+            <listitem><para><link linkend="d2/de6/group___c_a_n__filter__number">CAN_filter_number</link></para></listitem>
+            <listitem><para><link linkend="d2/df5/group___c_a_n__filter__mode">CAN_filter_mode</link></para></listitem>
+            <listitem><para><link linkend="db/ddc/group___c_a_n__filter__scale">CAN_filter_scale</link></para></listitem>
+            <listitem><para><link linkend="d3/dec/group___c_a_n__filter___f_i_f_o">CAN_filter_FIFO</link></para></listitem>
+            <listitem><para><link linkend="d5/d2a/group___c_a_n___start__bank__filter__for__slave___c_a_n">CAN_Start_bank_filter_for_slave_CAN</link></para></listitem>
+            <listitem><para><link linkend="d9/d2e/group___c_a_n___tx">CAN_Tx</link></para></listitem>
+            <listitem><para><link linkend="d0/d55/group___c_a_n__identifier__type">CAN_identifier_type</link></para></listitem>
+            <listitem><para><link linkend="da/d2b/group___c_a_n__remote__transmission__request">CAN_remote_transmission_request</link></para></listitem>
+            <listitem><para><link linkend="dc/dad/group___c_a_n__transmit__constants">CAN_transmit_constants</link></para></listitem>
+            <listitem><para><link linkend="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants">CAN_receive_FIFO_number_constants</link></para></listitem>
+            <listitem><para><link linkend="d4/dfa/group___c_a_n__sleep__constants">CAN_sleep_constants</link></para></listitem>
+            <listitem><para><link linkend="db/d4e/group___c_a_n__wake__up__constants">CAN_wake_up_constants</link></para></listitem>
+            <listitem><para><link linkend="d0/d79/group___c_a_n___error___code__constants">CAN_Error_Code_constants</link></para></listitem>
+            <listitem><para><link linkend="d3/dad/group___c_a_n__flags">CAN_flags</link></para></listitem>
+            <listitem><para><link linkend="d6/d0e/group___c_a_n__interrupts">CAN_interrupts</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d7/d8f/group___c_a_n___init_status.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d4f/group___c_a_n__operating__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/dbd/group___c_a_n__operating__mode__status.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d4d/group___c_a_n__synchronisation__jump__width.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d2c/group___c_a_n__time__quantum__in__bit__segment__1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d77/group___c_a_n__clock__prescaler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/de6/group___c_a_n__filter__number.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/df5/group___c_a_n__filter__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/ddc/group___c_a_n__filter__scale.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/dec/group___c_a_n__filter___f_i_f_o.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d2a/group___c_a_n___start__bank__filter__for__slave___c_a_n.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d2e/group___c_a_n___tx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d55/group___c_a_n__identifier__type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d2b/group___c_a_n__remote__transmission__request.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/dad/group___c_a_n__transmit__constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d7a/group___c_a_n__receive___f_i_f_o__number__constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/dfa/group___c_a_n__sleep__constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d4e/group___c_a_n__wake__up__constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d79/group___c_a_n___error___code__constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/dad/group___c_a_n__flags.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d0e/group___c_a_n__interrupts.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

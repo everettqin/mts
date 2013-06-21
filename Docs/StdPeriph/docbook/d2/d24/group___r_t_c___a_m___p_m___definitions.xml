@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d24/group___r_t_c___a_m___p_m___definitions">
+    <title>RTC_AM_PM_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d24/group___r_t_c___a_m___p_m___definitions_1ga86861d15dab24bfbf2ea9c1aec7b492f">RTC_H12_AM</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d24/group___r_t_c___a_m___p_m___definitions_1ga82a5381a1d266841a7fb75820dcad5de">RTC_H12_PM</link> ((uint8_t)0x40)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d24/group___r_t_c___a_m___p_m___definitions_1ga98f8d66c8fed6039f9a58d78b8c512b5">IS_RTC_H12</link> (((PM) == RTC_H12_AM) || ((PM) == RTC_H12_PM))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

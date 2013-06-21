@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d7f/stm32f4xx__hash_8c">
+    <title>stm32f4xx_hash.c File Reference</title>
+    <programlisting>#include stm32f4xx_hash.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d75/group___h_a_s_h___group1_1ga88717fe3a4f557182841a958e1dcd9c7">HASH_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d75/group___h_a_s_h___group1_1ga4a7d33f0954ac0463a6cda81121635cf">HASH_Init</link> (
+<link linkend="d8/da7/struct_h_a_s_h___init_type_def">HASH_InitTypeDef</link> * HASH_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d75/group___h_a_s_h___group1_1ga9cfaaa73eafec40a06154f58d48adeb5">HASH_StructInit</link> (
+<link linkend="d8/da7/struct_h_a_s_h___init_type_def">HASH_InitTypeDef</link> * HASH_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d75/group___h_a_s_h___group1_1ga11745813cf85a08b2058aac3bd026e4d">HASH_Reset</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d9f/group___h_a_s_h___group2_1gac4d1fa51c9240ad0287b371564b5d2a6">HASH_SetLastWordValidBitsNbr</link> (
+uint16_t ValidNumber)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d9f/group___h_a_s_h___group2_1ga9c4c0cebdeb1ce2631dd2eeab82107ef">HASH_DataIn</link> (
+uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="da/d9f/group___h_a_s_h___group2_1ga37bec5e637a57124f3179185d03537ab">HASH_GetInFIFOWordsNbr</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d9f/group___h_a_s_h___group2_1ga23018d770837d6ab9f46941f105cc017">HASH_GetDigest</link> (
+<link linkend="df/d20/struct_h_a_s_h___msg_digest">HASH_MsgDigest</link> * HASH_MessageDigest)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d9f/group___h_a_s_h___group2_1ga84ac2b64179fd37b75c4d5f665126e93">HASH_StartDigest</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___h_a_s_h___group3_1ga9432b2b66e223414c840e9313c388bc5">HASH_SaveContext</link> (
+<link linkend="d7/dd8/struct_h_a_s_h___context">HASH_Context</link> * HASH_ContextSave)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___h_a_s_h___group3_1ga1d8412a13601376c968aec63212ca54e">HASH_RestoreContext</link> (
+<link linkend="d7/dd8/struct_h_a_s_h___context">HASH_Context</link> * HASH_ContextRestore)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d83/group___h_a_s_h___group4_1ga6bc756803b0b3a03eecc47cb570e1bd3">HASH_DMACmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d4f/group___h_a_s_h___group5_1gaed111ba67a4f4afc8c9cf389adc574ac">HASH_ITConfig</link> (
+uint8_t HASH_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="de/d4f/group___h_a_s_h___group5_1gae994fb4be1977f6ebb823f38839f7bd1">HASH_GetFlagStatus</link> (
+uint16_t HASH_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d4f/group___h_a_s_h___group5_1ga0ec1269a1f30a1e7be0e3045d72ebcf6">HASH_ClearFlag</link> (
+uint16_t HASH_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="de/d4f/group___h_a_s_h___group5_1ga49a9d1ad196112cd3614b8c428a4c4cf">HASH_GetITStatus</link> (
+uint8_t HASH_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d4f/group___h_a_s_h___group5_1ga97b9508f09c6fb572f65832f124da26d">HASH_ClearITPendingBit</link> (
+uint8_t HASH_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the following functionalities of the HASH / HMAC Processor (HASH) peripheral: </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011<itemizedlist>
+<listitem>
+<para>Initialization and Configuration functions</para>
+</listitem><listitem>
+<para>Message Digest generation functions</para>
+</listitem><listitem>
+<para>context swapping functions</para>
+</listitem><listitem>
+<para>DMA interface function</para>
+</listitem><listitem>
+<para>Interrupts and flags management</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<programlisting><literallayout>*                               
+*          ===================================================================      
+*                                   How to use this driver
+*          ===================================================================
+*          HASH operation : 
+*          ----------------                   
+*         1. Enable the HASH controller clock using 
+*            RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_HASH, ENABLE) function.
+*           
+*         2. Initialise the HASH using HASH_Init() function. 
+*               
+*         3 . Reset the HASH processor core, so that the HASH will be ready 
+*             to compute he message digest of a new message by using 
+*             HASH_Reset() function.
+*
+*         4. Enable the HASH controller using the HASH_Cmd() function. 
+*                
+*         5. if using DMA for Data input transfer, Activate the DMA Request 
+*            using HASH_DMACmd() function 
+*                    
+*         6. if DMA is not used for data transfer, use HASH_DataIn() function 
+*            to enter data to IN FIFO.
+*             
+*          
+*         7. Configure the Number of valid bits in last word of the message 
+*            using HASH_SetLastWordValidBitsNbr() function.
+*             
+*         8. if the message length is not an exact multiple of 512 bits, 
+*            then the function HASH_StartDigest() must be called to 
+*            launch the computation of the final digest.     
+*             
+*         9. Once computed, the digest can be read using HASH_GetDigest() 
+*            function.         
+*                   
+*        10. To control HASH events you can use one of the following 
+*              two methods:
+*               a- Check on HASH flags using the HASH_GetFlagStatus() function.  
+*               b- Use HASH interrupts through the function HASH_ITConfig() at 
+*                  initialization phase and HASH_GetITStatus() function into 
+*                  interrupt routines in hashing phase.
+*          After checking on a flag you should clear it using HASH_ClearFlag()
+*          function. And after checking on an interrupt event you should 
+*          clear it using HASH_ClearITPendingBit() function.     
+*                     
+*        11. Save and restore hash processor context using 
+*            HASH_SaveContext() and HASH_RestoreContext() functions.     
+*              
+*
+*            
+*          HMAC operation : 
+*          ----------------  
+*          The HMAC algorithm is used for message authentication, by 
+*          irreversibly binding the message being processed to a key chosen 
+*          by the user. 
+*          For HMAC specifications, refer to &quot;HMAC: keyed-hashing for message 
+*          authentication, H. Krawczyk, M. Bellare, R. Canetti, February 1997&quot;
+*          
+*          Basically, the HMAC algorithm consists of two nested hash operations:
+*          HMAC(message) = Hash[((key | pad) XOR 0x5C) | Hash(((key | pad) XOR 0x36) | message)]
+*          where:
+*          - &quot;pad&quot; is a sequence of zeroes needed to extend the key to the 
+*                  length of the underlying hash function data block (that is 
+*                  512 bits for both the SHA-1 and MD5 hash algorithms)
+*          - &quot;|&quot;   represents the concatenation operator 
+*          
+*         
+*         To compute the HMAC, four different phases are required:
+*                    
+*         1.  Initialise the HASH using HASH_Init() function to do HMAC 
+*             operation. 
+*                
+*         2.  The key (to be used for the inner hash function) is then given 
+*             to the core. This operation follows the same mechanism as the 
+*             one used to send the message in the hash operation (that is, 
+*             by HASH_DataIn() function and, finally, 
+*             HASH_StartDigest() function.
+*          
+*         3.  Once the last word has been entered and computation has started, 
+*             the hash processor elaborates the key. It is then ready to 
+*             accept the message text using the same mechanism as the one 
+*             used to send the message in the hash operation.
+*       
+*         4.  After the first hash round, the hash processor returns &quot;ready&quot; 
+*             to indicate that it is ready to receive the key to be used for 
+*             the outer hash function (normally, this key is the same as the 
+*             one used for the inner hash function). When the last word of 
+*             the key is entered and computation starts, the HMAC result is 
+*             made available using HASH_GetDigest() function.
+*               
+*              
+*  </literallayout></programlisting></para>
+
+<para><formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.c</para>
+    </simplesect>
+</section>

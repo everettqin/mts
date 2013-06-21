@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d2b/group___c_a_n__remote__transmission__request">
+    <title>CAN_remote_transmission_request</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d2b/group___c_a_n__remote__transmission__request_1ga2407c3a8b2cd97bd651143aa959219f1">CAN_RTR_Data</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d2b/group___c_a_n__remote__transmission__request_1ga42e95ddfb02d88c82de84058fb0fb349">CAN_RTR_Remote</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d2b/group___c_a_n__remote__transmission__request_1ga3379997ad4da6fc4d7975c52b891bdc0">IS_CAN_RTR</link> (((RTR) == <link linkend="da/d2b/group___c_a_n__remote__transmission__request_1ga2407c3a8b2cd97bd651143aa959219f1">CAN_RTR_Data</link>) || ((RTR) == <link linkend="da/d2b/group___c_a_n__remote__transmission__request_1ga42e95ddfb02d88c82de84058fb0fb349">CAN_RTR_Remote</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d2b/group___c_a_n__remote__transmission__request_1gab1e89074b4fcfebf81c323909625b0d0">CAN_RTR_DATA</link> <link linkend="da/d2b/group___c_a_n__remote__transmission__request_1ga2407c3a8b2cd97bd651143aa959219f1">CAN_RTR_Data</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d2b/group___c_a_n__remote__transmission__request_1gab15c649e3e497c6d1145bb98ff7f3f04">CAN_RTR_REMOTE</link> <link linkend="da/d2b/group___c_a_n__remote__transmission__request_1ga42e95ddfb02d88c82de84058fb0fb349">CAN_RTR_Remote</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="da/d2b/group___c_a_n__remote__transmission__request_1ga2407c3a8b2cd97bd651143aa959219f1">
+                <title>#define CAN_RTR_Data</title>                
+<para>Data frame </para>
+
+                <para>Definition at line 398 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d2b/group___c_a_n__remote__transmission__request_1ga42e95ddfb02d88c82de84058fb0fb349">
+                <title>#define CAN_RTR_Remote</title>                
+<para>Remote frame </para>
+
+                <para>Definition at line 399 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

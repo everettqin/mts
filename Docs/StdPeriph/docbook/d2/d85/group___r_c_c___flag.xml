@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d85/group___r_c_c___flag">
+    <title>RCC_Flag</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1ga827d986723e7ce652fa733bb8184d216">RCC_FLAG_HSIRDY</link> ((uint8_t)0x21)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1ga173edf47bec93cf269a0e8d0fec9997c">RCC_FLAG_HSERDY</link> ((uint8_t)0x31)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1gaf82d8afb18d9df75db1d6c08b9c50046">RCC_FLAG_PLLRDY</link> ((uint8_t)0x39)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1ga31e67a9f19cf673acf196d19f443f3d5">RCC_FLAG_PLLI2SRDY</link> ((uint8_t)0x3B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1gac9fb963db446c16e46a18908f7fe1927">RCC_FLAG_LSERDY</link> ((uint8_t)0x41)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1ga8c5e4992314d347597621bfe7ab10d72">RCC_FLAG_LSIRDY</link> ((uint8_t)0x61)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1ga23d5211abcdf0e397442ca534ca04bb4">RCC_FLAG_BORRST</link> ((uint8_t)0x79)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1gabfc3ab5d4a8a94ec1c9f38794ce37ad6">RCC_FLAG_PINRST</link> ((uint8_t)0x7A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1ga39ad309070f416720207eece5da7dc2c">RCC_FLAG_PORRST</link> ((uint8_t)0x7B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1gaf7852615e9b19f0b2dbc8d08c7594b52">RCC_FLAG_SFTRST</link> ((uint8_t)0x7C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1gaac46bac8a97cf16635ff7ffc1e6c657f">RCC_FLAG_IWDGRST</link> ((uint8_t)0x7D)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1gaa80b60b2d497ccd7b7de1075009999a7">RCC_FLAG_WWDGRST</link> ((uint8_t)0x7E)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1ga67049531354aed7546971163d02c9920">RCC_FLAG_LPWRRST</link> ((uint8_t)0x7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1gaa27dea5bb62b26d0881e649770252158">IS_RCC_FLAG</link> (((FLAG) == RCC_FLAG_HSIRDY) || ((FLAG) == RCC_FLAG_HSERDY) || \
+                           ((FLAG) == RCC_FLAG_PLLRDY) || ((FLAG) == RCC_FLAG_LSERDY) || \
+                           ((FLAG) == RCC_FLAG_LSIRDY) || ((FLAG) == RCC_FLAG_BORRST) || \
+                           ((FLAG) == RCC_FLAG_PINRST) || ((FLAG) == RCC_FLAG_PORRST) || \
+                           ((FLAG) == RCC_FLAG_SFTRST) || ((FLAG) == RCC_FLAG_IWDGRST)|| \
+                           ((FLAG) == RCC_FLAG_WWDGRST)|| ((FLAG) == RCC_FLAG_LPWRRST)|| \
+                           ((FLAG) == RCC_FLAG_PLLI2SRDY))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d85/group___r_c_c___flag_1gafda50a08dc048f7c272bf04ec9c2c2b7">IS_RCC_CALIBRATION_VALUE</link> ((VALUE) &lt;= 0x1F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

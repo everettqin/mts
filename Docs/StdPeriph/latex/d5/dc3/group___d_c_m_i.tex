@@ -1,0 +1,460 @@
+\hypertarget{group___d_c_m_i}{\section{D\-C\-M\-I}
+\label{group___d_c_m_i}\index{D\-C\-M\-I@{D\-C\-M\-I}}
+}
+
+
+D\-C\-M\-I driver modules.  
+
+
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___d_c_m_i___exported___constants}{D\-C\-M\-I\-\_\-\-Exported\-\_\-\-Constants}
+\item 
+\hyperlink{group___d_c_m_i___private___functions}{D\-C\-M\-I\-\_\-\-Private\-\_\-\-Functions}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_d_c_m_i___init_type_def}{D\-C\-M\-I\-\_\-\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em D\-C\-M\-I Init structure definition. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_d_c_m_i___c_r_o_p_init_type_def}{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em D\-C\-M\-I C\-R\-O\-P Init structure definition. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_d_c_m_i___codes_init_type_def}{D\-C\-M\-I\-\_\-\-Codes\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em D\-C\-M\-I Embedded Synchronisation C\-O\-D\-E Init structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___d_c_m_i_gab8f501f117d5695017e1dc5a611a5015}{D\-C\-M\-I\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the D\-C\-M\-I registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga1299076f1459525053ba4f2fa408ed2a}{D\-C\-M\-I\-\_\-\-Init} (\hyperlink{struct_d_c_m_i___init_type_def}{D\-C\-M\-I\-\_\-\-Init\-Type\-Def} $\ast$D\-C\-M\-I\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the D\-C\-M\-I according to the specified parameters in the D\-C\-M\-I\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga268eb4266fe7f294ee748e86f7b8add2}{D\-C\-M\-I\-\_\-\-Struct\-Init} (\hyperlink{struct_d_c_m_i___init_type_def}{D\-C\-M\-I\-\_\-\-Init\-Type\-Def} $\ast$D\-C\-M\-I\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each D\-C\-M\-I\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga3bd4eb06314ed06dcb71ee91391b7ec4}{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Config} (\hyperlink{struct_d_c_m_i___c_r_o_p_init_type_def}{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Init\-Type\-Def} $\ast$D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the D\-C\-M\-I peripheral C\-R\-O\-P mode according to the specified parameters in the D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga7139eecdc0f7975b42cd2f9c5644d0a5}{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the D\-C\-M\-I Crop feature. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga8888b27bd5aca62d250642468ea6cd6d}{D\-C\-M\-I\-\_\-\-Set\-Embedded\-Synchro\-Codes} (\hyperlink{struct_d_c_m_i___codes_init_type_def}{D\-C\-M\-I\-\_\-\-Codes\-Init\-Type\-Def} $\ast$D\-C\-M\-I\-\_\-\-Codes\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Sets the embedded synchronization codes. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga30a38a4858273c05e8f1b4677d744c13}{D\-C\-M\-I\-\_\-\-J\-P\-E\-G\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the D\-C\-M\-I J\-P\-E\-G format. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga36bba54c40637b8071aea8ffea71fb84}{D\-C\-M\-I\-\_\-\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the D\-C\-M\-I interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_gad00fb33497ffa337a5b2b77fc6aa8d74}{D\-C\-M\-I\-\_\-\-Capture\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the D\-C\-M\-I Capture. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group___d_c_m_i_ga475305bd8694e4cebefcb263c0a5b979}{D\-C\-M\-I\-\_\-\-Read\-Data} (void)
+\begin{DoxyCompactList}\small\item\em Reads the data stored in the D\-R register. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga3d89fb10384dff1dfd9197fbb6c6b2eb}{D\-C\-M\-I\-\_\-\-I\-T\-Config} (uint16\-\_\-t D\-C\-M\-I\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the D\-C\-M\-I interface interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___d_c_m_i_ga1b66e1966fbea902a8e7015c56db7587}{D\-C\-M\-I\-\_\-\-Get\-Flag\-Status} (uint16\-\_\-t D\-C\-M\-I\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the D\-C\-M\-I interface flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga1c93caf3ccfecf07cec8e1e0f844ddaa}{D\-C\-M\-I\-\_\-\-Clear\-Flag} (uint16\-\_\-t D\-C\-M\-I\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the D\-C\-M\-I's pending flags. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___d_c_m_i_gac0b27821aab3ee6b73ae8a6c6339fed5}{D\-C\-M\-I\-\_\-\-Get\-I\-T\-Status} (uint16\-\_\-t D\-C\-M\-I\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the D\-C\-M\-I interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_c_m_i_ga908e6dad7bc5f4f4bbc512f679222c55}{D\-C\-M\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint16\-\_\-t D\-C\-M\-I\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the D\-C\-M\-I's interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\-C\-M\-I driver modules. 
+
+\subsection{Function Documentation}
+\hypertarget{group___d_c_m_i_gad00fb33497ffa337a5b2b77fc6aa8d74}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Capture\-Cmd@{D\-C\-M\-I\-\_\-\-Capture\-Cmd}}
+\index{D\-C\-M\-I\-\_\-\-Capture\-Cmd@{D\-C\-M\-I\-\_\-\-Capture\-Cmd}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Capture\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-Capture\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_gad00fb33497ffa337a5b2b77fc6aa8d74}
+
+
+Enables or disables the D\-C\-M\-I Capture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the D\-C\-M\-I capture. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 318 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga1c93caf3ccfecf07cec8e1e0f844ddaa}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Clear\-Flag@{D\-C\-M\-I\-\_\-\-Clear\-Flag}}
+\index{D\-C\-M\-I\-\_\-\-Clear\-Flag@{D\-C\-M\-I\-\_\-\-Clear\-Flag}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{D\-C\-M\-I\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga1c93caf3ccfecf07cec8e1e0f844ddaa}
+
+
+Clears the D\-C\-M\-I's pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-C\-M\-I\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-F\-R\-A\-M\-E\-R\-I\-: Frame capture complete Raw flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-O\-V\-F\-R\-I\-: Overflow Raw flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-E\-R\-R\-R\-I\-: Synchronization error Raw flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-V\-S\-Y\-N\-C\-R\-I\-: V\-S\-Y\-N\-C Raw flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-L\-I\-N\-E\-R\-I\-: Line Raw flag mask \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 457 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga908e6dad7bc5f4f4bbc512f679222c55}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit@{D\-C\-M\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{D\-C\-M\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit@{D\-C\-M\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{D\-C\-M\-I\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga908e6dad7bc5f4f4bbc512f679222c55}
+
+
+Clears the D\-C\-M\-I's interrupt pending bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-C\-M\-I\-\_\-\-I\-T,\-:} & specifies the D\-C\-M\-I interrupt pending bit to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-F\-R\-A\-M\-E\-: Frame capture complete interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-O\-V\-F\-: Overflow interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-E\-R\-R\-: Synchronization error interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-V\-S\-Y\-N\-C\-: V\-S\-Y\-N\-C interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-L\-I\-N\-E\-: Line interrupt mask \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 511 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga36bba54c40637b8071aea8ffea71fb84}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Cmd@{D\-C\-M\-I\-\_\-\-Cmd}}
+\index{D\-C\-M\-I\-\_\-\-Cmd@{D\-C\-M\-I\-\_\-\-Cmd}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga36bba54c40637b8071aea8ffea71fb84}
+
+
+Enables or disables the D\-C\-M\-I interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the D\-C\-M\-I interface. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 295 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga7139eecdc0f7975b42cd2f9c5644d0a5}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Cmd@{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Cmd}}
+\index{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Cmd@{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Cmd}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga7139eecdc0f7975b42cd2f9c5644d0a5}
+
+
+Enables or disables the D\-C\-M\-I Crop feature. 
+
+\begin{DoxyNote}{Note}
+This function should be called before to enable and start the D\-C\-M\-I interface. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the D\-C\-M\-I Crop feature. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 219 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga3bd4eb06314ed06dcb71ee91391b7ec4}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Config@{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Config}}
+\index{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Config@{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Config}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Config (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Init\-Type\-Def} $\ast$}]{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga3bd4eb06314ed06dcb71ee91391b7ec4}
+
+
+Initializes the D\-C\-M\-I peripheral C\-R\-O\-P mode according to the specified parameters in the D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Init\-Struct. 
+
+\begin{DoxyNote}{Note}
+This function should be called before to enable and start the D\-C\-M\-I interface. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_d_c_m_i___c_r_o_p_init_type_def}{D\-C\-M\-I\-\_\-\-C\-R\-O\-P\-Init\-Type\-Def} structure that contains the configuration information for the D\-C\-M\-I peripheral C\-R\-O\-P mode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 201 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_gab8f501f117d5695017e1dc5a611a5015}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-De\-Init@{D\-C\-M\-I\-\_\-\-De\-Init}}
+\index{D\-C\-M\-I\-\_\-\-De\-Init@{D\-C\-M\-I\-\_\-\-De\-Init}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_gab8f501f117d5695017e1dc5a611a5015}
+
+
+Deinitializes the D\-C\-M\-I registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 122 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga1b66e1966fbea902a8e7015c56db7587}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Get\-Flag\-Status@{D\-C\-M\-I\-\_\-\-Get\-Flag\-Status}}
+\index{D\-C\-M\-I\-\_\-\-Get\-Flag\-Status@{D\-C\-M\-I\-\_\-\-Get\-Flag\-Status}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status D\-C\-M\-I\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{D\-C\-M\-I\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga1b66e1966fbea902a8e7015c56db7587}
+
+
+Checks whether the D\-C\-M\-I interface flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-C\-M\-I\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-F\-R\-A\-M\-E\-R\-I\-: Frame capture complete Raw flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-O\-V\-F\-R\-I\-: Overflow Raw flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-E\-R\-R\-R\-I\-: Synchronization error Raw flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-V\-S\-Y\-N\-C\-R\-I\-: V\-S\-Y\-N\-C Raw flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-L\-I\-N\-E\-R\-I\-: Line Raw flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-F\-R\-A\-M\-E\-M\-I\-: Frame capture complete Masked flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-O\-V\-F\-M\-I\-: Overflow Masked flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-E\-R\-R\-M\-I\-: Synchronization error Masked flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-V\-S\-Y\-N\-C\-M\-I\-: V\-S\-Y\-N\-C Masked flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-L\-I\-N\-E\-M\-I\-: Line Masked flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-H\-S\-Y\-N\-C\-: H\-S\-Y\-N\-C flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-V\-S\-Y\-N\-C\-: V\-S\-Y\-N\-C flag mask \item D\-C\-M\-I\-\_\-\-F\-L\-A\-G\-\_\-\-F\-N\-E\-: Fifo not empty flag mask \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of D\-C\-M\-I\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 410 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_gac0b27821aab3ee6b73ae8a6c6339fed5}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Get\-I\-T\-Status@{D\-C\-M\-I\-\_\-\-Get\-I\-T\-Status}}
+\index{D\-C\-M\-I\-\_\-\-Get\-I\-T\-Status@{D\-C\-M\-I\-\_\-\-Get\-I\-T\-Status}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status D\-C\-M\-I\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{D\-C\-M\-I\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_gac0b27821aab3ee6b73ae8a6c6339fed5}
+
+
+Checks whether the D\-C\-M\-I interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-C\-M\-I\-\_\-\-I\-T,\-:} & specifies the D\-C\-M\-I interrupt source to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-F\-R\-A\-M\-E\-: Frame capture complete interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-O\-V\-F\-: Overflow interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-E\-R\-R\-: Synchronization error interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-V\-S\-Y\-N\-C\-: V\-S\-Y\-N\-C interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-L\-I\-N\-E\-: Line interrupt mask \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of D\-C\-M\-I\-\_\-\-I\-T (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 479 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga1299076f1459525053ba4f2fa408ed2a}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Init@{D\-C\-M\-I\-\_\-\-Init}}
+\index{D\-C\-M\-I\-\_\-\-Init@{D\-C\-M\-I\-\_\-\-Init}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-C\-M\-I\-\_\-\-Init\-Type\-Def} $\ast$}]{D\-C\-M\-I\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga1299076f1459525053ba4f2fa408ed2a}
+
+
+Initializes the D\-C\-M\-I according to the specified parameters in the D\-C\-M\-I\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-C\-M\-I\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_d_c_m_i___init_type_def}{D\-C\-M\-I\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the D\-C\-M\-I. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 139 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga3d89fb10384dff1dfd9197fbb6c6b2eb}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-I\-T\-Config@{D\-C\-M\-I\-\_\-\-I\-T\-Config}}
+\index{D\-C\-M\-I\-\_\-\-I\-T\-Config@{D\-C\-M\-I\-\_\-\-I\-T\-Config}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{D\-C\-M\-I\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga3d89fb10384dff1dfd9197fbb6c6b2eb}
+
+
+Enables or disables the D\-C\-M\-I interface interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-C\-M\-I\-\_\-\-I\-T,\-:} & specifies the D\-C\-M\-I interrupt sources to be enabled or disabled. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-F\-R\-A\-M\-E\-: Frame capture complete interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-O\-V\-F\-: Overflow interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-E\-R\-R\-: Synchronization error interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-V\-S\-Y\-N\-C\-: V\-S\-Y\-N\-C interrupt mask \item D\-C\-M\-I\-\_\-\-I\-T\-\_\-\-L\-I\-N\-E\-: Line interrupt mask \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified D\-C\-M\-I interrupts. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 373 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga30a38a4858273c05e8f1b4677d744c13}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-J\-P\-E\-G\-Cmd@{D\-C\-M\-I\-\_\-\-J\-P\-E\-G\-Cmd}}
+\index{D\-C\-M\-I\-\_\-\-J\-P\-E\-G\-Cmd@{D\-C\-M\-I\-\_\-\-J\-P\-E\-G\-Cmd}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-J\-P\-E\-G\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-J\-P\-E\-G\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga30a38a4858273c05e8f1b4677d744c13}
+
+
+Enables or disables the D\-C\-M\-I J\-P\-E\-G format. 
+
+\begin{DoxyNote}{Note}
+The Crop and Embedded Synchronization features cannot be used in this mode. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the D\-C\-M\-I J\-P\-E\-G format. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 257 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga475305bd8694e4cebefcb263c0a5b979}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Read\-Data@{D\-C\-M\-I\-\_\-\-Read\-Data}}
+\index{D\-C\-M\-I\-\_\-\-Read\-Data@{D\-C\-M\-I\-\_\-\-Read\-Data}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Read\-Data}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t D\-C\-M\-I\-\_\-\-Read\-Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga475305bd8694e4cebefcb263c0a5b979}
+
+
+Reads the data stored in the D\-R register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Data} & register value \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 340 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga8888b27bd5aca62d250642468ea6cd6d}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Set\-Embedded\-Synchro\-Codes@{D\-C\-M\-I\-\_\-\-Set\-Embedded\-Synchro\-Codes}}
+\index{D\-C\-M\-I\-\_\-\-Set\-Embedded\-Synchro\-Codes@{D\-C\-M\-I\-\_\-\-Set\-Embedded\-Synchro\-Codes}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Set\-Embedded\-Synchro\-Codes}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-Set\-Embedded\-Synchro\-Codes (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-C\-M\-I\-\_\-\-Codes\-Init\-Type\-Def} $\ast$}]{D\-C\-M\-I\-\_\-\-Codes\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga8888b27bd5aca62d250642468ea6cd6d}
+
+
+Sets the embedded synchronization codes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_d_c_m_i___codes_init_type_def}{D\-C\-M\-I\-\_\-\-Codes\-Init\-Type\-Def},\-:} & pointer to a \hyperlink{struct_d_c_m_i___codes_init_type_def}{D\-C\-M\-I\-\_\-\-Codes\-Init\-Type\-Def} structure that contains the embedded synchronization codes for the D\-C\-M\-I peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 242 of file stm32f4xx\-\_\-dcmi.\-c.
+
+\hypertarget{group___d_c_m_i_ga268eb4266fe7f294ee748e86f7b8add2}{\index{D\-C\-M\-I@{D\-C\-M\-I}!D\-C\-M\-I\-\_\-\-Struct\-Init@{D\-C\-M\-I\-\_\-\-Struct\-Init}}
+\index{D\-C\-M\-I\-\_\-\-Struct\-Init@{D\-C\-M\-I\-\_\-\-Struct\-Init}!DCMI@{D\-C\-M\-I}}
+\subsubsection[{D\-C\-M\-I\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void D\-C\-M\-I\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-C\-M\-I\-\_\-\-Init\-Type\-Def} $\ast$}]{D\-C\-M\-I\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___d_c_m_i_ga268eb4266fe7f294ee748e86f7b8add2}
+
+
+Fills each D\-C\-M\-I\-\_\-\-Init\-Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-C\-M\-I\-\_\-\-Init\-Struct} & \-: pointer to a \hyperlink{struct_d_c_m_i___init_type_def}{D\-C\-M\-I\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 181 of file stm32f4xx\-\_\-dcmi.\-c.
+

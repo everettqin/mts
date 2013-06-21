@@ -1,0 +1,632 @@
+\hypertarget{group___d_a_c}{\section{D\-A\-C}
+\label{group___d_a_c}\index{D\-A\-C@{D\-A\-C}}
+}
+
+
+D\-A\-C driver modules.  
+
+
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___d_a_c___exported___constants}{D\-A\-C\-\_\-\-Exported\-\_\-\-Constants}
+\item 
+\hyperlink{group___d_a_c___private___functions}{D\-A\-C\-\_\-\-Private\-\_\-\-Functions}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_d_a_c___init_type_def}{D\-A\-C\-\_\-\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em D\-A\-C Init structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___d_a_c_ga8a5812a1d5ced986bb997a4bb7ae697d}{\#define {\bfseries C\-R\-\_\-\-C\-L\-E\-A\-R\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x00000\-F\-F\-E)}\label{group___d_a_c_ga8a5812a1d5ced986bb997a4bb7ae697d}
+
+\item 
+\hypertarget{group___d_a_c_ga6401668f65168b2b689b49155f380bdd}{\#define {\bfseries D\-U\-A\-L\-\_\-\-S\-W\-T\-R\-I\-G\-\_\-\-S\-E\-T}~((uint32\-\_\-t)0x00000003)}\label{group___d_a_c_ga6401668f65168b2b689b49155f380bdd}
+
+\item 
+\hypertarget{group___d_a_c_gacd3ce00f8b25892532af267f26932ed7}{\#define {\bfseries D\-U\-A\-L\-\_\-\-S\-W\-T\-R\-I\-G\-\_\-\-R\-E\-S\-E\-T}~((uint32\-\_\-t)0x\-F\-F\-F\-F\-F\-F\-F\-C)}\label{group___d_a_c_gacd3ce00f8b25892532af267f26932ed7}
+
+\item 
+\hypertarget{group___d_a_c_gaf1305e3b7cfb0f898678baeab6e91cbf}{\#define {\bfseries D\-H\-R12\-R1\-\_\-\-O\-F\-F\-S\-E\-T}~((uint32\-\_\-t)0x00000008)}\label{group___d_a_c_gaf1305e3b7cfb0f898678baeab6e91cbf}
+
+\item 
+\hypertarget{group___d_a_c_ga157b0fbccea090637eea09172fdd6a39}{\#define {\bfseries D\-H\-R12\-R2\-\_\-\-O\-F\-F\-S\-E\-T}~((uint32\-\_\-t)0x00000014)}\label{group___d_a_c_ga157b0fbccea090637eea09172fdd6a39}
+
+\item 
+\hypertarget{group___d_a_c_ga2893b0491ec29a95fd061e5e0fa029e3}{\#define {\bfseries D\-H\-R12\-R\-D\-\_\-\-O\-F\-F\-S\-E\-T}~((uint32\-\_\-t)0x00000020)}\label{group___d_a_c_ga2893b0491ec29a95fd061e5e0fa029e3}
+
+\item 
+\hypertarget{group___d_a_c_ga051bab7263211bd232d13665339c1745}{\#define {\bfseries D\-O\-R\-\_\-\-O\-F\-F\-S\-E\-T}~((uint32\-\_\-t)0x0000002\-C)}\label{group___d_a_c_ga051bab7263211bd232d13665339c1745}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___d_a_c_ga1fae225204e1e049d6795319e99ba8bc}{D\-A\-C\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the D\-A\-C peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_ga7c59850468ed4bf0659663fe495441da}{D\-A\-C\-\_\-\-Init} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, \hyperlink{struct_d_a_c___init_type_def}{D\-A\-C\-\_\-\-Init\-Type\-Def} $\ast$D\-A\-C\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the D\-A\-C peripheral according to the specified parameters in the D\-A\-C\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_gadfc270974d54cb5fa5f92556015c4046}{D\-A\-C\-\_\-\-Struct\-Init} (\hyperlink{struct_d_a_c___init_type_def}{D\-A\-C\-\_\-\-Init\-Type\-Def} $\ast$D\-A\-C\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each D\-A\-C\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_ga323e61530d7fa9396c3bce9edb61f733}{D\-A\-C\-\_\-\-Cmd} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified D\-A\-C channel. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_ga46f9f7f6b9520a86e300fe966afe5fb3}{D\-A\-C\-\_\-\-Software\-Trigger\-Cmd} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected D\-A\-C channel software trigger. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_gab4d3b364a6b184dcd65f3b294ebf56dc}{D\-A\-C\-\_\-\-Dual\-Software\-Trigger\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables simultaneously the two D\-A\-C channels software triggers. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_gabd51ae6880821d4dcd923969ec19a19e}{D\-A\-C\-\_\-\-Wave\-Generation\-Cmd} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, uint32\-\_\-t D\-A\-C\-\_\-\-Wave, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the selected D\-A\-C channel wave generation. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_gad06b4230d2b17d1d13f41dce4c782461}{D\-A\-C\-\_\-\-Set\-Channel1\-Data} (uint32\-\_\-t D\-A\-C\-\_\-\-Align, uint16\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for D\-A\-C channel1. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_ga44e12006ec186791378d132da8541552}{D\-A\-C\-\_\-\-Set\-Channel2\-Data} (uint32\-\_\-t D\-A\-C\-\_\-\-Align, uint16\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for D\-A\-C channel2. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_ga4ca2cfdf56ab35a23f2517f23d7fbb24}{D\-A\-C\-\_\-\-Set\-Dual\-Channel\-Data} (uint32\-\_\-t D\-A\-C\-\_\-\-Align, uint16\-\_\-t Data2, uint16\-\_\-t Data1)
+\begin{DoxyCompactList}\small\item\em Set the specified data holding register value for dual channel D\-A\-C. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{group___d_a_c_ga51274838de1e5dd012a82d7f44d7a50b}{D\-A\-C\-\_\-\-Get\-Data\-Output\-Value} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel)
+\begin{DoxyCompactList}\small\item\em Returns the last data output value of the selected D\-A\-C channel. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_ga194cba38f60ace11658824f0250121f4}{D\-A\-C\-\_\-\-D\-M\-A\-Cmd} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified D\-A\-C channel D\-M\-A request. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_ga12d7495b30eae40c2570118cabbda1c3}{D\-A\-C\-\_\-\-I\-T\-Config} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, uint32\-\_\-t D\-A\-C\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified D\-A\-C interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___d_a_c_ga9ee60b78f0ccd23bfbe54bce2a2f909b}{D\-A\-C\-\_\-\-Get\-Flag\-Status} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, uint32\-\_\-t D\-A\-C\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified D\-A\-C flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_ga49543c52786d70d6b6311f3fee856d37}{D\-A\-C\-\_\-\-Clear\-Flag} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, uint32\-\_\-t D\-A\-C\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the D\-A\-C channel's pending flags. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___d_a_c_ga541aac3b50db3a8a806ec5ef30679aca}{D\-A\-C\-\_\-\-Get\-I\-T\-Status} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, uint32\-\_\-t D\-A\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified D\-A\-C interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___d_a_c_ga12d90e69a2642997136b23224d180641}{D\-A\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint32\-\_\-t D\-A\-C\-\_\-\-Channel, uint32\-\_\-t D\-A\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the D\-A\-C channel's interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\-A\-C driver modules. 
+
+\subsection{Function Documentation}
+\hypertarget{group___d_a_c_ga49543c52786d70d6b6311f3fee856d37}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Clear\-Flag@{D\-A\-C\-\_\-\-Clear\-Flag}}
+\index{D\-A\-C\-\_\-\-Clear\-Flag@{D\-A\-C\-\_\-\-Clear\-Flag}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga49543c52786d70d6b6311f3fee856d37}
+
+
+Clears the D\-A\-C channel's pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em D\-A\-C\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to clear. This parameter can be of the following value\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-F\-L\-A\-G\-\_\-\-D\-M\-A\-U\-D\-R\-: D\-M\-A underrun flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The D\-M\-A underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 612 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga12d90e69a2642997136b23224d180641}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{D\-A\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{D\-A\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{D\-A\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga12d90e69a2642997136b23224d180641}
+
+
+Clears the D\-A\-C channel's interrupt pending bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em D\-A\-C\-\_\-\-I\-T,\-:} & specifies the D\-A\-C interrupt pending bit to clear. This parameter can be the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-I\-T\-\_\-\-D\-M\-A\-U\-D\-R\-: D\-M\-A underrun interrupt mask \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The D\-M\-A underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 675 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga323e61530d7fa9396c3bce9edb61f733}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Cmd@{D\-A\-C\-\_\-\-Cmd}}
+\index{D\-A\-C\-\_\-\-Cmd@{D\-A\-C\-\_\-\-Cmd}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga323e61530d7fa9396c3bce9edb61f733}
+
+
+Enables or disables the specified D\-A\-C channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the D\-A\-C channel. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+When the D\-A\-C channel is enabled the trigger source can no more be modified. 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 253 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga1fae225204e1e049d6795319e99ba8bc}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-De\-Init@{D\-A\-C\-\_\-\-De\-Init}}
+\index{D\-A\-C\-\_\-\-De\-Init@{D\-A\-C\-\_\-\-De\-Init}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga1fae225204e1e049d6795319e99ba8bc}
+
+
+Deinitializes the D\-A\-C peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 174 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga194cba38f60ace11658824f0250121f4}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-D\-M\-A\-Cmd@{D\-A\-C\-\_\-\-D\-M\-A\-Cmd}}
+\index{D\-A\-C\-\_\-\-D\-M\-A\-Cmd@{D\-A\-C\-\_\-\-D\-M\-A\-Cmd}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-D\-M\-A\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-D\-M\-A\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga194cba38f60ace11658824f0250121f4}
+
+
+Enables or disables the specified D\-A\-C channel D\-M\-A request. 
+
+\begin{DoxyNote}{Note}
+When enabled D\-M\-A1 is generated when an external trigger (E\-X\-T\-I Line9, T\-I\-M2, T\-I\-M4, T\-I\-M5, T\-I\-M6, T\-I\-M7 or T\-I\-M8 but not a software trigger) occurs. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the selected D\-A\-C channel D\-M\-A request. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The D\-A\-C channel1 is mapped on D\-M\-A1 Stream 5 channel7 which must be already configured. 
+
+The D\-A\-C channel2 is mapped on D\-M\-A1 Stream 6 channel7 which must be already configured. 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 497 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_gab4d3b364a6b184dcd65f3b294ebf56dc}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Dual\-Software\-Trigger\-Cmd@{D\-A\-C\-\_\-\-Dual\-Software\-Trigger\-Cmd}}
+\index{D\-A\-C\-\_\-\-Dual\-Software\-Trigger\-Cmd@{D\-A\-C\-\_\-\-Dual\-Software\-Trigger\-Cmd}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Dual\-Software\-Trigger\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Dual\-Software\-Trigger\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_gab4d3b364a6b184dcd65f3b294ebf56dc}
+
+
+Enables or disables simultaneously the two D\-A\-C channels software triggers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the D\-A\-C channels software triggers. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 305 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga51274838de1e5dd012a82d7f44d7a50b}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Get\-Data\-Output\-Value@{D\-A\-C\-\_\-\-Get\-Data\-Output\-Value}}
+\index{D\-A\-C\-\_\-\-Get\-Data\-Output\-Value@{D\-A\-C\-\_\-\-Get\-Data\-Output\-Value}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Get\-Data\-Output\-Value}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t D\-A\-C\-\_\-\-Get\-Data\-Output\-Value (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga51274838de1e5dd012a82d7f44d7a50b}
+
+
+Returns the last data output value of the selected D\-A\-C channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & selected D\-A\-C channel data output value. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 452 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga9ee60b78f0ccd23bfbe54bce2a2f909b}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Get\-Flag\-Status@{D\-A\-C\-\_\-\-Get\-Flag\-Status}}
+\index{D\-A\-C\-\_\-\-Get\-Flag\-Status@{D\-A\-C\-\_\-\-Get\-Flag\-Status}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status D\-A\-C\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga9ee60b78f0ccd23bfbe54bce2a2f909b}
+
+
+Checks whether the specified D\-A\-C flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em D\-A\-C\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to check. This parameter can be only of the following value\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-F\-L\-A\-G\-\_\-\-D\-M\-A\-U\-D\-R\-: D\-M\-A underrun flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The D\-M\-A underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of D\-A\-C\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 577 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga541aac3b50db3a8a806ec5ef30679aca}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Get\-I\-T\-Status@{D\-A\-C\-\_\-\-Get\-I\-T\-Status}}
+\index{D\-A\-C\-\_\-\-Get\-I\-T\-Status@{D\-A\-C\-\_\-\-Get\-I\-T\-Status}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status D\-A\-C\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga541aac3b50db3a8a806ec5ef30679aca}
+
+
+Checks whether the specified D\-A\-C interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em D\-A\-C\-\_\-\-I\-T,\-:} & specifies the D\-A\-C interrupt source to check. This parameter can be the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-I\-T\-\_\-\-D\-M\-A\-U\-D\-R\-: D\-M\-A underrun interrupt mask \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The D\-M\-A underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of D\-A\-C\-\_\-\-I\-T (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 635 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga7c59850468ed4bf0659663fe495441da}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Init@{D\-A\-C\-\_\-\-Init}}
+\index{D\-A\-C\-\_\-\-Init@{D\-A\-C\-\_\-\-Init}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{{\bf D\-A\-C\-\_\-\-Init\-Type\-Def} $\ast$}]{D\-A\-C\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga7c59850468ed4bf0659663fe495441da}
+
+
+Initializes the D\-A\-C peripheral according to the specified parameters in the D\-A\-C\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & the selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em D\-A\-C\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_d_a_c___init_type_def}{D\-A\-C\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the specified D\-A\-C channel. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 193 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga12d7495b30eae40c2570118cabbda1c3}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-I\-T\-Config@{D\-A\-C\-\_\-\-I\-T\-Config}}
+\index{D\-A\-C\-\_\-\-I\-T\-Config@{D\-A\-C\-\_\-\-I\-T\-Config}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga12d7495b30eae40c2570118cabbda1c3}
+
+
+Enables or disables the specified D\-A\-C interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em D\-A\-C\-\_\-\-I\-T,\-:} & specifies the D\-A\-C interrupt sources to be enabled or disabled. This parameter can be the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-I\-T\-\_\-\-D\-M\-A\-U\-D\-R\-: D\-M\-A underrun interrupt mask \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The D\-M\-A underrun occurs when a second external trigger arrives before the acknowledgement for the first external trigger is received (first request). 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the specified D\-A\-C interrupts. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 545 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_gad06b4230d2b17d1d13f41dce4c782461}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Set\-Channel1\-Data@{D\-A\-C\-\_\-\-Set\-Channel1\-Data}}
+\index{D\-A\-C\-\_\-\-Set\-Channel1\-Data@{D\-A\-C\-\_\-\-Set\-Channel1\-Data}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Set\-Channel1\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Set\-Channel1\-Data (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Align, }
+\item[{uint16\-\_\-t}]{Data}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_gad06b4230d2b17d1d13f41dce4c782461}
+
+
+Set the specified data holding register value for D\-A\-C channel1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Align,\-:} & Specifies the data alignment for D\-A\-C channel1. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Align\-\_\-8b\-\_\-\-R\-: 8bit right data alignment selected \item D\-A\-C\-\_\-\-Align\-\_\-12b\-\_\-\-L\-: 12bit left data alignment selected \item D\-A\-C\-\_\-\-Align\-\_\-12b\-\_\-\-R\-: 12bit right data alignment selected \end{DoxyItemize}
+\\
+\hline
+{\em Data,\-:} & Data to be loaded in the selected data holding register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 365 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga44e12006ec186791378d132da8541552}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Set\-Channel2\-Data@{D\-A\-C\-\_\-\-Set\-Channel2\-Data}}
+\index{D\-A\-C\-\_\-\-Set\-Channel2\-Data@{D\-A\-C\-\_\-\-Set\-Channel2\-Data}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Set\-Channel2\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Set\-Channel2\-Data (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Align, }
+\item[{uint16\-\_\-t}]{Data}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga44e12006ec186791378d132da8541552}
+
+
+Set the specified data holding register value for D\-A\-C channel2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Align,\-:} & Specifies the data alignment for D\-A\-C channel2. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Align\-\_\-8b\-\_\-\-R\-: 8bit right data alignment selected \item D\-A\-C\-\_\-\-Align\-\_\-12b\-\_\-\-L\-: 12bit left data alignment selected \item D\-A\-C\-\_\-\-Align\-\_\-12b\-\_\-\-R\-: 12bit right data alignment selected \end{DoxyItemize}
+\\
+\hline
+{\em Data,\-:} & Data to be loaded in the selected data holding register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 390 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga4ca2cfdf56ab35a23f2517f23d7fbb24}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Set\-Dual\-Channel\-Data@{D\-A\-C\-\_\-\-Set\-Dual\-Channel\-Data}}
+\index{D\-A\-C\-\_\-\-Set\-Dual\-Channel\-Data@{D\-A\-C\-\_\-\-Set\-Dual\-Channel\-Data}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Set\-Dual\-Channel\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Set\-Dual\-Channel\-Data (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Align, }
+\item[{uint16\-\_\-t}]{Data2, }
+\item[{uint16\-\_\-t}]{Data1}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga4ca2cfdf56ab35a23f2517f23d7fbb24}
+
+
+Set the specified data holding register value for dual channel D\-A\-C. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Align,\-:} & Specifies the data alignment for dual channel D\-A\-C. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Align\-\_\-8b\-\_\-\-R\-: 8bit right data alignment selected \item D\-A\-C\-\_\-\-Align\-\_\-12b\-\_\-\-L\-: 12bit left data alignment selected \item D\-A\-C\-\_\-\-Align\-\_\-12b\-\_\-\-R\-: 12bit right data alignment selected \end{DoxyItemize}
+\\
+\hline
+{\em Data2,\-:} & Data for D\-A\-C Channel2 to be loaded in the selected data holding register. \\
+\hline
+{\em Data1,\-:} & Data for D\-A\-C Channel1 to be loaded in the selected data holding register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+In dual mode, a unique register access is required to write in both D\-A\-C channels at the same time. 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 418 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_ga46f9f7f6b9520a86e300fe966afe5fb3}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Software\-Trigger\-Cmd@{D\-A\-C\-\_\-\-Software\-Trigger\-Cmd}}
+\index{D\-A\-C\-\_\-\-Software\-Trigger\-Cmd@{D\-A\-C\-\_\-\-Software\-Trigger\-Cmd}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Software\-Trigger\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Software\-Trigger\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_ga46f9f7f6b9520a86e300fe966afe5fb3}
+
+
+Enables or disables the selected D\-A\-C channel software trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the selected D\-A\-C channel software trigger. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 281 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_gadfc270974d54cb5fa5f92556015c4046}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Struct\-Init@{D\-A\-C\-\_\-\-Struct\-Init}}
+\index{D\-A\-C\-\_\-\-Struct\-Init@{D\-A\-C\-\_\-\-Struct\-Init}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-A\-C\-\_\-\-Init\-Type\-Def} $\ast$}]{D\-A\-C\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_gadfc270974d54cb5fa5f92556015c4046}
+
+
+Fills each D\-A\-C\-\_\-\-Init\-Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_d_a_c___init_type_def}{D\-A\-C\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 229 of file stm32f4xx\-\_\-dac.\-c.
+
+\hypertarget{group___d_a_c_gabd51ae6880821d4dcd923969ec19a19e}{\index{D\-A\-C@{D\-A\-C}!D\-A\-C\-\_\-\-Wave\-Generation\-Cmd@{D\-A\-C\-\_\-\-Wave\-Generation\-Cmd}}
+\index{D\-A\-C\-\_\-\-Wave\-Generation\-Cmd@{D\-A\-C\-\_\-\-Wave\-Generation\-Cmd}!DAC@{D\-A\-C}}
+\subsubsection[{D\-A\-C\-\_\-\-Wave\-Generation\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void D\-A\-C\-\_\-\-Wave\-Generation\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Channel, }
+\item[{uint32\-\_\-t}]{D\-A\-C\-\_\-\-Wave, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___d_a_c_gabd51ae6880821d4dcd923969ec19a19e}
+
+
+Enables or disables the selected D\-A\-C channel wave generation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\-A\-C\-\_\-\-Channel,\-:} & The selected D\-A\-C channel. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Channel\-\_\-1\-: D\-A\-C Channel1 selected \item D\-A\-C\-\_\-\-Channel\-\_\-2\-: D\-A\-C Channel2 selected \end{DoxyItemize}
+\\
+\hline
+{\em D\-A\-C\-\_\-\-Wave,\-:} & specifies the wave type to enable or disable. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item D\-A\-C\-\_\-\-Wave\-\_\-\-Noise\-: noise wave generation \item D\-A\-C\-\_\-\-Wave\-\_\-\-Triangle\-: triangle wave generation \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the selected D\-A\-C channel wave generation. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 336 of file stm32f4xx\-\_\-dac.\-c.
+

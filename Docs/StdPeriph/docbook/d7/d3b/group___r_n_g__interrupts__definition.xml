@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d3b/group___r_n_g__interrupts__definition">
+    <title>RNG_interrupts_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3b/group___r_n_g__interrupts__definition_1ga8dabf5f116a92e59d18a224d14882927">RNG_IT_CEI</link> ((uint8_t)0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3b/group___r_n_g__interrupts__definition_1ga2343cb323912a036fa46b081bbe751bc">RNG_IT_SEI</link> ((uint8_t)0x40)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3b/group___r_n_g__interrupts__definition_1gaa110e0edaec1c15ed3a9620b001f8d91">IS_RNG_IT</link> ((((IT) &amp; (uint8_t)0x9F) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d3b/group___r_n_g__interrupts__definition_1gafdbf6da44cfc8f3f2be5697a8fdf0595">IS_RNG_GET_IT</link> (((RNG_IT) == <link linkend="d7/d3b/group___r_n_g__interrupts__definition_1ga8dabf5f116a92e59d18a224d14882927">RNG_IT_CEI</link>) || ((RNG_IT) == <link linkend="d7/d3b/group___r_n_g__interrupts__definition_1ga2343cb323912a036fa46b081bbe751bc">RNG_IT_SEI</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d7/d3b/group___r_n_g__interrupts__definition_1ga8dabf5f116a92e59d18a224d14882927">
+                <title>#define RNG_IT_CEI</title>                
+<para>Clock error interrupt </para>
+
+                <para>Definition at line 68 of file stm32f4xx_rng.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rng.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d7/d3b/group___r_n_g__interrupts__definition_1ga2343cb323912a036fa46b081bbe751bc">
+                <title>#define RNG_IT_SEI</title>                
+<para>Seed error interrupt </para>
+
+                <para>Definition at line 69 of file stm32f4xx_rng.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rng.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d17/group___u_s_a_r_t___word___length">
+    <title>USART_Word_Length</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d17/group___u_s_a_r_t___word___length_1ga08682faddc657df85a93627b5a146c25">USART_WordLength_8b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d17/group___u_s_a_r_t___word___length_1gae7dd162142660e09e2321aa3f33dc4d2">USART_WordLength_9b</link> ((uint16_t)0x1000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d17/group___u_s_a_r_t___word___length_1ga5b07b29ee91f0bea4c10ec0fd74fbc04">IS_USART_WORD_LENGTH</link> (((LENGTH) == USART_WordLength_8b) || \
+                                      ((LENGTH) == USART_WordLength_9b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

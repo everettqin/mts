@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler">
+    <title>RCC_MCO1_Clock_Source_Prescaler</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1ga4ae28483bf1fc780e97740573546602a">RCC_MCO1Source_HSI</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1ga9389beb903be73312e7c75a3f99a05a3">RCC_MCO1Source_LSE</link> ((uint32_t)0x00200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1gaf9cd71937a147980d41efd3507e3a161">RCC_MCO1Source_HSE</link> ((uint32_t)0x00400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1gacab701c21ecb3d792aa64188e77a7a7f">RCC_MCO1Source_PLLCLK</link> ((uint32_t)0x00600000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1gac558c2ebb774dc0bcb94dfb94b421a3d">RCC_MCO1Div_1</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1gab0247962772ebf1735b7b2a84c235415">RCC_MCO1Div_2</link> ((uint32_t)0x04000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1ga298d00af4cd40822e28a5a20d6cdbfb6">RCC_MCO1Div_3</link> ((uint32_t)0x05000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1ga2300f224151c8e15424142ee4fc5f549">RCC_MCO1Div_4</link> ((uint32_t)0x06000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1ga756a1097bf0e4fe15d72f113572d0c04">RCC_MCO1Div_5</link> ((uint32_t)0x07000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1ga073031d9c90c555f7874912b7e4905f6">IS_RCC_MCO1SOURCE</link> (((SOURCE) == RCC_MCO1Source_HSI) || ((SOURCE) == RCC_MCO1Source_LSE) || \
+                                   ((SOURCE) == RCC_MCO1Source_HSE) || ((SOURCE) == RCC_MCO1Source_PLLCLK))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler_1ga8a8ff14a7fcdc6ef638ca8666e609c99">IS_RCC_MCO1DIV</link> (((DIV) == RCC_MCO1Div_1) || ((DIV) == RCC_MCO1Div_2) || \
+                             ((DIV) == RCC_MCO1Div_3) || ((DIV) == RCC_MCO1Div_4) || \
+                             ((DIV) == RCC_MCO1Div_5))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/da0/group___c_r_y_p___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      Initialization and Configuration functions
+ ===============================================================================  
+  This section provides functions allowing to 
+   - Initialize the cryptographic Processor using CRYP_Init() function 
+      -  Encrypt or Decrypt 
+      -  mode : TDES-ECB, TDES-CBC, 
+                DES-ECB, DES-CBC, 
+                AES-ECB, AES-CBC, AES-CTR, AES-Key 
+      - DataType :  32-bit data, 16-bit data, bit data or bit-string
+      - Key Size (only in AES modes)
+   - Configure the Encrypt or Decrypt Key using CRYP_KeyInit() function 
+   - Configure the Initialization Vectors(IV) for CBC and CTR modes using 
+     CRYP_IVInit() function.  
+   - Flushes the IN and OUT FIFOs : using CRYP_FIFOFlush() function.                         
+   - Enable or disable the CRYP Processor using CRYP_Cmd() function </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/da0/group___c_r_y_p___group1_1gae19e54c9910b697e38f6c7577704ffae">CRYP_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/da0/group___c_r_y_p___group1_1ga7b72c458d95581ab0a36be3e017fcf02">CRYP_Init</link> (
+<link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> * CRYP_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/da0/group___c_r_y_p___group1_1ga8fb8ec75fe72d55046c8220825dfe41e">CRYP_StructInit</link> (
+<link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> * CRYP_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/da0/group___c_r_y_p___group1_1gad4baa3865415215cae07c9fbfa131cb9">CRYP_KeyInit</link> (
+<link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> * CRYP_KeyInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/da0/group___c_r_y_p___group1_1gaeecd86b00d0d0137d97b06108789bcb2">CRYP_KeyStructInit</link> (
+<link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> * CRYP_KeyInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/da0/group___c_r_y_p___group1_1ga133964b50a07db3a32864308f6355a8b">CRYP_IVInit</link> (
+<link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> * CRYP_IVInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/da0/group___c_r_y_p___group1_1ga58899074e08bbd65f2ed304cf0f42987">CRYP_IVStructInit</link> (
+<link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> * CRYP_IVInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/da0/group___c_r_y_p___group1_1ga23ada9d9464e1362299d7612a1409a57">CRYP_FIFOFlush</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/da0/group___c_r_y_p___group1_1gad39ccd9b1f2e088e3a227d7a1c410d7c">CRYP_Cmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d2/da0/group___c_r_y_p___group1_1gae19e54c9910b697e38f6c7577704ffae">
+                <title>void CRYP_DeInit (void)</title> <emphasis>Deinitializes the CRYP peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/da0/group___c_r_y_p___group1_1ga7b72c458d95581ab0a36be3e017fcf02">
+                <title>void CRYP_Init (CRYP_InitTypeDef *CRYP_InitStruct)</title> <emphasis>Initializes the CRYP peripheral according to the specified parameters
+        in the CRYP_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> structure that contains the configuration information for the CRYP peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/da0/group___c_r_y_p___group1_1ga8fb8ec75fe72d55046c8220825dfe41e">
+                <title>void CRYP_StructInit (CRYP_InitTypeDef *CRYP_InitStruct)</title> <emphasis>Fills each CRYP_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/da0/group___c_r_y_p___group1_1gad4baa3865415215cae07c9fbfa131cb9">
+                <title>void CRYP_KeyInit (CRYP_KeyInitTypeDef *CRYP_KeyInitStruct)</title> <emphasis>Initializes the CRYP Keys according to the specified parameters in
+        the CRYP_KeyInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_KeyInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> structure that contains the configuration information for the CRYP Keys. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/da0/group___c_r_y_p___group1_1gaeecd86b00d0d0137d97b06108789bcb2">
+                <title>void CRYP_KeyStructInit (CRYP_KeyInitTypeDef *CRYP_KeyInitStruct)</title> <emphasis>Fills each CRYP_KeyInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_KeyInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/da0/group___c_r_y_p___group1_1ga133964b50a07db3a32864308f6355a8b">
+                <title>void CRYP_IVInit (CRYP_IVInitTypeDef *CRYP_IVInitStruct)</title> <emphasis>Initializes the CRYP Initialization Vectors(IV) according to the
+        specified parameters in the CRYP_IVInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_IVInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> structure that contains the configuration information for the CRYP Initialization Vectors(IV). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/da0/group___c_r_y_p___group1_1ga58899074e08bbd65f2ed304cf0f42987">
+                <title>void CRYP_IVStructInit (CRYP_IVInitTypeDef *CRYP_IVInitStruct)</title> <emphasis>Fills each CRYP_IVInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_IVInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> Initialization Vectors(IV) structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/da0/group___c_r_y_p___group1_1ga23ada9d9464e1362299d7612a1409a57">
+                <title>void CRYP_FIFOFlush (void)</title> <emphasis>Flushes the IN and OUT FIFOs (that is read and write pointers of the 
+        FIFOs are reset)</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The FIFOs must be flushed only when BUSY flag is reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/da0/group___c_r_y_p___group1_1gad39ccd9b1f2e088e3a227d7a1c410d7c">
+                <title>void CRYP_Cmd (FunctionalState NewState)</title> <emphasis>Enables or disables the CRYP peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the CRYP peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

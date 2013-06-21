@@ -1,0 +1,351 @@
+\hypertarget{stm32f4xx__gpio_8h}{\section{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.1.0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/inc/stm32f4xx\-\_\-gpio.h File Reference}
+\label{stm32f4xx__gpio_8h}\index{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/inc/stm32f4xx\-\_\-gpio.\-h@{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/inc/stm32f4xx\-\_\-gpio.\-h}}
+}
+
+
+This file contains all the functions prototypes for the G\-P\-I\-O firmware library.  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_g_p_i_o___init_type_def}{G\-P\-I\-O\-\_\-\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em G\-P\-I\-O Init structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\-S\-\_\-\-G\-P\-I\-O\-\_\-\-A\-L\-L\-\_\-\-P\-E\-R\-I\-P\-H}(P\-E\-R\-I\-P\-H)
+\item 
+\#define {\bfseries I\-S\-\_\-\-G\-P\-I\-O\-\_\-\-M\-O\-D\-E}(M\-O\-D\-E)
+\item 
+\hypertarget{group___g_p_i_o_ga7145550a414f2b0455d79ddde6100af8}{\#define {\bfseries I\-S\-\_\-\-G\-P\-I\-O\-\_\-\-O\-T\-Y\-P\-E}(O\-T\-Y\-P\-E)~(((O\-T\-Y\-P\-E) == G\-P\-I\-O\-\_\-\-O\-Type\-\_\-\-P\-P) $|$$|$ ((O\-T\-Y\-P\-E) == G\-P\-I\-O\-\_\-\-O\-Type\-\_\-\-O\-D))}\label{group___g_p_i_o_ga7145550a414f2b0455d79ddde6100af8}
+
+\item 
+\#define {\bfseries I\-S\-\_\-\-G\-P\-I\-O\-\_\-\-S\-P\-E\-E\-D}(S\-P\-E\-E\-D)
+\item 
+\#define {\bfseries I\-S\-\_\-\-G\-P\-I\-O\-\_\-\-P\-U\-P\-D}(P\-U\-P\-D)
+\item 
+\hypertarget{group___g_p_i_o_ga6b882caa8ed9857c5c7267959a7818c5}{\#define {\bfseries I\-S\-\_\-\-G\-P\-I\-O\-\_\-\-B\-I\-T\-\_\-\-A\-C\-T\-I\-O\-N}(A\-C\-T\-I\-O\-N)~(((A\-C\-T\-I\-O\-N) == Bit\-\_\-\-R\-E\-S\-E\-T) $|$$|$ ((A\-C\-T\-I\-O\-N) == Bit\-\_\-\-S\-E\-T))}\label{group___g_p_i_o_ga6b882caa8ed9857c5c7267959a7818c5}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gab305b8d1be9f89bf2b4a05589b456049}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-0}~((uint16\-\_\-t)0x0001)  /$\ast$ Pin 0 selected $\ast$/}\label{group___g_p_i_o__pins__define_gab305b8d1be9f89bf2b4a05589b456049}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_ga29db642c26f1fa0fffc3ecadcd30f82b}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-1}~((uint16\-\_\-t)0x0002)  /$\ast$ Pin 1 selected $\ast$/}\label{group___g_p_i_o__pins__define_ga29db642c26f1fa0fffc3ecadcd30f82b}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gabdf6630324b2f99360537a310687187c}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-2}~((uint16\-\_\-t)0x0004)  /$\ast$ Pin 2 selected $\ast$/}\label{group___g_p_i_o__pins__define_gabdf6630324b2f99360537a310687187c}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_ga763c6544859dbe28cd3f8ad820045556}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-3}~((uint16\-\_\-t)0x0008)  /$\ast$ Pin 3 selected $\ast$/}\label{group___g_p_i_o__pins__define_ga763c6544859dbe28cd3f8ad820045556}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gacbf04d09b954606cdcc55eb2e81780e3}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-4}~((uint16\-\_\-t)0x0010)  /$\ast$ Pin 4 selected $\ast$/}\label{group___g_p_i_o__pins__define_gacbf04d09b954606cdcc55eb2e81780e3}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_ga32dbe930f52ce5ab60190c65e9dc741e}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-5}~((uint16\-\_\-t)0x0020)  /$\ast$ Pin 5 selected $\ast$/}\label{group___g_p_i_o__pins__define_ga32dbe930f52ce5ab60190c65e9dc741e}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gaf047899d873f27c2db9f50b342e35a58}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-6}~((uint16\-\_\-t)0x0040)  /$\ast$ Pin 6 selected $\ast$/}\label{group___g_p_i_o__pins__define_gaf047899d873f27c2db9f50b342e35a58}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_ga7346b6ce5507bd28a7a79e7dcc816c08}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-7}~((uint16\-\_\-t)0x0080)  /$\ast$ Pin 7 selected $\ast$/}\label{group___g_p_i_o__pins__define_ga7346b6ce5507bd28a7a79e7dcc816c08}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gac891f0984dc64af3567577fbf13ab304}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-8}~((uint16\-\_\-t)0x0100)  /$\ast$ Pin 8 selected $\ast$/}\label{group___g_p_i_o__pins__define_gac891f0984dc64af3567577fbf13ab304}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gaad1891082d5d6bcac06c2729a9fdd2f0}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-9}~((uint16\-\_\-t)0x0200)  /$\ast$ Pin 9 selected $\ast$/}\label{group___g_p_i_o__pins__define_gaad1891082d5d6bcac06c2729a9fdd2f0}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_ga726af6407ba60ac60f02057227c2d348}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-10}~((uint16\-\_\-t)0x0400)  /$\ast$ Pin 10 selected $\ast$/}\label{group___g_p_i_o__pins__define_ga726af6407ba60ac60f02057227c2d348}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_ga5139d5bc3d15784ae7794ed2ae1ff767}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-11}~((uint16\-\_\-t)0x0800)  /$\ast$ Pin 11 selected $\ast$/}\label{group___g_p_i_o__pins__define_ga5139d5bc3d15784ae7794ed2ae1ff767}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gada91257dcaab2c86f75fbd8e4b52b98c}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-12}~((uint16\-\_\-t)0x1000)  /$\ast$ Pin 12 selected $\ast$/}\label{group___g_p_i_o__pins__define_gada91257dcaab2c86f75fbd8e4b52b98c}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_ga4155a41c433f3657b9c79cfbd4240966}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-13}~((uint16\-\_\-t)0x2000)  /$\ast$ Pin 13 selected $\ast$/}\label{group___g_p_i_o__pins__define_ga4155a41c433f3657b9c79cfbd4240966}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_ga21cd1d89c0c061a6f09c5a842610bee5}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-14}~((uint16\-\_\-t)0x4000)  /$\ast$ Pin 14 selected $\ast$/}\label{group___g_p_i_o__pins__define_ga21cd1d89c0c061a6f09c5a842610bee5}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gae686a9fc47cf3e420e5db0784210711d}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-15}~((uint16\-\_\-t)0x8000)  /$\ast$ Pin 15 selected $\ast$/}\label{group___g_p_i_o__pins__define_gae686a9fc47cf3e420e5db0784210711d}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gaba3e915ddca17a1211edc07b7fd97e8b}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-\_\-\-All}~((uint16\-\_\-t)0x\-F\-F\-F\-F)  /$\ast$ All pins selected $\ast$/}\label{group___g_p_i_o__pins__define_gaba3e915ddca17a1211edc07b7fd97e8b}
+
+\item 
+\hypertarget{group___g_p_i_o__pins__define_gad6ec74e33360395535ad5d91ba6d4781}{\#define {\bfseries I\-S\-\_\-\-G\-P\-I\-O\-\_\-\-P\-I\-N}(P\-I\-N)~((((P\-I\-N) \& (uint16\-\_\-t)0x00) == 0x00) \&\& ((\-P\-I\-N) != (uint16\-\_\-t)0x00))}\label{group___g_p_i_o__pins__define_gad6ec74e33360395535ad5d91ba6d4781}
+
+\item 
+\#define {\bfseries I\-S\-\_\-\-G\-E\-T\-\_\-\-G\-P\-I\-O\-\_\-\-P\-I\-N}(P\-I\-N)
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_ga028bcbdf5a7fd81ec45830f60a022bb4}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source0}~((uint8\-\_\-t)0x00)}\label{group___g_p_i_o___pin__sources_ga028bcbdf5a7fd81ec45830f60a022bb4}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_gad02324cdd8526a7aacd15a5a910d56f1}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source1}~((uint8\-\_\-t)0x01)}\label{group___g_p_i_o___pin__sources_gad02324cdd8526a7aacd15a5a910d56f1}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_ga7808fb6269890fa1e37a322418884607}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source2}~((uint8\-\_\-t)0x02)}\label{group___g_p_i_o___pin__sources_ga7808fb6269890fa1e37a322418884607}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_ga0df17fee84ec9ab096b5525a06871863}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source3}~((uint8\-\_\-t)0x03)}\label{group___g_p_i_o___pin__sources_ga0df17fee84ec9ab096b5525a06871863}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_gaf5aa545455dacbf315a40cecd0842b6c}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source4}~((uint8\-\_\-t)0x04)}\label{group___g_p_i_o___pin__sources_gaf5aa545455dacbf315a40cecd0842b6c}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_gaf231e680fe2db4ea44a7fd0f5d5c5875}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source5}~((uint8\-\_\-t)0x05)}\label{group___g_p_i_o___pin__sources_gaf231e680fe2db4ea44a7fd0f5d5c5875}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_gada41b6bd03b2873a2400628df0a1026e}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source6}~((uint8\-\_\-t)0x06)}\label{group___g_p_i_o___pin__sources_gada41b6bd03b2873a2400628df0a1026e}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_ga609974472a3a7c5274fc56018d7adf16}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source7}~((uint8\-\_\-t)0x07)}\label{group___g_p_i_o___pin__sources_ga609974472a3a7c5274fc56018d7adf16}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_ga6f5962c5b2ce5734734563bdad18fbd6}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source8}~((uint8\-\_\-t)0x08)}\label{group___g_p_i_o___pin__sources_ga6f5962c5b2ce5734734563bdad18fbd6}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_gabaaed5961f2b9862082f74e18f5c3f0e}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source9}~((uint8\-\_\-t)0x09)}\label{group___g_p_i_o___pin__sources_gabaaed5961f2b9862082f74e18f5c3f0e}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_gacec97d9c2d319b450f699adff6430c86}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source10}~((uint8\-\_\-t)0x0\-A)}\label{group___g_p_i_o___pin__sources_gacec97d9c2d319b450f699adff6430c86}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_ga446be4a99e84eefb5c71a643211f598b}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source11}~((uint8\-\_\-t)0x0\-B)}\label{group___g_p_i_o___pin__sources_ga446be4a99e84eefb5c71a643211f598b}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_gaaa64892c00d50b0fa49f0ce72a83e6e0}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source12}~((uint8\-\_\-t)0x0\-C)}\label{group___g_p_i_o___pin__sources_gaaa64892c00d50b0fa49f0ce72a83e6e0}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_gace4beb385facd306324fa9e362df5fda}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source13}~((uint8\-\_\-t)0x0\-D)}\label{group___g_p_i_o___pin__sources_gace4beb385facd306324fa9e362df5fda}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_ga5fbb540a86af4015a46ac16c61ddb1f7}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source14}~((uint8\-\_\-t)0x0\-E)}\label{group___g_p_i_o___pin__sources_ga5fbb540a86af4015a46ac16c61ddb1f7}
+
+\item 
+\hypertarget{group___g_p_i_o___pin__sources_ga9b29d9a9ecb1579ecedf4ea53ccbfd5b}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Pin\-Source15}~((uint8\-\_\-t)0x0\-F)}\label{group___g_p_i_o___pin__sources_ga9b29d9a9ecb1579ecedf4ea53ccbfd5b}
+
+\item 
+\#define {\bfseries I\-S\-\_\-\-G\-P\-I\-O\-\_\-\-P\-I\-N\-\_\-\-S\-O\-U\-R\-C\-E}(P\-I\-N\-S\-O\-U\-R\-C\-E)
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga93071f0121fab9f8f13e59c612ed6291}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_ga93071f0121fab9f8f13e59c612ed6291}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-R\-T\-C\-\_\-50\-Hz}~((uint8\-\_\-t)0x00)  /$\ast$ R\-T\-C\-\_\-50\-Hz Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga93071f0121fab9f8f13e59c612ed6291}
+
+\begin{DoxyCompactList}\small\item\em A\-F 0 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gacfe2ce01055b82d0fcdd93da513f7cc0}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-M\-C\-O}~((uint8\-\_\-t)0x00)  /$\ast$ M\-C\-O (\-M\-C\-O1 and M\-C\-O2) Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gacfe2ce01055b82d0fcdd93da513f7cc0}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gac284edf4c3267d864b3d56cc6bf6ac95}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-A\-M\-P\-E\-R}~((uint8\-\_\-t)0x00)  /$\ast$ T\-A\-M\-P\-E\-R (\-T\-A\-M\-P\-E\-R\-\_\-1 and T\-A\-M\-P\-E\-R\-\_\-2) Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gac284edf4c3267d864b3d56cc6bf6ac95}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga63cfa7c46dc0c5ab9cdf7340cc95f7fc}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-S\-W\-J}~((uint8\-\_\-t)0x00)  /$\ast$ S\-W\-J (\-S\-W\-D and J\-T\-A\-G) Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga63cfa7c46dc0c5ab9cdf7340cc95f7fc}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gac97ace879d6584f8bd705fa1d199d4d4}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-R\-A\-C\-E}~((uint8\-\_\-t)0x00)  /$\ast$ T\-R\-A\-C\-E Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gac97ace879d6584f8bd705fa1d199d4d4}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga9a65573a3d8684febe1fda5c6cd8c992}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_ga9a65573a3d8684febe1fda5c6cd8c992}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M1}~((uint8\-\_\-t)0x01)  /$\ast$ T\-I\-M1 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga9a65573a3d8684febe1fda5c6cd8c992}
+
+\begin{DoxyCompactList}\small\item\em A\-F 1 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga6a1335e47fe67ff5a08ebe0ebfec2ffa}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M2}~((uint8\-\_\-t)0x01)  /$\ast$ T\-I\-M2 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga6a1335e47fe67ff5a08ebe0ebfec2ffa}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga8c6bda0c56abc29eef7709b52d9d3e0d}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_ga8c6bda0c56abc29eef7709b52d9d3e0d}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M3}~((uint8\-\_\-t)0x02)  /$\ast$ T\-I\-M3 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga8c6bda0c56abc29eef7709b52d9d3e0d}
+
+\begin{DoxyCompactList}\small\item\em A\-F 2 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gabe02d26327e89fe4c9aaf30ec1187009}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M4}~((uint8\-\_\-t)0x02)  /$\ast$ T\-I\-M4 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gabe02d26327e89fe4c9aaf30ec1187009}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gad1abee116e98620ade37334e649e6006}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M5}~((uint8\-\_\-t)0x02)  /$\ast$ T\-I\-M5 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gad1abee116e98620ade37334e649e6006}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gaf7562d5cf5d33dbc7b7c69df63182583}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_gaf7562d5cf5d33dbc7b7c69df63182583}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M8}~((uint8\-\_\-t)0x03)  /$\ast$ T\-I\-M8 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gaf7562d5cf5d33dbc7b7c69df63182583}
+
+\begin{DoxyCompactList}\small\item\em A\-F 3 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga6c7cfbf2f21945814c6526a7bacb1384}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M9}~((uint8\-\_\-t)0x03)  /$\ast$ T\-I\-M9 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga6c7cfbf2f21945814c6526a7bacb1384}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga3881c36c71f0cbd7efacb424b39cd9f4}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M10}~((uint8\-\_\-t)0x03)  /$\ast$ T\-I\-M10 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga3881c36c71f0cbd7efacb424b39cd9f4}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gaeb30ba1cb15de0d4af78933e9dcfd033}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M11}~((uint8\-\_\-t)0x03)  /$\ast$ T\-I\-M11 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gaeb30ba1cb15de0d4af78933e9dcfd033}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gaa246f87c460c4bb4036b8ab39e0220f1}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_gaa246f87c460c4bb4036b8ab39e0220f1}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-I2\-C1}~((uint8\-\_\-t)0x04)  /$\ast$ I2\-C1 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gaa246f87c460c4bb4036b8ab39e0220f1}
+
+\begin{DoxyCompactList}\small\item\em A\-F 4 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga4a82500bac7239134e2c28d4656810f1}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-I2\-C2}~((uint8\-\_\-t)0x04)  /$\ast$ I2\-C2 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga4a82500bac7239134e2c28d4656810f1}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga302620e38b718a54d760845de2a06b2b}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-I2\-C3}~((uint8\-\_\-t)0x04)  /$\ast$ I2\-C3 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga302620e38b718a54d760845de2a06b2b}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga7804aaf9275dbb5502312729a76d13be}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_ga7804aaf9275dbb5502312729a76d13be}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-S\-P\-I1}~((uint8\-\_\-t)0x05)  /$\ast$ S\-P\-I1 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga7804aaf9275dbb5502312729a76d13be}
+
+\begin{DoxyCompactList}\small\item\em A\-F 5 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga45d0fbf9ba0bf0f554697e78712fc369}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-S\-P\-I2}~((uint8\-\_\-t)0x05)  /$\ast$ S\-P\-I2/\-I2\-S2 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga45d0fbf9ba0bf0f554697e78712fc369}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gad6e716ad894aa5299273541c6966864a}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_gad6e716ad894aa5299273541c6966864a}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-S\-P\-I3}~((uint8\-\_\-t)0x06)  /$\ast$ S\-P\-I3/\-I2\-S3 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gad6e716ad894aa5299273541c6966864a}
+
+\begin{DoxyCompactList}\small\item\em A\-F 6 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga790e1f37e75f475cf09c211f566fb069}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_ga790e1f37e75f475cf09c211f566fb069}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-U\-S\-A\-R\-T1}~((uint8\-\_\-t)0x07)  /$\ast$ U\-S\-A\-R\-T1 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga790e1f37e75f475cf09c211f566fb069}
+
+\begin{DoxyCompactList}\small\item\em A\-F 7 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga5e74db1f4d0fc3527aa067093625171b}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-U\-S\-A\-R\-T2}~((uint8\-\_\-t)0x07)  /$\ast$ U\-S\-A\-R\-T2 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga5e74db1f4d0fc3527aa067093625171b}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga97742da355d32c599527813eaf109ec7}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-U\-S\-A\-R\-T3}~((uint8\-\_\-t)0x07)  /$\ast$ U\-S\-A\-R\-T3 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga97742da355d32c599527813eaf109ec7}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga8fac28d42bc99794bb74707c141fc0f6}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-I2\-S3ext}~((uint8\-\_\-t)0x07)  /$\ast$ I2\-S3ext Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga8fac28d42bc99794bb74707c141fc0f6}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gad1754187e64b66681cc1447695062706}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_gad1754187e64b66681cc1447695062706}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-U\-A\-R\-T4}~((uint8\-\_\-t)0x08)  /$\ast$ U\-A\-R\-T4 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gad1754187e64b66681cc1447695062706}
+
+\begin{DoxyCompactList}\small\item\em A\-F 8 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga6250acb0f2f3de33bc8e78615852cc48}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-U\-A\-R\-T5}~((uint8\-\_\-t)0x08)  /$\ast$ U\-A\-R\-T5 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga6250acb0f2f3de33bc8e78615852cc48}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gaf69942861848b5175369145ffc001c41}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-U\-S\-A\-R\-T6}~((uint8\-\_\-t)0x08)  /$\ast$ U\-S\-A\-R\-T6 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gaf69942861848b5175369145ffc001c41}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gaf5defeedc302bf348e31dd7bdcdd882f}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_gaf5defeedc302bf348e31dd7bdcdd882f}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-C\-A\-N1}~((uint8\-\_\-t)0x09)  /$\ast$ C\-A\-N1 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gaf5defeedc302bf348e31dd7bdcdd882f}
+
+\begin{DoxyCompactList}\small\item\em A\-F 9 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga4896d720d93f50f17207b4059ab5ebfb}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-C\-A\-N2}~((uint8\-\_\-t)0x09)  /$\ast$ C\-A\-N2 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga4896d720d93f50f17207b4059ab5ebfb}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga681ff7964f5d73ed973a299383b13c90}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M12}~((uint8\-\_\-t)0x09)  /$\ast$ T\-I\-M12 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga681ff7964f5d73ed973a299383b13c90}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gae89e027f14289052d5c51b4c96f79702}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M13}~((uint8\-\_\-t)0x09)  /$\ast$ T\-I\-M13 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gae89e027f14289052d5c51b4c96f79702}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga9341da4e7ba3921ed1a683df3ec0e41b}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-T\-I\-M14}~((uint8\-\_\-t)0x09)  /$\ast$ T\-I\-M14 Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga9341da4e7ba3921ed1a683df3ec0e41b}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gaeba0aeefec841e505170efc7762ae588}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_gaeba0aeefec841e505170efc7762ae588}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-O\-T\-G\-\_\-\-F\-S}~((uint8\-\_\-t)0x\-A)  /$\ast$ O\-T\-G\-\_\-\-F\-S Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gaeba0aeefec841e505170efc7762ae588}
+
+\begin{DoxyCompactList}\small\item\em A\-F 10 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gaa92d928ec3d83bfef06877092178960a}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-O\-T\-G\-\_\-\-H\-S}~((uint8\-\_\-t)0x\-A)  /$\ast$ O\-T\-G\-\_\-\-H\-S Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gaa92d928ec3d83bfef06877092178960a}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga26cf3f30fe5154bd461b27fab58e45e2}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_ga26cf3f30fe5154bd461b27fab58e45e2}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-E\-T\-H}~((uint8\-\_\-t)0x0\-B)  /$\ast$ E\-T\-H\-E\-R\-N\-E\-T Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga26cf3f30fe5154bd461b27fab58e45e2}
+
+\begin{DoxyCompactList}\small\item\em A\-F 11 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga8378a89ae1a16d5ae5d315ca49a57674}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_ga8378a89ae1a16d5ae5d315ca49a57674}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-F\-S\-M\-C}~((uint8\-\_\-t)0x\-C)  /$\ast$ F\-S\-M\-C Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga8378a89ae1a16d5ae5d315ca49a57674}
+
+\begin{DoxyCompactList}\small\item\em A\-F 12 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga5f30e17f7328fa05e6dd8b799ae5e6ee}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-O\-T\-G\-\_\-\-H\-S\-\_\-\-F\-S}~((uint8\-\_\-t)0x\-C)  /$\ast$ O\-T\-G H\-S configured in F\-S, Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga5f30e17f7328fa05e6dd8b799ae5e6ee}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_ga0ae9928f85fc99947659994eb025cc2b}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-S\-D\-I\-O}~((uint8\-\_\-t)0x\-C)  /$\ast$ S\-D\-I\-O Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_ga0ae9928f85fc99947659994eb025cc2b}
+
+\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gaa7bfafac663bac5d437bd6d6a2f6774d}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_gaa7bfafac663bac5d437bd6d6a2f6774d}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-D\-C\-M\-I}~((uint8\-\_\-t)0x0\-D)  /$\ast$ D\-C\-M\-I Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gaa7bfafac663bac5d437bd6d6a2f6774d}
+
+\begin{DoxyCompactList}\small\item\em A\-F 13 selection. \end{DoxyCompactList}\item 
+\hypertarget{group___g_p_i_o___alternat__function__selection__define_gacd5e7846b3709cddbf41ece2b1fb068e}{\#define \hyperlink{group___g_p_i_o___alternat__function__selection__define_gacd5e7846b3709cddbf41ece2b1fb068e}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-E\-V\-E\-N\-T\-O\-U\-T}~((uint8\-\_\-t)0x0\-F)  /$\ast$ E\-V\-E\-N\-T\-O\-U\-T Alternate Function mapping $\ast$/}\label{group___g_p_i_o___alternat__function__selection__define_gacd5e7846b3709cddbf41ece2b1fb068e}
+
+\begin{DoxyCompactList}\small\item\em A\-F 15 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries I\-S\-\_\-\-G\-P\-I\-O\-\_\-\-A\-F}(A\-F)
+\item 
+\hypertarget{group___g_p_i_o___legacy_gadf4dafa8caa4e91d2bee996c4bfdf8cc}{\#define {\bfseries G\-P\-I\-O\-\_\-\-Mode\-\_\-\-A\-I\-N}~\hyperlink{group___g_p_i_o_gga1347339e1c84a196fabbb31205eec5d4a6e5c0d7e6d2e22b834b24e1ca1d6d0db}{G\-P\-I\-O\-\_\-\-Mode\-\_\-\-A\-N}}\label{group___g_p_i_o___legacy_gadf4dafa8caa4e91d2bee996c4bfdf8cc}
+
+\item 
+\hypertarget{group___g_p_i_o___legacy_gaddd737997abcd1154c0998b22333b579}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-O\-T\-G1\-\_\-\-F\-S}~\hyperlink{group___g_p_i_o___alternat__function__selection__define_gaeba0aeefec841e505170efc7762ae588}{G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-O\-T\-G\-\_\-\-F\-S}}\label{group___g_p_i_o___legacy_gaddd737997abcd1154c0998b22333b579}
+
+\item 
+\hypertarget{group___g_p_i_o___legacy_ga54715298b3dc7e843429fd3e24d42cd4}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-O\-T\-G2\-\_\-\-H\-S}~G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-O\-T\-G\-\_\-\-H\-S}\label{group___g_p_i_o___legacy_ga54715298b3dc7e843429fd3e24d42cd4}
+
+\item 
+\hypertarget{group___g_p_i_o___legacy_ga85e574d8321b9d9aaa2790351b4f0c1e}{\#define {\bfseries G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-O\-T\-G2\-\_\-\-F\-S}~G\-P\-I\-O\-\_\-\-A\-F\-\_\-\-O\-T\-G\-\_\-\-H\-S\-\_\-\-F\-S}\label{group___g_p_i_o___legacy_ga85e574d8321b9d9aaa2790351b4f0c1e}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___g_p_i_o_ga1347339e1c84a196fabbb31205eec5d4}{G\-P\-I\-O\-Mode\-\_\-\-Type\-Def} \{ \hyperlink{group___g_p_i_o_gga1347339e1c84a196fabbb31205eec5d4a484aa18a6156ce916049b334ba1839de}{G\-P\-I\-O\-\_\-\-Mode\-\_\-\-I\-N} = 0x00, 
+\hyperlink{group___g_p_i_o_gga1347339e1c84a196fabbb31205eec5d4a60f1d530f4119efcad8e1a68c890c6a6}{G\-P\-I\-O\-\_\-\-Mode\-\_\-\-O\-U\-T} = 0x01, 
+\hyperlink{group___g_p_i_o_gga1347339e1c84a196fabbb31205eec5d4a6d44c35c6c5008d85bac9251a867e701}{G\-P\-I\-O\-\_\-\-Mode\-\_\-\-A\-F} = 0x02, 
+\hyperlink{group___g_p_i_o_gga1347339e1c84a196fabbb31205eec5d4a6e5c0d7e6d2e22b834b24e1ca1d6d0db}{G\-P\-I\-O\-\_\-\-Mode\-\_\-\-A\-N} = 0x03
+ \}
+\begin{DoxyCompactList}\small\item\em G\-P\-I\-O Configuration Mode enumeration. \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_p_i_o_gae74212e8d66c389f47326b06bdf6d2ab}{G\-P\-I\-O\-O\-Type\-\_\-\-Type\-Def} \{ {\bfseries G\-P\-I\-O\-\_\-\-O\-Type\-\_\-\-P\-P} = 0x00, 
+{\bfseries G\-P\-I\-O\-\_\-\-O\-Type\-\_\-\-O\-D} = 0x01
+ \}
+\begin{DoxyCompactList}\small\item\em G\-P\-I\-O Output type enumeration. \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_p_i_o_ga062ad92b67b4a1f301c161022cf3ba8e}{G\-P\-I\-O\-Speed\-\_\-\-Type\-Def} \{ \hyperlink{group___g_p_i_o_gga062ad92b67b4a1f301c161022cf3ba8ea9bff9e174639332007c914483361be18}{G\-P\-I\-O\-\_\-\-Speed\-\_\-2\-M\-Hz} = 0x00, 
+\hyperlink{group___g_p_i_o_gga062ad92b67b4a1f301c161022cf3ba8ea59a0acdf2ccd1b4b8d507e845e497c62}{G\-P\-I\-O\-\_\-\-Speed\-\_\-25\-M\-Hz} = 0x01, 
+\hyperlink{group___g_p_i_o_gga062ad92b67b4a1f301c161022cf3ba8ea9c47db10456202ac05134b12738ce581}{G\-P\-I\-O\-\_\-\-Speed\-\_\-50\-M\-Hz} = 0x02, 
+\hyperlink{group___g_p_i_o_gga062ad92b67b4a1f301c161022cf3ba8ea195a0e73cd63d7f5b5d41bd0155eacbb}{G\-P\-I\-O\-\_\-\-Speed\-\_\-100\-M\-Hz} = 0x03
+ \}
+\begin{DoxyCompactList}\small\item\em G\-P\-I\-O Output Maximum frequency enumeration. \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_p_i_o_gafb7ecd99c44b4fd702d669304a36c2c8}{G\-P\-I\-O\-Pu\-Pd\-\_\-\-Type\-Def} \{ {\bfseries G\-P\-I\-O\-\_\-\-Pu\-Pd\-\_\-\-N\-O\-P\-U\-L\-L} = 0x00, 
+{\bfseries G\-P\-I\-O\-\_\-\-Pu\-Pd\-\_\-\-U\-P} = 0x01, 
+{\bfseries G\-P\-I\-O\-\_\-\-Pu\-Pd\-\_\-\-D\-O\-W\-N} = 0x02
+ \}
+\begin{DoxyCompactList}\small\item\em G\-P\-I\-O Configuration Pull\-Up Pull\-Down enumeration. \end{DoxyCompactList}\item 
+enum \hyperlink{group___g_p_i_o_ga176130b21c0e719121470a6042d4cf19}{Bit\-Action} \{ {\bfseries Bit\-\_\-\-R\-E\-S\-E\-T} = 0, 
+{\bfseries Bit\-\_\-\-S\-E\-T}
+ \}
+\begin{DoxyCompactList}\small\item\em G\-P\-I\-O Bit S\-E\-T and Bit R\-E\-S\-E\-T enumeration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___g_p_i_o_gaa60bdf3182c44b5fa818f237042f52ee}{G\-P\-I\-O\-\_\-\-De\-Init} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox)
+\begin{DoxyCompactList}\small\item\em Deinitializes the G\-P\-I\-Ox peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___g_p_i_o_ga71abf9404261370d03cca449b88d3a65}{G\-P\-I\-O\-\_\-\-Init} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, \hyperlink{struct_g_p_i_o___init_type_def}{G\-P\-I\-O\-\_\-\-Init\-Type\-Def} $\ast$G\-P\-I\-O\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the G\-P\-I\-Ox peripheral according to the specified parameters in the G\-P\-I\-O\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___g_p_i_o_gab28de41278e7f8c63d0851e2733b10df}{G\-P\-I\-O\-\_\-\-Struct\-Init} (\hyperlink{struct_g_p_i_o___init_type_def}{G\-P\-I\-O\-\_\-\-Init\-Type\-Def} $\ast$G\-P\-I\-O\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each G\-P\-I\-O\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___g_p_i_o_gad2f2e615928c69fd0d8c641a7cedaafc}{G\-P\-I\-O\-\_\-\-Pin\-Lock\-Config} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, uint16\-\_\-t G\-P\-I\-O\-\_\-\-Pin)
+\begin{DoxyCompactList}\small\item\em Locks G\-P\-I\-O Pins configuration registers. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___g_p_i_o_ga98772ef6b639b3fa06c8ae5ba28d3aaa}{G\-P\-I\-O\-\_\-\-Read\-Input\-Data\-Bit} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, uint16\-\_\-t G\-P\-I\-O\-\_\-\-Pin)
+\begin{DoxyCompactList}\small\item\em Reads the specified input port pin. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{group___g_p_i_o_ga139a33adc8409288e9f193bbebb5a0f7}{G\-P\-I\-O\-\_\-\-Read\-Input\-Data} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox)
+\begin{DoxyCompactList}\small\item\em Reads the specified G\-P\-I\-O input data port. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___g_p_i_o_ga138270f8695b105b7c6ed405792919c1}{G\-P\-I\-O\-\_\-\-Read\-Output\-Data\-Bit} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, uint16\-\_\-t G\-P\-I\-O\-\_\-\-Pin)
+\begin{DoxyCompactList}\small\item\em Reads the specified output data port bit. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{group___g_p_i_o_gaf8938a34280b7dc3e39872a7c17bb323}{G\-P\-I\-O\-\_\-\-Read\-Output\-Data} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox)
+\begin{DoxyCompactList}\small\item\em Reads the specified G\-P\-I\-O output data port. \end{DoxyCompactList}\item 
+void \hyperlink{group___g_p_i_o_ga9e1352eed7c6620e18af2d86f6b6ff8e}{G\-P\-I\-O\-\_\-\-Set\-Bits} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, uint16\-\_\-t G\-P\-I\-O\-\_\-\-Pin)
+\begin{DoxyCompactList}\small\item\em Sets the selected data port bits. \end{DoxyCompactList}\item 
+void \hyperlink{group___g_p_i_o_ga6fcd35b207a66608dd2c9d7de9247dc8}{G\-P\-I\-O\-\_\-\-Reset\-Bits} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, uint16\-\_\-t G\-P\-I\-O\-\_\-\-Pin)
+\begin{DoxyCompactList}\small\item\em Clears the selected data port bits. \end{DoxyCompactList}\item 
+void \hyperlink{group___g_p_i_o_ga8f7b237fd744d9f7456fbe0da47a9b80}{G\-P\-I\-O\-\_\-\-Write\-Bit} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, uint16\-\_\-t G\-P\-I\-O\-\_\-\-Pin, \hyperlink{group___g_p_i_o_ga176130b21c0e719121470a6042d4cf19}{Bit\-Action} Bit\-Val)
+\begin{DoxyCompactList}\small\item\em Sets or clears the selected data port bit. \end{DoxyCompactList}\item 
+void \hyperlink{group___g_p_i_o_gaa925f19c8547a00c7a0c269a84873bf9}{G\-P\-I\-O\-\_\-\-Write} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, uint16\-\_\-t Port\-Val)
+\begin{DoxyCompactList}\small\item\em Writes data to the specified G\-P\-I\-O data port. \end{DoxyCompactList}\item 
+void \hyperlink{group___g_p_i_o_gac1b837c66258872740d5f89f23549ab1}{G\-P\-I\-O\-\_\-\-Toggle\-Bits} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, uint16\-\_\-t G\-P\-I\-O\-\_\-\-Pin)
+\begin{DoxyCompactList}\small\item\em Toggles the specified G\-P\-I\-O pins.. \end{DoxyCompactList}\item 
+void \hyperlink{group___g_p_i_o_ga0a77617a322562ae84f8d72486032c5d}{G\-P\-I\-O\-\_\-\-Pin\-A\-F\-Config} (G\-P\-I\-O\-\_\-\-Type\-Def $\ast$G\-P\-I\-Ox, uint16\-\_\-t G\-P\-I\-O\-\_\-\-Pin\-Source, uint8\-\_\-t G\-P\-I\-O\-\_\-\-A\-F)
+\begin{DoxyCompactList}\small\item\em Changes the mapping of the specified pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains all the functions prototypes for the G\-P\-I\-O firmware library. \begin{DoxyAuthor}{Author}
+M\-C\-D Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\-0.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+30-\/\-September-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\-H\-E P\-R\-E\-S\-E\-N\-T F\-I\-R\-M\-W\-A\-R\-E W\-H\-I\-C\-H I\-S F\-O\-R G\-U\-I\-D\-A\-N\-C\-E O\-N\-L\-Y A\-I\-M\-S A\-T P\-R\-O\-V\-I\-D\-I\-N\-G C\-U\-S\-T\-O\-M\-E\-R\-S W\-I\-T\-H C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N R\-E\-G\-A\-R\-D\-I\-N\-G T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S I\-N O\-R\-D\-E\-R F\-O\-R T\-H\-E\-M T\-O S\-A\-V\-E T\-I\-M\-E. A\-S A R\-E\-S\-U\-L\-T, S\-T\-M\-I\-C\-R\-O\-E\-L\-E\-C\-T\-R\-O\-N\-I\-C\-S S\-H\-A\-L\-L N\-O\-T B\-E H\-E\-L\-D L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y D\-I\-R\-E\-C\-T, I\-N\-D\-I\-R\-E\-C\-T O\-R C\-O\-N\-S\-E\-Q\-U\-E\-N\-T\-I\-A\-L D\-A\-M\-A\-G\-E\-S W\-I\-T\-H R\-E\-S\-P\-E\-C\-T T\-O A\-N\-Y C\-L\-A\-I\-M\-S A\-R\-I\-S\-I\-N\-G F\-R\-O\-M T\-H\-E C\-O\-N\-T\-E\-N\-T O\-F S\-U\-C\-H F\-I\-R\-M\-W\-A\-R\-E A\-N\-D/\-O\-R T\-H\-E U\-S\-E M\-A\-D\-E B\-Y C\-U\-S\-T\-O\-M\-E\-R\-S O\-F T\-H\-E C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N C\-O\-N\-T\-A\-I\-N\-E\-D H\-E\-R\-E\-I\-N I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S.
+
+\subsubsection*{\begin{center}\copyright C\-O\-P\-Y\-R\-I\-G\-H\-T 2011 S\-T\-Microelectronics\end{center} }
+
+Definition in file \hyperlink{stm32f4xx__gpio_8h_source}{stm32f4xx\-\_\-gpio.\-h}.
+

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dff/group___i_w_d_g___exported___constants">
+    <title>IWDG_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d1/dcc/group___i_w_d_g___write_access">IWDG_WriteAccess</link></para></listitem>
+            <listitem><para><link linkend="d7/da3/group___i_w_d_g__prescaler">IWDG_prescaler</link></para></listitem>
+            <listitem><para><link linkend="d4/dc0/group___i_w_d_g___flag">IWDG_Flag</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d1/dcc/group___i_w_d_g___write_access.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/da3/group___i_w_d_g__prescaler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/dc0/group___i_w_d_g___flag.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

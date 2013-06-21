@@ -1,0 +1,1656 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/df1/group___c_a_n">
+    <title>CAN</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CAN driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/de1/struct_c_a_n___init_type_def">CAN_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dea/struct_c_a_n___filter_init_type_def">CAN_FilterInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/df2/struct_can_tx_msg">CanTxMsg</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d57/struct_can_rx_msg">CanRxMsg</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d9/dd1/group___c_a_n___exported___constants">CAN_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="d1/ddc/group___c_a_n___private___functions">CAN_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1ga002b74cd69574a14b17ad445090245cd">CAN_DeInit</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1ga9023c35a9ab931ad4513fc5d19b4bd6c">CAN_Init</link> (
+CAN_TypeDef * CANx, <link linkend="d8/de1/struct_c_a_n___init_type_def">CAN_InitTypeDef</link> * CAN_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1ga39476830280340363c51041be6b12647">CAN_FilterInit</link> (
+<link linkend="db/dea/struct_c_a_n___filter_init_type_def">CAN_FilterInitTypeDef</link> * CAN_FilterInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1gad77ad810868ed111755fc9e8ae0c7646">CAN_StructInit</link> (
+<link linkend="d8/de1/struct_c_a_n___init_type_def">CAN_InitTypeDef</link> * CAN_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1ga109ff8960bc59f44b984c9646f17b3c0">CAN_SlaveStartBank</link> (
+uint8_t CAN_BankNumber)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1gac0e2d33e08caf49d1f1251f0dcc20213">CAN_DBGFreeze</link> (
+CAN_TypeDef * CANx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1ga94740177bab153ca5b102d122f9a8cca">CAN_TTComModeCmd</link> (
+CAN_TypeDef * CANx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1gaccfcb81f76f58400077c7b2d8641dd83">CAN_Transmit</link> (
+CAN_TypeDef * CANx, <link linkend="dc/df2/struct_can_tx_msg">CanTxMsg</link> * TxMessage)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1ga68ab05a0a6cdfcc2b6f6b6b2c10848e2">CAN_TransmitStatus</link> (
+CAN_TypeDef * CANx, uint8_t TransmitMailbox)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1ga81106cdf5395a1947bfc87ec1685829e">CAN_CancelTransmit</link> (
+CAN_TypeDef * CANx, uint8_t Mailbox)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1ga351b90bb8a3bb0c846f85bbd56ef4dc8">CAN_Receive</link> (
+CAN_TypeDef * CANx, uint8_t FIFONumber, <link linkend="d7/d57/struct_can_rx_msg">CanRxMsg</link> * RxMessage)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1ga1bc3b39471e579b4101624c33d27918b">CAN_FIFORelease</link> (
+CAN_TypeDef * CANx, uint8_t FIFONumber)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1ga7100459a95ce1b3cfe8ab15e112029fe">CAN_MessagePending</link> (
+CAN_TypeDef * CANx, uint8_t FIFONumber)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1gab2a3630e9e3024114eb117d14e514208">CAN_OperatingModeRequest</link> (
+CAN_TypeDef * CANx, uint8_t CAN_OperatingMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1ga640215e38765759d7eceb8a039046667">CAN_Sleep</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1ga78cdfbf1884b9e33c552bcbca15bed10">CAN_WakeUp</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1gaaee721a392b6b21bfd15dc160aeb6924">CAN_GetLastErrorCode</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1ga6903eecbec40eb1361d915ddde9a3274">CAN_GetReceiveErrorCounter</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/df1/group___c_a_n_1ga85ee0c35bf7ca15d4e4c862eef534843">CAN_GetLSBTransmitErrorCounter</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1gad1a8b2499a780b5bfa4accb3597b02f4">CAN_ITConfig</link> (
+CAN_TypeDef * CANx, uint32_t CAN_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="df/df1/group___c_a_n_1ga2faad96caf823ef463cc5b5b25c480bb">CAN_GetFlagStatus</link> (
+CAN_TypeDef * CANx, uint32_t CAN_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1ga2c01646d5d3a2d7045e8dd71f58f8742">CAN_ClearFlag</link> (
+CAN_TypeDef * CANx, uint32_t CAN_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="df/df1/group___c_a_n_1ga9aca05b3013e1b3438f3559f80b33c82">CAN_GetITStatus</link> (
+CAN_TypeDef * CANx, uint32_t CAN_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df1/group___c_a_n_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a">CAN_ClearITPendingBit</link> (
+CAN_TypeDef * CANx, uint32_t CAN_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1gaf471a53f52a02078ffd842658d932f63">IS_CAN_ALL_PERIPH</link> (((PERIPH) == CAN1) || \
+                                   ((PERIPH) == CAN2))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga1ded3736beb63c49281f2983fc68c36d">MCR_DBF</link> ((uint32_t)0x00010000) /* software master reset */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1gabeb6db5ba5c01da5084ec1605f868e18">TMIDxR_TXRQ</link> ((uint32_t)0x00000001) /* Transmit mailbox request */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga6125d0273c466e402db1a8f5bf888857">FMR_FINIT</link> ((uint32_t)0x00000001) /* Filter init mode */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga60a32132df242146efd3e9f7a079f0f0">INAK_TIMEOUT</link> ((uint32_t)0x0000FFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga1bb8107706c8b4039ac55a122f3c65bb">SLAK_TIMEOUT</link> ((uint32_t)0x0000FFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1gac67e7d905ba11441bf9e14180805cf3a">CAN_FLAGS_TSR</link> ((uint32_t)0x08000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga2a03d73273ab353c8deb3a4730431977">CAN_FLAGS_RF1R</link> ((uint32_t)0x04000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga4b22b2552759778ac07825240823a45f">CAN_FLAGS_RF0R</link> ((uint32_t)0x02000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga3aaa7df395ce1a90cb6e2ff3d2c4b24e">CAN_FLAGS_MSR</link> ((uint32_t)0x01000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga14f7bb0b320da21443c9bd60b1f86b5d">CAN_FLAGS_ESR</link> ((uint32_t)0x00F00000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1gaa62f09d0693681cb7576f61c93b7cf0f">CAN_TXMAILBOX_0</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga4e20f0aac1ac940014a6c66971890943">CAN_TXMAILBOX_1</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga8a842aa352d72321930cc963b26bf6d7">CAN_TXMAILBOX_2</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/df1/group___c_a_n_1ga79094ce5a3a2f717140e8cc9b7c161b6">CAN_MODE_MASK</link> ((uint32_t) 0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="df/df1/group___c_a_n_1ga002b74cd69574a14b17ad445090245cd">
+                <title>void CAN_DeInit (CAN_TypeDef *CANx)</title> <emphasis>Deinitializes the CAN peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None.</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga9023c35a9ab931ad4513fc5d19b4bd6c">
+                <title>uint8_t CAN_Init (CAN_TypeDef *CANx, CAN_InitTypeDef *CAN_InitStruct)</title> <emphasis>Initializes the CAN peripheral according to the specified
+        parameters in the CAN_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/de1/struct_c_a_n___init_type_def">CAN_InitTypeDef</link> structure that contains the configuration information for the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Constant</entry>
+                                <entry>
+<para>indicates initialization succeed which will be CAN_InitStatus_Failed or CAN_InitStatus_Success. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga39476830280340363c51041be6b12647">
+                <title>void CAN_FilterInit (CAN_FilterInitTypeDef *CAN_FilterInitStruct)</title> <emphasis>Configures the CAN reception filter according to the specified
+        parameters in the CAN_FilterInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_FilterInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="db/dea/struct_c_a_n___filter_init_type_def">CAN_FilterInitTypeDef</link> structure that contains the configuration information. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1gad77ad810868ed111755fc9e8ae0c7646">
+                <title>void CAN_StructInit (CAN_InitTypeDef *CAN_InitStruct)</title> <emphasis>Fills each CAN_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/de1/struct_c_a_n___init_type_def">CAN_InitTypeDef</link> structure which ill be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga109ff8960bc59f44b984c9646f17b3c0">
+                <title>void CAN_SlaveStartBank (uint8_t CAN_BankNumber)</title> <emphasis>Select the start bank filter for slave CAN.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_BankNumber, :</entry>
+                                <entry>
+<para>Select the start slave bank filter from 1..27. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1gac0e2d33e08caf49d1f1251f0dcc20213">
+                <title>void CAN_DBGFreeze (CAN_TypeDef *CANx, FunctionalState NewState)</title> <emphasis>Enables or disables the DBG Freeze for CAN.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the CAN peripheral. This parameter can be: ENABLE (CAN reception/transmission is frozen during debug. Reception FIFOs can still be accessed/controlled normally) or DISABLE (CAN is working during debug). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga94740177bab153ca5b102d122f9a8cca">
+                <title>void CAN_TTComModeCmd (CAN_TypeDef *CANx, FunctionalState NewState)</title> <emphasis>Enables or disables the CAN Time TriggerOperation communication mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>DLC must be programmed as 8 in order Time Stamp (2 bytes) to be sent over the CAN bus. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>Mode new state. This parameter can be: ENABLE or DISABLE. When enabled, Time stamp (TIME[15:0]) value is sent in the last two data bytes of the 8-byte message: TIME[7:0] in data byte 6 and TIME[15:8] in data byte 7. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1gaccfcb81f76f58400077c7b2d8641dd83">
+                <title>uint8_t CAN_Transmit (CAN_TypeDef *CANx, CanTxMsg *TxMessage)</title> <emphasis>Initiates and transmits a CAN frame message.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TxMessage, :</entry>
+                                <entry>
+<para>pointer to a structure which contains CAN Id, CAN DLC and CAN data. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>number of the mailbox that is used for transmission or CAN_TxStatus_NoMailBox if there is no empty mailbox. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga68ab05a0a6cdfcc2b6f6b6b2c10848e2">
+                <title>uint8_t CAN_TransmitStatus (CAN_TypeDef *CANx, uint8_t TransmitMailbox)</title> <emphasis>Checks the transmission status of a CAN Frame.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TransmitMailbox, :</entry>
+                                <entry>
+<para>the number of the mailbox that is used for transmission. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_TxStatus_Ok</entry>
+                                <entry>
+<para>if the CAN driver transmits the message, CAN_TxStatus_Failed in an other case. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga81106cdf5395a1947bfc87ec1685829e">
+                <title>void CAN_CancelTransmit (CAN_TypeDef *CANx, uint8_t Mailbox)</title> <emphasis>Cancels a transmit request.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Mailbox, :</entry>
+                                <entry>
+<para>Mailbox number. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga351b90bb8a3bb0c846f85bbd56ef4dc8">
+                <title>void CAN_Receive (CAN_TypeDef *CANx, uint8_t FIFONumber, CanRxMsg *RxMessage)</title> <emphasis>Receives a correct CAN frame.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FIFONumber, :</entry>
+                                <entry>
+<para>Receive FIFO number, CAN_FIFO0 or CAN_FIFO1. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RxMessage, :</entry>
+                                <entry>
+<para>pointer to a structure receive frame which contains CAN Id, CAN DLC, CAN data and FMI number. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga1bc3b39471e579b4101624c33d27918b">
+                <title>void CAN_FIFORelease (CAN_TypeDef *CANx, uint8_t FIFONumber)</title> <emphasis>Releases the specified receive FIFO.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FIFONumber, :</entry>
+                                <entry>
+<para>FIFO to release, CAN_FIFO0 or CAN_FIFO1. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga7100459a95ce1b3cfe8ab15e112029fe">
+                <title>uint8_t CAN_MessagePending (CAN_TypeDef *CANx, uint8_t FIFONumber)</title> <emphasis>Returns the number of pending received messages.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FIFONumber, :</entry>
+                                <entry>
+<para>Receive FIFO number, CAN_FIFO0 or CAN_FIFO1. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NbMessage</entry>
+                                <entry>
+<para>: which is the number of pending message. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1gab2a3630e9e3024114eb117d14e514208">
+                <title>uint8_t CAN_OperatingModeRequest (CAN_TypeDef *CANx, uint8_t CAN_OperatingMode)</title> <emphasis>Selects the CAN Operation mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_OperatingMode, :</entry>
+                                <entry>
+<para>CAN Operating Mode. This parameter can be one of CAN_OperatingMode_TypeDef enumeration. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>status</entry>
+                                <entry>
+<para>of the requested mode which can be<itemizedlist>
+<listitem>
+<para>CAN_ModeStatus_Failed: CAN failed entering the specific mode</para>
+</listitem><listitem>
+<para>CAN_ModeStatus_Success: CAN Succeed entering the specific mode </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga640215e38765759d7eceb8a039046667">
+                <title>uint8_t CAN_Sleep (CAN_TypeDef *CANx)</title> <emphasis>Enters the Sleep (low power) mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_Sleep_Ok</entry>
+                                <entry>
+<para>if sleep entered, CAN_Sleep_Failed otherwise. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga78cdfbf1884b9e33c552bcbca15bed10">
+                <title>uint8_t CAN_WakeUp (CAN_TypeDef *CANx)</title> <emphasis>Wakes up the CAN peripheral from sleep mode .</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN_WakeUp_Ok</entry>
+                                <entry>
+<para>if sleep mode left, CAN_WakeUp_Failed otherwise. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1gaaee721a392b6b21bfd15dc160aeb6924">
+                <title>uint8_t CAN_GetLastErrorCode (CAN_TypeDef *CANx)</title> <emphasis>Returns the CANx&apos;s last error code (LEC).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Error</entry>
+                                <entry>
+<para>code:<itemizedlist>
+<listitem>
+<para>CAN_ERRORCODE_NoErr: No Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_StuffErr: Stuff Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_FormErr: Form Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_ACKErr : Acknowledgment Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_BitRecessiveErr: Bit Recessive Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_BitDominantErr: Bit Dominant Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_CRCErr: CRC Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_SoftwareSetErr: Software Set Error </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga6903eecbec40eb1361d915ddde9a3274">
+                <title>uint8_t CAN_GetReceiveErrorCounter (CAN_TypeDef *CANx)</title> <emphasis>Returns the CANx Receive Error Counter (REC).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>In case of an error during reception, this counter is incremented by 1 or by 8 depending on the error condition as defined by the CAN standard. After every successful reception, the counter is decremented by 1 or reset to 120 if its value was higher than 128. When the counter value exceeds 127, the CAN controller enters the error passive state. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN</entry>
+                                <entry>
+<para>Receive Error Counter. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga85ee0c35bf7ca15d4e4c862eef534843">
+                <title>uint8_t CAN_GetLSBTransmitErrorCounter (CAN_TypeDef *CANx)</title> <emphasis>Returns the LSB of the 9-bit CANx Transmit Error Counter(TEC).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>LSB</entry>
+                                <entry>
+<para>of the 9-bit CAN Transmit Error Counter. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1gad1a8b2499a780b5bfa4accb3597b02f4">
+                <title>void CAN_ITConfig (CAN_TypeDef *CANx, uint32_t CAN_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified CANx interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_IT, :</entry>
+                                <entry>
+<para>specifies the CAN interrupt sources to be enabled or disabled. This parameter can be: <itemizedlist>
+<listitem>
+<para>CAN_IT_TME: Transmit mailbox empty Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FMP0: FIFO 0 message pending Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF0: FIFO 0 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV0: FIFO 0 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FMP1: FIFO 1 message pending Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF1: FIFO 1 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV1: FIFO 1 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_WKU: Wake-up Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_SLK: Sleep acknowledge Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EWG: Error warning Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EPV: Error passive Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_BOF: Bus-off Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_LEC: Last error code Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_ERR: Error Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the CAN interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga2faad96caf823ef463cc5b5b25c480bb">
+                <title>FlagStatus CAN_GetFlagStatus (CAN_TypeDef *CANx, uint32_t CAN_FLAG)</title> <emphasis>Checks whether the specified CAN flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CAN_FLAG_RQCP0: Request MailBox0 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_RQCP1: Request MailBox1 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_RQCP2: Request MailBox2 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FMP0: FIFO 0 Message Pending Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FF0: FIFO 0 Full Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FOV0: FIFO 0 Overrun Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FMP1: FIFO 1 Message Pending Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FF1: FIFO 1 Full Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FOV1: FIFO 1 Overrun Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_WKU: Wake up Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_SLAK: Sleep acknowledge Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_EWG: Error Warning Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_EPV: Error Passive Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_BOF: Bus-Off Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_LEC: Last error code Flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of CAN_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga2c01646d5d3a2d7045e8dd71f58f8742">
+                <title>void CAN_ClearFlag (CAN_TypeDef *CANx, uint32_t CAN_FLAG)</title> <emphasis>Clears the CAN&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CAN_FLAG_RQCP0: Request MailBox0 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_RQCP1: Request MailBox1 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_RQCP2: Request MailBox2 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FF0: FIFO 0 Full Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FOV0: FIFO 0 Overrun Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FF1: FIFO 1 Full Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FOV1: FIFO 1 Overrun Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_WKU: Wake up Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_SLAK: Sleep acknowledge Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_LEC: Last error code Flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga9aca05b3013e1b3438f3559f80b33c82">
+                <title>ITStatus CAN_GetITStatus (CAN_TypeDef *CANx, uint32_t CAN_IT)</title> <emphasis>Checks whether the specified CANx interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_IT, :</entry>
+                                <entry>
+<para>specifies the CAN interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CAN_IT_TME: Transmit mailbox empty Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FMP0: FIFO 0 message pending Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF0: FIFO 0 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV0: FIFO 0 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FMP1: FIFO 1 message pending Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF1: FIFO 1 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV1: FIFO 1 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_WKU: Wake-up Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_SLK: Sleep acknowledge Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EWG: Error warning Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EPV: Error passive Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_BOF: Bus-off Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_LEC: Last error code Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_ERR: Error Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>current state of CAN_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/df1/group___c_a_n_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a">
+                <title>void CAN_ClearITPendingBit (CAN_TypeDef *CANx, uint32_t CAN_IT)</title> <emphasis>Clears the CANx&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_IT, :</entry>
+                                <entry>
+<para>specifies the interrupt pending bit to clear. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CAN_IT_TME: Transmit mailbox empty Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF0: FIFO 0 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV0: FIFO 0 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF1: FIFO 1 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV1: FIFO 1 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_WKU: Wake-up Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_SLK: Sleep acknowledge Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EWG: Error warning Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EPV: Error passive Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_BOF: Bus-off Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_LEC: Last error code Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_ERR: Error Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="d9/dd1/group___c_a_n___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/ddc/group___c_a_n___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

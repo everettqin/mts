@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d3f/group___r_t_c___backup___registers___definitions">
+    <title>RTC_Backup_Registers_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga519bec4c7714e123cf2664f7394dc1ab">RTC_BKP_DR0</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga6988b61b031e1407787095b0ff214ea8">RTC_BKP_DR1</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga09963fdfb90ed5b7e32db13671447abb">RTC_BKP_DR2</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga014a39228ba4783b62ac8f11929ecd6a">RTC_BKP_DR3</link> ((uint32_t)0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga97545ebe0827a8650f953c371368f3f5">RTC_BKP_DR4</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gacab50ce68839698c48b8e2e143656ae7">RTC_BKP_DR5</link> ((uint32_t)0x00000005)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga538b0ac64fb4da2d54c12022a12243da">RTC_BKP_DR6</link> ((uint32_t)0x00000006)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gad2affc46e98b9ff69fc2af2c57c05a72">RTC_BKP_DR7</link> ((uint32_t)0x00000007)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gaba511d0dc16dedb9042081a9b905b597">RTC_BKP_DR8</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga59e9b9ec6b37ff46e557a3be4cd4fadb">RTC_BKP_DR9</link> ((uint32_t)0x00000009)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gac34f41f78e5602c406abf8382e1bab0c">RTC_BKP_DR10</link> ((uint32_t)0x0000000A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gab7f34c893833149de14908f22827a5dc">RTC_BKP_DR11</link> ((uint32_t)0x0000000B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga45c34c6e6c42068b2dbdf312cb8f3515">RTC_BKP_DR12</link> ((uint32_t)0x0000000C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga492ace75e9be2cf43fde1ae911d9651d">RTC_BKP_DR13</link> ((uint32_t)0x0000000D)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga718011f7c07a8a734fd51de0161fcddb">RTC_BKP_DR14</link> ((uint32_t)0x0000000E)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga01ad7db765e52ecd13f24bb09db27789">RTC_BKP_DR15</link> ((uint32_t)0x0000000F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga767f5e169b56f4a2364deb705d322a7b">RTC_BKP_DR16</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1gabba03a6ab599f5f45db95244500177ff">RTC_BKP_DR17</link> ((uint32_t)0x00000011)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga9fc8a8a86892e0c517a56b2804b53006">RTC_BKP_DR18</link> ((uint32_t)0x00000012)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga384af548d7386c490e6a65b2600c8c2b">RTC_BKP_DR19</link> ((uint32_t)0x00000013)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d3f/group___r_t_c___backup___registers___definitions_1ga7dfcd70f7d46d2a71155b4e4e12d0a60">IS_RTC_BKP</link> (((BKP) == RTC_BKP_DR0) || \
+                                           ((BKP) == RTC_BKP_DR1) || \
+                                           ((BKP) == RTC_BKP_DR2) || \
+                                           ((BKP) == RTC_BKP_DR3) || \
+                                           ((BKP) == RTC_BKP_DR4) || \
+                                           ((BKP) == RTC_BKP_DR5) || \
+                                           ((BKP) == RTC_BKP_DR6) || \
+                                           ((BKP) == RTC_BKP_DR7) || \
+                                           ((BKP) == RTC_BKP_DR8) || \
+                                           ((BKP) == RTC_BKP_DR9) || \
+                                           ((BKP) == RTC_BKP_DR10) || \
+                                           ((BKP) == RTC_BKP_DR11) || \
+                                           ((BKP) == RTC_BKP_DR12) || \
+                                           ((BKP) == RTC_BKP_DR13) || \
+                                           ((BKP) == RTC_BKP_DR14) || \
+                                           ((BKP) == RTC_BKP_DR15) || \
+                                           ((BKP) == RTC_BKP_DR16) || \
+                                           ((BKP) == RTC_BKP_DR17) || \
+                                           ((BKP) == RTC_BKP_DR18) || \
+                                           ((BKP) == RTC_BKP_DR19))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

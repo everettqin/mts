@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dc3/group___t_i_m___group9">
+    <title>Specific remapping management function</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Specific remapping management function. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                     Specific remapping management function
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/dc3/group___t_i_m___group9_1ga08ffb6f2bfa96b6fbcbb8d8001cb8ba9">TIM_RemapConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_Remap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dd/dc3/group___t_i_m___group9_1ga08ffb6f2bfa96b6fbcbb8d8001cb8ba9">
+                <title>void TIM_RemapConfig (TIM_TypeDef *TIMx, uint16_t TIM_Remap)</title> <emphasis>Configures the TIM2, TIM5 and TIM11 Remapping input capabilities.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 2, 5 or 11 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_Remap, :</entry>
+                                <entry>
+<para>specifies the TIM input remapping source. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM2_TIM8_TRGO: TIM2 ITR1 input is connected to TIM8 Trigger output(default) </para>
+</listitem>
+<listitem>
+<para>TIM2_ETH_PTP: TIM2 ITR1 input is connected to ETH PTP trogger output. </para>
+</listitem>
+<listitem>
+<para>TIM2_USBFS_SOF: TIM2 ITR1 input is connected to USB FS SOF. </para>
+</listitem>
+<listitem>
+<para>TIM2_USBHS_SOF: TIM2 ITR1 input is connected to USB HS SOF. </para>
+</listitem>
+<listitem>
+<para>TIM5_GPIO: TIM5 CH4 input is connected to dedicated Timer pin(default) </para>
+</listitem>
+<listitem>
+<para>TIM5_LSI: TIM5 CH4 input is connected to LSI clock. </para>
+</listitem>
+<listitem>
+<para>TIM5_LSE: TIM5 CH4 input is connected to LSE clock. </para>
+</listitem>
+<listitem>
+<para>TIM5_RTC: TIM5 CH4 input is connected to RTC Output event. </para>
+</listitem>
+<listitem>
+<para>TIM11_GPIO: TIM11 CH4 input is connected to dedicated Timer pin(default) </para>
+</listitem>
+<listitem>
+<para>TIM11_HSE: TIM11 CH4 input is connected to HSE_RTC clock (HSE divided by a programmable prescaler) </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

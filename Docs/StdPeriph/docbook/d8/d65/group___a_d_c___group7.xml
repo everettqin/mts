@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d65/group___a_d_c___group7">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                   Interrupts and flags management functions
+ ===============================================================================  
+
+  This section provides functions allowing to configure the ADC Interrupts and 
+  to get the status and clear flags and Interrupts pending bits.
+  
+  Each ADC provides 4 Interrupts sources and 6 Flags which can be divided into 
+  3 groups:
+  
+  I. Flags and Interrupts for ADC regular channels
+  =================================================
+  Flags :
+  ---------- 
+     1. ADC_FLAG_OVR : Overrun detection when regular converted data are lost
+
+     2. ADC_FLAG_EOC : Regular channel end of conversion ==&gt; to indicate (depending 
+              on EOCS bit, managed by ADC_EOCOnEachRegularChannelCmd() ) the end of:
+               ==&gt; a regular CHANNEL conversion 
+               ==&gt; sequence of regular GROUP conversions .
+
+     3. ADC_FLAG_STRT: Regular channel start ==&gt; to indicate when regular CHANNEL 
+              conversion starts.
+
+  Interrupts :
+  ------------
+     1. ADC_IT_OVR : specifies the interrupt source for Overrun detection event.  
+     2. ADC_IT_EOC : specifies the interrupt source for Regular channel end of 
+                     conversion event.
+  
+  
+  II. Flags and Interrupts for ADC Injected channels
+  =================================================
+  Flags :
+  ---------- 
+     1. ADC_FLAG_JEOC : Injected channel end of conversion ==&gt; to indicate at 
+               the end of injected GROUP conversion  
+              
+     2. ADC_FLAG_JSTRT: Injected channel start ==&gt; to indicate hardware when 
+               injected GROUP conversion starts.
+
+  Interrupts :
+  ------------
+     1. ADC_IT_JEOC : specifies the interrupt source for Injected channel end of 
+                      conversion event.     
+
+  III. General Flags and Interrupts for the ADC
+  ================================================= 
+  Flags :
+  ---------- 
+     1. ADC_FLAG_AWD: Analog watchdog ==&gt; to indicate if the converted voltage 
+              crosses the programmed thresholds values.
+              
+  Interrupts :
+  ------------
+     1. ADC_IT_AWD : specifies the interrupt source for Analog watchdog event. 
+
+  
+  The user should identify which mode will be used in his application to manage 
+  the ADC controller events: Polling mode or Interrupt mode.
+  
+  In the Polling Mode it is advised to use the following functions:
+      - ADC_GetFlagStatus() : to check if flags events occur. 
+      - ADC_ClearFlag()     : to clear the flags events.
+      
+  In the Interrupt Mode it is advised to use the following functions:
+     - ADC_ITConfig()          : to enable or disable the interrupt source.
+     - ADC_GetITStatus()       : to check if Interrupt occurs.
+     - ADC_ClearITPendingBit() : to clear the Interrupt pending Bit 
+                                 (corresponding Flag). 
+</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d65/group___a_d_c___group7_1gad4c84b54b539944f555488bf979f82b6">ADC_ITConfig</link> (
+ADC_TypeDef * ADCx, uint16_t ADC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d8/d65/group___a_d_c___group7_1gaa12546e51ec905c90a3aada432bd4633">ADC_GetFlagStatus</link> (
+ADC_TypeDef * ADCx, uint8_t ADC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d65/group___a_d_c___group7_1gaf34f36798f811b4a41321ea2d12118d4">ADC_ClearFlag</link> (
+ADC_TypeDef * ADCx, uint8_t ADC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d8/d65/group___a_d_c___group7_1gaa1d3b910a83dbf14d4f68c8eef058612">ADC_GetITStatus</link> (
+ADC_TypeDef * ADCx, uint16_t ADC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d65/group___a_d_c___group7_1ga601c6a67bd883eb631ecc7aa5e999b9c">ADC_ClearITPendingBit</link> (
+ADC_TypeDef * ADCx, uint16_t ADC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d8/d65/group___a_d_c___group7_1gad4c84b54b539944f555488bf979f82b6">
+                <title>void ADC_ITConfig (ADC_TypeDef *ADCx, uint16_t ADC_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified ADC interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_IT, :</entry>
+                                <entry>
+<para>specifies the ADC interrupt sources to be enabled or disabled. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_IT_EOC: End of conversion interrupt mask </para>
+</listitem>
+<listitem>
+<para>ADC_IT_AWD: Analog watchdog interrupt mask </para>
+</listitem>
+<listitem>
+<para>ADC_IT_JEOC: End of injected conversion interrupt mask </para>
+</listitem>
+<listitem>
+<para>ADC_IT_OVR: Overrun interrupt enable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified ADC interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d65/group___a_d_c___group7_1gaa12546e51ec905c90a3aada432bd4633">
+                <title>FlagStatus ADC_GetFlagStatus (ADC_TypeDef *ADCx, uint8_t ADC_FLAG)</title> <emphasis>Checks whether the specified ADC flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_FLAG_AWD: Analog watchdog flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_EOC: End of conversion flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_JEOC: End of injected group conversion flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_JSTRT: Start of injected group conversion flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_STRT: Start of regular group conversion flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_OVR: Overrun flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of ADC_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d65/group___a_d_c___group7_1gaf34f36798f811b4a41321ea2d12118d4">
+                <title>void ADC_ClearFlag (ADC_TypeDef *ADCx, uint8_t ADC_FLAG)</title> <emphasis>Clears the ADCx&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>ADC_FLAG_AWD: Analog watchdog flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_EOC: End of conversion flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_JEOC: End of injected group conversion flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_JSTRT: Start of injected group conversion flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_STRT: Start of regular group conversion flag </para>
+</listitem>
+<listitem>
+<para>ADC_FLAG_OVR: Overrun flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d65/group___a_d_c___group7_1gaa1d3b910a83dbf14d4f68c8eef058612">
+                <title>ITStatus ADC_GetITStatus (ADC_TypeDef *ADCx, uint16_t ADC_IT)</title> <emphasis>Checks whether the specified ADC interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_IT, :</entry>
+                                <entry>
+<para>specifies the ADC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_IT_EOC: End of conversion interrupt mask </para>
+</listitem>
+<listitem>
+<para>ADC_IT_AWD: Analog watchdog interrupt mask </para>
+</listitem>
+<listitem>
+<para>ADC_IT_JEOC: End of injected conversion interrupt mask </para>
+</listitem>
+<listitem>
+<para>ADC_IT_OVR: Overrun interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of ADC_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d65/group___a_d_c___group7_1ga601c6a67bd883eb631ecc7aa5e999b9c">
+                <title>void ADC_ClearITPendingBit (ADC_TypeDef *ADCx, uint16_t ADC_IT)</title> <emphasis>Clears the ADCx&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_IT, :</entry>
+                                <entry>
+<para>specifies the ADC interrupt pending bit to clear. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_IT_EOC: End of conversion interrupt mask </para>
+</listitem>
+<listitem>
+<para>ADC_IT_AWD: Analog watchdog interrupt mask </para>
+</listitem>
+<listitem>
+<para>ADC_IT_JEOC: End of injected conversion interrupt mask </para>
+</listitem>
+<listitem>
+<para>ADC_IT_OVR: Overrun interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

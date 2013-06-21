@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/dd0/group___r_c_c___system___clock___source">
+    <title>RCC_System_Clock_Source</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/dd0/group___r_c_c___system___clock___source_1ga0f392254e74dd965c48edd5aad148e20">RCC_SYSCLKSource_HSI</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/dd0/group___r_c_c___system___clock___source_1gabeae110e41833842f8620647ea0ce85a">RCC_SYSCLKSource_HSE</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/dd0/group___r_c_c___system___clock___source_1ga9301b7a07a7cb8c2c6ed87b619c1c966">RCC_SYSCLKSource_PLLCLK</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/dd0/group___r_c_c___system___clock___source_1gaae9d6172a72b0a90cb3703aa59258c57">IS_RCC_SYSCLK_SOURCE</link> (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+                                      ((SOURCE) == RCC_SYSCLKSource_HSE) || \
+                                      ((SOURCE) == RCC_SYSCLKSource_PLLCLK))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

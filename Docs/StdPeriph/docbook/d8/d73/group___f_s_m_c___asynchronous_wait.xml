@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d73/group___f_s_m_c___asynchronous_wait">
+    <title>FSMC_AsynchronousWait</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d73/group___f_s_m_c___asynchronous_wait_1ga36c0dad6fe6c0e01632d3312c8f4c4cb">FSMC_AsynchronousWait_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d73/group___f_s_m_c___asynchronous_wait_1gaff524bfa697106ede7d4b557a5ad7d8c">FSMC_AsynchronousWait_Enable</link> ((uint32_t)0x00008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d73/group___f_s_m_c___asynchronous_wait_1ga52d579de825316ee058baf11bfb749d6">IS_FSMC_ASYNWAIT</link> (((STATE) == FSMC_AsynchronousWait_Disable) || \
+                                 ((STATE) == FSMC_AsynchronousWait_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/da5/group___d_c_m_i___extended___data___mode">
+    <title>DCMI_Extended_Data_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1ga01627fb1fcd0d0682628e5bea8e5dfba">DCMI_ExtendedDataMode_8b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gad47d200f9e2bf947dd07b9f8bc395336">DCMI_ExtendedDataMode_10b</link> ((uint16_t)0x0400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1ga183733b7d784387200aa00b988c906da">DCMI_ExtendedDataMode_12b</link> ((uint16_t)0x0800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gae1a4ca9b9a1929a40213758e80d38e15">DCMI_ExtendedDataMode_14b</link> ((uint16_t)0x0C00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gaf28a103f095fed769e757334933a6981">IS_DCMI_EXTENDED_DATA</link> (((DATA) == <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1ga01627fb1fcd0d0682628e5bea8e5dfba">DCMI_ExtendedDataMode_8b</link>) || \
+                                    ((DATA) == <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gad47d200f9e2bf947dd07b9f8bc395336">DCMI_ExtendedDataMode_10b</link>) ||\
+                                    ((DATA) == <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1ga183733b7d784387200aa00b988c906da">DCMI_ExtendedDataMode_12b</link>) ||\
+                                    ((DATA) == <link linkend="dd/da5/group___d_c_m_i___extended___data___mode_1gae1a4ca9b9a1929a40213758e80d38e15">DCMI_ExtendedDataMode_14b</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="dd/da5/group___d_c_m_i___extended___data___mode_1ga01627fb1fcd0d0682628e5bea8e5dfba">
+                <title>#define DCMI_ExtendedDataMode_8b</title>                
+<para>Interface captures 8-bit data on every pixel clock </para>
+
+                <para>Definition at line 186 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="dd/da5/group___d_c_m_i___extended___data___mode_1gad47d200f9e2bf947dd07b9f8bc395336">
+                <title>#define DCMI_ExtendedDataMode_10b</title>                
+<para>Interface captures 10-bit data on every pixel clock </para>
+
+                <para>Definition at line 187 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="dd/da5/group___d_c_m_i___extended___data___mode_1ga183733b7d784387200aa00b988c906da">
+                <title>#define DCMI_ExtendedDataMode_12b</title>                
+<para>Interface captures 12-bit data on every pixel clock </para>
+
+                <para>Definition at line 188 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="dd/da5/group___d_c_m_i___extended___data___mode_1gae1a4ca9b9a1929a40213758e80d38e15">
+                <title>#define DCMI_ExtendedDataMode_14b</title>                
+<para>Interface captures 14-bit data on every pixel clock </para>
+
+                <para>Definition at line 189 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

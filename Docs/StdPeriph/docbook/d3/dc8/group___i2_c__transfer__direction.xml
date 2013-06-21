@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dc8/group___i2_c__transfer__direction">
+    <title>I2C_transfer_direction</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dc8/group___i2_c__transfer__direction_1ga9895ee2d7d8cc8ba4daafafa1c3ce1ac">I2C_Direction_Transmitter</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dc8/group___i2_c__transfer__direction_1gafe3b9b98552980ca56c8e21a90040fa0">I2C_Direction_Receiver</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dc8/group___i2_c__transfer__direction_1ga33368efe652bc25b4f4b74f02ce0657e">IS_I2C_DIRECTION</link> (((DIRECTION) == I2C_Direction_Transmitter) || \
+                                     ((DIRECTION) == I2C_Direction_Receiver))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

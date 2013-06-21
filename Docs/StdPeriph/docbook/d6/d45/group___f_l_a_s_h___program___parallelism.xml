@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d45/group___f_l_a_s_h___program___parallelism">
+    <title>FLASH_Program_Parallelism</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1ga83c67710aa697216193654e1e90cc953">FLASH_PSIZE_BYTE</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1gad3210ba7423b45cb3063f4294cdeab16">FLASH_PSIZE_HALF_WORD</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1gac3ac337ed43efc869a9f734527e44673">FLASH_PSIZE_WORD</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1ga0fd17c4e281f199f09a6a6365e9243ee">FLASH_PSIZE_DOUBLE_WORD</link> ((uint32_t)0x00000300)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d45/group___f_l_a_s_h___program___parallelism_1ga7c755f15e36221021a1438857e40365c">CR_PSIZE_MASK</link> ((uint32_t)0xFFFFFCFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

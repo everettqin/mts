@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/df5/group___u_s_a_r_t___clock___polarity">
+    <title>USART_Clock_Polarity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/df5/group___u_s_a_r_t___clock___polarity_1ga194d60b47d8042d39e843c52f3a6aa1a">USART_CPOL_Low</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/df5/group___u_s_a_r_t___clock___polarity_1ga4ba6946dd9f0b4fd38115f24798c210f">USART_CPOL_High</link> ((uint16_t)0x0400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/df5/group___u_s_a_r_t___clock___polarity_1ga833e9d2e85ab84658c7a7c18bd0bc8b9">IS_USART_CPOL</link> (((CPOL) == USART_CPOL_Low) || ((CPOL) == USART_CPOL_High))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

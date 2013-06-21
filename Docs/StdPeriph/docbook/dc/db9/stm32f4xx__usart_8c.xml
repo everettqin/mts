@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/db9/stm32f4xx__usart_8c">
+    <title>stm32f4xx_usart.c File Reference</title>
+    <programlisting>#include stm32f4xx_usart.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc0/group___u_s_a_r_t_1ga8d425258898b4af4ebc820f52635fad8">CR1_CLEAR_MASK</link> ((uint16_t)(USART_CR1_M | USART_CR1_PCE | \
+                                              USART_CR1_PS | USART_CR1_TE | \
+                                              USART_CR1_RE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc0/group___u_s_a_r_t_1ga7834b3d9be4875de242f87c12fd79f02">CR2_CLOCK_CLEAR_MASK</link> ((uint16_t)(USART_CR2_CLKEN | USART_CR2_CPOL | \
+                                              USART_CR2_CPHA | USART_CR2_LBCL))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc0/group___u_s_a_r_t_1ga5c882571db73abc5d1837368a1cb0a64">CR3_CLEAR_MASK</link> ((uint16_t)(USART_CR3_RTSE | USART_CR3_CTSE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc0/group___u_s_a_r_t_1gacde7fc0e46b3a5fc7e2002b2915884d5">IT_MASK</link> ((uint16_t)0x001F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga2f8e1ce72da21b6539d8e1f299ec3b0d">USART_DeInit</link> (
+USART_TypeDef * USARTx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga98da340ea0324002ba1b4263e91ab2ff">USART_Init</link> (
+USART_TypeDef * USARTx, <link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> * USART_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga34e1faa2f312496c16cfd05155f4c8b1">USART_StructInit</link> (
+<link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> * USART_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1gadb50c7a2175c91acd3728f8eefd0c63d">USART_ClockInit</link> (
+USART_TypeDef * USARTx, <link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> * USART_ClockInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga59df27d0adda18b16ee28d47672cc724">USART_ClockStructInit</link> (
+<link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> * USART_ClockInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga45e51626739c5f22a6567c8a85d1d85e">USART_Cmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1gaf5da8f2eee8245425584d85d4f62cc33">USART_SetPrescaler</link> (
+USART_TypeDef * USARTx, uint8_t USART_Prescaler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga3897bab07491d9239f8a238a9a7cddea">USART_OverSampling8Cmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga3ed89ea8765d851510cfe90f7d90cbbb">USART_OneBitMethodCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/da1/group___u_s_a_r_t___group2_1ga0b43d42da9540f446d494bf69823c6fb">USART_SendData</link> (
+USART_TypeDef * USARTx, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d4/da1/group___u_s_a_r_t___group2_1gac67a91845b0b1d54d31bdfb1c5e9867c">USART_ReceiveData</link> (
+USART_TypeDef * USARTx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/df1/group___u_s_a_r_t___group3_1ga65ec9928817f3f031dd9a4dfc95d6666">USART_SetAddress</link> (
+USART_TypeDef * USARTx, uint8_t USART_Address)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/df1/group___u_s_a_r_t___group3_1gac27b78ce445a16fe33851d2f87781c02">USART_ReceiverWakeUpCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/df1/group___u_s_a_r_t___group3_1ga4965417c2412c36e462fcad50a8d5393">USART_WakeUpConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_WakeUp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dc8/group___u_s_a_r_t___group4_1ga7bc2d291831cbc5e53e73337308029b5">USART_LINBreakDetectLengthConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_LINBreakDetectLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dc8/group___u_s_a_r_t___group4_1ga9fdd6296f4ca4acdfcbd58bf56bd4185">USART_LINCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/dc8/group___u_s_a_r_t___group4_1ga39a3d33e23ee28529fa8f7259ce6811e">USART_SendBreak</link> (
+USART_TypeDef * USARTx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dee/group___u_s_a_r_t___group5_1gaaa23b05fe0e1896bad90da7f82750831">USART_HalfDuplexCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/df6/group___u_s_a_r_t___group6_1gac4a35c6acd71ae7e0d67c1f03f0a8777">USART_SetGuardTime</link> (
+USART_TypeDef * USARTx, uint8_t USART_GuardTime)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/df6/group___u_s_a_r_t___group6_1gabd1347e244c623447151ba3a5e986c5f">USART_SmartCardCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/df6/group___u_s_a_r_t___group6_1ga62e22f47e38aa53f2edce8771f7a5dfa">USART_SmartCardNACKCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d1e/group___u_s_a_r_t___group7_1ga81a0cd36199040bf6d266b57babd678e">USART_IrDAConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_IrDAMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d1e/group___u_s_a_r_t___group7_1gabff56ebb494fdfadcc6ef4fe9ac8dd24">USART_IrDACmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/db5/group___u_s_a_r_t___group8_1ga902857f199ebfba21c63d725354af66f">USART_DMACmd</link> (
+USART_TypeDef * USARTx, uint16_t USART_DMAReq, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d6c/group___u_s_a_r_t___group9_1ga6d8f2dd1f34060ae7e386e3e5d56b6f6">USART_ITConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="db/d6c/group___u_s_a_r_t___group9_1ga144630722defc9e312f0ad280b68e9da">USART_GetFlagStatus</link> (
+USART_TypeDef * USARTx, uint16_t USART_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d6c/group___u_s_a_r_t___group9_1gad962e148fc466ae1b45b288f6c91d966">USART_ClearFlag</link> (
+USART_TypeDef * USARTx, uint16_t USART_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="db/d6c/group___u_s_a_r_t___group9_1ga93d8f031241bcdbe938d091a85295445">USART_GetITStatus</link> (
+USART_TypeDef * USARTx, uint16_t USART_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d6c/group___u_s_a_r_t___group9_1ga1fc25d0338695063be5e50156955d9bc">USART_ClearITPendingBit</link> (
+USART_TypeDef * USARTx, uint16_t USART_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the following functionalities of the Universal synchronous asynchronous receiver transmitter (USART): </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011<itemizedlist>
+<listitem>
+<para>Initialization and Configuration</para>
+</listitem><listitem>
+<para>Data transfers</para>
+</listitem><listitem>
+<para>Multi-Processor Communication</para>
+</listitem><listitem>
+<para>LIN mode</para>
+</listitem><listitem>
+<para>Half-duplex mode</para>
+</listitem><listitem>
+<para>Smartcard mode</para>
+</listitem><listitem>
+<para>IrDA mode</para>
+</listitem><listitem>
+<para>DMA transfers management</para>
+</listitem><listitem>
+<para>Interrupts and flags management</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<programlisting><literallayout>*      
+*          ===================================================================
+*                                 How to use this driver
+*          ===================================================================
+*          1. Enable peripheral clock using the follwoing functions
+*             RCC_APB2PeriphClockCmd(RCC_APB2Periph_USARTx, ENABLE) for USART1 and USART6 
+*             RCC_APB1PeriphClockCmd(RCC_APB1Periph_USARTx, ENABLE) for USART2, USART3, UART4 or UART5.
+*
+*          2.  According to the USART mode, enable the GPIO clocks using 
+*              RCC_AHB1PeriphClockCmd() function. (The I/O can be TX, RX, CTS, 
+*              or/and SCLK). 
+*
+*          3. Peripheral&apos;s alternate function: 
+*                 - Connect the pin to the desired peripherals&apos; Alternate 
+*                   Function (AF) using GPIO_PinAFConfig() function
+*                 - Configure the desired pin in alternate function by:
+*                   GPIO_InitStruct-&gt;GPIO_Mode = GPIO_Mode_AF
+*                 - Select the type, pull-up/pull-down and output speed via 
+*                   GPIO_PuPd, GPIO_OType and GPIO_Speed members
+*                 - Call GPIO_Init() function
+*        
+*          4. Program the Baud Rate, Word Length , Stop Bit, Parity, Hardware 
+*             flow control and Mode(Receiver/Transmitter) using the USART_Init()
+*             function.
+*
+*          5. For synchronous mode, enable the clock and program the polarity,
+*             phase and last bit using the USART_ClockInit() function.
+*
+*          5. Enable the NVIC and the corresponding interrupt using the function 
+*             USART_ITConfig() if you need to use interrupt mode. 
+*
+*          6. When using the DMA mode 
+*                   - Configure the DMA using DMA_Init() function
+*                   - Active the needed channel Request using USART_DMACmd() function
+* 
+*          7. Enable the USART using the USART_Cmd() function.
+* 
+*          8. Enable the DMA using the DMA_Cmd() function, when using DMA mode. 
+*
+*          Refer to Multi-Processor, LIN, half-duplex, Smartcard, IrDA sub-sections
+*          for more details
+*          
+*          In order to reach higher communication baudrates, it is possible to
+*          enable the oversampling by 8 mode using the function USART_OverSampling8Cmd().
+*          This function should be called after enabling the USART clock (RCC_APBxPeriphClockCmd())
+*          and before calling the function USART_Init().
+*          
+*  </literallayout></programlisting></para>
+
+<para><formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c</para>
+    </simplesect>
+</section>

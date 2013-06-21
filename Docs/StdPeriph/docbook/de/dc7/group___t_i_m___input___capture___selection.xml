@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dc7/group___t_i_m___input___capture___selection">
+    <title>TIM_Input_Capture_Selection</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc7/group___t_i_m___input___capture___selection_1ga3d38876044457b7faefe951d367ac8c3">TIM_ICSelection_DirectTI</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc7/group___t_i_m___input___capture___selection_1ga2289b684133ac0b81ddfcd860d01b144">TIM_ICSelection_IndirectTI</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc7/group___t_i_m___input___capture___selection_1ga2cd464e97ffd6ea3208ec65672f9a373">TIM_ICSelection_TRC</link> ((uint16_t)0x0003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dc7/group___t_i_m___input___capture___selection_1ga623d8592109f4702829ae7fc3806bcb8">IS_TIM_IC_SELECTION</link> (((SELECTION) == <link linkend="de/dc7/group___t_i_m___input___capture___selection_1ga3d38876044457b7faefe951d367ac8c3">TIM_ICSelection_DirectTI</link>) || \
+                                        ((SELECTION) == <link linkend="de/dc7/group___t_i_m___input___capture___selection_1ga2289b684133ac0b81ddfcd860d01b144">TIM_ICSelection_IndirectTI</link>) || \
+                                        ((SELECTION) == <link linkend="de/dc7/group___t_i_m___input___capture___selection_1ga2cd464e97ffd6ea3208ec65672f9a373">TIM_ICSelection_TRC</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="de/dc7/group___t_i_m___input___capture___selection_1ga3d38876044457b7faefe951d367ac8c3">
+                <title>#define TIM_ICSelection_DirectTI</title>                
+<para>TIM Input 1, 2, 3 or 4 is selected to be connected to IC1, IC2, IC3 or IC4, respectively </para>
+
+                <para>Definition at line 516 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/dc7/group___t_i_m___input___capture___selection_1ga2289b684133ac0b81ddfcd860d01b144">
+                <title>#define TIM_ICSelection_IndirectTI</title>                
+<para>TIM Input 1, 2, 3 or 4 is selected to be connected to IC2, IC1, IC4 or IC3, respectively. </para>
+
+                <para>Definition at line 518 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/dc7/group___t_i_m___input___capture___selection_1ga2cd464e97ffd6ea3208ec65672f9a373">
+                <title>#define TIM_ICSelection_TRC</title>                
+<para>TIM Input 1, 2, 3 or 4 is selected to be connected to TRC. </para>
+
+                <para>Definition at line 519 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

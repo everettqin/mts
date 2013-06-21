@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/de0/group___r_c_c___interrupt___source">
+    <title>RCC_Interrupt_Source</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1ga2b4ef277c1b71f96e0bef4b9a72fca94">RCC_IT_LSIRDY</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1gad6b6e78a426850f595ef180d292a673d">RCC_IT_LSERDY</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1ga69637e51b71f73f519c8c0a0613d042f">RCC_IT_HSIRDY</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1gad13eaede352bca59611e6cae68665866">RCC_IT_HSERDY</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1ga68d48e7811fb58f2649dce6cf0d823d9">RCC_IT_PLLRDY</link> ((uint8_t)0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1ga6468ff3bad854272cf1120ffbf69b7ac">RCC_IT_PLLI2SRDY</link> ((uint8_t)0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1ga9bb34a4912d2084dc1c0834eb53aa7a3">RCC_IT_CSS</link> ((uint8_t)0x80)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1ga710d72ccf88ddbec09b033c81a571a83">IS_RCC_IT</link> ((((IT) &amp; (uint8_t)0xC0) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1ga7a1b771d6d9c2d8346ab58a1f046f6a6">IS_RCC_GET_IT</link> (((IT) == RCC_IT_LSIRDY) || ((IT) == RCC_IT_LSERDY) || \
+                           ((IT) == RCC_IT_HSIRDY) || ((IT) == RCC_IT_HSERDY) || \
+                           ((IT) == RCC_IT_PLLRDY) || ((IT) == RCC_IT_CSS) || \
+                           ((IT) == RCC_IT_PLLI2SRDY))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de0/group___r_c_c___interrupt___source_1ga8374741e47d696accd1a72647650ba63">IS_RCC_CLEAR_IT</link> ((((IT) &amp; (uint8_t)0x40) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

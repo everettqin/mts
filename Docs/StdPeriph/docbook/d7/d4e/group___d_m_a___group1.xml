@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d4e/group___d_m_a___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                 Initialization and Configuration functions
+ ===============================================================================  
+
+  This subsection provides functions allowing to initialize the DMA Stream source
+  and destination addresses, incrementation and data sizes, transfer direction, 
+  buffer size, circular/normal mode selection, memory-to-memory mode selection 
+  and Stream priority value.
+  
+  The DMA_Init() function follows the DMA configuration procedures as described in
+  reference manual (RM0090) except the first point: waiting on EN bit to be reset.
+  This condition should be checked by user application using the function DMA_GetCmdStatus()
+  before calling the DMA_Init() function.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/group___d_m_a___group1_1ga38d4a4ab8990299f8a6cf064e1e811d0">DMA_DeInit</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/group___d_m_a___group1_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, <link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> * DMA_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/group___d_m_a___group1_1ga0f7f95f750a90a6824f4e9b6f58adc7e">DMA_StructInit</link> (
+<link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> * DMA_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/group___d_m_a___group1_1gab2bea22f9f6dc62fdd7afb385a0c1f73">DMA_Cmd</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/group___d_m_a___group1_1ga210a9861460b3c9b3fa14fdc1a949744">DMA_PeriphIncOffsetSizeConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_Pincos)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d4e/group___d_m_a___group1_1ga77f7628f6be9d6d088127eceb090b8b2">DMA_FlowControllerConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_FlowCtrl)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d7/d4e/group___d_m_a___group1_1ga38d4a4ab8990299f8a6cf064e1e811d0">
+                <title>void DMA_DeInit (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Deinitialize the DMAy Streamx registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d4e/group___d_m_a___group1_1gaced8a4149acfb0a50b50e63273a87148">
+                <title>void DMA_Init (DMA_Stream_TypeDef *DMAy_Streamx, DMA_InitTypeDef *DMA_InitStruct)</title> <emphasis>Initializes the DMAy Streamx according to the specified parameters in 
+        the DMA_InitStruct structure.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Before calling this function, it is recommended to check that the Stream is actually disabled using the function <link linkend="df/df8/group___d_m_a_1gaa4d631cdd6cd020106435f30c0c6fb15">DMA_GetCmdStatus()</link>. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> structure that contains the configuration information for the specified DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d4e/group___d_m_a___group1_1ga0f7f95f750a90a6824f4e9b6f58adc7e">
+                <title>void DMA_StructInit (DMA_InitTypeDef *DMA_InitStruct)</title> <emphasis>Fills each DMA_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMA_InitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d4e/group___d_m_a___group1_1gab2bea22f9f6dc62fdd7afb385a0c1f73">
+                <title>void DMA_Cmd (DMA_Stream_TypeDef *DMAy_Streamx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified DMAy Streamx.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the DMAy Streamx. This parameter can be: ENABLE or DISABLE.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>This function may be used to perform Pause-Resume operation. When a transfer is ongoing, calling this function to disable the Stream will cause the transfer to be paused. All configuration registers and the number of remaining data will be preserved. When calling again this function to re-enable the Stream, the transfer will be resumed from the point where it was paused.</para>
+<simplesect/>
+<para>After configuring the DMA Stream (<link linkend="df/df8/group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init()</link> function) and enabling the stream, it is recommended to check (or wait until) the DMA Stream is effectively enabled. A Stream may remain disabled if a configuration parameter is wrong. After disabling a DMA Stream, it is also recommended to check (or wait until) the DMA Stream is effectively disabled. If a Stream is disabled while a data transfer is ongoing, the current data will be transferred and the Stream will be effectively disabled only after the transfer of this single data is finished.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d4e/group___d_m_a___group1_1ga210a9861460b3c9b3fa14fdc1a949744">
+                <title>void DMA_PeriphIncOffsetSizeConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_Pincos)</title> <emphasis>Configures, when the PINC (Peripheral Increment address mode) bit is
+        set, if the peripheral address should be incremented with the data 
+        size (configured with PSIZE bits) or by a fixed offset equal to 4
+        (32-bit aligned addresses).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function has no effect if the Peripheral Increment mode is disabled.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_Pincos, :</entry>
+                                <entry>
+<para>specifies the Peripheral increment offset size. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_PINCOS_Psize: Peripheral address increment is done accordingly to PSIZE parameter. </para>
+</listitem>
+<listitem>
+<para>DMA_PINCOS_WordAligned: Peripheral address increment offset is fixed to 4 (32-bit aligned addresses). </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d4e/group___d_m_a___group1_1ga77f7628f6be9d6d088127eceb090b8b2">
+                <title>void DMA_FlowControllerConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_FlowCtrl)</title> <emphasis>Configures, when the DMAy Streamx is disabled, the flow controller for
+        the next transactions (Peripheral or Memory).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Before enabling this feature, check if the used peripheral supports the Flow Controller mode or not.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_FlowCtrl, :</entry>
+                                <entry>
+<para>specifies the DMA flow controller. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_FlowCtrl_Memory: DMAy_Streamx transactions flow controller is the DMA controller. </para>
+</listitem>
+<listitem>
+<para>DMA_FlowCtrl_Peripheral: DMAy_Streamx transactions flow controller is the peripheral. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

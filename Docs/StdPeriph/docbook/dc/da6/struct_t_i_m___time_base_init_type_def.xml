@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/da6/struct_t_i_m___time_base_init_type_def">
+<title>TIM_TimeBaseInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dec/stm32f4xx__tim_8h">&lt;stm32f4xx_tim.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_Prescaler</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_CounterMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t TIM_Period</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_ClockDivision</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t TIM_RepetitionCounter</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>TIM Time Base Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><formalpara><title>Note: </title>
+
+<para>This structure is used with all TIMx except for TIM6 and TIM7. </para>
+</formalpara>
+</para>
+                <para>Definition at line 50 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t TIM_Prescaler</title>                
+<para>Specifies the prescaler value used to divide the TIM clock. This parameter can be a number between 0x0000 and 0xFFFF </para>
+
+                <para>Definition at line 51 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_CounterMode</title>                
+<para>Specifies the counter mode. This parameter can be a value of <link linkend="dd/d74/group___t_i_m___counter___mode">TIM_Counter_Mode</link> </para>
+
+                <para>Definition at line 54 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t TIM_Period</title>                
+<para>Specifies the period value to be loaded into the active Auto-Reload Register at the next update event. This parameter must be a number between 0x0000 and 0xFFFF. </para>
+
+                <para>Definition at line 57 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_ClockDivision</title>                
+<para>Specifies the clock division. This parameter can be a value of <link linkend="d1/d9f/group___t_i_m___clock___division___c_k_d">TIM_Clock_Division_CKD</link> </para>
+
+                <para>Definition at line 61 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t TIM_RepetitionCounter</title>                
+<para>Specifies the repetition counter value. Each time the RCR downcounter reaches zero, an update event is generated and counting restarts from the RCR value (N). This means in PWM mode that (N+1) corresponds to:<itemizedlist>
+<listitem>
+<para>the number of PWM periods in edge-aligned mode</para>
+</listitem><listitem>
+<para>the number of half PWM period in center-aligned mode This parameter must be a number between 0x00 and 0xFF. <formalpara><title>Note: </title>
+
+<para>This parameter is valid only for TIM1 and TIM8. </para>
+</formalpara>
+</para>
+</listitem></itemizedlist>
+</para>
+
+                <para>Definition at line 64 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

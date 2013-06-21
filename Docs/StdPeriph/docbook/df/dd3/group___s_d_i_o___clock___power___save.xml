@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dd3/group___s_d_i_o___clock___power___save">
+    <title>SDIO_Clock_Power_Save</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd3/group___s_d_i_o___clock___power___save_1ga032aa5fb2dfd7ba5dbd60a3845c82ba0">SDIO_ClockPowerSave_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd3/group___s_d_i_o___clock___power___save_1ga9f5b66a0044c4ff36a3eb1ec758f7ea7">SDIO_ClockPowerSave_Enable</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dd3/group___s_d_i_o___clock___power___save_1ga41988203e5d4e35a755aa604f1876cd3">IS_SDIO_CLOCK_POWER_SAVE</link> (((SAVE) == SDIO_ClockPowerSave_Disable) || \
+                                        ((SAVE) == SDIO_ClockPowerSave_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

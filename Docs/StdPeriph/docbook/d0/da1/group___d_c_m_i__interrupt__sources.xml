@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/da1/group___d_c_m_i__interrupt__sources">
+    <title>DCMI_interrupt_sources</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1gadaec1a969aa5f1f993157c3b7930ee15">DCMI_IT_FRAME</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1ga5afbb2e1a8b64d9e042da18d8304667e">DCMI_IT_OVF</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1gaef8a30c349bbe77a26052613053c0201">DCMI_IT_ERR</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1gac60620cc8cfcff9063bb141f75bdedf6">DCMI_IT_VSYNC</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1gab31edbfaa9359494beda9324bbe3a70d">DCMI_IT_LINE</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1ga73bb15913a02e43fa9e4519f16d8566b">IS_DCMI_CONFIG_IT</link> ((((IT) &amp; (uint16_t)0xFFE0) == 0x0000) &amp;&amp; ((IT) != 0x0000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da1/group___d_c_m_i__interrupt__sources_1ga03e77e43829150f92a861421250355e5">IS_DCMI_GET_IT</link> (((IT) == DCMI_IT_FRAME) || \
+                            ((IT) == DCMI_IT_OVF) || \
+                            ((IT) == DCMI_IT_ERR) || \
+                            ((IT) == DCMI_IT_VSYNC) || \
+                            ((IT) == DCMI_IT_LINE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

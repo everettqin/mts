@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d71/group___r_t_c___smooth__calib__period___definitions">
+    <title>RTC_Smooth_calib_period_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga1410c28a3644ce52dfbdf2f21a037eef">RTC_SmoothCalibPeriod_32sec</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga31b86cd48a0ef55f1837ab5175c52eb9">RTC_SmoothCalibPeriod_16sec</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga8a34f8b7e145649bad2ec36b69eccbd3">RTC_SmoothCalibPeriod_8sec</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga65c64189fd22cb803ffe35cce640071a">IS_RTC_SMOOTH_CALIB_PERIOD</link> (((PERIOD) == <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga1410c28a3644ce52dfbdf2f21a037eef">RTC_SmoothCalibPeriod_32sec</link>) || \
+                                             ((PERIOD) == <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga31b86cd48a0ef55f1837ab5175c52eb9">RTC_SmoothCalibPeriod_16sec</link>) || \
+                                             ((PERIOD) == <link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga8a34f8b7e145649bad2ec36b69eccbd3">RTC_SmoothCalibPeriod_8sec</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga1410c28a3644ce52dfbdf2f21a037eef">
+                <title>#define RTC_SmoothCalibPeriod_32sec</title>                
+<para>if RTCCLK = 32768 Hz, Smooth calibation period is 32s, else 2exp20 RTCCLK seconds </para>
+
+                <para>Definition at line 445 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga31b86cd48a0ef55f1837ab5175c52eb9">
+                <title>#define RTC_SmoothCalibPeriod_16sec</title>                
+<para>if RTCCLK = 32768 Hz, Smooth calibation period is 16s, else 2exp19 RTCCLK seconds </para>
+
+                <para>Definition at line 447 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="df/d71/group___r_t_c___smooth__calib__period___definitions_1ga8a34f8b7e145649bad2ec36b69eccbd3">
+                <title>#define RTC_SmoothCalibPeriod_8sec</title>                
+<para>if RTCCLK = 32768 Hz, Smooth calibation period is 8s, else 2exp18 RTCCLK seconds </para>
+
+                <para>Definition at line 449 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

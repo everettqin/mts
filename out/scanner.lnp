@@ -1,4 +1,0 @@
---cpu Cortex-M4.fp "..\..\out\blinky.o" "..\..\out\led.o" "..\..\out\startup_stm32f4xx.o" "..\..\out\system_stm32f4xx.o" 
---ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list "..\..\list\scanner\scanner.map" -o ..\..\out\scanner.axf

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dd8/struct_u_s_a_r_t___init_type_def">
+<title>USART_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d5/d3d/stm32f4xx__usart_8h">&lt;stm32f4xx_usart.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t USART_BaudRate</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t USART_WordLength</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t USART_StopBits</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t USART_Parity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t USART_Mode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t USART_HardwareFlowControl</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>USART Init Structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t USART_BaudRate</title>                
+<para>This member configures the USART communication baud rate. The baud rate is computed using the following formula:<itemizedlist>
+<listitem>
+<para>IntegerDivider = ((PCLKx) / (8 * (OVR8+1) * (USART_InitStruct-&gt;USART_BaudRate)))</para>
+</listitem><listitem>
+<para>FractionalDivider = ((IntegerDivider - ((u32) IntegerDivider)) * 8 * (OVR8+1)) + 0.5 Where OVR8 is the &quot;oversampling by 8 mode&quot; configuration bit in the CR1 register. </para>
+</listitem></itemizedlist>
+</para>
+
+                <para>Definition at line 50 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t USART_WordLength</title>                
+<para>Specifies the number of data bits transmitted or received in a frame. This parameter can be a value of <link linkend="d8/d17/group___u_s_a_r_t___word___length">USART_Word_Length</link> </para>
+
+                <para>Definition at line 56 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t USART_StopBits</title>                
+<para>Specifies the number of stop bits transmitted. This parameter can be a value of <link linkend="d4/dd8/group___u_s_a_r_t___stop___bits">USART_Stop_Bits</link> </para>
+
+                <para>Definition at line 59 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t USART_Parity</title>                
+<para>Specifies the parity mode. This parameter can be a value of <link linkend="df/dff/group___u_s_a_r_t___parity">USART_Parity</link> <formalpara><title>Note: </title>
+
+<para>When parity is enabled, the computed parity is inserted at the MSB position of the transmitted data (9th bit when the word length is set to 9 data bits; 8th bit when the word length is set to 8 data bits). </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 62 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t USART_Mode</title>                
+<para>Specifies wether the Receive or Transmit mode is enabled or disabled. This parameter can be a value of <link linkend="d2/d01/group___u_s_a_r_t___mode">USART_Mode</link> </para>
+
+                <para>Definition at line 69 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t USART_HardwareFlowControl</title>                
+<para>Specifies wether the hardware flow control mode is enabled or disabled. This parameter can be a value of <link linkend="df/d7c/group___u_s_a_r_t___hardware___flow___control">USART_Hardware_Flow_Control</link> </para>
+
+                <para>Definition at line 72 of file stm32f4xx_usart.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_usart.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

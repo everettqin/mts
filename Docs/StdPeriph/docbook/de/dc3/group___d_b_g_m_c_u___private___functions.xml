@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dc3/group___d_b_g_m_c_u___private___functions">
+    <title>DBGMCU_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="de/dc3/group___d_b_g_m_c_u___private___functions_1ga47419e9ca75ab7be4c70feb82faa0511">DBGMCU_GetREVID</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="de/dc3/group___d_b_g_m_c_u___private___functions_1gac34193c34dbce759bf424957a31b3266">DBGMCU_GetDEVID</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc3/group___d_b_g_m_c_u___private___functions_1gadf2f267f855ac1e4c03905c5dcfbd28b">DBGMCU_Config</link> (
+uint32_t DBGMCU_Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc3/group___d_b_g_m_c_u___private___functions_1ga71349f1435471f71979c742360df88f0">DBGMCU_APB1PeriphConfig</link> (
+uint32_t DBGMCU_Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dc3/group___d_b_g_m_c_u___private___functions_1ga2f5ed438cada1be09ea51c42419be3a8">DBGMCU_APB2PeriphConfig</link> (
+uint32_t DBGMCU_Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="de/dc3/group___d_b_g_m_c_u___private___functions_1ga47419e9ca75ab7be4c70feb82faa0511">
+                <title>uint32_t DBGMCU_GetREVID (void)</title> <emphasis>Returns the device revision identifier.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Device</entry>
+                                <entry>
+<para>revision identifier </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc3/group___d_b_g_m_c_u___private___functions_1gac34193c34dbce759bf424957a31b3266">
+                <title>uint32_t DBGMCU_GetDEVID (void)</title> <emphasis>Returns the device identifier.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Device</entry>
+                                <entry>
+<para>identifier </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc3/group___d_b_g_m_c_u___private___functions_1gadf2f267f855ac1e4c03905c5dcfbd28b">
+                <title>void DBGMCU_Config (uint32_t DBGMCU_Periph, FunctionalState NewState)</title> <emphasis>Configures low power mode behavior when the MCU is in Debug mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DBGMCU_Periph, :</entry>
+                                <entry>
+<para>specifies the low power mode. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DBGMCU_SLEEP: Keep debugger connection during SLEEP mode </para>
+</listitem>
+<listitem>
+<para>DBGMCU_STOP: Keep debugger connection during STOP mode </para>
+</listitem>
+<listitem>
+<para>DBGMCU_STANDBY: Keep debugger connection during STANDBY mode </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified low power mode in Debug mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc3/group___d_b_g_m_c_u___private___functions_1ga71349f1435471f71979c742360df88f0">
+                <title>void DBGMCU_APB1PeriphConfig (uint32_t DBGMCU_Periph, FunctionalState NewState)</title> <emphasis>Configures APB1 peripheral behavior when the MCU is in Debug mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DBGMCU_Periph, :</entry>
+                                <entry>
+<para>specifies the APB1 peripheral. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DBGMCU_TIM2_STOP: TIM2 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM3_STOP: TIM3 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM4_STOP: TIM4 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM5_STOP: TIM5 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM6_STOP: TIM6 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM7_STOP: TIM7 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM12_STOP: TIM12 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM13_STOP: TIM13 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM14_STOP: TIM14 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_RTC_STOP: RTC Calendar and Wakeup counter stopped when Core is halted. </para>
+</listitem>
+<listitem>
+<para>DBGMCU_WWDG_STOP: Debug WWDG stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_IWDG_STOP: Debug IWDG stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_I2C1_SMBUS_TIMEOUT: I2C1 SMBUS timeout mode stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_I2C2_SMBUS_TIMEOUT: I2C2 SMBUS timeout mode stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_I2C3_SMBUS_TIMEOUT: I2C3 SMBUS timeout mode stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_CAN2_STOP: Debug CAN1 stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_CAN1_STOP: Debug CAN2 stopped when Core is halted This parameter can be: ENABLE or DISABLE. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dc3/group___d_b_g_m_c_u___private___functions_1ga2f5ed438cada1be09ea51c42419be3a8">
+                <title>void DBGMCU_APB2PeriphConfig (uint32_t DBGMCU_Periph, FunctionalState NewState)</title> <emphasis>Configures APB2 peripheral behavior when the MCU is in Debug mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DBGMCU_Periph, :</entry>
+                                <entry>
+<para>specifies the APB2 peripheral. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DBGMCU_TIM1_STOP: TIM1 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM8_STOP: TIM8 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM9_STOP: TIM9 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM10_STOP: TIM10 counter stopped when Core is halted </para>
+</listitem>
+<listitem>
+<para>DBGMCU_TIM11_STOP: TIM11 counter stopped when Core is halted </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral in Debug mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

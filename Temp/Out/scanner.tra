@@ -1,0 +1,39 @@
+*** Creating Trace Output File '..\..\..\Temp\Out\scanner.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\..\..\temp\out\startup_stm32f4xx.o"'
+### List of Objects: adding '"..\..\..\temp\out\system_stm32f4xx.o"'
+### List of Objects: adding '"..\..\..\temp\out\stm32f4xx_it.o"'
+### List of Objects: adding '"..\..\..\temp\out\main.o"'
+### List of Objects: adding '"..\..\..\temp\out\common.o"'
+### List of Objects: adding '"..\..\..\temp\out\stm32f4_discovery.o"'
+### List of Objects: adding '"..\..\..\temp\out\stm32f4xx_rcc.o"'
+### List of Objects: adding '"..\..\..\temp\out\misc.o"'
+### List of Objects: adding '"..\..\..\temp\out\stm32f4xx_gpio.o"'
+### List of Objects: adding '"..\..\..\temp\out\stm32f4xx_syscfg.o"'
+### List of Objects: adding '"..\..\..\temp\out\stm32f4xx_exti.o"'
+### List of Objects: adding '"..\..\..\temp\out\stm32f4xx_tim.o"'
+### List of Objects: adding '"..\..\..\temp\out\stm32f4xx_adc.o"'
+### List of Objects: adding '"..\..\..\temp\out\stm32f4xx_dma.o"'
+### List of Objects: adding '"..\..\..\temp\out\enc_1.o"'
+### List of Objects: adding '"..\..\..\temp\out\enc_2.o"'
+### List of Objects: adding '"..\..\..\temp\out\sensor.o"'
+### List of Objects: adding '"..\..\..\temp\out\sensor_header.o"'
+### List of Objects: adding '"..\..\..\temp\out\paper_feeder.o"'
+### List of Objects: adding '"..\..\..\temp\out\buttons.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp "..\..\..\temp\out\startup_stm32f4xx.o" "..\..\..\temp\out\system_stm32f4xx.o" "..\..\..\temp\out\stm32f4xx_it.o" "..\..\..\temp\out\main.o" "..\..\..\temp\out\common.o" "..\..\..\temp\out\stm32f4_discovery.o" "..\..\..\temp\out\stm32f4xx_rcc.o" "..\..\..\temp\out\misc.o" "..\..\..\temp\out\stm32f4xx_gpio.o" "..\..\..\temp\out\stm32f4xx_syscfg.o" "..\..\..\temp\out\stm32f4xx_exti.o" "..\..\..\temp\out\stm32f4xx_tim.o" "..\..\..\temp\out\stm32f4xx_adc.o" "..\..\..\temp\out\stm32f4xx_dma.o" "..\..\..\temp\out\enc_1.o" "..\..\..\temp\out\enc_2.o" "..\..\..\temp\out\sensor.o" "..\..\..\temp\out\sensor_header.o" "..\..\..\temp\out\paper_feeder.o" "..\..\..\temp\out\buttons.o" 
+--strict --scatter "..\..\..\Temp\Out\scanner.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list "..\..\..\Temp\Listing\scanner\scanner.map" -o ..\..\..\Temp\Out\scanner.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\..\..\Temp\Out\scanner.axf'
+### ADS-LD Command File: '..\..\..\Temp\Out\scanner.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\..\..\Temp\Out\scanner.lnp', Handle=0x0001CB5C
+### Writing '.lnp' file
+### ADS-LD Command file '..\..\..\Temp\Out\scanner.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

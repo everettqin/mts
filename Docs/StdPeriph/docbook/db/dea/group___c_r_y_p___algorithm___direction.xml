@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dea/group___c_r_y_p___algorithm___direction">
+    <title>CRYP_Algorithm_Direction</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dea/group___c_r_y_p___algorithm___direction_1gafe38074cbbc3e45883962fd8d5698b4a">CRYP_AlgoDir_Encrypt</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dea/group___c_r_y_p___algorithm___direction_1gaaced3e33a4ee660cc07139481a90adb7">CRYP_AlgoDir_Decrypt</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dea/group___c_r_y_p___algorithm___direction_1ga6aeed434566ddf0c9a7c9f26a1abf1f3">IS_CRYP_ALGODIR</link> (((ALGODIR) == CRYP_AlgoDir_Encrypt) || \
+                                  ((ALGODIR) == CRYP_AlgoDir_Decrypt))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

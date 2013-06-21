@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dfe/group___s_p_i___exported___constants">
+    <title>SPI_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="db/d1c/group___s_p_i__data__direction">SPI_data_direction</link></para></listitem>
+            <listitem><para><link linkend="dc/d6d/group___s_p_i__mode">SPI_mode</link></para></listitem>
+            <listitem><para><link linkend="d1/d33/group___s_p_i__data__size">SPI_data_size</link></para></listitem>
+            <listitem><para><link linkend="d1/d24/group___s_p_i___clock___polarity">SPI_Clock_Polarity</link></para></listitem>
+            <listitem><para><link linkend="d0/d3a/group___s_p_i___clock___phase">SPI_Clock_Phase</link></para></listitem>
+            <listitem><para><link linkend="d8/dde/group___s_p_i___slave___select__management">SPI_Slave_Select_management</link></para></listitem>
+            <listitem><para><link linkend="d0/d36/group___s_p_i___baud_rate___prescaler">SPI_BaudRate_Prescaler</link></para></listitem>
+            <listitem><para><link linkend="da/d82/group___s_p_i___m_s_b___l_s_b__transmission">SPI_MSB_LSB_transmission</link></para></listitem>
+            <listitem><para><link linkend="d9/d26/group___s_p_i___i2_s___mode">SPI_I2S_Mode</link></para></listitem>
+            <listitem><para><link linkend="dd/d0a/group___s_p_i___i2_s___standard">SPI_I2S_Standard</link></para></listitem>
+            <listitem><para><link linkend="d3/dfc/group___s_p_i___i2_s___data___format">SPI_I2S_Data_Format</link></para></listitem>
+            <listitem><para><link linkend="d7/d6b/group___s_p_i___i2_s___m_c_l_k___output">SPI_I2S_MCLK_Output</link></para></listitem>
+            <listitem><para><link linkend="d8/d83/group___s_p_i___i2_s___audio___frequency">SPI_I2S_Audio_Frequency</link></para></listitem>
+            <listitem><para><link linkend="df/d23/group___s_p_i___i2_s___clock___polarity">SPI_I2S_Clock_Polarity</link></para></listitem>
+            <listitem><para><link linkend="d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests">SPI_I2S_DMA_transfer_requests</link></para></listitem>
+            <listitem><para><link linkend="d8/d40/group___s_p_i___n_s_s__internal__software__management">SPI_NSS_internal_software_management</link></para></listitem>
+            <listitem><para><link linkend="d4/d4e/group___s_p_i___c_r_c___transmit___receive">SPI_CRC_Transmit_Receive</link></para></listitem>
+            <listitem><para><link linkend="d3/d61/group___s_p_i__direction__transmit__receive">SPI_direction_transmit_receive</link></para></listitem>
+            <listitem><para><link linkend="d3/dd6/group___s_p_i___i2_s__interrupts__definition">SPI_I2S_interrupts_definition</link></para></listitem>
+            <listitem><para><link linkend="d1/d0d/group___s_p_i___i2_s__flags__definition">SPI_I2S_flags_definition</link></para></listitem>
+            <listitem><para><link linkend="d4/d4c/group___s_p_i___c_r_c__polynomial">SPI_CRC_polynomial</link></para></listitem>
+            <listitem><para><link linkend="d8/daa/group___s_p_i___i2_s___legacy">SPI_I2S_Legacy</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1gaf54f84a30a5914b54dbfdc186720d0ba">IS_SPI_ALL_PERIPH</link> (((PERIPH) == SPI1) || \
+                                   ((PERIPH) == SPI2) || \
+                                   ((PERIPH) == SPI3))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1ga6dc428a850ec6181eeef824bacca3544">IS_SPI_ALL_PERIPH_EXT</link> (((PERIPH) == SPI1) || \
+                                       ((PERIPH) == SPI2) || \
+                                       ((PERIPH) == SPI3) || \
+                                       ((PERIPH) == I2S2ext) || \
+                                       ((PERIPH) == I2S3ext))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1gae2222c673a036497587b8791f89428d0">IS_SPI_23_PERIPH</link> (((PERIPH) == SPI2) || \
+                                   ((PERIPH) == SPI3))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1gabfd0b6de3f402ec0b41c66add9c99b62">IS_SPI_23_PERIPH_EXT</link> (((PERIPH) == SPI2) || \
+                                       ((PERIPH) == SPI3) || \
+                                       ((PERIPH) == I2S2ext) || \
+                                       ((PERIPH) == I2S3ext))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfe/group___s_p_i___exported___constants_1gaed21835cf2bf6c9469dedaa8720627c2">IS_I2S_EXT_PERIPH</link> (((PERIPH) == I2S2ext) || \
+                                    ((PERIPH) == I2S3ext))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="db/d1c/group___s_p_i__data__direction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d6d/group___s_p_i__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d33/group___s_p_i__data__size.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d24/group___s_p_i___clock___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d3a/group___s_p_i___clock___phase.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/dde/group___s_p_i___slave___select__management.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d36/group___s_p_i___baud_rate___prescaler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d82/group___s_p_i___m_s_b___l_s_b__transmission.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d26/group___s_p_i___i2_s___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d0a/group___s_p_i___i2_s___standard.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/dfc/group___s_p_i___i2_s___data___format.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d6b/group___s_p_i___i2_s___m_c_l_k___output.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d83/group___s_p_i___i2_s___audio___frequency.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d23/group___s_p_i___i2_s___clock___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d63/group___s_p_i___i2_s___d_m_a__transfer__requests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d40/group___s_p_i___n_s_s__internal__software__management.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d4e/group___s_p_i___c_r_c___transmit___receive.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d61/group___s_p_i__direction__transmit__receive.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/dd6/group___s_p_i___i2_s__interrupts__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d0d/group___s_p_i___i2_s__flags__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d4c/group___s_p_i___c_r_c__polynomial.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/daa/group___s_p_i___i2_s___legacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

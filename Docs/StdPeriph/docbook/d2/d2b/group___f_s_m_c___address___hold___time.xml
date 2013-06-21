@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d2b/group___f_s_m_c___address___hold___time">
+    <title>FSMC_Address_Hold_Time</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d2b/group___f_s_m_c___address___hold___time_1gae7d031a5b95ad00acf67e9bc95064998">IS_FSMC_ADDRESS_HOLD_TIME</link> ((TIME) &lt;= 0xF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

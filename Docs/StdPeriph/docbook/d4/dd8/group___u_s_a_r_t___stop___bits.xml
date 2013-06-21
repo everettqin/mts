@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dd8/group___u_s_a_r_t___stop___bits">
+    <title>USART_Stop_Bits</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dd8/group___u_s_a_r_t___stop___bits_1gae2cb35620ba001f0d63e9e0be93e4a05">USART_StopBits_1</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dd8/group___u_s_a_r_t___stop___bits_1ga2ad06e3acfb691735d05ab9a314e2e32">USART_StopBits_0_5</link> ((uint16_t)0x1000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dd8/group___u_s_a_r_t___stop___bits_1ga652058b6be2f48ac0d82d0e75537fc81">USART_StopBits_2</link> ((uint16_t)0x2000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dd8/group___u_s_a_r_t___stop___bits_1ga30897cc46d5b3790a9b14ffaba354527">USART_StopBits_1_5</link> ((uint16_t)0x3000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dd8/group___u_s_a_r_t___stop___bits_1ga6f9153c1fbee1058ba26ec88f0f20828">IS_USART_STOPBITS</link> (((STOPBITS) == USART_StopBits_1) || \
+                                     ((STOPBITS) == USART_StopBits_0_5) || \
+                                     ((STOPBITS) == USART_StopBits_2) || \
+                                     ((STOPBITS) == USART_StopBits_1_5))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

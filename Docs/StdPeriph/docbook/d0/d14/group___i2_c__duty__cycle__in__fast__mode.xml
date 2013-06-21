@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d14/group___i2_c__duty__cycle__in__fast__mode">
+    <title>I2C_duty_cycle_in_fast_mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d14/group___i2_c__duty__cycle__in__fast__mode_1ga2b4ff186808a8095fc2d1b8193f30ce1">I2C_DutyCycle_16_9</link> ((uint16_t)0x4000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d14/group___i2_c__duty__cycle__in__fast__mode_1gafe0af31970aceef0fa8df6a10bef35db">I2C_DutyCycle_2</link> ((uint16_t)0xBFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d14/group___i2_c__duty__cycle__in__fast__mode_1gae9b3276d9b6ec872ee4fafa2b2fafb83">IS_I2C_DUTY_CYCLE</link> (((CYCLE) == <link linkend="d0/d14/group___i2_c__duty__cycle__in__fast__mode_1ga2b4ff186808a8095fc2d1b8193f30ce1">I2C_DutyCycle_16_9</link>) || \
+                                  ((CYCLE) == <link linkend="d0/d14/group___i2_c__duty__cycle__in__fast__mode_1gafe0af31970aceef0fa8df6a10bef35db">I2C_DutyCycle_2</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d0/d14/group___i2_c__duty__cycle__in__fast__mode_1ga2b4ff186808a8095fc2d1b8193f30ce1">
+                <title>#define I2C_DutyCycle_16_9</title>                
+<para>I2C fast mode Tlow/Thigh = 16/9 </para>
+
+                <para>Definition at line 97 of file stm32f4xx_i2c.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_i2c.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d0/d14/group___i2_c__duty__cycle__in__fast__mode_1gafe0af31970aceef0fa8df6a10bef35db">
+                <title>#define I2C_DutyCycle_2</title>                
+<para>I2C fast mode Tlow/Thigh = 2 </para>
+
+                <para>Definition at line 98 of file stm32f4xx_i2c.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_i2c.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

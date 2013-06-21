@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/de1/group___d_c_m_i___exported___constants">
+    <title>DCMI_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d8/de7/group___d_c_m_i___capture___mode">DCMI_Capture_Mode</link></para></listitem>
+            <listitem><para><link linkend="d4/de3/group___d_c_m_i___synchronization___mode">DCMI_Synchronization_Mode</link></para></listitem>
+            <listitem><para><link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity">DCMI_PIXCK_Polarity</link></para></listitem>
+            <listitem><para><link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity">DCMI_VSYNC_Polarity</link></para></listitem>
+            <listitem><para><link linkend="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity">DCMI_HSYNC_Polarity</link></para></listitem>
+            <listitem><para><link linkend="d6/ded/group___d_c_m_i___capture___rate">DCMI_Capture_Rate</link></para></listitem>
+            <listitem><para><link linkend="dd/da5/group___d_c_m_i___extended___data___mode">DCMI_Extended_Data_Mode</link></para></listitem>
+            <listitem><para><link linkend="d0/da1/group___d_c_m_i__interrupt__sources">DCMI_interrupt_sources</link></para></listitem>
+            <listitem><para><link linkend="d8/d34/group___d_c_m_i___flags">DCMI_Flags</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d8/de7/group___d_c_m_i___capture___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/de3/group___d_c_m_i___synchronization___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d62/group___d_c_m_i___h_s_y_n_c___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/ded/group___d_c_m_i___capture___rate.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/da5/group___d_c_m_i___extended___data___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/da1/group___d_c_m_i__interrupt__sources.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d34/group___d_c_m_i___flags.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

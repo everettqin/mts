@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d61/group___a_d_c___group5">
+    <title>Regular Channels DMA Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Regular Channels DMA Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                   Regular Channels DMA Configuration functions
+ ===============================================================================  
+
+  This section provides functions allowing to configure the DMA for ADC regular 
+  channels.
+  Since converted regular channel values are stored into a unique data register, 
+  it is useful to use DMA for conversion of more than one regular channel. This 
+  avoids the loss of the data already stored in the ADC Data register. 
+  
+  When the DMA mode is enabled (using the ADC_DMACmd() function), after each
+  conversion of a regular channel, a DMA request is generated.
+  
+  Depending on the &quot;DMA disable selection for Independent ADC mode&quot; 
+  configuration (using the ADC_DMARequestAfterLastTransferCmd() function), 
+  at the end of the last DMA transfer, two possibilities are allowed:
+  - No new DMA request is issued to the DMA controller (feature DISABLED) 
+  - Requests can continue to be generated (feature ENABLED).
+  
+  Depending on the &quot;DMA disable selection for multi ADC mode&quot; configuration 
+  (using the void ADC_MultiModeDMARequestAfterLastTransferCmd() function), 
+  at the end of the last DMA transfer, two possibilities are allowed:
+  - No new DMA request is issued to the DMA controller (feature DISABLED) 
+  - Requests can continue to be generated (feature ENABLED).</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d61/group___a_d_c___group5_1gac5881d5995818001584b27b137a8dbcb">ADC_DMACmd</link> (
+ADC_TypeDef * ADCx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d61/group___a_d_c___group5_1ga912fd3e923ae4435621724e1bbc52729">ADC_DMARequestAfterLastTransferCmd</link> (
+ADC_TypeDef * ADCx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d61/group___a_d_c___group5_1ga40f2be2edf2a33fc15f4a5933b562970">ADC_MultiModeDMARequestAfterLastTransferCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d6/d61/group___a_d_c___group5_1gac5881d5995818001584b27b137a8dbcb">
+                <title>void ADC_DMACmd (ADC_TypeDef *ADCx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified ADC DMA request.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected ADC DMA transfer. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/d61/group___a_d_c___group5_1ga912fd3e923ae4435621724e1bbc52729">
+                <title>void ADC_DMARequestAfterLastTransferCmd (ADC_TypeDef *ADCx, FunctionalState NewState)</title> <emphasis>Enables or disables the ADC DMA request after last transfer (Single-ADC mode)</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected ADC DMA request after last transfer. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/d61/group___a_d_c___group5_1ga40f2be2edf2a33fc15f4a5933b562970">
+                <title>void ADC_MultiModeDMARequestAfterLastTransferCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the ADC DMA request after last transfer in multi ADC mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected ADC DMA request after last transfer. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>if Enabled, DMA requests are issued as long as data are converted and DMA mode for multi ADC mode (selected using <link linkend="db/d78/group___a_d_c_1ga5803f6581a9cd7e90b6e637067102d94">ADC_CommonInit()</link> function by ADC_CommonInitStruct.ADC_DMAAccessMode structure member) is ADC_DMAAccessMode_1, ADC_DMAAccessMode_2 or ADC_DMAAccessMode_3. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

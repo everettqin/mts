@@ -1,0 +1,87 @@
+\hypertarget{struct_t_i_m___time_base_init_type_def}{\section{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def Struct Reference}
+\label{struct_t_i_m___time_base_init_type_def}\index{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}}
+}
+
+
+T\-I\-M Time Base Init structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\-\_\-tim.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint16\-\_\-t \hyperlink{struct_t_i_m___time_base_init_type_def_a30c6857997a4ddd7d3d66fd3a8907c37}{T\-I\-M\-\_\-\-Prescaler}
+\item 
+uint16\-\_\-t \hyperlink{struct_t_i_m___time_base_init_type_def_adfc97c66bfce30e74ce779ab04c156e9}{T\-I\-M\-\_\-\-Counter\-Mode}
+\item 
+uint32\-\_\-t \hyperlink{struct_t_i_m___time_base_init_type_def_a642ee05352126af48248167939742034}{T\-I\-M\-\_\-\-Period}
+\item 
+uint16\-\_\-t \hyperlink{struct_t_i_m___time_base_init_type_def_a2142bf86a7116c8c98ab015d5606fc98}{T\-I\-M\-\_\-\-Clock\-Division}
+\item 
+uint8\-\_\-t \hyperlink{struct_t_i_m___time_base_init_type_def_a121b27ced71ccb2c85f1d9825ae8d496}{T\-I\-M\-\_\-\-Repetition\-Counter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\-I\-M Time Base Init structure definition. 
+
+\begin{DoxyNote}{Note}
+This structure is used with all T\-I\-Mx except for T\-I\-M6 and T\-I\-M7. 
+\end{DoxyNote}
+
+
+Definition at line 49 of file stm32f4xx\-\_\-tim.\-h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_i_m___time_base_init_type_def_a2142bf86a7116c8c98ab015d5606fc98}{\index{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}!T\-I\-M\-\_\-\-Clock\-Division@{T\-I\-M\-\_\-\-Clock\-Division}}
+\index{T\-I\-M\-\_\-\-Clock\-Division@{T\-I\-M\-\_\-\-Clock\-Division}!TIM_TimeBaseInitTypeDef@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}}
+\subsubsection[{T\-I\-M\-\_\-\-Clock\-Division}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t T\-I\-M\-\_\-\-Clock\-Division}}\label{struct_t_i_m___time_base_init_type_def_a2142bf86a7116c8c98ab015d5606fc98}
+Specifies the clock division. This parameter can be a value of \hyperlink{group___t_i_m___clock___division___c_k_d}{T\-I\-M\-\_\-\-Clock\-\_\-\-Division\-\_\-\-C\-K\-D} 
+
+Definition at line 61 of file stm32f4xx\-\_\-tim.\-h.
+
+\hypertarget{struct_t_i_m___time_base_init_type_def_adfc97c66bfce30e74ce779ab04c156e9}{\index{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}!T\-I\-M\-\_\-\-Counter\-Mode@{T\-I\-M\-\_\-\-Counter\-Mode}}
+\index{T\-I\-M\-\_\-\-Counter\-Mode@{T\-I\-M\-\_\-\-Counter\-Mode}!TIM_TimeBaseInitTypeDef@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}}
+\subsubsection[{T\-I\-M\-\_\-\-Counter\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t T\-I\-M\-\_\-\-Counter\-Mode}}\label{struct_t_i_m___time_base_init_type_def_adfc97c66bfce30e74ce779ab04c156e9}
+Specifies the counter mode. This parameter can be a value of \hyperlink{group___t_i_m___counter___mode}{T\-I\-M\-\_\-\-Counter\-\_\-\-Mode} 
+
+Definition at line 54 of file stm32f4xx\-\_\-tim.\-h.
+
+\hypertarget{struct_t_i_m___time_base_init_type_def_a642ee05352126af48248167939742034}{\index{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}!T\-I\-M\-\_\-\-Period@{T\-I\-M\-\_\-\-Period}}
+\index{T\-I\-M\-\_\-\-Period@{T\-I\-M\-\_\-\-Period}!TIM_TimeBaseInitTypeDef@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}}
+\subsubsection[{T\-I\-M\-\_\-\-Period}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t T\-I\-M\-\_\-\-Period}}\label{struct_t_i_m___time_base_init_type_def_a642ee05352126af48248167939742034}
+Specifies the period value to be loaded into the active Auto-\/\-Reload Register at the next update event. This parameter must be a number between 0x0000 and 0x\-F\-F\-F\-F. 
+
+Definition at line 57 of file stm32f4xx\-\_\-tim.\-h.
+
+\hypertarget{struct_t_i_m___time_base_init_type_def_a30c6857997a4ddd7d3d66fd3a8907c37}{\index{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}!T\-I\-M\-\_\-\-Prescaler@{T\-I\-M\-\_\-\-Prescaler}}
+\index{T\-I\-M\-\_\-\-Prescaler@{T\-I\-M\-\_\-\-Prescaler}!TIM_TimeBaseInitTypeDef@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}}
+\subsubsection[{T\-I\-M\-\_\-\-Prescaler}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t T\-I\-M\-\_\-\-Prescaler}}\label{struct_t_i_m___time_base_init_type_def_a30c6857997a4ddd7d3d66fd3a8907c37}
+Specifies the prescaler value used to divide the T\-I\-M clock. This parameter can be a number between 0x0000 and 0x\-F\-F\-F\-F 
+
+Definition at line 51 of file stm32f4xx\-\_\-tim.\-h.
+
+\hypertarget{struct_t_i_m___time_base_init_type_def_a121b27ced71ccb2c85f1d9825ae8d496}{\index{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}!T\-I\-M\-\_\-\-Repetition\-Counter@{T\-I\-M\-\_\-\-Repetition\-Counter}}
+\index{T\-I\-M\-\_\-\-Repetition\-Counter@{T\-I\-M\-\_\-\-Repetition\-Counter}!TIM_TimeBaseInitTypeDef@{T\-I\-M\-\_\-\-Time\-Base\-Init\-Type\-Def}}
+\subsubsection[{T\-I\-M\-\_\-\-Repetition\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t T\-I\-M\-\_\-\-Repetition\-Counter}}\label{struct_t_i_m___time_base_init_type_def_a121b27ced71ccb2c85f1d9825ae8d496}
+Specifies the repetition counter value. Each time the R\-C\-R downcounter reaches zero, an update event is generated and counting restarts from the R\-C\-R value (N). This means in P\-W\-M mode that (N+1) corresponds to\-:
+\begin{DoxyItemize}
+\item the number of P\-W\-M periods in edge-\/aligned mode
+\item the number of half P\-W\-M period in center-\/aligned mode This parameter must be a number between 0x00 and 0x\-F\-F. \begin{DoxyNote}{Note}
+This parameter is valid only for T\-I\-M1 and T\-I\-M8. 
+\end{DoxyNote}
+
+\end{DoxyItemize}
+
+Definition at line 64 of file stm32f4xx\-\_\-tim.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/inc/\hyperlink{stm32f4xx__tim_8h}{stm32f4xx\-\_\-tim.\-h}\end{DoxyCompactItemize}

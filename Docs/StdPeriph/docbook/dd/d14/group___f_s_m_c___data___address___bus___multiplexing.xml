@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d14/group___f_s_m_c___data___address___bus___multiplexing">
+    <title>FSMC_Data_Address_Bus_Multiplexing</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d14/group___f_s_m_c___data___address___bus___multiplexing_1ga62d92adbcbcc1d6ec9a04de1b343744a">FSMC_DataAddressMux_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d14/group___f_s_m_c___data___address___bus___multiplexing_1ga1dd4d12e63aaf29dbb8ae4b613f2aa15">FSMC_DataAddressMux_Enable</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d14/group___f_s_m_c___data___address___bus___multiplexing_1ga546fcab8c1b751b4a959ba2ce5b35d79">IS_FSMC_MUX</link> (((MUX) == FSMC_DataAddressMux_Disable) || \
+                          ((MUX) == FSMC_DataAddressMux_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

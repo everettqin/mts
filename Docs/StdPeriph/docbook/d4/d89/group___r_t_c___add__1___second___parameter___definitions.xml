@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d89/group___r_t_c___add__1___second___parameter___definitions">
+    <title>RTC_Add_1_Second_Parameter_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d89/group___r_t_c___add__1___second___parameter___definitions_1ga8b202b701dc12f88a628345b40146f78">RTC_ShiftAdd1S_Reset</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d89/group___r_t_c___add__1___second___parameter___definitions_1gafcf0fac6c5dafc3d1cd3c9ce6ec196be">RTC_ShiftAdd1S_Set</link> ((uint32_t)0x80000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d89/group___r_t_c___add__1___second___parameter___definitions_1ga26df4ba48afac04a9798cb24bb0a5823">IS_RTC_SHIFT_ADD1S</link> (((SEL) == RTC_ShiftAdd1S_Reset) || \
+                                 ((SEL) == RTC_ShiftAdd1S_Set))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

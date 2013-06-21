@@ -1,0 +1,1651 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d52/group___c_r_y_p">
+    <title>CRYP</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CRYP driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/dc9/struct_c_r_y_p___context">CRYP_Context</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d5/d49/group___c_r_y_p___exported___constants">CRYP_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="d8/d50/group___c_r_y_p___private___functions">CRYP_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gae19e54c9910b697e38f6c7577704ffae">CRYP_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga7b72c458d95581ab0a36be3e017fcf02">CRYP_Init</link> (
+<link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> * CRYP_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga8fb8ec75fe72d55046c8220825dfe41e">CRYP_StructInit</link> (
+<link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> * CRYP_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gad4baa3865415215cae07c9fbfa131cb9">CRYP_KeyInit</link> (
+<link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> * CRYP_KeyInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gaeecd86b00d0d0137d97b06108789bcb2">CRYP_KeyStructInit</link> (
+<link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> * CRYP_KeyInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga133964b50a07db3a32864308f6355a8b">CRYP_IVInit</link> (
+<link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> * CRYP_IVInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga58899074e08bbd65f2ed304cf0f42987">CRYP_IVStructInit</link> (
+<link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> * CRYP_IVInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gad39ccd9b1f2e088e3a227d7a1c410d7c">CRYP_Cmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga16dc76244318d464357ee6ff208bf9a4">CRYP_DataIn</link> (
+uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d5/d52/group___c_r_y_p_1gacbe5fcf4c7e4919192376fa615588b54">CRYP_DataOut</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga23ada9d9464e1362299d7612a1409a57">CRYP_FIFOFlush</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga41a14be7fa43d500e7c94cce40910ea8">CRYP_SaveContext</link> (
+<link linkend="d8/dc9/struct_c_r_y_p___context">CRYP_Context</link> * CRYP_ContextSave, <link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> * CRYP_KeyInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gaf2986782fa66ea95b2a389595e17e0e5">CRYP_RestoreContext</link> (
+<link linkend="d8/dc9/struct_c_r_y_p___context">CRYP_Context</link> * CRYP_ContextRestore)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1ga111d0ec56facb27f8367ce6a33869115">CRYP_DMACmd</link> (
+uint8_t CRYP_DMAReq, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d52/group___c_r_y_p_1gafbf5ee5f2c3ae4404149a994e15b33d8">CRYP_ITConfig</link> (
+uint8_t CRYP_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d5/d52/group___c_r_y_p_1ga00a48b748ed127fa517cacec9dbf18f4">CRYP_GetITStatus</link> (
+uint8_t CRYP_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d5/d52/group___c_r_y_p_1ga993d568b626a74b2973d4a6848a681f6">CRYP_GetFlagStatus</link> (
+uint8_t CRYP_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga79ff82ece0e9620dc86d6e57abe639e1">CRYP_AES_ECB</link> (
+uint8_t Mode, uint8_t * Key, uint16_t Keysize, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1gaa43eadf707257710f6a53b3295b39d70">CRYP_AES_CBC</link> (
+uint8_t Mode, uint8_t InitVectors, uint8_t * Key, uint16_t Keysize, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga2f36aea6e94452e5e5e938547fb89d4c">CRYP_AES_CTR</link> (
+uint8_t Mode, uint8_t InitVectors, uint8_t * Key, uint16_t Keysize, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga17c03ab4f0566fcbc3dd8c052e6f9886">CRYP_TDES_ECB</link> (
+uint8_t Mode, uint8_t Key, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1gabe52a368c4882450c1e82f16bc1eb686">CRYP_TDES_CBC</link> (
+uint8_t Mode, uint8_t Key, uint8_t InitVectors, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga3b96b7608b39197209abed5f5845f590">CRYP_DES_ECB</link> (
+uint8_t Mode, uint8_t Key, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d5/d52/group___c_r_y_p_1ga75724391a8560c557e1152b805f5cad1">CRYP_DES_CBC</link> (
+uint8_t Mode, uint8_t Key, uint8_t InitVectors, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___c_r_y_p_1ga890221cb651a3f30f6d1bca0d9b0e13d">FLAG_MASK</link> ((uint8_t)0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___c_r_y_p_1ga85fda3522e69a1bf85f7dcd97b6023a1">MAX_TIMEOUT</link> ((uint16_t)0xFFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___c_r_y_p_1ga50631c7b2268fdbd5aaa74195e3ea746">AESBUSY_TIMEOUT</link> ((uint32_t) 0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___c_r_y_p_1ga2046d6bd81c5f86df18fd0e5095be88a">DESBUSY_TIMEOUT</link> ((uint32_t) 0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___c_r_y_p_1ga6a35296fd0d94e297d645bac32b03a13">TDESBUSY_TIMEOUT</link> ((uint32_t) 0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d5/d52/group___c_r_y_p_1gae19e54c9910b697e38f6c7577704ffae">
+                <title>void CRYP_DeInit (void)</title> <emphasis>Deinitializes the CRYP peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga7b72c458d95581ab0a36be3e017fcf02">
+                <title>void CRYP_Init (CRYP_InitTypeDef *CRYP_InitStruct)</title> <emphasis>Initializes the CRYP peripheral according to the specified parameters
+        in the CRYP_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> structure that contains the configuration information for the CRYP peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga8fb8ec75fe72d55046c8220825dfe41e">
+                <title>void CRYP_StructInit (CRYP_InitTypeDef *CRYP_InitStruct)</title> <emphasis>Fills each CRYP_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="da/d99/struct_c_r_y_p___init_type_def">CRYP_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1gad4baa3865415215cae07c9fbfa131cb9">
+                <title>void CRYP_KeyInit (CRYP_KeyInitTypeDef *CRYP_KeyInitStruct)</title> <emphasis>Initializes the CRYP Keys according to the specified parameters in
+        the CRYP_KeyInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_KeyInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> structure that contains the configuration information for the CRYP Keys. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1gaeecd86b00d0d0137d97b06108789bcb2">
+                <title>void CRYP_KeyStructInit (CRYP_KeyInitTypeDef *CRYP_KeyInitStruct)</title> <emphasis>Fills each CRYP_KeyInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_KeyInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga133964b50a07db3a32864308f6355a8b">
+                <title>void CRYP_IVInit (CRYP_IVInitTypeDef *CRYP_IVInitStruct)</title> <emphasis>Initializes the CRYP Initialization Vectors(IV) according to the
+        specified parameters in the CRYP_IVInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_IVInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> structure that contains the configuration information for the CRYP Initialization Vectors(IV). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga58899074e08bbd65f2ed304cf0f42987">
+                <title>void CRYP_IVStructInit (CRYP_IVInitTypeDef *CRYP_IVInitStruct)</title> <emphasis>Fills each CRYP_IVInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_IVInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d4f/struct_c_r_y_p___i_v_init_type_def">CRYP_IVInitTypeDef</link> Initialization Vectors(IV) structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1gad39ccd9b1f2e088e3a227d7a1c410d7c">
+                <title>void CRYP_Cmd (FunctionalState NewState)</title> <emphasis>Enables or disables the CRYP peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the CRYP peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga16dc76244318d464357ee6ff208bf9a4">
+                <title>void CRYP_DataIn (uint32_t Data)</title> <emphasis>Writes data in the Data Input register (DIN).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>After the DIN register has been read once or several times, the FIFO must be flushed (using <link linkend="d5/d52/group___c_r_y_p_1ga23ada9d9464e1362299d7612a1409a57">CRYP_FIFOFlush()</link> function). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>data to write in Data Input register </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1gacbe5fcf4c7e4919192376fa615588b54">
+                <title>uint32_t CRYP_DataOut (void)</title> <emphasis>Returns the last data entered into the output FIFO.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Last</entry>
+                                <entry>
+<para>data entered into the output FIFO. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga23ada9d9464e1362299d7612a1409a57">
+                <title>void CRYP_FIFOFlush (void)</title> <emphasis>Flushes the IN and OUT FIFOs (that is read and write pointers of the 
+        FIFOs are reset)</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The FIFOs must be flushed only when BUSY flag is reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga41a14be7fa43d500e7c94cce40910ea8">
+                <title>ErrorStatus CRYP_SaveContext (CRYP_Context *CRYP_ContextSave, CRYP_KeyInitTypeDef *CRYP_KeyInitStruct)</title> <emphasis>Saves the CRYP peripheral Context.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function stops DMA transfer before to save the context. After restoring the context, you have to enable the DMA again (if the DMA was previously used). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_ContextSave, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/dc9/struct_c_r_y_p___context">CRYP_Context</link> structure that contains the repository for current context. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CRYP_KeyInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="de/da1/struct_c_r_y_p___key_init_type_def">CRYP_KeyInitTypeDef</link> structure that contains the configuration information for the CRYP Keys. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1gaf2986782fa66ea95b2a389595e17e0e5">
+                <title>void CRYP_RestoreContext (CRYP_Context *CRYP_ContextRestore)</title> <emphasis>Restores the CRYP peripheral Context.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Since teh DMA transfer is stopped in <link linkend="d5/d52/group___c_r_y_p_1ga41a14be7fa43d500e7c94cce40910ea8">CRYP_SaveContext()</link> function, after restoring the context, you have to enable the DMA again (if the DMA was previously used). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_ContextRestore, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d8/dc9/struct_c_r_y_p___context">CRYP_Context</link> structure that contains the repository for saved context. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The data that were saved during context saving must be rewrited into the IN FIFO. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga111d0ec56facb27f8367ce6a33869115">
+                <title>void CRYP_DMACmd (uint8_t CRYP_DMAReq, FunctionalState NewState)</title> <emphasis>Enables or disables the CRYP DMA interface.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_DMAReq, :</entry>
+                                <entry>
+<para>specifies the CRYP DMA transfer request to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>CRYP_DMAReq_DataOUT: DMA for outgoing(Tx) data transfer </para>
+</listitem>
+<listitem>
+<para>CRYP_DMAReq_DataIN: DMA for incoming(Rx) data transfer </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected CRYP DMA transfer request. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1gafbf5ee5f2c3ae4404149a994e15b33d8">
+                <title>void CRYP_ITConfig (uint8_t CRYP_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified CRYP interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_IT, :</entry>
+                                <entry>
+<para>specifies the CRYP interrupt source to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>CRYP_IT_INI: Input FIFO interrupt </para>
+</listitem>
+<listitem>
+<para>CRYP_IT_OUTI: Output FIFO interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified CRYP interrupt. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga00a48b748ed127fa517cacec9dbf18f4">
+                <title>ITStatus CRYP_GetITStatus (uint8_t CRYP_IT)</title> <emphasis>Checks whether the specified CRYP interrupt has occurred or not.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function checks the status of the masked interrupt (i.e the interrupt should be previously enabled). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_IT, :</entry>
+                                <entry>
+<para>specifies the CRYP (masked) interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CRYP_IT_INI: Input FIFO interrupt </para>
+</listitem>
+<listitem>
+<para>CRYP_IT_OUTI: Output FIFO interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of CRYP_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga993d568b626a74b2973d4a6848a681f6">
+                <title>FlagStatus CRYP_GetFlagStatus (uint8_t CRYP_FLAG)</title> <emphasis>Checks whether the specified CRYP flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CRYP_FLAG, :</entry>
+                                <entry>
+<para>specifies the CRYP flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CRYP_FLAG_IFEM: Input FIFO Empty flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_IFNF: Input FIFO Not Full flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_OFNE: Output FIFO Not Empty flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_OFFU: Output FIFO Full flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_BUSY: Busy flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_OUTRIS: Output FIFO raw interrupt flag. </para>
+</listitem>
+<listitem>
+<para>CRYP_FLAG_INRIS: Input FIFO raw interrupt flag. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of CRYP_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga79ff82ece0e9620dc86d6e57abe639e1">
+                <title>ErrorStatus CRYP_AES_ECB (uint8_t Mode, uint8_t *Key, uint16_t Keysize, uint8_t *Input, uint32_t Ilength, uint8_t *Output)</title> <emphasis>Encrypt and decrypt using AES in ECB Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Mode, :</entry>
+                                <entry>
+<para>encryption or decryption Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>MODE_ENCRYPT: Encryption </para>
+</listitem>
+<listitem>
+<para>MODE_DECRYPT: Decryption </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Key, :</entry>
+                                <entry>
+<para>Key used for AES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Keysize, :</entry>
+                                <entry>
+<para>length of the Key, must be a 128, 192 or 256. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Input, :</entry>
+                                <entry>
+<para>pointer to the Input buffer. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Ilength, :</entry>
+                                <entry>
+<para>length of the Input buffer, must be a multiple of 16. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Output, :</entry>
+                                <entry>
+<para>pointer to the returned buffer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: Operation done</para>
+</listitem><listitem>
+<para>ERROR: Operation failed </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1gaa43eadf707257710f6a53b3295b39d70">
+                <title>ErrorStatus CRYP_AES_CBC (uint8_t Mode, uint8_t InitVectors[16], uint8_t *Key, uint16_t Keysize, uint8_t *Input, uint32_t Ilength, uint8_t *Output)</title> <emphasis>Encrypt and decrypt using AES in CBC Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Mode, :</entry>
+                                <entry>
+<para>encryption or decryption Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>MODE_ENCRYPT: Encryption </para>
+</listitem>
+<listitem>
+<para>MODE_DECRYPT: Decryption </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>InitVectors, :</entry>
+                                <entry>
+<para>Initialisation Vectors used for AES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Key, :</entry>
+                                <entry>
+<para>Key used for AES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Keysize, :</entry>
+                                <entry>
+<para>length of the Key, must be a 128, 192 or 256. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Input, :</entry>
+                                <entry>
+<para>pointer to the Input buffer. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Ilength, :</entry>
+                                <entry>
+<para>length of the Input buffer, must be a multiple of 16. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Output, :</entry>
+                                <entry>
+<para>pointer to the returned buffer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: Operation done</para>
+</listitem><listitem>
+<para>ERROR: Operation failed </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga2f36aea6e94452e5e5e938547fb89d4c">
+                <title>ErrorStatus CRYP_AES_CTR (uint8_t Mode, uint8_t InitVectors[16], uint8_t *Key, uint16_t Keysize, uint8_t *Input, uint32_t Ilength, uint8_t *Output)</title> <emphasis>Encrypt and decrypt using AES in CTR Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Mode, :</entry>
+                                <entry>
+<para>encryption or decryption Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>MODE_ENCRYPT: Encryption </para>
+</listitem>
+<listitem>
+<para>MODE_DECRYPT: Decryption </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>InitVectors, :</entry>
+                                <entry>
+<para>Initialisation Vectors used for AES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Key, :</entry>
+                                <entry>
+<para>Key used for AES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Keysize, :</entry>
+                                <entry>
+<para>length of the Key, must be a 128, 192 or 256. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Input, :</entry>
+                                <entry>
+<para>pointer to the Input buffer. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Ilength, :</entry>
+                                <entry>
+<para>length of the Input buffer, must be a multiple of 16. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Output, :</entry>
+                                <entry>
+<para>pointer to the returned buffer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: Operation done</para>
+</listitem><listitem>
+<para>ERROR: Operation failed </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga17c03ab4f0566fcbc3dd8c052e6f9886">
+                <title>ErrorStatus CRYP_TDES_ECB (uint8_t Mode, uint8_t Key[24], uint8_t *Input, uint32_t Ilength, uint8_t *Output)</title> <emphasis>Encrypt and decrypt using TDES in ECB Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Mode, :</entry>
+                                <entry>
+<para>encryption or decryption Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>MODE_ENCRYPT: Encryption </para>
+</listitem>
+<listitem>
+<para>MODE_DECRYPT: Decryption </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Key, :</entry>
+                                <entry>
+<para>Key used for TDES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Ilength, :</entry>
+                                <entry>
+<para>length of the Input buffer, must be a multiple of 8. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Input, :</entry>
+                                <entry>
+<para>pointer to the Input buffer. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Output, :</entry>
+                                <entry>
+<para>pointer to the returned buffer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: Operation done</para>
+</listitem><listitem>
+<para>ERROR: Operation failed </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1gabe52a368c4882450c1e82f16bc1eb686">
+                <title>ErrorStatus CRYP_TDES_CBC (uint8_t Mode, uint8_t Key[24], uint8_t InitVectors[8], uint8_t *Input, uint32_t Ilength, uint8_t *Output)</title> <emphasis>Encrypt and decrypt using TDES in CBC Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Mode, :</entry>
+                                <entry>
+<para>encryption or decryption Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>MODE_ENCRYPT: Encryption </para>
+</listitem>
+<listitem>
+<para>MODE_DECRYPT: Decryption </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Key, :</entry>
+                                <entry>
+<para>Key used for TDES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>InitVectors, :</entry>
+                                <entry>
+<para>Initialisation Vectors used for TDES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Input, :</entry>
+                                <entry>
+<para>pointer to the Input buffer. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Ilength, :</entry>
+                                <entry>
+<para>length of the Input buffer, must be a multiple of 8. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Output, :</entry>
+                                <entry>
+<para>pointer to the returned buffer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: Operation done</para>
+</listitem><listitem>
+<para>ERROR: Operation failed </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga3b96b7608b39197209abed5f5845f590">
+                <title>ErrorStatus CRYP_DES_ECB (uint8_t Mode, uint8_t Key[8], uint8_t *Input, uint32_t Ilength, uint8_t *Output)</title> <emphasis>Encrypt and decrypt using DES in ECB Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Mode, :</entry>
+                                <entry>
+<para>encryption or decryption Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>MODE_ENCRYPT: Encryption </para>
+</listitem>
+<listitem>
+<para>MODE_DECRYPT: Decryption </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Key, :</entry>
+                                <entry>
+<para>Key used for DES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Ilength, :</entry>
+                                <entry>
+<para>length of the Input buffer, must be a multiple of 8. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Input, :</entry>
+                                <entry>
+<para>pointer to the Input buffer. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Output, :</entry>
+                                <entry>
+<para>pointer to the returned buffer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: Operation done</para>
+</listitem><listitem>
+<para>ERROR: Operation failed </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d52/group___c_r_y_p_1ga75724391a8560c557e1152b805f5cad1">
+                <title>ErrorStatus CRYP_DES_CBC (uint8_t Mode, uint8_t Key[8], uint8_t InitVectors[8], uint8_t *Input, uint32_t Ilength, uint8_t *Output)</title> <emphasis>Encrypt and decrypt using DES in CBC Mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Mode, :</entry>
+                                <entry>
+<para>encryption or decryption Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>MODE_ENCRYPT: Encryption </para>
+</listitem>
+<listitem>
+<para>MODE_DECRYPT: Decryption </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Key, :</entry>
+                                <entry>
+<para>Key used for DES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>InitVectors, :</entry>
+                                <entry>
+<para>Initialisation Vectors used for DES algorithm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Ilength, :</entry>
+                                <entry>
+<para>length of the Input buffer, must be a multiple of 8. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Input, :</entry>
+                                <entry>
+<para>pointer to the Input buffer. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Output, :</entry>
+                                <entry>
+<para>pointer to the returned buffer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>An</entry>
+                                <entry>
+<para>ErrorStatus enumeration value:<itemizedlist>
+<listitem>
+<para>SUCCESS: Operation done</para>
+</listitem><listitem>
+<para>ERROR: Operation failed </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="d5/d49/group___c_r_y_p___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d50/group___c_r_y_p___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

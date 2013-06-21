@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d42/group___d_m_a__fifo__status__level">
+    <title>DMA_fifo_status_level</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1gace4b567c96b1c95618a4894875d8123b">DMA_FIFOStatus_Less1QuarterFull</link> ((uint32_t)0x00000000 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1ga258d41ce51005eea1c5a69fcf07d8e42">DMA_FIFOStatus_1QuarterFull</link> ((uint32_t)0x00000001 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1ga0dd0faeb4ac9de3dbdcd7ca6dd5bb9e4">DMA_FIFOStatus_HalfFull</link> ((uint32_t)0x00000002 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1ga418c64b77f903c558471d22eeabde439">DMA_FIFOStatus_3QuartersFull</link> ((uint32_t)0x00000003 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1gaacba9ad22e39ed92d2b4ae9ebece654c">DMA_FIFOStatus_Empty</link> ((uint32_t)0x00000004 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1gaf7ea7373a08730e773cbc048c9965dc2">DMA_FIFOStatus_Full</link> ((uint32_t)0x00000005 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1ga6980114eab3b3eea701f3802dd97dc12">IS_DMA_FIFO_STATUS</link> (((STATUS) == DMA_FIFOStatus_Less1QuarterFull ) || \
+                                    ((STATUS) == DMA_FIFOStatus_HalfFull)          || \
+                                    ((STATUS) == DMA_FIFOStatus_1QuarterFull)      || \
+                                    ((STATUS) == DMA_FIFOStatus_3QuartersFull)     || \
+                                    ((STATUS) == DMA_FIFOStatus_Full)              || \
+                                    ((STATUS) == DMA_FIFOStatus_Empty))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

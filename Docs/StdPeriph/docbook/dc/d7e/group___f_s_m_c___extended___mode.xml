@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d7e/group___f_s_m_c___extended___mode">
+    <title>FSMC_Extended_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d7e/group___f_s_m_c___extended___mode_1ga5a1f1acdc44328158f59012748980dd3">FSMC_ExtendedMode_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d7e/group___f_s_m_c___extended___mode_1gaef9ff4c81a52fdb0471d2c4422271d2a">FSMC_ExtendedMode_Enable</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d7e/group___f_s_m_c___extended___mode_1ga79849ea07bf2a8f09989a6babd9e66e2">IS_FSMC_EXTENDED_MODE</link> (((MODE) == FSMC_ExtendedMode_Disable) || \
+                                     ((MODE) == FSMC_ExtendedMode_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d82/group___p_w_r___group5">
+    <title>FLASH Power Down configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>FLASH Power Down configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+           FLASH Power Down configuration functions
+ ===============================================================================  
+
+ - By setting the FPDS bit in the PWR_CR register by using the PWR_FlashPowerDownCmd()
+   function, the Flash memory also enters power down mode when the device enters 
+   Stop mode. When the Flash memory is in power down mode, an additional startup 
+   delay is incurred when waking up from Stop mode.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d82/group___p_w_r___group5_1gaf0af19a9fdf0324f2ada60c9bce1aab5">PWR_FlashPowerDownCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="da/d82/group___p_w_r___group5_1gaf0af19a9fdf0324f2ada60c9bce1aab5">
+                <title>void PWR_FlashPowerDownCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the Flash Power Down in STOP mode.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Flash power mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

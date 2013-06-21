@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d89/group___t_i_m___output___compare___polarity">
+    <title>TIM_Output_Compare_Polarity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d89/group___t_i_m___output___compare___polarity_1gaba2f2de6fd722b8973e0eddeb8644022">TIM_OCPolarity_High</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d89/group___t_i_m___output___compare___polarity_1ga9f4b11953dbd2c6f836b6913469dcf54">TIM_OCPolarity_Low</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d89/group___t_i_m___output___compare___polarity_1ga1c2ee68d587d4f48d935c82fe4c3fe1e">IS_TIM_OC_POLARITY</link> (((POLARITY) == TIM_OCPolarity_High) || \
+                                      ((POLARITY) == TIM_OCPolarity_Low))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

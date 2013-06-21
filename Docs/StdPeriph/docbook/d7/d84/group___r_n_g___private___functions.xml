@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d84/group___r_n_g___private___functions">
+    <title>RNG_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d5/d15/group___r_n_g___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d8/d8d/group___r_n_g___group2">Get 32 bit Random number function</link></para></listitem>
+            <listitem><para><link linkend="d0/d3b/group___r_n_g___group3">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d5/d15/group___r_n_g___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d8d/group___r_n_g___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d3b/group___r_n_g___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

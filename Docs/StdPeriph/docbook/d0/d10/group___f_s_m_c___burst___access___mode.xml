@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d10/group___f_s_m_c___burst___access___mode">
+    <title>FSMC_Burst_Access_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d10/group___f_s_m_c___burst___access___mode_1ga26fc544945415e350563a9b00684850c">FSMC_BurstAccessMode_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d10/group___f_s_m_c___burst___access___mode_1ga841831dfacfdd8889dafe26cc594bf02">FSMC_BurstAccessMode_Enable</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d10/group___f_s_m_c___burst___access___mode_1gaf8736659c5064c3c03753d7874401e71">IS_FSMC_BURSTMODE</link> (((STATE) == FSMC_BurstAccessMode_Disable) || \
+                                  ((STATE) == FSMC_BurstAccessMode_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

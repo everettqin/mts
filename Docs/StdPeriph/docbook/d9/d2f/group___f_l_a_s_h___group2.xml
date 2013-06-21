@@ -1,0 +1,509 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d2f/group___f_l_a_s_h___group2">
+    <title>FLASH Memory Programming functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>FLASH Memory Programming functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      FLASH Memory Programming functions
+ ===============================================================================   
+
+   This group includes the following functions:
+    - void FLASH_Unlock(void)
+    - void FLASH_Lock(void)
+    - FLASH_Status FLASH_EraseSector(uint32_t FLASH_Sector, uint8_t VoltageRange)
+    - FLASH_Status FLASH_EraseAllSectors(uint8_t VoltageRange)
+    - FLASH_Status FLASH_ProgramDoubleWord(uint32_t Address, uint64_t Data)
+    - FLASH_Status FLASH_ProgramWord(uint32_t Address, uint32_t Data)
+    - FLASH_Status FLASH_ProgramHalfWord(uint32_t Address, uint16_t Data)
+    - FLASH_Status FLASH_ProgramByte(uint32_t Address, uint8_t Data)
+   
+   Any operation of erase or program should follow these steps:
+   1. Call the FLASH_Unlock() function to enable the FLASH control register access
+
+   2. Call the desired function to erase sector(s) or program data
+
+   3. Call the FLASH_Lock() function to disable the FLASH control register access
+      (recommended to protect the FLASH memory against possible unwanted operation)</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d2f/group___f_l_a_s_h___group2_1ga4084d0184bab463a1579271bf474aaef">FLASH_Unlock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d2f/group___f_l_a_s_h___group2_1ga46899557353c4312ddbe3f25e65df1d8">FLASH_Lock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="d9/d2f/group___f_l_a_s_h___group2_1ga48f408290b32a3aebbcad83a00fc447c">FLASH_EraseSector</link> (
+uint32_t FLASH_Sector, uint8_t VoltageRange)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="d9/d2f/group___f_l_a_s_h___group2_1ga2aee006e5f4db4280bdedd401dfa50f9">FLASH_EraseAllSectors</link> (
+uint8_t VoltageRange)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="d9/d2f/group___f_l_a_s_h___group2_1gab84b52121e58d0dbc8ff2a92145d20f2">FLASH_ProgramDoubleWord</link> (
+uint32_t Address, uint64_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="d9/d2f/group___f_l_a_s_h___group2_1gaac9a2f400b92537bd42a6bd7cc237b11">FLASH_ProgramWord</link> (
+uint32_t Address, uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="d9/d2f/group___f_l_a_s_h___group2_1ga5c1336f667950a8765887228f1d0d501">FLASH_ProgramHalfWord</link> (
+uint32_t Address, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="d9/d2f/group___f_l_a_s_h___group2_1gac425adf52fe7f229ef6bb893fe386848">FLASH_ProgramByte</link> (
+uint32_t Address, uint8_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d9/d2f/group___f_l_a_s_h___group2_1ga4084d0184bab463a1579271bf474aaef">
+                <title>void FLASH_Unlock (void)</title> <emphasis>Unlocks the FLASH control register access.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d2f/group___f_l_a_s_h___group2_1ga46899557353c4312ddbe3f25e65df1d8">
+                <title>void FLASH_Lock (void)</title> <emphasis>Locks the FLASH control register access.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d2f/group___f_l_a_s_h___group2_1ga48f408290b32a3aebbcad83a00fc447c">
+                <title>FLASH_Status FLASH_EraseSector (uint32_t FLASH_Sector, uint8_t VoltageRange)</title> <emphasis>Erases a specified FLASH Sector.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH_Sector, :</entry>
+                                <entry>
+<para>The Sector number to be erased. This parameter can be a value between FLASH_Sector_0 and FLASH_Sector_11</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>VoltageRange, :</entry>
+                                <entry>
+<para>The device voltage range which defines the erase parallelism. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>VoltageRange_1: when the device voltage range is 1.8V to 2.1V, the operation will be done by byte (8-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_2: when the device voltage range is 2.1V to 2.7V, the operation will be done by half word (16-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_3: when the device voltage range is 2.7V to 3.6V, the operation will be done by word (32-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_4: when the device voltage range is 2.7V to 3.6V + External Vpp, the operation will be done by double word (64-bit)</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d2f/group___f_l_a_s_h___group2_1ga2aee006e5f4db4280bdedd401dfa50f9">
+                <title>FLASH_Status FLASH_EraseAllSectors (uint8_t VoltageRange)</title> <emphasis>Erases all FLASH Sectors.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>VoltageRange, :</entry>
+                                <entry>
+<para>The device voltage range which defines the erase parallelism. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>VoltageRange_1: when the device voltage range is 1.8V to 2.1V, the operation will be done by byte (8-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_2: when the device voltage range is 2.1V to 2.7V, the operation will be done by half word (16-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_3: when the device voltage range is 2.7V to 3.6V, the operation will be done by word (32-bit) </para>
+</listitem>
+<listitem>
+<para>VoltageRange_4: when the device voltage range is 2.7V to 3.6V + External Vpp, the operation will be done by double word (64-bit)</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d2f/group___f_l_a_s_h___group2_1gab84b52121e58d0dbc8ff2a92145d20f2">
+                <title>FLASH_Status FLASH_ProgramDoubleWord (uint32_t Address, uint64_t Data)</title> <emphasis>Programs a double word (64-bit) at a specified address.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be used when the device voltage range is from 2.7V to 3.6V and an External Vpp is present. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the address to be programmed. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>specifies the data to be programmed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d2f/group___f_l_a_s_h___group2_1gaac9a2f400b92537bd42a6bd7cc237b11">
+                <title>FLASH_Status FLASH_ProgramWord (uint32_t Address, uint32_t Data)</title> <emphasis>Programs a word (32-bit) at a specified address.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the address to be programmed. This parameter can be any address in Program memory zone or in OTP zone. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>This function must be used when the device voltage range is from 2.7V to 3.6V. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>specifies the data to be programmed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d2f/group___f_l_a_s_h___group2_1ga5c1336f667950a8765887228f1d0d501">
+                <title>FLASH_Status FLASH_ProgramHalfWord (uint32_t Address, uint16_t Data)</title> <emphasis>Programs a half word (16-bit) at a specified address.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be used when the device voltage range is from 2.1V to 3.6V. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the address to be programmed. This parameter can be any address in Program memory zone or in OTP zone. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>specifies the data to be programmed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d2f/group___f_l_a_s_h___group2_1gac425adf52fe7f229ef6bb893fe386848">
+                <title>FLASH_Status FLASH_ProgramByte (uint32_t Address, uint8_t Data)</title> <emphasis>Programs a byte (8-bit) at a specified address.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function can be used within all the device supply voltage ranges. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Address, :</entry>
+                                <entry>
+<para>specifies the address to be programmed. This parameter can be any address in Program memory zone or in OTP zone. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>specifies the data to be programmed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

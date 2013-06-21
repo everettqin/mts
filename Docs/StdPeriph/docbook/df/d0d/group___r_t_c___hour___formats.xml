@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d0d/group___r_t_c___hour___formats">
+    <title>RTC_Hour_Formats</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d0d/group___r_t_c___hour___formats_1gac5fb0d24ad4f04e90b8c3b704900e588">RTC_HourFormat_24</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d0d/group___r_t_c___hour___formats_1gade7bf50ded5ef23dbd8de64d1657a4bf">RTC_HourFormat_12</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d0d/group___r_t_c___hour___formats_1ga597042eec4479e028c32973bc69f4a26">IS_RTC_HOUR_FORMAT</link> (((FORMAT) == RTC_HourFormat_12) || \
+                                        ((FORMAT) == RTC_HourFormat_24))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

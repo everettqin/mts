@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d4a/group___f_l_a_s_h___exported___constants">
+    <title>FLASH_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d3/dcb/group___flash___latency">Flash_Latency</link></para></listitem>
+            <listitem><para><link linkend="d7/dde/group___f_l_a_s_h___voltage___range">FLASH_Voltage_Range</link></para></listitem>
+            <listitem><para><link linkend="d4/db8/group___f_l_a_s_h___sectors">FLASH_Sectors</link></para></listitem>
+            <listitem><para><link linkend="df/d73/group___option___bytes___write___protection">Option_Bytes_Write_Protection</link></para></listitem>
+            <listitem><para><link linkend="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection">FLASH_Option_Bytes_Read_Protection</link></para></listitem>
+            <listitem><para><link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog">FLASH_Option_Bytes_IWatchdog</link></para></listitem>
+            <listitem><para><link linkend="de/dfa/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_o_p">FLASH_Option_Bytes_nRST_STOP</link></para></listitem>
+            <listitem><para><link linkend="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y">FLASH_Option_Bytes_nRST_STDBY</link></para></listitem>
+            <listitem><para><link linkend="db/d5f/group___f_l_a_s_h___b_o_r___reset___level">FLASH_BOR_Reset_Level</link></para></listitem>
+            <listitem><para><link linkend="de/d18/group___f_l_a_s_h___interrupts">FLASH_Interrupts</link></para></listitem>
+            <listitem><para><link linkend="d1/d8a/group___f_l_a_s_h___flags">FLASH_Flags</link></para></listitem>
+            <listitem><para><link linkend="d6/d45/group___f_l_a_s_h___program___parallelism">FLASH_Program_Parallelism</link></para></listitem>
+            <listitem><para><link linkend="dd/d61/group___f_l_a_s_h___keys">FLASH_Keys</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___f_l_a_s_h___exported___constants_1gaeaca61fbcff69df08100280868bff214">ACR_BYTE0_ADDRESS</link> ((uint32_t)0x40023C00)<para><emphasis>ACR register byte 0 (Bits[8:0]) base address.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___f_l_a_s_h___exported___constants_1ga8223df020203a97af44e4b14e219d01e">OPTCR_BYTE0_ADDRESS</link> ((uint32_t)0x40023C14)<para><emphasis>OPTCR register byte 3 (Bits[24:16]) base address.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___f_l_a_s_h___exported___constants_1ga3c08568a9b3a9d213a70eff8e87117ac">OPTCR_BYTE1_ADDRESS</link> ((uint32_t)0x40023C15)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d4a/group___f_l_a_s_h___exported___constants_1ga600e8029b876676da246a62924a294c7">OPTCR_BYTE2_ADDRESS</link> ((uint32_t)0x40023C16)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="d3/dcb/group___flash___latency.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/dde/group___f_l_a_s_h___voltage___range.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/db8/group___f_l_a_s_h___sectors.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d73/group___option___bytes___write___protection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d6f/group___f_l_a_s_h___option___bytes___read___protection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/dfa/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_o_p.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d66/group___f_l_a_s_h___option___bytes__n_r_s_t___s_t_d_b_y.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d5f/group___f_l_a_s_h___b_o_r___reset___level.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d18/group___f_l_a_s_h___interrupts.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d8a/group___f_l_a_s_h___flags.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d45/group___f_l_a_s_h___program___parallelism.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d61/group___f_l_a_s_h___keys.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

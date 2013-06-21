@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d23/struct_t_i_m___b_d_t_r_init_type_def">
+<title>TIM_BDTRInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dec/stm32f4xx__tim_8h">&lt;stm32f4xx_tim.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_OSSRState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_OSSIState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_LOCKLevel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_DeadTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_Break</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_BreakPolarity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_AutomaticOutput</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>BDTR structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><formalpara><title>Note: </title>
+
+<para>This structure is used only with TIM1 and TIM8. </para>
+</formalpara>
+</para>
+                <para>Definition at line 138 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t TIM_OSSRState</title>                
+<para>Specifies the Off-State selection used in Run mode. This parameter can be a value of <link linkend="d9/de3/group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state">TIM_OSSR_Off_State_Selection_for_Run_mode_state</link> </para>
+
+                <para>Definition at line 140 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_OSSIState</title>                
+<para>Specifies the Off-State used in Idle state. This parameter can be a value of <link linkend="d0/d54/group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state">TIM_OSSI_Off_State_Selection_for_Idle_mode_state</link> </para>
+
+                <para>Definition at line 143 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_LOCKLevel</title>                
+<para>Specifies the LOCK level parameters. This parameter can be a value of <link linkend="d8/d8a/group___t_i_m___lock__level">TIM_Lock_level</link> </para>
+
+                <para>Definition at line 146 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_DeadTime</title>                
+<para>Specifies the delay time between the switching-off and the switching-on of the outputs. This parameter can be a number between 0x00 and 0xFF </para>
+
+                <para>Definition at line 149 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_Break</title>                
+<para>Specifies whether the TIM Break input is enabled or not. This parameter can be a value of <link linkend="d4/df8/group___t_i_m___break___input__enable__disable">TIM_Break_Input_enable_disable</link> </para>
+
+                <para>Definition at line 153 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_BreakPolarity</title>                
+<para>Specifies the TIM Break Input pin polarity. This parameter can be a value of <link linkend="dd/d4c/group___t_i_m___break___polarity">TIM_Break_Polarity</link> </para>
+
+                <para>Definition at line 156 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_AutomaticOutput</title>                
+<para>Specifies whether the TIM Automatic Output feature is enabled or not. This parameter can be a value of <link linkend="de/d41/group___t_i_m___a_o_e___bit___set___reset">TIM_AOE_Bit_Set_Reset</link> </para>
+
+                <para>Definition at line 159 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

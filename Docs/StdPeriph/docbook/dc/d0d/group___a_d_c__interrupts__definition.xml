@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d0d/group___a_d_c__interrupts__definition">
+    <title>ADC_interrupts_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d0d/group___a_d_c__interrupts__definition_1ga0ad335d835f54415194d448019569e00">ADC_IT_EOC</link> ((uint16_t)0x0205)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d0d/group___a_d_c__interrupts__definition_1ga2f5c7f9900c24250a0c6ccaa7cbca946">ADC_IT_AWD</link> ((uint16_t)0x0106)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d0d/group___a_d_c__interrupts__definition_1gad439fc0cd69706704d47aeabfeddb631">ADC_IT_JEOC</link> ((uint16_t)0x0407)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d0d/group___a_d_c__interrupts__definition_1gac3852b7789860e0ea79b82115ab877a0">ADC_IT_OVR</link> ((uint16_t)0x201A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d0d/group___a_d_c__interrupts__definition_1gaf5f8d35930becff402eeb8220641432f">IS_ADC_IT</link> (((IT) == ADC_IT_EOC) || ((IT) == ADC_IT_AWD) || \
+                       ((IT) == ADC_IT_JEOC)|| ((IT) == ADC_IT_OVR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

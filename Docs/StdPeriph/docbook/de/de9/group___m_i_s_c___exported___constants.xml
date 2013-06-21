@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/de9/group___m_i_s_c___exported___constants">
+    <title>MISC_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d9/dc6/group___m_i_s_c___vector___table___base">MISC_Vector_Table_Base</link></para></listitem>
+            <listitem><para><link linkend="dc/dcd/group___m_i_s_c___system___low___power">MISC_System_Low_Power</link></para></listitem>
+            <listitem><para><link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group">MISC_Preemption_Priority_Group</link></para></listitem>
+            <listitem><para><link linkend="d7/d70/group___m_i_s_c___sys_tick__clock__source">MISC_SysTick_clock_source</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d9/dc6/group___m_i_s_c___vector___table___base.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/dcd/group___m_i_s_c___system___low___power.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/dc0/group___m_i_s_c___preemption___priority___group.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d70/group___m_i_s_c___sys_tick__clock__source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

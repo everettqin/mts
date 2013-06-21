@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d8f/group___c_a_n___init_status">
+    <title>CAN_InitStatus</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d8f/group___c_a_n___init_status_1ga095c319e8c54c974eb2b6eeadf180d96">CAN_InitStatus_Failed</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d8f/group___c_a_n___init_status_1ga6bed5957af8f2f6b00568e15ccac5772">CAN_InitStatus_Success</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d8f/group___c_a_n___init_status_1ga0539a9e5a898fcd71c4dcb7e341e4b86">CANINITFAILED</link> <link linkend="d7/d8f/group___c_a_n___init_status_1ga095c319e8c54c974eb2b6eeadf180d96">CAN_InitStatus_Failed</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d8f/group___c_a_n___init_status_1ga14cba0b5b506be73e2f45c732f8e54cb">CANINITOK</link> <link linkend="d7/d8f/group___c_a_n___init_status_1ga6bed5957af8f2f6b00568e15ccac5772">CAN_InitStatus_Success</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d7/d8f/group___c_a_n___init_status_1ga095c319e8c54c974eb2b6eeadf180d96">
+                <title>#define CAN_InitStatus_Failed</title>                
+<para>CAN initialization failed </para>
+
+                <para>Definition at line 194 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d7/d8f/group___c_a_n___init_status_1ga6bed5957af8f2f6b00568e15ccac5772">
+                <title>#define CAN_InitStatus_Success</title>                
+<para>CAN initialization OK </para>
+
+                <para>Definition at line 195 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

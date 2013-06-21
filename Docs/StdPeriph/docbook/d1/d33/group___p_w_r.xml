@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d33/group___p_w_r">
+    <title>PWR</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>PWR driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d1/d3f/group___p_w_r___exported___constants">PWR_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="d8/daf/group___p_w_r___private___functions">PWR_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga7f88bce73931300319824f22578f90de">PWR_OFFSET</link> (PWR_BASE - PERIPH_BASE)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1gafa1d3d0ea72132df651c76fc1bdffffc">CR_OFFSET</link> (PWR_OFFSET + 0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga36ff45d972bf94f31f172fd53cf44d23">DBP_BitNumber</link> 0x08</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga799ab60bdbcfc1076cf2d7f206d09b0c">CR_DBP_BB</link> (PERIPH_BB_BASE + (CR_OFFSET * 32) + (DBP_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga17d618eb800c401ef9c6789c9374eaf8">PVDE_BitNumber</link> 0x04</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga49f51ef8285a6be76fd204d49a00709c">CR_PVDE_BB</link> (PERIPH_BB_BASE + (CR_OFFSET * 32) + (PVDE_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1gad99a3da921e3e64587f6b9505ecba665">FPDS_BitNumber</link> 0x09</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga57d7041b5d1bf0ec94fa18152a7fa208">CR_FPDS_BB</link> (PERIPH_BB_BASE + (CR_OFFSET * 32) + (FPDS_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga15fea9df1b0d324394336f70b319b377">PMODE_BitNumber</link> 0x0E</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga2e7c040f5c63f0fce3e274d9a03f1d1a">CR_PMODE_BB</link> (PERIPH_BB_BASE + (CR_OFFSET * 32) + (PMODE_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga984cbe73312b6d3d355c5053763d499a">CSR_OFFSET</link> (PWR_OFFSET + 0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga94fe0520e8f9b71fa2b99c0565ec70ea">EWUP_BitNumber</link> 0x08</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1gaaff864595f697850b19173b0bca991b0">CSR_EWUP_BB</link> (PERIPH_BB_BASE + (CSR_OFFSET * 32) + (EWUP_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga1a0832bfe421cdd6f2640ffb625cc2d8">BRE_BitNumber</link> 0x09</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga1451a5ec810860a7c2e28c23f0c0e928">CSR_BRE_BB</link> (PERIPH_BB_BASE + (CSR_OFFSET * 32) + (BRE_BitNumber * 4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1ga8ee6bf9218f3c476629dd9ee70deef21">CR_DS_MASK</link> ((uint32_t)0xFFFFFFFC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d33/group___p_w_r_1gac4a30eebdd1d292331a578b189962e77">CR_PLS_MASK</link> ((uint32_t)0xFFFFFF1F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="d1/d3f/group___p_w_r___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/daf/group___p_w_r___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/df1/group___u_s_a_r_t___group3">
+    <title>MultiProcessor Communication functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Multi-Processor Communication functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                    Multi-Processor Communication functions
+ ===============================================================================  
+
+  This subsection provides a set of functions allowing to manage the USART 
+  multiprocessor communication.
+  
+  For instance one of the USARTs can be the master, its TX output is connected to 
+  the RX input of the other USART. The others are slaves, their respective TX outputs 
+  are logically ANDed together and connected to the RX input of the master.
+
+  USART multiprocessor communication is possible through the following procedure:
+     1. Program the Baud rate, Word length = 9 bits, Stop bits, Parity, Mode transmitter 
+        or Mode receiver and hardware flow control values using the USART_Init()
+        function.
+     2. Configures the USART address using the USART_SetAddress() function.
+     3. Configures the wake up method (USART_WakeUp_IdleLine or USART_WakeUp_AddressMark)
+        using USART_WakeUpConfig() function only for the slaves.
+     4. Enable the USART using the USART_Cmd() function.
+     5. Enter the USART slaves in mute mode using USART_ReceiverWakeUpCmd() function.
+
+  The USART Slave exit from mute mode when receive the wake up condition.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/df1/group___u_s_a_r_t___group3_1ga65ec9928817f3f031dd9a4dfc95d6666">USART_SetAddress</link> (
+USART_TypeDef * USARTx, uint8_t USART_Address)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/df1/group___u_s_a_r_t___group3_1gac27b78ce445a16fe33851d2f87781c02">USART_ReceiverWakeUpCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/df1/group___u_s_a_r_t___group3_1ga4965417c2412c36e462fcad50a8d5393">USART_WakeUpConfig</link> (
+USART_TypeDef * USARTx, uint16_t USART_WakeUp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dd/df1/group___u_s_a_r_t___group3_1ga65ec9928817f3f031dd9a4dfc95d6666">
+                <title>void USART_SetAddress (USART_TypeDef *USARTx, uint8_t USART_Address)</title> <emphasis>Sets the address of the USART node.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_Address, :</entry>
+                                <entry>
+<para>Indicates the address of the USART node. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/df1/group___u_s_a_r_t___group3_1gac27b78ce445a16fe33851d2f87781c02">
+                <title>void USART_ReceiverWakeUpCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Determines if the USART is in mute mode or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART mute mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/df1/group___u_s_a_r_t___group3_1ga4965417c2412c36e462fcad50a8d5393">
+                <title>void USART_WakeUpConfig (USART_TypeDef *USARTx, uint16_t USART_WakeUp)</title> <emphasis>Selects the USART WakeUp method.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_WakeUp, :</entry>
+                                <entry>
+<para>specifies the USART wakeup method. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>USART_WakeUp_IdleLine: WakeUp by an idle line detection </para>
+</listitem>
+<listitem>
+<para>USART_WakeUp_AddressMark: WakeUp by an address mark </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

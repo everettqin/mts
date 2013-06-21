@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d6b/group___s_p_i___i2_s___m_c_l_k___output">
+    <title>SPI_I2S_MCLK_Output</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d6b/group___s_p_i___i2_s___m_c_l_k___output_1ga99713ee8c824f4d3bb25a9ce7bf5312a">I2S_MCLKOutput_Enable</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d6b/group___s_p_i___i2_s___m_c_l_k___output_1gaea09824d7e6359924152277ed3661e7e">I2S_MCLKOutput_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d6b/group___s_p_i___i2_s___m_c_l_k___output_1ga829ae526d1d11f14592e881f800fbb8a">IS_I2S_MCLK_OUTPUT</link> (((OUTPUT) == I2S_MCLKOutput_Enable) || \
+                                    ((OUTPUT) == I2S_MCLKOutput_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

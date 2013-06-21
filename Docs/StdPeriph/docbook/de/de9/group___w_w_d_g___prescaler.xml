@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/de9/group___w_w_d_g___prescaler">
+    <title>WWDG_Prescaler</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga55780dcf60a252724f5aae2ca37d91c5">WWDG_Prescaler_1</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga2ac67d0a7f8691b5ebf0d7d77d6b5f08">WWDG_Prescaler_2</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1gab11714e1816967802a8421587e54a2eb">WWDG_Prescaler_4</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga7a4933366603869726bd5ea547d99f02">WWDG_Prescaler_8</link> ((uint32_t)0x00000180)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga39070de0722a70f99a6fcfe8720b2dfd">IS_WWDG_PRESCALER</link> (((PRESCALER) == WWDG_Prescaler_1) || \
+                                      ((PRESCALER) == WWDG_Prescaler_2) || \
+                                      ((PRESCALER) == WWDG_Prescaler_4) || \
+                                      ((PRESCALER) == WWDG_Prescaler_8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1gab6ea714a2380b7d6547ba97363887868">IS_WWDG_WINDOW_VALUE</link> ((VALUE) &lt;= 0x7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/de9/group___w_w_d_g___prescaler_1ga4728877128cd60494692d8f14389112e">IS_WWDG_COUNTER</link> (((COUNTER) &gt;= 0x40) &amp;&amp; ((COUNTER) &lt;= 0x7F))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

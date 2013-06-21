@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d5d/group___f_s_m_c___n_a_n_d___p_c_c_a_r_d___controller">
+    <title>FSMC_NAND_PCCARD_Controller</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="de/dcf/group___f_s_m_c___wait__feature">FSMC_Wait_feature</link></para></listitem>
+            <listitem><para><link linkend="d3/ddc/group___f_s_m_c___e_c_c">FSMC_ECC</link></para></listitem>
+            <listitem><para><link linkend="d6/d62/group___f_s_m_c___e_c_c___page___size">FSMC_ECC_Page_Size</link></para></listitem>
+            <listitem><para><link linkend="db/d93/group___f_s_m_c___t_c_l_r___setup___time">FSMC_TCLR_Setup_Time</link></para></listitem>
+            <listitem><para><link linkend="d6/d6e/group___f_s_m_c___t_a_r___setup___time">FSMC_TAR_Setup_Time</link></para></listitem>
+            <listitem><para><link linkend="d8/d06/group___f_s_m_c___setup___time">FSMC_Setup_Time</link></para></listitem>
+            <listitem><para><link linkend="de/de8/group___f_s_m_c___wait___setup___time">FSMC_Wait_Setup_Time</link></para></listitem>
+            <listitem><para><link linkend="d1/dec/group___f_s_m_c___hold___setup___time">FSMC_Hold_Setup_Time</link></para></listitem>
+            <listitem><para><link linkend="d7/d0f/group___f_s_m_c___hi_z___setup___time">FSMC_HiZ_Setup_Time</link></para></listitem>
+            <listitem><para><link linkend="dd/d21/group___f_s_m_c___interrupt__sources">FSMC_Interrupt_sources</link></para></listitem>
+            <listitem><para><link linkend="d9/d89/group___f_s_m_c___flags">FSMC_Flags</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="de/dcf/group___f_s_m_c___wait__feature.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/ddc/group___f_s_m_c___e_c_c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d62/group___f_s_m_c___e_c_c___page___size.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d93/group___f_s_m_c___t_c_l_r___setup___time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d6e/group___f_s_m_c___t_a_r___setup___time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d06/group___f_s_m_c___setup___time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/de8/group___f_s_m_c___wait___setup___time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/dec/group___f_s_m_c___hold___setup___time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d0f/group___f_s_m_c___hi_z___setup___time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d21/group___f_s_m_c___interrupt__sources.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d89/group___f_s_m_c___flags.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

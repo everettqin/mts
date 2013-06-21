@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d4f/group___c_a_n__operating__mode">
+    <title>CAN_operating_mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___c_a_n__operating__mode_1gaaf1f48ab4917ccfd5fd31dd781d59e29">CAN_Mode_Normal</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___c_a_n__operating__mode_1gaad036c944403186eb3496ff65020c0ee">CAN_Mode_LoopBack</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___c_a_n__operating__mode_1gac05e5d666f18eb35e8da70e6e17e8fb8">CAN_Mode_Silent</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___c_a_n__operating__mode_1ga087afa0d24d2cf399225993573c984eb">CAN_Mode_Silent_LoopBack</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___c_a_n__operating__mode_1ga5d6480c240edeba383b4e07d65814d98">IS_CAN_MODE</link> (((MODE) == <link linkend="de/d4f/group___c_a_n__operating__mode_1gaaf1f48ab4917ccfd5fd31dd781d59e29">CAN_Mode_Normal</link>) || \
+                           ((MODE) == <link linkend="de/d4f/group___c_a_n__operating__mode_1gaad036c944403186eb3496ff65020c0ee">CAN_Mode_LoopBack</link>)|| \
+                           ((MODE) == <link linkend="de/d4f/group___c_a_n__operating__mode_1gac05e5d666f18eb35e8da70e6e17e8fb8">CAN_Mode_Silent</link>) || \
+                           ((MODE) == <link linkend="de/d4f/group___c_a_n__operating__mode_1ga087afa0d24d2cf399225993573c984eb">CAN_Mode_Silent_LoopBack</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___c_a_n__operating__mode_1gace8a4b5c164aba6f473d6254ad1e8a36">CAN_OperatingMode_Initialization</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___c_a_n__operating__mode_1ga663ecffaa60d1a201a035dfa45325848">CAN_OperatingMode_Normal</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___c_a_n__operating__mode_1ga173b85d2baaa6249d966b8073e3ad8ca">CAN_OperatingMode_Sleep</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___c_a_n__operating__mode_1ga377f1598db9b0248ba83fa6e5a75db75">IS_CAN_OPERATING_MODE</link> (((MODE) == <link linkend="de/d4f/group___c_a_n__operating__mode_1gace8a4b5c164aba6f473d6254ad1e8a36">CAN_OperatingMode_Initialization</link>) ||\
+                                    ((MODE) == <link linkend="de/d4f/group___c_a_n__operating__mode_1ga663ecffaa60d1a201a035dfa45325848">CAN_OperatingMode_Normal</link>)|| \
+																		((MODE) == <link linkend="de/d4f/group___c_a_n__operating__mode_1ga173b85d2baaa6249d966b8073e3ad8ca">CAN_OperatingMode_Sleep</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="de/d4f/group___c_a_n__operating__mode_1gaaf1f48ab4917ccfd5fd31dd781d59e29">
+                <title>#define CAN_Mode_Normal</title>                
+<para>normal mode </para>
+
+                <para>Definition at line 209 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/d4f/group___c_a_n__operating__mode_1gaad036c944403186eb3496ff65020c0ee">
+                <title>#define CAN_Mode_LoopBack</title>                
+<para>loopback mode </para>
+
+                <para>Definition at line 210 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/d4f/group___c_a_n__operating__mode_1gac05e5d666f18eb35e8da70e6e17e8fb8">
+                <title>#define CAN_Mode_Silent</title>                
+<para>silent mode </para>
+
+                <para>Definition at line 211 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/d4f/group___c_a_n__operating__mode_1ga087afa0d24d2cf399225993573c984eb">
+                <title>#define CAN_Mode_Silent_LoopBack</title>                
+<para>loopback combined with silent mode </para>
+
+                <para>Definition at line 212 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/d4f/group___c_a_n__operating__mode_1gace8a4b5c164aba6f473d6254ad1e8a36">
+                <title>#define CAN_OperatingMode_Initialization</title>                
+<para>Initialization mode </para>
+
+                <para>Definition at line 227 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/d4f/group___c_a_n__operating__mode_1ga663ecffaa60d1a201a035dfa45325848">
+                <title>#define CAN_OperatingMode_Normal</title>                
+<para>Normal mode </para>
+
+                <para>Definition at line 228 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/d4f/group___c_a_n__operating__mode_1ga173b85d2baaa6249d966b8073e3ad8ca">
+                <title>#define CAN_OperatingMode_Sleep</title>                
+<para>sleep mode </para>
+
+                <para>Definition at line 229 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

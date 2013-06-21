@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/ddc/group___f_s_m_c___e_c_c">
+    <title>FSMC_ECC</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/ddc/group___f_s_m_c___e_c_c_1ga9a3264c0718f5023fd106abea7ef806d">FSMC_ECC_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/ddc/group___f_s_m_c___e_c_c_1ga9d940243830695412d4c98228bb5b763">FSMC_ECC_Enable</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/ddc/group___f_s_m_c___e_c_c_1gaf1a7cb45edd8707bf4ea8aac96799c77">IS_FSMC_ECC_STATE</link> (((STATE) == FSMC_ECC_Disable) || \
+                                  ((STATE) == FSMC_ECC_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d1a/group___r_t_c___output___type___a_l_a_r_m___o_u_t">
+    <title>RTC_Output_Type_ALARM_OUT</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d1a/group___r_t_c___output___type___a_l_a_r_m___o_u_t_1gafe3640c3f98b1ad3a609623088335aeb">RTC_OutputType_OpenDrain</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d1a/group___r_t_c___output___type___a_l_a_r_m___o_u_t_1ga16861daafb18357d884baf2133adcc17">RTC_OutputType_PushPull</link> ((uint32_t)0x00040000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d1a/group___r_t_c___output___type___a_l_a_r_m___o_u_t_1ga69e263212d90ca91ccfc72e930f26cd8">IS_RTC_OUTPUT_TYPE</link> (((TYPE) == RTC_OutputType_OpenDrain) || \
+                                  ((TYPE) == RTC_OutputType_PushPull))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

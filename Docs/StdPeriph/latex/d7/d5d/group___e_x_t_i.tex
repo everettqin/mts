@@ -1,0 +1,288 @@
+\hypertarget{group___e_x_t_i}{\section{E\-X\-T\-I}
+\label{group___e_x_t_i}\index{E\-X\-T\-I@{E\-X\-T\-I}}
+}
+
+
+E\-X\-T\-I driver modules.  
+
+
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___e_x_t_i___exported___constants}{E\-X\-T\-I\-\_\-\-Exported\-\_\-\-Constants}
+\item 
+\hyperlink{group___e_x_t_i___private___functions}{E\-X\-T\-I\-\_\-\-Private\-\_\-\-Functions}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_e_x_t_i___init_type_def}{E\-X\-T\-I\-\_\-\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em E\-X\-T\-I Init Structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___e_x_t_i_ga8429170f3320b90227f9f5b252c1c5eb}{\#define {\bfseries I\-S\-\_\-\-E\-X\-T\-I\-\_\-\-M\-O\-D\-E}(M\-O\-D\-E)~(((M\-O\-D\-E) == E\-X\-T\-I\-\_\-\-Mode\-\_\-\-Interrupt) $|$$|$ ((M\-O\-D\-E) == E\-X\-T\-I\-\_\-\-Mode\-\_\-\-Event))}\label{group___e_x_t_i_ga8429170f3320b90227f9f5b252c1c5eb}
+
+\item 
+\#define {\bfseries I\-S\-\_\-\-E\-X\-T\-I\-\_\-\-T\-R\-I\-G\-G\-E\-R}(T\-R\-I\-G\-G\-E\-R)
+\item 
+\hypertarget{group___e_x_t_i_ga4451b67e337fc341394ee695273798af}{\#define {\bfseries E\-X\-T\-I\-\_\-\-L\-I\-N\-E\-N\-O\-N\-E}~((uint32\-\_\-t)0x00000)  /$\ast$ No interrupt selected $\ast$/}\label{group___e_x_t_i_ga4451b67e337fc341394ee695273798af}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___e_x_t_i_gad5e69af98dc0dfdf64417adc1cf57929}{E\-X\-T\-I\-Mode\-\_\-\-Type\-Def} \{ {\bfseries E\-X\-T\-I\-\_\-\-Mode\-\_\-\-Interrupt} = 0x00, 
+{\bfseries E\-X\-T\-I\-\_\-\-Mode\-\_\-\-Event} = 0x04
+ \}
+\begin{DoxyCompactList}\small\item\em E\-X\-T\-I mode enumeration. \end{DoxyCompactList}\item 
+enum \hyperlink{group___e_x_t_i_ga9da190f5425d1b421a06bced8cc48e9b}{E\-X\-T\-I\-Trigger\-\_\-\-Type\-Def} \{ {\bfseries E\-X\-T\-I\-\_\-\-Trigger\-\_\-\-Rising} = 0x08, 
+{\bfseries E\-X\-T\-I\-\_\-\-Trigger\-\_\-\-Falling} = 0x0\-C, 
+{\bfseries E\-X\-T\-I\-\_\-\-Trigger\-\_\-\-Rising\-\_\-\-Falling} = 0x10
+ \}
+\begin{DoxyCompactList}\small\item\em E\-X\-T\-I Trigger enumeration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___e_x_t_i_ga07072e339cb9ecb9cd9d4b94afc9f317}{E\-X\-T\-I\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the E\-X\-T\-I peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___e_x_t_i_ga8c9ce6352a3a2dfc8fc9287cb24c6501}{E\-X\-T\-I\-\_\-\-Init} (\hyperlink{struct_e_x_t_i___init_type_def}{E\-X\-T\-I\-\_\-\-Init\-Type\-Def} $\ast$E\-X\-T\-I\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the E\-X\-T\-I peripheral according to the specified parameters in the E\-X\-T\-I\-\_\-\-Init\-Struct. \end{DoxyCompactList}\item 
+void \hyperlink{group___e_x_t_i_ga86b9e662d18a2f829999cfb26aa7ca20}{E\-X\-T\-I\-\_\-\-Struct\-Init} (\hyperlink{struct_e_x_t_i___init_type_def}{E\-X\-T\-I\-\_\-\-Init\-Type\-Def} $\ast$E\-X\-T\-I\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each E\-X\-T\-I\-\_\-\-Init\-Struct member with its reset value. \end{DoxyCompactList}\item 
+void \hyperlink{group___e_x_t_i_ga897e8ea59f40a19e047fb9994876fc9b}{E\-X\-T\-I\-\_\-\-Generate\-S\-W\-Interrupt} (uint32\-\_\-t E\-X\-T\-I\-\_\-\-Line)
+\begin{DoxyCompactList}\small\item\em Generates a Software interrupt on selected E\-X\-T\-I line. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___e_x_t_i_ga0ce06e6b312592df149800d63218cffa}{E\-X\-T\-I\-\_\-\-Get\-Flag\-Status} (uint32\-\_\-t E\-X\-T\-I\-\_\-\-Line)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified E\-X\-T\-I line flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___e_x_t_i_ga8e07aaaa286dea4803605d5968850a92}{E\-X\-T\-I\-\_\-\-Clear\-Flag} (uint32\-\_\-t E\-X\-T\-I\-\_\-\-Line)
+\begin{DoxyCompactList}\small\item\em Clears the E\-X\-T\-I's line pending flags. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___e_x_t_i_gaf7b51519062ae42fd27ee689cab364aa}{E\-X\-T\-I\-\_\-\-Get\-I\-T\-Status} (uint32\-\_\-t E\-X\-T\-I\-\_\-\-Line)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified E\-X\-T\-I line is asserted or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___e_x_t_i_ga3652a7e682728b310c124e7e974d1468}{E\-X\-T\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint32\-\_\-t E\-X\-T\-I\-\_\-\-Line)
+\begin{DoxyCompactList}\small\item\em Clears the E\-X\-T\-I's line pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+E\-X\-T\-I driver modules. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___e_x_t_i_gaee95ec6288944a6245696896604e509e}{\index{E\-X\-T\-I@{E\-X\-T\-I}!I\-S\-\_\-\-E\-X\-T\-I\-\_\-\-T\-R\-I\-G\-G\-E\-R@{I\-S\-\_\-\-E\-X\-T\-I\-\_\-\-T\-R\-I\-G\-G\-E\-R}}
+\index{I\-S\-\_\-\-E\-X\-T\-I\-\_\-\-T\-R\-I\-G\-G\-E\-R@{I\-S\-\_\-\-E\-X\-T\-I\-\_\-\-T\-R\-I\-G\-G\-E\-R}!EXTI@{E\-X\-T\-I}}
+\subsubsection[{I\-S\-\_\-\-E\-X\-T\-I\-\_\-\-T\-R\-I\-G\-G\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-S\-\_\-\-E\-X\-T\-I\-\_\-\-T\-R\-I\-G\-G\-E\-R(
+\begin{DoxyParamCaption}
+\item[{}]{T\-R\-I\-G\-G\-E\-R}
+\end{DoxyParamCaption}
+)}}\label{group___e_x_t_i_gaee95ec6288944a6245696896604e509e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+(((TRIGGER) == EXTI\_Trigger\_Rising) || \(\backslash\)
+                                  ((TRIGGER) == EXTI\_Trigger\_Falling) || \(\backslash\)
+                                  ((TRIGGER) == EXTI\_Trigger\_Rising\_Falling))
+\end{DoxyCode}
+
+
+Definition at line 67 of file stm32f4xx\-\_\-exti.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{group___e_x_t_i_ga8e07aaaa286dea4803605d5968850a92}{\index{E\-X\-T\-I@{E\-X\-T\-I}!E\-X\-T\-I\-\_\-\-Clear\-Flag@{E\-X\-T\-I\-\_\-\-Clear\-Flag}}
+\index{E\-X\-T\-I\-\_\-\-Clear\-Flag@{E\-X\-T\-I\-\_\-\-Clear\-Flag}!EXTI@{E\-X\-T\-I}}
+\subsubsection[{E\-X\-T\-I\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void E\-X\-T\-I\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{E\-X\-T\-I\-\_\-\-Line}
+\end{DoxyParamCaption}
+)}}\label{group___e_x_t_i_ga8e07aaaa286dea4803605d5968850a92}
+
+
+Clears the E\-X\-T\-I's line pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E\-X\-T\-I\-\_\-\-Line,\-:} & specifies the E\-X\-T\-I lines flags to clear. This parameter can be any combination of E\-X\-T\-I\-\_\-\-Linex where x can be (0..22) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 243 of file stm32f4xx\-\_\-exti.\-c.
+
+\hypertarget{group___e_x_t_i_ga3652a7e682728b310c124e7e974d1468}{\index{E\-X\-T\-I@{E\-X\-T\-I}!E\-X\-T\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit@{E\-X\-T\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{E\-X\-T\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit@{E\-X\-T\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit}!EXTI@{E\-X\-T\-I}}
+\subsubsection[{E\-X\-T\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void E\-X\-T\-I\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{E\-X\-T\-I\-\_\-\-Line}
+\end{DoxyParamCaption}
+)}}\label{group___e_x_t_i_ga3652a7e682728b310c124e7e974d1468}
+
+
+Clears the E\-X\-T\-I's line pending bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E\-X\-T\-I\-\_\-\-Line,\-:} & specifies the E\-X\-T\-I lines to clear. This parameter can be any combination of E\-X\-T\-I\-\_\-\-Linex where x can be (0..22) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 282 of file stm32f4xx\-\_\-exti.\-c.
+
+\hypertarget{group___e_x_t_i_ga07072e339cb9ecb9cd9d4b94afc9f317}{\index{E\-X\-T\-I@{E\-X\-T\-I}!E\-X\-T\-I\-\_\-\-De\-Init@{E\-X\-T\-I\-\_\-\-De\-Init}}
+\index{E\-X\-T\-I\-\_\-\-De\-Init@{E\-X\-T\-I\-\_\-\-De\-Init}!EXTI@{E\-X\-T\-I}}
+\subsubsection[{E\-X\-T\-I\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void E\-X\-T\-I\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___e_x_t_i_ga07072e339cb9ecb9cd9d4b94afc9f317}
+
+
+Deinitializes the E\-X\-T\-I peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 103 of file stm32f4xx\-\_\-exti.\-c.
+
+\hypertarget{group___e_x_t_i_ga897e8ea59f40a19e047fb9994876fc9b}{\index{E\-X\-T\-I@{E\-X\-T\-I}!E\-X\-T\-I\-\_\-\-Generate\-S\-W\-Interrupt@{E\-X\-T\-I\-\_\-\-Generate\-S\-W\-Interrupt}}
+\index{E\-X\-T\-I\-\_\-\-Generate\-S\-W\-Interrupt@{E\-X\-T\-I\-\_\-\-Generate\-S\-W\-Interrupt}!EXTI@{E\-X\-T\-I}}
+\subsubsection[{E\-X\-T\-I\-\_\-\-Generate\-S\-W\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}void E\-X\-T\-I\-\_\-\-Generate\-S\-W\-Interrupt (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{E\-X\-T\-I\-\_\-\-Line}
+\end{DoxyParamCaption}
+)}}\label{group___e_x_t_i_ga897e8ea59f40a19e047fb9994876fc9b}
+
+
+Generates a Software interrupt on selected E\-X\-T\-I line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E\-X\-T\-I\-\_\-\-Line,\-:} & specifies the E\-X\-T\-I line on which the software interrupt will be generated. This parameter can be any combination of E\-X\-T\-I\-\_\-\-Linex where x can be (0..22) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 190 of file stm32f4xx\-\_\-exti.\-c.
+
+\hypertarget{group___e_x_t_i_ga0ce06e6b312592df149800d63218cffa}{\index{E\-X\-T\-I@{E\-X\-T\-I}!E\-X\-T\-I\-\_\-\-Get\-Flag\-Status@{E\-X\-T\-I\-\_\-\-Get\-Flag\-Status}}
+\index{E\-X\-T\-I\-\_\-\-Get\-Flag\-Status@{E\-X\-T\-I\-\_\-\-Get\-Flag\-Status}!EXTI@{E\-X\-T\-I}}
+\subsubsection[{E\-X\-T\-I\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status E\-X\-T\-I\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{E\-X\-T\-I\-\_\-\-Line}
+\end{DoxyParamCaption}
+)}}\label{group___e_x_t_i_ga0ce06e6b312592df149800d63218cffa}
+
+
+Checks whether the specified E\-X\-T\-I line flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E\-X\-T\-I\-\_\-\-Line,\-:} & specifies the E\-X\-T\-I line flag to check. This parameter can be E\-X\-T\-I\-\_\-\-Linex where x can be(0..22) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of E\-X\-T\-I\-\_\-\-Line (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 220 of file stm32f4xx\-\_\-exti.\-c.
+
+\hypertarget{group___e_x_t_i_gaf7b51519062ae42fd27ee689cab364aa}{\index{E\-X\-T\-I@{E\-X\-T\-I}!E\-X\-T\-I\-\_\-\-Get\-I\-T\-Status@{E\-X\-T\-I\-\_\-\-Get\-I\-T\-Status}}
+\index{E\-X\-T\-I\-\_\-\-Get\-I\-T\-Status@{E\-X\-T\-I\-\_\-\-Get\-I\-T\-Status}!EXTI@{E\-X\-T\-I}}
+\subsubsection[{E\-X\-T\-I\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status E\-X\-T\-I\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{E\-X\-T\-I\-\_\-\-Line}
+\end{DoxyParamCaption}
+)}}\label{group___e_x_t_i_gaf7b51519062ae42fd27ee689cab364aa}
+
+
+Checks whether the specified E\-X\-T\-I line is asserted or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E\-X\-T\-I\-\_\-\-Line,\-:} & specifies the E\-X\-T\-I line to check. This parameter can be E\-X\-T\-I\-\_\-\-Linex where x can be(0..22) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of E\-X\-T\-I\-\_\-\-Line (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 257 of file stm32f4xx\-\_\-exti.\-c.
+
+\hypertarget{group___e_x_t_i_ga8c9ce6352a3a2dfc8fc9287cb24c6501}{\index{E\-X\-T\-I@{E\-X\-T\-I}!E\-X\-T\-I\-\_\-\-Init@{E\-X\-T\-I\-\_\-\-Init}}
+\index{E\-X\-T\-I\-\_\-\-Init@{E\-X\-T\-I\-\_\-\-Init}!EXTI@{E\-X\-T\-I}}
+\subsubsection[{E\-X\-T\-I\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void E\-X\-T\-I\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-X\-T\-I\-\_\-\-Init\-Type\-Def} $\ast$}]{E\-X\-T\-I\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___e_x_t_i_ga8c9ce6352a3a2dfc8fc9287cb24c6501}
+
+
+Initializes the E\-X\-T\-I peripheral according to the specified parameters in the E\-X\-T\-I\-\_\-\-Init\-Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E\-X\-T\-I\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_e_x_t_i___init_type_def}{E\-X\-T\-I\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the E\-X\-T\-I peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 119 of file stm32f4xx\-\_\-exti.\-c.
+
+\hypertarget{group___e_x_t_i_ga86b9e662d18a2f829999cfb26aa7ca20}{\index{E\-X\-T\-I@{E\-X\-T\-I}!E\-X\-T\-I\-\_\-\-Struct\-Init@{E\-X\-T\-I\-\_\-\-Struct\-Init}}
+\index{E\-X\-T\-I\-\_\-\-Struct\-Init@{E\-X\-T\-I\-\_\-\-Struct\-Init}!EXTI@{E\-X\-T\-I}}
+\subsubsection[{E\-X\-T\-I\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void E\-X\-T\-I\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-X\-T\-I\-\_\-\-Init\-Type\-Def} $\ast$}]{E\-X\-T\-I\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___e_x_t_i_ga86b9e662d18a2f829999cfb26aa7ca20}
+
+
+Fills each E\-X\-T\-I\-\_\-\-Init\-Struct member with its reset value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E\-X\-T\-I\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_e_x_t_i___init_type_def}{E\-X\-T\-I\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 175 of file stm32f4xx\-\_\-exti.\-c.
+

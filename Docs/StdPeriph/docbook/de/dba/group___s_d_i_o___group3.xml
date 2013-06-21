@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dba/group___s_d_i_o___group3">
+    <title>Data path state machine (DPSM) management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Data path state machine (DPSM) management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+              Data path state machine (DPSM) management functions
+ ===============================================================================  
+
+  This section provide functions allowing to program and read the Data path 
+  state machine (DPSM).</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dba/group___s_d_i_o___group3_1gad65d896ae919683585bda44a1e2afae4">SDIO_DataConfig</link> (
+<link linkend="de/dbe/struct_s_d_i_o___data_init_type_def">SDIO_DataInitTypeDef</link> * SDIO_DataInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dba/group___s_d_i_o___group3_1gaa83209c09e921521aca2587fb5b22ea2">SDIO_DataStructInit</link> (
+<link linkend="de/dbe/struct_s_d_i_o___data_init_type_def">SDIO_DataInitTypeDef</link> * SDIO_DataInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="de/dba/group___s_d_i_o___group3_1ga7a28aaa2c25a9a5a8db1f49b0e8c9d0a">SDIO_GetDataCounter</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="de/dba/group___s_d_i_o___group3_1ga4e8ac755ef3c31ecd4ed2708df19187e">SDIO_ReadData</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dba/group___s_d_i_o___group3_1ga361008b5252aa33b5f2b5823ee3d7240">SDIO_WriteData</link> (
+uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="de/dba/group___s_d_i_o___group3_1ga9a3343983a2d68b5164a1c89797d2dd6">SDIO_GetFIFOCount</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="de/dba/group___s_d_i_o___group3_1gad65d896ae919683585bda44a1e2afae4">
+                <title>void SDIO_DataConfig (SDIO_DataInitTypeDef *SDIO_DataInitStruct)</title> <emphasis>Initializes the SDIO data path according to the specified 
+        parameters in the SDIO_DataInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_DataInitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="de/dbe/struct_s_d_i_o___data_init_type_def">SDIO_DataInitTypeDef</link> structure that contains the configuration information for the SDIO command. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dba/group___s_d_i_o___group3_1gaa83209c09e921521aca2587fb5b22ea2">
+                <title>void SDIO_DataStructInit (SDIO_DataInitTypeDef *SDIO_DataInitStruct)</title> <emphasis>Fills each SDIO_DataInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_DataInitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="de/dbe/struct_s_d_i_o___data_init_type_def">SDIO_DataInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dba/group___s_d_i_o___group3_1ga7a28aaa2c25a9a5a8db1f49b0e8c9d0a">
+                <title>uint32_t SDIO_GetDataCounter (void)</title> <emphasis>Returns number of remaining data bytes to be transferred.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Number</entry>
+                                <entry>
+<para>of remaining data bytes to be transferred </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dba/group___s_d_i_o___group3_1ga4e8ac755ef3c31ecd4ed2708df19187e">
+                <title>uint32_t SDIO_ReadData (void)</title> <emphasis>Read one data word from Rx FIFO.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Data</entry>
+                                <entry>
+<para>received </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dba/group___s_d_i_o___group3_1ga361008b5252aa33b5f2b5823ee3d7240">
+                <title>void SDIO_WriteData (uint32_t Data)</title> <emphasis>Write one data word to Tx FIFO.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>32-bit data word to write. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/dba/group___s_d_i_o___group3_1ga9a3343983a2d68b5164a1c89797d2dd6">
+                <title>uint32_t SDIO_GetFIFOCount (void)</title> <emphasis>Returns the number of words left to be written to or read from FIFO.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Remaining</entry>
+                                <entry>
+<para>number of words. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

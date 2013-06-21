@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d7a/group___f_s_m_c___bus___turn__around___duration">
+    <title>FSMC_Bus_Turn_around_Duration</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d7a/group___f_s_m_c___bus___turn__around___duration_1ga9ec626f30679a18af91bf48c52d9260d">IS_FSMC_TURNAROUND_TIME</link> ((TIME) &lt;= 0xF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

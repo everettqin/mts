@@ -1,0 +1,766 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d56/group___a_d_c___group6">
+    <title>Injected channels Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Injected channels Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                     Injected channels Configuration functions
+ ===============================================================================  
+
+  This section provide functions allowing to configure the ADC Injected channels,
+  it is composed of 2 sub sections : 
+    
+  1. Configuration functions for Injected channels: This subsection provides 
+     functions allowing to configure the ADC injected channels :    
+    - Configure the rank in the injected group sequencer for each channel
+    - Configure the sampling time for each channel    
+    - Activate the Auto injected Mode  
+    - Activate the Discontinuous Mode 
+    - scan mode activation  
+    - External/software trigger source   
+    - External trigger edge 
+    - injected channels sequencer.
+    
+   2. Get the Specified Injected channel conversion data: This subsection 
+      provides an important function in the ADC peripheral since it returns the 
+      converted data of the specific injected channel.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d56/group___a_d_c___group6_1gae2b44bff080184e1cf6f2cb6b9bb3e59">ADC_InjectedChannelConfig</link> (
+ADC_TypeDef * ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d56/group___a_d_c___group6_1ga24eba90bc3ee955e07659a605011710d">ADC_InjectedSequencerLengthConfig</link> (
+ADC_TypeDef * ADCx, uint8_t Length)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d56/group___a_d_c___group6_1ga07a942613088ab3ecfc3d97a20475920">ADC_SetInjectedOffset</link> (
+ADC_TypeDef * ADCx, uint8_t ADC_InjectedChannel, uint16_t Offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d56/group___a_d_c___group6_1gafc02ce1e84e96b692adf085f61a0bca6">ADC_ExternalTrigInjectedConvConfig</link> (
+ADC_TypeDef * ADCx, uint32_t ADC_ExternalTrigInjecConv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d56/group___a_d_c___group6_1ga62bea56579f04374fbe830d9e55e6fb0">ADC_ExternalTrigInjectedConvEdgeConfig</link> (
+ADC_TypeDef * ADCx, uint32_t ADC_ExternalTrigInjecConvEdge)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d56/group___a_d_c___group6_1ga79b2f6c3c77925b35495f2db228895de">ADC_SoftwareStartInjectedConv</link> (
+ADC_TypeDef * ADCx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d7/d56/group___a_d_c___group6_1ga8765f8835b8cfed13dce3d8d71767dcc">ADC_GetSoftwareStartInjectedConvCmdStatus</link> (
+ADC_TypeDef * ADCx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d56/group___a_d_c___group6_1ga1ff9c3b8e4bbdd2addfd227f1a506a66">ADC_AutoInjectedConvCmd</link> (
+ADC_TypeDef * ADCx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d56/group___a_d_c___group6_1ga0b583b94183fa4ff287177b9ee808092">ADC_InjectedDiscModeCmd</link> (
+ADC_TypeDef * ADCx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d7/d56/group___a_d_c___group6_1ga1dea5ed24571a2e0ce4cbd41c9c1ec46">ADC_GetInjectedConversionValue</link> (
+ADC_TypeDef * ADCx, uint8_t ADC_InjectedChannel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d7/d56/group___a_d_c___group6_1gae2b44bff080184e1cf6f2cb6b9bb3e59">
+                <title>void ADC_InjectedChannelConfig (ADC_TypeDef *ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime)</title> <emphasis>Configures for the selected ADC injected channel its corresponding
+        rank in the sequencer and its sample time.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_Channel, :</entry>
+                                <entry>
+<para>the ADC channel to configure. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_Channel_0: ADC Channel0 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_1: ADC Channel1 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_2: ADC Channel2 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_3: ADC Channel3 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_4: ADC Channel4 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_5: ADC Channel5 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_6: ADC Channel6 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_7: ADC Channel7 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_8: ADC Channel8 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_9: ADC Channel9 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_10: ADC Channel10 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_11: ADC Channel11 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_12: ADC Channel12 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_13: ADC Channel13 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_14: ADC Channel14 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_15: ADC Channel15 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_16: ADC Channel16 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_17: ADC Channel17 selected </para>
+</listitem>
+<listitem>
+<para>ADC_Channel_18: ADC Channel18 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Rank, :</entry>
+                                <entry>
+<para>The rank in the injected group sequencer. This parameter must be between 1 to 4. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_SampleTime, :</entry>
+                                <entry>
+<para>The sample time value to be set for the selected channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_SampleTime_3Cycles: Sample time equal to 3 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_15Cycles: Sample time equal to 15 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_28Cycles: Sample time equal to 28 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_56Cycles: Sample time equal to 56 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_84Cycles: Sample time equal to 84 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_112Cycles: Sample time equal to 112 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_144Cycles: Sample time equal to 144 cycles </para>
+</listitem>
+<listitem>
+<para>ADC_SampleTime_480Cycles: Sample time equal to 480 cycles </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d56/group___a_d_c___group6_1ga24eba90bc3ee955e07659a605011710d">
+                <title>void ADC_InjectedSequencerLengthConfig (ADC_TypeDef *ADCx, uint8_t Length)</title> <emphasis>Configures the sequencer length for injected channels.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Length, :</entry>
+                                <entry>
+<para>The sequencer length. This parameter must be a number between 1 to 4. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d56/group___a_d_c___group6_1ga07a942613088ab3ecfc3d97a20475920">
+                <title>void ADC_SetInjectedOffset (ADC_TypeDef *ADCx, uint8_t ADC_InjectedChannel, uint16_t Offset)</title> <emphasis>Set the injected channels conversion value offset.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_InjectedChannel, :</entry>
+                                <entry>
+<para>the ADC injected channel to set its offset. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_InjectedChannel_1: Injected Channel1 selected </para>
+</listitem>
+<listitem>
+<para>ADC_InjectedChannel_2: Injected Channel2 selected </para>
+</listitem>
+<listitem>
+<para>ADC_InjectedChannel_3: Injected Channel3 selected </para>
+</listitem>
+<listitem>
+<para>ADC_InjectedChannel_4: Injected Channel4 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Offset, :</entry>
+                                <entry>
+<para>the offset value for the selected ADC injected channel This parameter must be a 12bit value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d56/group___a_d_c___group6_1gafc02ce1e84e96b692adf085f61a0bca6">
+                <title>void ADC_ExternalTrigInjectedConvConfig (ADC_TypeDef *ADCx, uint32_t ADC_ExternalTrigInjecConv)</title> <emphasis>Configures the ADCx external trigger for injected channels conversion.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_ExternalTrigInjecConv, :</entry>
+                                <entry>
+<para>specifies the ADC trigger to start injected conversion. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T1_CC4: Timer1 capture compare4 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T1_TRGO: Timer1 TRGO event selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T2_CC1: Timer2 capture compare1 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T2_TRGO: Timer2 TRGO event selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T3_CC2: Timer3 capture compare2 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T3_CC4: Timer3 capture compare4 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T4_CC1: Timer4 capture compare1 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T4_CC2: Timer4 capture compare2 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T4_CC3: Timer4 capture compare3 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T4_TRGO: Timer4 TRGO event selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T5_CC4: Timer5 capture compare4 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T5_TRGO: Timer5 TRGO event selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T8_CC2: Timer8 capture compare2 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T8_CC3: Timer8 capture compare3 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_T8_CC4: Timer8 capture compare4 selected </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConv_Ext_IT15: External interrupt line 15 event selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d56/group___a_d_c___group6_1ga62bea56579f04374fbe830d9e55e6fb0">
+                <title>void ADC_ExternalTrigInjectedConvEdgeConfig (ADC_TypeDef *ADCx, uint32_t ADC_ExternalTrigInjecConvEdge)</title> <emphasis>Configures the ADCx external trigger edge for injected channels conversion.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_ExternalTrigInjecConvEdge, :</entry>
+                                <entry>
+<para>specifies the ADC external trigger edge to start injected conversion. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_ExternalTrigInjecConvEdge_None: external trigger disabled for injected conversion </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConvEdge_Rising: detection on rising edge </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConvEdge_Falling: detection on falling edge </para>
+</listitem>
+<listitem>
+<para>ADC_ExternalTrigInjecConvEdge_RisingFalling: detection on both rising and falling edge </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d56/group___a_d_c___group6_1ga79b2f6c3c77925b35495f2db228895de">
+                <title>void ADC_SoftwareStartInjectedConv (ADC_TypeDef *ADCx)</title> <emphasis>Enables the selected ADC software start conversion of the injected channels.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d56/group___a_d_c___group6_1ga8765f8835b8cfed13dce3d8d71767dcc">
+                <title>FlagStatus ADC_GetSoftwareStartInjectedConvCmdStatus (ADC_TypeDef *ADCx)</title> <emphasis>Gets the selected ADC Software start injected conversion Status.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of ADC software start injected conversion (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d56/group___a_d_c___group6_1ga1ff9c3b8e4bbdd2addfd227f1a506a66">
+                <title>void ADC_AutoInjectedConvCmd (ADC_TypeDef *ADCx, FunctionalState NewState)</title> <emphasis>Enables or disables the selected ADC automatic injected group 
+        conversion after regular one.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected ADC auto injected conversion This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d56/group___a_d_c___group6_1ga0b583b94183fa4ff287177b9ee808092">
+                <title>void ADC_InjectedDiscModeCmd (ADC_TypeDef *ADCx, FunctionalState NewState)</title> <emphasis>Enables or disables the discontinuous mode for injected group 
+        channel for the specified ADC.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the selected ADC discontinuous mode on injected group channel. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d56/group___a_d_c___group6_1ga1dea5ed24571a2e0ce4cbd41c9c1ec46">
+                <title>uint16_t ADC_GetInjectedConversionValue (ADC_TypeDef *ADCx, uint8_t ADC_InjectedChannel)</title> <emphasis>Returns the ADC injected channel conversion result.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ADCx, :</entry>
+                                <entry>
+<para>where x can be 1, 2 or 3 to select the ADC peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ADC_InjectedChannel, :</entry>
+                                <entry>
+<para>the converted ADC injected channel. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>ADC_InjectedChannel_1: Injected Channel1 selected </para>
+</listitem>
+<listitem>
+<para>ADC_InjectedChannel_2: Injected Channel2 selected </para>
+</listitem>
+<listitem>
+<para>ADC_InjectedChannel_3: Injected Channel3 selected </para>
+</listitem>
+<listitem>
+<para>ADC_InjectedChannel_4: Injected Channel4 selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>Data conversion value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

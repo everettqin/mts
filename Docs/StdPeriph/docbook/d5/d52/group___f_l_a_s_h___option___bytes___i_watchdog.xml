@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog">
+    <title>FLASH_Option_Bytes_IWatchdog</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1ga5a357e232c955444c3f2ccb9a937ffce">OB_IWDG_SW</link> ((uint8_t)0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1gadfcbfa963d79c339ec8e2d5a7734e47a">OB_IWDG_HW</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1gaf2871652c08e76499d9449be6556f12c">IS_OB_IWDG_SOURCE</link> (((SOURCE) == <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1ga5a357e232c955444c3f2ccb9a937ffce">OB_IWDG_SW</link>) || ((SOURCE) == <link linkend="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1gadfcbfa963d79c339ec8e2d5a7734e47a">OB_IWDG_HW</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1ga5a357e232c955444c3f2ccb9a937ffce">
+                <title>#define OB_IWDG_SW</title>                
+<para>Software IWDG selected </para>
+
+                <para>Definition at line 170 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d5/d52/group___f_l_a_s_h___option___bytes___i_watchdog_1gadfcbfa963d79c339ec8e2d5a7734e47a">
+                <title>#define OB_IWDG_HW</title>                
+<para>Hardware IWDG selected </para>
+
+                <para>Definition at line 171 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

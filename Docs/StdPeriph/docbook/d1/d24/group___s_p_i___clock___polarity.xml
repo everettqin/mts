@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d24/group___s_p_i___clock___polarity">
+    <title>SPI_Clock_Polarity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d24/group___s_p_i___clock___polarity_1ga3dbc0234c4b4e7c37137e7c189f3c085">SPI_CPOL_Low</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d24/group___s_p_i___clock___polarity_1ga4431f2edf42f8298d5bbe693351edbb0">SPI_CPOL_High</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d24/group___s_p_i___clock___polarity_1gafc1cc5b1ff7e801a409a7a1e6047acf9">IS_SPI_CPOL</link> (((CPOL) == SPI_CPOL_Low) || \
+                           ((CPOL) == SPI_CPOL_High))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

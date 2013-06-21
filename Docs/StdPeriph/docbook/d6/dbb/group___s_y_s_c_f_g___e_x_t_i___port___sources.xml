@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources">
+    <title>SYSCFG_EXTI_Port_Sources</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga66aab57f683213ff74751390162c425d">EXTI_PortSourceGPIOA</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga16ab9db3a6cfad6e0204daeea375fadf">EXTI_PortSourceGPIOB</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga827bef5afe2be4ac3db7f8f1fc538d6e">EXTI_PortSourceGPIOC</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gaa46454cf1df3cc5c1dfceb460e5345d8">EXTI_PortSourceGPIOD</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gab9d4c8777a3f5c9cc90ae844b1c2bbfa">EXTI_PortSourceGPIOE</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga942c607129ec8fa9397417236be932d1">EXTI_PortSourceGPIOF</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gab21c24889233b24373a471222e85b950">EXTI_PortSourceGPIOG</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gaf7fb8bbfc4d796b92df64e41a2c44dc6">EXTI_PortSourceGPIOH</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga9f57956fd533afa9b5d323601842c74e">EXTI_PortSourceGPIOI</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gaec9c6d2a4276fc14c4e147631a0efe92">IS_EXTI_PORT_SOURCE</link> (((PORTSOURCE) == EXTI_PortSourceGPIOA) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOB) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOC) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOD) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOE) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOF) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOG) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOH) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOI))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

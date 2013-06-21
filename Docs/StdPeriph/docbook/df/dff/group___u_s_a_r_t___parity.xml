@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dff/group___u_s_a_r_t___parity">
+    <title>USART_Parity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dff/group___u_s_a_r_t___parity_1gab9deebcb0a859360dfec85074abaa3aa">USART_Parity_No</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dff/group___u_s_a_r_t___parity_1ga62193247d36fffe982e159c1f246271e">USART_Parity_Even</link> ((uint16_t)0x0400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dff/group___u_s_a_r_t___parity_1gafcd68937a6b4b8ffff8f96e68d6a5ecd">USART_Parity_Odd</link> ((uint16_t)0x0600)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dff/group___u_s_a_r_t___parity_1gaa87b2e338e0ccc42887d3c56901bee87">IS_USART_PARITY</link> (((PARITY) == USART_Parity_No) || \
+                                 ((PARITY) == USART_Parity_Even) || \
+                                 ((PARITY) == USART_Parity_Odd))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

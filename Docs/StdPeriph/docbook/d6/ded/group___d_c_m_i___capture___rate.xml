@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/ded/group___d_c_m_i___capture___rate">
+    <title>DCMI_Capture_Rate</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gac6fe1a56c081942ad0398e727280f4b5">DCMI_CaptureRate_All_Frame</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/ded/group___d_c_m_i___capture___rate_1ga9f89cbc2c2af326e029327603b2b5e78">DCMI_CaptureRate_1of2_Frame</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gab1cffa0fc41d2dabe1320370060434f2">DCMI_CaptureRate_1of4_Frame</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gafde28d3b8bcdb11b6c1afb3d3312ccb5">IS_DCMI_CAPTURE_RATE</link> (((RATE) == <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gac6fe1a56c081942ad0398e727280f4b5">DCMI_CaptureRate_All_Frame</link>) || \
+                                    ((RATE) == <link linkend="d6/ded/group___d_c_m_i___capture___rate_1ga9f89cbc2c2af326e029327603b2b5e78">DCMI_CaptureRate_1of2_Frame</link>) ||\
+                                    ((RATE) == <link linkend="d6/ded/group___d_c_m_i___capture___rate_1gab1cffa0fc41d2dabe1320370060434f2">DCMI_CaptureRate_1of4_Frame</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d6/ded/group___d_c_m_i___capture___rate_1gac6fe1a56c081942ad0398e727280f4b5">
+                <title>#define DCMI_CaptureRate_All_Frame</title>                
+<para>All frames are captured </para>
+
+                <para>Definition at line 172 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d6/ded/group___d_c_m_i___capture___rate_1ga9f89cbc2c2af326e029327603b2b5e78">
+                <title>#define DCMI_CaptureRate_1of2_Frame</title>                
+<para>Every alternate frame captured </para>
+
+                <para>Definition at line 173 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d6/ded/group___d_c_m_i___capture___rate_1gab1cffa0fc41d2dabe1320370060434f2">
+                <title>#define DCMI_CaptureRate_1of4_Frame</title>                
+<para>One frame in 4 frames captured </para>
+
+                <para>Definition at line 174 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

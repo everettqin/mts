@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dcd/group___m_i_s_c___system___low___power">
+    <title>MISC_System_Low_Power</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dcd/group___m_i_s_c___system___low___power_1ga10748d2b2875afd122f6476864ad6cae">NVIC_LP_SEVONPEND</link> ((uint8_t)0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dcd/group___m_i_s_c___system___low___power_1gaeec2d10922fa9ec5e65398667b303253">NVIC_LP_SLEEPDEEP</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dcd/group___m_i_s_c___system___low___power_1ga368dc13a9c762a307c07cfa2e3ef59ad">NVIC_LP_SLEEPONEXIT</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/dcd/group___m_i_s_c___system___low___power_1ga985896f03bc1d7b3da17a212f1bc3de9">IS_NVIC_LP</link> (((LP) == NVIC_LP_SEVONPEND) || \
+                        ((LP) == NVIC_LP_SLEEPDEEP) || \
+                        ((LP) == NVIC_LP_SLEEPONEXIT))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

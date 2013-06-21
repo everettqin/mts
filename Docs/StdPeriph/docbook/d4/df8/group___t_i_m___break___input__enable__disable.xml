@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/df8/group___t_i_m___break___input__enable__disable">
+    <title>TIM_Break_Input_enable_disable</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/df8/group___t_i_m___break___input__enable__disable_1gae7fbc11ac043454b2a880bffe98fdb8c">TIM_Break_Enable</link> ((uint16_t)0x1000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/df8/group___t_i_m___break___input__enable__disable_1ga31ba16dd70ad4d99adc911f7bf6662e5">TIM_Break_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/df8/group___t_i_m___break___input__enable__disable_1ga29dd5484bdc69a467387bd8059b69f0e">IS_TIM_BREAK_STATE</link> (((STATE) == TIM_Break_Enable) || \
+                                   ((STATE) == TIM_Break_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

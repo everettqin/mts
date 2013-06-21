@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d75/group___h_a_s_h___data___type">
+    <title>HASH_Data_Type</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d75/group___h_a_s_h___data___type_1ga1eb75a90b73558a3ed936aabc518389f">HASH_DataType_32b</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d75/group___h_a_s_h___data___type_1ga07a0a06c7076fab096f1cc4ae66bcad8">HASH_DataType_16b</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d75/group___h_a_s_h___data___type_1ga82d37dec3af7193f8e665615108011a9">HASH_DataType_8b</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d75/group___h_a_s_h___data___type_1ga52034893dfa756397af1d681960be92f">HASH_DataType_1b</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d75/group___h_a_s_h___data___type_1ga51d13da6165bc0e2075f3653881aa89a">IS_HASH_DATATYPE</link> (((DATATYPE) == HASH_DataType_32b)|| \
+                                    ((DATATYPE) == HASH_DataType_16b)|| \
+                                    ((DATATYPE) == HASH_DataType_8b)|| \
+                                    ((DATATYPE) == HASH_DataType_1b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

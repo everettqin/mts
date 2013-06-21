@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d77/group___c_a_n__clock__prescaler">
+    <title>CAN_clock_prescaler</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d77/group___c_a_n__clock__prescaler_1gacde6b8be6fe083a6302fc183b5ac1055">IS_CAN_PRESCALER</link> (((PRESCALER) &gt;= 1) &amp;&amp; ((PRESCALER) &lt;= 1024))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

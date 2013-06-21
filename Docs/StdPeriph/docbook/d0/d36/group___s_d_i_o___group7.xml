@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d36/group___s_d_i_o___group7">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                       Interrupts and flags management functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d36/group___s_d_i_o___group7_1ga208f51237ef43288735829dbaed37f00">SDIO_ITConfig</link> (
+uint32_t SDIO_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d0/d36/group___s_d_i_o___group7_1ga644514b4b3c95c5c4326d99cd166f6f9">SDIO_GetFlagStatus</link> (
+uint32_t SDIO_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d36/group___s_d_i_o___group7_1ga7aff4efdeb528229135f9f285e53518a">SDIO_ClearFlag</link> (
+uint32_t SDIO_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d0/d36/group___s_d_i_o___group7_1ga2d64af1f3df0f99cb518f9a89bbd02ac">SDIO_GetITStatus</link> (
+uint32_t SDIO_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d36/group___s_d_i_o___group7_1ga048e07fd86321cd01b2a22c071c3149b">SDIO_ClearITPendingBit</link> (
+uint32_t SDIO_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d0/d36/group___s_d_i_o___group7_1ga208f51237ef43288735829dbaed37f00">
+                <title>void SDIO_ITConfig (uint32_t SDIO_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the SDIO interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_IT, :</entry>
+                                <entry>
+<para>specifies the SDIO interrupt sources to be enabled or disabled. This parameter can be one or a combination of the following values: <itemizedlist>
+<listitem>
+<para>SDIO_IT_CCRCFAIL: Command response received (CRC check failed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DCRCFAIL: Data block sent/received (CRC check failed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CTIMEOUT: Command response timeout interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DTIMEOUT: Data timeout interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXUNDERR: Transmit FIFO underrun error interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXOVERR: Received FIFO overrun error interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CMDREND: Command response received (CRC check passed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CMDSENT: Command sent (no response required) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DATAEND: Data end (data counter, SDIDCOUNT, is zero) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_STBITERR: Start bit not detected on all data signals in wide bus mode interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DBCKEND: Data block sent/received (CRC check passed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CMDACT: Command transfer in progress interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXACT: Data transmit in progress interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXACT: Data receive in progress interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXFIFOHE: Transmit FIFO Half Empty interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXFIFOHF: Receive FIFO Half Full interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXFIFOF: Transmit FIFO full interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXFIFOF: Receive FIFO full interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXFIFOE: Transmit FIFO empty interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXFIFOE: Receive FIFO empty interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXDAVL: Data available in transmit FIFO interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXDAVL: Data available in receive FIFO interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_SDIOIT: SD I/O interrupt received interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified SDIO interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d36/group___s_d_i_o___group7_1ga644514b4b3c95c5c4326d99cd166f6f9">
+                <title>FlagStatus SDIO_GetFlagStatus (uint32_t SDIO_FLAG)</title> <emphasis>Checks whether the specified SDIO flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SDIO_FLAG_CCRCFAIL: Command response received (CRC check failed) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_DCRCFAIL: Data block sent/received (CRC check failed) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_CTIMEOUT: Command response timeout </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_DTIMEOUT: Data timeout </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_TXUNDERR: Transmit FIFO underrun error </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_RXOVERR: Received FIFO overrun error </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_CMDREND: Command response received (CRC check passed) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_CMDSENT: Command sent (no response required) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_DATAEND: Data end (data counter, SDIDCOUNT, is zero) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_STBITERR: Start bit not detected on all data signals in wide bus mode. </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_DBCKEND: Data block sent/received (CRC check passed) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_CMDACT: Command transfer in progress </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_TXACT: Data transmit in progress </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_RXACT: Data receive in progress </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_TXFIFOHE: Transmit FIFO Half Empty </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_RXFIFOHF: Receive FIFO Half Full </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_TXFIFOF: Transmit FIFO full </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_RXFIFOF: Receive FIFO full </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_TXFIFOE: Transmit FIFO empty </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_RXFIFOE: Receive FIFO empty </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_TXDAVL: Data available in transmit FIFO </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_RXDAVL: Data available in receive FIFO </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_SDIOIT: SD I/O interrupt received </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_CEATAEND: CE-ATA command completion signal received for CMD61 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of SDIO_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d36/group___s_d_i_o___group7_1ga7aff4efdeb528229135f9f285e53518a">
+                <title>void SDIO_ClearFlag (uint32_t SDIO_FLAG)</title> <emphasis>Clears the SDIO&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be one or a combination of the following values: <itemizedlist>
+<listitem>
+<para>SDIO_FLAG_CCRCFAIL: Command response received (CRC check failed) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_DCRCFAIL: Data block sent/received (CRC check failed) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_CTIMEOUT: Command response timeout </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_DTIMEOUT: Data timeout </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_TXUNDERR: Transmit FIFO underrun error </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_RXOVERR: Received FIFO overrun error </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_CMDREND: Command response received (CRC check passed) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_CMDSENT: Command sent (no response required) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_DATAEND: Data end (data counter, SDIDCOUNT, is zero) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_STBITERR: Start bit not detected on all data signals in wide bus mode </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_DBCKEND: Data block sent/received (CRC check passed) </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_SDIOIT: SD I/O interrupt received </para>
+</listitem>
+<listitem>
+<para>SDIO_FLAG_CEATAEND: CE-ATA command completion signal received for CMD61 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d36/group___s_d_i_o___group7_1ga2d64af1f3df0f99cb518f9a89bbd02ac">
+                <title>ITStatus SDIO_GetITStatus (uint32_t SDIO_IT)</title> <emphasis>Checks whether the specified SDIO interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_IT, :</entry>
+                                <entry>
+<para>specifies the SDIO interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SDIO_IT_CCRCFAIL: Command response received (CRC check failed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DCRCFAIL: Data block sent/received (CRC check failed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CTIMEOUT: Command response timeout interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DTIMEOUT: Data timeout interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXUNDERR: Transmit FIFO underrun error interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXOVERR: Received FIFO overrun error interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CMDREND: Command response received (CRC check passed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CMDSENT: Command sent (no response required) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DATAEND: Data end (data counter, SDIDCOUNT, is zero) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_STBITERR: Start bit not detected on all data signals in wide bus mode interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DBCKEND: Data block sent/received (CRC check passed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CMDACT: Command transfer in progress interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXACT: Data transmit in progress interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXACT: Data receive in progress interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXFIFOHE: Transmit FIFO Half Empty interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXFIFOHF: Receive FIFO Half Full interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXFIFOF: Transmit FIFO full interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXFIFOF: Receive FIFO full interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXFIFOE: Transmit FIFO empty interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXFIFOE: Receive FIFO empty interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXDAVL: Data available in transmit FIFO interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXDAVL: Data available in receive FIFO interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_SDIOIT: SD I/O interrupt received interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of SDIO_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d36/group___s_d_i_o___group7_1ga048e07fd86321cd01b2a22c071c3149b">
+                <title>void SDIO_ClearITPendingBit (uint32_t SDIO_IT)</title> <emphasis>Clears the SDIO&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_IT, :</entry>
+                                <entry>
+<para>specifies the interrupt pending bit to clear. This parameter can be one or a combination of the following values: <itemizedlist>
+<listitem>
+<para>SDIO_IT_CCRCFAIL: Command response received (CRC check failed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DCRCFAIL: Data block sent/received (CRC check failed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CTIMEOUT: Command response timeout interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DTIMEOUT: Data timeout interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_TXUNDERR: Transmit FIFO underrun error interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_RXOVERR: Received FIFO overrun error interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CMDREND: Command response received (CRC check passed) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CMDSENT: Command sent (no response required) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_DATAEND: Data end (data counter, SDIO_DCOUNT, is zero) interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_STBITERR: Start bit not detected on all data signals in wide bus mode interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_SDIOIT: SD I/O interrupt received interrupt </para>
+</listitem>
+<listitem>
+<para>SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

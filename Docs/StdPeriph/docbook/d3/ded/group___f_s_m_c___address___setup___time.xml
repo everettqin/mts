@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/ded/group___f_s_m_c___address___setup___time">
+    <title>FSMC_Address_Setup_Time</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/ded/group___f_s_m_c___address___setup___time_1ga8b77d090338011abc1be7f4a420e2d8f">IS_FSMC_ADDRESS_SETUP_TIME</link> ((TIME) &lt;= 0xF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

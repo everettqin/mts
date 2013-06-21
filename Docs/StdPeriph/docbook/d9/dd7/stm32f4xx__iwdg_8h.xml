@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dd7/stm32f4xx__iwdg_8h">
+    <title>stm32f4xx_iwdg.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dcc/group___i_w_d_g___write_access_1ga86f4b926f4351e19ea069f98c2e65f91">IWDG_WriteAccess_Enable</link> ((uint16_t)0x5555)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dcc/group___i_w_d_g___write_access_1ga4b395cf5b2d7ab18fc71a5f779f758cc">IWDG_WriteAccess_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dcc/group___i_w_d_g___write_access_1gaa89c93332f5977175f8d416b7492de18">IS_IWDG_WRITE_ACCESS</link> (((ACCESS) == IWDG_WriteAccess_Enable) || \
+                                      ((ACCESS) == IWDG_WriteAccess_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1ga82a058c196d5a9cd7ea2f2202b394ba0">IWDG_Prescaler_4</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1ga59763b9a127c67adf5d11474188996a1">IWDG_Prescaler_8</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1gafa81d30511ff5ec74bb38ed71f5bb66e">IWDG_Prescaler_16</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1gaa8b091b6e4102513b1e3a1c4eb6756ba">IWDG_Prescaler_32</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1ga7ea813c73ae0acb40acb60e7d3956910">IWDG_Prescaler_64</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1gaea6bf96c2fd5a6f3b9574e7898096641">IWDG_Prescaler_128</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1ga7d6e918748185639049644c970db2b43">IWDG_Prescaler_256</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da3/group___i_w_d_g__prescaler_1gab1e0695c1a22840d5be7c7fad283f4ba">IS_IWDG_PRESCALER</link> (((PRESCALER) == IWDG_Prescaler_4)  || \
+                                      ((PRESCALER) == IWDG_Prescaler_8)  || \
+                                      ((PRESCALER) == IWDG_Prescaler_16) || \
+                                      ((PRESCALER) == IWDG_Prescaler_32) || \
+                                      ((PRESCALER) == IWDG_Prescaler_64) || \
+                                      ((PRESCALER) == IWDG_Prescaler_128)|| \
+                                      ((PRESCALER) == IWDG_Prescaler_256))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dc0/group___i_w_d_g___flag_1gae20afcf399fad1534e79a8d30ea86c9c">IWDG_FLAG_PVU</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dc0/group___i_w_d_g___flag_1ga3731bf2711c234ffe5b405fb6634ebca">IWDG_FLAG_RVU</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dc0/group___i_w_d_g___flag_1ga5be9ae9ba267cf09a00523ef3e219293">IS_IWDG_FLAG</link> (((FLAG) == IWDG_FLAG_PVU) || ((FLAG) == IWDG_FLAG_RVU))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dc0/group___i_w_d_g___flag_1ga7c319e96bded8e3c38c6a42a1b335c68">IS_IWDG_RELOAD</link> ((RELOAD) &lt;= 0xFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1gae466681e5bdc11b353c508b89d75ca05">IWDG_WriteAccessCmd</link> (
+uint16_t IWDG_WriteAccess)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1ga4fa7f1cd690533a35ad9e4729c0450a3">IWDG_SetPrescaler</link> (
+uint8_t IWDG_Prescaler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1gae2a14752a0431f23cb80cebf202ac365">IWDG_SetReload</link> (
+uint16_t Reload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1ga7147ebabdc3fef97f532b171a4e70d49">IWDG_ReloadCounter</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1ga479b2921c86f8c67b819f5c4bea6bdb6">IWDG_Enable</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d5/dc4/group___i_w_d_g_1ga37f050cfbedc0c15f9e0816c0b22011e">IWDG_GetFlagStatus</link> (
+uint16_t IWDG_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the IWDG firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_iwdg.h</para>
+    </simplesect>
+</section>

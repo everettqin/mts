@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d0b/group___r_t_c___tamper___trigger___definitions">
+    <title>RTC_Tamper_Trigger_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1ga92ced18ec15722a30334a4df73ab046e">RTC_TamperTrigger_RisingEdge</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1ga9c78b3d15d85c5bd32c3003effe84b3d">RTC_TamperTrigger_FallingEdge</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1ga823f204682b5fab1d5b8aa053c53f97d">RTC_TamperTrigger_LowLevel</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1gac7d32f8fc0730428bbeaa1927fb36d01">RTC_TamperTrigger_HighLevel</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions_1ga4b0308730f7fa04b8db39270d0b90ca5">IS_RTC_TAMPER_TRIGGER</link> (((TRIGGER) == RTC_TamperTrigger_RisingEdge) || \
+                                        ((TRIGGER) == RTC_TamperTrigger_FallingEdge) || \
+                                        ((TRIGGER) == RTC_TamperTrigger_LowLevel) || \
+                                        ((TRIGGER) == RTC_TamperTrigger_HighLevel))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

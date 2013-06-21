@@ -1,0 +1,1269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dc7/group___f_s_m_c">
+    <title>FSMC</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>FSMC driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/da9/struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def">FSMC_NORSRAMTimingInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/dd7/struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def">FSMC_NORSRAMInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d89/struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def">FSMC_NAND_PCCARDTimingInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d5b/struct_f_s_m_c___n_a_n_d_init_type_def">FSMC_NANDInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d3/d09/group___f_s_m_c___exported___constants">FSMC_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="db/d99/group___f_s_m_c___private___functions">FSMC_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1gaab3e6648e8a584e73785361ac960eded">FSMC_NORSRAMDeInit</link> (
+uint32_t FSMC_Bank)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga9c27816e8b17394c9ee1ce9298917b4a">FSMC_NORSRAMInit</link> (
+<link linkend="d6/dd7/struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def">FSMC_NORSRAMInitTypeDef</link> * FSMC_NORSRAMInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1gaf33e6dfc34f62d16a0cb416de9e83d28">FSMC_NORSRAMStructInit</link> (
+<link linkend="d6/dd7/struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def">FSMC_NORSRAMInitTypeDef</link> * FSMC_NORSRAMInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1gaf943f0f2680168d3a95a3c2c9f3eca2a">FSMC_NORSRAMCmd</link> (
+uint32_t FSMC_Bank, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1gafb749503293474a68555961bd8f120e1">FSMC_NANDDeInit</link> (
+uint32_t FSMC_Bank)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga9f81ccc4e126c11f1eb33077b1a68e6f">FSMC_NANDInit</link> (
+<link linkend="dd/d5b/struct_f_s_m_c___n_a_n_d_init_type_def">FSMC_NANDInitTypeDef</link> * FSMC_NANDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga8283ad94ad8e83d49d5b77d1c7e17862">FSMC_NANDStructInit</link> (
+<link linkend="dd/d5b/struct_f_s_m_c___n_a_n_d_init_type_def">FSMC_NANDInitTypeDef</link> * FSMC_NANDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga33ec7c39ea4d42e92c72c6e517d8235c">FSMC_NANDCmd</link> (
+uint32_t FSMC_Bank, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga5800301fc39bbe998a18ebd9ff191cdc">FSMC_NANDECCCmd</link> (
+uint32_t FSMC_Bank, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d1/dc7/group___f_s_m_c_1gaad6d4f5b5a41684ce053fea55bdb98d8">FSMC_GetECC</link> (
+uint32_t FSMC_Bank)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga2f53ccf3a4f3c80a5a56fb47ccd47ccd">FSMC_PCCARDDeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1gacee1351363e7700a296faa1734a910aa">FSMC_PCCARDInit</link> (
+<link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> * FSMC_PCCARDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga7a64ba0e0545b3f1913c9d1d28c05e62">FSMC_PCCARDStructInit</link> (
+<link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> * FSMC_PCCARDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga2d410151ceb3428c6a1bf374a0472cde">FSMC_PCCARDCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga217027ae3cd213b9076b6a1be197064c">FSMC_ITConfig</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d1/dc7/group___f_s_m_c_1gae00355115b078f483f0771057bb849c4">FSMC_GetFlagStatus</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1ga697618f2de0ad9a8a82461ddbebd5264">FSMC_ClearFlag</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d1/dc7/group___f_s_m_c_1ga7fce9ca889d33cd8b8b7413875dd4d73">FSMC_GetITStatus</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dc7/group___f_s_m_c_1gad9387e7674b8a376256a3378649e004e">FSMC_ClearITPendingBit</link> (
+uint32_t FSMC_Bank, uint32_t FSMC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga74722cb031b5a30c066e627474507e1e">BCR_MBKEN_SET</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga6190926e03187065960cdbe9353632be">BCR_MBKEN_RESET</link> ((uint32_t)0x000FFFFE)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga298d32354d8909737fa2db42cec1d343">BCR_FACCEN_SET</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga99ff48346c662edaacb98c754dbe8ce1">PCR_PBKEN_SET</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga3c5233208c7403c4ab1751912519fb2b">PCR_PBKEN_RESET</link> ((uint32_t)0x000FFFFB)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga77fb3dbb94b45bf205281a3b8c7c57db">PCR_ECCEN_SET</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1ga5d750aba62d7faea82ce2b133f3ba84e">PCR_ECCEN_RESET</link> ((uint32_t)0x000FFFBF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dc7/group___f_s_m_c_1gaf02a07b484782f398b0684f0f0372f2f">PCR_MEMORYTYPE_NAND</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d1/dc7/group___f_s_m_c_1gaab3e6648e8a584e73785361ac960eded">
+                <title>void FSMC_NORSRAMDeInit (uint32_t FSMC_Bank)</title> <emphasis>Deinitializes the FSMC NOR/SRAM Banks registers to their default 
+  reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank1_NORSRAM1: FSMC Bank1 NOR/SRAM1 </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank1_NORSRAM2: FSMC Bank1 NOR/SRAM2 </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank1_NORSRAM3: FSMC Bank1 NOR/SRAM3 </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank1_NORSRAM4: FSMC Bank1 NOR/SRAM4 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga9c27816e8b17394c9ee1ce9298917b4a">
+                <title>void FSMC_NORSRAMInit (FSMC_NORSRAMInitTypeDef *FSMC_NORSRAMInitStruct)</title> <emphasis>Initializes the FSMC NOR/SRAM Banks according to the specified
+        parameters in the FSMC_NORSRAMInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_NORSRAMInitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="d6/dd7/struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def">FSMC_NORSRAMInitTypeDef</link> structure that contains the configuration information for the FSMC NOR/SRAM specified Banks. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1gaf33e6dfc34f62d16a0cb416de9e83d28">
+                <title>void FSMC_NORSRAMStructInit (FSMC_NORSRAMInitTypeDef *FSMC_NORSRAMInitStruct)</title> <emphasis>Fills each FSMC_NORSRAMInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_NORSRAMInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d6/dd7/struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def">FSMC_NORSRAMInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1gaf943f0f2680168d3a95a3c2c9f3eca2a">
+                <title>void FSMC_NORSRAMCmd (uint32_t FSMC_Bank, FunctionalState NewState)</title> <emphasis>Enables or disables the specified NOR/SRAM Memory Bank.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank1_NORSRAM1: FSMC Bank1 NOR/SRAM1 </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank1_NORSRAM2: FSMC Bank1 NOR/SRAM2 </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank1_NORSRAM3: FSMC Bank1 NOR/SRAM3 </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank1_NORSRAM4: FSMC Bank1 NOR/SRAM4 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the FSMC_Bank. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1gafb749503293474a68555961bd8f120e1">
+                <title>void FSMC_NANDDeInit (uint32_t FSMC_Bank)</title> <emphasis>Deinitializes the FSMC NAND Banks registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga9f81ccc4e126c11f1eb33077b1a68e6f">
+                <title>void FSMC_NANDInit (FSMC_NANDInitTypeDef *FSMC_NANDInitStruct)</title> <emphasis>Initializes the FSMC NAND Banks according to the specified parameters
+        in the FSMC_NANDInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_NANDInitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="dd/d5b/struct_f_s_m_c___n_a_n_d_init_type_def">FSMC_NANDInitTypeDef</link> structure that contains the configuration information for the FSMC NAND specified Banks. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga8283ad94ad8e83d49d5b77d1c7e17862">
+                <title>void FSMC_NANDStructInit (FSMC_NANDInitTypeDef *FSMC_NANDInitStruct)</title> <emphasis>Fills each FSMC_NANDInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_NANDInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dd/d5b/struct_f_s_m_c___n_a_n_d_init_type_def">FSMC_NANDInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga33ec7c39ea4d42e92c72c6e517d8235c">
+                <title>void FSMC_NANDCmd (uint32_t FSMC_Bank, FunctionalState NewState)</title> <emphasis>Enables or disables the specified NAND Memory Bank.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the FSMC_Bank. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga5800301fc39bbe998a18ebd9ff191cdc">
+                <title>void FSMC_NANDECCCmd (uint32_t FSMC_Bank, FunctionalState NewState)</title> <emphasis>Enables or disables the FSMC NAND ECC feature.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the FSMC NAND ECC feature. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1gaad6d4f5b5a41684ce053fea55bdb98d8">
+                <title>uint32_t FSMC_GetECC (uint32_t FSMC_Bank)</title> <emphasis>Returns the error correction code register value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>Error Correction Code (ECC) value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga2f53ccf3a4f3c80a5a56fb47ccd47ccd">
+                <title>void FSMC_PCCARDDeInit (void)</title> <emphasis>Deinitializes the FSMC PCCARD Bank registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1gacee1351363e7700a296faa1734a910aa">
+                <title>void FSMC_PCCARDInit (FSMC_PCCARDInitTypeDef *FSMC_PCCARDInitStruct)</title> <emphasis>Initializes the FSMC PCCARD Bank according to the specified parameters
+        in the FSMC_PCCARDInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_PCCARDInitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> structure that contains the configuration information for the FSMC PCCARD Bank. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga7a64ba0e0545b3f1913c9d1d28c05e62">
+                <title>void FSMC_PCCARDStructInit (FSMC_PCCARDInitTypeDef *FSMC_PCCARDInitStruct)</title> <emphasis>Fills each FSMC_PCCARDInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_PCCARDInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga2d410151ceb3428c6a1bf374a0472cde">
+                <title>void FSMC_PCCARDCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the PCCARD Memory Bank.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the PCCARD Memory Bank. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga217027ae3cd213b9076b6a1be197064c">
+                <title>void FSMC_ITConfig (uint32_t FSMC_Bank, uint32_t FSMC_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified FSMC interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_IT, :</entry>
+                                <entry>
+<para>specifies the FSMC interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_IT_RisingEdge: Rising edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_Level: Level edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_FallingEdge: Falling edge detection interrupt. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified FSMC interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1gae00355115b078f483f0771057bb849c4">
+                <title>FlagStatus FSMC_GetFlagStatus (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</title> <emphasis>Checks whether the specified FSMC flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_FLAG_RisingEdge: Rising edge detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_Level: Level detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_FallingEdge: Falling edge detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_FEMPT: Fifo empty Flag. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of FSMC_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga697618f2de0ad9a8a82461ddbebd5264">
+                <title>void FSMC_ClearFlag (uint32_t FSMC_Bank, uint32_t FSMC_FLAG)</title> <emphasis>Clears the FSMC&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_FLAG_RisingEdge: Rising edge detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_Level: Level detection Flag. </para>
+</listitem>
+<listitem>
+<para>FSMC_FLAG_FallingEdge: Falling edge detection Flag. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1ga7fce9ca889d33cd8b8b7413875dd4d73">
+                <title>ITStatus FSMC_GetITStatus (uint32_t FSMC_Bank, uint32_t FSMC_IT)</title> <emphasis>Checks whether the specified FSMC interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_IT, :</entry>
+                                <entry>
+<para>specifies the FSMC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_IT_RisingEdge: Rising edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_Level: Level edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_FallingEdge: Falling edge detection interrupt. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of FSMC_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/dc7/group___f_s_m_c_1gad9387e7674b8a376256a3378649e004e">
+                <title>void FSMC_ClearITPendingBit (uint32_t FSMC_Bank, uint32_t FSMC_IT)</title> <emphasis>Clears the FSMC&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_Bank, :</entry>
+                                <entry>
+<para>specifies the FSMC Bank to be used This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_Bank2_NAND: FSMC Bank2 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank3_NAND: FSMC Bank3 NAND </para>
+</listitem>
+<listitem>
+<para>FSMC_Bank4_PCCARD: FSMC Bank4 PCCARD </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FSMC_IT, :</entry>
+                                <entry>
+<para>specifies the interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>FSMC_IT_RisingEdge: Rising edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_Level: Level edge detection interrupt. </para>
+</listitem>
+<listitem>
+<para>FSMC_IT_FallingEdge: Falling edge detection interrupt. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="d3/d09/group___f_s_m_c___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d99/group___f_s_m_c___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

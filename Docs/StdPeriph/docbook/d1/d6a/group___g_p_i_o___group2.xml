@@ -1,0 +1,518 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d6a/group___g_p_i_o___group2">
+    <title>GPIO Read and Write</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>GPIO Read and Write. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                              GPIO Read and Write
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="d1/d6a/group___g_p_i_o___group2_1ga98772ef6b639b3fa06c8ae5ba28d3aaa">GPIO_ReadInputDataBit</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d1/d6a/group___g_p_i_o___group2_1ga139a33adc8409288e9f193bbebb5a0f7">GPIO_ReadInputData</link> (
+GPIO_TypeDef * GPIOx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="d1/d6a/group___g_p_i_o___group2_1ga138270f8695b105b7c6ed405792919c1">GPIO_ReadOutputDataBit</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d1/d6a/group___g_p_i_o___group2_1gaf8938a34280b7dc3e39872a7c17bb323">GPIO_ReadOutputData</link> (
+GPIO_TypeDef * GPIOx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d6a/group___g_p_i_o___group2_1ga9e1352eed7c6620e18af2d86f6b6ff8e">GPIO_SetBits</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d6a/group___g_p_i_o___group2_1ga6fcd35b207a66608dd2c9d7de9247dc8">GPIO_ResetBits</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d6a/group___g_p_i_o___group2_1ga8f7b237fd744d9f7456fbe0da47a9b80">GPIO_WriteBit</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin, <link linkend="dd/d94/group___g_p_i_o_1ga176130b21c0e719121470a6042d4cf19">BitAction</link> BitVal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d6a/group___g_p_i_o___group2_1gaa925f19c8547a00c7a0c269a84873bf9">GPIO_Write</link> (
+GPIO_TypeDef * GPIOx, uint16_t PortVal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d6a/group___g_p_i_o___group2_1gac1b837c66258872740d5f89f23549ab1">GPIO_ToggleBits</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d1/d6a/group___g_p_i_o___group2_1ga98772ef6b639b3fa06c8ae5ba28d3aaa">
+                <title>uint8_t GPIO_ReadInputDataBit (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Reads the specified input port pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bit to read. This parameter can be GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>input port pin value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d6a/group___g_p_i_o___group2_1ga139a33adc8409288e9f193bbebb5a0f7">
+                <title>uint16_t GPIO_ReadInputData (GPIO_TypeDef *GPIOx)</title> <emphasis>Reads the specified GPIO input data port.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIO</entry>
+                                <entry>
+<para>input data port value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d6a/group___g_p_i_o___group2_1ga138270f8695b105b7c6ed405792919c1">
+                <title>uint8_t GPIO_ReadOutputDataBit (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Reads the specified output data port bit.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bit to read. This parameter can be GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>output port pin value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d6a/group___g_p_i_o___group2_1gaf8938a34280b7dc3e39872a7c17bb323">
+                <title>uint16_t GPIO_ReadOutputData (GPIO_TypeDef *GPIOx)</title> <emphasis>Reads the specified GPIO output data port.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIO</entry>
+                                <entry>
+<para>output data port value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d6a/group___g_p_i_o___group2_1ga9e1352eed7c6620e18af2d86f6b6ff8e">
+                <title>void GPIO_SetBits (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Sets the selected data port bits.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This functions uses GPIOx_BSRR register to allow atomic read/modify accesses. In this way, there is no risk of an IRQ occurring between the read and the modify access. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bits to be written. This parameter can be any combination of GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d6a/group___g_p_i_o___group2_1ga6fcd35b207a66608dd2c9d7de9247dc8">
+                <title>void GPIO_ResetBits (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Clears the selected data port bits.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This functions uses GPIOx_BSRR register to allow atomic read/modify accesses. In this way, there is no risk of an IRQ occurring between the read and the modify access. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bits to be written. This parameter can be any combination of GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d6a/group___g_p_i_o___group2_1ga8f7b237fd744d9f7456fbe0da47a9b80">
+                <title>void GPIO_WriteBit (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, BitAction BitVal)</title> <emphasis>Sets or clears the selected data port bit.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bit to be written. This parameter can be one of GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>BitVal, :</entry>
+                                <entry>
+<para>specifies the value to be written to the selected bit. This parameter can be one of the BitAction enum values: <itemizedlist>
+<listitem>
+<para>Bit_RESET: to clear the port pin </para>
+</listitem>
+<listitem>
+<para>Bit_SET: to set the port pin </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d6a/group___g_p_i_o___group2_1gaa925f19c8547a00c7a0c269a84873bf9">
+                <title>void GPIO_Write (GPIO_TypeDef *GPIOx, uint16_t PortVal)</title> <emphasis>Writes data to the specified GPIO data port.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>PortVal, :</entry>
+                                <entry>
+<para>specifies the value to be written to the port output data register. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d6a/group___g_p_i_o___group2_1gac1b837c66258872740d5f89f23549ab1">
+                <title>void GPIO_ToggleBits (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Toggles the specified GPIO pins..</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>Specifies the pins to be toggled. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

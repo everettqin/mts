@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d33/group___a_d_c___exported___constants">
+    <title>ADC_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d2/dd4/group___a_d_c___common__mode">ADC_Common_mode</link></para></listitem>
+            <listitem><para><link linkend="d9/d58/group___a_d_c___prescaler">ADC_Prescaler</link></para></listitem>
+            <listitem><para><link linkend="d4/d95/group___a_d_c___direct__memory__access__mode__for__multi__mode">ADC_Direct_memory_access_mode_for_multi_mode</link></para></listitem>
+            <listitem><para><link linkend="da/d30/group___a_d_c__delay__between__2__sampling__phases">ADC_delay_between_2_sampling_phases</link></para></listitem>
+            <listitem><para><link linkend="d6/d8d/group___a_d_c__resolution">ADC_resolution</link></para></listitem>
+            <listitem><para><link linkend="d8/d7f/group___a_d_c__external__trigger__edge__for__regular__channels__conversion">ADC_external_trigger_edge_for_regular_channels_conversion</link></para></listitem>
+            <listitem><para><link linkend="da/ddc/group___a_d_c__extrenal__trigger__sources__for__regular__channels__conversion">ADC_extrenal_trigger_sources_for_regular_channels_conversion</link></para></listitem>
+            <listitem><para><link linkend="d7/da8/group___a_d_c__data__align">ADC_data_align</link></para></listitem>
+            <listitem><para><link linkend="d0/da6/group___a_d_c__channels">ADC_channels</link></para></listitem>
+            <listitem><para><link linkend="d1/dde/group___a_d_c__sampling__times">ADC_sampling_times</link></para></listitem>
+            <listitem><para><link linkend="dd/d94/group___a_d_c__external__trigger__edge__for__injected__channels__conversion">ADC_external_trigger_edge_for_injected_channels_conversion</link></para></listitem>
+            <listitem><para><link linkend="d1/d47/group___a_d_c__extrenal__trigger__sources__for__injected__channels__conversion">ADC_extrenal_trigger_sources_for_injected_channels_conversion</link></para></listitem>
+            <listitem><para><link linkend="d7/d62/group___a_d_c__injected__channel__selection">ADC_injected_channel_selection</link></para></listitem>
+            <listitem><para><link linkend="dc/d27/group___a_d_c__analog__watchdog__selection">ADC_analog_watchdog_selection</link></para></listitem>
+            <listitem><para><link linkend="dc/d0d/group___a_d_c__interrupts__definition">ADC_interrupts_definition</link></para></listitem>
+            <listitem><para><link linkend="d0/d2c/group___a_d_c__flags__definition">ADC_flags_definition</link></para></listitem>
+            <listitem><para><link linkend="d3/d22/group___a_d_c__thresholds">ADC_thresholds</link></para></listitem>
+            <listitem><para><link linkend="d1/d75/group___a_d_c__injected__offset">ADC_injected_offset</link></para></listitem>
+            <listitem><para><link linkend="de/d9f/group___a_d_c__injected__length">ADC_injected_length</link></para></listitem>
+            <listitem><para><link linkend="da/d95/group___a_d_c__injected__rank">ADC_injected_rank</link></para></listitem>
+            <listitem><para><link linkend="d8/d86/group___a_d_c__regular__length">ADC_regular_length</link></para></listitem>
+            <listitem><para><link linkend="df/d94/group___a_d_c__regular__rank">ADC_regular_rank</link></para></listitem>
+            <listitem><para><link linkend="d3/d40/group___a_d_c__regular__discontinuous__mode__number">ADC_regular_discontinuous_mode_number</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d33/group___a_d_c___exported___constants_1gaf5d6bd0153464912e0eaccb1af1aefb2">IS_ADC_ALL_PERIPH</link> (((PERIPH) == ADC1) || \
+                                   ((PERIPH) == ADC2) || \
+                                   ((PERIPH) == ADC3))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="d2/dd4/group___a_d_c___common__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d58/group___a_d_c___prescaler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d95/group___a_d_c___direct__memory__access__mode__for__multi__mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d30/group___a_d_c__delay__between__2__sampling__phases.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d8d/group___a_d_c__resolution.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d7f/group___a_d_c__external__trigger__edge__for__regular__channels__conversion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/ddc/group___a_d_c__extrenal__trigger__sources__for__regular__channels__conversion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/da8/group___a_d_c__data__align.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/da6/group___a_d_c__channels.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/dde/group___a_d_c__sampling__times.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d94/group___a_d_c__external__trigger__edge__for__injected__channels__conversion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d47/group___a_d_c__extrenal__trigger__sources__for__injected__channels__conversion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d62/group___a_d_c__injected__channel__selection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d27/group___a_d_c__analog__watchdog__selection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d0d/group___a_d_c__interrupts__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d2c/group___a_d_c__flags__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d22/group___a_d_c__thresholds.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d75/group___a_d_c__injected__offset.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d9f/group___a_d_c__injected__length.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d95/group___a_d_c__injected__rank.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d86/group___a_d_c__regular__length.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d94/group___a_d_c__regular__rank.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d40/group___a_d_c__regular__discontinuous__mode__number.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

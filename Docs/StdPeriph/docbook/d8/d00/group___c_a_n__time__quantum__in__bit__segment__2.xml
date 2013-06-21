@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2">
+    <title>CAN_time_quantum_in_bit_segment_2</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gad9af25a3f61df7b09b8d6a5e81d8027e">CAN_BS2_1tq</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gac43d82f74990620499f1998187ff3602">CAN_BS2_2tq</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gab3d325ce4a5d0eb1ee8ee50ad4ec7e49">CAN_BS2_3tq</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gaaff1c1cdd809f185299971c6437f32a0">CAN_BS2_4tq</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1ga89feba32bcc2e909f858d535edaad101">CAN_BS2_5tq</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1ga72c3245b794d3238763d1ec319bf386f">CAN_BS2_6tq</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1ga8005adaef02fb90e400909de08dec031">CAN_BS2_7tq</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gaad8dcbb266cf5074bfb67bd7108597c6">CAN_BS2_8tq</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1ga3f5620b1d094dbd7d2fb8d16f4b187a9">IS_CAN_BS2</link> ((BS2) &lt;= <link linkend="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gaad8dcbb266cf5074bfb67bd7108597c6">CAN_BS2_8tq</link>)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gad9af25a3f61df7b09b8d6a5e81d8027e">
+                <title>#define CAN_BS2_1tq</title>                
+<para>1 time quantum </para>
+
+                <para>Definition at line 292 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gac43d82f74990620499f1998187ff3602">
+                <title>#define CAN_BS2_2tq</title>                
+<para>2 time quantum </para>
+
+                <para>Definition at line 293 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gab3d325ce4a5d0eb1ee8ee50ad4ec7e49">
+                <title>#define CAN_BS2_3tq</title>                
+<para>3 time quantum </para>
+
+                <para>Definition at line 294 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gaaff1c1cdd809f185299971c6437f32a0">
+                <title>#define CAN_BS2_4tq</title>                
+<para>4 time quantum </para>
+
+                <para>Definition at line 295 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1ga89feba32bcc2e909f858d535edaad101">
+                <title>#define CAN_BS2_5tq</title>                
+<para>5 time quantum </para>
+
+                <para>Definition at line 296 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1ga72c3245b794d3238763d1ec319bf386f">
+                <title>#define CAN_BS2_6tq</title>                
+<para>6 time quantum </para>
+
+                <para>Definition at line 297 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1ga8005adaef02fb90e400909de08dec031">
+                <title>#define CAN_BS2_7tq</title>                
+<para>7 time quantum </para>
+
+                <para>Definition at line 298 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/d00/group___c_a_n__time__quantum__in__bit__segment__2_1gaad8dcbb266cf5074bfb67bd7108597c6">
+                <title>#define CAN_BS2_8tq</title>                
+<para>8 time quantum </para>
+
+                <para>Definition at line 299 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

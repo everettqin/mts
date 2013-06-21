@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d9f/group___a_d_c__injected__length">
+    <title>ADC_injected_length</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d9f/group___a_d_c__injected__length_1gaecdddab7424a697722683296ca70e176">IS_ADC_INJECTED_LENGTH</link> (((LENGTH) &gt;= 0x1) &amp;&amp; ((LENGTH) &lt;= 0x4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

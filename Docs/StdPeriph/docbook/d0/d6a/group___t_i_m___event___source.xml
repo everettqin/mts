@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d6a/group___t_i_m___event___source">
+    <title>TIM_Event_Source</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d6a/group___t_i_m___event___source_1ga5bff72fbe94b1ae5a710e402c9868b23">TIM_EventSource_Update</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d6a/group___t_i_m___event___source_1gaa634c46d4ac521ad16e25be97b487e8a">TIM_EventSource_CC1</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d6a/group___t_i_m___event___source_1ga5e2082a09552acc9c7e9577f104ba15a">TIM_EventSource_CC2</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d6a/group___t_i_m___event___source_1gafeb8538e3b00d938e061e5051f83836b">TIM_EventSource_CC3</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d6a/group___t_i_m___event___source_1gab60e3190e6c09d2d067f2c689d614979">TIM_EventSource_CC4</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d6a/group___t_i_m___event___source_1ga4c06981037fae91786f966aa9b4b3435">TIM_EventSource_COM</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d6a/group___t_i_m___event___source_1ga24835bf5eac25eed90069208dce22564">TIM_EventSource_Trigger</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d6a/group___t_i_m___event___source_1gad6f9b5366d93c73ff005273c50c9f00a">TIM_EventSource_Break</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d6a/group___t_i_m___event___source_1ga4ac88c3e43c8250114ea81a6e052d58a">IS_TIM_EVENT_SOURCE</link> ((((SOURCE) &amp; (uint16_t)0xFF00) == 0x0000) &amp;&amp; ((SOURCE) != 0x0000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d58/group___a_d_c___prescaler">
+    <title>ADC_Prescaler</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d58/group___a_d_c___prescaler_1gaedf3593442796684ace09bce1c6a5dde">ADC_Prescaler_Div2</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d58/group___a_d_c___prescaler_1ga8835521adcb2239c0bc0eec8f5eb8711">ADC_Prescaler_Div4</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d58/group___a_d_c___prescaler_1ga49cb7f0ac571b5a9105ac7c037559d63">ADC_Prescaler_Div6</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d58/group___a_d_c___prescaler_1gae56f649c15bfb0cbb87f6456a320664f">ADC_Prescaler_Div8</link> ((uint32_t)0x00030000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d58/group___a_d_c___prescaler_1gae69f71c595aef04fe0c0bbe9100d28ca">IS_ADC_PRESCALER</link> (((PRESCALER) == ADC_Prescaler_Div2) || \
+                                     ((PRESCALER) == ADC_Prescaler_Div4) || \
+                                     ((PRESCALER) == ADC_Prescaler_Div6) || \
+                                     ((PRESCALER) == ADC_Prescaler_Div8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dbc/group___r_t_c___exported___constants">
+    <title>RTC_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="df/d0d/group___r_t_c___hour___formats">RTC_Hour_Formats</link></para></listitem>
+            <listitem><para><link linkend="db/d83/group___r_t_c___asynchronous___predivider">RTC_Asynchronous_Predivider</link></para></listitem>
+            <listitem><para><link linkend="dc/df8/group___r_t_c___synchronous___predivider">RTC_Synchronous_Predivider</link></para></listitem>
+            <listitem><para><link linkend="dc/d52/group___r_t_c___time___definitions">RTC_Time_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d2/d24/group___r_t_c___a_m___p_m___definitions">RTC_AM_PM_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d2/d09/group___r_t_c___year___date___definitions">RTC_Year_Date_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d7/d14/group___r_t_c___month___date___definitions">RTC_Month_Date_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d4/d4c/group___r_t_c___week_day___definitions">RTC_WeekDay_Definitions</link></para></listitem>
+            <listitem><para><link linkend="dc/dc2/group___r_t_c___alarm___definitions">RTC_Alarm_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d8/dee/group___r_t_c___alarm_date_week_day___definitions">RTC_AlarmDateWeekDay_Definitions</link></para></listitem>
+            <listitem><para><link linkend="dc/dc9/group___r_t_c___alarm_mask___definitions">RTC_AlarmMask_Definitions</link></para></listitem>
+            <listitem><para><link linkend="de/d24/group___r_t_c___alarms___definitions">RTC_Alarms_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions">RTC_Alarm_Sub_Seconds_Masks_Definitions</link></para></listitem>
+            <listitem><para><link linkend="da/d12/group___r_t_c___alarm___sub___seconds___value">RTC_Alarm_Sub_Seconds_Value</link></para></listitem>
+            <listitem><para><link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions">RTC_Wakeup_Timer_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d1/db4/group___r_t_c___time___stamp___edges__definitions">RTC_Time_Stamp_Edges_definitions</link></para></listitem>
+            <listitem><para><link linkend="d6/dfa/group___r_t_c___output__selection___definitions">RTC_Output_selection_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d2/d6a/group___r_t_c___output___polarity___definitions">RTC_Output_Polarity_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d9/d5a/group___r_t_c___digital___calibration___definitions">RTC_Digital_Calibration_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d0/d57/group___r_t_c___calib___output__selection___definitions">RTC_Calib_Output_selection_Definitions</link></para></listitem>
+            <listitem><para><link linkend="df/d71/group___r_t_c___smooth__calib__period___definitions">RTC_Smooth_calib_period_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d8/d90/group___r_t_c___smooth__calib___plus__pulses___definitions">RTC_Smooth_calib_Plus_pulses_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d3/dd1/group___r_t_c___smooth__calib___minus__pulses___definitions">RTC_Smooth_calib_Minus_pulses_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d1/dab/group___r_t_c___day_light_saving___definitions">RTC_DayLightSaving_Definitions</link></para></listitem>
+            <listitem><para><link linkend="da/d0b/group___r_t_c___tamper___trigger___definitions">RTC_Tamper_Trigger_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d7/da7/group___r_t_c___tamper___filter___definitions">RTC_Tamper_Filter_Definitions</link></para></listitem>
+            <listitem><para><link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions">RTC_Tamper_Sampling_Frequencies_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions">RTC_Tamper_Pin_Precharge_Duration_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d1/d28/group___r_t_c___tamper___pins___definitions">RTC_Tamper_Pins_Definitions</link></para></listitem>
+            <listitem><para><link linkend="db/d10/group___r_t_c___tamper___pin___selection">RTC_Tamper_Pin_Selection</link></para></listitem>
+            <listitem><para><link linkend="d7/d3f/group___r_t_c___time_stamp___pin___selection">RTC_TimeStamp_Pin_Selection</link></para></listitem>
+            <listitem><para><link linkend="dd/d1a/group___r_t_c___output___type___a_l_a_r_m___o_u_t">RTC_Output_Type_ALARM_OUT</link></para></listitem>
+            <listitem><para><link linkend="d4/d89/group___r_t_c___add__1___second___parameter___definitions">RTC_Add_1_Second_Parameter_Definitions</link></para></listitem>
+            <listitem><para><link linkend="da/dc6/group___r_t_c___substract___fraction___of___second___value">RTC_Substract_Fraction_Of_Second_Value</link></para></listitem>
+            <listitem><para><link linkend="d2/d3f/group___r_t_c___backup___registers___definitions">RTC_Backup_Registers_Definitions</link></para></listitem>
+            <listitem><para><link linkend="dc/d4e/group___r_t_c___input__parameter__format__definitions">RTC_Input_parameter_format_definitions</link></para></listitem>
+            <listitem><para><link linkend="d7/d51/group___r_t_c___flags___definitions">RTC_Flags_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d8/d0b/group___r_t_c___interrupts___definitions">RTC_Interrupts_Definitions</link></para></listitem>
+            <listitem><para><link linkend="d1/d89/group___r_t_c___legacy">RTC_Legacy</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="df/d0d/group___r_t_c___hour___formats.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d83/group___r_t_c___asynchronous___predivider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/df8/group___r_t_c___synchronous___predivider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d52/group___r_t_c___time___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d24/group___r_t_c___a_m___p_m___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d09/group___r_t_c___year___date___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d14/group___r_t_c___month___date___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d4c/group___r_t_c___week_day___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/dc2/group___r_t_c___alarm___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/dee/group___r_t_c___alarm_date_week_day___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/dc9/group___r_t_c___alarm_mask___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d24/group___r_t_c___alarms___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/dd2/group___r_t_c___alarm___sub___seconds___masks___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d12/group___r_t_c___alarm___sub___seconds___value.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d17/group___r_t_c___wakeup___timer___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/db4/group___r_t_c___time___stamp___edges__definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/dfa/group___r_t_c___output__selection___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d6a/group___r_t_c___output___polarity___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/d5a/group___r_t_c___digital___calibration___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d57/group___r_t_c___calib___output__selection___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d71/group___r_t_c___smooth__calib__period___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d90/group___r_t_c___smooth__calib___plus__pulses___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/dd1/group___r_t_c___smooth__calib___minus__pulses___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/dab/group___r_t_c___day_light_saving___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d0b/group___r_t_c___tamper___trigger___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/da7/group___r_t_c___tamper___filter___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/da3/group___r_t_c___tamper___pin___precharge___duration___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d28/group___r_t_c___tamper___pins___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d10/group___r_t_c___tamper___pin___selection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d3f/group___r_t_c___time_stamp___pin___selection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d1a/group___r_t_c___output___type___a_l_a_r_m___o_u_t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d89/group___r_t_c___add__1___second___parameter___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/dc6/group___r_t_c___substract___fraction___of___second___value.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d3f/group___r_t_c___backup___registers___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d4e/group___r_t_c___input__parameter__format__definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d51/group___r_t_c___flags___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d0b/group___r_t_c___interrupts___definitions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d89/group___r_t_c___legacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

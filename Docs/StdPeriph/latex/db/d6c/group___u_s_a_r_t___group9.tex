@@ -1,0 +1,274 @@
+\hypertarget{group___u_s_a_r_t___group9}{\section{Interrupts and flags management functions}
+\label{group___u_s_a_r_t___group9}\index{Interrupts and flags management functions@{Interrupts and flags management functions}}
+}
+
+
+Interrupts and flags management functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___u_s_a_r_t___group9_ga6d8f2dd1f34060ae7e386e3e5d56b6f6}{U\-S\-A\-R\-T\-\_\-\-I\-T\-Config} (U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$U\-S\-A\-R\-Tx, uint16\-\_\-t U\-S\-A\-R\-T\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified U\-S\-A\-R\-T interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___u_s_a_r_t___group9_ga144630722defc9e312f0ad280b68e9da}{U\-S\-A\-R\-T\-\_\-\-Get\-Flag\-Status} (U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$U\-S\-A\-R\-Tx, uint16\-\_\-t U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified U\-S\-A\-R\-T flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___group9_gad962e148fc466ae1b45b288f6c91d966}{U\-S\-A\-R\-T\-\_\-\-Clear\-Flag} (U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$U\-S\-A\-R\-Tx, uint16\-\_\-t U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the U\-S\-A\-R\-Tx's pending flags. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___u_s_a_r_t___group9_ga93d8f031241bcdbe938d091a85295445}{U\-S\-A\-R\-T\-\_\-\-Get\-I\-T\-Status} (U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$U\-S\-A\-R\-Tx, uint16\-\_\-t U\-S\-A\-R\-T\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified U\-S\-A\-R\-T interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___u_s_a_r_t___group9_ga1fc25d0338695063be5e50156955d9bc}{U\-S\-A\-R\-T\-\_\-\-Clear\-I\-T\-Pending\-Bit} (U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$U\-S\-A\-R\-Tx, uint16\-\_\-t U\-S\-A\-R\-T\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the U\-S\-A\-R\-Tx's interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interrupts and flags management functions. \begin{DoxyVerb} ===============================================================================
+                   Interrupts and flags management functions
+ ===============================================================================  
+
+  This subsection provides a set of functions allowing to configure the USART 
+  Interrupts sources, DMA channels requests and check or clear the flags or 
+  pending bits status.
+  The user should identify which mode will be used in his application to manage 
+  the communication: Polling mode, Interrupt mode or DMA mode. 
+    
+  Polling Mode
+  =============
+  In Polling Mode, the SPI communication can be managed by 10 flags:
+     1. USART_FLAG_TXE : to indicate the status of the transmit buffer register
+     2. USART_FLAG_RXNE : to indicate the status of the receive buffer register
+     3. USART_FLAG_TC : to indicate the status of the transmit operation
+     4. USART_FLAG_IDLE : to indicate the status of the Idle Line             
+     5. USART_FLAG_CTS : to indicate the status of the nCTS input
+     6. USART_FLAG_LBD : to indicate the status of the LIN break detection
+     7. USART_FLAG_NE : to indicate if a noise error occur
+     8. USART_FLAG_FE : to indicate if a frame error occur
+     9. USART_FLAG_PE : to indicate if a parity error occur
+     10. USART_FLAG_ORE : to indicate if an Overrun error occur
+
+  In this Mode it is advised to use the following functions:
+      - FlagStatus USART_GetFlagStatus(USART_TypeDef* USARTx, uint16_t USART_FLAG);
+      - void USART_ClearFlag(USART_TypeDef* USARTx, uint16_t USART_FLAG);
+
+  Interrupt Mode
+  ===============
+  In Interrupt Mode, the USART communication can be managed by 8 interrupt sources
+  and 10 pending bits: 
+
+  Pending Bits:
+  ------------- 
+     1. USART_IT_TXE : to indicate the status of the transmit buffer register
+     2. USART_IT_RXNE : to indicate the status of the receive buffer register
+     3. USART_IT_TC : to indicate the status of the transmit operation
+     4. USART_IT_IDLE : to indicate the status of the Idle Line             
+     5. USART_IT_CTS : to indicate the status of the nCTS input
+     6. USART_IT_LBD : to indicate the status of the LIN break detection
+     7. USART_IT_NE : to indicate if a noise error occur
+     8. USART_IT_FE : to indicate if a frame error occur
+     9. USART_IT_PE : to indicate if a parity error occur
+     10. USART_IT_ORE : to indicate if an Overrun error occur
+
+  Interrupt Source:
+  -----------------
+     1. USART_IT_TXE : specifies the interrupt source for the Tx buffer empty 
+                       interrupt. 
+     2. USART_IT_RXNE : specifies the interrupt source for the Rx buffer not 
+                        empty interrupt.
+     3. USART_IT_TC : specifies the interrupt source for the Transmit complete 
+                       interrupt. 
+     4. USART_IT_IDLE : specifies the interrupt source for the Idle Line interrupt.             
+     5. USART_IT_CTS : specifies the interrupt source for the CTS interrupt. 
+     6. USART_IT_LBD : specifies the interrupt source for the LIN break detection
+                       interrupt. 
+     7. USART_IT_PE : specifies the interrupt source for the parity error interrupt. 
+     8. USART_IT_ERR :  specifies the interrupt source for the errors interrupt.
+
+@note Some parameters are coded in order to use them as interrupt source or as pending bits.
+
+  In this Mode it is advised to use the following functions:
+     - void USART_ITConfig(USART_TypeDef* USARTx, uint16_t USART_IT, FunctionalState NewState);
+     - ITStatus USART_GetITStatus(USART_TypeDef* USARTx, uint16_t USART_IT);
+     - void USART_ClearITPendingBit(USART_TypeDef* USARTx, uint16_t USART_IT);
+
+  DMA Mode
+  ========
+  In DMA Mode, the USART communication can be managed by 2 DMA Channel requests:
+     1. USART_DMAReq_Tx: specifies the Tx buffer DMA transfer request
+     2. USART_DMAReq_Rx: specifies the Rx buffer DMA transfer request
+
+  In this Mode it is advised to use the following function:
+     - void USART_DMACmd(USART_TypeDef* USARTx, uint16_t USART_DMAReq, FunctionalState NewState);\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\hypertarget{group___u_s_a_r_t___group9_gad962e148fc466ae1b45b288f6c91d966}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!U\-S\-A\-R\-T\-\_\-\-Clear\-Flag@{U\-S\-A\-R\-T\-\_\-\-Clear\-Flag}}
+\index{U\-S\-A\-R\-T\-\_\-\-Clear\-Flag@{U\-S\-A\-R\-T\-\_\-\-Clear\-Flag}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{U\-S\-A\-R\-T\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void U\-S\-A\-R\-T\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$}]{U\-S\-A\-R\-Tx, }
+\item[{uint16\-\_\-t}]{U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___u_s_a_r_t___group9_gad962e148fc466ae1b45b288f6c91d966}
+
+
+Clears the U\-S\-A\-R\-Tx's pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\-S\-A\-R\-Tx,\-:} & where x can be 1, 2, 3, 4, 5 or 6 to select the U\-S\-A\-R\-T or U\-A\-R\-T peripheral. \\
+\hline
+{\em U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-C\-T\-S\-: C\-T\-S Change flag (not available for U\-A\-R\-T4 and U\-A\-R\-T5). \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-L\-B\-D\-: L\-I\-N Break detection flag. \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-T\-C\-: Transmission Complete flag. \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-R\-X\-N\-E\-: Receive data register not empty flag.\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+P\-E (Parity error), F\-E (Framing error), N\-E (Noise error), O\-R\-E (Over\-Run error) and I\-D\-L\-E (Idle line detected) flags are cleared by software sequence\-: a read operation to U\-S\-A\-R\-T\-\_\-\-S\-R register (\hyperlink{group___u_s_a_r_t_ga144630722defc9e312f0ad280b68e9da}{U\-S\-A\-R\-T\-\_\-\-Get\-Flag\-Status()}) followed by a read operation to U\-S\-A\-R\-T\-\_\-\-D\-R register (\hyperlink{group___u_s_a_r_t_gac67a91845b0b1d54d31bdfb1c5e9867c}{U\-S\-A\-R\-T\-\_\-\-Receive\-Data()}). 
+
+R\-X\-N\-E flag can be also cleared by a read to the U\-S\-A\-R\-T\-\_\-\-D\-R register (\hyperlink{group___u_s_a_r_t_gac67a91845b0b1d54d31bdfb1c5e9867c}{U\-S\-A\-R\-T\-\_\-\-Receive\-Data()}). 
+
+T\-C flag can be also cleared by software sequence\-: a read operation to U\-S\-A\-R\-T\-\_\-\-S\-R register (\hyperlink{group___u_s_a_r_t_ga144630722defc9e312f0ad280b68e9da}{U\-S\-A\-R\-T\-\_\-\-Get\-Flag\-Status()}) followed by a write operation to U\-S\-A\-R\-T\-\_\-\-D\-R register (\hyperlink{group___u_s_a_r_t_ga0b43d42da9540f446d494bf69823c6fb}{U\-S\-A\-R\-T\-\_\-\-Send\-Data()}). 
+
+T\-X\-E flag is cleared only by a write to the U\-S\-A\-R\-T\-\_\-\-D\-R register (\hyperlink{group___u_s_a_r_t_ga0b43d42da9540f446d494bf69823c6fb}{U\-S\-A\-R\-T\-\_\-\-Send\-Data()}).
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1321 of file stm32f4xx\-\_\-usart.\-c.
+
+\hypertarget{group___u_s_a_r_t___group9_ga1fc25d0338695063be5e50156955d9bc}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!U\-S\-A\-R\-T\-\_\-\-Clear\-I\-T\-Pending\-Bit@{U\-S\-A\-R\-T\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{U\-S\-A\-R\-T\-\_\-\-Clear\-I\-T\-Pending\-Bit@{U\-S\-A\-R\-T\-\_\-\-Clear\-I\-T\-Pending\-Bit}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{U\-S\-A\-R\-T\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void U\-S\-A\-R\-T\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$}]{U\-S\-A\-R\-Tx, }
+\item[{uint16\-\_\-t}]{U\-S\-A\-R\-T\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___u_s_a_r_t___group9_ga1fc25d0338695063be5e50156955d9bc}
+
+
+Clears the U\-S\-A\-R\-Tx's interrupt pending bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\-S\-A\-R\-Tx,\-:} & where x can be 1, 2, 3, 4, 5 or 6 to select the U\-S\-A\-R\-T or U\-A\-R\-T peripheral. \\
+\hline
+{\em U\-S\-A\-R\-T\-\_\-\-I\-T,\-:} & specifies the interrupt pending bit to clear. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-C\-T\-S\-: C\-T\-S change interrupt (not available for U\-A\-R\-T4 and U\-A\-R\-T5) \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-L\-B\-D\-: L\-I\-N Break detection interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-T\-C\-: Transmission complete interrupt. \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-R\-X\-N\-E\-: Receive Data register not empty interrupt.\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+P\-E (Parity error), F\-E (Framing error), N\-E (Noise error), O\-R\-E (Over\-Run error) and I\-D\-L\-E (Idle line detected) pending bits are cleared by software sequence\-: a read operation to U\-S\-A\-R\-T\-\_\-\-S\-R register (\hyperlink{group___u_s_a_r_t_ga93d8f031241bcdbe938d091a85295445}{U\-S\-A\-R\-T\-\_\-\-Get\-I\-T\-Status()}) followed by a read operation to U\-S\-A\-R\-T\-\_\-\-D\-R register (\hyperlink{group___u_s_a_r_t_gac67a91845b0b1d54d31bdfb1c5e9867c}{U\-S\-A\-R\-T\-\_\-\-Receive\-Data()}). 
+
+R\-X\-N\-E pending bit can be also cleared by a read to the U\-S\-A\-R\-T\-\_\-\-D\-R register (\hyperlink{group___u_s_a_r_t_gac67a91845b0b1d54d31bdfb1c5e9867c}{U\-S\-A\-R\-T\-\_\-\-Receive\-Data()}). 
+
+T\-C pending bit can be also cleared by software sequence\-: a read operation to U\-S\-A\-R\-T\-\_\-\-S\-R register (\hyperlink{group___u_s_a_r_t_ga93d8f031241bcdbe938d091a85295445}{U\-S\-A\-R\-T\-\_\-\-Get\-I\-T\-Status()}) followed by a write operation to U\-S\-A\-R\-T\-\_\-\-D\-R register (\hyperlink{group___u_s_a_r_t_ga0b43d42da9540f446d494bf69823c6fb}{U\-S\-A\-R\-T\-\_\-\-Send\-Data()}). 
+
+T\-X\-E pending bit is cleared only by a write to the U\-S\-A\-R\-T\-\_\-\-D\-R register (\hyperlink{group___u_s_a_r_t_ga0b43d42da9540f446d494bf69823c6fb}{U\-S\-A\-R\-T\-\_\-\-Send\-Data()}).
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1429 of file stm32f4xx\-\_\-usart.\-c.
+
+\hypertarget{group___u_s_a_r_t___group9_ga144630722defc9e312f0ad280b68e9da}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!U\-S\-A\-R\-T\-\_\-\-Get\-Flag\-Status@{U\-S\-A\-R\-T\-\_\-\-Get\-Flag\-Status}}
+\index{U\-S\-A\-R\-T\-\_\-\-Get\-Flag\-Status@{U\-S\-A\-R\-T\-\_\-\-Get\-Flag\-Status}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{U\-S\-A\-R\-T\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status U\-S\-A\-R\-T\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$}]{U\-S\-A\-R\-Tx, }
+\item[{uint16\-\_\-t}]{U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___u_s_a_r_t___group9_ga144630722defc9e312f0ad280b68e9da}
+
+
+Checks whether the specified U\-S\-A\-R\-T flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\-S\-A\-R\-Tx,\-:} & where x can be 1, 2, 3, 4, 5 or 6 to select the U\-S\-A\-R\-T or U\-A\-R\-T peripheral. \\
+\hline
+{\em U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-C\-T\-S\-: C\-T\-S Change flag (not available for U\-A\-R\-T4 and U\-A\-R\-T5) \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-L\-B\-D\-: L\-I\-N Break detection flag \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-T\-X\-E\-: Transmit data register empty flag \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-T\-C\-: Transmission Complete flag \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-R\-X\-N\-E\-: Receive data register not empty flag \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-D\-L\-E\-: Idle Line detection flag \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-O\-R\-E\-: Over\-Run Error flag \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-N\-E\-: Noise Error flag \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-F\-E\-: Framing Error flag \item U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G\-\_\-\-P\-E\-: Parity Error flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of U\-S\-A\-R\-T\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1272 of file stm32f4xx\-\_\-usart.\-c.
+
+\hypertarget{group___u_s_a_r_t___group9_ga93d8f031241bcdbe938d091a85295445}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!U\-S\-A\-R\-T\-\_\-\-Get\-I\-T\-Status@{U\-S\-A\-R\-T\-\_\-\-Get\-I\-T\-Status}}
+\index{U\-S\-A\-R\-T\-\_\-\-Get\-I\-T\-Status@{U\-S\-A\-R\-T\-\_\-\-Get\-I\-T\-Status}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{U\-S\-A\-R\-T\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status U\-S\-A\-R\-T\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$}]{U\-S\-A\-R\-Tx, }
+\item[{uint16\-\_\-t}]{U\-S\-A\-R\-T\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___u_s_a_r_t___group9_ga93d8f031241bcdbe938d091a85295445}
+
+
+Checks whether the specified U\-S\-A\-R\-T interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\-S\-A\-R\-Tx,\-:} & where x can be 1, 2, 3, 4, 5 or 6 to select the U\-S\-A\-R\-T or U\-A\-R\-T peripheral. \\
+\hline
+{\em U\-S\-A\-R\-T\-\_\-\-I\-T,\-:} & specifies the U\-S\-A\-R\-T interrupt source to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-C\-T\-S\-: C\-T\-S change interrupt (not available for U\-A\-R\-T4 and U\-A\-R\-T5) \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-L\-B\-D\-: L\-I\-N Break detection interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-T\-X\-E\-: Transmit Data Register empty interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-T\-C\-: Transmission complete interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-R\-X\-N\-E\-: Receive Data register not empty interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-I\-D\-L\-E\-: Idle line detection interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-O\-R\-E\-\_\-\-R\-X \-: Over\-Run Error interrupt if the R\-X\-N\-E\-I\-E bit is set \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-O\-R\-E\-\_\-\-E\-R \-: Over\-Run Error interrupt if the E\-I\-E bit is set \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-N\-E\-: Noise Error interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-F\-E\-: Framing Error interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-P\-E\-: Parity Error interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of U\-S\-A\-R\-T\-\_\-\-I\-T (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1355 of file stm32f4xx\-\_\-usart.\-c.
+
+\hypertarget{group___u_s_a_r_t___group9_ga6d8f2dd1f34060ae7e386e3e5d56b6f6}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!U\-S\-A\-R\-T\-\_\-\-I\-T\-Config@{U\-S\-A\-R\-T\-\_\-\-I\-T\-Config}}
+\index{U\-S\-A\-R\-T\-\_\-\-I\-T\-Config@{U\-S\-A\-R\-T\-\_\-\-I\-T\-Config}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{U\-S\-A\-R\-T\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void U\-S\-A\-R\-T\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{U\-S\-A\-R\-T\-\_\-\-Type\-Def $\ast$}]{U\-S\-A\-R\-Tx, }
+\item[{uint16\-\_\-t}]{U\-S\-A\-R\-T\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___u_s_a_r_t___group9_ga6d8f2dd1f34060ae7e386e3e5d56b6f6}
+
+
+Enables or disables the specified U\-S\-A\-R\-T interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\-S\-A\-R\-Tx,\-:} & where x can be 1, 2, 3, 4, 5 or 6 to select the U\-S\-A\-R\-T or U\-A\-R\-T peripheral. \\
+\hline
+{\em U\-S\-A\-R\-T\-\_\-\-I\-T,\-:} & specifies the U\-S\-A\-R\-T interrupt sources to be enabled or disabled. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-C\-T\-S\-: C\-T\-S change interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-L\-B\-D\-: L\-I\-N Break detection interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-T\-X\-E\-: Transmit Data Register empty interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-T\-C\-: Transmission complete interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-R\-X\-N\-E\-: Receive Data register not empty interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-I\-D\-L\-E\-: Idle line detection interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-P\-E\-: Parity Error interrupt \item U\-S\-A\-R\-T\-\_\-\-I\-T\-\_\-\-E\-R\-R\-: Error interrupt(\-Frame error, noise error, overrun error) \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified U\-S\-A\-R\-Tx interrupts. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1208 of file stm32f4xx\-\_\-usart.\-c.
+

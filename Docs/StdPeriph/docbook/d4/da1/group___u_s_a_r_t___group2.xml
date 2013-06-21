@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/da1/group___u_s_a_r_t___group2">
+    <title>Data transfers functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Data transfers functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                            Data transfers functions
+ ===============================================================================  
+
+  This subsection provides a set of functions allowing to manage the USART data 
+  transfers.
+  
+  During an USART reception, data shifts in least significant bit first through 
+  the RX pin. In this mode, the USART_DR register consists of a buffer (RDR) 
+  between the internal bus and the received shift register.
+
+  When a transmission is taking place, a write instruction to the USART_DR register 
+  stores the data in the TDR register and which is copied in the shift register 
+  at the end of the current transmission.
+
+  The read access of the USART_DR register can be done using the USART_ReceiveData()
+  function and returns the RDR buffered value. Whereas a write access to the USART_DR 
+  can be done using USART_SendData() function and stores the written data into 
+  TDR buffer.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/da1/group___u_s_a_r_t___group2_1ga0b43d42da9540f446d494bf69823c6fb">USART_SendData</link> (
+USART_TypeDef * USARTx, uint16_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d4/da1/group___u_s_a_r_t___group2_1gac67a91845b0b1d54d31bdfb1c5e9867c">USART_ReceiveData</link> (
+USART_TypeDef * USARTx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d4/da1/group___u_s_a_r_t___group2_1ga0b43d42da9540f446d494bf69823c6fb">
+                <title>void USART_SendData (USART_TypeDef *USARTx, uint16_t Data)</title> <emphasis>Transmits single data through the USARTx peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>the data to transmit. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/da1/group___u_s_a_r_t___group2_1gac67a91845b0b1d54d31bdfb1c5e9867c">
+                <title>uint16_t USART_ReceiveData (USART_TypeDef *USARTx)</title> <emphasis>Returns the most recent received data by the USARTx peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>received data. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

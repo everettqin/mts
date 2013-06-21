@@ -1,0 +1,550 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d44/group___d_m_a___group4">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                  Interrupts and flags management functions
+ ===============================================================================  
+
+  This subsection provides functions allowing to
+   - Check the DMA enable status
+   - Check the FIFO status 
+   - Configure the DMA Interrupts sources and check or clear the flags or pending bits status.   
+   
+ 1. DMA Enable status:
+   After configuring the DMA Stream (DMA_Init() function) and enabling the stream,
+   it is recommended to check (or wait until) the DMA Stream is effectively enabled.
+   A Stream may remain disabled if a configuration parameter is wrong.
+   After disabling a DMA Stream, it is also recommended to check (or wait until) the DMA
+   Stream is effectively disabled. If a Stream is disabled while a data transfer is ongoing, 
+   the current data will be transferred and the Stream will be effectively disabled only after
+   this data transfer completion.
+   To monitor this state it is possible to use the following function:
+     - FunctionalState DMA_GetCmdStatus(DMA_Stream_TypeDef* DMAy_Streamx); 
+ 
+ 2. FIFO Status:
+   It is possible to monitor the FIFO status when a transfer is ongoing using the following 
+   function:
+     - uint32_t DMA_GetFIFOStatus(DMA_Stream_TypeDef* DMAy_Streamx); 
+ 
+ 3. DMA Interrupts and Flags:
+  The user should identify which mode will be used in his application to manage the
+  DMA controller events: Polling mode or Interrupt mode. 
+    
+  Polling Mode
+  =============
+    Each DMA stream can be managed through 4 event Flags:
+    (x : DMA Stream number )
+       1. DMA_FLAG_FEIFx  : to indicate that a FIFO Mode Transfer Error event occurred.
+       2. DMA_FLAG_DMEIFx : to indicate that a Direct Mode Transfer Error event occurred.
+       3. DMA_FLAG_TEIFx  : to indicate that a Transfer Error event occurred.
+       4. DMA_FLAG_HTIFx  : to indicate that a Half-Transfer Complete event occurred.
+       5. DMA_FLAG_TCIFx  : to indicate that a Transfer Complete event occurred .       
+
+   In this Mode it is advised to use the following functions:
+      - FlagStatus DMA_GetFlagStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_FLAG);
+      - void DMA_ClearFlag(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_FLAG);
+
+  Interrupt Mode
+  ===============
+    Each DMA Stream can be managed through 4 Interrupts:
+
+    Interrupt Source
+    ----------------
+       1. DMA_IT_FEIFx  : specifies the interrupt source for the  FIFO Mode Transfer Error event.
+       2. DMA_IT_DMEIFx : specifies the interrupt source for the Direct Mode Transfer Error event.
+       3. DMA_IT_TEIFx  : specifies the interrupt source for the Transfer Error event.
+       4. DMA_IT_HTIFx  : specifies the interrupt source for the Half-Transfer Complete event.
+       5. DMA_IT_TCIFx  : specifies the interrupt source for the a Transfer Complete event. 
+     
+  In this Mode it is advised to use the following functions:
+     - void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
+     - ITStatus DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+     - void DMA_ClearITPendingBit(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FunctionalState <link linkend="db/d44/group___d_m_a___group4_1gaa4d631cdd6cd020106435f30c0c6fb15">DMA_GetCmdStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="db/d44/group___d_m_a___group4_1ga9893809a7067861ec111f7d712ebf28d">DMA_GetFIFOStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="db/d44/group___d_m_a___group4_1ga10cfc0fe31d64a1fd8fb3efb4ae2a411">DMA_GetFlagStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d44/group___d_m_a___group4_1ga510d62b4051f5a5de164e84b266b851d">DMA_ClearFlag</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d44/group___d_m_a___group4_1gab9c469a3f5d4aca5c97dee798ffc2f05">DMA_ITConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="db/d44/group___d_m_a___group4_1gad0ccf5f6548bd7cf8f2cae30393bb716">DMA_GetITStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d44/group___d_m_a___group4_1gad5433018889cd36140d98bb380c4e76e">DMA_ClearITPendingBit</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="db/d44/group___d_m_a___group4_1gaa4d631cdd6cd020106435f30c0c6fb15">
+                <title>FunctionalState DMA_GetCmdStatus (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Returns the status of EN bit for the specified DMAy Streamx.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>After configuring the DMA Stream (<link linkend="df/df8/group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init()</link> function) and enabling the stream, it is recommended to check (or wait until) the DMA Stream is effectively enabled. A Stream may remain disabled if a configuration parameter is wrong. After disabling a DMA Stream, it is also recommended to check (or wait until) the DMA Stream is effectively disabled. If a Stream is disabled while a data transfer is ongoing, the current data will be transferred and the Stream will be effectively disabled only after the transfer of this single data is finished.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Current</entry>
+                                <entry>
+<para>state of the DMAy Streamx (ENABLE or DISABLE). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d44/group___d_m_a___group4_1ga9893809a7067861ec111f7d712ebf28d">
+                <title>uint32_t DMA_GetFIFOStatus (DMA_Stream_TypeDef *DMAy_Streamx)</title> <emphasis>Returns the current DMAy Streamx FIFO filled level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>FIFO filling state.<itemizedlist>
+<listitem>
+<para>DMA_FIFOStatus_Less1QuarterFull: when FIFO is less than 1 quarter-full and not empty.</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_1QuarterFull: if more than 1 quarter-full.</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_HalfFull: if more than 1 half-full.</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_3QuartersFull: if more than 3 quarters-full.</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_Empty: when FIFO is empty</para>
+</listitem><listitem>
+<para>DMA_FIFOStatus_Full: when FIFO is full </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d44/group___d_m_a___group4_1ga10cfc0fe31d64a1fd8fb3efb4ae2a411">
+                <title>FlagStatus DMA_GetFlagStatus (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_FLAG)</title> <emphasis>Checks whether the specified DMAy Streamx flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_FLAG_TCIFx: Streamx transfer complete flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_HTIFx: Streamx half transfer complete flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_TEIFx: Streamx transfer error flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_DMEIFx: Streamx direct mode error flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_FEIFx: Streamx FIFO error flag Where x can be 0 to 7 to select the DMA Stream. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of DMA_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d44/group___d_m_a___group4_1ga510d62b4051f5a5de164e84b266b851d">
+                <title>void DMA_ClearFlag (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_FLAG)</title> <emphasis>Clears the DMAy Streamx&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DMA_FLAG_TCIFx: Streamx transfer complete flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_HTIFx: Streamx half transfer complete flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_TEIFx: Streamx transfer error flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_DMEIFx: Streamx direct mode error flag </para>
+</listitem>
+<listitem>
+<para>DMA_FLAG_FEIFx: Streamx FIFO error flag Where x can be 0 to 7 to select the DMA Stream. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d44/group___d_m_a___group4_1gab9c469a3f5d4aca5c97dee798ffc2f05">
+                <title>void DMA_ITConfig (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified DMAy Streamx interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_IT, :</entry>
+                                <entry>
+<para>specifies the DMA interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DMA_IT_TC: Transfer complete interrupt mask </para>
+</listitem>
+<listitem>
+<para>DMA_IT_HT: Half transfer complete interrupt mask </para>
+</listitem>
+<listitem>
+<para>DMA_IT_TE: Transfer error interrupt mask </para>
+</listitem>
+<listitem>
+<para>DMA_IT_FE: FIFO error interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified DMA interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d44/group___d_m_a___group4_1gad0ccf5f6548bd7cf8f2cae30393bb716">
+                <title>ITStatus DMA_GetITStatus (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_IT)</title> <emphasis>Checks whether the specified DMAy Streamx interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_IT, :</entry>
+                                <entry>
+<para>specifies the DMA interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DMA_IT_TCIFx: Streamx transfer complete interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_HTIFx: Streamx half transfer complete interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_TEIFx: Streamx transfer error interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_DMEIFx: Streamx direct mode error interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_FEIFx: Streamx FIFO error interrupt Where x can be 0 to 7 to select the DMA Stream. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of DMA_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="db/d44/group___d_m_a___group4_1gad5433018889cd36140d98bb380c4e76e">
+                <title>void DMA_ClearITPendingBit (DMA_Stream_TypeDef *DMAy_Streamx, uint32_t DMA_IT)</title> <emphasis>Clears the DMAy Streamx&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DMAy_Streamx, :</entry>
+                                <entry>
+<para>where y can be 1 or 2 to select the DMA and x can be 0 to 7 to select the DMA Stream. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>DMA_IT, :</entry>
+                                <entry>
+<para>specifies the DMA interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DMA_IT_TCIFx: Streamx transfer complete interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_HTIFx: Streamx half transfer complete interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_TEIFx: Streamx transfer error interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_DMEIFx: Streamx direct mode error interrupt </para>
+</listitem>
+<listitem>
+<para>DMA_IT_FEIFx: Streamx FIFO error interrupt Where x can be 0 to 7 to select the DMA Stream. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

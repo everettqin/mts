@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d18/group___f_l_a_s_h___interrupts">
+    <title>FLASH_Interrupts</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d18/group___f_l_a_s_h___interrupts_1gaea20e80e1806d58a7544cfe8659e7f11">FLASH_IT_EOP</link> ((uint32_t)0x01000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d18/group___f_l_a_s_h___interrupts_1ga4e2c23ab8c1b9a5ee49bf6d695d9ae8c">FLASH_IT_ERR</link> ((uint32_t)0x02000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d18/group___f_l_a_s_h___interrupts_1ga46ee77d0be1f3e0a14ded0651163ae11">IS_FLASH_IT</link> ((((IT) &amp; (uint32_t)0xFCFFFFFF) == 0x00000000) &amp;&amp; ((IT) != 0x00000000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="de/d18/group___f_l_a_s_h___interrupts_1gaea20e80e1806d58a7544cfe8659e7f11">
+                <title>#define FLASH_IT_EOP</title>                
+<para>End of FLASH Operation Interrupt source </para>
+
+                <para>Definition at line 214 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="de/d18/group___f_l_a_s_h___interrupts_1ga4e2c23ab8c1b9a5ee49bf6d695d9ae8c">
+                <title>#define FLASH_IT_ERR</title>                
+<para>Error Interrupt source </para>
+
+                <para>Definition at line 215 of file stm32f4xx_flash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_flash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

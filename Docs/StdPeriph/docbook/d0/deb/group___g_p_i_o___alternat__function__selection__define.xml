@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/deb/group___g_p_i_o___alternat__function__selection__define">
+    <title>GPIO_Alternat_function_selection_define</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga93071f0121fab9f8f13e59c612ed6291">GPIO_AF_RTC_50Hz</link> ((uint8_t)0x00)  /* RTC_50Hz Alternate Function mapping */<para><emphasis>AF 0 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gacfe2ce01055b82d0fcdd93da513f7cc0">GPIO_AF_MCO</link> ((uint8_t)0x00)  /* MCO (MCO1 and MCO2) Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gac284edf4c3267d864b3d56cc6bf6ac95">GPIO_AF_TAMPER</link> ((uint8_t)0x00)  /* TAMPER (TAMPER_1 and TAMPER_2) Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga63cfa7c46dc0c5ab9cdf7340cc95f7fc">GPIO_AF_SWJ</link> ((uint8_t)0x00)  /* SWJ (SWD and JTAG) Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gac97ace879d6584f8bd705fa1d199d4d4">GPIO_AF_TRACE</link> ((uint8_t)0x00)  /* TRACE Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga9a65573a3d8684febe1fda5c6cd8c992">GPIO_AF_TIM1</link> ((uint8_t)0x01)  /* TIM1 Alternate Function mapping */<para><emphasis>AF 1 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga6a1335e47fe67ff5a08ebe0ebfec2ffa">GPIO_AF_TIM2</link> ((uint8_t)0x01)  /* TIM2 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga8c6bda0c56abc29eef7709b52d9d3e0d">GPIO_AF_TIM3</link> ((uint8_t)0x02)  /* TIM3 Alternate Function mapping */<para><emphasis>AF 2 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gabe02d26327e89fe4c9aaf30ec1187009">GPIO_AF_TIM4</link> ((uint8_t)0x02)  /* TIM4 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gad1abee116e98620ade37334e649e6006">GPIO_AF_TIM5</link> ((uint8_t)0x02)  /* TIM5 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaf7562d5cf5d33dbc7b7c69df63182583">GPIO_AF_TIM8</link> ((uint8_t)0x03)  /* TIM8 Alternate Function mapping */<para><emphasis>AF 3 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga6c7cfbf2f21945814c6526a7bacb1384">GPIO_AF_TIM9</link> ((uint8_t)0x03)  /* TIM9 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga3881c36c71f0cbd7efacb424b39cd9f4">GPIO_AF_TIM10</link> ((uint8_t)0x03)  /* TIM10 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaeb30ba1cb15de0d4af78933e9dcfd033">GPIO_AF_TIM11</link> ((uint8_t)0x03)  /* TIM11 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaa246f87c460c4bb4036b8ab39e0220f1">GPIO_AF_I2C1</link> ((uint8_t)0x04)  /* I2C1 Alternate Function mapping */<para><emphasis>AF 4 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga4a82500bac7239134e2c28d4656810f1">GPIO_AF_I2C2</link> ((uint8_t)0x04)  /* I2C2 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga302620e38b718a54d760845de2a06b2b">GPIO_AF_I2C3</link> ((uint8_t)0x04)  /* I2C3 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga7804aaf9275dbb5502312729a76d13be">GPIO_AF_SPI1</link> ((uint8_t)0x05)  /* SPI1 Alternate Function mapping */<para><emphasis>AF 5 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga45d0fbf9ba0bf0f554697e78712fc369">GPIO_AF_SPI2</link> ((uint8_t)0x05)  /* SPI2/I2S2 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gad6e716ad894aa5299273541c6966864a">GPIO_AF_SPI3</link> ((uint8_t)0x06)  /* SPI3/I2S3 Alternate Function mapping */<para><emphasis>AF 6 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga790e1f37e75f475cf09c211f566fb069">GPIO_AF_USART1</link> ((uint8_t)0x07)  /* USART1 Alternate Function mapping */<para><emphasis>AF 7 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga5e74db1f4d0fc3527aa067093625171b">GPIO_AF_USART2</link> ((uint8_t)0x07)  /* USART2 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga97742da355d32c599527813eaf109ec7">GPIO_AF_USART3</link> ((uint8_t)0x07)  /* USART3 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga8fac28d42bc99794bb74707c141fc0f6">GPIO_AF_I2S3ext</link> ((uint8_t)0x07)  /* I2S3ext Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gad1754187e64b66681cc1447695062706">GPIO_AF_UART4</link> ((uint8_t)0x08)  /* UART4 Alternate Function mapping */<para><emphasis>AF 8 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga6250acb0f2f3de33bc8e78615852cc48">GPIO_AF_UART5</link> ((uint8_t)0x08)  /* UART5 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaf69942861848b5175369145ffc001c41">GPIO_AF_USART6</link> ((uint8_t)0x08)  /* USART6 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaf5defeedc302bf348e31dd7bdcdd882f">GPIO_AF_CAN1</link> ((uint8_t)0x09)  /* CAN1 Alternate Function mapping */<para><emphasis>AF 9 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga4896d720d93f50f17207b4059ab5ebfb">GPIO_AF_CAN2</link> ((uint8_t)0x09)  /* CAN2 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga681ff7964f5d73ed973a299383b13c90">GPIO_AF_TIM12</link> ((uint8_t)0x09)  /* TIM12 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gae89e027f14289052d5c51b4c96f79702">GPIO_AF_TIM13</link> ((uint8_t)0x09)  /* TIM13 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga9341da4e7ba3921ed1a683df3ec0e41b">GPIO_AF_TIM14</link> ((uint8_t)0x09)  /* TIM14 Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaeba0aeefec841e505170efc7762ae588">GPIO_AF_OTG_FS</link> ((uint8_t)0xA)  /* OTG_FS Alternate Function mapping */<para><emphasis>AF 10 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaa92d928ec3d83bfef06877092178960a">GPIO_AF_OTG_HS</link> ((uint8_t)0xA)  /* OTG_HS Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga26cf3f30fe5154bd461b27fab58e45e2">GPIO_AF_ETH</link> ((uint8_t)0x0B)  /* ETHERNET Alternate Function mapping */<para><emphasis>AF 11 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga8378a89ae1a16d5ae5d315ca49a57674">GPIO_AF_FSMC</link> ((uint8_t)0xC)  /* FSMC Alternate Function mapping */<para><emphasis>AF 12 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga5f30e17f7328fa05e6dd8b799ae5e6ee">GPIO_AF_OTG_HS_FS</link> ((uint8_t)0xC)  /* OTG HS configured in FS, Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga0ae9928f85fc99947659994eb025cc2b">GPIO_AF_SDIO</link> ((uint8_t)0xC)  /* SDIO Alternate Function mapping */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaa7bfafac663bac5d437bd6d6a2f6774d">GPIO_AF_DCMI</link> ((uint8_t)0x0D)  /* DCMI Alternate Function mapping */<para><emphasis>AF 13 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gacd5e7846b3709cddbf41ece2b1fb068e">GPIO_AF_EVENTOUT</link> ((uint8_t)0x0F)  /* EVENTOUT Alternate Function mapping */<para><emphasis>AF 15 selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga79eead44ddc05f1aa13d93c69196bced">IS_GPIO_AF</link> (((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga93071f0121fab9f8f13e59c612ed6291">GPIO_AF_RTC_50Hz</link>)  || ((AF) == GPIO_AF_TIM14)  || \
+                          ((AF) == GPIO_AF_MCO)       || ((AF) == GPIO_AF_TAMPER) || \
+                          ((AF) == GPIO_AF_SWJ)       || ((AF) == GPIO_AF_TRACE)  || \
+                          ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga9a65573a3d8684febe1fda5c6cd8c992">GPIO_AF_TIM1</link>)      || ((AF) == GPIO_AF_TIM2)   || \
+                          ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga8c6bda0c56abc29eef7709b52d9d3e0d">GPIO_AF_TIM3</link>)      || ((AF) == GPIO_AF_TIM4)   || \
+                          ((AF) == GPIO_AF_TIM5)      || ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaf7562d5cf5d33dbc7b7c69df63182583">GPIO_AF_TIM8</link>)   || \
+                          ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaa246f87c460c4bb4036b8ab39e0220f1">GPIO_AF_I2C1</link>)      || ((AF) == GPIO_AF_I2C2)   || \
+                          ((AF) == GPIO_AF_I2C3)      || ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga7804aaf9275dbb5502312729a76d13be">GPIO_AF_SPI1</link>)   || \
+                          ((AF) == GPIO_AF_SPI2)      || ((AF) == GPIO_AF_TIM13)  || \
+                          ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gad6e716ad894aa5299273541c6966864a">GPIO_AF_SPI3</link>)      || ((AF) == GPIO_AF_TIM14)  || \
+                          ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga790e1f37e75f475cf09c211f566fb069">GPIO_AF_USART1</link>)    || ((AF) == GPIO_AF_USART2) || \
+                          ((AF) == GPIO_AF_USART3)    || ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gad1754187e64b66681cc1447695062706">GPIO_AF_UART4</link>)  || \
+                          ((AF) == GPIO_AF_UART5)     || ((AF) == GPIO_AF_USART6) || \
+                          ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaf5defeedc302bf348e31dd7bdcdd882f">GPIO_AF_CAN1</link>)      || ((AF) == GPIO_AF_CAN2)   || \
+                          ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaeba0aeefec841e505170efc7762ae588">GPIO_AF_OTG_FS</link>)    || ((AF) == GPIO_AF_OTG_HS) || \
+                          ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga26cf3f30fe5154bd461b27fab58e45e2">GPIO_AF_ETH</link>)       || ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1ga8378a89ae1a16d5ae5d315ca49a57674">GPIO_AF_FSMC</link>)   || \
+                          ((AF) == GPIO_AF_OTG_HS_FS) || ((AF) == GPIO_AF_SDIO)   || \
+                          ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gaa7bfafac663bac5d437bd6d6a2f6774d">GPIO_AF_DCMI</link>)      || ((AF) == <link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define_1gacd5e7846b3709cddbf41ece2b1fb068e">GPIO_AF_EVENTOUT</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

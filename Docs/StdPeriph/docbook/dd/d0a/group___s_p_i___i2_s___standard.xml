@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d0a/group___s_p_i___i2_s___standard">
+    <title>SPI_I2S_Standard</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1gacdb89d66a2a941924ff4b7a8d14884f9">I2S_Standard_Phillips</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1gae716cfa7e031affc37fe65dd80b0e6f4">I2S_Standard_MSB</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1ga88bc9001a13b95a0844d81fea2080df6">I2S_Standard_LSB</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1gaaf59e587048ff632037dfc9875ab4c7b">I2S_Standard_PCMShort</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1gaf79cb88702059506d876dbd776d7a136">I2S_Standard_PCMLong</link> ((uint16_t)0x00B0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d0a/group___s_p_i___i2_s___standard_1ga826b9ddb34520b8fa64c2b65c9bfd528">IS_I2S_STANDARD</link> (((STANDARD) == I2S_Standard_Phillips) || \
+                                   ((STANDARD) == I2S_Standard_MSB) || \
+                                   ((STANDARD) == I2S_Standard_LSB) || \
+                                   ((STANDARD) == I2S_Standard_PCMShort) || \
+                                   ((STANDARD) == I2S_Standard_PCMLong))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

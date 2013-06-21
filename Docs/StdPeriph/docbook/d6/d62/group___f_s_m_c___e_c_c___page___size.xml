@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d62/group___f_s_m_c___e_c_c___page___size">
+    <title>FSMC_ECC_Page_Size</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d62/group___f_s_m_c___e_c_c___page___size_1gaaa1661267b44e6728fa64aca79de54b3">FSMC_ECCPageSize_256Bytes</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d62/group___f_s_m_c___e_c_c___page___size_1gacb4da17c28dde89e38ff4ed40497f6b5">FSMC_ECCPageSize_512Bytes</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d62/group___f_s_m_c___e_c_c___page___size_1ga8137931c96b63ec7e6f80a8c7391433f">FSMC_ECCPageSize_1024Bytes</link> ((uint32_t)0x00040000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d62/group___f_s_m_c___e_c_c___page___size_1gab8f3ae95becd59e71a976b97ded904b8">FSMC_ECCPageSize_2048Bytes</link> ((uint32_t)0x00060000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d62/group___f_s_m_c___e_c_c___page___size_1gaec2e9e434685a1756bd171699248f65a">FSMC_ECCPageSize_4096Bytes</link> ((uint32_t)0x00080000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d62/group___f_s_m_c___e_c_c___page___size_1gab6877a99ddf02e7aa95cf04896ce731d">FSMC_ECCPageSize_8192Bytes</link> ((uint32_t)0x000A0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d62/group___f_s_m_c___e_c_c___page___size_1ga58fefa0d55875775a88f54ad7498178f">IS_FSMC_ECCPAGE_SIZE</link> (((SIZE) == FSMC_ECCPageSize_256Bytes) || \
+                                    ((SIZE) == FSMC_ECCPageSize_512Bytes) || \
+                                    ((SIZE) == FSMC_ECCPageSize_1024Bytes) || \
+                                    ((SIZE) == FSMC_ECCPageSize_2048Bytes) || \
+                                    ((SIZE) == FSMC_ECCPageSize_4096Bytes) || \
+                                    ((SIZE) == FSMC_ECCPageSize_8192Bytes))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

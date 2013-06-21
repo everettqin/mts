@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d34/group___d_c_m_i___flags">
+    <title>DCMI_Flags</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gaf0137c6fe1d4f62e3197a1525ccd4576">DCMI_FLAG_HSYNC</link> ((uint16_t)0x2001)<para><emphasis>DCMI SR register.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga7ae4108d63dc1148222a50f84fd3af4f">DCMI_FLAG_VSYNC</link> ((uint16_t)0x2002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga9fe6ca35ea558baf07ff85cc6d9d3394">DCMI_FLAG_FNE</link> ((uint16_t)0x2004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gab882a0ef2f660db5dcd1d12eff39f653">DCMI_FLAG_FRAMERI</link> ((uint16_t)0x0001)<para><emphasis>DCMI RISR register.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga10e986f24ca3e73d31f56ddd908987e0">DCMI_FLAG_OVFRI</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga38108fd82e34f856f2cc2289d5809143">DCMI_FLAG_ERRRI</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga684fd8d6f4d02ec7e9113a5a4caa6484">DCMI_FLAG_VSYNCRI</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga291eae13e645d5303690dc07a8cfcfde">DCMI_FLAG_LINERI</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gad6373f50f9681c59b0406c8c1ae3aac1">DCMI_FLAG_FRAMEMI</link> ((uint16_t)0x1001)<para><emphasis>DCMI MISR register.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gaec0c82ddcc3994b877a2f904c680e2b1">DCMI_FLAG_OVFMI</link> ((uint16_t)0x1002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga32d9f0793f2c0758c05e07e273251e96">DCMI_FLAG_ERRMI</link> ((uint16_t)0x1004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga9933cab890dbebea51db4aa71a11f90d">DCMI_FLAG_VSYNCMI</link> ((uint16_t)0x1008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1ga9c409d7ee355083e9b73f267f94d44e3">DCMI_FLAG_LINEMI</link> ((uint16_t)0x1010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gaa0278161a8e39b18ecd4a3501c70e753">IS_DCMI_GET_FLAG</link> (((FLAG) == <link linkend="d8/d34/group___d_c_m_i___flags_1gaf0137c6fe1d4f62e3197a1525ccd4576">DCMI_FLAG_HSYNC</link>) || \
+                                ((FLAG) == DCMI_FLAG_VSYNC) || \
+                                ((FLAG) == DCMI_FLAG_FNE) || \
+                                ((FLAG) == <link linkend="d8/d34/group___d_c_m_i___flags_1gab882a0ef2f660db5dcd1d12eff39f653">DCMI_FLAG_FRAMERI</link>) || \
+                                ((FLAG) == DCMI_FLAG_OVFRI) || \
+                                ((FLAG) == DCMI_FLAG_ERRRI) || \
+                                ((FLAG) == DCMI_FLAG_VSYNCRI) || \
+                                ((FLAG) == DCMI_FLAG_LINERI) || \
+                                ((FLAG) == <link linkend="d8/d34/group___d_c_m_i___flags_1gad6373f50f9681c59b0406c8c1ae3aac1">DCMI_FLAG_FRAMEMI</link>) || \
+                                ((FLAG) == DCMI_FLAG_OVFMI) || \
+                                ((FLAG) == DCMI_FLAG_ERRMI) || \
+                                ((FLAG) == DCMI_FLAG_VSYNCMI) || \
+                                ((FLAG) == DCMI_FLAG_LINEMI))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d34/group___d_c_m_i___flags_1gaf47c4a92fae67d5f5208ba0b222efa7a">IS_DCMI_CLEAR_FLAG</link> ((((FLAG) &amp; (uint16_t)0xFFE0) == 0x0000) &amp;&amp; ((FLAG) != 0x0000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

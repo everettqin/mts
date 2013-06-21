@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d5c/group___d_m_a__memory__targets__definitions">
+    <title>DMA_memory_targets_definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d5c/group___d_m_a__memory__targets__definitions_1gadb576bccef5f2fc65fe9b451033bdc95">DMA_Memory_0</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d5c/group___d_m_a__memory__targets__definitions_1ga6d1e13631e4ef9a013d078e613fd7fd5">DMA_Memory_1</link> ((uint32_t)0x00080000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d5c/group___d_m_a__memory__targets__definitions_1ga87d6abab18d2b4bb86db909854cc1f02">IS_DMA_CURRENT_MEM</link> (((MEM) == DMA_Memory_0) || ((MEM) == DMA_Memory_1))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

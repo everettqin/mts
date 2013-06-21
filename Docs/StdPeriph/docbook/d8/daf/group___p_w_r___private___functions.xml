@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/daf/group___p_w_r___private___functions">
+    <title>PWR_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="df/d24/group___p_w_r___group1">Backup Domain Access function</link></para></listitem>
+            <listitem><para><link linkend="d2/d5e/group___p_w_r___group2">PVD configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d2/de6/group___p_w_r___group3">WakeUp pin configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d8/dae/group___p_w_r___group4">Main and Backup Regulators configuration functions</link></para></listitem>
+            <listitem><para><link linkend="da/d82/group___p_w_r___group5">FLASH Power Down configuration functions</link></para></listitem>
+            <listitem><para><link linkend="df/d70/group___p_w_r___group6">Low Power modes configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d8/d88/group___p_w_r___group7">Flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="df/d24/group___p_w_r___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d5e/group___p_w_r___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/de6/group___p_w_r___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/dae/group___p_w_r___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d82/group___p_w_r___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d70/group___p_w_r___group6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d88/group___p_w_r___group7.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

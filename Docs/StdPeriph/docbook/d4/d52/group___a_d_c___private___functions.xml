@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d52/group___a_d_c___private___functions">
+    <title>ADC_Private_Functions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d2/d29/group___a_d_c___group1">Initialization and Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="dc/db6/group___a_d_c___group2">Analog Watchdog configuration functions</link></para></listitem>
+            <listitem><para><link linkend="df/d61/group___a_d_c___group3">Temperature Sensor, Vrefint (Voltage Reference internal)</link></para></listitem>
+            <listitem><para><link linkend="dd/d1b/group___a_d_c___group4">Regular Channels Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d6/d61/group___a_d_c___group5">Regular Channels DMA Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d7/d56/group___a_d_c___group6">Injected channels Configuration functions</link></para></listitem>
+            <listitem><para><link linkend="d8/d65/group___a_d_c___group7">Interrupts and flags management functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d2/d29/group___a_d_c___group1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/db6/group___a_d_c___group2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d61/group___a_d_c___group3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d1b/group___a_d_c___group4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d61/group___a_d_c___group5.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d56/group___a_d_c___group6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d65/group___a_d_c___group7.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d5b/struct_f_s_m_c___n_a_n_d_init_type_def">
+<title>FSMC_NANDInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d3/d3a/stm32f4xx__fsmc_8h">&lt;stm32f4xx_fsmc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_Bank</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_Waitfeature</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_MemoryDataWidth</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_ECC</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_ECCPageSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_TCLRSetupTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_TARSetupTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FSMC_NAND_PCCARDTimingInitTypeDef * FSMC_CommonSpaceTimingStruct</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FSMC_NAND_PCCARDTimingInitTypeDef * FSMC_AttributeSpaceTimingStruct</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>FSMC NAND Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t FSMC_Bank</title>                
+<para>Specifies the NAND memory bank that will be used. This parameter can be a value of <link linkend="d0/dcf/group___f_s_m_c___n_a_n_d___bank">FSMC_NAND_Bank</link> </para>
+
+                <para>Definition at line 179 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_Waitfeature</title>                
+<para>Enables or disables the Wait feature for the NAND Memory Bank. This parameter can be any value of <link linkend="de/dcf/group___f_s_m_c___wait__feature">FSMC_Wait_feature</link> </para>
+
+                <para>Definition at line 182 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_MemoryDataWidth</title>                
+<para>Specifies the external memory device width. This parameter can be any value of <link linkend="d3/d0a/group___f_s_m_c___data___width">FSMC_Data_Width</link> </para>
+
+                <para>Definition at line 185 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_ECC</title>                
+<para>Enables or disables the ECC computation. This parameter can be any value of <link linkend="d3/ddc/group___f_s_m_c___e_c_c">FSMC_ECC</link> </para>
+
+                <para>Definition at line 188 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_ECCPageSize</title>                
+<para>Defines the page size for the extended ECC. This parameter can be any value of <link linkend="d6/d62/group___f_s_m_c___e_c_c___page___size">FSMC_ECC_Page_Size</link> </para>
+
+                <para>Definition at line 191 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_TCLRSetupTime</title>                
+<para>Defines the number of HCLK cycles to configure the delay between CLE low and RE low. This parameter can be a value between 0 and 0xFF. </para>
+
+                <para>Definition at line 194 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_TARSetupTime</title>                
+<para>Defines the number of HCLK cycles to configure the delay between ALE low and RE low. This parameter can be a number between 0x0 and 0xFF </para>
+
+                <para>Definition at line 198 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>FSMC_NAND_PCCARDTimingInitTypeDef* FSMC_CommonSpaceTimingStruct</title>                
+<para>FSMC Common Space Timing </para>
+
+                <para>Definition at line 202 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>FSMC_NAND_PCCARDTimingInitTypeDef* FSMC_AttributeSpaceTimingStruct</title>                
+<para>FSMC Attribute Space Timing </para>
+
+                <para>Definition at line 204 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

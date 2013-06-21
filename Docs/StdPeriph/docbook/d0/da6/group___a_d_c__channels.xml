@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/da6/group___a_d_c__channels">
+    <title>ADC_channels</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga40ec353803e9470a5721ef5bf0b1ab24">ADC_Channel_0</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga0b04cebf8d62085eca6dc7daa3d5d3f0">ADC_Channel_1</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1gabc66e2529583e11b591efd2df7070571">ADC_Channel_2</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga9f93cbacd030f1c79f96f8889b0cdee6">ADC_Channel_3</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1gafc7218417f729659dd8f06185cc2eafa">ADC_Channel_4</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga42822abae41faabde2a2da877e0cc854">ADC_Channel_5</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga7e24a73eec4aeb7d8e2f9008825ceacb">ADC_Channel_6</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga9723aa5fe6b9f4af1ffd3b90e6eef8d1">ADC_Channel_7</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga99b2c662d4068152e0e80a048036cc48">ADC_Channel_8</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga01a61c428be0cb69327e428e32a42aa1">ADC_Channel_9</link> ((uint8_t)0x09)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1gabfa98b580f49a82a83dcb1df32efceca">ADC_Channel_10</link> ((uint8_t)0x0A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga5bfc40d938f384f22665f6e2dd945cfd">ADC_Channel_11</link> ((uint8_t)0x0B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1gaa1e35f7870ae8f05013a681293175299">ADC_Channel_12</link> ((uint8_t)0x0C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga517cda911256f722eb067d7140663230">ADC_Channel_13</link> ((uint8_t)0x0D)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1gaf1830a03fe4a3820fde4f41ba907c394">ADC_Channel_14</link> ((uint8_t)0x0E)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga01431a7b4e388beb241328874abdf88c">ADC_Channel_15</link> ((uint8_t)0x0F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga52fb09ae9a0333a0e071da106466c659">ADC_Channel_16</link> ((uint8_t)0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga58cdfe3a5625f198116d163b09698cea">ADC_Channel_17</link> ((uint8_t)0x11)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1gacc9277b9f14b55c5dff2f493dc5e7797">ADC_Channel_18</link> ((uint8_t)0x12)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga1efc096b8d4a8d15c4a7d91f5c03c6c7">ADC_Channel_TempSensor</link> ((uint8_t)ADC_Channel_16)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1ga5d48ded5138e6f1efe3a7634eff4d125">ADC_Channel_Vrefint</link> ((uint8_t)ADC_Channel_17)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1gae86cee19a99a31d5ed3f95f64d81301a">ADC_Channel_Vbat</link> ((uint8_t)ADC_Channel_18)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/da6/group___a_d_c__channels_1gaba41910dcb2b449c613a5ef638862e77">IS_ADC_CHANNEL</link> (((CHANNEL) == ADC_Channel_0) || \
+                                 ((CHANNEL) == ADC_Channel_1) || \
+                                 ((CHANNEL) == ADC_Channel_2) || \
+                                 ((CHANNEL) == ADC_Channel_3) || \
+                                 ((CHANNEL) == ADC_Channel_4) || \
+                                 ((CHANNEL) == ADC_Channel_5) || \
+                                 ((CHANNEL) == ADC_Channel_6) || \
+                                 ((CHANNEL) == ADC_Channel_7) || \
+                                 ((CHANNEL) == ADC_Channel_8) || \
+                                 ((CHANNEL) == ADC_Channel_9) || \
+                                 ((CHANNEL) == ADC_Channel_10) || \
+                                 ((CHANNEL) == ADC_Channel_11) || \
+                                 ((CHANNEL) == ADC_Channel_12) || \
+                                 ((CHANNEL) == ADC_Channel_13) || \
+                                 ((CHANNEL) == ADC_Channel_14) || \
+                                 ((CHANNEL) == ADC_Channel_15) || \
+                                 ((CHANNEL) == ADC_Channel_16) || \
+                                 ((CHANNEL) == ADC_Channel_17) || \
+                                 ((CHANNEL) == ADC_Channel_18))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

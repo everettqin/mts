@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d18/group___p_w_r___p_v_d__detection__level">
+    <title>PWR_PVD_detection_level</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gac8ec8a52046b242f03dcf8a4f32fb04b">PWR_PVDLevel_0</link> PWR_CR_PLS_LEV0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1ga0d090f9683877c0e8a5546a56d5ad888">PWR_PVDLevel_1</link> PWR_CR_PLS_LEV1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gabaccdd03ff6fbfa16e6a1283a2e6b989">PWR_PVDLevel_2</link> PWR_CR_PLS_LEV2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gabbd91e2587a81908837b0a759694fba9">PWR_PVDLevel_3</link> PWR_CR_PLS_LEV3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1ga81f75ef83b2aa4b0f23f75b01ae6afcf">PWR_PVDLevel_4</link> PWR_CR_PLS_LEV4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1ga0dfeb8ca4a8cb68dd99b1fe087c9440a">PWR_PVDLevel_5</link> PWR_CR_PLS_LEV5</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gaf52c143ded625cd4d4f06a5954b55af4">PWR_PVDLevel_6</link> PWR_CR_PLS_LEV6</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1ga53439278c8f3a05b810b43fc3ad79f7b">PWR_PVDLevel_7</link> PWR_CR_PLS_LEV7</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gabac4485a57abc97aad91eaa0b65ae927">IS_PWR_PVD_LEVEL</link> (((LEVEL) == PWR_PVDLevel_0) || ((LEVEL) == PWR_PVDLevel_1)|| \
+                                 ((LEVEL) == PWR_PVDLevel_2) || ((LEVEL) == PWR_PVDLevel_3)|| \
+                                 ((LEVEL) == PWR_PVDLevel_4) || ((LEVEL) == PWR_PVDLevel_5)|| \
+                                 ((LEVEL) == PWR_PVDLevel_6) || ((LEVEL) == PWR_PVDLevel_7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

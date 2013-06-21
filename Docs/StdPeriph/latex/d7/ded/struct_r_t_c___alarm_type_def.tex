@@ -1,0 +1,72 @@
+\hypertarget{struct_r_t_c___alarm_type_def}{\section{R\-T\-C\-\_\-\-Alarm\-Type\-Def Struct Reference}
+\label{struct_r_t_c___alarm_type_def}\index{R\-T\-C\-\_\-\-Alarm\-Type\-Def@{R\-T\-C\-\_\-\-Alarm\-Type\-Def}}
+}
+
+
+R\-T\-C Alarm structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\-\_\-rtc.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_r_t_c___time_type_def}{R\-T\-C\-\_\-\-Time\-Type\-Def} \hyperlink{struct_r_t_c___alarm_type_def_a87078823f156d88aa21b0a1c43cb985c}{R\-T\-C\-\_\-\-Alarm\-Time}
+\item 
+uint32\-\_\-t \hyperlink{struct_r_t_c___alarm_type_def_a0257c34b484be71007c338374f9fd8fc}{R\-T\-C\-\_\-\-Alarm\-Mask}
+\item 
+uint32\-\_\-t \hyperlink{struct_r_t_c___alarm_type_def_a8fd76a34adc4e9f85a32a23c2b8bde46}{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day\-Sel}
+\item 
+uint8\-\_\-t \hyperlink{struct_r_t_c___alarm_type_def_a7d6cbb1226c82e91f199446b2601abd0}{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+R\-T\-C Alarm structure definition. 
+
+Definition at line 100 of file stm32f4xx\-\_\-rtc.\-h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{struct_r_t_c___alarm_type_def_a7d6cbb1226c82e91f199446b2601abd0}{\index{R\-T\-C\-\_\-\-Alarm\-Type\-Def@{R\-T\-C\-\_\-\-Alarm\-Type\-Def}!R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day@{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day}}
+\index{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day@{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day}!RTC_AlarmTypeDef@{R\-T\-C\-\_\-\-Alarm\-Type\-Def}}
+\subsubsection[{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day}}\label{struct_r_t_c___alarm_type_def_a7d6cbb1226c82e91f199446b2601abd0}
+\begin{DoxyVerb} Specifies the RTC Alarm Date/WeekDay.
+\end{DoxyVerb}
+ If the Alarm Date is selected, this parameter must be set to a value in the 1-\/31 range. If the Alarm Week\-Day is selected, this parameter can be a value of \hyperlink{group___r_t_c___week_day___definitions}{R\-T\-C\-\_\-\-Week\-Day\-\_\-\-Definitions} 
+
+Definition at line 110 of file stm32f4xx\-\_\-rtc.\-h.
+
+\hypertarget{struct_r_t_c___alarm_type_def_a8fd76a34adc4e9f85a32a23c2b8bde46}{\index{R\-T\-C\-\_\-\-Alarm\-Type\-Def@{R\-T\-C\-\_\-\-Alarm\-Type\-Def}!R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day\-Sel@{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day\-Sel}}
+\index{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day\-Sel@{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day\-Sel}!RTC_AlarmTypeDef@{R\-T\-C\-\_\-\-Alarm\-Type\-Def}}
+\subsubsection[{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day\-Sel}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day\-Sel}}\label{struct_r_t_c___alarm_type_def_a8fd76a34adc4e9f85a32a23c2b8bde46}
+\begin{DoxyVerb} Specifies the RTC Alarm is on Date or WeekDay.
+\end{DoxyVerb}
+ This parameter can be a value of \hyperlink{group___r_t_c___alarm_date_week_day___definitions}{R\-T\-C\-\_\-\-Alarm\-Date\-Week\-Day\-\_\-\-Definitions} 
+
+Definition at line 107 of file stm32f4xx\-\_\-rtc.\-h.
+
+\hypertarget{struct_r_t_c___alarm_type_def_a0257c34b484be71007c338374f9fd8fc}{\index{R\-T\-C\-\_\-\-Alarm\-Type\-Def@{R\-T\-C\-\_\-\-Alarm\-Type\-Def}!R\-T\-C\-\_\-\-Alarm\-Mask@{R\-T\-C\-\_\-\-Alarm\-Mask}}
+\index{R\-T\-C\-\_\-\-Alarm\-Mask@{R\-T\-C\-\_\-\-Alarm\-Mask}!RTC_AlarmTypeDef@{R\-T\-C\-\_\-\-Alarm\-Type\-Def}}
+\subsubsection[{R\-T\-C\-\_\-\-Alarm\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t R\-T\-C\-\_\-\-Alarm\-Mask}}\label{struct_r_t_c___alarm_type_def_a0257c34b484be71007c338374f9fd8fc}
+\begin{DoxyVerb} Specifies the RTC Alarm Masks.
+\end{DoxyVerb}
+ This parameter can be a value of \hyperlink{group___r_t_c___alarm_mask___definitions}{R\-T\-C\-\_\-\-Alarm\-Mask\-\_\-\-Definitions} 
+
+Definition at line 104 of file stm32f4xx\-\_\-rtc.\-h.
+
+\hypertarget{struct_r_t_c___alarm_type_def_a87078823f156d88aa21b0a1c43cb985c}{\index{R\-T\-C\-\_\-\-Alarm\-Type\-Def@{R\-T\-C\-\_\-\-Alarm\-Type\-Def}!R\-T\-C\-\_\-\-Alarm\-Time@{R\-T\-C\-\_\-\-Alarm\-Time}}
+\index{R\-T\-C\-\_\-\-Alarm\-Time@{R\-T\-C\-\_\-\-Alarm\-Time}!RTC_AlarmTypeDef@{R\-T\-C\-\_\-\-Alarm\-Type\-Def}}
+\subsubsection[{R\-T\-C\-\_\-\-Alarm\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-T\-C\-\_\-\-Time\-Type\-Def} R\-T\-C\-\_\-\-Alarm\-Time}}\label{struct_r_t_c___alarm_type_def_a87078823f156d88aa21b0a1c43cb985c}
+Specifies the R\-T\-C Alarm Time members. 
+
+Definition at line 102 of file stm32f4xx\-\_\-rtc.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Libraries/\-S\-T\-M32\-F4xx\-\_\-\-Std\-Periph\-\_\-\-Driver/inc/\hyperlink{stm32f4xx__rtc_8h}{stm32f4xx\-\_\-rtc.\-h}\end{DoxyCompactItemize}

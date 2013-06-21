@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d82/group___s_p_i___m_s_b___l_s_b__transmission">
+    <title>SPI_MSB_LSB_transmission</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d82/group___s_p_i___m_s_b___l_s_b__transmission_1ga45e688f93a93b605886240cad23bc2eb">SPI_FirstBit_MSB</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d82/group___s_p_i___m_s_b___l_s_b__transmission_1ga5ef57fca79434cbc517e4ede548ca02d">SPI_FirstBit_LSB</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d82/group___s_p_i___m_s_b___l_s_b__transmission_1gabee8e0302741f4a5c41b96af640c63ad">IS_SPI_FIRST_BIT</link> (((BIT) == SPI_FirstBit_MSB) || \
+                               ((BIT) == SPI_FirstBit_LSB))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

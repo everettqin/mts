@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dcb/group___r_c_c___a_h_b3___peripherals">
+    <title>RCC_AHB3_Peripherals</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dcb/group___r_c_c___a_h_b3___peripherals_1gaa305538e5105917baf53039c5643a361">RCC_AHB3Periph_FSMC</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dcb/group___r_c_c___a_h_b3___peripherals_1ga8d269d2fbf78cf494ea127d1a6daec31">IS_RCC_AHB3_PERIPH</link> ((((PERIPH) &amp; 0xFFFFFFFE) == 0x00) &amp;&amp; ((PERIPH) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

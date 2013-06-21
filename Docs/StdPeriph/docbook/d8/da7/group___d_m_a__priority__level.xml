@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/da7/group___d_m_a__priority__level">
+    <title>DMA_priority_level</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1gaf414e0aa8dd42aee6f83f88ab6175179">DMA_Priority_Low</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1ga8e0d4a958f4288c6c759945789490f38">DMA_Priority_Medium</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1gae2441c0b4d4ba9945a6f4f7d08045a8e">DMA_Priority_High</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1gadccd2f8b2ac24ba4fd485dd5b9b48671">DMA_Priority_VeryHigh</link> ((uint32_t)0x00030000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1gaa1cae2ab458948511596467c87cd02b6">IS_DMA_PRIORITY</link> (((PRIORITY) == DMA_Priority_Low )   || \
+                                   ((PRIORITY) == DMA_Priority_Medium) || \
+                                   ((PRIORITY) == DMA_Priority_High)   || \
+                                   ((PRIORITY) == DMA_Priority_VeryHigh))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

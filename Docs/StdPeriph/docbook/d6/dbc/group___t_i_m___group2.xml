@@ -1,0 +1,2216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dbc/group___t_i_m___group2">
+    <title>Output Compare management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Output Compare management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                        Output Compare management functions
+ ===============================================================================  
+   
+       ===================================================================      
+              TIM Driver: how to use it in Output Compare Mode
+       =================================================================== 
+       To use the Timer in Output Compare mode, the following steps are mandatory:
+       
+       1. Enable TIM clock using RCC_APBxPeriphClockCmd(RCC_APBxPeriph_TIMx, ENABLE) function
+       
+       2. Configure the TIM pins by configuring the corresponding GPIO pins
+       
+       2. Configure the Time base unit as described in the first part of this driver, 
+          if needed, else the Timer will run with the default configuration:
+          - Autoreload value = 0xFFFF
+          - Prescaler value = 0x0000
+          - Counter mode = Up counting
+          - Clock Division = TIM_CKD_DIV1
+          
+       3. Fill the TIM_OCInitStruct with the desired parameters including:
+          - The TIM Output Compare mode: TIM_OCMode
+          - TIM Output State: TIM_OutputState
+          - TIM Pulse value: TIM_Pulse
+          - TIM Output Compare Polarity : TIM_OCPolarity
+       
+       4. Call TIM_OCxInit(TIMx, &amp;TIM_OCInitStruct) to configure the desired channel with the 
+          corresponding configuration
+       
+       5. Call the TIM_Cmd(ENABLE) function to enable the TIM counter.
+       
+       Note1: All other functions can be used separately to modify, if needed,
+              a specific feature of the Timer. 
+          
+       Note2: In case of PWM mode, this function is mandatory:
+              TIM_OCxPreloadConfig(TIMx, TIM_OCPreload_ENABLE); 
+              
+       Note3: If the corresponding interrupt or DMA request are needed, the user should:
+                1. Enable the NVIC (or the DMA) to use the TIM interrupts (or DMA requests). 
+                2. Enable the corresponding interrupt (or DMA request) using the function 
+                   TIM_ITConfig(TIMx, TIM_IT_CCx) (or TIM_DMA_Cmd(TIMx, TIM_DMA_CCx))   </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gafcdb6ff00158862aef7fed5e7a554a3e">TIM_OC1Init</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga2017455121d910d6ff63ac6f219842c5">TIM_OC2Init</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30">TIM_OC3Init</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga64571ebbb58cac39a9e760050175f11c">TIM_OC4Init</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga394683c78ae02837882e36014e11643e">TIM_OCStructInit</link> (
+<link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga83ea0af5a7c1af521236ce5e4d2c42b0">TIM_SelectOCxM</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_Channel, uint16_t TIM_OCMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga48631e66c32bb905946664f4722b2546">TIM_SetCompare1</link> (
+TIM_TypeDef * TIMx, uint32_t Compare1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga3de36754f3ba5d46b9ef2bf8e77575c7">TIM_SetCompare2</link> (
+TIM_TypeDef * TIMx, uint32_t Compare2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gac372fbbbbc20329802659dd6c6b4e051">TIM_SetCompare3</link> (
+TIM_TypeDef * TIMx, uint32_t Compare3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga99ba6c2afa87a239c9d32a49762b4245">TIM_SetCompare4</link> (
+TIM_TypeDef * TIMx, uint32_t Compare4)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga4f58c12e6493a0d8b9555c9097b831d6">TIM_ForcedOC1Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ForcedAction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga3d2902b6fbab8dd55cd531055ffcc63d">TIM_ForcedOC2Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ForcedAction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga920b0fb4ca44fceffd1c3e441feebd8f">TIM_ForcedOC3Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ForcedAction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gaf0a0bbe74251e56d4b835d20b0a3aa63">TIM_ForcedOC4Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ForcedAction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga60e6c29ad8f919bef616cf8e3306dd64">TIM_OC1PreloadConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga75b4614c6dd2cd52f2c5becdb6590c10">TIM_OC2PreloadConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga8b2391685a519e60e596b7d596f86f09">TIM_OC3PreloadConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga8bf4dfb35ff0c7b494dd96579f50b1ec">TIM_OC4PreloadConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gaec82031ca62f31f5483195c09752a83a">TIM_OC1FastConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCFast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga413359c87f46c69f1ffe2dc8fb3a65e7">TIM_OC2FastConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCFast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gab2f3698e6e56bd9b0a4be7056ba789e1">TIM_OC3FastConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCFast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga58279a04e8ea5333f1079d3cce8dde12">TIM_OC4FastConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCFast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga34e926cd8a99cfcc7480b2d6de5118b6">TIM_ClearOC1Ref</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCClear)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gac474ebc815d24c8a589969e0c68b27b0">TIM_ClearOC2Ref</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCClear)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga0bd9476a14bd346c319945ec4fa2bc67">TIM_ClearOC3Ref</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCClear)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gaeee5fa66b26e7c6f71850272dc3028f3">TIM_ClearOC4Ref</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCClear)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga03878f78163485c8a3508cff2111c297">TIM_OC1PolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga3cb91578e7dd34ea7d09862482960445">TIM_OC1NPolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCNPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga6831cacaac1ef50291af94db94450797">TIM_OC2PolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga2fa6ea3a89f446b52b4e699272b70cad">TIM_OC2NPolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCNPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga1ef43b03fe666495e80aac9741ae7ab0">TIM_OC3PolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gac710acc5b682e892584fc6f089f61dc2">TIM_OC3NPolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCNPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gad678410f7c7244f83daad93ce9d1056e">TIM_OC4PolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga3ecc4647d9ede261beb5e0535cf29ebb">TIM_CCxCmd</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_Channel, uint16_t TIM_CCx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga304ff7c8a1615498da749bf2507e9f2b">TIM_CCxNCmd</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_Channel, uint16_t TIM_CCxN)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1gafcdb6ff00158862aef7fed5e7a554a3e">
+                <title>void TIM_OC1Init (TIM_TypeDef *TIMx, TIM_OCInitTypeDef *TIM_OCInitStruct)</title> <emphasis>Initializes the TIMx Channel1 according to the specified parameters in
+        the TIM_OCInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> structure that contains the configuration information for the specified TIM peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga2017455121d910d6ff63ac6f219842c5">
+                <title>void TIM_OC2Init (TIM_TypeDef *TIMx, TIM_OCInitTypeDef *TIM_OCInitStruct)</title> <emphasis>Initializes the TIMx Channel2 according to the specified parameters 
+        in the TIM_OCInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> structure that contains the configuration information for the specified TIM peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30">
+                <title>void TIM_OC3Init (TIM_TypeDef *TIMx, TIM_OCInitTypeDef *TIM_OCInitStruct)</title> <emphasis>Initializes the TIMx Channel3 according to the specified parameters
+        in the TIM_OCInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> structure that contains the configuration information for the specified TIM peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga64571ebbb58cac39a9e760050175f11c">
+                <title>void TIM_OC4Init (TIM_TypeDef *TIMx, TIM_OCInitTypeDef *TIM_OCInitStruct)</title> <emphasis>Initializes the TIMx Channel4 according to the specified parameters
+        in the TIM_OCInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> structure that contains the configuration information for the specified TIM peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga394683c78ae02837882e36014e11643e">
+                <title>void TIM_OCStructInit (TIM_OCInitTypeDef *TIM_OCInitStruct)</title> <emphasis>Fills each TIM_OCInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIM_OCInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga83ea0af5a7c1af521236ce5e4d2c42b0">
+                <title>void TIM_SelectOCxM (TIM_TypeDef *TIMx, uint16_t TIM_Channel, uint16_t TIM_OCMode)</title> <emphasis>Selects the TIM Output Compare Mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function disables the selected channel before changing the Output Compare Mode. If needed, user has to enable this channel using <link linkend="de/d28/group___t_i_m_1ga3ecc4647d9ede261beb5e0535cf29ebb">TIM_CCxCmd()</link> and <link linkend="de/d28/group___t_i_m_1ga304ff7c8a1615498da749bf2507e9f2b">TIM_CCxNCmd()</link> functions. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_Channel, :</entry>
+                                <entry>
+<para>specifies the TIM Channel This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_Channel_1: TIM Channel 1 </para>
+</listitem>
+<listitem>
+<para>TIM_Channel_2: TIM Channel 2 </para>
+</listitem>
+<listitem>
+<para>TIM_Channel_3: TIM Channel 3 </para>
+</listitem>
+<listitem>
+<para>TIM_Channel_4: TIM Channel 4 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCMode, :</entry>
+                                <entry>
+<para>specifies the TIM Output Compare Mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCMode_Timing </para>
+</listitem>
+<listitem>
+<para>TIM_OCMode_Active </para>
+</listitem>
+<listitem>
+<para>TIM_OCMode_Toggle </para>
+</listitem>
+<listitem>
+<para>TIM_OCMode_PWM1 </para>
+</listitem>
+<listitem>
+<para>TIM_OCMode_PWM2 </para>
+</listitem>
+<listitem>
+<para>TIM_ForcedAction_Active </para>
+</listitem>
+<listitem>
+<para>TIM_ForcedAction_InActive </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga48631e66c32bb905946664f4722b2546">
+                <title>void TIM_SetCompare1 (TIM_TypeDef *TIMx, uint32_t Compare1)</title> <emphasis>Sets the TIMx Capture Compare1 Register value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Compare1, :</entry>
+                                <entry>
+<para>specifies the Capture Compare1 register new value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga3de36754f3ba5d46b9ef2bf8e77575c7">
+                <title>void TIM_SetCompare2 (TIM_TypeDef *TIMx, uint32_t Compare2)</title> <emphasis>Sets the TIMx Capture Compare2 Register value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Compare2, :</entry>
+                                <entry>
+<para>specifies the Capture Compare2 register new value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1gac372fbbbbc20329802659dd6c6b4e051">
+                <title>void TIM_SetCompare3 (TIM_TypeDef *TIMx, uint32_t Compare3)</title> <emphasis>Sets the TIMx Capture Compare3 Register value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Compare3, :</entry>
+                                <entry>
+<para>specifies the Capture Compare3 register new value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga99ba6c2afa87a239c9d32a49762b4245">
+                <title>void TIM_SetCompare4 (TIM_TypeDef *TIMx, uint32_t Compare4)</title> <emphasis>Sets the TIMx Capture Compare4 Register value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Compare4, :</entry>
+                                <entry>
+<para>specifies the Capture Compare4 register new value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga4f58c12e6493a0d8b9555c9097b831d6">
+                <title>void TIM_ForcedOC1Config (TIM_TypeDef *TIMx, uint16_t TIM_ForcedAction)</title> <emphasis>Forces the TIMx output 1 waveform to active or inactive level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ForcedAction, :</entry>
+                                <entry>
+<para>specifies the forced Action to be set to the output waveform. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ForcedAction_Active: Force active level on OC1REF </para>
+</listitem>
+<listitem>
+<para>TIM_ForcedAction_InActive: Force inactive level on OC1REF. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga3d2902b6fbab8dd55cd531055ffcc63d">
+                <title>void TIM_ForcedOC2Config (TIM_TypeDef *TIMx, uint16_t TIM_ForcedAction)</title> <emphasis>Forces the TIMx output 2 waveform to active or inactive level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ForcedAction, :</entry>
+                                <entry>
+<para>specifies the forced Action to be set to the output waveform. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ForcedAction_Active: Force active level on OC2REF </para>
+</listitem>
+<listitem>
+<para>TIM_ForcedAction_InActive: Force inactive level on OC2REF. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga920b0fb4ca44fceffd1c3e441feebd8f">
+                <title>void TIM_ForcedOC3Config (TIM_TypeDef *TIMx, uint16_t TIM_ForcedAction)</title> <emphasis>Forces the TIMx output 3 waveform to active or inactive level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ForcedAction, :</entry>
+                                <entry>
+<para>specifies the forced Action to be set to the output waveform. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ForcedAction_Active: Force active level on OC3REF </para>
+</listitem>
+<listitem>
+<para>TIM_ForcedAction_InActive: Force inactive level on OC3REF. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1gaf0a0bbe74251e56d4b835d20b0a3aa63">
+                <title>void TIM_ForcedOC4Config (TIM_TypeDef *TIMx, uint16_t TIM_ForcedAction)</title> <emphasis>Forces the TIMx output 4 waveform to active or inactive level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_ForcedAction, :</entry>
+                                <entry>
+<para>specifies the forced Action to be set to the output waveform. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_ForcedAction_Active: Force active level on OC4REF </para>
+</listitem>
+<listitem>
+<para>TIM_ForcedAction_InActive: Force inactive level on OC4REF. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga60e6c29ad8f919bef616cf8e3306dd64">
+                <title>void TIM_OC1PreloadConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCPreload)</title> <emphasis>Enables or disables the TIMx peripheral Preload register on CCR1.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCPreload, :</entry>
+                                <entry>
+<para>new state of the TIMx peripheral Preload register This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCPreload_Enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCPreload_Disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga75b4614c6dd2cd52f2c5becdb6590c10">
+                <title>void TIM_OC2PreloadConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCPreload)</title> <emphasis>Enables or disables the TIMx peripheral Preload register on CCR2.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCPreload, :</entry>
+                                <entry>
+<para>new state of the TIMx peripheral Preload register This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCPreload_Enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCPreload_Disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga8b2391685a519e60e596b7d596f86f09">
+                <title>void TIM_OC3PreloadConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCPreload)</title> <emphasis>Enables or disables the TIMx peripheral Preload register on CCR3.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCPreload, :</entry>
+                                <entry>
+<para>new state of the TIMx peripheral Preload register This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCPreload_Enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCPreload_Disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga8bf4dfb35ff0c7b494dd96579f50b1ec">
+                <title>void TIM_OC4PreloadConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCPreload)</title> <emphasis>Enables or disables the TIMx peripheral Preload register on CCR4.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCPreload, :</entry>
+                                <entry>
+<para>new state of the TIMx peripheral Preload register This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCPreload_Enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCPreload_Disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1gaec82031ca62f31f5483195c09752a83a">
+                <title>void TIM_OC1FastConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCFast)</title> <emphasis>Configures the TIMx Output Compare 1 Fast feature.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCFast, :</entry>
+                                <entry>
+<para>new state of the Output Compare Fast Enable Bit. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCFast_Enable: TIM output compare fast enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCFast_Disable: TIM output compare fast disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga413359c87f46c69f1ffe2dc8fb3a65e7">
+                <title>void TIM_OC2FastConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCFast)</title> <emphasis>Configures the TIMx Output Compare 2 Fast feature.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCFast, :</entry>
+                                <entry>
+<para>new state of the Output Compare Fast Enable Bit. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCFast_Enable: TIM output compare fast enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCFast_Disable: TIM output compare fast disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1gab2f3698e6e56bd9b0a4be7056ba789e1">
+                <title>void TIM_OC3FastConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCFast)</title> <emphasis>Configures the TIMx Output Compare 3 Fast feature.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCFast, :</entry>
+                                <entry>
+<para>new state of the Output Compare Fast Enable Bit. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCFast_Enable: TIM output compare fast enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCFast_Disable: TIM output compare fast disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga58279a04e8ea5333f1079d3cce8dde12">
+                <title>void TIM_OC4FastConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCFast)</title> <emphasis>Configures the TIMx Output Compare 4 Fast feature.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCFast, :</entry>
+                                <entry>
+<para>new state of the Output Compare Fast Enable Bit. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCFast_Enable: TIM output compare fast enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCFast_Disable: TIM output compare fast disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga34e926cd8a99cfcc7480b2d6de5118b6">
+                <title>void TIM_ClearOC1Ref (TIM_TypeDef *TIMx, uint16_t TIM_OCClear)</title> <emphasis>Clears or safeguards the OCREF1 signal on an external event.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCClear, :</entry>
+                                <entry>
+<para>new state of the Output Compare Clear Enable Bit. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCClear_Enable: TIM Output clear enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCClear_Disable: TIM Output clear disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1gac474ebc815d24c8a589969e0c68b27b0">
+                <title>void TIM_ClearOC2Ref (TIM_TypeDef *TIMx, uint16_t TIM_OCClear)</title> <emphasis>Clears or safeguards the OCREF2 signal on an external event.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCClear, :</entry>
+                                <entry>
+<para>new state of the Output Compare Clear Enable Bit. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCClear_Enable: TIM Output clear enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCClear_Disable: TIM Output clear disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga0bd9476a14bd346c319945ec4fa2bc67">
+                <title>void TIM_ClearOC3Ref (TIM_TypeDef *TIMx, uint16_t TIM_OCClear)</title> <emphasis>Clears or safeguards the OCREF3 signal on an external event.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCClear, :</entry>
+                                <entry>
+<para>new state of the Output Compare Clear Enable Bit. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCClear_Enable: TIM Output clear enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCClear_Disable: TIM Output clear disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1gaeee5fa66b26e7c6f71850272dc3028f3">
+                <title>void TIM_ClearOC4Ref (TIM_TypeDef *TIMx, uint16_t TIM_OCClear)</title> <emphasis>Clears or safeguards the OCREF4 signal on an external event.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCClear, :</entry>
+                                <entry>
+<para>new state of the Output Compare Clear Enable Bit. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCClear_Enable: TIM Output clear enable </para>
+</listitem>
+<listitem>
+<para>TIM_OCClear_Disable: TIM Output clear disable </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga03878f78163485c8a3508cff2111c297">
+                <title>void TIM_OC1PolarityConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCPolarity)</title> <emphasis>Configures the TIMx channel 1 polarity.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCPolarity, :</entry>
+                                <entry>
+<para>specifies the OC1 Polarity This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCPolarity_High: Output Compare active high </para>
+</listitem>
+<listitem>
+<para>TIM_OCPolarity_Low: Output Compare active low </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga3cb91578e7dd34ea7d09862482960445">
+                <title>void TIM_OC1NPolarityConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCNPolarity)</title> <emphasis>Configures the TIMx Channel 1N polarity.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCNPolarity, :</entry>
+                                <entry>
+<para>specifies the OC1N Polarity This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCNPolarity_High: Output Compare active high </para>
+</listitem>
+<listitem>
+<para>TIM_OCNPolarity_Low: Output Compare active low </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga6831cacaac1ef50291af94db94450797">
+                <title>void TIM_OC2PolarityConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCPolarity)</title> <emphasis>Configures the TIMx channel 2 polarity.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5, 8, 9 or 12 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCPolarity, :</entry>
+                                <entry>
+<para>specifies the OC2 Polarity This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCPolarity_High: Output Compare active high </para>
+</listitem>
+<listitem>
+<para>TIM_OCPolarity_Low: Output Compare active low </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga2fa6ea3a89f446b52b4e699272b70cad">
+                <title>void TIM_OC2NPolarityConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCNPolarity)</title> <emphasis>Configures the TIMx Channel 2N polarity.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCNPolarity, :</entry>
+                                <entry>
+<para>specifies the OC2N Polarity This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCNPolarity_High: Output Compare active high </para>
+</listitem>
+<listitem>
+<para>TIM_OCNPolarity_Low: Output Compare active low </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga1ef43b03fe666495e80aac9741ae7ab0">
+                <title>void TIM_OC3PolarityConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCPolarity)</title> <emphasis>Configures the TIMx channel 3 polarity.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCPolarity, :</entry>
+                                <entry>
+<para>specifies the OC3 Polarity This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCPolarity_High: Output Compare active high </para>
+</listitem>
+<listitem>
+<para>TIM_OCPolarity_Low: Output Compare active low </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1gac710acc5b682e892584fc6f089f61dc2">
+                <title>void TIM_OC3NPolarityConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCNPolarity)</title> <emphasis>Configures the TIMx Channel 3N polarity.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCNPolarity, :</entry>
+                                <entry>
+<para>specifies the OC3N Polarity This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCNPolarity_High: Output Compare active high </para>
+</listitem>
+<listitem>
+<para>TIM_OCNPolarity_Low: Output Compare active low </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1gad678410f7c7244f83daad93ce9d1056e">
+                <title>void TIM_OC4PolarityConfig (TIM_TypeDef *TIMx, uint16_t TIM_OCPolarity)</title> <emphasis>Configures the TIMx channel 4 polarity.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_OCPolarity, :</entry>
+                                <entry>
+<para>specifies the OC4 Polarity This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_OCPolarity_High: Output Compare active high </para>
+</listitem>
+<listitem>
+<para>TIM_OCPolarity_Low: Output Compare active low </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga3ecc4647d9ede261beb5e0535cf29ebb">
+                <title>void TIM_CCxCmd (TIM_TypeDef *TIMx, uint16_t TIM_Channel, uint16_t TIM_CCx)</title> <emphasis>Enables or disables the TIM Capture Compare Channel x.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 to 14 except 6 and 7, to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_Channel, :</entry>
+                                <entry>
+<para>specifies the TIM Channel This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_Channel_1: TIM Channel 1 </para>
+</listitem>
+<listitem>
+<para>TIM_Channel_2: TIM Channel 2 </para>
+</listitem>
+<listitem>
+<para>TIM_Channel_3: TIM Channel 3 </para>
+</listitem>
+<listitem>
+<para>TIM_Channel_4: TIM Channel 4 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_CCx, :</entry>
+                                <entry>
+<para>specifies the TIM Channel CCxE bit new state. This parameter can be: TIM_CCx_Enable or TIM_CCx_Disable. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/dbc/group___t_i_m___group2_1ga304ff7c8a1615498da749bf2507e9f2b">
+                <title>void TIM_CCxNCmd (TIM_TypeDef *TIMx, uint16_t TIM_Channel, uint16_t TIM_CCxN)</title> <emphasis>Enables or disables the TIM Capture Compare Channel xN.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>TIMx, :</entry>
+                                <entry>
+<para>where x can be 1 or 8 to select the TIM peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_Channel, :</entry>
+                                <entry>
+<para>specifies the TIM Channel This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>TIM_Channel_1: TIM Channel 1 </para>
+</listitem>
+<listitem>
+<para>TIM_Channel_2: TIM Channel 2 </para>
+</listitem>
+<listitem>
+<para>TIM_Channel_3: TIM Channel 3 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>TIM_CCxN, :</entry>
+                                <entry>
+<para>specifies the TIM Channel CCxNE bit new state. This parameter can be: TIM_CCxN_Enable or TIM_CCxN_Disable. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

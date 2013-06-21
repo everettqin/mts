@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/ddb/misc_8c">
+    <title>misc.c File Reference</title>
+    <programlisting>#include misc.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d54/group___m_i_s_c_1gad6905141fba3a2d8d5570db40805dc6a">AIRCR_VECTKEY_MASK</link> ((uint32_t)0x05FA0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d88/group___m_i_s_c___private___functions_1gadfb1f34f803ce54c976643db8c484442">NVIC_PriorityGroupConfig</link> (
+uint32_t NVIC_PriorityGroup)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d88/group___m_i_s_c___private___functions_1ga4ab373ed0870c06fca5eb51d639adf41">NVIC_Init</link> (
+<link linkend="d5/d31/struct_n_v_i_c___init_type_def">NVIC_InitTypeDef</link> * NVIC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d88/group___m_i_s_c___private___functions_1ga1145208ad70edfc2fab19b8b8ef1b1a1">NVIC_SetVectorTable</link> (
+uint32_t NVIC_VectTab, uint32_t Offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d88/group___m_i_s_c___private___functions_1gae21011c5232f5b8f366acbecd12a1d4a">NVIC_SystemLPConfig</link> (
+uint8_t LowPowerMode, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d88/group___m_i_s_c___private___functions_1ga2777d255bb06ad62bb6372a9db1ff385">SysTick_CLKSourceConfig</link> (
+uint32_t SysTick_CLKSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides all the miscellaneous firmware functions (add-on to CMSIS functions). </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 <programlisting><literallayout>*                               
+*          ===================================================================      
+*                        How to configure Interrupts using driver 
+*          ===================================================================      
+* 
+*            This section provide functions allowing to configure the NVIC interrupts (IRQ).
+*            The Cortex-M4 exceptions are managed by CMSIS functions.
+*
+*            1. Configure the NVIC Priority Grouping using NVIC_PriorityGroupConfig()
+*                function according to the following table.
+
+*  The table below gives the allowed values of the pre-emption priority and subpriority according
+*  to the Priority Grouping configuration performed by NVIC_PriorityGroupConfig function
+*    ==========================================================================================================================
+*      NVIC_PriorityGroup   | NVIC_IRQChannelPreemptionPriority | NVIC_IRQChannelSubPriority  |       Description
+*    ==========================================================================================================================
+*     NVIC_PriorityGroup_0  |                0                  |            0-15             | 0 bits for pre-emption priority
+*                           |                                   |                             | 4 bits for subpriority
+*    --------------------------------------------------------------------------------------------------------------------------
+*     NVIC_PriorityGroup_1  |                0-1                |            0-7              | 1 bits for pre-emption priority
+*                           |                                   |                             | 3 bits for subpriority
+*    --------------------------------------------------------------------------------------------------------------------------    
+*     NVIC_PriorityGroup_2  |                0-3                |            0-3              | 2 bits for pre-emption priority
+*                           |                                   |                             | 2 bits for subpriority
+*    --------------------------------------------------------------------------------------------------------------------------    
+*     NVIC_PriorityGroup_3  |                0-7                |            0-1              | 3 bits for pre-emption priority
+*                           |                                   |                             | 1 bits for subpriority
+*    --------------------------------------------------------------------------------------------------------------------------    
+*     NVIC_PriorityGroup_4  |                0-15               |            0                | 4 bits for pre-emption priority
+*                           |                                   |                             | 0 bits for subpriority                       
+*    ==========================================================================================================================     
+*
+*            2. Enable and Configure the priority of the selected IRQ Channels using NVIC_Init()  
+*
+* @note  When the NVIC_PriorityGroup_0 is selected, IRQ pre-emption is no more possible. 
+*        The pending IRQ priority will be managed only by the subpriority.
+*
+* @note  IRQ priority order (sorted by highest to lowest priority):
+*         - Lowest pre-emption priority
+*         - Lowest subpriority
+*         - Lowest hardware priority (IRQ number)
+*
+*  </literallayout></programlisting></para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c</para>
+    </simplesect>
+</section>

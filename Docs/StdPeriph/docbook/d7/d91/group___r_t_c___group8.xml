@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d91/group___r_t_c___group8">
+    <title>TimeStamp configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>TimeStamp configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                       TimeStamp configuration functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d91/group___r_t_c___group8_1ga7d80fa4a2c87654598d8207154ac8e96">RTC_TimeStampCmd</link> (
+uint32_t RTC_TimeStampEdge, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d91/group___r_t_c___group8_1ga44c38b0c74e9e960a4263b2905f44796">RTC_GetTimeStamp</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_StampTimeStruct, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_StampDateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d7/d91/group___r_t_c___group8_1ga2b0ef81f4959a2f9fc6361fbda759b00">RTC_GetTimeStampSubSecond</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d7/d91/group___r_t_c___group8_1ga7d80fa4a2c87654598d8207154ac8e96">
+                <title>void RTC_TimeStampCmd (uint32_t RTC_TimeStampEdge, FunctionalState NewState)</title> <emphasis>Enables or Disables the RTC TimeStamp functionality with the 
+        specified time stamp pin stimulating edge.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_TimeStampEdge, :</entry>
+                                <entry>
+<para>Specifies the pin edge on which the TimeStamp is activated. This parameter can be one of the following: <itemizedlist>
+<listitem>
+<para>RTC_TimeStampEdge_Rising: the Time stamp event occurs on the rising edge of the related pin. </para>
+</listitem>
+<listitem>
+<para>RTC_TimeStampEdge_Falling: the Time stamp event occurs on the falling edge of the related pin. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the TimeStamp. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d91/group___r_t_c___group8_1ga44c38b0c74e9e960a4263b2905f44796">
+                <title>void RTC_GetTimeStamp (uint32_t RTC_Format, RTC_TimeTypeDef *RTC_StampTimeStruct, RTC_DateTypeDef *RTC_StampDateStruct)</title> <emphasis>Get the RTC TimeStamp value and masks.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC_Format, :</entry>
+                                <entry>
+<para>specifies the format of the output parameters. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RTC_Format_BIN: Binary data format </para>
+</listitem>
+<listitem>
+<para>RTC_Format_BCD: BCD data format </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_StampTimeStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> structure that will contains the TimeStamp time values. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RTC_StampDateStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> structure that will contains the TimeStamp date values. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d91/group___r_t_c___group8_1ga2b0ef81f4959a2f9fc6361fbda759b00">
+                <title>uint32_t RTC_GetTimeStampSubSecond (void)</title> <emphasis>Get the RTC timestamp Subseconds value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RTC</entry>
+                                <entry>
+<para>current timestamp Subseconds value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

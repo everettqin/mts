@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/dc4/group___i_w_d_g">
+    <title>IWDG</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>IWDG driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d9/dff/group___i_w_d_g___exported___constants">IWDG_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="dc/dd1/group___i_w_d_g___private___functions">IWDG_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1gae466681e5bdc11b353c508b89d75ca05">IWDG_WriteAccessCmd</link> (
+uint16_t IWDG_WriteAccess)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1ga4fa7f1cd690533a35ad9e4729c0450a3">IWDG_SetPrescaler</link> (
+uint8_t IWDG_Prescaler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1gae2a14752a0431f23cb80cebf202ac365">IWDG_SetReload</link> (
+uint16_t Reload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1ga7147ebabdc3fef97f532b171a4e70d49">IWDG_ReloadCounter</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc4/group___i_w_d_g_1ga479b2921c86f8c67b819f5c4bea6bdb6">IWDG_Enable</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d5/dc4/group___i_w_d_g_1ga37f050cfbedc0c15f9e0816c0b22011e">IWDG_GetFlagStatus</link> (
+uint16_t IWDG_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/dc4/group___i_w_d_g_1ga830a9a1bad16c7043c86545f4c159a50">KR_KEY_RELOAD</link> ((uint16_t)0xAAAA)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/dc4/group___i_w_d_g_1gaeaa0dd2da3f9d0cce0d708cfff1df545">KR_KEY_ENABLE</link> ((uint16_t)0xCCCC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d5/dc4/group___i_w_d_g_1gae466681e5bdc11b353c508b89d75ca05">
+                <title>void IWDG_WriteAccessCmd (uint16_t IWDG_WriteAccess)</title> <emphasis>Enables or disables write access to IWDG_PR and IWDG_RLR registers.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>IWDG_WriteAccess, :</entry>
+                                <entry>
+<para>new state of write access to IWDG_PR and IWDG_RLR registers. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>IWDG_WriteAccess_Enable: Enable write access to IWDG_PR and IWDG_RLR registers </para>
+</listitem>
+<listitem>
+<para>IWDG_WriteAccess_Disable: Disable write access to IWDG_PR and IWDG_RLR registers </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dc4/group___i_w_d_g_1ga4fa7f1cd690533a35ad9e4729c0450a3">
+                <title>void IWDG_SetPrescaler (uint8_t IWDG_Prescaler)</title> <emphasis>Sets IWDG Prescaler value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>IWDG_Prescaler, :</entry>
+                                <entry>
+<para>specifies the IWDG Prescaler value. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>IWDG_Prescaler_4: IWDG prescaler set to 4 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_8: IWDG prescaler set to 8 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_16: IWDG prescaler set to 16 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_32: IWDG prescaler set to 32 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_64: IWDG prescaler set to 64 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_128: IWDG prescaler set to 128 </para>
+</listitem>
+<listitem>
+<para>IWDG_Prescaler_256: IWDG prescaler set to 256 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dc4/group___i_w_d_g_1gae2a14752a0431f23cb80cebf202ac365">
+                <title>void IWDG_SetReload (uint16_t Reload)</title> <emphasis>Sets IWDG Reload value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Reload, :</entry>
+                                <entry>
+<para>specifies the IWDG Reload value. This parameter must be a number between 0 and 0x0FFF. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dc4/group___i_w_d_g_1ga7147ebabdc3fef97f532b171a4e70d49">
+                <title>void IWDG_ReloadCounter (void)</title> <emphasis>Reloads IWDG counter with value defined in the reload register
+        (write access to IWDG_PR and IWDG_RLR registers disabled).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dc4/group___i_w_d_g_1ga479b2921c86f8c67b819f5c4bea6bdb6">
+                <title>void IWDG_Enable (void)</title> <emphasis>Enables IWDG (write access to IWDG_PR and IWDG_RLR registers disabled).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dc4/group___i_w_d_g_1ga37f050cfbedc0c15f9e0816c0b22011e">
+                <title>FlagStatus IWDG_GetFlagStatus (uint16_t IWDG_FLAG)</title> <emphasis>Checks whether the specified IWDG flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>IWDG_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>IWDG_FLAG_PVU: Prescaler Value Update on going </para>
+</listitem>
+<listitem>
+<para>IWDG_FLAG_RVU: Reload Value Update on going </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of IWDG_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="d9/dff/group___i_w_d_g___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/dd1/group___i_w_d_g___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

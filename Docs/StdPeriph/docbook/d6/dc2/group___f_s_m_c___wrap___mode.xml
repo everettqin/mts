@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dc2/group___f_s_m_c___wrap___mode">
+    <title>FSMC_Wrap_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc2/group___f_s_m_c___wrap___mode_1ga6041f0d3055ea3811a5a19560092f266">FSMC_WrapMode_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc2/group___f_s_m_c___wrap___mode_1gad07eb0ae0362b2f94071d0dab6473fda">FSMC_WrapMode_Enable</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc2/group___f_s_m_c___wrap___mode_1ga0751d74b7fb1e17f6cedea091e8ebfc8">IS_FSMC_WRAP_MODE</link> (((MODE) == FSMC_WrapMode_Disable) || \
+                                 ((MODE) == FSMC_WrapMode_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d86/group___a_d_c__regular__length">
+    <title>ADC_regular_length</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d86/group___a_d_c__regular__length_1ga1ea82167f6dccdef1d160675f4534584">IS_ADC_REGULAR_LENGTH</link> (((LENGTH) &gt;= 0x1) &amp;&amp; ((LENGTH) &lt;= 0x10))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

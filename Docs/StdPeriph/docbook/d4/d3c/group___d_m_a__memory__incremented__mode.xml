@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d3c/group___d_m_a__memory__incremented__mode">
+    <title>DMA_memory_incremented_mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d3c/group___d_m_a__memory__incremented__mode_1ga4e8cb23d039c74bbbf365d7678835bbb">DMA_MemoryInc_Enable</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d3c/group___d_m_a__memory__incremented__mode_1ga795a277c997048783a383b026f19a5ab">DMA_MemoryInc_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d3c/group___d_m_a__memory__incremented__mode_1gaa880f39d499d1e80449cf80381e4eb67">IS_DMA_MEMORY_INC_STATE</link> (((STATE) == DMA_MemoryInc_Enable) || \
+                                        ((STATE) == DMA_MemoryInc_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

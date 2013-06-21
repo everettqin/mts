@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d22/group___s_d_i_o___power___state">
+    <title>SDIO_Power_State</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d22/group___s_d_i_o___power___state_1gab2f36a68fc50795ea74a7e98b4ac2d37">SDIO_PowerState_OFF</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d22/group___s_d_i_o___power___state_1ga0aacd8c94effe8066c6d447fc884d217">SDIO_PowerState_ON</link> ((uint32_t)0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d22/group___s_d_i_o___power___state_1gad0dae767c2024de1769efb1feccc14ef">IS_SDIO_POWER_STATE</link> (((STATE) == SDIO_PowerState_OFF) || ((STATE) == SDIO_PowerState_ON))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d29/group___t_i_m___output___compare___clear___state">
+    <title>TIM_Output_Compare_Clear_State</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d29/group___t_i_m___output___compare___clear___state_1ga1b7bce48b3e1478aad98c95fbbe7a6e0">TIM_OCClear_Enable</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d29/group___t_i_m___output___compare___clear___state_1gadb09946cb5dded7520baf4b19173204d">TIM_OCClear_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d29/group___t_i_m___output___compare___clear___state_1ga5297586b42da9263ac4f767c83202fed">IS_TIM_OCCLEAR_STATE</link> (((STATE) == TIM_OCClear_Enable) || \
+                                     ((STATE) == TIM_OCClear_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

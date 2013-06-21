@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d20/group___s_d_i_o___group2">
+    <title>Command path state machine (CPSM) management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Command path state machine (CPSM) management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+              Command path state machine (CPSM) management functions
+ ===============================================================================  
+
+  This section provide functions allowing to program and read the Command path 
+  state machine (CPSM).</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d20/group___s_d_i_o___group2_1ga7117d2f702703f6c0a66bc07707cab23">SDIO_SendCommand</link> (
+<link linkend="d3/d44/struct_s_d_i_o___cmd_init_type_def">SDIO_CmdInitTypeDef</link> * SDIO_CmdInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d20/group___s_d_i_o___group2_1ga09d9e89f49c87c82aec79c97b7068e24">SDIO_CmdStructInit</link> (
+<link linkend="d3/d44/struct_s_d_i_o___cmd_init_type_def">SDIO_CmdInitTypeDef</link> * SDIO_CmdInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="de/d20/group___s_d_i_o___group2_1ga9badf271c818e09da301d715c4ad0e5b">SDIO_GetCommandResponse</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="de/d20/group___s_d_i_o___group2_1ga5c1e859511840e8cca6a9a768bce220b">SDIO_GetResponse</link> (
+uint32_t SDIO_RESP)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="de/d20/group___s_d_i_o___group2_1ga7117d2f702703f6c0a66bc07707cab23">
+                <title>void SDIO_SendCommand (SDIO_CmdInitTypeDef *SDIO_CmdInitStruct)</title> <emphasis>Initializes the SDIO Command according to the specified 
+        parameters in the SDIO_CmdInitStruct and send the command.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_CmdInitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="d3/d44/struct_s_d_i_o___cmd_init_type_def">SDIO_CmdInitTypeDef</link> structure that contains the configuration information for the SDIO command. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d20/group___s_d_i_o___group2_1ga09d9e89f49c87c82aec79c97b7068e24">
+                <title>void SDIO_CmdStructInit (SDIO_CmdInitTypeDef *SDIO_CmdInitStruct)</title> <emphasis>Fills each SDIO_CmdInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_CmdInitStruct, :</entry>
+                                <entry>
+<para>pointer to an <link linkend="d3/d44/struct_s_d_i_o___cmd_init_type_def">SDIO_CmdInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d20/group___s_d_i_o___group2_1ga9badf271c818e09da301d715c4ad0e5b">
+                <title>uint8_t SDIO_GetCommandResponse (void)</title> <emphasis>Returns command index of last command for which response received.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Returns</entry>
+                                <entry>
+<para>the command index of the last command response received. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="de/d20/group___s_d_i_o___group2_1ga5c1e859511840e8cca6a9a768bce220b">
+                <title>uint32_t SDIO_GetResponse (uint32_t SDIO_RESP)</title> <emphasis>Returns response received from the card for the last command.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>SDIO_RESP, :</entry>
+                                <entry>
+<para>Specifies the SDIO response register. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SDIO_RESP1: Response Register 1 </para>
+</listitem>
+<listitem>
+<para>SDIO_RESP2: Response Register 2 </para>
+</listitem>
+<listitem>
+<para>SDIO_RESP3: Response Register 3 </para>
+</listitem>
+<listitem>
+<para>SDIO_RESP4: Response Register 4 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>Corresponding response register value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

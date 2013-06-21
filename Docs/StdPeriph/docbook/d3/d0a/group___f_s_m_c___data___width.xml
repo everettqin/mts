@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d0a/group___f_s_m_c___data___width">
+    <title>FSMC_Data_Width</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d0a/group___f_s_m_c___data___width_1ga5753e089830f19af70a724766e3c329f">FSMC_MemoryDataWidth_8b</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d0a/group___f_s_m_c___data___width_1ga65d85c3072e6790ae760ca2248e46df6">FSMC_MemoryDataWidth_16b</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d0a/group___f_s_m_c___data___width_1ga003d52b62f5950fb041f73f15ce20171">IS_FSMC_MEMORY_WIDTH</link> (((WIDTH) == FSMC_MemoryDataWidth_8b) || \
+                                     ((WIDTH) == FSMC_MemoryDataWidth_16b))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

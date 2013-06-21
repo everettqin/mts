@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d43/group___f_s_m_c___wait___signal">
+    <title>FSMC_Wait_Signal</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d43/group___f_s_m_c___wait___signal_1ga6ea66c8ddee073281c421533bdff7e19">FSMC_WaitSignal_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d43/group___f_s_m_c___wait___signal_1gaf809e339f1cdc9d0a815fd98712e9ee3">FSMC_WaitSignal_Enable</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d43/group___f_s_m_c___wait___signal_1gae617db4f15c82850d4f5c927f9a7db3e">IS_FSMC_WAITE_SIGNAL</link> (((SIGNAL) == FSMC_WaitSignal_Disable) || \
+                                      ((SIGNAL) == FSMC_WaitSignal_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

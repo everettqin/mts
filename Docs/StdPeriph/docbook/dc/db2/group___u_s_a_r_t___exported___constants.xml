@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/db2/group___u_s_a_r_t___exported___constants">
+    <title>USART_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d8/d17/group___u_s_a_r_t___word___length">USART_Word_Length</link></para></listitem>
+            <listitem><para><link linkend="d4/dd8/group___u_s_a_r_t___stop___bits">USART_Stop_Bits</link></para></listitem>
+            <listitem><para><link linkend="df/dff/group___u_s_a_r_t___parity">USART_Parity</link></para></listitem>
+            <listitem><para><link linkend="d2/d01/group___u_s_a_r_t___mode">USART_Mode</link></para></listitem>
+            <listitem><para><link linkend="df/d7c/group___u_s_a_r_t___hardware___flow___control">USART_Hardware_Flow_Control</link></para></listitem>
+            <listitem><para><link linkend="d2/dad/group___u_s_a_r_t___clock">USART_Clock</link></para></listitem>
+            <listitem><para><link linkend="d4/df5/group___u_s_a_r_t___clock___polarity">USART_Clock_Polarity</link></para></listitem>
+            <listitem><para><link linkend="da/d39/group___u_s_a_r_t___clock___phase">USART_Clock_Phase</link></para></listitem>
+            <listitem><para><link linkend="d0/df2/group___u_s_a_r_t___last___bit">USART_Last_Bit</link></para></listitem>
+            <listitem><para><link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition">USART_Interrupt_definition</link></para></listitem>
+            <listitem><para><link linkend="d7/dc6/group___u_s_a_r_t___d_m_a___requests">USART_DMA_Requests</link></para></listitem>
+            <listitem><para><link linkend="da/d43/group___u_s_a_r_t___wake_up__methods">USART_WakeUp_methods</link></para></listitem>
+            <listitem><para><link linkend="df/d1c/group___u_s_a_r_t___l_i_n___break___detection___length">USART_LIN_Break_Detection_Length</link></para></listitem>
+            <listitem><para><link linkend="d8/d28/group___u_s_a_r_t___ir_d_a___low___power">USART_IrDA_Low_Power</link></para></listitem>
+            <listitem><para><link linkend="dc/d19/group___u_s_a_r_t___flags">USART_Flags</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/db2/group___u_s_a_r_t___exported___constants_1gae890b8e77c1b84a77c485a353949f7eb">IS_USART_ALL_PERIPH</link> (((PERIPH) == USART1) || \
+                                     ((PERIPH) == USART2) || \
+                                     ((PERIPH) == USART3) || \
+                                     ((PERIPH) == UART4)  || \
+                                     ((PERIPH) == UART5)  || \
+                                     ((PERIPH) == USART6))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/db2/group___u_s_a_r_t___exported___constants_1ga478e548dbe61b1c0f622c0a678fed578">IS_USART_1236_PERIPH</link> (((PERIPH) == USART1) || \
+                                      ((PERIPH) == USART2) || \
+                                      ((PERIPH) == USART3) || \
+                                      ((PERIPH) == USART6))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="d8/d17/group___u_s_a_r_t___word___length.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/dd8/group___u_s_a_r_t___stop___bits.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/dff/group___u_s_a_r_t___parity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d01/group___u_s_a_r_t___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d7c/group___u_s_a_r_t___hardware___flow___control.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/dad/group___u_s_a_r_t___clock.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/df5/group___u_s_a_r_t___clock___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d39/group___u_s_a_r_t___clock___phase.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/df2/group___u_s_a_r_t___last___bit.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d0e/group___u_s_a_r_t___interrupt__definition.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/dc6/group___u_s_a_r_t___d_m_a___requests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d43/group___u_s_a_r_t___wake_up__methods.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/d1c/group___u_s_a_r_t___l_i_n___break___detection___length.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d28/group___u_s_a_r_t___ir_d_a___low___power.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d19/group___u_s_a_r_t___flags.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

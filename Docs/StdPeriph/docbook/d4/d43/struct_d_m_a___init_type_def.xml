@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d43/struct_d_m_a___init_type_def">
+<title>DMA_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d4/dc9/stm32f4xx__dma_8h">&lt;stm32f4xx_dma.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_Channel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_PeripheralBaseAddr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_Memory0BaseAddr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_DIR</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_BufferSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_PeripheralInc</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_MemoryInc</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_PeripheralDataSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_MemoryDataSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_Mode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_Priority</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_FIFOMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_FIFOThreshold</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_MemoryBurst</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t DMA_PeripheralBurst</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>DMA Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t DMA_Channel</title>                
+<para>Specifies the channel used for the specified stream. This parameter can be a value of <link linkend="df/dbb/group___d_m_a__channel">DMA_channel</link> </para>
+
+                <para>Definition at line 50 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_PeripheralBaseAddr</title>                
+<para>Specifies the peripheral base address for DMAy Streamx. </para>
+
+                <para>Definition at line 53 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_Memory0BaseAddr</title>                
+<para>Specifies the memory 0 base address for DMAy Streamx. This memory is the default memory used when double buffer mode is not enabled. </para>
+
+                <para>Definition at line 55 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_DIR</title>                
+<para>Specifies if the data will be transferred from memory to peripheral, from memory to memory or from peripheral to memory. This parameter can be a value of <link linkend="dd/d15/group___d_m_a__data__transfer__direction">DMA_data_transfer_direction</link> </para>
+
+                <para>Definition at line 59 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_BufferSize</title>                
+<para>Specifies the buffer size, in data unit, of the specified Stream. The data unit is equal to the configuration set in DMA_PeripheralDataSize or DMA_MemoryDataSize members depending in the transfer direction. </para>
+
+                <para>Definition at line 63 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_PeripheralInc</title>                
+<para>Specifies whether the Peripheral address register should be incremented or not. This parameter can be a value of <link linkend="d5/ddb/group___d_m_a__peripheral__incremented__mode">DMA_peripheral_incremented_mode</link> </para>
+
+                <para>Definition at line 67 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_MemoryInc</title>                
+<para>Specifies whether the memory address register should be incremented or not. This parameter can be a value of <link linkend="d4/d3c/group___d_m_a__memory__incremented__mode">DMA_memory_incremented_mode</link> </para>
+
+                <para>Definition at line 70 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_PeripheralDataSize</title>                
+<para>Specifies the Peripheral data width. This parameter can be a value of <link linkend="d9/dfd/group___d_m_a__peripheral__data__size">DMA_peripheral_data_size</link> </para>
+
+                <para>Definition at line 73 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_MemoryDataSize</title>                
+<para>Specifies the Memory data width. This parameter can be a value of <link linkend="db/d35/group___d_m_a__memory__data__size">DMA_memory_data_size</link> </para>
+
+                <para>Definition at line 76 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_Mode</title>                
+<para>Specifies the operation mode of the DMAy Streamx. This parameter can be a value of <link linkend="d1/dba/group___d_m_a__circular__normal__mode">DMA_circular_normal_mode</link> <formalpara><title>Note: </title>
+
+<para>The circular buffer mode cannot be used if the memory-to-memory data transfer is configured on the selected Stream </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 79 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_Priority</title>                
+<para>Specifies the software priority for the DMAy Streamx. This parameter can be a value of <link linkend="d8/da7/group___d_m_a__priority__level">DMA_priority_level</link> </para>
+
+                <para>Definition at line 84 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_FIFOMode</title>                
+<para>Specifies if the FIFO mode or Direct mode will be used for the specified Stream. This parameter can be a value of <link linkend="d0/db9/group___d_m_a__fifo__direct__mode">DMA_fifo_direct_mode</link> <formalpara><title>Note: </title>
+
+<para>The Direct mode (FIFO mode disabled) cannot be used if the memory-to-memory data transfer is configured on the selected Stream </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 87 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_FIFOThreshold</title>                
+<para>Specifies the FIFO threshold level. This parameter can be a value of <link linkend="d4/de4/group___d_m_a__fifo__threshold__level">DMA_fifo_threshold_level</link> </para>
+
+                <para>Definition at line 92 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_MemoryBurst</title>                
+<para>Specifies the Burst transfer configuration for the memory transfers. It specifies the amount of data to be transferred in a single non interruptable transaction. This parameter can be a value of <link linkend="d7/d63/group___d_m_a__memory__burst">DMA_memory_burst</link> <formalpara><title>Note: </title>
+
+<para>The burst mode is possible only if the address Increment mode is enabled. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 95 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t DMA_PeripheralBurst</title>                
+<para>Specifies the Burst transfer configuration for the peripheral transfers. It specifies the amount of data to be transferred in a single non interruptable transaction. This parameter can be a value of <link linkend="d1/d86/group___d_m_a__peripheral__burst">DMA_peripheral_burst</link> <formalpara><title>Note: </title>
+
+<para>The burst mode is possible only if the address Increment mode is enabled. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 100 of file stm32f4xx_dma.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dma.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

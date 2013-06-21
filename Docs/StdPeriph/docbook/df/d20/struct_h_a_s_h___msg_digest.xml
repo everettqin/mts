@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d20/struct_h_a_s_h___msg_digest">
+<title>HASH_MsgDigest struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="de/dbc/stm32f4xx__hash_8h">&lt;stm32f4xx_hash.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t Data[5]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>HASH message digest result structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t Data[5]</title>                
+<para>Message digest result : 5x 32bit words for SHA1 or 4x 32bit words for MD5 </para>
+
+                <para>Definition at line 65 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

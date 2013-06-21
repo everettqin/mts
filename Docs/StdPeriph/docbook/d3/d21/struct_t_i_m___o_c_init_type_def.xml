@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d21/struct_t_i_m___o_c_init_type_def">
+<title>TIM_OCInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dec/stm32f4xx__tim_8h">&lt;stm32f4xx_tim.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_OCMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_OutputState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_OutputNState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t TIM_Pulse</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_OCPolarity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_OCNPolarity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_OCIdleState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t TIM_OCNIdleState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>TIM Output Compare Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t TIM_OCMode</title>                
+<para>Specifies the TIM mode. This parameter can be a value of <link linkend="d7/dae/group___t_i_m___output___compare__and___p_w_m__modes">TIM_Output_Compare_and_PWM_modes</link> </para>
+
+                <para>Definition at line 80 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_OutputState</title>                
+<para>Specifies the TIM Output Compare state. This parameter can be a value of <link linkend="d9/d82/group___t_i_m___output___compare___state">TIM_Output_Compare_State</link> </para>
+
+                <para>Definition at line 83 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_OutputNState</title>                
+<para>Specifies the TIM complementary Output Compare state. This parameter can be a value of <link linkend="de/de0/group___t_i_m___output___compare___n___state">TIM_Output_Compare_N_State</link> <formalpara><title>Note: </title>
+
+<para>This parameter is valid only for TIM1 and TIM8. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 86 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t TIM_Pulse</title>                
+<para>Specifies the pulse value to be loaded into the Capture Compare Register. This parameter can be a number between 0x0000 and 0xFFFF </para>
+
+                <para>Definition at line 90 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_OCPolarity</title>                
+<para>Specifies the output polarity. This parameter can be a value of <link linkend="d1/d89/group___t_i_m___output___compare___polarity">TIM_Output_Compare_Polarity</link> </para>
+
+                <para>Definition at line 93 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_OCNPolarity</title>                
+<para>Specifies the complementary output polarity. This parameter can be a value of <link linkend="dc/ddf/group___t_i_m___output___compare___n___polarity">TIM_Output_Compare_N_Polarity</link> <formalpara><title>Note: </title>
+
+<para>This parameter is valid only for TIM1 and TIM8. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 96 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_OCIdleState</title>                
+<para>Specifies the TIM Output Compare pin state during Idle state. This parameter can be a value of <link linkend="db/dd1/group___t_i_m___output___compare___idle___state">TIM_Output_Compare_Idle_State</link> <formalpara><title>Note: </title>
+
+<para>This parameter is valid only for TIM1 and TIM8. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 100 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t TIM_OCNIdleState</title>                
+<para>Specifies the TIM Output Compare pin state during Idle state. This parameter can be a value of <link linkend="de/d46/group___t_i_m___output___compare___n___idle___state">TIM_Output_Compare_N_Idle_State</link> <formalpara><title>Note: </title>
+
+<para>This parameter is valid only for TIM1 and TIM8. </para>
+</formalpara>
+</para>
+
+                <para>Definition at line 104 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

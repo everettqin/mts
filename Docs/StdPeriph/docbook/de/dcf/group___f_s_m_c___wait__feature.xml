@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dcf/group___f_s_m_c___wait__feature">
+    <title>FSMC_Wait_feature</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dcf/group___f_s_m_c___wait__feature_1ga8a31f05576e66546fbbcdb06ff67da7d">FSMC_Waitfeature_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dcf/group___f_s_m_c___wait__feature_1ga3113366130dfbf6d116f1afb94af1726">FSMC_Waitfeature_Enable</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/dcf/group___f_s_m_c___wait__feature_1ga07c2585b517df2c7afbe3ba16c22f236">IS_FSMC_WAIT_FEATURE</link> (((FEATURE) == FSMC_Waitfeature_Disable) || \
+                                       ((FEATURE) == FSMC_Waitfeature_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

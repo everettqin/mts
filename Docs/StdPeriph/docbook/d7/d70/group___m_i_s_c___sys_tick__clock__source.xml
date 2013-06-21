@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d70/group___m_i_s_c___sys_tick__clock__source">
+    <title>MISC_SysTick_clock_source</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d70/group___m_i_s_c___sys_tick__clock__source_1ga545c387ce43db90f15faad5f354f890d">SysTick_CLKSource_HCLK_Div8</link> ((uint32_t)0xFFFFFFFB)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d70/group___m_i_s_c___sys_tick__clock__source_1ga8a885ce2632ad4c35e229bb7c6e60191">SysTick_CLKSource_HCLK</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d70/group___m_i_s_c___sys_tick__clock__source_1ga22d6291f6aed29442cf4cd9098fa0784">IS_SYSTICK_CLK_SOURCE</link> (((SOURCE) == SysTick_CLKSource_HCLK) || \
+                                       ((SOURCE) == SysTick_CLKSource_HCLK_Div8))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

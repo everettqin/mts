@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/db2/group___g_p_i_o___group1">
+    <title>Initialization and Configuration</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                        Initialization and Configuration
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/db2/group___g_p_i_o___group1_1gaa60bdf3182c44b5fa818f237042f52ee">GPIO_DeInit</link> (
+GPIO_TypeDef * GPIOx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/db2/group___g_p_i_o___group1_1ga71abf9404261370d03cca449b88d3a65">GPIO_Init</link> (
+GPIO_TypeDef * GPIOx, <link linkend="dd/d8f/struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link> * GPIO_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/db2/group___g_p_i_o___group1_1gab28de41278e7f8c63d0851e2733b10df">GPIO_StructInit</link> (
+<link linkend="dd/d8f/struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link> * GPIO_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/db2/group___g_p_i_o___group1_1gad2f2e615928c69fd0d8c641a7cedaafc">GPIO_PinLockConfig</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d4/db2/group___g_p_i_o___group1_1gaa60bdf3182c44b5fa818f237042f52ee">
+                <title>void GPIO_DeInit (GPIO_TypeDef *GPIOx)</title> <emphasis>Deinitializes the GPIOx peripheral registers to their default reset values.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>By default, The GPIO pins are configured in input floating mode (except JTAG pins). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/db2/group___g_p_i_o___group1_1ga71abf9404261370d03cca449b88d3a65">
+                <title>void GPIO_Init (GPIO_TypeDef *GPIOx, GPIO_InitTypeDef *GPIO_InitStruct)</title> <emphasis>Initializes the GPIOx peripheral according to the specified parameters in the GPIO_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dd/d8f/struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link> structure that contains the configuration information for the specified GPIO peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/db2/group___g_p_i_o___group1_1gab28de41278e7f8c63d0851e2733b10df">
+                <title>void GPIO_StructInit (GPIO_InitTypeDef *GPIO_InitStruct)</title> <emphasis>Fills each GPIO_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIO_InitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="dd/d8f/struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/db2/group___g_p_i_o___group1_1gad2f2e615928c69fd0d8c641a7cedaafc">
+                <title>void GPIO_PinLockConfig (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Locks GPIO Pins configuration registers.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The locked registers are GPIOx_MODER, GPIOx_OTYPER, GPIOx_OSPEEDR, GPIOx_PUPDR, GPIOx_AFRL and GPIOx_AFRH. </para>
+<simplesect/>
+<para>The configuration of the locked GPIO pins can no longer be modified until the next reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bit to be locked. This parameter can be any combination of GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

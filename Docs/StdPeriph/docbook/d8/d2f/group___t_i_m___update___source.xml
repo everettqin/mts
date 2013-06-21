@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d2f/group___t_i_m___update___source">
+    <title>TIM_Update_Source</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d2f/group___t_i_m___update___source_1ga32c67bc3f8211a2c7b44ee9fe1523875">TIM_UpdateSource_Global</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d2f/group___t_i_m___update___source_1ga6f50423cdb011137ae8cd303ccd2080c">TIM_UpdateSource_Regular</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d2f/group___t_i_m___update___source_1ga7c916798d8f5f4a828afadceb5d38a95">IS_TIM_UPDATE_SOURCE</link> (((SOURCE) == <link linkend="d8/d2f/group___t_i_m___update___source_1ga32c67bc3f8211a2c7b44ee9fe1523875">TIM_UpdateSource_Global</link>) || \
+                                      ((SOURCE) == <link linkend="d8/d2f/group___t_i_m___update___source_1ga6f50423cdb011137ae8cd303ccd2080c">TIM_UpdateSource_Regular</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d8/d2f/group___t_i_m___update___source_1ga32c67bc3f8211a2c7b44ee9fe1523875">
+                <title>#define TIM_UpdateSource_Global</title>                
+<para>Source of update is the counter overflow/underflow or the setting of UG bit, or an update generation through the slave mode controller. </para>
+
+                <para>Definition at line 808 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d8/d2f/group___t_i_m___update___source_1ga6f50423cdb011137ae8cd303ccd2080c">
+                <title>#define TIM_UpdateSource_Regular</title>                
+<para>Source of update is counter overflow/underflow. </para>
+
+                <para>Definition at line 809 of file stm32f4xx_tim.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_tim.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

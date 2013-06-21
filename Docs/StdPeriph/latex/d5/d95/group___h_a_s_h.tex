@@ -1,0 +1,709 @@
+\hypertarget{group___h_a_s_h}{\section{H\-A\-S\-H}
+\label{group___h_a_s_h}\index{H\-A\-S\-H@{H\-A\-S\-H}}
+}
+
+
+H\-A\-S\-H driver modules.  
+
+
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___h_a_s_h___exported___constants}{H\-A\-S\-H\-\_\-\-Exported\-\_\-\-Constants}
+\item 
+\hyperlink{group___h_a_s_h___private___functions}{H\-A\-S\-H\-\_\-\-Private\-\_\-\-Functions}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_h_a_s_h___init_type_def}{H\-A\-S\-H\-\_\-\-Init\-Type\-Def}
+\begin{DoxyCompactList}\small\item\em H\-A\-S\-H Init structure definition. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_h_a_s_h___msg_digest}{H\-A\-S\-H\-\_\-\-Msg\-Digest}
+\begin{DoxyCompactList}\small\item\em H\-A\-S\-H message digest result structure definition. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_h_a_s_h___context}{H\-A\-S\-H\-\_\-\-Context}
+\begin{DoxyCompactList}\small\item\em H\-A\-S\-H context swapping structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___h_a_s_h_ga2e8709ff53a6e39167b9509d056bc14c}{\#define {\bfseries M\-D5\-B\-U\-S\-Y\-\_\-\-T\-I\-M\-E\-O\-U\-T}~((uint32\-\_\-t) 0x00010000)}\label{group___h_a_s_h_ga2e8709ff53a6e39167b9509d056bc14c}
+
+\item 
+\hypertarget{group___h_a_s_h_gaa15d9e8e64ae5a78035edb854014c012}{\#define {\bfseries S\-H\-A1\-B\-U\-S\-Y\-\_\-\-T\-I\-M\-E\-O\-U\-T}~((uint32\-\_\-t) 0x00010000)}\label{group___h_a_s_h_gaa15d9e8e64ae5a78035edb854014c012}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___h_a_s_h_ga88717fe3a4f557182841a958e1dcd9c7}{H\-A\-S\-H\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the H\-A\-S\-H peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga4a7d33f0954ac0463a6cda81121635cf}{H\-A\-S\-H\-\_\-\-Init} (\hyperlink{struct_h_a_s_h___init_type_def}{H\-A\-S\-H\-\_\-\-Init\-Type\-Def} $\ast$H\-A\-S\-H\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the H\-A\-S\-H peripheral according to the specified parameters in the H\-A\-S\-H\-\_\-\-Init\-Struct structure. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga9cfaaa73eafec40a06154f58d48adeb5}{H\-A\-S\-H\-\_\-\-Struct\-Init} (\hyperlink{struct_h_a_s_h___init_type_def}{H\-A\-S\-H\-\_\-\-Init\-Type\-Def} $\ast$H\-A\-S\-H\-\_\-\-Init\-Struct)
+\begin{DoxyCompactList}\small\item\em Fills each H\-A\-S\-H\-\_\-\-Init\-Struct member with its default value. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga11745813cf85a08b2058aac3bd026e4d}{H\-A\-S\-H\-\_\-\-Reset} (void)
+\begin{DoxyCompactList}\small\item\em Resets the H\-A\-S\-H processor core, so that the H\-A\-S\-H will be ready to compute the message digest of a new message. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga9c4c0cebdeb1ce2631dd2eeab82107ef}{H\-A\-S\-H\-\_\-\-Data\-In} (uint32\-\_\-t Data)
+\begin{DoxyCompactList}\small\item\em Writes data in the Data Input F\-I\-F\-O. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___h_a_s_h_ga37bec5e637a57124f3179185d03537ab}{H\-A\-S\-H\-\_\-\-Get\-In\-F\-I\-F\-O\-Words\-Nbr} (void)
+\begin{DoxyCompactList}\small\item\em Returns the number of words already pushed into the I\-N F\-I\-F\-O. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_gac4d1fa51c9240ad0287b371564b5d2a6}{H\-A\-S\-H\-\_\-\-Set\-Last\-Word\-Valid\-Bits\-Nbr} (uint16\-\_\-t Valid\-Number)
+\begin{DoxyCompactList}\small\item\em Configure the Number of valid bits in last word of the message. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga84ac2b64179fd37b75c4d5f665126e93}{H\-A\-S\-H\-\_\-\-Start\-Digest} (void)
+\begin{DoxyCompactList}\small\item\em Starts the message padding and calculation of the final message. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga23018d770837d6ab9f46941f105cc017}{H\-A\-S\-H\-\_\-\-Get\-Digest} (\hyperlink{struct_h_a_s_h___msg_digest}{H\-A\-S\-H\-\_\-\-Msg\-Digest} $\ast$H\-A\-S\-H\-\_\-\-Message\-Digest)
+\begin{DoxyCompactList}\small\item\em Provides the message digest result. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga9432b2b66e223414c840e9313c388bc5}{H\-A\-S\-H\-\_\-\-Save\-Context} (\hyperlink{struct_h_a_s_h___context}{H\-A\-S\-H\-\_\-\-Context} $\ast$H\-A\-S\-H\-\_\-\-Context\-Save)
+\begin{DoxyCompactList}\small\item\em Save the Hash peripheral Context. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga1d8412a13601376c968aec63212ca54e}{H\-A\-S\-H\-\_\-\-Restore\-Context} (\hyperlink{struct_h_a_s_h___context}{H\-A\-S\-H\-\_\-\-Context} $\ast$H\-A\-S\-H\-\_\-\-Context\-Restore)
+\begin{DoxyCompactList}\small\item\em Restore the Hash peripheral Context. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga6bc756803b0b3a03eecc47cb570e1bd3}{H\-A\-S\-H\-\_\-\-D\-M\-A\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the H\-A\-S\-H D\-M\-A interface. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_gaed111ba67a4f4afc8c9cf389adc574ac}{H\-A\-S\-H\-\_\-\-I\-T\-Config} (uint8\-\_\-t H\-A\-S\-H\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified H\-A\-S\-H interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___h_a_s_h_gae994fb4be1977f6ebb823f38839f7bd1}{H\-A\-S\-H\-\_\-\-Get\-Flag\-Status} (uint16\-\_\-t H\-A\-S\-H\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified H\-A\-S\-H flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga0ec1269a1f30a1e7be0e3045d72ebcf6}{H\-A\-S\-H\-\_\-\-Clear\-Flag} (uint16\-\_\-t H\-A\-S\-H\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the H\-A\-S\-H flags. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___h_a_s_h_ga49a9d1ad196112cd3614b8c428a4c4cf}{H\-A\-S\-H\-\_\-\-Get\-I\-T\-Status} (uint8\-\_\-t H\-A\-S\-H\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified H\-A\-S\-H interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___h_a_s_h_ga97b9508f09c6fb572f65832f124da26d}{H\-A\-S\-H\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint8\-\_\-t H\-A\-S\-H\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the H\-A\-S\-H interrupt pending bit(s). \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___h_a_s_h_ga2728c02c36de6d800e1ede56ea7789cb}{H\-A\-S\-H\-\_\-\-S\-H\-A1} (uint8\-\_\-t $\ast$Input, uint32\-\_\-t Ilen, uint8\-\_\-t Output\mbox{[}20\mbox{]})
+\begin{DoxyCompactList}\small\item\em Compute the H\-A\-S\-H S\-H\-A1 digest. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___h_a_s_h_ga2e38e900ca7838c1cea17cef19953a5e}{H\-M\-A\-C\-\_\-\-S\-H\-A1} (uint8\-\_\-t $\ast$Key, uint32\-\_\-t Keylen, uint8\-\_\-t $\ast$Input, uint32\-\_\-t Ilen, uint8\-\_\-t Output\mbox{[}20\mbox{]})
+\begin{DoxyCompactList}\small\item\em Compute the H\-M\-A\-C S\-H\-A1 digest. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___h_a_s_h_ga82a155884e458cc6b7c1a4565c1ac8e9}{H\-A\-S\-H\-\_\-\-M\-D5} (uint8\-\_\-t $\ast$Input, uint32\-\_\-t Ilen, uint8\-\_\-t Output\mbox{[}16\mbox{]})
+\begin{DoxyCompactList}\small\item\em Compute the H\-A\-S\-H M\-D5 digest. \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___h_a_s_h_gac61733e7aa66bdd2f21be4b34165b5be}{H\-M\-A\-C\-\_\-\-M\-D5} (uint8\-\_\-t $\ast$Key, uint32\-\_\-t Keylen, uint8\-\_\-t $\ast$Input, uint32\-\_\-t Ilen, uint8\-\_\-t Output\mbox{[}16\mbox{]})
+\begin{DoxyCompactList}\small\item\em Compute the H\-M\-A\-C M\-D5 digest. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\-A\-S\-H driver modules. 
+
+\subsection{Function Documentation}
+\hypertarget{group___h_a_s_h_ga0ec1269a1f30a1e7be0e3045d72ebcf6}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Clear\-Flag@{H\-A\-S\-H\-\_\-\-Clear\-Flag}}
+\index{H\-A\-S\-H\-\_\-\-Clear\-Flag@{H\-A\-S\-H\-\_\-\-Clear\-Flag}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{H\-A\-S\-H\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga0ec1269a1f30a1e7be0e3045d72ebcf6}
+
+
+Clears the H\-A\-S\-H flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item H\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-D\-I\-N\-I\-S\-: Data Input Flag \item H\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-D\-C\-I\-S\-: Digest Calculation Completion Flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 625 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga97b9508f09c6fb572f65832f124da26d}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Clear\-I\-T\-Pending\-Bit@{H\-A\-S\-H\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{H\-A\-S\-H\-\_\-\-Clear\-I\-T\-Pending\-Bit@{H\-A\-S\-H\-\_\-\-Clear\-I\-T\-Pending\-Bit}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{H\-A\-S\-H\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga97b9508f09c6fb572f65832f124da26d}
+
+
+Clears the H\-A\-S\-H interrupt pending bit(s). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-I\-T,\-:} & specifies the H\-A\-S\-H interrupt pending bit(s) to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item H\-A\-S\-H\-\_\-\-I\-T\-\_\-\-D\-I\-N\-I\-: Data Input interrupt \item H\-A\-S\-H\-\_\-\-I\-T\-\_\-\-D\-C\-I\-: Digest Calculation Completion Interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 675 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga9c4c0cebdeb1ce2631dd2eeab82107ef}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Data\-In@{H\-A\-S\-H\-\_\-\-Data\-In}}
+\index{H\-A\-S\-H\-\_\-\-Data\-In@{H\-A\-S\-H\-\_\-\-Data\-In}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Data\-In}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Data\-In (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Data}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga9c4c0cebdeb1ce2631dd2eeab82107ef}
+
+
+Writes data in the Data Input F\-I\-F\-O. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data,\-:} & new data of the message to be processed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 306 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga88717fe3a4f557182841a958e1dcd9c7}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-De\-Init@{H\-A\-S\-H\-\_\-\-De\-Init}}
+\index{H\-A\-S\-H\-\_\-\-De\-Init@{H\-A\-S\-H\-\_\-\-De\-Init}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga88717fe3a4f557182841a958e1dcd9c7}
+
+
+Deinitializes the H\-A\-S\-H peripheral registers to their default reset values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 171 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga6bc756803b0b3a03eecc47cb570e1bd3}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-D\-M\-A\-Cmd@{H\-A\-S\-H\-\_\-\-D\-M\-A\-Cmd}}
+\index{H\-A\-S\-H\-\_\-\-D\-M\-A\-Cmd@{H\-A\-S\-H\-\_\-\-D\-M\-A\-Cmd}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-D\-M\-A\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-D\-M\-A\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga6bc756803b0b3a03eecc47cb570e1bd3}
+
+
+Enables or disables the H\-A\-S\-H D\-M\-A interface. 
+
+\begin{DoxyNote}{Note}
+The D\-M\-A is disabled by hardware after the end of transfer. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the selected H\-A\-S\-H D\-M\-A transfer request. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 460 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga23018d770837d6ab9f46941f105cc017}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Get\-Digest@{H\-A\-S\-H\-\_\-\-Get\-Digest}}
+\index{H\-A\-S\-H\-\_\-\-Get\-Digest@{H\-A\-S\-H\-\_\-\-Get\-Digest}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Get\-Digest}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Get\-Digest (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-A\-S\-H\-\_\-\-Msg\-Digest} $\ast$}]{H\-A\-S\-H\-\_\-\-Message\-Digest}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga23018d770837d6ab9f46941f105cc017}
+
+
+Provides the message digest result. 
+
+\begin{DoxyNote}{Note}
+In M\-D5 mode, Data\mbox{[}4\mbox{]} filed of \hyperlink{struct_h_a_s_h___msg_digest}{H\-A\-S\-H\-\_\-\-Msg\-Digest} structure is not used and is read as zero. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-Message\-Digest,\-:} & pointer to a \hyperlink{struct_h_a_s_h___msg_digest}{H\-A\-S\-H\-\_\-\-Msg\-Digest} structure which will hold the message digest result \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 331 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_gae994fb4be1977f6ebb823f38839f7bd1}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Get\-Flag\-Status@{H\-A\-S\-H\-\_\-\-Get\-Flag\-Status}}
+\index{H\-A\-S\-H\-\_\-\-Get\-Flag\-Status@{H\-A\-S\-H\-\_\-\-Get\-Flag\-Status}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status H\-A\-S\-H\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{H\-A\-S\-H\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_gae994fb4be1977f6ebb823f38839f7bd1}
+
+
+Checks whether the specified H\-A\-S\-H flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-F\-L\-A\-G,\-:} & specifies the H\-A\-S\-H flag to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item H\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-D\-I\-N\-I\-S\-: Data input interrupt status flag \item H\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-D\-C\-I\-S\-: Digest calculation completion interrupt status flag \item H\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-B\-U\-S\-Y\-: Busy flag \item H\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-D\-M\-A\-S\-: D\-M\-A\-S Status flag \item H\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-D\-I\-N\-N\-E\-: Data Input register (D\-I\-N) not empty status flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of H\-A\-S\-H\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T) \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 584 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga37bec5e637a57124f3179185d03537ab}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Get\-In\-F\-I\-F\-O\-Words\-Nbr@{H\-A\-S\-H\-\_\-\-Get\-In\-F\-I\-F\-O\-Words\-Nbr}}
+\index{H\-A\-S\-H\-\_\-\-Get\-In\-F\-I\-F\-O\-Words\-Nbr@{H\-A\-S\-H\-\_\-\-Get\-In\-F\-I\-F\-O\-Words\-Nbr}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Get\-In\-F\-I\-F\-O\-Words\-Nbr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t H\-A\-S\-H\-\_\-\-Get\-In\-F\-I\-F\-O\-Words\-Nbr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga37bec5e637a57124f3179185d03537ab}
+
+
+Returns the number of words already pushed into the I\-N F\-I\-F\-O. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & value of words already pushed into the I\-N F\-I\-F\-O. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 317 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga49a9d1ad196112cd3614b8c428a4c4cf}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Get\-I\-T\-Status@{H\-A\-S\-H\-\_\-\-Get\-I\-T\-Status}}
+\index{H\-A\-S\-H\-\_\-\-Get\-I\-T\-Status@{H\-A\-S\-H\-\_\-\-Get\-I\-T\-Status}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status H\-A\-S\-H\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{H\-A\-S\-H\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga49a9d1ad196112cd3614b8c428a4c4cf}
+
+
+Checks whether the specified H\-A\-S\-H interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-I\-T,\-:} & specifies the H\-A\-S\-H interrupt source to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item H\-A\-S\-H\-\_\-\-I\-T\-\_\-\-D\-I\-N\-I\-: Data Input interrupt \item H\-A\-S\-H\-\_\-\-I\-T\-\_\-\-D\-C\-I\-: Digest Calculation Completion Interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of H\-A\-S\-H\-\_\-\-I\-T (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 641 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga4a7d33f0954ac0463a6cda81121635cf}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Init@{H\-A\-S\-H\-\_\-\-Init}}
+\index{H\-A\-S\-H\-\_\-\-Init@{H\-A\-S\-H\-\_\-\-Init}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-A\-S\-H\-\_\-\-Init\-Type\-Def} $\ast$}]{H\-A\-S\-H\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga4a7d33f0954ac0463a6cda81121635cf}
+
+
+Initializes the H\-A\-S\-H peripheral according to the specified parameters in the H\-A\-S\-H\-\_\-\-Init\-Struct structure. 
+
+\begin{DoxyNote}{Note}
+the hash processor is reset when calling this function so that the H\-A\-S\-H will be ready to compute the message digest of a new message. There is no need to call \hyperlink{group___h_a_s_h_ga11745813cf85a08b2058aac3bd026e4d}{H\-A\-S\-H\-\_\-\-Reset()} function. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-Init\-Struct,\-:} & pointer to a \hyperlink{struct_h_a_s_h___init_type_def}{H\-A\-S\-H\-\_\-\-Init\-Type\-Def} structure that contains the configuration information for the H\-A\-S\-H peripheral. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The field H\-A\-S\-H\-\_\-\-H\-M\-A\-C\-Key\-Type in \hyperlink{struct_h_a_s_h___init_type_def}{H\-A\-S\-H\-\_\-\-Init\-Type\-Def} must be filled only if the algorithm mode is H\-M\-A\-C. 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 191 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_gaed111ba67a4f4afc8c9cf389adc574ac}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-I\-T\-Config@{H\-A\-S\-H\-\_\-\-I\-T\-Config}}
+\index{H\-A\-S\-H\-\_\-\-I\-T\-Config@{H\-A\-S\-H\-\_\-\-I\-T\-Config}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{H\-A\-S\-H\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_gaed111ba67a4f4afc8c9cf389adc574ac}
+
+
+Enables or disables the specified H\-A\-S\-H interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-I\-T,\-:} & specifies the H\-A\-S\-H interrupt source to be enabled or disabled. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item H\-A\-S\-H\-\_\-\-I\-T\-\_\-\-D\-I\-N\-I\-: Data Input interrupt \item H\-A\-S\-H\-\_\-\-I\-T\-\_\-\-D\-C\-I\-: Digest Calculation Completion Interrupt \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified H\-A\-S\-H interrupt. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 555 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga82a155884e458cc6b7c1a4565c1ac8e9}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-M\-D5@{H\-A\-S\-H\-\_\-\-M\-D5}}
+\index{H\-A\-S\-H\-\_\-\-M\-D5@{H\-A\-S\-H\-\_\-\-M\-D5}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-M\-D5}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status H\-A\-S\-H\-\_\-\-M\-D5 (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{Input, }
+\item[{uint32\-\_\-t}]{Ilen, }
+\item[{uint8\-\_\-t}]{Output\mbox{[}16\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga82a155884e458cc6b7c1a4565c1ac8e9}
+
+
+Compute the H\-A\-S\-H M\-D5 digest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input,\-:} & pointer to the Input buffer to be treated. \\
+\hline
+{\em Ilen,\-:} & length of the Input buffer. \\
+\hline
+{\em Output,\-:} & the returned digest \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: digest computation done
+\item E\-R\-R\-O\-R\-: digest computation failed 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 87 of file stm32f4xx\-\_\-hash\-\_\-md5.\-c.
+
+\hypertarget{group___h_a_s_h_ga11745813cf85a08b2058aac3bd026e4d}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Reset@{H\-A\-S\-H\-\_\-\-Reset}}
+\index{H\-A\-S\-H\-\_\-\-Reset@{H\-A\-S\-H\-\_\-\-Reset}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga11745813cf85a08b2058aac3bd026e4d}
+
+
+Resets the H\-A\-S\-H processor core, so that the H\-A\-S\-H will be ready to compute the message digest of a new message. 
+
+\begin{DoxyNote}{Note}
+Calling this function will clear the H\-A\-S\-H\-\_\-\-S\-R\-\_\-\-D\-C\-I\-S (Digest calculation completion interrupt status) bit corresponding to H\-A\-S\-H\-\_\-\-I\-T\-\_\-\-D\-C\-I interrupt and H\-A\-S\-H\-\_\-\-F\-L\-A\-G\-\_\-\-D\-C\-I\-S flag. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 249 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga1d8412a13601376c968aec63212ca54e}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Restore\-Context@{H\-A\-S\-H\-\_\-\-Restore\-Context}}
+\index{H\-A\-S\-H\-\_\-\-Restore\-Context@{H\-A\-S\-H\-\_\-\-Restore\-Context}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Restore\-Context}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Restore\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-A\-S\-H\-\_\-\-Context} $\ast$}]{H\-A\-S\-H\-\_\-\-Context\-Restore}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga1d8412a13601376c968aec63212ca54e}
+
+
+Restore the Hash peripheral Context. 
+
+\begin{DoxyNote}{Note}
+After calling this function, user can restart the processing from the point where it has been interrupted. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-Context\-Restore,\-:} & pointer to a \hyperlink{struct_h_a_s_h___context}{H\-A\-S\-H\-\_\-\-Context} structure that contains the repository for saved context. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 411 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga9432b2b66e223414c840e9313c388bc5}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Save\-Context@{H\-A\-S\-H\-\_\-\-Save\-Context}}
+\index{H\-A\-S\-H\-\_\-\-Save\-Context@{H\-A\-S\-H\-\_\-\-Save\-Context}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Save\-Context}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Save\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-A\-S\-H\-\_\-\-Context} $\ast$}]{H\-A\-S\-H\-\_\-\-Context\-Save}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga9432b2b66e223414c840e9313c388bc5}
+
+
+Save the Hash peripheral Context. 
+
+\begin{DoxyNote}{Note}
+The context can be saved only when no block is currently being processed. So user must wait for D\-I\-N\-I\-S = 1 (the last block has been processed and the input F\-I\-F\-O is empty) or N\-B\-W != 0 (the F\-I\-F\-O is not full and no processing is ongoing). 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-Context\-Save,\-:} & pointer to a \hyperlink{struct_h_a_s_h___context}{H\-A\-S\-H\-\_\-\-Context} structure that contains the repository for current context. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 389 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_gac4d1fa51c9240ad0287b371564b5d2a6}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Set\-Last\-Word\-Valid\-Bits\-Nbr@{H\-A\-S\-H\-\_\-\-Set\-Last\-Word\-Valid\-Bits\-Nbr}}
+\index{H\-A\-S\-H\-\_\-\-Set\-Last\-Word\-Valid\-Bits\-Nbr@{H\-A\-S\-H\-\_\-\-Set\-Last\-Word\-Valid\-Bits\-Nbr}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Set\-Last\-Word\-Valid\-Bits\-Nbr}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Set\-Last\-Word\-Valid\-Bits\-Nbr (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{Valid\-Number}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_gac4d1fa51c9240ad0287b371564b5d2a6}
+
+
+Configure the Number of valid bits in last word of the message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Valid\-Number,\-:} & Number of valid bits in last word of the message. This parameter must be a number between 0 and 0x1\-F.
+\begin{DoxyItemize}
+\item 0x00\-: All 32 bits of the last data written are valid
+\item 0x01\-: Only bit \mbox{[}0\mbox{]} of the last data written is valid
+\item 0x02\-: Only bits\mbox{[}1\-:0\mbox{]} of the last data written are valid
+\item 0x03\-: Only bits\mbox{[}2\-:0\mbox{]} of the last data written are valid
+\item ...
+\item 0x1\-F\-: Only bits\mbox{[}30\-:0\mbox{]} of the last data written are valid 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The Number of valid bits must be set before to start the message digest competition (in Hash and H\-M\-A\-C) and key treatment(in H\-M\-A\-C). 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 291 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga2728c02c36de6d800e1ede56ea7789cb}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-S\-H\-A1@{H\-A\-S\-H\-\_\-\-S\-H\-A1}}
+\index{H\-A\-S\-H\-\_\-\-S\-H\-A1@{H\-A\-S\-H\-\_\-\-S\-H\-A1}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-S\-H\-A1}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status H\-A\-S\-H\-\_\-\-S\-H\-A1 (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{Input, }
+\item[{uint32\-\_\-t}]{Ilen, }
+\item[{uint8\-\_\-t}]{Output\mbox{[}20\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga2728c02c36de6d800e1ede56ea7789cb}
+
+
+Compute the H\-A\-S\-H S\-H\-A1 digest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input,\-:} & pointer to the Input buffer to be treated. \\
+\hline
+{\em Ilen,\-:} & length of the Input buffer. \\
+\hline
+{\em Output,\-:} & the returned digest \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: digest computation done
+\item E\-R\-R\-O\-R\-: digest computation failed 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 87 of file stm32f4xx\-\_\-hash\-\_\-sha1.\-c.
+
+\hypertarget{group___h_a_s_h_ga84ac2b64179fd37b75c4d5f665126e93}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Start\-Digest@{H\-A\-S\-H\-\_\-\-Start\-Digest}}
+\index{H\-A\-S\-H\-\_\-\-Start\-Digest@{H\-A\-S\-H\-\_\-\-Start\-Digest}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Start\-Digest}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Start\-Digest (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga84ac2b64179fd37b75c4d5f665126e93}
+
+
+Starts the message padding and calculation of the final message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 346 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_ga9cfaaa73eafec40a06154f58d48adeb5}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-A\-S\-H\-\_\-\-Struct\-Init@{H\-A\-S\-H\-\_\-\-Struct\-Init}}
+\index{H\-A\-S\-H\-\_\-\-Struct\-Init@{H\-A\-S\-H\-\_\-\-Struct\-Init}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-A\-S\-H\-\_\-\-Struct\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void H\-A\-S\-H\-\_\-\-Struct\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-A\-S\-H\-\_\-\-Init\-Type\-Def} $\ast$}]{H\-A\-S\-H\-\_\-\-Init\-Struct}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga9cfaaa73eafec40a06154f58d48adeb5}
+
+
+Fills each H\-A\-S\-H\-\_\-\-Init\-Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em H\-A\-S\-H\-\_\-\-Init\-Struct} & \-: pointer to a \hyperlink{struct_h_a_s_h___init_type_def}{H\-A\-S\-H\-\_\-\-Init\-Type\-Def} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The default values set are \-: Processor mode is H\-A\-S\-H, Algorithm selected is S\-H\-A1, Data type selected is 32b and H\-M\-A\-C Key Type is short key. 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 225 of file stm32f4xx\-\_\-hash.\-c.
+
+\hypertarget{group___h_a_s_h_gac61733e7aa66bdd2f21be4b34165b5be}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-M\-A\-C\-\_\-\-M\-D5@{H\-M\-A\-C\-\_\-\-M\-D5}}
+\index{H\-M\-A\-C\-\_\-\-M\-D5@{H\-M\-A\-C\-\_\-\-M\-D5}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-M\-A\-C\-\_\-\-M\-D5}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status H\-M\-A\-C\-\_\-\-M\-D5 (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{Key, }
+\item[{uint32\-\_\-t}]{Keylen, }
+\item[{uint8\-\_\-t $\ast$}]{Input, }
+\item[{uint32\-\_\-t}]{Ilen, }
+\item[{uint8\-\_\-t}]{Output\mbox{[}16\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_gac61733e7aa66bdd2f21be4b34165b5be}
+
+
+Compute the H\-M\-A\-C M\-D5 digest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Key,\-:} & pointer to the Key used for H\-M\-A\-C. \\
+\hline
+{\em Keylen,\-:} & length of the Key used for H\-M\-A\-C. \\
+\hline
+{\em Input,\-:} & pointer to the Input buffer to be treated. \\
+\hline
+{\em Ilen,\-:} & length of the Input buffer. \\
+\hline
+{\em Output,\-:} & the returned digest \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: digest computation done
+\item E\-R\-R\-O\-R\-: digest computation failed 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 162 of file stm32f4xx\-\_\-hash\-\_\-md5.\-c.
+
+\hypertarget{group___h_a_s_h_ga2e38e900ca7838c1cea17cef19953a5e}{\index{H\-A\-S\-H@{H\-A\-S\-H}!H\-M\-A\-C\-\_\-\-S\-H\-A1@{H\-M\-A\-C\-\_\-\-S\-H\-A1}}
+\index{H\-M\-A\-C\-\_\-\-S\-H\-A1@{H\-M\-A\-C\-\_\-\-S\-H\-A1}!HASH@{H\-A\-S\-H}}
+\subsubsection[{H\-M\-A\-C\-\_\-\-S\-H\-A1}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status H\-M\-A\-C\-\_\-\-S\-H\-A1 (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{Key, }
+\item[{uint32\-\_\-t}]{Keylen, }
+\item[{uint8\-\_\-t $\ast$}]{Input, }
+\item[{uint32\-\_\-t}]{Ilen, }
+\item[{uint8\-\_\-t}]{Output\mbox{[}20\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{group___h_a_s_h_ga2e38e900ca7838c1cea17cef19953a5e}
+
+
+Compute the H\-M\-A\-C S\-H\-A1 digest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Key,\-:} & pointer to the Key used for H\-M\-A\-C. \\
+\hline
+{\em Keylen,\-:} & length of the Key used for H\-M\-A\-C. \\
+\hline
+{\em Input,\-:} & pointer to the Input buffer to be treated. \\
+\hline
+{\em Ilen,\-:} & length of the Input buffer. \\
+\hline
+{\em Output,\-:} & the returned digest \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: digest computation done
+\item E\-R\-R\-O\-R\-: digest computation failed 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 163 of file stm32f4xx\-\_\-hash\-\_\-sha1.\-c.
+

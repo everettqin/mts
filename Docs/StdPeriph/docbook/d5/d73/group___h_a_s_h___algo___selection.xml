@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d73/group___h_a_s_h___algo___selection">
+    <title>HASH_Algo_Selection</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d73/group___h_a_s_h___algo___selection_1gaa866d6ac9e86d2290b012681836f22d0">HASH_AlgoSelection_SHA1</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d73/group___h_a_s_h___algo___selection_1gac443db7ebfff6d660b9321c59ecf48ed">HASH_AlgoSelection_MD5</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d73/group___h_a_s_h___algo___selection_1ga9468e8db1412a30864ec7991acd8202a">IS_HASH_ALGOSELECTION</link> (((ALGOSELECTION) == <link linkend="d5/d73/group___h_a_s_h___algo___selection_1gaa866d6ac9e86d2290b012681836f22d0">HASH_AlgoSelection_SHA1</link>) || \
+                                              ((ALGOSELECTION) == <link linkend="d5/d73/group___h_a_s_h___algo___selection_1gac443db7ebfff6d660b9321c59ecf48ed">HASH_AlgoSelection_MD5</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d5/d73/group___h_a_s_h___algo___selection_1gaa866d6ac9e86d2290b012681836f22d0">
+                <title>#define HASH_AlgoSelection_SHA1</title>                
+<para>HASH function is SHA1 </para>
+
+                <para>Definition at line 89 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d5/d73/group___h_a_s_h___algo___selection_1gac443db7ebfff6d660b9321c59ecf48ed">
+                <title>#define HASH_AlgoSelection_MD5</title>                
+<para>HASH function is MD5 </para>
+
+                <para>Definition at line 90 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

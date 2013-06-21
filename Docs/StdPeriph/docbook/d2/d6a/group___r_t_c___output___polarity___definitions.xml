@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d6a/group___r_t_c___output___polarity___definitions">
+    <title>RTC_Output_Polarity_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6a/group___r_t_c___output___polarity___definitions_1ga0c9b36bf812f02f67d82c02594cc93b3">RTC_OutputPolarity_High</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6a/group___r_t_c___output___polarity___definitions_1ga6900b0eb6f2e3abe65245c49661d55af">RTC_OutputPolarity_Low</link> ((uint32_t)0x00100000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d6a/group___r_t_c___output___polarity___definitions_1ga1bc0fee899de25a9c1bcbb6c2b21b35d">IS_RTC_OUTPUT_POL</link> (((POL) == RTC_OutputPolarity_High) || \
+                                ((POL) == RTC_OutputPolarity_Low))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d3a/group___s_p_i___clock___phase">
+    <title>SPI_Clock_Phase</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d3a/group___s_p_i___clock___phase_1gaade9d9555fac8a302bde5c94da9c7292">SPI_CPHA_1Edge</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d3a/group___s_p_i___clock___phase_1ga7543f88bf05a08705eb4203862dcebdf">SPI_CPHA_2Edge</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d3a/group___s_p_i___clock___phase_1ga6441f08edf79dd5b243c54b888d3cbf7">IS_SPI_CPHA</link> (((CPHA) == SPI_CPHA_1Edge) || \
+                           ((CPHA) == SPI_CPHA_2Edge))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

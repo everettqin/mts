@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d46/group___s_d_i_o___c_p_s_m___state">
+    <title>SDIO_CPSM_State</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d46/group___s_d_i_o___c_p_s_m___state_1ga996751273ad238e255a740f7c2844c6c">SDIO_CPSM_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d46/group___s_d_i_o___c_p_s_m___state_1gad437cefe89d6175aa074a1c40b909ebc">SDIO_CPSM_Enable</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d46/group___s_d_i_o___c_p_s_m___state_1ga58cf04903dab015106e4e0937bef443b">IS_SDIO_CPSM</link> (((CPSM) == SDIO_CPSM_Enable) || ((CPSM) == SDIO_CPSM_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

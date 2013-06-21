@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dbb/struct_r_t_c___time_type_def">
+<title>RTC_TimeTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/dbb/stm32f4xx__rtc_8h">&lt;stm32f4xx_rtc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTC_Hours</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTC_Minutes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTC_Seconds</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTC_H12</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>RTC Time structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint8_t RTC_Hours</title>                
+<para><programlisting><literallayout> Specifies the RTC Time Hour.
+</literallayout></programlisting> This parameter must be set to a value in the 0-12 range if the RTC_HourFormat_12 is selected or 0-23 range if the RTC_HourFormat_24 is selected. </para>
+
+                <para>Definition at line 64 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t RTC_Minutes</title>                
+<para><programlisting><literallayout> Specifies the RTC Time Minutes.
+</literallayout></programlisting> This parameter must be set to a value in the 0-59 range. </para>
+
+                <para>Definition at line 69 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t RTC_Seconds</title>                
+<para><programlisting><literallayout> Specifies the RTC Time Seconds.
+</literallayout></programlisting> This parameter must be set to a value in the 0-59 range. </para>
+
+                <para>Definition at line 72 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t RTC_H12</title>                
+<para><programlisting><literallayout> Specifies the RTC AM/PM Time.
+</literallayout></programlisting> This parameter can be a value of <link linkend="d2/d24/group___r_t_c___a_m___p_m___definitions">RTC_AM_PM_Definitions</link> </para>
+
+                <para>Definition at line 75 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

@@ -1,0 +1,166 @@
+\hypertarget{group___r_c_c___group4}{\section{Interrupts and flags management functions}
+\label{group___r_c_c___group4}\index{Interrupts and flags management functions@{Interrupts and flags management functions}}
+}
+
+
+Interrupts and flags management functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___r_c_c___group4_gaa953aa226e9ce45300d535941e4dfe2f}{R\-C\-C\-\_\-\-I\-T\-Config} (uint8\-\_\-t R\-C\-C\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified R\-C\-C interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___r_c_c___group4_ga2897bdc52f272031c44fb1f72205d295}{R\-C\-C\-\_\-\-Get\-Flag\-Status} (uint8\-\_\-t R\-C\-C\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified R\-C\-C flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c___group4_ga53f909dbb15a54124419084ebda97d72}{R\-C\-C\-\_\-\-Clear\-Flag} (void)
+\begin{DoxyCompactList}\small\item\em Clears the R\-C\-C reset flags. The reset flags are\-: R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-I\-N\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-O\-R\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-S\-F\-T\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-I\-W\-D\-G\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-W\-W\-D\-G\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-P\-W\-R\-R\-S\-T. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___r_c_c___group4_ga6126c99f398ee4be410ad76ae3aee18f}{R\-C\-C\-\_\-\-Get\-I\-T\-Status} (uint8\-\_\-t R\-C\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified R\-C\-C interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c___group4_ga529842d165910f8f87e26115da36089b}{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint8\-\_\-t R\-C\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the R\-C\-C's interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interrupts and flags management functions. \begin{DoxyVerb} ===============================================================================
+                   Interrupts and flags management functions
+ ===============================================================================  \end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\hypertarget{group___r_c_c___group4_ga53f909dbb15a54124419084ebda97d72}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!R\-C\-C\-\_\-\-Clear\-Flag@{R\-C\-C\-\_\-\-Clear\-Flag}}
+\index{R\-C\-C\-\_\-\-Clear\-Flag@{R\-C\-C\-\_\-\-Clear\-Flag}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{R\-C\-C\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c___group4_ga53f909dbb15a54124419084ebda97d72}
+
+
+Clears the R\-C\-C reset flags. The reset flags are\-: R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-I\-N\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-O\-R\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-S\-F\-T\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-I\-W\-D\-G\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-W\-W\-D\-G\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-P\-W\-R\-R\-S\-T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1730 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c___group4_ga529842d165910f8f87e26115da36089b}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c___group4_ga529842d165910f8f87e26115da36089b}
+
+
+Clears the R\-C\-C's interrupt pending bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-I\-T,\-:} & specifies the interrupt pending bit to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-I\-R\-D\-Y\-: L\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-E\-R\-D\-Y\-: L\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-I\-R\-D\-Y\-: H\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-E\-R\-D\-Y\-: H\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-R\-D\-Y\-: main P\-L\-L ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-I2\-S\-R\-D\-Y\-: P\-L\-L\-I2\-S ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-C\-S\-S\-: Clock Security System interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1782 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c___group4_ga2897bdc52f272031c44fb1f72205d295}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!R\-C\-C\-\_\-\-Get\-Flag\-Status@{R\-C\-C\-\_\-\-Get\-Flag\-Status}}
+\index{R\-C\-C\-\_\-\-Get\-Flag\-Status@{R\-C\-C\-\_\-\-Get\-Flag\-Status}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{R\-C\-C\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status R\-C\-C\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c___group4_ga2897bdc52f272031c44fb1f72205d295}
+
+
+Checks whether the specified R\-C\-C flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-H\-S\-I\-R\-D\-Y\-: H\-S\-I oscillator clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-H\-S\-E\-R\-D\-Y\-: H\-S\-E oscillator clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-L\-L\-R\-D\-Y\-: main P\-L\-L clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-L\-L\-I2\-S\-R\-D\-Y\-: P\-L\-L\-I2\-S clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-S\-E\-R\-D\-Y\-: L\-S\-E oscillator clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-S\-I\-R\-D\-Y\-: L\-S\-I oscillator clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-B\-O\-R\-R\-S\-T\-: P\-O\-R/\-P\-D\-R or B\-O\-R reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-I\-N\-R\-S\-T\-: Pin reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-O\-R\-R\-S\-T\-: P\-O\-R/\-P\-D\-R reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-S\-F\-T\-R\-S\-T\-: Software reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-I\-W\-D\-G\-R\-S\-T\-: Independent Watchdog reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-W\-W\-D\-G\-R\-S\-T\-: Window Watchdog reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-P\-W\-R\-R\-S\-T\-: Low Power reset \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of R\-C\-C\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1685 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c___group4_ga6126c99f398ee4be410ad76ae3aee18f}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!R\-C\-C\-\_\-\-Get\-I\-T\-Status@{R\-C\-C\-\_\-\-Get\-I\-T\-Status}}
+\index{R\-C\-C\-\_\-\-Get\-I\-T\-Status@{R\-C\-C\-\_\-\-Get\-I\-T\-Status}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{R\-C\-C\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status R\-C\-C\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c___group4_ga6126c99f398ee4be410ad76ae3aee18f}
+
+
+Checks whether the specified R\-C\-C interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-I\-T,\-:} & specifies the R\-C\-C interrupt source to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-I\-R\-D\-Y\-: L\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-E\-R\-D\-Y\-: L\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-I\-R\-D\-Y\-: H\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-E\-R\-D\-Y\-: H\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-R\-D\-Y\-: main P\-L\-L ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-I2\-S\-R\-D\-Y\-: P\-L\-L\-I2\-S ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-C\-S\-S\-: Clock Security System interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of R\-C\-C\-\_\-\-I\-T (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1749 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c___group4_gaa953aa226e9ce45300d535941e4dfe2f}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!R\-C\-C\-\_\-\-I\-T\-Config@{R\-C\-C\-\_\-\-I\-T\-Config}}
+\index{R\-C\-C\-\_\-\-I\-T\-Config@{R\-C\-C\-\_\-\-I\-T\-Config}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{R\-C\-C\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c___group4_gaa953aa226e9ce45300d535941e4dfe2f}
+
+
+Enables or disables the specified R\-C\-C interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-I\-T,\-:} & specifies the R\-C\-C interrupt sources to be enabled or disabled. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-I\-R\-D\-Y\-: L\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-E\-R\-D\-Y\-: L\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-I\-R\-D\-Y\-: H\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-E\-R\-D\-Y\-: H\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-R\-D\-Y\-: main P\-L\-L ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-I2\-S\-R\-D\-Y\-: P\-L\-L\-I2\-S ready interrupt \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified R\-C\-C interrupts. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1649 of file stm32f4xx\-\_\-rcc.\-c.
+

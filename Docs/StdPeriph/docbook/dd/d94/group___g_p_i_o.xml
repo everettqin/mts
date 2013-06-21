@@ -1,0 +1,1208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d94/group___g_p_i_o">
+    <title>GPIO</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>GPIO driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d8f/struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="dd/dd8/group___g_p_i_o___exported___constants">GPIO_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="d5/d88/group___g_p_i_o___private___functions">GPIO_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>enum <link linkend="dd/d94/group___g_p_i_o_1ga1347339e1c84a196fabbb31205eec5d4">GPIOMode_TypeDef</link>{<link linkend="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a484aa18a6156ce916049b334ba1839de">GPIO_Mode_IN</link>== 0x00, <link linkend="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a60f1d530f4119efcad8e1a68c890c6a6">GPIO_Mode_OUT</link>== 0x01, <link linkend="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a6d44c35c6c5008d85bac9251a867e701">GPIO_Mode_AF</link>== 0x02, <link linkend="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a6e5c0d7e6d2e22b834b24e1ca1d6d0db">GPIO_Mode_AN</link>== 0x03}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>enum <link linkend="dd/d94/group___g_p_i_o_1gae74212e8d66c389f47326b06bdf6d2ab">GPIOOType_TypeDef</link>{<link linkend="dd/d94/group___g_p_i_o_1ggae74212e8d66c389f47326b06bdf6d2abad967f141221bf702a343f91ad6acf55f">GPIO_OType_PP</link>== 0x00, <link linkend="dd/d94/group___g_p_i_o_1ggae74212e8d66c389f47326b06bdf6d2aba1e3717d7271e0707f559a149a1963e43">GPIO_OType_OD</link>== 0x01}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>enum <link linkend="dd/d94/group___g_p_i_o_1ga062ad92b67b4a1f301c161022cf3ba8e">GPIOSpeed_TypeDef</link>{<link linkend="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea9bff9e174639332007c914483361be18">GPIO_Speed_2MHz</link>== 0x00, <link linkend="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea59a0acdf2ccd1b4b8d507e845e497c62">GPIO_Speed_25MHz</link>== 0x01, <link linkend="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea9c47db10456202ac05134b12738ce581">GPIO_Speed_50MHz</link>== 0x02, <link linkend="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea195a0e73cd63d7f5b5d41bd0155eacbb">GPIO_Speed_100MHz</link>== 0x03}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>enum <link linkend="dd/d94/group___g_p_i_o_1gafb7ecd99c44b4fd702d669304a36c2c8">GPIOPuPd_TypeDef</link>{<link linkend="dd/d94/group___g_p_i_o_1ggafb7ecd99c44b4fd702d669304a36c2c8a013a40bdeb6b3f43e02f8e4da896ba51">GPIO_PuPd_NOPULL</link>== 0x00, <link linkend="dd/d94/group___g_p_i_o_1ggafb7ecd99c44b4fd702d669304a36c2c8a474392f71830af3fcf2c4cc3896c9c8b">GPIO_PuPd_UP</link>== 0x01, <link linkend="dd/d94/group___g_p_i_o_1ggafb7ecd99c44b4fd702d669304a36c2c8ab1e6c016575596c73327862984d8955c">GPIO_PuPd_DOWN</link>== 0x02}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>enum <link linkend="dd/d94/group___g_p_i_o_1ga176130b21c0e719121470a6042d4cf19">BitAction</link>{<link linkend="dd/d94/group___g_p_i_o_1gga176130b21c0e719121470a6042d4cf19ae2c026f2b44a949f82a65f3385edef09">Bit_RESET</link>== 0, <link linkend="dd/d94/group___g_p_i_o_1gga176130b21c0e719121470a6042d4cf19a3c477841a6ceec13fe47ef322432b992">Bit_SET</link>}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1gaa60bdf3182c44b5fa818f237042f52ee">GPIO_DeInit</link> (
+GPIO_TypeDef * GPIOx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1ga71abf9404261370d03cca449b88d3a65">GPIO_Init</link> (
+GPIO_TypeDef * GPIOx, <link linkend="dd/d8f/struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link> * GPIO_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1gab28de41278e7f8c63d0851e2733b10df">GPIO_StructInit</link> (
+<link linkend="dd/d8f/struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link> * GPIO_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1gad2f2e615928c69fd0d8c641a7cedaafc">GPIO_PinLockConfig</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="dd/d94/group___g_p_i_o_1ga98772ef6b639b3fa06c8ae5ba28d3aaa">GPIO_ReadInputDataBit</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="dd/d94/group___g_p_i_o_1ga139a33adc8409288e9f193bbebb5a0f7">GPIO_ReadInputData</link> (
+GPIO_TypeDef * GPIOx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="dd/d94/group___g_p_i_o_1ga138270f8695b105b7c6ed405792919c1">GPIO_ReadOutputDataBit</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="dd/d94/group___g_p_i_o_1gaf8938a34280b7dc3e39872a7c17bb323">GPIO_ReadOutputData</link> (
+GPIO_TypeDef * GPIOx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1ga9e1352eed7c6620e18af2d86f6b6ff8e">GPIO_SetBits</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1ga6fcd35b207a66608dd2c9d7de9247dc8">GPIO_ResetBits</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1ga8f7b237fd744d9f7456fbe0da47a9b80">GPIO_WriteBit</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin, <link linkend="dd/d94/group___g_p_i_o_1ga176130b21c0e719121470a6042d4cf19">BitAction</link> BitVal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1gaa925f19c8547a00c7a0c269a84873bf9">GPIO_Write</link> (
+GPIO_TypeDef * GPIOx, uint16_t PortVal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1gac1b837c66258872740d5f89f23549ab1">GPIO_ToggleBits</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_Pin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d94/group___g_p_i_o_1ga0a77617a322562ae84f8d72486032c5d">GPIO_PinAFConfig</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___g_p_i_o_1ga68b2a1f0b05c13978217db5439c7f790">IS_GPIO_ALL_PERIPH</link> (((PERIPH) == GPIOA) || \
+                                    ((PERIPH) == GPIOB) || \
+                                    ((PERIPH) == GPIOC) || \
+                                    ((PERIPH) == GPIOD) || \
+                                    ((PERIPH) == GPIOE) || \
+                                    ((PERIPH) == GPIOF) || \
+                                    ((PERIPH) == GPIOG) || \
+                                    ((PERIPH) == GPIOH) || \
+                                    ((PERIPH) == GPIOI))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___g_p_i_o_1gacc5fde3eef57ec3c558c11d0011d900c">IS_GPIO_MODE</link> (((MODE) == <link linkend="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a484aa18a6156ce916049b334ba1839de">GPIO_Mode_IN</link>)  || ((MODE) == <link linkend="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a60f1d530f4119efcad8e1a68c890c6a6">GPIO_Mode_OUT</link>) || \
+                            ((MODE) == <link linkend="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a6d44c35c6c5008d85bac9251a867e701">GPIO_Mode_AF</link>)|| ((MODE) == <link linkend="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a6e5c0d7e6d2e22b834b24e1ca1d6d0db">GPIO_Mode_AN</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___g_p_i_o_1ga7145550a414f2b0455d79ddde6100af8">IS_GPIO_OTYPE</link> (((OTYPE) == GPIO_OType_PP) || ((OTYPE) == GPIO_OType_OD))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___g_p_i_o_1ga888e1f951df2fe9dbf827528051a3a56">IS_GPIO_SPEED</link> (((SPEED) == <link linkend="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea9bff9e174639332007c914483361be18">GPIO_Speed_2MHz</link>) || ((SPEED) == <link linkend="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea59a0acdf2ccd1b4b8d507e845e497c62">GPIO_Speed_25MHz</link>) || \
+                              ((SPEED) == <link linkend="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea9c47db10456202ac05134b12738ce581">GPIO_Speed_50MHz</link>)||  ((SPEED) == <link linkend="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea195a0e73cd63d7f5b5d41bd0155eacbb">GPIO_Speed_100MHz</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___g_p_i_o_1gae30c92591d1f29dbd594ac3cd855b503">IS_GPIO_PUPD</link> (((PUPD) == GPIO_PuPd_NOPULL) || ((PUPD) == GPIO_PuPd_UP) || \
+                            ((PUPD) == GPIO_PuPd_DOWN))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___g_p_i_o_1ga6b882caa8ed9857c5c7267959a7818c5">IS_GPIO_BIT_ACTION</link> (((ACTION) == Bit_RESET) || ((ACTION) == Bit_SET))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Enumeration Type documentation</title>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga1347339e1c84a196fabbb31205eec5d4">
+               <title>enum GPIOMode_TypeDef </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a484aa18a6156ce916049b334ba1839de">
+                            <term>GPIO_Mode_IN</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a60f1d530f4119efcad8e1a68c890c6a6">
+                            <term>GPIO_Mode_OUT</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a6d44c35c6c5008d85bac9251a867e701">
+                            <term>GPIO_Mode_AF</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a6e5c0d7e6d2e22b834b24e1ca1d6d0db">
+                            <term>GPIO_Mode_AN</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 58 of file stm32f4xx_gpio.h
+                    <programlisting>
+{
+GPIO_Mode_IN== 0x00, 
+GPIO_Mode_OUT== 0x01, 
+GPIO_Mode_AF== 0x02, 
+GPIO_Mode_AN== 0x03, 
+}GPIOMode_TypeDef;
+                    </programlisting>
+                </para>
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1gae74212e8d66c389f47326b06bdf6d2ab">
+               <title>enum GPIOOType_TypeDef </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1ggae74212e8d66c389f47326b06bdf6d2abad967f141221bf702a343f91ad6acf55f">
+                            <term>GPIO_OType_PP</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1ggae74212e8d66c389f47326b06bdf6d2aba1e3717d7271e0707f559a149a1963e43">
+                            <term>GPIO_OType_OD</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 71 of file stm32f4xx_gpio.h
+                    <programlisting>
+{
+GPIO_OType_PP== 0x00, 
+GPIO_OType_OD== 0x01, 
+}GPIOOType_TypeDef;
+                    </programlisting>
+                </para>
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga062ad92b67b4a1f301c161022cf3ba8e">
+               <title>enum GPIOSpeed_TypeDef </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea9bff9e174639332007c914483361be18">
+                            <term>GPIO_Speed_2MHz</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea59a0acdf2ccd1b4b8d507e845e497c62">
+                            <term>GPIO_Speed_25MHz</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea9c47db10456202ac05134b12738ce581">
+                            <term>GPIO_Speed_50MHz</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea195a0e73cd63d7f5b5d41bd0155eacbb">
+                            <term>GPIO_Speed_100MHz</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 82 of file stm32f4xx_gpio.h
+                    <programlisting>
+{
+GPIO_Speed_2MHz== 0x00, 
+GPIO_Speed_25MHz== 0x01, 
+GPIO_Speed_50MHz== 0x02, 
+GPIO_Speed_100MHz== 0x03, 
+}GPIOSpeed_TypeDef;
+                    </programlisting>
+                </para>
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1gafb7ecd99c44b4fd702d669304a36c2c8">
+               <title>enum GPIOPuPd_TypeDef </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1ggafb7ecd99c44b4fd702d669304a36c2c8a013a40bdeb6b3f43e02f8e4da896ba51">
+                            <term>GPIO_PuPd_NOPULL</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1ggafb7ecd99c44b4fd702d669304a36c2c8a474392f71830af3fcf2c4cc3896c9c8b">
+                            <term>GPIO_PuPd_UP</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1ggafb7ecd99c44b4fd702d669304a36c2c8ab1e6c016575596c73327862984d8955c">
+                            <term>GPIO_PuPd_DOWN</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 95 of file stm32f4xx_gpio.h
+                    <programlisting>
+{
+GPIO_PuPd_NOPULL== 0x00, 
+GPIO_PuPd_UP== 0x01, 
+GPIO_PuPd_DOWN== 0x02, 
+}GPIOPuPd_TypeDef;
+                    </programlisting>
+                </para>
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga176130b21c0e719121470a6042d4cf19">
+               <title>enum BitAction </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga176130b21c0e719121470a6042d4cf19ae2c026f2b44a949f82a65f3385edef09">
+                            <term>Bit_RESET</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="dd/d94/group___g_p_i_o_1gga176130b21c0e719121470a6042d4cf19a3c477841a6ceec13fe47ef322432b992">
+                            <term>Bit_SET</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 107 of file stm32f4xx_gpio.h
+                    <programlisting>
+{
+Bit_RESET== 0, 
+Bit_SET, 
+}BitAction;
+                    </programlisting>
+                </para>
+            </section>
+        </section>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dd/d94/group___g_p_i_o_1gaa60bdf3182c44b5fa818f237042f52ee">
+                <title>void GPIO_DeInit (GPIO_TypeDef *GPIOx)</title> <emphasis>Deinitializes the GPIOx peripheral registers to their default reset values.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>By default, The GPIO pins are configured in input floating mode (except JTAG pins). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga71abf9404261370d03cca449b88d3a65">
+                <title>void GPIO_Init (GPIO_TypeDef *GPIOx, GPIO_InitTypeDef *GPIO_InitStruct)</title> <emphasis>Initializes the GPIOx peripheral according to the specified parameters in the GPIO_InitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dd/d8f/struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link> structure that contains the configuration information for the specified GPIO peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1gab28de41278e7f8c63d0851e2733b10df">
+                <title>void GPIO_StructInit (GPIO_InitTypeDef *GPIO_InitStruct)</title> <emphasis>Fills each GPIO_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIO_InitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="dd/d8f/struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1gad2f2e615928c69fd0d8c641a7cedaafc">
+                <title>void GPIO_PinLockConfig (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Locks GPIO Pins configuration registers.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The locked registers are GPIOx_MODER, GPIOx_OTYPER, GPIOx_OSPEEDR, GPIOx_PUPDR, GPIOx_AFRL and GPIOx_AFRH. </para>
+<simplesect/>
+<para>The configuration of the locked GPIO pins can no longer be modified until the next reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bit to be locked. This parameter can be any combination of GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga98772ef6b639b3fa06c8ae5ba28d3aaa">
+                <title>uint8_t GPIO_ReadInputDataBit (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Reads the specified input port pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bit to read. This parameter can be GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>input port pin value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga139a33adc8409288e9f193bbebb5a0f7">
+                <title>uint16_t GPIO_ReadInputData (GPIO_TypeDef *GPIOx)</title> <emphasis>Reads the specified GPIO input data port.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIO</entry>
+                                <entry>
+<para>input data port value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga138270f8695b105b7c6ed405792919c1">
+                <title>uint8_t GPIO_ReadOutputDataBit (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Reads the specified output data port bit.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bit to read. This parameter can be GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>output port pin value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1gaf8938a34280b7dc3e39872a7c17bb323">
+                <title>uint16_t GPIO_ReadOutputData (GPIO_TypeDef *GPIOx)</title> <emphasis>Reads the specified GPIO output data port.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIO</entry>
+                                <entry>
+<para>output data port value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga9e1352eed7c6620e18af2d86f6b6ff8e">
+                <title>void GPIO_SetBits (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Sets the selected data port bits.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This functions uses GPIOx_BSRR register to allow atomic read/modify accesses. In this way, there is no risk of an IRQ occurring between the read and the modify access. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bits to be written. This parameter can be any combination of GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga6fcd35b207a66608dd2c9d7de9247dc8">
+                <title>void GPIO_ResetBits (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Clears the selected data port bits.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This functions uses GPIOx_BSRR register to allow atomic read/modify accesses. In this way, there is no risk of an IRQ occurring between the read and the modify access. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bits to be written. This parameter can be any combination of GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga8f7b237fd744d9f7456fbe0da47a9b80">
+                <title>void GPIO_WriteBit (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, BitAction BitVal)</title> <emphasis>Sets or clears the selected data port bit.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>specifies the port bit to be written. This parameter can be one of GPIO_Pin_x where x can be (0..15). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>BitVal, :</entry>
+                                <entry>
+<para>specifies the value to be written to the selected bit. This parameter can be one of the BitAction enum values: <itemizedlist>
+<listitem>
+<para>Bit_RESET: to clear the port pin </para>
+</listitem>
+<listitem>
+<para>Bit_SET: to set the port pin </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1gaa925f19c8547a00c7a0c269a84873bf9">
+                <title>void GPIO_Write (GPIO_TypeDef *GPIOx, uint16_t PortVal)</title> <emphasis>Writes data to the specified GPIO data port.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>PortVal, :</entry>
+                                <entry>
+<para>specifies the value to be written to the port output data register. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1gac1b837c66258872740d5f89f23549ab1">
+                <title>void GPIO_ToggleBits (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)</title> <emphasis>Toggles the specified GPIO pins..</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_Pin, :</entry>
+                                <entry>
+<para>Specifies the pins to be toggled. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d94/group___g_p_i_o_1ga0a77617a322562ae84f8d72486032c5d">
+                <title>void GPIO_PinAFConfig (GPIO_TypeDef *GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF)</title> <emphasis>Changes the mapping of the specified pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_PinSource, :</entry>
+                                <entry>
+<para>specifies the pin for the Alternate function. This parameter can be GPIO_PinSourcex where x can be (0..15). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_AFSelection, :</entry>
+                                <entry>
+<para>selects the pin to used as Alternate function. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>GPIO_AF_RTC_50Hz: Connect RTC_50Hz pin to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_MCO: Connect MCO pin (MCO1 and MCO2) to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TAMPER: Connect TAMPER pins (TAMPER_1 and TAMPER_2) to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SWJ: Connect SWJ pins (SWD and JTAG)to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TRACE: Connect TRACE pins to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM1: Connect TIM1 pins to AF1 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM2: Connect TIM2 pins to AF1 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM3: Connect TIM3 pins to AF2 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM4: Connect TIM4 pins to AF2 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM5: Connect TIM5 pins to AF2 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM8: Connect TIM8 pins to AF3 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM9: Connect TIM9 pins to AF3 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM10: Connect TIM10 pins to AF3 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM11: Connect TIM11 pins to AF3 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_I2C1: Connect I2C1 pins to AF4 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_I2C2: Connect I2C2 pins to AF4 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_I2C3: Connect I2C3 pins to AF4 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SPI1: Connect SPI1 pins to AF5 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SPI2: Connect SPI2/I2S2 pins to AF5 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SPI3: Connect SPI3/I2S3 pins to AF6 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_I2S3ext: Connect I2S3ext pins to AF7 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_USART1: Connect USART1 pins to AF7 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_USART2: Connect USART2 pins to AF7 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_USART3: Connect USART3 pins to AF7 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_UART4: Connect UART4 pins to AF8 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_UART5: Connect UART5 pins to AF8 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_USART6: Connect USART6 pins to AF8 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_CAN1: Connect CAN1 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_CAN2: Connect CAN2 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM12: Connect TIM12 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM13: Connect TIM13 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM14: Connect TIM14 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_OTG_FS: Connect OTG_FS pins to AF10 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_OTG_HS: Connect OTG_HS pins to AF10 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_ETH: Connect ETHERNET pins to AF11 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_FSMC: Connect FSMC pins to AF12 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_OTG_HS_FS: Connect OTG HS (configured in FS) pins to AF12 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SDIO: Connect SDIO pins to AF12 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_DCMI: Connect DCMI pins to AF13 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_EVENTOUT: Connect EVENTOUT pins to AF15 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="dd/dd8/group___g_p_i_o___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d88/group___g_p_i_o___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

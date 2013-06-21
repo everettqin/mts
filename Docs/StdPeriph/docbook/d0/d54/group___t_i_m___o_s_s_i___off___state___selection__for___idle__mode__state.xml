@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d54/group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state">
+    <title>TIM_OSSI_Off_State_Selection_for_Idle_mode_state</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d54/group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state_1gaf643ec0d2edb6c8fb725d00210b3d071">TIM_OSSIState_Enable</link> ((uint16_t)0x0400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d54/group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state_1gae1962736fd5cad82e97a5814ef6758bd">TIM_OSSIState_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d54/group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state_1gad24fc8836152903b408239284cecfab1">IS_TIM_OSSI_STATE</link> (((STATE) == TIM_OSSIState_Enable) || \
+                                  ((STATE) == TIM_OSSIState_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,69 @@
+\hypertarget{pdm__filter_8h}{\section{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.1.0/\-Utilities/\-S\-T\-M32\-F4-\/\-Discovery/pdm\-\_\-filter.h File Reference}
+\label{pdm__filter_8h}\index{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Utilities/\-S\-T\-M32\-F4-\/\-Discovery/pdm\-\_\-filter.\-h@{E\-:/\-Workspaces/\-Google\-\_\-\-Drive/\-Google Drive/\-Workshop/arm/stsw-\/stm32068/\-S\-T\-M32\-F4-\/\-Discovery\-\_\-\-F\-W\-\_\-\-V1.\-1.\-0/\-Utilities/\-S\-T\-M32\-F4-\/\-Discovery/pdm\-\_\-filter.\-h}}
+}
+
+
+Header file for P\-D\-M audio software decoding Library. This Library is used to decode and reconstruct the audio signal produced by M\-P45\-D\-T02 M\-E\-M\-S microphone from S\-T\-Microelectronics. For more details about this Library, please refer to document \char`\"{}\-P\-D\-M audio software decoding on S\-T\-M32 microcontrollers (\-A\-N3998)\char`\"{}.  
+
+
+{\ttfamily \#include $<$stdint.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_p_d_m_filter___init_struct}{P\-D\-M\-Filter\-\_\-\-Init\-Struct}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries H\-T\-O\-N\-S}(A)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{pdm__filter_8h_a3003360bf4738ddc428ff90f17fefec8}{void {\bfseries P\-D\-M\-\_\-\-Filter\-\_\-\-Init} (\hyperlink{struct_p_d_m_filter___init_struct}{P\-D\-M\-Filter\-\_\-\-Init\-Struct} $\ast$Filter)}\label{pdm__filter_8h_a3003360bf4738ddc428ff90f17fefec8}
+
+\item 
+\hypertarget{pdm__filter_8h_a10bdbe15fbc22699c3954fff4bb238b7}{int32\-\_\-t {\bfseries P\-D\-M\-\_\-\-Filter\-\_\-64\-\_\-\-M\-S\-B} (uint8\-\_\-t $\ast$data, uint16\-\_\-t $\ast$data\-Out, uint16\-\_\-t Mic\-Gain, \hyperlink{struct_p_d_m_filter___init_struct}{P\-D\-M\-Filter\-\_\-\-Init\-Struct} $\ast$Filter)}\label{pdm__filter_8h_a10bdbe15fbc22699c3954fff4bb238b7}
+
+\item 
+\hypertarget{pdm__filter_8h_a384098e2481d943faed832be2c67d90b}{int32\-\_\-t {\bfseries P\-D\-M\-\_\-\-Filter\-\_\-80\-\_\-\-M\-S\-B} (uint8\-\_\-t $\ast$data, uint16\-\_\-t $\ast$data\-Out, uint16\-\_\-t Mic\-Gain, \hyperlink{struct_p_d_m_filter___init_struct}{P\-D\-M\-Filter\-\_\-\-Init\-Struct} $\ast$Filter)}\label{pdm__filter_8h_a384098e2481d943faed832be2c67d90b}
+
+\item 
+\hypertarget{pdm__filter_8h_ab37843e09eb08a2ef1a9a0731b8a8f22}{int32\-\_\-t {\bfseries P\-D\-M\-\_\-\-Filter\-\_\-64\-\_\-\-L\-S\-B} (uint8\-\_\-t $\ast$data, uint16\-\_\-t $\ast$data\-Out, uint16\-\_\-t Mic\-Gain, \hyperlink{struct_p_d_m_filter___init_struct}{P\-D\-M\-Filter\-\_\-\-Init\-Struct} $\ast$Filter)}\label{pdm__filter_8h_ab37843e09eb08a2ef1a9a0731b8a8f22}
+
+\item 
+\hypertarget{pdm__filter_8h_a8c09247adf2f48b04e033f0145331a02}{int32\-\_\-t {\bfseries P\-D\-M\-\_\-\-Filter\-\_\-80\-\_\-\-L\-S\-B} (uint8\-\_\-t $\ast$data, uint16\-\_\-t $\ast$data\-Out, uint16\-\_\-t Mic\-Gain, \hyperlink{struct_p_d_m_filter___init_struct}{P\-D\-M\-Filter\-\_\-\-Init\-Struct} $\ast$Filter)}\label{pdm__filter_8h_a8c09247adf2f48b04e033f0145331a02}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for P\-D\-M audio software decoding Library. This Library is used to decode and reconstruct the audio signal produced by M\-P45\-D\-T02 M\-E\-M\-S microphone from S\-T\-Microelectronics. For more details about this Library, please refer to document \char`\"{}\-P\-D\-M audio software decoding on S\-T\-M32 microcontrollers (\-A\-N3998)\char`\"{}. \begin{DoxyAuthor}{Author}
+M\-C\-D Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\-1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+28-\/\-October-\/2011 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+T\-H\-E P\-R\-E\-S\-E\-N\-T F\-I\-R\-M\-W\-A\-R\-E W\-H\-I\-C\-H I\-S F\-O\-R G\-U\-I\-D\-A\-N\-C\-E O\-N\-L\-Y A\-I\-M\-S A\-T P\-R\-O\-V\-I\-D\-I\-N\-G C\-U\-S\-T\-O\-M\-E\-R\-S W\-I\-T\-H C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N R\-E\-G\-A\-R\-D\-I\-N\-G T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S I\-N O\-R\-D\-E\-R F\-O\-R T\-H\-E\-M T\-O S\-A\-V\-E T\-I\-M\-E. A\-S A R\-E\-S\-U\-L\-T, S\-T\-M\-I\-C\-R\-O\-E\-L\-E\-C\-T\-R\-O\-N\-I\-C\-S S\-H\-A\-L\-L N\-O\-T B\-E H\-E\-L\-D L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y D\-I\-R\-E\-C\-T, I\-N\-D\-I\-R\-E\-C\-T O\-R C\-O\-N\-S\-E\-Q\-U\-E\-N\-T\-I\-A\-L D\-A\-M\-A\-G\-E\-S W\-I\-T\-H R\-E\-S\-P\-E\-C\-T T\-O A\-N\-Y C\-L\-A\-I\-M\-S A\-R\-I\-S\-I\-N\-G F\-R\-O\-M T\-H\-E C\-O\-N\-T\-E\-N\-T O\-F S\-U\-C\-H F\-I\-R\-M\-W\-A\-R\-E A\-N\-D/\-O\-R T\-H\-E U\-S\-E M\-A\-D\-E B\-Y C\-U\-S\-T\-O\-M\-E\-R\-S O\-F T\-H\-E C\-O\-D\-I\-N\-G I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N C\-O\-N\-T\-A\-I\-N\-E\-D H\-E\-R\-E\-I\-N I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E\-I\-R P\-R\-O\-D\-U\-C\-T\-S.
+
+\subsubsection*{\begin{center}\copyright C\-O\-P\-Y\-R\-I\-G\-H\-T 2011 S\-T\-Microelectronics\end{center} }
+
+\subsection{Macro Definition Documentation}
+\hypertarget{pdm__filter_8h_a9cfaa9c99af812cb3c154d311fb61d7d}{\index{pdm\-\_\-filter.\-h@{pdm\-\_\-filter.\-h}!H\-T\-O\-N\-S@{H\-T\-O\-N\-S}}
+\index{H\-T\-O\-N\-S@{H\-T\-O\-N\-S}!pdm_filter.h@{pdm\-\_\-filter.\-h}}
+\subsubsection[{H\-T\-O\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-T\-O\-N\-S(
+\begin{DoxyParamCaption}
+\item[{}]{A}
+\end{DoxyParamCaption}
+)}}\label{pdm__filter_8h_a9cfaa9c99af812cb3c154d311fb61d7d}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+((((u16)(A) & 0xff00) >> 8) | \(\backslash\)
+                   (((u16)(A) & 0x00ff) << 8))
+\end{DoxyCode}

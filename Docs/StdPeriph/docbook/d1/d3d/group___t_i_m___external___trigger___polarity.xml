@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d3d/group___t_i_m___external___trigger___polarity">
+    <title>TIM_External_Trigger_Polarity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d3d/group___t_i_m___external___trigger___polarity_1ga96f3959a02c0491ab8d65cfa384ce7e3">TIM_ExtTRGPolarity_Inverted</link> ((uint16_t)0x8000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d3d/group___t_i_m___external___trigger___polarity_1ga63fe7c58c491d2a812d5621b71c2d0c5">TIM_ExtTRGPolarity_NonInverted</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d3d/group___t_i_m___external___trigger___polarity_1ga489ea1fed28375dec49cf1b8dfac47ca">IS_TIM_EXT_POLARITY</link> (((POLARITY) == TIM_ExtTRGPolarity_Inverted) || \
+                                       ((POLARITY) == TIM_ExtTRGPolarity_NonInverted))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

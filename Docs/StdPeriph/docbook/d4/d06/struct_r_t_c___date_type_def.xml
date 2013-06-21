@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d06/struct_r_t_c___date_type_def">
+<title>RTC_DateTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/dbb/stm32f4xx__rtc_8h">&lt;stm32f4xx_rtc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTC_WeekDay</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTC_Month</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTC_Date</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTC_Year</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>RTC Date structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint8_t RTC_WeekDay</title>                
+<para><programlisting><literallayout>Specifies the RTC Date WeekDay.
+</literallayout></programlisting> This parameter can be a value of <link linkend="d4/d4c/group___r_t_c___week_day___definitions">RTC_WeekDay_Definitions</link> </para>
+
+                <para>Definition at line 84 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t RTC_Month</title>                
+<para><programlisting><literallayout>Specifies the RTC Date Month (in BCD format).
+</literallayout></programlisting> This parameter can be a value of <link linkend="d7/d14/group___r_t_c___month___date___definitions">RTC_Month_Date_Definitions</link> </para>
+
+                <para>Definition at line 87 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t RTC_Date</title>                
+<para><programlisting><literallayout> Specifies the RTC Date.
+</literallayout></programlisting> This parameter must be set to a value in the 1-31 range. </para>
+
+                <para>Definition at line 90 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t RTC_Year</title>                
+<para><programlisting><literallayout> Specifies the RTC Date Year.
+</literallayout></programlisting> This parameter must be set to a value in the 0-99 range. </para>
+
+                <para>Definition at line 93 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

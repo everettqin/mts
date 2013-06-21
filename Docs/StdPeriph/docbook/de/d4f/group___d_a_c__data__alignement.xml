@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d4f/group___d_a_c__data__alignement">
+    <title>DAC_data_alignement</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___d_a_c__data__alignement_1ga0f2a6fc71aaf90a27b0caf1bd06e73f2">DAC_Align_12b_R</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___d_a_c__data__alignement_1gaf3a46d37092eac0d4c9c1039e68208d4">DAC_Align_12b_L</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___d_a_c__data__alignement_1gaa633fbcf85e97e12c4894eaed530dd8f">DAC_Align_8b_R</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d4f/group___d_a_c__data__alignement_1ga7779c36606827a6a2c4423414a441bde">IS_DAC_ALIGN</link> (((ALIGN) == DAC_Align_12b_R) || \
+                             ((ALIGN) == DAC_Align_12b_L) || \
+                             ((ALIGN) == DAC_Align_8b_R))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

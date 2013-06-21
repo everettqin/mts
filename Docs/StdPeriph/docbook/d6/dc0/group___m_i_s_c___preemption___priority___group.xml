@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dc0/group___m_i_s_c___preemption___priority___group">
+    <title>MISC_Preemption_Priority_Group</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1gaeac0cf537f65d17bc19aee2410b2b60e">NVIC_PriorityGroup_0</link> ((uint32_t)0x700)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga89bf0bf9e70f1a372a541b1b8d7493aa">NVIC_PriorityGroup_1</link> ((uint32_t)0x600)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga505002e8b76aef65499ca371e40ec8b4">NVIC_PriorityGroup_2</link> ((uint32_t)0x500)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga49bdbee77d4a70339d63c80462d49b4d">NVIC_PriorityGroup_3</link> ((uint32_t)0x400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1gaf9020c585da2a299328f0b06dee391a2">NVIC_PriorityGroup_4</link> ((uint32_t)0x300)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga6569304a39fe4f91bd59b6a586c8ede9">IS_NVIC_PRIORITY_GROUP</link> (((GROUP) == <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1gaeac0cf537f65d17bc19aee2410b2b60e">NVIC_PriorityGroup_0</link>) || \
+                                       ((GROUP) == <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga89bf0bf9e70f1a372a541b1b8d7493aa">NVIC_PriorityGroup_1</link>) || \
+                                       ((GROUP) == <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga505002e8b76aef65499ca371e40ec8b4">NVIC_PriorityGroup_2</link>) || \
+                                       ((GROUP) == <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga49bdbee77d4a70339d63c80462d49b4d">NVIC_PriorityGroup_3</link>) || \
+                                       ((GROUP) == <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1gaf9020c585da2a299328f0b06dee391a2">NVIC_PriorityGroup_4</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1gaf30fd8f5960c2e28a772d8f16bb156dd">IS_NVIC_PREEMPTION_PRIORITY</link> ((PRIORITY) &lt; 0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga010705bc997dcff935b965b372cba61d">IS_NVIC_SUB_PRIORITY</link> ((PRIORITY) &lt; 0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga1184bbb97d758385f98ab40dd5e5af59">IS_NVIC_OFFSET</link> ((OFFSET) &lt; 0x000FFFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d6/dc0/group___m_i_s_c___preemption___priority___group_1gaeac0cf537f65d17bc19aee2410b2b60e">
+                <title>#define NVIC_PriorityGroup_0</title>                
+<para>0 bits for pre-emption priority 4 bits for subpriority </para>
+
+                <para>Definition at line 107 of file misc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>misc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga89bf0bf9e70f1a372a541b1b8d7493aa">
+                <title>#define NVIC_PriorityGroup_1</title>                
+<para>1 bits for pre-emption priority 3 bits for subpriority </para>
+
+                <para>Definition at line 109 of file misc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>misc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga505002e8b76aef65499ca371e40ec8b4">
+                <title>#define NVIC_PriorityGroup_2</title>                
+<para>2 bits for pre-emption priority 2 bits for subpriority </para>
+
+                <para>Definition at line 111 of file misc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>misc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d6/dc0/group___m_i_s_c___preemption___priority___group_1ga49bdbee77d4a70339d63c80462d49b4d">
+                <title>#define NVIC_PriorityGroup_3</title>                
+<para>3 bits for pre-emption priority 1 bits for subpriority </para>
+
+                <para>Definition at line 113 of file misc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>misc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d6/dc0/group___m_i_s_c___preemption___priority___group_1gaf9020c585da2a299328f0b06dee391a2">
+                <title>#define NVIC_PriorityGroup_4</title>                
+<para>4 bits for pre-emption priority 0 bits for subpriority </para>
+
+                <para>Definition at line 115 of file misc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>misc.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

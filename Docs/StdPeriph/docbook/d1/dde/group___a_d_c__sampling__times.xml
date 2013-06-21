@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dde/group___a_d_c__sampling__times">
+    <title>ADC_sampling_times</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dde/group___a_d_c__sampling__times_1ga7b89fd620d7f7d361a9e7af3713cca0e">ADC_SampleTime_3Cycles</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dde/group___a_d_c__sampling__times_1gae8cc5b72a8732467ebbd4a2c208352de">ADC_SampleTime_15Cycles</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dde/group___a_d_c__sampling__times_1gad9b45e11b76b7046eddf67f72e2ad622">ADC_SampleTime_28Cycles</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dde/group___a_d_c__sampling__times_1ga8bf24e20be542f9d69d7ed86bb138122">ADC_SampleTime_56Cycles</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dde/group___a_d_c__sampling__times_1gae48f94881114c1f042fadb4322a9d1b2">ADC_SampleTime_84Cycles</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dde/group___a_d_c__sampling__times_1ga1b98913dec7a22c54f0749ce254f9796">ADC_SampleTime_112Cycles</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dde/group___a_d_c__sampling__times_1ga7a873e1b0768c76aba7d7051f79371ce">ADC_SampleTime_144Cycles</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dde/group___a_d_c__sampling__times_1ga35735ec1c17518cdf28c36ac8a012db9">ADC_SampleTime_480Cycles</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dde/group___a_d_c__sampling__times_1ga30e0307fa009e1c383d3047b48e94644">IS_ADC_SAMPLE_TIME</link> (((TIME) == ADC_SampleTime_3Cycles) || \
+                                  ((TIME) == ADC_SampleTime_15Cycles) || \
+                                  ((TIME) == ADC_SampleTime_28Cycles) || \
+                                  ((TIME) == ADC_SampleTime_56Cycles) || \
+                                  ((TIME) == ADC_SampleTime_84Cycles) || \
+                                  ((TIME) == ADC_SampleTime_112Cycles) || \
+                                  ((TIME) == ADC_SampleTime_144Cycles) || \
+                                  ((TIME) == ADC_SampleTime_480Cycles))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

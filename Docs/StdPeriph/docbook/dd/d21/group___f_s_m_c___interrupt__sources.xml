@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d21/group___f_s_m_c___interrupt__sources">
+    <title>FSMC_Interrupt_sources</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d21/group___f_s_m_c___interrupt__sources_1gac483854bd6f90d8c7899a597a0c0ab1a">FSMC_IT_RisingEdge</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d21/group___f_s_m_c___interrupt__sources_1ga59b5839854074008fb36fa86ec50a0c7">FSMC_IT_Level</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d21/group___f_s_m_c___interrupt__sources_1ga8e4b9589c9981c900b5f2e84581a9693">FSMC_IT_FallingEdge</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d21/group___f_s_m_c___interrupt__sources_1ga40a38f097a75f27a700e626905fa9a38">IS_FSMC_IT</link> ((((IT) &amp; (uint32_t)0xFFFFFFC7) == 0x00000000) &amp;&amp; ((IT) != 0x00000000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d21/group___f_s_m_c___interrupt__sources_1gae2a57d0b15e025212489ec1421ff245d">IS_FSMC_GET_IT</link> (((IT) == FSMC_IT_RisingEdge) || \
+                            ((IT) == FSMC_IT_Level) || \
+                            ((IT) == FSMC_IT_FallingEdge))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

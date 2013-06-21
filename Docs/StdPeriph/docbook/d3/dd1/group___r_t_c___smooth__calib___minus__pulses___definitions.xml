@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/dd1/group___r_t_c___smooth__calib___minus__pulses___definitions">
+    <title>RTC_Smooth_calib_Minus_pulses_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/dd1/group___r_t_c___smooth__calib___minus__pulses___definitions_1ga257f8bd6835bee480a80416bf086e200">IS_RTC_SMOOTH_CALIB_MINUS</link> ((VALUE) &lt;= 0x000001FF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dcd/group___c_r_y_p__flags__definition">
+    <title>CRYP_flags_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga701f57afbf29f56f57eadc76835008ce">CRYP_FLAG_BUSY</link> ((uint8_t)0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gac595f461b1eae355a5f22c6ddbb6b795">CRYP_FLAG_IFEM</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga0c5c1eb9236f373c522cbc407b18b7dd">CRYP_FLAG_IFNF</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gae78eb0d13fa041688f4b33479b632232">CRYP_FLAG_INRIS</link> ((uint8_t)0x22)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gaa0810704152c5810a2461acdec0cf13d">CRYP_FLAG_OFNE</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga6dd1f9ebfe8658ade0855f34607e0a6b">CRYP_FLAG_OFFU</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gae6f06dee9a989cfc664be879fed2ded2">CRYP_FLAG_OUTRIS</link> ((uint8_t)0x21)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga6d7454a0f4ff5bf286cc9dff95f6e849">IS_CRYP_GET_FLAG</link> (((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gac595f461b1eae355a5f22c6ddbb6b795">CRYP_FLAG_IFEM</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga0c5c1eb9236f373c522cbc407b18b7dd">CRYP_FLAG_IFNF</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gaa0810704152c5810a2461acdec0cf13d">CRYP_FLAG_OFNE</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga6dd1f9ebfe8658ade0855f34607e0a6b">CRYP_FLAG_OFFU</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1ga701f57afbf29f56f57eadc76835008ce">CRYP_FLAG_BUSY</link>)  || \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gae6f06dee9a989cfc664be879fed2ded2">CRYP_FLAG_OUTRIS</link>)|| \
+                                ((FLAG) == <link linkend="d4/dcd/group___c_r_y_p__flags__definition_1gae78eb0d13fa041688f4b33479b632232">CRYP_FLAG_INRIS</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d4/dcd/group___c_r_y_p__flags__definition_1ga701f57afbf29f56f57eadc76835008ce">
+                <title>#define CRYP_FLAG_BUSY</title>                
+<para>The CRYP core is currently processing a block of data or a key preparation (for AES decryption). </para>
+
+                <para>Definition at line 192 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/dcd/group___c_r_y_p__flags__definition_1gac595f461b1eae355a5f22c6ddbb6b795">
+                <title>#define CRYP_FLAG_IFEM</title>                
+<para>Input Fifo Empty </para>
+
+                <para>Definition at line 193 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/dcd/group___c_r_y_p__flags__definition_1ga0c5c1eb9236f373c522cbc407b18b7dd">
+                <title>#define CRYP_FLAG_IFNF</title>                
+<para>Input Fifo is Not Full </para>
+
+                <para>Definition at line 194 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/dcd/group___c_r_y_p__flags__definition_1gae78eb0d13fa041688f4b33479b632232">
+                <title>#define CRYP_FLAG_INRIS</title>                
+<para>Raw interrupt pending </para>
+
+                <para>Definition at line 195 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/dcd/group___c_r_y_p__flags__definition_1gaa0810704152c5810a2461acdec0cf13d">
+                <title>#define CRYP_FLAG_OFNE</title>                
+<para>Input Fifo service raw interrupt status </para>
+
+                <para>Definition at line 197 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/dcd/group___c_r_y_p__flags__definition_1ga6dd1f9ebfe8658ade0855f34607e0a6b">
+                <title>#define CRYP_FLAG_OFFU</title>                
+<para>Output Fifo is Full </para>
+
+                <para>Definition at line 198 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d4/dcd/group___c_r_y_p__flags__definition_1gae6f06dee9a989cfc664be879fed2ded2">
+                <title>#define CRYP_FLAG_OUTRIS</title>                
+<para>Output Fifo service raw interrupt status </para>
+
+                <para>Definition at line 200 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

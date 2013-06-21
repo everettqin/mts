@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dce/group___f_s_m_c___access___mode">
+    <title>FSMC_Access_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dce/group___f_s_m_c___access___mode_1gae0f299b51c12257311694c4a8f5c00c3">FSMC_AccessMode_A</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dce/group___f_s_m_c___access___mode_1ga2d6ce7481eb5e0e86fda727c646e4109">FSMC_AccessMode_B</link> ((uint32_t)0x10000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dce/group___f_s_m_c___access___mode_1ga83ffa035cf2e95c957b67a2e8b879e86">FSMC_AccessMode_C</link> ((uint32_t)0x20000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dce/group___f_s_m_c___access___mode_1ga7c632e7ebeb0c0ab4919bb60b8714c7b">FSMC_AccessMode_D</link> ((uint32_t)0x30000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dce/group___f_s_m_c___access___mode_1ga1844335f297ea30e9d7fae09ce562092">IS_FSMC_ACCESS_MODE</link> (((MODE) == FSMC_AccessMode_A) || \
+                                   ((MODE) == FSMC_AccessMode_B) || \
+                                   ((MODE) == FSMC_AccessMode_C) || \
+                                   ((MODE) == FSMC_AccessMode_D))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

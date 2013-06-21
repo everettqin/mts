@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d4e/group___s_p_i___c_r_c___transmit___receive">
+    <title>SPI_CRC_Transmit_Receive</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4e/group___s_p_i___c_r_c___transmit___receive_1ga7b5cd97c9323e491b628fd3a7be9e133">SPI_CRC_Tx</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4e/group___s_p_i___c_r_c___transmit___receive_1gaf68380273616efbbc2dc9a420f1c641b">SPI_CRC_Rx</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4e/group___s_p_i___c_r_c___transmit___receive_1ga31fe242594f851558496a93f85def883">IS_SPI_CRC</link> (((CRC) == SPI_CRC_Tx) || ((CRC) == SPI_CRC_Rx))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

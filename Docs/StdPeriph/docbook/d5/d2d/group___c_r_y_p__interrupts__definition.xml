@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d2d/group___c_r_y_p__interrupts__definition">
+    <title>CRYP_interrupts_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1gab6d24428b95658217df49013a81b4f7c">CRYP_IT_INI</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1ga53c211cbd38a3704dfc91aa8f3d20517">CRYP_IT_OUTI</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1ga4c4c82448160d94c95405f07a673d007">IS_CRYP_CONFIG_IT</link> ((((IT) &amp; (uint8_t)0xFC) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1gab6d354f835c9b0e88d2c0d46fc1880e9">IS_CRYP_GET_IT</link> (((IT) == <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1gab6d24428b95658217df49013a81b4f7c">CRYP_IT_INI</link>) || ((IT) == <link linkend="d5/d2d/group___c_r_y_p__interrupts__definition_1ga53c211cbd38a3704dfc91aa8f3d20517">CRYP_IT_OUTI</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d5/d2d/group___c_r_y_p__interrupts__definition_1gab6d24428b95658217df49013a81b4f7c">
+                <title>#define CRYP_IT_INI</title>                
+<para>IN Fifo Interrupt </para>
+
+                <para>Definition at line 216 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d5/d2d/group___c_r_y_p__interrupts__definition_1ga53c211cbd38a3704dfc91aa8f3d20517">
+                <title>#define CRYP_IT_OUTI</title>                
+<para>OUT Fifo Interrupt </para>
+
+                <para>Definition at line 217 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d35/group___p_w_r___s_t_o_p__mode__entry">
+    <title>PWR_STOP_mode_entry</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="da/da8/group___p_w_r___regulator___voltage___scale">PWR_Regulator_Voltage_Scale</link></para></listitem>
+            <listitem><para><link linkend="db/dd2/group___p_w_r___flag">PWR_Flag</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d35/group___p_w_r___s_t_o_p__mode__entry_1gaa1e1362f3d0b93e8f5f674e18cfc96c4">PWR_STOPEntry_WFI</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d35/group___p_w_r___s_t_o_p__mode__entry_1gaac98ac55fb8764121d4168d99c9b369e">PWR_STOPEntry_WFE</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d35/group___p_w_r___s_t_o_p__mode__entry_1ga4a94eb1f400dec6e486fbc229cbea8a0">IS_PWR_STOP_ENTRY</link> (((ENTRY) == PWR_STOPEntry_WFI) || ((ENTRY) == PWR_STOPEntry_WFE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="da/da8/group___p_w_r___regulator___voltage___scale.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/dd2/group___p_w_r___flag.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

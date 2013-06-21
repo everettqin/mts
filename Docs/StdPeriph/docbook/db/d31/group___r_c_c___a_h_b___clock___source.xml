@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d31/group___r_c_c___a_h_b___clock___source">
+    <title>RCC_AHB_Clock_Source</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1gadc3ac37d90c2082d640e5948fac0878f">RCC_SYSCLK_Div1</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1gacadd82156776154a07d128b454fc69fd">RCC_SYSCLK_Div2</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1ga458f8ae63164e878930dbebd7643f087">RCC_SYSCLK_Div4</link> ((uint32_t)0x00000090)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1gade72fe3aca89f3e8c4fe8692ea217912">RCC_SYSCLK_Div8</link> ((uint32_t)0x000000A0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1gaefd8df4be9c9dbd9cebfb2384933500a">RCC_SYSCLK_Div16</link> ((uint32_t)0x000000B0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1gab6a2c2d4e945c607259988a9b6df26e5">RCC_SYSCLK_Div64</link> ((uint32_t)0x000000C0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1ga1a28926fcb86112058a365e01fe9a46b">RCC_SYSCLK_Div128</link> ((uint32_t)0x000000D0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1gaa28bb876893b3267a813fc98a462d5ee">RCC_SYSCLK_Div256</link> ((uint32_t)0x000000E0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1gab5b4588c455d6327bc96f131ed6698ab">RCC_SYSCLK_Div512</link> ((uint32_t)0x000000F0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d31/group___r_c_c___a_h_b___clock___source_1ga6e9f1c193a2f41bcb3c2f7fa8459b5b3">IS_RCC_HCLK</link> (((HCLK) == RCC_SYSCLK_Div1) || ((HCLK) == RCC_SYSCLK_Div2) || \
+                           ((HCLK) == RCC_SYSCLK_Div4) || ((HCLK) == RCC_SYSCLK_Div8) || \
+                           ((HCLK) == RCC_SYSCLK_Div16) || ((HCLK) == RCC_SYSCLK_Div64) || \
+                           ((HCLK) == RCC_SYSCLK_Div128) || ((HCLK) == RCC_SYSCLK_Div256) || \
+                           ((HCLK) == RCC_SYSCLK_Div512))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d17/group___r_t_c___wakeup___timer___definitions">
+    <title>RTC_Wakeup_Timer_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga3bdf3ccdb6fe77e36def1091619fd4a0">RTC_WakeUpClock_RTCCLK_Div16</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1gaac36e5571c3523da94c05698e9c6a5e1">RTC_WakeUpClock_RTCCLK_Div8</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga5fc37ef693f9a015bfb0e6dd8706fef0">RTC_WakeUpClock_RTCCLK_Div4</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga26b1be336e8cea784dfc7d9d0347f3f7">RTC_WakeUpClock_RTCCLK_Div2</link> ((uint32_t)0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga310ac1a50bca0c799f4e34c51a785f84">RTC_WakeUpClock_CK_SPRE_16bits</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga586423d0381e6822eaa030e9272708a2">RTC_WakeUpClock_CK_SPRE_17bits</link> ((uint32_t)0x00000006)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1gab847ce0346dc26930a3b2c1da3ed9e28">IS_RTC_WAKEUP_CLOCK</link> (((CLOCK) == RTC_WakeUpClock_RTCCLK_Div16) || \
+                                    ((CLOCK) == RTC_WakeUpClock_RTCCLK_Div8) || \
+                                    ((CLOCK) == RTC_WakeUpClock_RTCCLK_Div4) || \
+                                    ((CLOCK) == RTC_WakeUpClock_RTCCLK_Div2) || \
+                                    ((CLOCK) == RTC_WakeUpClock_CK_SPRE_16bits) || \
+                                    ((CLOCK) == RTC_WakeUpClock_CK_SPRE_17bits))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d17/group___r_t_c___wakeup___timer___definitions_1ga6254b48843bdcb83b5b5cd640aeb6f9c">IS_RTC_WAKEUP_COUNTER</link> ((COUNTER) &lt;= 0xFFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

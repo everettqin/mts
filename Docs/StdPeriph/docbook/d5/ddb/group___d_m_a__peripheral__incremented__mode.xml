@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/ddb/group___d_m_a__peripheral__incremented__mode">
+    <title>DMA_peripheral_incremented_mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/ddb/group___d_m_a__peripheral__incremented__mode_1gaf7921ea423fb60701a091c508cd0f33a">DMA_PeripheralInc_Enable</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/ddb/group___d_m_a__peripheral__incremented__mode_1ga0fe3ff9c67bec802dd239fd17c3dbd31">DMA_PeripheralInc_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/ddb/group___d_m_a__peripheral__incremented__mode_1ga28762105b3f567c16ba79a47e68ff0fa">IS_DMA_PERIPHERAL_INC_STATE</link> (((STATE) == DMA_PeripheralInc_Enable) || \
+                                            ((STATE) == DMA_PeripheralInc_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d46/group___d_m_a__interrupts__definitions">
+    <title>DMA_interrupts_definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga5202cf7ab467fe1a61c725d1f98f0689">DMA_IT_FEIF0</link> ((uint32_t)0x90000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8427aa66491c87a653f94f812b31cb17">DMA_IT_DMEIF0</link> ((uint32_t)0x10001004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga7f47bb08f22556f9a655adbce3d6982a">DMA_IT_TEIF0</link> ((uint32_t)0x10002008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaabb2f6093a51f4f25ac67a21125a8bc2">DMA_IT_HTIF0</link> ((uint32_t)0x10004010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga9de4a37c4fb35a2d3566d8060a8145be">DMA_IT_TCIF0</link> ((uint32_t)0x10008020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaa93c3fc1826e8bf9063ab64734277ca3">DMA_IT_FEIF1</link> ((uint32_t)0x90000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gabdbf66e3cbe14fe1f45c42635127e927">DMA_IT_DMEIF1</link> ((uint32_t)0x10001100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaeacbd5c206cc6026d3c03f8182b16aeb">DMA_IT_TEIF1</link> ((uint32_t)0x10002200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga22e9fbbe3bd5539bf4c087c9ba2735da">DMA_IT_HTIF1</link> ((uint32_t)0x10004400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gae4eb128c7b47473cf984c4d91878d879">DMA_IT_TCIF1</link> ((uint32_t)0x10008800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaeae384e9af7db044cf93e7f270eddd7c">DMA_IT_FEIF2</link> ((uint32_t)0x90010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga56f547c35fcac83518aec320f0e38000">DMA_IT_DMEIF2</link> ((uint32_t)0x10041000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8faa8c4705525ad1cd90290c5a04c589">DMA_IT_TEIF2</link> ((uint32_t)0x10082000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga759d12e1158b37391b31a79f3a54339c">DMA_IT_HTIF2</link> ((uint32_t)0x10104000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga04ed284cd063df3e1e72a189bc6d9d86">DMA_IT_TCIF2</link> ((uint32_t)0x10208000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga93483a72ed43feb6e5f4392bb2ac9851">DMA_IT_FEIF3</link> ((uint32_t)0x90400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8b3786da4bdd693eb198b7a3a51faf12">DMA_IT_DMEIF3</link> ((uint32_t)0x11001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga2d9d67487f27667a88f98f28d83fb8ee">DMA_IT_TEIF3</link> ((uint32_t)0x12002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaba176f6d831b4d30fdeddcb2f301f329">DMA_IT_HTIF3</link> ((uint32_t)0x14004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gafc40a792a31cfc0d2fbc937e0796533d">DMA_IT_TCIF3</link> ((uint32_t)0x18008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8921cc2ba7936c50aee13913cfaedddf">DMA_IT_FEIF4</link> ((uint32_t)0xA0000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gab4456201506a52115a5b7938484bcec1">DMA_IT_DMEIF4</link> ((uint32_t)0x20001004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga6b91d27a13175cc8e08ac8d58c8bdf19">DMA_IT_TEIF4</link> ((uint32_t)0x20002008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gafda7db2d283c4a71dcad96dc4972799d">DMA_IT_HTIF4</link> ((uint32_t)0x20004010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga36a29ac345571fad0b1c98f36c59d4c5">DMA_IT_TCIF4</link> ((uint32_t)0x20008020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8b63b126eedeeed93051abfe943c7a4a">DMA_IT_FEIF5</link> ((uint32_t)0xA0000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga03c884977c9eac6b98c33707df72f1de">DMA_IT_DMEIF5</link> ((uint32_t)0x20001100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga954167a7b1f01653ca891a1e2f5fc2ef">DMA_IT_TEIF5</link> ((uint32_t)0x20002200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gab67a2a189e63786b23e37febcd9aaad1">DMA_IT_HTIF5</link> ((uint32_t)0x20004400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaf4a7f8f3d5914858c59b12fc36e9a176">DMA_IT_TCIF5</link> ((uint32_t)0x20008800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gad023ccedd5283ace18de6d0bcac06e0a">DMA_IT_FEIF6</link> ((uint32_t)0xA0010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga154421000068d646b9403303aeae09e8">DMA_IT_DMEIF6</link> ((uint32_t)0x20041000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gab1c3b881dd5493dee96b49f4ddbb7204">DMA_IT_TEIF6</link> ((uint32_t)0x20082000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gae43cd288bb0b6f1cbb313dc5690f174f">DMA_IT_HTIF6</link> ((uint32_t)0x20104000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga895e7dfd7ddf4879181e475eb322f1b4">DMA_IT_TCIF6</link> ((uint32_t)0x20208000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga742d0f7f8437ab5fa4f1ad0c7fb0112b">DMA_IT_FEIF7</link> ((uint32_t)0xA0400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaed099553b36827c2978208d288f9a848">DMA_IT_DMEIF7</link> ((uint32_t)0x21001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga4d25902b63630db383fd3983581fb8ee">DMA_IT_TEIF7</link> ((uint32_t)0x22002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gae95460193a9f02e03a6aaf01ecb9a501">DMA_IT_HTIF7</link> ((uint32_t)0x24004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga2761f6621db0231ddc8294a8eb1c8e42">DMA_IT_TCIF7</link> ((uint32_t)0x28008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga390481b083355ed774b04f70a42f0dfb">IS_DMA_CLEAR_IT</link> ((((IT) &amp; 0x30000000) != 0x30000000) &amp;&amp; \
+                             (((IT) &amp; 0x30000000) != 0) &amp;&amp; ((IT) != 0x00) &amp;&amp; \
+                             (((IT) &amp; 0x40820082) == 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaaafa1bd74bc5e78e276c731faa8eed22">IS_DMA_GET_IT</link> (((IT) == DMA_IT_TCIF0) || ((IT) == DMA_IT_HTIF0)  || \
+                           ((IT) == DMA_IT_TEIF0) || ((IT) == DMA_IT_DMEIF0) || \
+                           ((IT) == DMA_IT_FEIF0) || ((IT) == DMA_IT_TCIF1)  || \
+                           ((IT) == DMA_IT_HTIF1) || ((IT) == DMA_IT_TEIF1)  || \
+                           ((IT) == DMA_IT_DMEIF1)|| ((IT) == DMA_IT_FEIF1)  || \
+                           ((IT) == DMA_IT_TCIF2) || ((IT) == DMA_IT_HTIF2)  || \
+                           ((IT) == DMA_IT_TEIF2) || ((IT) == DMA_IT_DMEIF2) || \
+                           ((IT) == DMA_IT_FEIF2) || ((IT) == DMA_IT_TCIF3)  || \
+                           ((IT) == DMA_IT_HTIF3) || ((IT) == DMA_IT_TEIF3)  || \
+                           ((IT) == DMA_IT_DMEIF3)|| ((IT) == DMA_IT_FEIF3)  || \
+                           ((IT) == DMA_IT_TCIF4) || ((IT) == DMA_IT_HTIF4)  || \
+                           ((IT) == DMA_IT_TEIF4) || ((IT) == DMA_IT_DMEIF4) || \
+                           ((IT) == DMA_IT_FEIF4) || ((IT) == DMA_IT_TCIF5)  || \
+                           ((IT) == DMA_IT_HTIF5) || ((IT) == DMA_IT_TEIF5)  || \
+                           ((IT) == DMA_IT_DMEIF5)|| ((IT) == DMA_IT_FEIF5)  || \
+                           ((IT) == DMA_IT_TCIF6) || ((IT) == DMA_IT_HTIF6)  || \
+                           ((IT) == DMA_IT_TEIF6) || ((IT) == DMA_IT_DMEIF6) || \
+                           ((IT) == DMA_IT_FEIF6) || ((IT) == DMA_IT_TCIF7)  || \
+                           ((IT) == DMA_IT_HTIF7) || ((IT) == DMA_IT_TEIF7)  || \
+                           ((IT) == DMA_IT_DMEIF7)|| ((IT) == DMA_IT_FEIF7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dfa/group___r_t_c___output__selection___definitions">
+    <title>RTC_Output_selection_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1gac822a3040c6e8a503118bba51593e489">RTC_Output_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1ga56386ce37ad43c8b09a07437fa248483">RTC_Output_AlarmA</link> ((uint32_t)0x00200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1ga7fecea40e71cbadf6821bb5cc9f24e39">RTC_Output_AlarmB</link> ((uint32_t)0x00400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1ga1a48ec12a6fc320c8e18cc0f3c89b97a">RTC_Output_WakeUp</link> ((uint32_t)0x00600000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dfa/group___r_t_c___output__selection___definitions_1gabc8a868f360abe629c8d8de8b44b3b63">IS_RTC_OUTPUT</link> (((OUTPUT) == RTC_Output_Disable) || \
+                               ((OUTPUT) == RTC_Output_AlarmA) || \
+                               ((OUTPUT) == RTC_Output_AlarmB) || \
+                               ((OUTPUT) == RTC_Output_WakeUp))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d94/group___a_d_c__external__trigger__edge__for__injected__channels__conversion">
+    <title>ADC_external_trigger_edge_for_injected_channels_conversion</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___a_d_c__external__trigger__edge__for__injected__channels__conversion_1gadded0427c7ab2c1b83bff0950e7bc159">ADC_ExternalTrigInjecConvEdge_None</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___a_d_c__external__trigger__edge__for__injected__channels__conversion_1gab7238752eca96a099d39a472550675c1">ADC_ExternalTrigInjecConvEdge_Rising</link> ((uint32_t)0x00100000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___a_d_c__external__trigger__edge__for__injected__channels__conversion_1ga021b91cd4d06a2c918d364c01296606d">ADC_ExternalTrigInjecConvEdge_Falling</link> ((uint32_t)0x00200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___a_d_c__external__trigger__edge__for__injected__channels__conversion_1ga8276098b68c3e16638cd742d1593e78e">ADC_ExternalTrigInjecConvEdge_RisingFalling</link> ((uint32_t)0x00300000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d94/group___a_d_c__external__trigger__edge__for__injected__channels__conversion_1ga1071d8b9c241b032c87c0f858d8de517">IS_ADC_EXT_INJEC_TRIG_EDGE</link> (((EDGE) == ADC_ExternalTrigInjecConvEdge_None) || \
+                                          ((EDGE) == ADC_ExternalTrigInjecConvEdge_Rising) || \
+                                          ((EDGE) == ADC_ExternalTrigInjecConvEdge_Falling) || \
+                                          ((EDGE) == ADC_ExternalTrigInjecConvEdge_RisingFalling))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

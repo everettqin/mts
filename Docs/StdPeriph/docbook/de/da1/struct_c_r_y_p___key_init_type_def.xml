@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/da1/struct_c_r_y_p___key_init_type_def">
+<title>CRYP_KeyInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/dfe/stm32f4xx__cryp_8h">&lt;stm32f4xx_cryp.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t CRYP_Key0Left</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t CRYP_Key0Right</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t CRYP_Key1Left</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t CRYP_Key1Right</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t CRYP_Key2Left</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t CRYP_Key2Right</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t CRYP_Key3Left</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t CRYP_Key3Right</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CRYP Key(s) structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t CRYP_Key0Left</title>                
+<para>Key 0 Left </para>
+
+                <para>Definition at line 66 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t CRYP_Key0Right</title>                
+<para>Key 0 Right </para>
+
+                <para>Definition at line 67 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t CRYP_Key1Left</title>                
+<para>Key 1 left </para>
+
+                <para>Definition at line 68 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t CRYP_Key1Right</title>                
+<para>Key 1 Right </para>
+
+                <para>Definition at line 69 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t CRYP_Key2Left</title>                
+<para>Key 2 left </para>
+
+                <para>Definition at line 70 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t CRYP_Key2Right</title>                
+<para>Key 2 Right </para>
+
+                <para>Definition at line 71 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t CRYP_Key3Left</title>                
+<para>Key 3 left </para>
+
+                <para>Definition at line 72 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t CRYP_Key3Right</title>                
+<para>Key 3 Right </para>
+
+                <para>Definition at line 73 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

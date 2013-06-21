@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d49/group___c_a_n___group6">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                   Interrupts and flags management functions
+ ===============================================================================  
+
+  This section provides functions allowing to configure the CAN Interrupts and 
+  to get the status and clear flags and Interrupts pending bits.
+  
+  The CAN provides 14 Interrupts sources and 15 Flags:
+
+  ===============  
+      Flags :
+  ===============
+  The 15 flags can be divided on 4 groups: 
+
+   A. Transmit Flags
+  -----------------------
+        CAN_FLAG_RQCP0, 
+        CAN_FLAG_RQCP1, 
+        CAN_FLAG_RQCP2  : Request completed MailBoxes 0, 1 and 2  Flags
+                          Set when when the last request (transmit or abort) has 
+                          been performed. 
+
+  B. Receive Flags
+  -----------------------
+
+        CAN_FLAG_FMP0,
+        CAN_FLAG_FMP1   : FIFO 0 and 1 Message Pending Flags 
+                          set to signal that messages are pending in the receive 
+                          FIFO.
+                          These Flags are cleared only by hardware. 
+
+        CAN_FLAG_FF0,
+        CAN_FLAG_FF1    : FIFO 0 and 1 Full Flags
+                          set when three messages are stored in the selected 
+                          FIFO.                        
+
+        CAN_FLAG_FOV0              
+        CAN_FLAG_FOV1   : FIFO 0 and 1 Overrun Flags
+                          set when a new message has been received and passed 
+                          the filter while the FIFO was full.         
+
+  C. Operating Mode Flags
+  ----------------------- 
+        CAN_FLAG_WKU    : Wake up Flag
+                          set to signal that a SOF bit has been detected while 
+                          the CAN hardware was in Sleep mode. 
+        
+        CAN_FLAG_SLAK   : Sleep acknowledge Flag
+                          Set to signal that the CAN has entered Sleep Mode. 
+    
+  D. Error Flags
+  ----------------------- 
+        CAN_FLAG_EWG    : Error Warning Flag
+                          Set when the warning limit has been reached (Receive 
+                          Error Counter or Transmit Error Counter greater than 96). 
+                          This Flag is cleared only by hardware.
+                            
+        CAN_FLAG_EPV    : Error Passive Flag
+                          Set when the Error Passive limit has been reached 
+                          (Receive Error Counter or Transmit Error Counter 
+                          greater than 127).
+                          This Flag is cleared only by hardware.
+                             
+        CAN_FLAG_BOF    : Bus-Off Flag
+                          set when CAN enters the bus-off state. The bus-off 
+                          state is entered on TEC overflow, greater than 255.
+                          This Flag is cleared only by hardware.
+                                   
+        CAN_FLAG_LEC    : Last error code Flag
+                          set If a message has been transferred (reception or
+                          transmission) with error, and the error code is hold.              
+                          
+  ===============  
+   Interrupts :
+  ===============
+  The 14 interrupts can be divided on 4 groups: 
+  
+   A. Transmit interrupt
+  -----------------------   
+          CAN_IT_TME   :  Transmit mailbox empty Interrupt
+                          if enabled, this interrupt source is pending when 
+                          no transmit request are pending for Tx mailboxes.      
+
+   B. Receive Interrupts
+  -----------------------          
+        CAN_IT_FMP0,
+        CAN_IT_FMP1    :  FIFO 0 and FIFO1 message pending Interrupts
+                          if enabled, these interrupt sources are pending when 
+                          messages are pending in the receive FIFO.
+                          The corresponding interrupt pending bits are cleared 
+                          only by hardware.
+                
+        CAN_IT_FF0,              
+        CAN_IT_FF1     :  FIFO 0 and FIFO1 full Interrupts
+                          if enabled, these interrupt sources are pending when
+                          three messages are stored in the selected FIFO.
+        
+        CAN_IT_FOV0,        
+        CAN_IT_FOV1    :  FIFO 0 and FIFO1 overrun Interrupts        
+                          if enabled, these interrupt sources are pending when
+                          a new message has been received and passed the filter
+                          while the FIFO was full.
+
+   C. Operating Mode Interrupts
+  -------------------------------          
+        CAN_IT_WKU     :  Wake-up Interrupt
+                          if enabled, this interrupt source is pending when 
+                          a SOF bit has been detected while the CAN hardware was 
+                          in Sleep mode.
+                                  
+        CAN_IT_SLK     :  Sleep acknowledge Interrupt
+                          if enabled, this interrupt source is pending when 
+                          the CAN has entered Sleep Mode.       
+
+   D. Error Interrupts 
+  -----------------------         
+        CAN_IT_EWG     :  Error warning Interrupt 
+                          if enabled, this interrupt source is pending when
+                          the warning limit has been reached (Receive Error 
+                          Counter or Transmit Error Counter=96). 
+                               
+        CAN_IT_EPV     :  Error passive Interrupt        
+                          if enabled, this interrupt source is pending when
+                          the Error Passive limit has been reached (Receive 
+                          Error Counter or Transmit Error Counter&gt;127).
+                          
+        CAN_IT_BOF     :  Bus-off Interrupt
+                          if enabled, this interrupt source is pending when
+                          CAN enters the bus-off state. The bus-off state is 
+                          entered on TEC overflow, greater than 255.
+                          This Flag is cleared only by hardware.
+                                  
+        CAN_IT_LEC     :  Last error code Interrupt        
+                          if enabled, this interrupt source is pending  when
+                          a message has been transferred (reception or
+                          transmission) with error, and the error code is hold.
+                          
+        CAN_IT_ERR     :  Error Interrupt
+                          if enabled, this interrupt source is pending when 
+                          an error condition is pending.      
+                      
+
+  Managing the CAN controller events :
+  ------------------------------------ 
+  The user should identify which mode will be used in his application to manage 
+  the CAN controller events: Polling mode or Interrupt mode.
+  
+  1.  In the Polling Mode it is advised to use the following functions:
+      - CAN_GetFlagStatus() : to check if flags events occur. 
+      - CAN_ClearFlag()     : to clear the flags events.
+  
+
+  
+  2.  In the Interrupt Mode it is advised to use the following functions:
+      - CAN_ITConfig()       : to enable or disable the interrupt source.
+      - CAN_GetITStatus()    : to check if Interrupt occurs.
+      - CAN_ClearITPendingBit() : to clear the Interrupt pending Bit (corresponding Flag).
+      @note  This function has no impact on CAN_IT_FMP0 and CAN_IT_FMP1 Interrupts 
+             pending bits since there are cleared only by hardware. </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d49/group___c_a_n___group6_1gad1a8b2499a780b5bfa4accb3597b02f4">CAN_ITConfig</link> (
+CAN_TypeDef * CANx, uint32_t CAN_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d8/d49/group___c_a_n___group6_1ga2faad96caf823ef463cc5b5b25c480bb">CAN_GetFlagStatus</link> (
+CAN_TypeDef * CANx, uint32_t CAN_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d49/group___c_a_n___group6_1ga2c01646d5d3a2d7045e8dd71f58f8742">CAN_ClearFlag</link> (
+CAN_TypeDef * CANx, uint32_t CAN_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d8/d49/group___c_a_n___group6_1ga9aca05b3013e1b3438f3559f80b33c82">CAN_GetITStatus</link> (
+CAN_TypeDef * CANx, uint32_t CAN_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d49/group___c_a_n___group6_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a">CAN_ClearITPendingBit</link> (
+CAN_TypeDef * CANx, uint32_t CAN_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d8/d49/group___c_a_n___group6_1gad1a8b2499a780b5bfa4accb3597b02f4">
+                <title>void CAN_ITConfig (CAN_TypeDef *CANx, uint32_t CAN_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the specified CANx interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_IT, :</entry>
+                                <entry>
+<para>specifies the CAN interrupt sources to be enabled or disabled. This parameter can be: <itemizedlist>
+<listitem>
+<para>CAN_IT_TME: Transmit mailbox empty Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FMP0: FIFO 0 message pending Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF0: FIFO 0 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV0: FIFO 0 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FMP1: FIFO 1 message pending Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF1: FIFO 1 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV1: FIFO 1 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_WKU: Wake-up Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_SLK: Sleep acknowledge Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EWG: Error warning Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EPV: Error passive Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_BOF: Bus-off Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_LEC: Last error code Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_ERR: Error Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the CAN interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d49/group___c_a_n___group6_1ga2faad96caf823ef463cc5b5b25c480bb">
+                <title>FlagStatus CAN_GetFlagStatus (CAN_TypeDef *CANx, uint32_t CAN_FLAG)</title> <emphasis>Checks whether the specified CAN flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CAN_FLAG_RQCP0: Request MailBox0 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_RQCP1: Request MailBox1 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_RQCP2: Request MailBox2 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FMP0: FIFO 0 Message Pending Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FF0: FIFO 0 Full Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FOV0: FIFO 0 Overrun Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FMP1: FIFO 1 Message Pending Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FF1: FIFO 1 Full Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FOV1: FIFO 1 Overrun Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_WKU: Wake up Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_SLAK: Sleep acknowledge Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_EWG: Error Warning Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_EPV: Error Passive Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_BOF: Bus-Off Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_LEC: Last error code Flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of CAN_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d49/group___c_a_n___group6_1ga2c01646d5d3a2d7045e8dd71f58f8742">
+                <title>void CAN_ClearFlag (CAN_TypeDef *CANx, uint32_t CAN_FLAG)</title> <emphasis>Clears the CAN&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CAN_FLAG_RQCP0: Request MailBox0 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_RQCP1: Request MailBox1 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_RQCP2: Request MailBox2 Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FF0: FIFO 0 Full Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FOV0: FIFO 0 Overrun Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FF1: FIFO 1 Full Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_FOV1: FIFO 1 Overrun Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_WKU: Wake up Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_SLAK: Sleep acknowledge Flag </para>
+</listitem>
+<listitem>
+<para>CAN_FLAG_LEC: Last error code Flag </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d49/group___c_a_n___group6_1ga9aca05b3013e1b3438f3559f80b33c82">
+                <title>ITStatus CAN_GetITStatus (CAN_TypeDef *CANx, uint32_t CAN_IT)</title> <emphasis>Checks whether the specified CANx interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_IT, :</entry>
+                                <entry>
+<para>specifies the CAN interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CAN_IT_TME: Transmit mailbox empty Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FMP0: FIFO 0 message pending Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF0: FIFO 0 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV0: FIFO 0 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FMP1: FIFO 1 message pending Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF1: FIFO 1 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV1: FIFO 1 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_WKU: Wake-up Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_SLK: Sleep acknowledge Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EWG: Error warning Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EPV: Error passive Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_BOF: Bus-off Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_LEC: Last error code Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_ERR: Error Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>current state of CAN_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d8/d49/group___c_a_n___group6_1ga30bf7ac0c1793f6622a4a1adbb7dbc8a">
+                <title>void CAN_ClearITPendingBit (CAN_TypeDef *CANx, uint32_t CAN_IT)</title> <emphasis>Clears the CANx&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CAN_IT, :</entry>
+                                <entry>
+<para>specifies the interrupt pending bit to clear. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>CAN_IT_TME: Transmit mailbox empty Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF0: FIFO 0 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV0: FIFO 0 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FF1: FIFO 1 full Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_FOV1: FIFO 1 overrun Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_WKU: Wake-up Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_SLK: Sleep acknowledge Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EWG: Error warning Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_EPV: Error passive Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_BOF: Bus-off Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_LEC: Last error code Interrupt </para>
+</listitem>
+<listitem>
+<para>CAN_IT_ERR: Error Interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

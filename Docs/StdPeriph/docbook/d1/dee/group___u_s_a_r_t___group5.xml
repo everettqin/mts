@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dee/group___u_s_a_r_t___group5">
+    <title>Halfduplex mode function</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Half-duplex mode function. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                         Half-duplex mode function
+ ===============================================================================  
+
+  This subsection provides a set of functions allowing to manage the USART 
+  Half-duplex communication.
+  
+  The USART can be configured to follow a single-wire half-duplex protocol where 
+  the TX and RX lines are internally connected.
+
+  USART Half duplex communication is possible through the following procedure:
+     1. Program the Baud rate, Word length, Stop bits, Parity, Mode transmitter 
+        or Mode receiver and hardware flow control values using the USART_Init()
+        function.
+     2. Configures the USART address using the USART_SetAddress() function.
+     3. Enable the USART using the USART_Cmd() function.
+     4. Enable the half duplex mode using USART_HalfDuplexCmd() function.
+
+
+@note The RX pin is no longer used
+@note In Half-duplex mode the following bits must be kept cleared:
+        - LINEN and CLKEN bits in the USART_CR2 register.
+        - SCEN and IREN bits in the USART_CR3 register.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/dee/group___u_s_a_r_t___group5_1gaaa23b05fe0e1896bad90da7f82750831">USART_HalfDuplexCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d1/dee/group___u_s_a_r_t___group5_1gaaa23b05fe0e1896bad90da7f82750831">
+                <title>void USART_HalfDuplexCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s Half Duplex communication.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART Communication. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

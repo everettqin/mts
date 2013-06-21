@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d35/group___t_i_m___input___capture___polarity">
+    <title>TIM_Input_Capture_Polarity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d35/group___t_i_m___input___capture___polarity_1gabe598596b7dbcac446a4918105fa95a6">TIM_ICPolarity_Rising</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d35/group___t_i_m___input___capture___polarity_1ga70c6f5ed30a236bac4c690928e742243">TIM_ICPolarity_Falling</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d35/group___t_i_m___input___capture___polarity_1ga4632a6425d407c0d28b610b2d31cccc8">TIM_ICPolarity_BothEdge</link> ((uint16_t)0x000A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d35/group___t_i_m___input___capture___polarity_1ga6aff2fe442fd9662a0bb8731134cda89">IS_TIM_IC_POLARITY</link> (((POLARITY) == TIM_ICPolarity_Rising) || \
+                                      ((POLARITY) == TIM_ICPolarity_Falling)|| \
+                                      ((POLARITY) == TIM_ICPolarity_BothEdge))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

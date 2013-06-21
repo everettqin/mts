@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/da1/stm32f4xx__cryp__des_8c">
+    <title>stm32f4xx_cryp_des.c File Reference</title>
+    <programlisting>#include stm32f4xx_cryp.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d52/group___c_r_y_p_1ga2046d6bd81c5f86df18fd0e5095be88a">DESBUSY_TIMEOUT</link> ((uint32_t) 0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="de/d40/group___c_r_y_p___group8_1ga3b96b7608b39197209abed5f5845f590">CRYP_DES_ECB</link> (
+uint8_t Mode, uint8_t Key, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="de/d40/group___c_r_y_p___group8_1ga75724391a8560c557e1152b805f5cad1">CRYP_DES_CBC</link> (
+uint8_t Mode, uint8_t Key, uint8_t InitVectors, uint8_t * Input, uint32_t Ilength, uint8_t * Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides high level functions to encrypt and decrypt an input message using DES in ECB/CBC modes. It uses the <link linkend="d1/d9a/stm32f4xx__cryp_8c">stm32f4xx_cryp.c</link>/.h drivers to access the STM32F4xx CRYP peripheral. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 <programlisting><literallayout>*
+*          ===================================================================
+*                                   How to use this driver
+*          ===================================================================
+*          1. Enable The CRYP controller clock using 
+*            RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_CRYP, ENABLE); function.
+*
+*          2. Encrypt and decrypt using DES in ECB Mode using CRYP_DES_ECB()
+*             function.
+*
+*          3. Encrypt and decrypt using DES in CBC Mode using CRYP_DES_CBC()
+*             function.
+*
+*  </literallayout></programlisting></para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c</para>
+    </simplesect>
+</section>

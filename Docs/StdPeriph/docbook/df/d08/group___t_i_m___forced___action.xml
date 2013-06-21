@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d08/group___t_i_m___forced___action">
+    <title>TIM_Forced_Action</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d08/group___t_i_m___forced___action_1ga19d3769825f1dfdbdbde3edb60310b99">TIM_ForcedAction_Active</link> ((uint16_t)0x0050)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d08/group___t_i_m___forced___action_1ga79656f2193ec5e12a15d0ae5b025d273">TIM_ForcedAction_InActive</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d08/group___t_i_m___forced___action_1gaa2cb16f281d32c95ab974dc5157bfa63">IS_TIM_FORCED_ACTION</link> (((ACTION) == TIM_ForcedAction_Active) || \
+                                      ((ACTION) == TIM_ForcedAction_InActive))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

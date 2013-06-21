@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d94/group___t_i_m___capture___compare___state">
+    <title>TIM_Capture_Compare_State</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d94/group___t_i_m___capture___compare___state_1ga6acaeb60dad50ce9799ae9f62ed7719a">TIM_CCx_Enable</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d94/group___t_i_m___capture___compare___state_1gaa1441f66393b9daa9f97efb29b364cd3">TIM_CCx_Disable</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d94/group___t_i_m___capture___compare___state_1ga5b7461e8c9c25f6fa082118c95b02ba1">IS_TIM_CCX</link> (((CCX) == TIM_CCx_Enable) || \
+                         ((CCX) == TIM_CCx_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d89/group___f_l_a_s_h___group3">
+    <title>Option Bytes Programming functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Option Bytes Programming functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                        Option Bytes Programming functions
+ ===============================================================================  
+ 
+   This group includes the following functions:
+   - void FLASH_OB_Unlock(void)
+   - void FLASH_OB_Lock(void)
+   - void FLASH_OB_WRPConfig(uint32_t OB_WRP, FunctionalState NewState)
+   - void FLASH_OB_RDPConfig(uint8_t OB_RDP)
+   - void FLASH_OB_UserConfig(uint8_t OB_IWDG, uint8_t OB_STOP, uint8_t OB_STDBY)
+   - void FLASH_OB_BORConfig(uint8_t OB_BOR)
+   - FLASH_Status FLASH_ProgramOTP(uint32_t Address, uint32_t Data)                         
+   - FLASH_Status FLASH_OB_Launch(void)
+   - uint32_t FLASH_OB_GetUser(void)                        
+   - uint8_t FLASH_OB_GetWRP(void)                      
+   - uint8_t FLASH_OB_GetRDP(void)                          
+   - uint8_t FLASH_OB_GetBOR(void)
+   
+   Any operation of erase or program should follow these steps:
+   1. Call the FLASH_OB_Unlock() function to enable the FLASH option control register access
+
+   2. Call one or several functions to program the desired Option Bytes:
+      - void FLASH_OB_WRPConfig(uint32_t OB_WRP, FunctionalState NewState) =&gt; to Enable/Disable 
+        the desired sector write protection
+      - void FLASH_OB_RDPConfig(uint8_t OB_RDP) =&gt; to set the desired read Protection Level
+      - void FLASH_OB_UserConfig(uint8_t OB_IWDG, uint8_t OB_STOP, uint8_t OB_STDBY) =&gt; to configure 
+        the user Option Bytes.
+      - void FLASH_OB_BORConfig(uint8_t OB_BOR) =&gt; to set the BOR Level              
+
+   3. Once all needed Option Bytes to be programmed are correctly written, call the
+      FLASH_OB_Launch() function to launch the Option Bytes programming process.
+     
+     @note When changing the IWDG mode from HW to SW or from SW to HW, a system 
+           reset is needed to make the change effective.  
+
+   4. Call the FLASH_OB_Lock() function to disable the FLASH option control register
+      access (recommended to protect the Option Bytes against possible unwanted operations)</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d89/group___f_l_a_s_h___group3_1ga518d6e3bbba2adf1523e8454f62348e9">FLASH_OB_Unlock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d89/group___f_l_a_s_h___group3_1ga63a33d9af7e29b64c3806e5505c59b74">FLASH_OB_Lock</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d89/group___f_l_a_s_h___group3_1gaffe7e91bcce65ac079ae5afa1db568b5">FLASH_OB_WRPConfig</link> (
+uint32_t OB_WRP, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d89/group___f_l_a_s_h___group3_1ga12cb6799f725a49cd151eef4d6d1789b">FLASH_OB_RDPConfig</link> (
+uint8_t OB_RDP)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d89/group___f_l_a_s_h___group3_1ga6b605409e4271b4cc6dfb56ed8108a1a">FLASH_OB_UserConfig</link> (
+uint8_t OB_IWDG, uint8_t OB_STOP, uint8_t OB_STDBY)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="da/d89/group___f_l_a_s_h___group3_1ga621bf052bc381c7a37fb1f8758f5ec2e">FLASH_OB_BORConfig</link> (
+uint8_t OB_BOR)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="dc/da6/group___f_l_a_s_h_1gadc63a6f3404ff1f71229a66915e9cdc0">FLASH_Status</link> <link linkend="da/d89/group___f_l_a_s_h___group3_1gabcbd44a62a2488d8b90aa8562a258ef1">FLASH_OB_Launch</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="da/d89/group___f_l_a_s_h___group3_1ga737dd808489113af7f8df7f7e9f7baae">FLASH_OB_GetUser</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="da/d89/group___f_l_a_s_h___group3_1gafa2aec5fa1ea7a73c31f3405f465c525">FLASH_OB_GetWRP</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="da/d89/group___f_l_a_s_h___group3_1ga2f0151c6c923396eaf96c554a5860c31">FLASH_OB_GetRDP</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="da/d89/group___f_l_a_s_h___group3_1gab8a8804905929b2edd544d28c2e7b215">FLASH_OB_GetBOR</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1ga518d6e3bbba2adf1523e8454f62348e9">
+                <title>void FLASH_OB_Unlock (void)</title> <emphasis>Unlocks the FLASH Option Control Registers access.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1ga63a33d9af7e29b64c3806e5505c59b74">
+                <title>void FLASH_OB_Lock (void)</title> <emphasis>Locks the FLASH Option Control Registers access.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1gaffe7e91bcce65ac079ae5afa1db568b5">
+                <title>void FLASH_OB_WRPConfig (uint32_t OB_WRP, FunctionalState NewState)</title> <emphasis>Enables or disables the write protection of the desired sectors.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>OB_WRP, :</entry>
+                                <entry>
+<para>specifies the sector(s) to be write protected or unprotected. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_WRP: A value between OB_WRP_Sector0 and OB_WRP_Sector11 </para>
+</listitem>
+<listitem>
+<para>OB_WRP_Sector_All </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Newstate, :</entry>
+                                <entry>
+<para>new state of the Write Protection. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1ga12cb6799f725a49cd151eef4d6d1789b">
+                <title>void FLASH_OB_RDPConfig (uint8_t OB_RDP)</title> <emphasis>Sets the read protection level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>OB_RDP, :</entry>
+                                <entry>
+<para>specifies the read protection level. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_RDP_Level_0: No protection </para>
+</listitem>
+<listitem>
+<para>OB_RDP_Level_1: Read protection of the memory </para>
+</listitem>
+<listitem>
+<para>OB_RDP_Level_2: Full chip protection</para>
+</listitem>
+</itemizedlist>
+!!!Warning!!! When enabling OB_RDP level 2 it&apos;s no more possible to go back to level 1 or 0</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1ga6b605409e4271b4cc6dfb56ed8108a1a">
+                <title>void FLASH_OB_UserConfig (uint8_t OB_IWDG, uint8_t OB_STOP, uint8_t OB_STDBY)</title> <emphasis>Programs the FLASH User Option Byte: IWDG_SW / RST_STOP / RST_STDBY.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>OB_IWDG, :</entry>
+                                <entry>
+<para>Selects the IWDG mode This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_IWDG_SW: Software IWDG selected </para>
+</listitem>
+<listitem>
+<para>OB_IWDG_HW: Hardware IWDG selected </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>OB_STOP, :</entry>
+                                <entry>
+<para>Reset event when entering STOP mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_STOP_NoRST: No reset generated when entering in STOP </para>
+</listitem>
+<listitem>
+<para>OB_STOP_RST: Reset generated when entering in STOP </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>OB_STDBY, :</entry>
+                                <entry>
+<para>Reset event when entering Standby mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_STDBY_NoRST: No reset generated when entering in STANDBY </para>
+</listitem>
+<listitem>
+<para>OB_STDBY_RST: Reset generated when entering in STANDBY </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1ga621bf052bc381c7a37fb1f8758f5ec2e">
+                <title>void FLASH_OB_BORConfig (uint8_t OB_BOR)</title> <emphasis>Sets the BOR Level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>OB_BOR, :</entry>
+                                <entry>
+<para>specifies the Option Bytes BOR Reset Level. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>OB_BOR_LEVEL3: Supply voltage ranges from 2.7 to 3.6 V </para>
+</listitem>
+<listitem>
+<para>OB_BOR_LEVEL2: Supply voltage ranges from 2.4 to 2.7 V </para>
+</listitem>
+<listitem>
+<para>OB_BOR_LEVEL1: Supply voltage ranges from 2.1 to 2.4 V </para>
+</listitem>
+<listitem>
+<para>OB_BOR_OFF: Supply voltage ranges from 1.62 to 2.1 V </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1gabcbd44a62a2488d8b90aa8562a258ef1">
+                <title>FLASH_Status FLASH_OB_Launch (void)</title> <emphasis>Launch the option byte loading.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PROGRAM, FLASH_ERROR_WRP, FLASH_ERROR_OPERATION or FLASH_COMPLETE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1ga737dd808489113af7f8df7f7e9f7baae">
+                <title>uint8_t FLASH_OB_GetUser (void)</title> <emphasis>Returns the FLASH User Option Bytes values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>FLASH User Option Bytes values: IWDG_SW(Bit0), RST_STOP(Bit1) and RST_STDBY(Bit2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1gafa2aec5fa1ea7a73c31f3405f465c525">
+                <title>uint16_t FLASH_OB_GetWRP (void)</title> <emphasis>Returns the FLASH Write Protection Option Bytes value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>FLASH Write Protection Option Bytes value </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1ga2f0151c6c923396eaf96c554a5860c31">
+                <title>FlagStatus FLASH_OB_GetRDP (void)</title> <emphasis>Returns the FLASH Read Protection level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FLASH</entry>
+                                <entry>
+<para>ReadOut Protection Status:<itemizedlist>
+<listitem>
+<para>SET, when OB_RDP_Level_1 or OB_RDP_Level_2 is set</para>
+</listitem><listitem>
+<para>RESET, when OB_RDP_Level_0 is set </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d89/group___f_l_a_s_h___group3_1gab8a8804905929b2edd544d28c2e7b215">
+                <title>uint8_t FLASH_OB_GetBOR (void)</title> <emphasis>Returns the FLASH BOR level.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>FLASH BOR level:<itemizedlist>
+<listitem>
+<para>OB_BOR_LEVEL3: Supply voltage ranges from 2.7 to 3.6 V</para>
+</listitem><listitem>
+<para>OB_BOR_LEVEL2: Supply voltage ranges from 2.4 to 2.7 V</para>
+</listitem><listitem>
+<para>OB_BOR_LEVEL1: Supply voltage ranges from 2.1 to 2.4 V</para>
+</listitem><listitem>
+<para>OB_BOR_OFF : Supply voltage ranges from 1.62 to 2.1 V </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

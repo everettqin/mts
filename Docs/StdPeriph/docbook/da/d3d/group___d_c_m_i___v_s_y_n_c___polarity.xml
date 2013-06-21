@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity">
+    <title>DCMI_VSYNC_Polarity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga7373470d26c50a616f12b2855b29b240">DCMI_VSPolarity_Low</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga8ee9a81f7d657b0121ddff9ce0ae9bec">DCMI_VSPolarity_High</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1gad575b228df2bbd1eaf76d52300dc7c3e">IS_DCMI_VSPOLARITY</link> (((POLARITY) == <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga7373470d26c50a616f12b2855b29b240">DCMI_VSPolarity_Low</link>) || \
+                                     ((POLARITY) == <link linkend="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga8ee9a81f7d657b0121ddff9ce0ae9bec">DCMI_VSPolarity_High</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga7373470d26c50a616f12b2855b29b240">
+                <title>#define DCMI_VSPolarity_Low</title>                
+<para>Vertical synchronization active Low </para>
+
+                <para>Definition at line 148 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d3d/group___d_c_m_i___v_s_y_n_c___polarity_1ga8ee9a81f7d657b0121ddff9ce0ae9bec">
+                <title>#define DCMI_VSPolarity_High</title>                
+<para>Vertical synchronization active High </para>
+
+                <para>Definition at line 149 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

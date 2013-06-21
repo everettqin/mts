@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dc0/group___i_w_d_g___flag">
+    <title>IWDG_Flag</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dc0/group___i_w_d_g___flag_1gae20afcf399fad1534e79a8d30ea86c9c">IWDG_FLAG_PVU</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dc0/group___i_w_d_g___flag_1ga3731bf2711c234ffe5b405fb6634ebca">IWDG_FLAG_RVU</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dc0/group___i_w_d_g___flag_1ga5be9ae9ba267cf09a00523ef3e219293">IS_IWDG_FLAG</link> (((FLAG) == IWDG_FLAG_PVU) || ((FLAG) == IWDG_FLAG_RVU))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/dc0/group___i_w_d_g___flag_1ga7c319e96bded8e3c38c6a42a1b335c68">IS_IWDG_RELOAD</link> ((RELOAD) &lt;= 0xFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

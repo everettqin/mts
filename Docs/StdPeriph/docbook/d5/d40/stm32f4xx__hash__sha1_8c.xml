@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d40/stm32f4xx__hash__sha1_8c">
+    <title>stm32f4xx_hash_sha1.c File Reference</title>
+    <programlisting>#include stm32f4xx_hash.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d95/group___h_a_s_h_1gaa15d9e8e64ae5a78035edb854014c012">SHA1BUSY_TIMEOUT</link> ((uint32_t) 0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d8/d55/group___h_a_s_h___group6_1ga2728c02c36de6d800e1ede56ea7789cb">HASH_SHA1</link> (
+uint8_t * Input, uint32_t Ilen, uint8_t Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d8/d55/group___h_a_s_h___group6_1ga2e38e900ca7838c1cea17cef19953a5e">HMAC_SHA1</link> (
+uint8_t * Key, uint32_t Keylen, uint8_t * Input, uint32_t Ilen, uint8_t Output)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides high level functions to compute the HASH SHA1 and HMAC SHA1 Digest of an input message. It uses the <link linkend="d6/d7f/stm32f4xx__hash_8c">stm32f4xx_hash.c</link>/.h drivers to access the STM32F4xx HASH peripheral. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 <programlisting><literallayout>* 
+*          ===================================================================
+*                                   How to use this driver
+*          ===================================================================
+*          1. Enable The HASH controller clock using 
+*            RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_HASH, ENABLE); function.
+*
+*          2. Calculate the HASH SHA1 Digest using HASH_SHA1() function.
+*
+*          3. Calculate the HMAC SHA1 Digest using HMAC_SHA1() function.
+*
+*  </literallayout></programlisting></para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.c</para>
+    </simplesect>
+</section>

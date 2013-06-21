@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dae/struct_i2_s___init_type_def">
+<title>I2S_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/d84/stm32f4xx__spi_8h">&lt;stm32f4xx_spi.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2S_Mode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2S_Standard</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2S_DataFormat</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2S_MCLKOutput</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t I2S_AudioFreq</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t I2S_CPOL</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>I2S Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint16_t I2S_Mode</title>                
+<para>Specifies the I2S operating mode. This parameter can be a value of <link linkend="db/dae/struct_i2_s___init_type_def_1ab239a97360862b2514410fef774686f5">I2S_Mode</link> </para>
+
+                <para>Definition at line 88 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t I2S_Standard</title>                
+<para>Specifies the standard used for the I2S communication. This parameter can be a value of <link linkend="db/dae/struct_i2_s___init_type_def_1a0f0c02142c68e2c2f0038ca79bdbd365">I2S_Standard</link> </para>
+
+                <para>Definition at line 91 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t I2S_DataFormat</title>                
+<para>Specifies the data format for the I2S communication. This parameter can be a value of I2S_Data_Format </para>
+
+                <para>Definition at line 94 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t I2S_MCLKOutput</title>                
+<para>Specifies whether the I2S MCLK output is enabled or not. This parameter can be a value of I2S_MCLK_Output </para>
+
+                <para>Definition at line 97 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t I2S_AudioFreq</title>                
+<para>Specifies the frequency selected for the I2S communication. This parameter can be a value of I2S_Audio_Frequency </para>
+
+                <para>Definition at line 100 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint16_t I2S_CPOL</title>                
+<para>Specifies the idle state of the I2S clock. This parameter can be a value of I2S_Clock_Polarity </para>
+
+                <para>Definition at line 103 of file stm32f4xx_spi.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_spi.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

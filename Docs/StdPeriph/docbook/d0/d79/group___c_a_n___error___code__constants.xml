@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d79/group___c_a_n___error___code__constants">
+    <title>CAN_Error_Code_constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d79/group___c_a_n___error___code__constants_1ga025d891e9c5cec2cfecb2213b4f74a9e">CAN_ErrorCode_NoErr</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d79/group___c_a_n___error___code__constants_1gaa733d1c078472912c3bf60fbdc53734d">CAN_ErrorCode_StuffErr</link> ((uint8_t)0x10)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d79/group___c_a_n___error___code__constants_1ga1fe585558bb8d5c834b4266661392cb2">CAN_ErrorCode_FormErr</link> ((uint8_t)0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d79/group___c_a_n___error___code__constants_1gad47e6af0116d1b6de85e29286c0b8607">CAN_ErrorCode_ACKErr</link> ((uint8_t)0x30)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d79/group___c_a_n___error___code__constants_1gaf800de7683f1d22194e1df8eb3b1c5bb">CAN_ErrorCode_BitRecessiveErr</link> ((uint8_t)0x40)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d79/group___c_a_n___error___code__constants_1gaa19708aa85d1a34f8f7f25a2bfe88b19">CAN_ErrorCode_BitDominantErr</link> ((uint8_t)0x50)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d79/group___c_a_n___error___code__constants_1gafa75157442dba7ba1a91036242b78e92">CAN_ErrorCode_CRCErr</link> ((uint8_t)0x60)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d79/group___c_a_n___error___code__constants_1ga927089dd74347b9fea7a7c59f3840a7c">CAN_ErrorCode_SoftwareSetErr</link> ((uint8_t)0x70)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d0/d79/group___c_a_n___error___code__constants_1ga025d891e9c5cec2cfecb2213b4f74a9e">
+                <title>#define CAN_ErrorCode_NoErr</title>                
+<para>No Error </para>
+
+                <para>Definition at line 467 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d0/d79/group___c_a_n___error___code__constants_1gaa733d1c078472912c3bf60fbdc53734d">
+                <title>#define CAN_ErrorCode_StuffErr</title>                
+<para>Stuff Error </para>
+
+                <para>Definition at line 468 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d0/d79/group___c_a_n___error___code__constants_1ga1fe585558bb8d5c834b4266661392cb2">
+                <title>#define CAN_ErrorCode_FormErr</title>                
+<para>Form Error </para>
+
+                <para>Definition at line 469 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d0/d79/group___c_a_n___error___code__constants_1gad47e6af0116d1b6de85e29286c0b8607">
+                <title>#define CAN_ErrorCode_ACKErr</title>                
+<para>Acknowledgment Error </para>
+
+                <para>Definition at line 470 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d0/d79/group___c_a_n___error___code__constants_1gaf800de7683f1d22194e1df8eb3b1c5bb">
+                <title>#define CAN_ErrorCode_BitRecessiveErr</title>                
+<para>Bit Recessive Error </para>
+
+                <para>Definition at line 471 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d0/d79/group___c_a_n___error___code__constants_1gaa19708aa85d1a34f8f7f25a2bfe88b19">
+                <title>#define CAN_ErrorCode_BitDominantErr</title>                
+<para>Bit Dominant Error </para>
+
+                <para>Definition at line 472 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d0/d79/group___c_a_n___error___code__constants_1gafa75157442dba7ba1a91036242b78e92">
+                <title>#define CAN_ErrorCode_CRCErr</title>                
+<para>CRC Error </para>
+
+                <para>Definition at line 473 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d0/d79/group___c_a_n___error___code__constants_1ga927089dd74347b9fea7a7c59f3840a7c">
+                <title>#define CAN_ErrorCode_SoftwareSetErr</title>                
+<para>Software Set Error </para>
+
+                <para>Definition at line 474 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

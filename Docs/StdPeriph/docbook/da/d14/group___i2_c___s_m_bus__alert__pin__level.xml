@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d14/group___i2_c___s_m_bus__alert__pin__level">
+    <title>I2C_SMBus_alert_pin_level</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d14/group___i2_c___s_m_bus__alert__pin__level_1ga6f923166107afb8aad1d7d1a87048d6e">I2C_SMBusAlert_Low</link> ((uint16_t)0x2000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d14/group___i2_c___s_m_bus__alert__pin__level_1gac3ab64f43ef90f0f83f9c88981aaa862">I2C_SMBusAlert_High</link> ((uint16_t)0xDFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d14/group___i2_c___s_m_bus__alert__pin__level_1ga61b0c91563eb4bd598329241fe7d3bb4">IS_I2C_SMBUS_ALERT</link> (((ALERT) == I2C_SMBusAlert_Low) || \
+                                   ((ALERT) == I2C_SMBusAlert_High))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

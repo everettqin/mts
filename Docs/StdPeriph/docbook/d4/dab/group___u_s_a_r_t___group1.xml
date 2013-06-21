@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dab/group___u_s_a_r_t___group1">
+    <title>Initialization and Configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Initialization and Configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                  Initialization and Configuration functions
+ ===============================================================================  
+
+  This subsection provides a set of functions allowing to initialize the USART 
+  in asynchronous and in synchronous modes.
+   - For the asynchronous mode only these parameters can be configured: 
+        - Baud Rate
+        - Word Length 
+        - Stop Bit
+        - Parity: If the parity is enabled, then the MSB bit of the data written
+          in the data register is transmitted but is changed by the parity bit.
+          Depending on the frame length defined by the M bit (8-bits or 9-bits),
+          the possible USART frame formats are as listed in the following table:
+   +-------------------------------------------------------------+     
+   |   M bit |  PCE bit  |            USART frame                |
+   |---------------------|---------------------------------------|             
+   |    0    |    0      |    | SB | 8 bit data | STB |          |
+   |---------|-----------|---------------------------------------|  
+   |    0    |    1      |    | SB | 7 bit data | PB | STB |     |
+   |---------|-----------|---------------------------------------|  
+   |    1    |    0      |    | SB | 9 bit data | STB |          |
+   |---------|-----------|---------------------------------------|  
+   |    1    |    1      |    | SB | 8 bit data | PB | STB |     |
+   +-------------------------------------------------------------+            
+        - Hardware flow control
+        - Receiver/transmitter modes
+
+  The USART_Init() function follows the USART  asynchronous configuration procedure
+  (details for the procedure are available in reference manual (RM0090)).
+
+  - For the synchronous mode in addition to the asynchronous mode parameters these 
+    parameters should be also configured:
+        - USART Clock Enabled
+        - USART polarity
+        - USART phase
+        - USART LastBit
+  
+  These parameters can be configured using the USART_ClockInit() function.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga2f8e1ce72da21b6539d8e1f299ec3b0d">USART_DeInit</link> (
+USART_TypeDef * USARTx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga98da340ea0324002ba1b4263e91ab2ff">USART_Init</link> (
+USART_TypeDef * USARTx, <link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> * USART_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga34e1faa2f312496c16cfd05155f4c8b1">USART_StructInit</link> (
+<link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> * USART_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1gadb50c7a2175c91acd3728f8eefd0c63d">USART_ClockInit</link> (
+USART_TypeDef * USARTx, <link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> * USART_ClockInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga59df27d0adda18b16ee28d47672cc724">USART_ClockStructInit</link> (
+<link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> * USART_ClockInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga45e51626739c5f22a6567c8a85d1d85e">USART_Cmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1gaf5da8f2eee8245425584d85d4f62cc33">USART_SetPrescaler</link> (
+USART_TypeDef * USARTx, uint8_t USART_Prescaler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga3897bab07491d9239f8a238a9a7cddea">USART_OverSampling8Cmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dab/group___u_s_a_r_t___group1_1ga3ed89ea8765d851510cfe90f7d90cbbb">USART_OneBitMethodCmd</link> (
+USART_TypeDef * USARTx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d4/dab/group___u_s_a_r_t___group1_1ga2f8e1ce72da21b6539d8e1f299ec3b0d">
+                <title>void USART_DeInit (USART_TypeDef *USARTx)</title> <emphasis>Deinitializes the USARTx peripheral registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dab/group___u_s_a_r_t___group1_1ga98da340ea0324002ba1b4263e91ab2ff">
+                <title>void USART_Init (USART_TypeDef *USARTx, USART_InitTypeDef *USART_InitStruct)</title> <emphasis>Initializes the USARTx peripheral according to the specified
+        parameters in the USART_InitStruct .</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> structure that contains the configuration information for the specified USART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dab/group___u_s_a_r_t___group1_1ga34e1faa2f312496c16cfd05155f4c8b1">
+                <title>void USART_StructInit (USART_InitTypeDef *USART_InitStruct)</title> <emphasis>Fills each USART_InitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USART_InitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="dd/dd8/struct_u_s_a_r_t___init_type_def">USART_InitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dab/group___u_s_a_r_t___group1_1gadb50c7a2175c91acd3728f8eefd0c63d">
+                <title>void USART_ClockInit (USART_TypeDef *USARTx, USART_ClockInitTypeDef *USART_ClockInitStruct)</title> <emphasis>Initializes the USARTx peripheral Clock according to the 
+        specified parameters in the USART_ClockInitStruct .</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3 or 6 to select the USART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_ClockInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> structure that contains the configuration information for the specified USART peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The Smart Card and Synchronous modes are not available for UART4 and UART5. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dab/group___u_s_a_r_t___group1_1ga59df27d0adda18b16ee28d47672cc724">
+                <title>void USART_ClockStructInit (USART_ClockInitTypeDef *USART_ClockInitStruct)</title> <emphasis>Fills each USART_ClockInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USART_ClockInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="df/de7/struct_u_s_a_r_t___clock_init_type_def">USART_ClockInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dab/group___u_s_a_r_t___group1_1ga45e51626739c5f22a6567c8a85d1d85e">
+                <title>void USART_Cmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the specified USART peripheral.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USARTx peripheral. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dab/group___u_s_a_r_t___group1_1gaf5da8f2eee8245425584d85d4f62cc33">
+                <title>void USART_SetPrescaler (USART_TypeDef *USARTx, uint8_t USART_Prescaler)</title> <emphasis>Sets the system clock prescaler.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>USART_Prescaler, :</entry>
+                                <entry>
+<para>specifies the prescaler clock. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>The function is used for IrDA mode with UART4 and UART5. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dab/group___u_s_a_r_t___group1_1ga3897bab07491d9239f8a238a9a7cddea">
+                <title>void USART_OverSampling8Cmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s 8x oversampling mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function has to be called before calling <link linkend="de/dc0/group___u_s_a_r_t_1ga98da340ea0324002ba1b4263e91ab2ff">USART_Init()</link> function in order to have correct baudrate Divider value. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART 8x oversampling mode. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dab/group___u_s_a_r_t___group1_1ga3ed89ea8765d851510cfe90f7d90cbbb">
+                <title>void USART_OneBitMethodCmd (USART_TypeDef *USARTx, FunctionalState NewState)</title> <emphasis>Enables or disables the USART&apos;s one bit sampling method.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>USARTx, :</entry>
+                                <entry>
+<para>where x can be 1, 2, 3, 4, 5 or 6 to select the USART or UART peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the USART one bit sampling method. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

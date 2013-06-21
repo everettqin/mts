@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d86/group___c_r_y_p___algorithm___mode">
+    <title>CRYP_Algorithm_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gac032fa07d83dc55d7babd4971d96d3cd">CRYP_AlgoMode_TDES_ECB</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga75c9e649ad171d1ee97b60b237946fc3">CRYP_AlgoMode_TDES_CBC</link> ((uint16_t)0x0008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gad7d3f6cbe5bdc4429fb6d793934a1f67">CRYP_AlgoMode_DES_ECB</link> ((uint16_t)0x0010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga54e4fe95b772fc6ab6015761d746ef9f">CRYP_AlgoMode_DES_CBC</link> ((uint16_t)0x0018)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga848f43e8f8c3dc5c6703e7bb5564d371">CRYP_AlgoMode_AES_ECB</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga323e924328e277dc86d4d12711671f89">CRYP_AlgoMode_AES_CBC</link> ((uint16_t)0x0028)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gaff5449a5005dca43408b5ecc7c7a44ac">CRYP_AlgoMode_AES_CTR</link> ((uint16_t)0x0030)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gaa96d12461096fba7b3e7a25f036e0cf4">CRYP_AlgoMode_AES_Key</link> ((uint16_t)0x0038)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gab99e47004b9f412c7ef2b5cbf99472ea">IS_CRYP_ALGOMODE</link> (((ALGOMODE) == <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1gac032fa07d83dc55d7babd4971d96d3cd">CRYP_AlgoMode_TDES_ECB</link>) || \
+                                   ((ALGOMODE) == <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga75c9e649ad171d1ee97b60b237946fc3">CRYP_AlgoMode_TDES_CBC</link>)|| \
+                                   ((ALGOMODE) == CRYP_AlgoMode_DES_ECB)|| \
+                                   ((ALGOMODE) == <link linkend="d3/d86/group___c_r_y_p___algorithm___mode_1ga54e4fe95b772fc6ab6015761d746ef9f">CRYP_AlgoMode_DES_CBC</link>) || \
+                                   ((ALGOMODE) == CRYP_AlgoMode_AES_ECB) || \
+                                   ((ALGOMODE) == CRYP_AlgoMode_AES_CBC) || \
+                                   ((ALGOMODE) == CRYP_AlgoMode_AES_CTR) || \
+                                   ((ALGOMODE) == CRYP_AlgoMode_AES_Key))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d3/d86/group___c_r_y_p___algorithm___mode_1gac032fa07d83dc55d7babd4971d96d3cd">
+                <title>#define CRYP_AlgoMode_TDES_ECB</title>                
+<para>&lt; TDES Modes </para>
+
+                <para>Definition at line 133 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/d86/group___c_r_y_p___algorithm___mode_1ga75c9e649ad171d1ee97b60b237946fc3">
+                <title>#define CRYP_AlgoMode_TDES_CBC</title>                
+<para>DES Modes </para>
+
+                <para>Definition at line 134 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d3/d86/group___c_r_y_p___algorithm___mode_1ga54e4fe95b772fc6ab6015761d746ef9f">
+                <title>#define CRYP_AlgoMode_DES_CBC</title>                
+<para>AES Modes </para>
+
+                <para>Definition at line 138 of file stm32f4xx_cryp.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_cryp.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

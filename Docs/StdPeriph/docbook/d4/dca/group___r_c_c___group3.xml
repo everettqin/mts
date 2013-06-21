@@ -1,0 +1,1699 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dca/group___r_c_c___group3">
+    <title>Peripheral clocks configuration functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Peripheral clocks configuration functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                   Peripheral clocks configuration functions
+ ===============================================================================  
+
+  This section provide functions allowing to configure the Peripheral clocks. 
+  
+  1. The RTC clock which is derived from the LSI, LSE or HSE clock divided by 2 to 31.
+     
+  2. After restart from Reset or wakeup from STANDBY, all peripherals are off
+     except internal SRAM, Flash and JTAG. Before to start using a peripheral you
+     have to enable its interface clock. You can do this using RCC_AHBPeriphClockCmd()
+     , RCC_APB2PeriphClockCmd() and RCC_APB1PeriphClockCmd() functions.
+
+  3. To reset the peripherals configuration (to the default state after device reset)
+     you can use RCC_AHBPeriphResetCmd(), RCC_APB2PeriphResetCmd() and 
+     RCC_APB1PeriphResetCmd() functions.
+     
+  4. To further reduce power consumption in SLEEP mode the peripheral clocks can
+     be disabled prior to executing the WFI or WFE instructions. You can do this
+     using RCC_AHBPeriphClockLPModeCmd(), RCC_APB2PeriphClockLPModeCmd() and
+     RCC_APB1PeriphClockLPModeCmd() functions.  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga1473d8a5a020642966359611c44181b0">RCC_RTCCLKConfig</link> (
+uint32_t RCC_RTCCLKSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga9802f84846df2cea8e369234ed13b159">RCC_RTCCLKCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga636c3b72f35391e67f12a551b15fa54a">RCC_BackupResetCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga6c56f8529988fcc8f4dbffbc1bab27d0">RCC_I2SCLKConfig</link> (
+uint32_t RCC_I2SCLKSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga80c89116820d48bb38db2e7d5e5a49b9">RCC_AHB1PeriphClockCmd</link> (
+uint32_t RCC_AHB1Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1gaadffedbd87e796f01d9776b8ee01ff5e">RCC_AHB2PeriphClockCmd</link> (
+uint32_t RCC_AHB2Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga4eb8c119f2e9bf2bd2e042d27f151338">RCC_AHB3PeriphClockCmd</link> (
+uint32_t RCC_AHB3Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1gaee7cc5d73af7fe1986fceff8afd3973e">RCC_APB1PeriphClockCmd</link> (
+uint32_t RCC_APB1Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga56ff55caf8d835351916b40dd030bc87">RCC_APB2PeriphClockCmd</link> (
+uint32_t RCC_APB2Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1gaa7c450567f4731d4f0615f63586cad86">RCC_AHB1PeriphResetCmd</link> (
+uint32_t RCC_AHB1Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1gafb119d6d1955d1b8c361e8140845ac5a">RCC_AHB2PeriphResetCmd</link> (
+uint32_t RCC_AHB2Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1gaee44f159a1ca9ebdd7117bff387cd592">RCC_AHB3PeriphResetCmd</link> (
+uint32_t RCC_AHB3Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1gab197ae4369c10b92640a733b40ed2801">RCC_APB1PeriphResetCmd</link> (
+uint32_t RCC_APB1Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1gad94553850ac07106a27ee85fec37efdf">RCC_APB2PeriphResetCmd</link> (
+uint32_t RCC_APB2Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga5cd0d5adbc7496d7005b208bd19ce255">RCC_AHB1PeriphClockLPModeCmd</link> (
+uint32_t RCC_AHB1Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga1ac5bb9676ae9b48e50d6a95de922ce3">RCC_AHB2PeriphClockLPModeCmd</link> (
+uint32_t RCC_AHB2Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga4e1df07cdfd81c068902d9d35fcc3911">RCC_AHB3PeriphClockLPModeCmd</link> (
+uint32_t RCC_AHB3Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga84dd64badb84768cbcf19e241cadff50">RCC_APB1PeriphClockLPModeCmd</link> (
+uint32_t RCC_APB1Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/dca/group___r_c_c___group3_1ga30365b9e0b4c5d7e98c2675c862ddd7e">RCC_APB2PeriphClockLPModeCmd</link> (
+uint32_t RCC_APB2Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga1473d8a5a020642966359611c44181b0">
+                <title>void RCC_RTCCLKConfig (uint32_t RCC_RTCCLKSource)</title> <emphasis>Configures the RTC clock (RTCCLK).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>As the RTC clock configuration bits are in the Backup domain and write access is denied to this domain after reset, you have to enable write access using PWR_BackupAccessCmd(ENABLE) function before to configure the RTC clock source (to be done once after reset). </para>
+<simplesect/>
+<para>Once the RTC clock is configured it can&apos;t be changed unless the Backup domain is reset using <link linkend="df/d5a/group___r_c_c_1ga636c3b72f35391e67f12a551b15fa54a">RCC_BackupResetCmd()</link> function, or by a Power On Reset (POR).</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_RTCCLKSource, :</entry>
+                                <entry>
+<para>specifies the RTC clock source. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RCC_RTCCLKSource_LSE: LSE selected as RTC clock </para>
+</listitem>
+<listitem>
+<para>RCC_RTCCLKSource_LSI: LSI selected as RTC clock </para>
+</listitem>
+<listitem>
+<para>RCC_RTCCLKSource_HSE_Divx: HSE clock divided by x selected as RTC clock, where x:[2,31]</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Note: </title>
+
+<para>If the LSE or LSI is used as RTC clock source, the RTC continues to work in STOP and STANDBY modes, and can be used as wakeup source. However, when the HSE clock is used as RTC clock source, the RTC cannot be used in STOP and STANDBY modes. </para>
+<simplesect/>
+<para>The maximum input clock frequency for RTC is 1MHz (when using HSE as RTC clock source).</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga9802f84846df2cea8e369234ed13b159">
+                <title>void RCC_RTCCLKCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the RTC clock.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be used only after the RTC clock source was selected using the RCC_RTCCLKConfig function. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the RTC clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga636c3b72f35391e67f12a551b15fa54a">
+                <title>void RCC_BackupResetCmd (FunctionalState NewState)</title> <emphasis>Forces or releases the Backup domain reset.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function resets the RTC peripheral (including the backup registers) and the RTC clock source selection in RCC_CSR register. </para>
+<simplesect/>
+<para>The BKPSRAM is not affected by this reset. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the Backup domain reset. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga6c56f8529988fcc8f4dbffbc1bab27d0">
+                <title>void RCC_I2SCLKConfig (uint32_t RCC_I2SCLKSource)</title> <emphasis>Configures the I2S clock source (I2SCLK).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be called before enabling the I2S APB clock. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_I2SCLKSource, :</entry>
+                                <entry>
+<para>specifies the I2S clock source. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RCC_I2S2CLKSource_PLLI2S: PLLI2S clock used as I2S clock source </para>
+</listitem>
+<listitem>
+<para>RCC_I2S2CLKSource_Ext: External clock mapped on the I2S_CKIN pin used as I2S clock source </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga80c89116820d48bb38db2e7d5e5a49b9">
+                <title>void RCC_AHB1PeriphClockCmd (uint32_t RCC_AHB1Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the AHB1 peripheral clock.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_AHBPeriph, :</entry>
+                                <entry>
+<para>specifies the AHB1 peripheral to gates its clock. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_AHB1Periph_GPIOA: GPIOA clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOB: GPIOB clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOC: GPIOC clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOD: GPIOD clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOE: GPIOE clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOF: GPIOF clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOG: GPIOG clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOG: GPIOG clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOI: GPIOI clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_CRC: CRC clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_BKPSRAM: BKPSRAM interface clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_CCMDATARAMEN CCM data RAM interface clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_DMA1: DMA1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_DMA2: DMA2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_ETH_MAC: Ethernet MAC clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_ETH_MAC_Tx: Ethernet Transmission clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_ETH_MAC_Rx: Ethernet Reception clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_ETH_MAC_PTP: Ethernet PTP clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_OTG_HS: USB OTG HS clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_OTG_HS_ULPI: USB OTG HS ULPI clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1gaadffedbd87e796f01d9776b8ee01ff5e">
+                <title>void RCC_AHB2PeriphClockCmd (uint32_t RCC_AHB2Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the AHB2 peripheral clock.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_AHBPeriph, :</entry>
+                                <entry>
+<para>specifies the AHB2 peripheral to gates its clock. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_AHB2Periph_DCMI: DCMI clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_CRYP: CRYP clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_HASH: HASH clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_RNG: RNG clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_OTG_FS: USB OTG FS clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga4eb8c119f2e9bf2bd2e042d27f151338">
+                <title>void RCC_AHB3PeriphClockCmd (uint32_t RCC_AHB3Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the AHB3 peripheral clock.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_AHBPeriph, :</entry>
+                                <entry>
+<para>specifies the AHB3 peripheral to gates its clock. This parameter must be: RCC_AHB3Periph_FSMC </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1gaee7cc5d73af7fe1986fceff8afd3973e">
+                <title>void RCC_APB1PeriphClockCmd (uint32_t RCC_APB1Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the Low Speed APB (APB1) peripheral clock.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_APB1Periph, :</entry>
+                                <entry>
+<para>specifies the APB1 peripheral to gates its clock. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_APB1Periph_TIM2: TIM2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM3: TIM3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM4: TIM4 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM5: TIM5 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM6: TIM6 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM7: TIM7 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM12: TIM12 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM13: TIM13 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM14: TIM14 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_WWDG: WWDG clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_SPI2: SPI2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_SPI3: SPI3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_USART2: USART2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_USART3: USART3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_UART4: UART4 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_UART5: UART5 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_I2C1: I2C1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_I2C2: I2C2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_I2C3: I2C3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_CAN1: CAN1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_CAN2: CAN2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_PWR: PWR clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_DAC: DAC clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga56ff55caf8d835351916b40dd030bc87">
+                <title>void RCC_APB2PeriphClockCmd (uint32_t RCC_APB2Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the High Speed APB (APB2) peripheral clock.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_APB2Periph, :</entry>
+                                <entry>
+<para>specifies the APB2 peripheral to gates its clock. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_APB2Periph_TIM1: TIM1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM8: TIM8 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_USART1: USART1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_USART6: USART6 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_ADC1: ADC1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_ADC2: ADC2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_ADC3: ADC3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_SDIO: SDIO clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_SPI1: SPI1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_SYSCFG: SYSCFG clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM9: TIM9 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM10: TIM10 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM11: TIM11 clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1gaa7c450567f4731d4f0615f63586cad86">
+                <title>void RCC_AHB1PeriphResetCmd (uint32_t RCC_AHB1Periph, FunctionalState NewState)</title> <emphasis>Forces or releases AHB1 peripheral reset.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_AHB1Periph, :</entry>
+                                <entry>
+<para>specifies the AHB1 peripheral to reset. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_AHB1Periph_GPIOA: GPIOA clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOB: GPIOB clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOC: GPIOC clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOD: GPIOD clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOE: GPIOE clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOF: GPIOF clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOG: GPIOG clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOG: GPIOG clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOI: GPIOI clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_CRC: CRC clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_DMA1: DMA1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_DMA2: DMA2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_ETH_MAC: Ethernet MAC clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_OTG_HS: USB OTG HS clock</para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral reset. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1gafb119d6d1955d1b8c361e8140845ac5a">
+                <title>void RCC_AHB2PeriphResetCmd (uint32_t RCC_AHB2Periph, FunctionalState NewState)</title> <emphasis>Forces or releases AHB2 peripheral reset.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_AHB2Periph, :</entry>
+                                <entry>
+<para>specifies the AHB2 peripheral to reset. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_AHB2Periph_DCMI: DCMI clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_CRYP: CRYP clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_HASH: HASH clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_RNG: RNG clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_OTG_FS: USB OTG FS clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral reset. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1gaee44f159a1ca9ebdd7117bff387cd592">
+                <title>void RCC_AHB3PeriphResetCmd (uint32_t RCC_AHB3Periph, FunctionalState NewState)</title> <emphasis>Forces or releases AHB3 peripheral reset.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_AHB3Periph, :</entry>
+                                <entry>
+<para>specifies the AHB3 peripheral to reset. This parameter must be: RCC_AHB3Periph_FSMC </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral reset. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1gab197ae4369c10b92640a733b40ed2801">
+                <title>void RCC_APB1PeriphResetCmd (uint32_t RCC_APB1Periph, FunctionalState NewState)</title> <emphasis>Forces or releases Low Speed APB (APB1) peripheral reset.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_APB1Periph, :</entry>
+                                <entry>
+<para>specifies the APB1 peripheral to reset. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_APB1Periph_TIM2: TIM2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM3: TIM3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM4: TIM4 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM5: TIM5 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM6: TIM6 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM7: TIM7 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM12: TIM12 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM13: TIM13 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM14: TIM14 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_WWDG: WWDG clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_SPI2: SPI2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_SPI3: SPI3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_USART2: USART2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_USART3: USART3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_UART4: UART4 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_UART5: UART5 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_I2C1: I2C1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_I2C2: I2C2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_I2C3: I2C3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_CAN1: CAN1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_CAN2: CAN2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_PWR: PWR clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_DAC: DAC clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral reset. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1gad94553850ac07106a27ee85fec37efdf">
+                <title>void RCC_APB2PeriphResetCmd (uint32_t RCC_APB2Periph, FunctionalState NewState)</title> <emphasis>Forces or releases High Speed APB (APB2) peripheral reset.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_APB2Periph, :</entry>
+                                <entry>
+<para>specifies the APB2 peripheral to reset. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_APB2Periph_TIM1: TIM1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM8: TIM8 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_USART1: USART1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_USART6: USART6 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_ADC1: ADC1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_ADC2: ADC2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_ADC3: ADC3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_SDIO: SDIO clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_SPI1: SPI1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_SYSCFG: SYSCFG clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM9: TIM9 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM10: TIM10 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM11: TIM11 clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral reset. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga5cd0d5adbc7496d7005b208bd19ce255">
+                <title>void RCC_AHB1PeriphClockLPModeCmd (uint32_t RCC_AHB1Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the AHB1 peripheral clock during Low Power (Sleep) mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Peripheral clock gating in SLEEP mode can be used to further reduce power consumption. </para>
+<simplesect/>
+<para>After wakeup from SLEEP mode, the peripheral clock is enabled again. </para>
+<simplesect/>
+<para>By default, all peripheral clocks are enabled during SLEEP mode. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_AHBPeriph, :</entry>
+                                <entry>
+<para>specifies the AHB1 peripheral to gates its clock. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_AHB1Periph_GPIOA: GPIOA clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOB: GPIOB clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOC: GPIOC clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOD: GPIOD clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOE: GPIOE clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOF: GPIOF clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOG: GPIOG clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOG: GPIOG clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_GPIOI: GPIOI clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_CRC: CRC clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_BKPSRAM: BKPSRAM interface clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_DMA1: DMA1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_DMA2: DMA2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_ETH_MAC: Ethernet MAC clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_ETH_MAC_Tx: Ethernet Transmission clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_ETH_MAC_Rx: Ethernet Reception clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_ETH_MAC_PTP: Ethernet PTP clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_OTG_HS: USB OTG HS clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB1Periph_OTG_HS_ULPI: USB OTG HS ULPI clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga1ac5bb9676ae9b48e50d6a95de922ce3">
+                <title>void RCC_AHB2PeriphClockLPModeCmd (uint32_t RCC_AHB2Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the AHB2 peripheral clock during Low Power (Sleep) mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Peripheral clock gating in SLEEP mode can be used to further reduce power consumption. </para>
+<simplesect/>
+<para>After wakeup from SLEEP mode, the peripheral clock is enabled again. </para>
+<simplesect/>
+<para>By default, all peripheral clocks are enabled during SLEEP mode. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_AHBPeriph, :</entry>
+                                <entry>
+<para>specifies the AHB2 peripheral to gates its clock. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_AHB2Periph_DCMI: DCMI clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_CRYP: CRYP clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_HASH: HASH clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_RNG: RNG clock </para>
+</listitem>
+<listitem>
+<para>RCC_AHB2Periph_OTG_FS: USB OTG FS clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga4e1df07cdfd81c068902d9d35fcc3911">
+                <title>void RCC_AHB3PeriphClockLPModeCmd (uint32_t RCC_AHB3Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the AHB3 peripheral clock during Low Power (Sleep) mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Peripheral clock gating in SLEEP mode can be used to further reduce power consumption. </para>
+<simplesect/>
+<para>After wakeup from SLEEP mode, the peripheral clock is enabled again. </para>
+<simplesect/>
+<para>By default, all peripheral clocks are enabled during SLEEP mode. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_AHBPeriph, :</entry>
+                                <entry>
+<para>specifies the AHB3 peripheral to gates its clock. This parameter must be: RCC_AHB3Periph_FSMC </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga84dd64badb84768cbcf19e241cadff50">
+                <title>void RCC_APB1PeriphClockLPModeCmd (uint32_t RCC_APB1Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the APB1 peripheral clock during Low Power (Sleep) mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Peripheral clock gating in SLEEP mode can be used to further reduce power consumption. </para>
+<simplesect/>
+<para>After wakeup from SLEEP mode, the peripheral clock is enabled again. </para>
+<simplesect/>
+<para>By default, all peripheral clocks are enabled during SLEEP mode. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_APB1Periph, :</entry>
+                                <entry>
+<para>specifies the APB1 peripheral to gates its clock. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_APB1Periph_TIM2: TIM2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM3: TIM3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM4: TIM4 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM5: TIM5 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM6: TIM6 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM7: TIM7 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM12: TIM12 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM13: TIM13 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_TIM14: TIM14 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_WWDG: WWDG clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_SPI2: SPI2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_SPI3: SPI3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_USART2: USART2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_USART3: USART3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_UART4: UART4 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_UART5: UART5 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_I2C1: I2C1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_I2C2: I2C2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_I2C3: I2C3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_CAN1: CAN1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_CAN2: CAN2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_PWR: PWR clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB1Periph_DAC: DAC clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/dca/group___r_c_c___group3_1ga30365b9e0b4c5d7e98c2675c862ddd7e">
+                <title>void RCC_APB2PeriphClockLPModeCmd (uint32_t RCC_APB2Periph, FunctionalState NewState)</title> <emphasis>Enables or disables the APB2 peripheral clock during Low Power (Sleep) mode.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>Peripheral clock gating in SLEEP mode can be used to further reduce power consumption. </para>
+<simplesect/>
+<para>After wakeup from SLEEP mode, the peripheral clock is enabled again. </para>
+<simplesect/>
+<para>By default, all peripheral clocks are enabled during SLEEP mode. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>RCC_APB2Periph, :</entry>
+                                <entry>
+<para>specifies the APB2 peripheral to gates its clock. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_APB2Periph_TIM1: TIM1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM8: TIM8 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_USART1: USART1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_USART6: USART6 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_ADC1: ADC1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_ADC2: ADC2 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_ADC3: ADC3 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_SDIO: SDIO clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_SPI1: SPI1 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_SYSCFG: SYSCFG clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM9: TIM9 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM10: TIM10 clock </para>
+</listitem>
+<listitem>
+<para>RCC_APB2Periph_TIM11: TIM11 clock </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified peripheral clock. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

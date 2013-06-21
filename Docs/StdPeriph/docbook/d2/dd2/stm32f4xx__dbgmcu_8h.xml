@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dd2/stm32f4xx__dbgmcu_8h">
+    <title>stm32f4xx_dbgmcu.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga1c457289646b9d9814b93fbb994c9930">DBGMCU_SLEEP</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga4a71bcfa6868672674b5410d2fd372f4">DBGMCU_STOP</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga6eb848845f9207ffdccd0590da192002">DBGMCU_STANDBY</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga96d44dc7861b6a3f364942704f323a45">IS_DBGMCU_PERIPH</link> ((((PERIPH) &amp; 0xFFFFFFF8) == 0x00) &amp;&amp; ((PERIPH) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga8ba3a77260f748793c903468a4608bd1">DBGMCU_TIM2_STOP</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga28c01c2c30bed78e51d997007986fac9">DBGMCU_TIM3_STOP</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1gac87363a4018e2b23a907cfaf836494f1">DBGMCU_TIM4_STOP</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1gaf97e21534b3aa9482af496497a37ff4b">DBGMCU_TIM5_STOP</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga076cf7d18c7019e99f5f15962ab317eb">DBGMCU_TIM6_STOP</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1gaf593ca16ee6d3f1fabc549878f3f87f0">DBGMCU_TIM7_STOP</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga4814287cef24f57e795b0f5b0174b49c">DBGMCU_TIM12_STOP</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1gae0dd8a28977b261b013fa1ecda79b289">DBGMCU_TIM13_STOP</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga731f63d66045abee68dbc634070df051">DBGMCU_TIM14_STOP</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1gaa0da3d959bc74550ea6a02534768074f">DBGMCU_RTC_STOP</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga9ecfb95a943e2ad165395fff4fa12770">DBGMCU_WWDG_STOP</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga5b8b38b5589a2e26a57325553b5dfe23">DBGMCU_IWDG_STOP</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga1c0566af96833376cf1af98449cc914b">DBGMCU_I2C1_SMBUS_TIMEOUT</link> ((uint32_t)0x00200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga316f8eba36b7a796dd3c6b7d6640b4bf">DBGMCU_I2C2_SMBUS_TIMEOUT</link> ((uint32_t)0x00400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga95644fa7972fb0b437c77dd98ea1e136">DBGMCU_I2C3_SMBUS_TIMEOUT</link> ((uint32_t)0x00800000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga5ef70e050d1a95f350b6585336a55ca8">DBGMCU_CAN1_STOP</link> ((uint32_t)0x02000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1gace53677f1b7b9a52b592cf2b0f3f7178">DBGMCU_CAN2_STOP</link> ((uint32_t)0x04000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga10783f4e13d74c8a7516587e8d9cdcac">IS_DBGMCU_APB1PERIPH</link> ((((PERIPH) &amp; 0xF91FE200) == 0x00) &amp;&amp; ((PERIPH) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga017fb3101a3569426e82b066cb2f8848">DBGMCU_TIM1_STOP</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1gaa66feea7d5f2c253fe3f431f9dd4bd1e">DBGMCU_TIM8_STOP</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga560c557a0d0839dba04f7f2b47851109">DBGMCU_TIM9_STOP</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga1f0ae2f78e1f9d7eb819bf49b13b5327">DBGMCU_TIM10_STOP</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1gade03e5368c3bf8a2f43fc046f1d87f30">DBGMCU_TIM11_STOP</link> ((uint32_t)0x00040000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d20/group___d_b_g_m_c_u___exported___constants_1ga3ed84495007a409cad90734040be900e">IS_DBGMCU_APB2PERIPH</link> ((((PERIPH) &amp; 0xFFF8FFFC) == 0x00) &amp;&amp; ((PERIPH) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d0/d96/group___d_b_g_m_c_u_1ga47419e9ca75ab7be4c70feb82faa0511">DBGMCU_GetREVID</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d0/d96/group___d_b_g_m_c_u_1gac34193c34dbce759bf424957a31b3266">DBGMCU_GetDEVID</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d96/group___d_b_g_m_c_u_1gadf2f267f855ac1e4c03905c5dcfbd28b">DBGMCU_Config</link> (
+uint32_t DBGMCU_Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d96/group___d_b_g_m_c_u_1ga71349f1435471f71979c742360df88f0">DBGMCU_APB1PeriphConfig</link> (
+uint32_t DBGMCU_Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d96/group___d_b_g_m_c_u_1ga2f5ed438cada1be09ea51c42419be3a8">DBGMCU_APB2PeriphConfig</link> (
+uint32_t DBGMCU_Periph, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the DBGMCU firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dbgmcu.h</para>
+    </simplesect>
+</section>

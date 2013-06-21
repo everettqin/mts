@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d3a/group___f_s_m_c___n_o_r___s_r_a_m___controller">
+    <title>FSMC_NOR_SRAM_Controller</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="dd/d14/group___f_s_m_c___data___address___bus___multiplexing">FSMC_Data_Address_Bus_Multiplexing</link></para></listitem>
+            <listitem><para><link linkend="d8/dd8/group___f_s_m_c___memory___type">FSMC_Memory_Type</link></para></listitem>
+            <listitem><para><link linkend="d3/d0a/group___f_s_m_c___data___width">FSMC_Data_Width</link></para></listitem>
+            <listitem><para><link linkend="d0/d10/group___f_s_m_c___burst___access___mode">FSMC_Burst_Access_Mode</link></para></listitem>
+            <listitem><para><link linkend="d8/d73/group___f_s_m_c___asynchronous_wait">FSMC_AsynchronousWait</link></para></listitem>
+            <listitem><para><link linkend="db/d98/group___f_s_m_c___wait___signal___polarity">FSMC_Wait_Signal_Polarity</link></para></listitem>
+            <listitem><para><link linkend="d6/dc2/group___f_s_m_c___wrap___mode">FSMC_Wrap_Mode</link></para></listitem>
+            <listitem><para><link linkend="dd/d48/group___f_s_m_c___wait___timing">FSMC_Wait_Timing</link></para></listitem>
+            <listitem><para><link linkend="de/dae/group___f_s_m_c___write___operation">FSMC_Write_Operation</link></para></listitem>
+            <listitem><para><link linkend="da/d43/group___f_s_m_c___wait___signal">FSMC_Wait_Signal</link></para></listitem>
+            <listitem><para><link linkend="dc/d7e/group___f_s_m_c___extended___mode">FSMC_Extended_Mode</link></para></listitem>
+            <listitem><para><link linkend="db/d38/group___f_s_m_c___write___burst">FSMC_Write_Burst</link></para></listitem>
+            <listitem><para><link linkend="d3/ded/group___f_s_m_c___address___setup___time">FSMC_Address_Setup_Time</link></para></listitem>
+            <listitem><para><link linkend="d2/d2b/group___f_s_m_c___address___hold___time">FSMC_Address_Hold_Time</link></para></listitem>
+            <listitem><para><link linkend="dd/dc9/group___f_s_m_c___data___setup___time">FSMC_Data_Setup_Time</link></para></listitem>
+            <listitem><para><link linkend="d4/d7a/group___f_s_m_c___bus___turn__around___duration">FSMC_Bus_Turn_around_Duration</link></para></listitem>
+            <listitem><para><link linkend="d0/db7/group___f_s_m_c___c_l_k___division">FSMC_CLK_Division</link></para></listitem>
+            <listitem><para><link linkend="de/d84/group___f_s_m_c___data___latency">FSMC_Data_Latency</link></para></listitem>
+            <listitem><para><link linkend="d4/dce/group___f_s_m_c___access___mode">FSMC_Access_Mode</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="dd/d14/group___f_s_m_c___data___address___bus___multiplexing.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/dd8/group___f_s_m_c___memory___type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d0a/group___f_s_m_c___data___width.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d10/group___f_s_m_c___burst___access___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d8/d73/group___f_s_m_c___asynchronous_wait.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d98/group___f_s_m_c___wait___signal___polarity.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/dc2/group___f_s_m_c___wrap___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d48/group___f_s_m_c___wait___timing.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/dae/group___f_s_m_c___write___operation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d43/group___f_s_m_c___wait___signal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d7e/group___f_s_m_c___extended___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d38/group___f_s_m_c___write___burst.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/ded/group___f_s_m_c___address___setup___time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d2b/group___f_s_m_c___address___hold___time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/dc9/group___f_s_m_c___data___setup___time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/d7a/group___f_s_m_c___bus___turn__around___duration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/db7/group___f_s_m_c___c_l_k___division.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d84/group___f_s_m_c___data___latency.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/dce/group___f_s_m_c___access___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

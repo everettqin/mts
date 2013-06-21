@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions">
+    <title>RTC_Tamper_Sampling_Frequencies_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8111f838f023394683814baebbd6a018">RTC_TamperSamplingFreq_RTCCLK_Div32768</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4ecb6f350e1f309458365ac4d9d3775d">RTC_TamperSamplingFreq_RTCCLK_Div16384</link> ((uint32_t)0x000000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga63de5a2c30540bd2b0d6bd9074f1c650">RTC_TamperSamplingFreq_RTCCLK_Div8192</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga07cc43608fbf68df4159b0e4d759feeb">RTC_TamperSamplingFreq_RTCCLK_Div4096</link> ((uint32_t)0x00000300)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4bc9217c856fc9e4dc15c83f826d67ba">RTC_TamperSamplingFreq_RTCCLK_Div2048</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga39c88776ba8589000ab94b6d5da5de90">RTC_TamperSamplingFreq_RTCCLK_Div1024</link> ((uint32_t)0x00000500)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8528f31207c85d0ed76c9678f11e7e49">RTC_TamperSamplingFreq_RTCCLK_Div512</link> ((uint32_t)0x00000600)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1gad0f904e57e4d060e005a5bbceceb51f7">RTC_TamperSamplingFreq_RTCCLK_Div256</link> ((uint32_t)0x00000700)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1gaf355fb7bd95d7cffb14a212b4507cbdb">IS_RTC_TAMPER_SAMPLING_FREQ</link> (((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8111f838f023394683814baebbd6a018">RTC_TamperSamplingFreq_RTCCLK_Div32768</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4ecb6f350e1f309458365ac4d9d3775d">RTC_TamperSamplingFreq_RTCCLK_Div16384</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga63de5a2c30540bd2b0d6bd9074f1c650">RTC_TamperSamplingFreq_RTCCLK_Div8192</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga07cc43608fbf68df4159b0e4d759feeb">RTC_TamperSamplingFreq_RTCCLK_Div4096</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4bc9217c856fc9e4dc15c83f826d67ba">RTC_TamperSamplingFreq_RTCCLK_Div2048</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga39c88776ba8589000ab94b6d5da5de90">RTC_TamperSamplingFreq_RTCCLK_Div1024</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8528f31207c85d0ed76c9678f11e7e49">RTC_TamperSamplingFreq_RTCCLK_Div512</link>) || \
+                                           ((FREQ) ==<link linkend="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1gad0f904e57e4d060e005a5bbceceb51f7">RTC_TamperSamplingFreq_RTCCLK_Div256</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8111f838f023394683814baebbd6a018">
+                <title>#define RTC_TamperSamplingFreq_RTCCLK_Div32768</title>                
+<para>Each of the tamper inputs are sampled with a frequency = RTCCLK / 32768 </para>
+
+                <para>Definition at line 537 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4ecb6f350e1f309458365ac4d9d3775d">
+                <title>#define RTC_TamperSamplingFreq_RTCCLK_Div16384</title>                
+<para>Each of the tamper inputs are sampled with a frequency = RTCCLK / 16384 </para>
+
+                <para>Definition at line 539 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga63de5a2c30540bd2b0d6bd9074f1c650">
+                <title>#define RTC_TamperSamplingFreq_RTCCLK_Div8192</title>                
+<para>Each of the tamper inputs are sampled with a frequency = RTCCLK / 8192 </para>
+
+                <para>Definition at line 541 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga07cc43608fbf68df4159b0e4d759feeb">
+                <title>#define RTC_TamperSamplingFreq_RTCCLK_Div4096</title>                
+<para>Each of the tamper inputs are sampled with a frequency = RTCCLK / 4096 </para>
+
+                <para>Definition at line 543 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga4bc9217c856fc9e4dc15c83f826d67ba">
+                <title>#define RTC_TamperSamplingFreq_RTCCLK_Div2048</title>                
+<para>Each of the tamper inputs are sampled with a frequency = RTCCLK / 2048 </para>
+
+                <para>Definition at line 545 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga39c88776ba8589000ab94b6d5da5de90">
+                <title>#define RTC_TamperSamplingFreq_RTCCLK_Div1024</title>                
+<para>Each of the tamper inputs are sampled with a frequency = RTCCLK / 1024 </para>
+
+                <para>Definition at line 547 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1ga8528f31207c85d0ed76c9678f11e7e49">
+                <title>#define RTC_TamperSamplingFreq_RTCCLK_Div512</title>                
+<para>Each of the tamper inputs are sampled with a frequency = RTCCLK / 512 </para>
+
+                <para>Definition at line 549 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d35/group___r_t_c___tamper___sampling___frequencies___definitions_1gad0f904e57e4d060e005a5bbceceb51f7">
+                <title>#define RTC_TamperSamplingFreq_RTCCLK_Div256</title>                
+<para>Each of the tamper inputs are sampled with a frequency = RTCCLK / 256 </para>
+
+                <para>Definition at line 551 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

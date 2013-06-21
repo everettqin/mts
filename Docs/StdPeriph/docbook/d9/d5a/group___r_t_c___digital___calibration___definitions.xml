@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d5a/group___r_t_c___digital___calibration___definitions">
+    <title>RTC_Digital_Calibration_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d5a/group___r_t_c___digital___calibration___definitions_1gaf3e952081f1b3e73b9abc9a53ce465bb">RTC_CalibSign_Positive</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d5a/group___r_t_c___digital___calibration___definitions_1ga362c7fef775bee9999bc19a9b47175f7">RTC_CalibSign_Negative</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d5a/group___r_t_c___digital___calibration___definitions_1ga8e9688a85c6708500b5f56ddc056beb1">IS_RTC_CALIB_SIGN</link> (((SIGN) == RTC_CalibSign_Positive) || \
+                                 ((SIGN) == RTC_CalibSign_Negative))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/d5a/group___r_t_c___digital___calibration___definitions_1gafa25555b5daedee7b1fcba41afa6ed8b">IS_RTC_CALIB_VALUE</link> ((VALUE) &lt; 0x20)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

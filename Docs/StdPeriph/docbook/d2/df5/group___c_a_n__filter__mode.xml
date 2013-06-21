@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/df5/group___c_a_n__filter__mode">
+    <title>CAN_filter_mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/df5/group___c_a_n__filter__mode_1ga8136e518fb31fd91079e4c7c4c19c94b">CAN_FilterMode_IdMask</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/df5/group___c_a_n__filter__mode_1ga91e9144f71b15ac345ee89314711c158">CAN_FilterMode_IdList</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/df5/group___c_a_n__filter__mode_1gae684565d5392c12fd333379e5ec840f8">IS_CAN_FILTER_MODE</link> (((MODE) == <link linkend="d2/df5/group___c_a_n__filter__mode_1ga8136e518fb31fd91079e4c7c4c19c94b">CAN_FilterMode_IdMask</link>) || \
+                                  ((MODE) == <link linkend="d2/df5/group___c_a_n__filter__mode_1ga91e9144f71b15ac345ee89314711c158">CAN_FilterMode_IdList</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d2/df5/group___c_a_n__filter__mode_1ga8136e518fb31fd91079e4c7c4c19c94b">
+                <title>#define CAN_FilterMode_IdMask</title>                
+<para>identifier/mask mode </para>
+
+                <para>Definition at line 325 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d2/df5/group___c_a_n__filter__mode_1ga91e9144f71b15ac345ee89314711c158">
+                <title>#define CAN_FilterMode_IdList</title>                
+<para>identifier list mode </para>
+
+                <para>Definition at line 326 of file stm32f4xx_can.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_can.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d31/group___t_i_m___d_m_a___burst___length">
+    <title>TIM_DMA_Burst_Length</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1gab87f91f1c5583b9888cb6bb37fc639e2">TIM_DMABurstLength_1Transfer</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga829504c3e8c90a9445f6a223bc3034f8">TIM_DMABurstLength_2Transfers</link> ((uint16_t)0x0100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga3a99863a0925e0cc9a11b91aade66f11">TIM_DMABurstLength_3Transfers</link> ((uint16_t)0x0200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga84bfeb309593a1ac580e233bf7514b36">TIM_DMABurstLength_4Transfers</link> ((uint16_t)0x0300)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga44f8aa51fbe8887a5f3c37a0e776902c">TIM_DMABurstLength_5Transfers</link> ((uint16_t)0x0400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga8be40a21654eea72e9c1bf9922675b22">TIM_DMABurstLength_6Transfers</link> ((uint16_t)0x0500)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1gaf2ae83bd73b0e92b73e5ebfc11f9bfad">TIM_DMABurstLength_7Transfers</link> ((uint16_t)0x0600)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga8a760d7114425596736b0ecdbe5fdea6">TIM_DMABurstLength_8Transfers</link> ((uint16_t)0x0700)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga98b208205c133557a9d67a0921559a66">TIM_DMABurstLength_9Transfers</link> ((uint16_t)0x0800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga2fc09f2148cf6ebddc8e67116212259c">TIM_DMABurstLength_10Transfers</link> ((uint16_t)0x0900)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga0ca63a3caeaf1e85bd54961891949de7">TIM_DMABurstLength_11Transfers</link> ((uint16_t)0x0A00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga9160d52913bbd7ad1e663ff943d01852">TIM_DMABurstLength_12Transfers</link> ((uint16_t)0x0B00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga11485e9eee8a6a7edc1df868755eab85">TIM_DMABurstLength_13Transfers</link> ((uint16_t)0x0C00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1gab1a097ca7404e518839df99795443fb0">TIM_DMABurstLength_14Transfers</link> ((uint16_t)0x0D00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1gad13373f5fd246557a4fc487dc43c37ec">TIM_DMABurstLength_15Transfers</link> ((uint16_t)0x0E00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1gafb644e6033f7b46c602b02754b69fde0">TIM_DMABurstLength_16Transfers</link> ((uint16_t)0x0F00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1ga5b2c97f650a3c1726965187d852b8cc5">TIM_DMABurstLength_17Transfers</link> ((uint16_t)0x1000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1gaed9f2afef174079f6eb6927abd995b9b">TIM_DMABurstLength_18Transfers</link> ((uint16_t)0x1100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/d31/group___t_i_m___d_m_a___burst___length_1gafd09cf0887b01a15101ba7dd6e2b4ba7">IS_TIM_DMA_LENGTH</link> (((LENGTH) == TIM_DMABurstLength_1Transfer) || \
+                                   ((LENGTH) == TIM_DMABurstLength_2Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_3Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_4Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_5Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_6Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_7Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_8Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_9Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_10Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_11Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_12Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_13Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_14Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_15Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_16Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_17Transfers) || \
+                                   ((LENGTH) == TIM_DMABurstLength_18Transfers))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

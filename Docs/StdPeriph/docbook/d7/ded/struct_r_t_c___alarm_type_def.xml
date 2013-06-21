@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/ded/struct_r_t_c___alarm_type_def">
+<title>RTC_AlarmTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="dd/dbb/stm32f4xx__rtc_8h">&lt;stm32f4xx_rtc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>RTC_TimeTypeDef RTC_AlarmTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t RTC_AlarmMask</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t RTC_AlarmDateWeekDaySel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t RTC_AlarmDateWeekDay</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>RTC Alarm structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>RTC_TimeTypeDef RTC_AlarmTime</title>                
+<para>Specifies the RTC Alarm Time members. </para>
+
+                <para>Definition at line 102 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t RTC_AlarmMask</title>                
+<para><programlisting><literallayout> Specifies the RTC Alarm Masks.
+</literallayout></programlisting> This parameter can be a value of <link linkend="dc/dc9/group___r_t_c___alarm_mask___definitions">RTC_AlarmMask_Definitions</link> </para>
+
+                <para>Definition at line 104 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t RTC_AlarmDateWeekDaySel</title>                
+<para><programlisting><literallayout> Specifies the RTC Alarm is on Date or WeekDay.
+</literallayout></programlisting> This parameter can be a value of <link linkend="d8/dee/group___r_t_c___alarm_date_week_day___definitions">RTC_AlarmDateWeekDay_Definitions</link> </para>
+
+                <para>Definition at line 107 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint8_t RTC_AlarmDateWeekDay</title>                
+<para><programlisting><literallayout> Specifies the RTC Alarm Date/WeekDay.
+</literallayout></programlisting> If the Alarm Date is selected, this parameter must be set to a value in the 1-31 range. If the Alarm WeekDay is selected, this parameter can be a value of <link linkend="d4/d4c/group___r_t_c___week_day___definitions">RTC_WeekDay_Definitions</link> </para>
+
+                <para>Definition at line 110 of file stm32f4xx_rtc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_rtc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

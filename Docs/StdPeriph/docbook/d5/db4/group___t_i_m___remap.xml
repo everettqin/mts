@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/db4/group___t_i_m___remap">
+    <title>TIM_Remap</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1ga4382cc14c8c5fba6ea1826bbac1c661a">TIM2_TIM8_TRGO</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1ga1136f862c583441e16dfd476bcd4d2dc">TIM2_ETH_PTP</link> ((uint16_t)0x0400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1gaea7d327d7d540269ee321a0657c01cd0">TIM2_USBFS_SOF</link> ((uint16_t)0x0800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1ga49b8df3318ad0bf238953a2d8c6742af">TIM2_USBHS_SOF</link> ((uint16_t)0x0C00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1ga64d3cf8f3b833eea9e78c79ed1322f2a">TIM5_GPIO</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1gaf7e3c9769149255920a9088fd51c7e81">TIM5_LSI</link> ((uint16_t)0x0040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1ga14bf08ccc822156ed44f9234825b6858">TIM5_LSE</link> ((uint16_t)0x0080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1gad95bd2157c29f94703c0942ca3d2b767">TIM5_RTC</link> ((uint16_t)0x00C0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1ga96850a4ae7ae9590f1ab9c04ec32bb06">TIM11_GPIO</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1ga1d6d3f53290050b59b202e6d72af673a">TIM11_HSE</link> ((uint16_t)0x0002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/db4/group___t_i_m___remap_1ga7faab73212e996d8b49555d3ad5be965">IS_TIM_REMAP</link> (((TIM_REMAP) == TIM2_TIM8_TRGO)||\
+                                  ((TIM_REMAP) == TIM2_ETH_PTP)||\
+                                  ((TIM_REMAP) == TIM2_USBFS_SOF)||\
+                                  ((TIM_REMAP) == TIM2_USBHS_SOF)||\
+                                  ((TIM_REMAP) == TIM5_GPIO)||\
+                                  ((TIM_REMAP) == TIM5_LSI)||\
+                                  ((TIM_REMAP) == TIM5_LSE)||\
+                                  ((TIM_REMAP) == TIM5_RTC)||\
+                                  ((TIM_REMAP) == TIM11_GPIO)||\
+                                  ((TIM_REMAP) == TIM11_HSE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

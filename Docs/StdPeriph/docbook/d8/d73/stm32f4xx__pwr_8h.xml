@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d73/stm32f4xx__pwr_8h">
+    <title>stm32f4xx_pwr.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gac8ec8a52046b242f03dcf8a4f32fb04b">PWR_PVDLevel_0</link> PWR_CR_PLS_LEV0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1ga0d090f9683877c0e8a5546a56d5ad888">PWR_PVDLevel_1</link> PWR_CR_PLS_LEV1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gabaccdd03ff6fbfa16e6a1283a2e6b989">PWR_PVDLevel_2</link> PWR_CR_PLS_LEV2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gabbd91e2587a81908837b0a759694fba9">PWR_PVDLevel_3</link> PWR_CR_PLS_LEV3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1ga81f75ef83b2aa4b0f23f75b01ae6afcf">PWR_PVDLevel_4</link> PWR_CR_PLS_LEV4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1ga0dfeb8ca4a8cb68dd99b1fe087c9440a">PWR_PVDLevel_5</link> PWR_CR_PLS_LEV5</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gaf52c143ded625cd4d4f06a5954b55af4">PWR_PVDLevel_6</link> PWR_CR_PLS_LEV6</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1ga53439278c8f3a05b810b43fc3ad79f7b">PWR_PVDLevel_7</link> PWR_CR_PLS_LEV7</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/d18/group___p_w_r___p_v_d__detection__level_1gabac4485a57abc97aad91eaa0b65ae927">IS_PWR_PVD_LEVEL</link> (((LEVEL) == PWR_PVDLevel_0) || ((LEVEL) == PWR_PVDLevel_1)|| \
+                                 ((LEVEL) == PWR_PVDLevel_2) || ((LEVEL) == PWR_PVDLevel_3)|| \
+                                 ((LEVEL) == PWR_PVDLevel_4) || ((LEVEL) == PWR_PVDLevel_5)|| \
+                                 ((LEVEL) == PWR_PVDLevel_6) || ((LEVEL) == PWR_PVDLevel_7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da9/group___p_w_r___regulator__state__in___s_t_o_p__mode_1gabf58b999bff6b4bf0fb5b97d74a75683">PWR_Regulator_ON</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da9/group___p_w_r___regulator__state__in___s_t_o_p__mode_1ga13745136d094661358d373b67ebf1ac7">PWR_Regulator_LowPower</link> PWR_CR_LPDS</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da9/group___p_w_r___regulator__state__in___s_t_o_p__mode_1ga03c105070272141c0bab5f2b74469072">IS_PWR_REGULATOR</link> (((REGULATOR) == PWR_Regulator_ON) || \
+                                     ((REGULATOR) == PWR_Regulator_LowPower))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d35/group___p_w_r___s_t_o_p__mode__entry_1gaa1e1362f3d0b93e8f5f674e18cfc96c4">PWR_STOPEntry_WFI</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d35/group___p_w_r___s_t_o_p__mode__entry_1gaac98ac55fb8764121d4168d99c9b369e">PWR_STOPEntry_WFE</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d35/group___p_w_r___s_t_o_p__mode__entry_1ga4a94eb1f400dec6e486fbc229cbea8a0">IS_PWR_STOP_ENTRY</link> (((ENTRY) == PWR_STOPEntry_WFI) || ((ENTRY) == PWR_STOPEntry_WFE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/da8/group___p_w_r___regulator___voltage___scale_1ga3626811fd793b5f5cf9d510acfcbffc4">PWR_Regulator_Voltage_Scale1</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/da8/group___p_w_r___regulator___voltage___scale_1ga93ae6faf954e9478cf719f9b05c9cba8">PWR_Regulator_Voltage_Scale2</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/da8/group___p_w_r___regulator___voltage___scale_1gab7f9039ed34cc5af3d57606c726e66a2">IS_PWR_REGULATOR_VOLTAGE</link> (((VOLTAGE) == PWR_Regulator_Voltage_Scale1) || ((VOLTAGE) == PWR_Regulator_Voltage_Scale2))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga2d06760a5769e729b06d41e37036d58e">PWR_FLAG_WU</link> PWR_CSR_WUF</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga9e55f0b5dec2346d5c8dee3ab3c0c2df">PWR_FLAG_SB</link> PWR_CSR_SBF</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1gaefd05d58cc050eeef83a1b5c520b2c2a">PWR_FLAG_PVDO</link> PWR_CSR_PVDO</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga4d4937c0a493bc2ff70e7e66c301c191">PWR_FLAG_BRR</link> PWR_CSR_BRR</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga7c0f807d7e91750a9bb571ca94dc5f71">PWR_FLAG_VOSRDY</link> PWR_CSR_VOSRDY</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/da2/group___p_w_r___flag___legacy_1ga1ada28e60d553d036ebfabdd5566f52b">PWR_FLAG_REGRDY</link> PWR_FLAG_VOSRDY</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1gadc822638d0dd52d2f920808dd96c00a1">IS_PWR_GET_FLAG</link> (((FLAG) == PWR_FLAG_WU) || ((FLAG) == PWR_FLAG_SB) || \
+                               ((FLAG) == PWR_FLAG_PVDO) || ((FLAG) == PWR_FLAG_BRR) || \
+                               ((FLAG) == PWR_FLAG_VOSRDY))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/dd2/group___p_w_r___flag_1ga36d35a770e683e4a0baf3aac350fcb5a">IS_PWR_CLEAR_FLAG</link> (((FLAG) == PWR_FLAG_WU) || ((FLAG) == PWR_FLAG_SB))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1gad03a0aac7bc3bc3a9fd012f3769a6990">PWR_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga0741aea35572b1a75f82b74de12df800">PWR_BackupAccessCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga237c143ef6aa55abb8049fa7bf24ab8f">PWR_PVDLevelConfig</link> (
+uint32_t PWR_PVDLevel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga42cad476b816e0a33594a933b3ed1acd">PWR_PVDCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1gae5fd6f9336ef8c60d5483651cb0d1a00">PWR_WakeUpPinCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga83a4d6c5b048f2dab18e8fb04f5368d7">PWR_BackupRegulatorCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1gada193dea79762f379d4e666a98f28d89">PWR_MainRegulatorModeConfig</link> (
+uint32_t PWR_Regulator_Voltage)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1gaf0af19a9fdf0324f2ada60c9bce1aab5">PWR_FlashPowerDownCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga694676ac06a9baf50eae45adae0118ab">PWR_EnterSTOPMode</link> (
+uint32_t PWR_Regulator, uint8_t PWR_STOPEntry)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga00ddae00a9c327b81b24d2597b0052f3">PWR_EnterSTANDBYMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d1/d3f/group___p_w_r___exported___constants_1gaa980163a4d83304280ee34942464b4ec">PWR_GetFlagStatus</link> (
+uint32_t PWR_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d3f/group___p_w_r___exported___constants_1ga01c4b2fbd16514b993324e101c3ddf7c">PWR_ClearFlag</link> (
+uint32_t PWR_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the PWR firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h</para>
+    </simplesect>
+</section>

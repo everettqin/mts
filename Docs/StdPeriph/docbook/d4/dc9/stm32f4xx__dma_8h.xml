@@ -1,0 +1,1427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dc9/stm32f4xx__dma_8h">
+    <title>stm32f4xx_dma.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d2c/group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8">IS_DMA_ALL_PERIPH</link> (((PERIPH) == DMA1_Stream0) || \
+                                   ((PERIPH) == DMA1_Stream1) || \
+                                   ((PERIPH) == DMA1_Stream2) || \
+                                   ((PERIPH) == DMA1_Stream3) || \
+                                   ((PERIPH) == DMA1_Stream4) || \
+                                   ((PERIPH) == DMA1_Stream5) || \
+                                   ((PERIPH) == DMA1_Stream6) || \
+                                   ((PERIPH) == DMA1_Stream7) || \
+                                   ((PERIPH) == DMA2_Stream0) || \
+                                   ((PERIPH) == DMA2_Stream1) || \
+                                   ((PERIPH) == DMA2_Stream2) || \
+                                   ((PERIPH) == DMA2_Stream3) || \
+                                   ((PERIPH) == DMA2_Stream4) || \
+                                   ((PERIPH) == DMA2_Stream5) || \
+                                   ((PERIPH) == DMA2_Stream6) || \
+                                   ((PERIPH) == DMA2_Stream7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d2c/group___d_m_a___exported___constants_1gaad08400369c8c129927cdb9cf1baae29">IS_DMA_ALL_CONTROLLER</link> (((CONTROLLER) == DMA1) || \
+                                           ((CONTROLLER) == DMA2))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1ga4979fc18bd59701dec52c8fa89b5edb2">DMA_Channel_0</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gacad41f71e3a940abd495b0aab3b4e8cb">DMA_Channel_1</link> ((uint32_t)0x02000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1ga6b5d9fcfd72335777ce2796af6300574">DMA_Channel_2</link> ((uint32_t)0x04000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gaf835103c99f21d1b1c04d5c98471c1d5">DMA_Channel_3</link> ((uint32_t)0x06000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gac8a40bf3a421b434177e988263a3d787">DMA_Channel_4</link> ((uint32_t)0x08000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gae3dd5d28def40846aea8e3013d63311b">DMA_Channel_5</link> ((uint32_t)0x0A000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1ga141e89570dabba4f778e8e8df80e7812">DMA_Channel_6</link> ((uint32_t)0x0C000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1ga14f1265827ce49dad5075986118cc542">DMA_Channel_7</link> ((uint32_t)0x0E000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/dbb/group___d_m_a__channel_1gac7f4709d9244f25b853789d888a74d46">IS_DMA_CHANNEL</link> (((CHANNEL) == DMA_Channel_0) || \
+                                 ((CHANNEL) == DMA_Channel_1) || \
+                                 ((CHANNEL) == DMA_Channel_2) || \
+                                 ((CHANNEL) == DMA_Channel_3) || \
+                                 ((CHANNEL) == DMA_Channel_4) || \
+                                 ((CHANNEL) == DMA_Channel_5) || \
+                                 ((CHANNEL) == DMA_Channel_6) || \
+                                 ((CHANNEL) == DMA_Channel_7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d15/group___d_m_a__data__transfer__direction_1ga4d7847b57371eef92ec5da34511416a7">DMA_DIR_PeripheralToMemory</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d15/group___d_m_a__data__transfer__direction_1gae1e6aa2722beb09b5be7140205244986">DMA_DIR_MemoryToPeripheral</link> ((uint32_t)0x00000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d15/group___d_m_a__data__transfer__direction_1gafb7d5b786f2fb56a903936cdc6d5e89a">DMA_DIR_MemoryToMemory</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d15/group___d_m_a__data__transfer__direction_1gae2b02e8e823854bcd7c5746cdd29e70d">IS_DMA_DIRECTION</link> (((DIRECTION) == DMA_DIR_PeripheralToMemory ) || \
+                                     ((DIRECTION) == DMA_DIR_MemoryToPeripheral)  || \
+                                     ((DIRECTION) == DMA_DIR_MemoryToMemory))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/d0b/group___d_m_a__data__buffer__size_1ga72ef4033bb3bc2cdfdbe579083b05e32">IS_DMA_BUFFER_SIZE</link> (((SIZE) &gt;= 0x1) &amp;&amp; ((SIZE) &lt; 0x10000))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/ddb/group___d_m_a__peripheral__incremented__mode_1gaf7921ea423fb60701a091c508cd0f33a">DMA_PeripheralInc_Enable</link> ((uint32_t)0x00000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/ddb/group___d_m_a__peripheral__incremented__mode_1ga0fe3ff9c67bec802dd239fd17c3dbd31">DMA_PeripheralInc_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/ddb/group___d_m_a__peripheral__incremented__mode_1ga28762105b3f567c16ba79a47e68ff0fa">IS_DMA_PERIPHERAL_INC_STATE</link> (((STATE) == DMA_PeripheralInc_Enable) || \
+                                            ((STATE) == DMA_PeripheralInc_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d3c/group___d_m_a__memory__incremented__mode_1ga4e8cb23d039c74bbbf365d7678835bbb">DMA_MemoryInc_Enable</link> ((uint32_t)0x00000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d3c/group___d_m_a__memory__incremented__mode_1ga795a277c997048783a383b026f19a5ab">DMA_MemoryInc_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d3c/group___d_m_a__memory__incremented__mode_1gaa880f39d499d1e80449cf80381e4eb67">IS_DMA_MEMORY_INC_STATE</link> (((STATE) == DMA_MemoryInc_Enable) || \
+                                        ((STATE) == DMA_MemoryInc_Disable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfd/group___d_m_a__peripheral__data__size_1ga7577035ae4ff413164000227a8cea346">DMA_PeripheralDataSize_Byte</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfd/group___d_m_a__peripheral__data__size_1gab1988e5005ee65c261018f62866e4585">DMA_PeripheralDataSize_HalfWord</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfd/group___d_m_a__peripheral__data__size_1ga516ea7a40945d8325fe73e079b245ea1">DMA_PeripheralDataSize_Word</link> ((uint32_t)0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfd/group___d_m_a__peripheral__data__size_1gad7916e0ae55cdf5efdfa68a09a028037">IS_DMA_PERIPHERAL_DATA_SIZE</link> (((SIZE) == DMA_PeripheralDataSize_Byte)  || \
+                                           ((SIZE) == DMA_PeripheralDataSize_HalfWord) || \
+                                           ((SIZE) == DMA_PeripheralDataSize_Word))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d35/group___d_m_a__memory__data__size_1gad6093bccb60ff9adf81e21c73c58ba17">DMA_MemoryDataSize_Byte</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d35/group___d_m_a__memory__data__size_1ga74c9b4e547f5eaaf35d4fd3d01ed5741">DMA_MemoryDataSize_HalfWord</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d35/group___d_m_a__memory__data__size_1gaff403722a6f82d4b34c9ef306507bb98">DMA_MemoryDataSize_Word</link> ((uint32_t)0x00004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d35/group___d_m_a__memory__data__size_1gac9e3748cebcb16d4ae4206d562bc804c">IS_DMA_MEMORY_DATA_SIZE</link> (((SIZE) == DMA_MemoryDataSize_Byte)  || \
+                                       ((SIZE) == DMA_MemoryDataSize_HalfWord) || \
+                                       ((SIZE) == DMA_MemoryDataSize_Word ))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dba/group___d_m_a__circular__normal__mode_1ga36400f5b5095f1102ede4760d7a5959c">DMA_Mode_Normal</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dba/group___d_m_a__circular__normal__mode_1ga36327b14c302098fbc5823ac3f1ae020">DMA_Mode_Circular</link> ((uint32_t)0x00000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/dba/group___d_m_a__circular__normal__mode_1gad88ee5030574d6a573904378fb62c7ac">IS_DMA_MODE</link> (((MODE) == DMA_Mode_Normal ) || \
+                           ((MODE) == DMA_Mode_Circular))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1gaf414e0aa8dd42aee6f83f88ab6175179">DMA_Priority_Low</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1ga8e0d4a958f4288c6c759945789490f38">DMA_Priority_Medium</link> ((uint32_t)0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1gae2441c0b4d4ba9945a6f4f7d08045a8e">DMA_Priority_High</link> ((uint32_t)0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1gadccd2f8b2ac24ba4fd485dd5b9b48671">DMA_Priority_VeryHigh</link> ((uint32_t)0x00030000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/da7/group___d_m_a__priority__level_1gaa1cae2ab458948511596467c87cd02b6">IS_DMA_PRIORITY</link> (((PRIORITY) == DMA_Priority_Low )   || \
+                                   ((PRIORITY) == DMA_Priority_Medium) || \
+                                   ((PRIORITY) == DMA_Priority_High)   || \
+                                   ((PRIORITY) == DMA_Priority_VeryHigh))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/db9/group___d_m_a__fifo__direct__mode_1gadad9e503fa9867a981e3090d333483d7">DMA_FIFOMode_Disable</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/db9/group___d_m_a__fifo__direct__mode_1ga482bc2af420602d1a8c2aa35049a3857">DMA_FIFOMode_Enable</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d0/db9/group___d_m_a__fifo__direct__mode_1gadb90a893aeb49fd4bc14af750af3837c">IS_DMA_FIFO_MODE_STATE</link> (((STATE) == DMA_FIFOMode_Disable ) || \
+                                       ((STATE) == DMA_FIFOMode_Enable))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1gacc98384bbba43a9c4f70b448518acfe4">DMA_FIFOThreshold_1QuarterFull</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1ga626b546865960343fdcfdf33ac8ceb03">DMA_FIFOThreshold_HalfFull</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1ga6f041008fce4bb341f9a518d803a308b">DMA_FIFOThreshold_3QuartersFull</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1ga9f1008e0df7d41d910ed89d7e0872e69">DMA_FIFOThreshold_Full</link> ((uint32_t)0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1gaeafc0d9e327d6e5b26cd37f6744b232f">IS_DMA_FIFO_THRESHOLD</link> (((THRESHOLD) == DMA_FIFOThreshold_1QuarterFull ) || \
+                                          ((THRESHOLD) == DMA_FIFOThreshold_HalfFull)      || \
+                                          ((THRESHOLD) == DMA_FIFOThreshold_3QuartersFull) || \
+                                          ((THRESHOLD) == DMA_FIFOThreshold_Full))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1gab3353b3a85b555f826fe567ce68c3fc3">DMA_MemoryBurst_Single</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1gacf7f57731c663fdc6ca8a6fb18ff31b0">DMA_MemoryBurst_INC4</link> ((uint32_t)0x00800000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1ga33aca825c5a81e83753ff6fadb3634c0">DMA_MemoryBurst_INC8</link> ((uint32_t)0x01000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1ga4ffd4960f794b187229fac1cea3d81c9">DMA_MemoryBurst_INC16</link> ((uint32_t)0x01800000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d63/group___d_m_a__memory__burst_1ga921ebf06447dc036180fff50b7e4846a">IS_DMA_MEMORY_BURST</link> (((BURST) == DMA_MemoryBurst_Single) || \
+                                    ((BURST) == DMA_MemoryBurst_INC4)  || \
+                                    ((BURST) == DMA_MemoryBurst_INC8)  || \
+                                    ((BURST) == DMA_MemoryBurst_INC16))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1ga524cdc5efb8978b586637f35e38a850b">DMA_PeripheralBurst_Single</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1gaa8eba5161b3927f1ffb81157f3e39b71">DMA_PeripheralBurst_INC4</link> ((uint32_t)0x00200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1gaf04ba122268e0f54085ca8e45410fe69">DMA_PeripheralBurst_INC8</link> ((uint32_t)0x00400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1ga04ff56ff0a2a5470fc2c4817be4213c2">DMA_PeripheralBurst_INC16</link> ((uint32_t)0x00600000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d1/d86/group___d_m_a__peripheral__burst_1ga7c60961178e2a32e9e364a220a8aca88">IS_DMA_PERIPHERAL_BURST</link> (((BURST) == DMA_PeripheralBurst_Single) || \
+                                        ((BURST) == DMA_PeripheralBurst_INC4)  || \
+                                        ((BURST) == DMA_PeripheralBurst_INC8)  || \
+                                        ((BURST) == DMA_PeripheralBurst_INC16))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1gace4b567c96b1c95618a4894875d8123b">DMA_FIFOStatus_Less1QuarterFull</link> ((uint32_t)0x00000000 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1ga258d41ce51005eea1c5a69fcf07d8e42">DMA_FIFOStatus_1QuarterFull</link> ((uint32_t)0x00000001 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1ga0dd0faeb4ac9de3dbdcd7ca6dd5bb9e4">DMA_FIFOStatus_HalfFull</link> ((uint32_t)0x00000002 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1ga418c64b77f903c558471d22eeabde439">DMA_FIFOStatus_3QuartersFull</link> ((uint32_t)0x00000003 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1gaacba9ad22e39ed92d2b4ae9ebece654c">DMA_FIFOStatus_Empty</link> ((uint32_t)0x00000004 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1gaf7ea7373a08730e773cbc048c9965dc2">DMA_FIFOStatus_Full</link> ((uint32_t)0x00000005 &lt;&lt; 3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d42/group___d_m_a__fifo__status__level_1ga6980114eab3b3eea701f3802dd97dc12">IS_DMA_FIFO_STATUS</link> (((STATUS) == DMA_FIFOStatus_Less1QuarterFull ) || \
+                                    ((STATUS) == DMA_FIFOStatus_HalfFull)          || \
+                                    ((STATUS) == DMA_FIFOStatus_1QuarterFull)      || \
+                                    ((STATUS) == DMA_FIFOStatus_3QuartersFull)     || \
+                                    ((STATUS) == DMA_FIFOStatus_Full)              || \
+                                    ((STATUS) == DMA_FIFOStatus_Empty))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga4e09c71ab9d85493fba241fa90f60eff">DMA_FLAG_FEIF0</link> ((uint32_t)0x10800001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gaf309e18b8d4113c51de6d23794bdaaab">DMA_FLAG_DMEIF0</link> ((uint32_t)0x10800004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga8a1b602ca53eca06597284af6edd4eca">DMA_FLAG_TEIF0</link> ((uint32_t)0x10000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gaa76090f6351c3feb8e844460820236c6">DMA_FLAG_HTIF0</link> ((uint32_t)0x10000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gae5220ac32b929e3ffce6d6239cc2a39c">DMA_FLAG_TCIF0</link> ((uint32_t)0x10000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga13a9f5ad620803b1f59c329ea291cdce">DMA_FLAG_FEIF1</link> ((uint32_t)0x10000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga1f52407d92d389200727d1731ed2bf41">DMA_FLAG_DMEIF1</link> ((uint32_t)0x10000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gaebca425399650686931b35d650ec9872">DMA_FLAG_TEIF1</link> ((uint32_t)0x10000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga5e00b692cb6654c1e09f091e4dba807c">DMA_FLAG_HTIF1</link> ((uint32_t)0x10000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga4ec37900b79b667829eced7b442f2c9d">DMA_FLAG_TCIF1</link> ((uint32_t)0x10000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga3e7dfaf220ad350a2b0a3d307ba8896e">DMA_FLAG_FEIF2</link> ((uint32_t)0x10010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga69b110e9d83d45faf6e88719cff8f721">DMA_FLAG_DMEIF2</link> ((uint32_t)0x10040000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gaa3e1e5d2a043496524107ecc1ddfe934">DMA_FLAG_TEIF2</link> ((uint32_t)0x10080000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gae960d87b7770ec11820df758fecf28db">DMA_FLAG_HTIF2</link> ((uint32_t)0x10100000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga26c60c0cd9f24112eb082c7bbba1eff7">DMA_FLAG_TCIF2</link> ((uint32_t)0x10200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga7d551a54c46071ea3629d38768cd8638">DMA_FLAG_FEIF3</link> ((uint32_t)0x10400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gacb835761b58d15662b0e631697bbf0a4">DMA_FLAG_DMEIF3</link> ((uint32_t)0x11000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga36854c526eb41566bcf1c4505265433c">DMA_FLAG_TEIF3</link> ((uint32_t)0x12000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga10e669df50c5a5fe93b698f75f0574d6">DMA_FLAG_HTIF3</link> ((uint32_t)0x14000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gae8dde773a36a6d211d718bace2438def">DMA_FLAG_TCIF3</link> ((uint32_t)0x18000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga81f626454f81551dffa17619f459b99b">DMA_FLAG_FEIF4</link> ((uint32_t)0x20000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gae47ce0553cd8c561d0c5a903accf3411">DMA_FLAG_DMEIF4</link> ((uint32_t)0x20000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga0216244c5386117a965ef6833b86984e">DMA_FLAG_TEIF4</link> ((uint32_t)0x20000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gac1f371142dd0c1a5a19d8ad2cf1d2f2a">DMA_FLAG_HTIF4</link> ((uint32_t)0x20000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gaa2a470b95dc9084de45009c600e8cf1d">DMA_FLAG_TCIF4</link> ((uint32_t)0x20000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga40621c1df90e9e1ebfb4815df09a2469">DMA_FLAG_FEIF5</link> ((uint32_t)0x20000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga70a0d9684bfd6e6ef2cce31fc8e33512">DMA_FLAG_DMEIF5</link> ((uint32_t)0x20000100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga64ee170cb2d0fbe5daa6d3166c65190d">DMA_FLAG_TEIF5</link> ((uint32_t)0x20000200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga005ff333f9f114f5966f35b90df0ff9a">DMA_FLAG_HTIF5</link> ((uint32_t)0x20000400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga50cb345a0bb8bde37228b0a1d5becc4c">DMA_FLAG_TCIF5</link> ((uint32_t)0x20000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gafc0383aab975f70507f76e983c32b8c0">DMA_FLAG_FEIF6</link> ((uint32_t)0x20010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga1d85ff6756ffbd8284ac435f3781eb4a">DMA_FLAG_DMEIF6</link> ((uint32_t)0x20040000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga2900d2ad700dffbb058b238162018be0">DMA_FLAG_TEIF6</link> ((uint32_t)0x20080000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gaa2e5cb8680883513cf8fccef6c39c78e">DMA_FLAG_HTIF6</link> ((uint32_t)0x20100000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga7b16e37ffcf292fcab6745af7de1e50c">DMA_FLAG_TCIF6</link> ((uint32_t)0x20200000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga4c75ab8fa2339bad9413f133ec9b92d3">DMA_FLAG_FEIF7</link> ((uint32_t)0x20400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gae8b9016059eef77580e3845d30c1f42f">DMA_FLAG_DMEIF7</link> ((uint32_t)0x21000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga4f4acb7f0b6c46a1af27733852ef4fc7">DMA_FLAG_TEIF7</link> ((uint32_t)0x22000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1gaa59fb75c0964ea148a2218baba8de255">DMA_FLAG_HTIF7</link> ((uint32_t)0x24000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga5a68888ca361abf00d552bdd70304ea9">DMA_FLAG_TCIF7</link> ((uint32_t)0x28000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga4b33e418489c9a3c9adcbdbaca93e4a3">IS_DMA_CLEAR_FLAG</link> ((((FLAG) &amp; 0x30000000) != 0x30000000) &amp;&amp; (((FLAG) &amp; 0x30000000) != 0) &amp;&amp; \
+                                 (((FLAG) &amp; 0xC082F082) == 0x00) &amp;&amp; ((FLAG) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d17/group___d_m_a__flags__definition_1ga98e421aa0a15fbeecb4cab3612985676">IS_DMA_GET_FLAG</link> (((FLAG) == DMA_FLAG_TCIF0)  || ((FLAG) == DMA_FLAG_HTIF0)  || \
+                               ((FLAG) == DMA_FLAG_TEIF0)  || ((FLAG) == DMA_FLAG_DMEIF0) || \
+                               ((FLAG) == DMA_FLAG_FEIF0)  || ((FLAG) == DMA_FLAG_TCIF1)  || \
+                               ((FLAG) == DMA_FLAG_HTIF1)  || ((FLAG) == DMA_FLAG_TEIF1)  || \
+                               ((FLAG) == DMA_FLAG_DMEIF1) || ((FLAG) == DMA_FLAG_FEIF1)  || \
+                               ((FLAG) == DMA_FLAG_TCIF2)  || ((FLAG) == DMA_FLAG_HTIF2)  || \
+                               ((FLAG) == DMA_FLAG_TEIF2)  || ((FLAG) == DMA_FLAG_DMEIF2) || \
+                               ((FLAG) == DMA_FLAG_FEIF2)  || ((FLAG) == DMA_FLAG_TCIF3)  || \
+                               ((FLAG) == DMA_FLAG_HTIF3)  || ((FLAG) == DMA_FLAG_TEIF3)  || \
+                               ((FLAG) == DMA_FLAG_DMEIF3) || ((FLAG) == DMA_FLAG_FEIF3)  || \
+                               ((FLAG) == DMA_FLAG_TCIF4)  || ((FLAG) == DMA_FLAG_HTIF4)  || \
+                               ((FLAG) == DMA_FLAG_TEIF4)  || ((FLAG) == DMA_FLAG_DMEIF4) || \
+                               ((FLAG) == DMA_FLAG_FEIF4)  || ((FLAG) == DMA_FLAG_TCIF5)  || \
+                               ((FLAG) == DMA_FLAG_HTIF5)  || ((FLAG) == DMA_FLAG_TEIF5)  || \
+                               ((FLAG) == DMA_FLAG_DMEIF5) || ((FLAG) == DMA_FLAG_FEIF5)  || \
+                               ((FLAG) == DMA_FLAG_TCIF6)  || ((FLAG) == DMA_FLAG_HTIF6)  || \
+                               ((FLAG) == DMA_FLAG_TEIF6)  || ((FLAG) == DMA_FLAG_DMEIF6) || \
+                               ((FLAG) == DMA_FLAG_FEIF6)  || ((FLAG) == DMA_FLAG_TCIF7)  || \
+                               ((FLAG) == DMA_FLAG_HTIF7)  || ((FLAG) == DMA_FLAG_TEIF7)  || \
+                               ((FLAG) == DMA_FLAG_DMEIF7) || ((FLAG) == DMA_FLAG_FEIF7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dcc/group___d_m_a__interrupt__enable__definitions_1ga06e83dd277e0d3e5635cf8ce8dfd6e16">DMA_IT_TC</link> ((uint32_t)0x00000010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dcc/group___d_m_a__interrupt__enable__definitions_1gadf11c572b9797e04a14b105fdc2e5f66">DMA_IT_HT</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dcc/group___d_m_a__interrupt__enable__definitions_1gaf9d92649d2a0146f663ff253d8f3b59e">DMA_IT_TE</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dcc/group___d_m_a__interrupt__enable__definitions_1ga71137443f7bdced1ee80697596e9ea98">DMA_IT_DME</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dcc/group___d_m_a__interrupt__enable__definitions_1ga93164ec039fc5579662c382e68d7d13f">DMA_IT_FE</link> ((uint32_t)0x00000080)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d2/dcc/group___d_m_a__interrupt__enable__definitions_1ga47f6af7da302c19aba24516037d305e7">IS_DMA_CONFIG_IT</link> ((((IT) &amp; 0xFFFFFF61) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga5202cf7ab467fe1a61c725d1f98f0689">DMA_IT_FEIF0</link> ((uint32_t)0x90000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8427aa66491c87a653f94f812b31cb17">DMA_IT_DMEIF0</link> ((uint32_t)0x10001004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga7f47bb08f22556f9a655adbce3d6982a">DMA_IT_TEIF0</link> ((uint32_t)0x10002008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaabb2f6093a51f4f25ac67a21125a8bc2">DMA_IT_HTIF0</link> ((uint32_t)0x10004010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga9de4a37c4fb35a2d3566d8060a8145be">DMA_IT_TCIF0</link> ((uint32_t)0x10008020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaa93c3fc1826e8bf9063ab64734277ca3">DMA_IT_FEIF1</link> ((uint32_t)0x90000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gabdbf66e3cbe14fe1f45c42635127e927">DMA_IT_DMEIF1</link> ((uint32_t)0x10001100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaeacbd5c206cc6026d3c03f8182b16aeb">DMA_IT_TEIF1</link> ((uint32_t)0x10002200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga22e9fbbe3bd5539bf4c087c9ba2735da">DMA_IT_HTIF1</link> ((uint32_t)0x10004400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gae4eb128c7b47473cf984c4d91878d879">DMA_IT_TCIF1</link> ((uint32_t)0x10008800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaeae384e9af7db044cf93e7f270eddd7c">DMA_IT_FEIF2</link> ((uint32_t)0x90010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga56f547c35fcac83518aec320f0e38000">DMA_IT_DMEIF2</link> ((uint32_t)0x10041000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8faa8c4705525ad1cd90290c5a04c589">DMA_IT_TEIF2</link> ((uint32_t)0x10082000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga759d12e1158b37391b31a79f3a54339c">DMA_IT_HTIF2</link> ((uint32_t)0x10104000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga04ed284cd063df3e1e72a189bc6d9d86">DMA_IT_TCIF2</link> ((uint32_t)0x10208000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga93483a72ed43feb6e5f4392bb2ac9851">DMA_IT_FEIF3</link> ((uint32_t)0x90400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8b3786da4bdd693eb198b7a3a51faf12">DMA_IT_DMEIF3</link> ((uint32_t)0x11001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga2d9d67487f27667a88f98f28d83fb8ee">DMA_IT_TEIF3</link> ((uint32_t)0x12002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaba176f6d831b4d30fdeddcb2f301f329">DMA_IT_HTIF3</link> ((uint32_t)0x14004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gafc40a792a31cfc0d2fbc937e0796533d">DMA_IT_TCIF3</link> ((uint32_t)0x18008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8921cc2ba7936c50aee13913cfaedddf">DMA_IT_FEIF4</link> ((uint32_t)0xA0000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gab4456201506a52115a5b7938484bcec1">DMA_IT_DMEIF4</link> ((uint32_t)0x20001004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga6b91d27a13175cc8e08ac8d58c8bdf19">DMA_IT_TEIF4</link> ((uint32_t)0x20002008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gafda7db2d283c4a71dcad96dc4972799d">DMA_IT_HTIF4</link> ((uint32_t)0x20004010)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga36a29ac345571fad0b1c98f36c59d4c5">DMA_IT_TCIF4</link> ((uint32_t)0x20008020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga8b63b126eedeeed93051abfe943c7a4a">DMA_IT_FEIF5</link> ((uint32_t)0xA0000040)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga03c884977c9eac6b98c33707df72f1de">DMA_IT_DMEIF5</link> ((uint32_t)0x20001100)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga954167a7b1f01653ca891a1e2f5fc2ef">DMA_IT_TEIF5</link> ((uint32_t)0x20002200)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gab67a2a189e63786b23e37febcd9aaad1">DMA_IT_HTIF5</link> ((uint32_t)0x20004400)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaf4a7f8f3d5914858c59b12fc36e9a176">DMA_IT_TCIF5</link> ((uint32_t)0x20008800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gad023ccedd5283ace18de6d0bcac06e0a">DMA_IT_FEIF6</link> ((uint32_t)0xA0010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga154421000068d646b9403303aeae09e8">DMA_IT_DMEIF6</link> ((uint32_t)0x20041000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gab1c3b881dd5493dee96b49f4ddbb7204">DMA_IT_TEIF6</link> ((uint32_t)0x20082000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gae43cd288bb0b6f1cbb313dc5690f174f">DMA_IT_HTIF6</link> ((uint32_t)0x20104000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga895e7dfd7ddf4879181e475eb322f1b4">DMA_IT_TCIF6</link> ((uint32_t)0x20208000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga742d0f7f8437ab5fa4f1ad0c7fb0112b">DMA_IT_FEIF7</link> ((uint32_t)0xA0400000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaed099553b36827c2978208d288f9a848">DMA_IT_DMEIF7</link> ((uint32_t)0x21001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga4d25902b63630db383fd3983581fb8ee">DMA_IT_TEIF7</link> ((uint32_t)0x22002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gae95460193a9f02e03a6aaf01ecb9a501">DMA_IT_HTIF7</link> ((uint32_t)0x24004000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga2761f6621db0231ddc8294a8eb1c8e42">DMA_IT_TCIF7</link> ((uint32_t)0x28008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1ga390481b083355ed774b04f70a42f0dfb">IS_DMA_CLEAR_IT</link> ((((IT) &amp; 0x30000000) != 0x30000000) &amp;&amp; \
+                             (((IT) &amp; 0x30000000) != 0) &amp;&amp; ((IT) != 0x00) &amp;&amp; \
+                             (((IT) &amp; 0x40820082) == 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d46/group___d_m_a__interrupts__definitions_1gaaafa1bd74bc5e78e276c731faa8eed22">IS_DMA_GET_IT</link> (((IT) == DMA_IT_TCIF0) || ((IT) == DMA_IT_HTIF0)  || \
+                           ((IT) == DMA_IT_TEIF0) || ((IT) == DMA_IT_DMEIF0) || \
+                           ((IT) == DMA_IT_FEIF0) || ((IT) == DMA_IT_TCIF1)  || \
+                           ((IT) == DMA_IT_HTIF1) || ((IT) == DMA_IT_TEIF1)  || \
+                           ((IT) == DMA_IT_DMEIF1)|| ((IT) == DMA_IT_FEIF1)  || \
+                           ((IT) == DMA_IT_TCIF2) || ((IT) == DMA_IT_HTIF2)  || \
+                           ((IT) == DMA_IT_TEIF2) || ((IT) == DMA_IT_DMEIF2) || \
+                           ((IT) == DMA_IT_FEIF2) || ((IT) == DMA_IT_TCIF3)  || \
+                           ((IT) == DMA_IT_HTIF3) || ((IT) == DMA_IT_TEIF3)  || \
+                           ((IT) == DMA_IT_DMEIF3)|| ((IT) == DMA_IT_FEIF3)  || \
+                           ((IT) == DMA_IT_TCIF4) || ((IT) == DMA_IT_HTIF4)  || \
+                           ((IT) == DMA_IT_TEIF4) || ((IT) == DMA_IT_DMEIF4) || \
+                           ((IT) == DMA_IT_FEIF4) || ((IT) == DMA_IT_TCIF5)  || \
+                           ((IT) == DMA_IT_HTIF5) || ((IT) == DMA_IT_TEIF5)  || \
+                           ((IT) == DMA_IT_DMEIF5)|| ((IT) == DMA_IT_FEIF5)  || \
+                           ((IT) == DMA_IT_TCIF6) || ((IT) == DMA_IT_HTIF6)  || \
+                           ((IT) == DMA_IT_TEIF6) || ((IT) == DMA_IT_DMEIF6) || \
+                           ((IT) == DMA_IT_FEIF6) || ((IT) == DMA_IT_TCIF7)  || \
+                           ((IT) == DMA_IT_HTIF7) || ((IT) == DMA_IT_TEIF7)  || \
+                           ((IT) == DMA_IT_DMEIF7)|| ((IT) == DMA_IT_FEIF7))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d99/group___d_m_a__peripheral__increment__offset_1ga939053c42e486b82963b8eecc809bce0">DMA_PINCOS_Psize</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d99/group___d_m_a__peripheral__increment__offset_1gaae8184971db13b62cd9f4dc5aecf9c22">DMA_PINCOS_WordAligned</link> ((uint32_t)0x00008000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d99/group___d_m_a__peripheral__increment__offset_1ga2fcfea7f5dedb658358f1220773fb2f2">IS_DMA_PINCOS_SIZE</link> (((SIZE) == DMA_PINCOS_Psize) || \
+                                  ((SIZE) == DMA_PINCOS_WordAligned))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d34/group___d_m_a__flow__controller__definitions_1gafe69109789c2c285f98193f4b598cbc1">DMA_FlowCtrl_Memory</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d34/group___d_m_a__flow__controller__definitions_1ga33a735d51a2b790a25c579753edddd46">DMA_FlowCtrl_Peripheral</link> ((uint32_t)0x00000020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d34/group___d_m_a__flow__controller__definitions_1ga78c0f18c0a86c67510f540a4210aadb7">IS_DMA_FLOW_CTRL</link> (((CTRL) == DMA_FlowCtrl_Memory) || \
+                                ((CTRL) == DMA_FlowCtrl_Peripheral))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d5c/group___d_m_a__memory__targets__definitions_1gadb576bccef5f2fc65fe9b451033bdc95">DMA_Memory_0</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d5c/group___d_m_a__memory__targets__definitions_1ga6d1e13631e4ef9a013d078e613fd7fd5">DMA_Memory_1</link> ((uint32_t)0x00080000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d8/d5c/group___d_m_a__memory__targets__definitions_1ga87d6abab18d2b4bb86db909854cc1f02">IS_DMA_CURRENT_MEM</link> (((MEM) == DMA_Memory_0) || ((MEM) == DMA_Memory_1))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga38d4a4ab8990299f8a6cf064e1e811d0">DMA_DeInit</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, <link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> * DMA_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga0f7f95f750a90a6824f4e9b6f58adc7e">DMA_StructInit</link> (
+<link linkend="d4/d43/struct_d_m_a___init_type_def">DMA_InitTypeDef</link> * DMA_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1gab2bea22f9f6dc62fdd7afb385a0c1f73">DMA_Cmd</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga210a9861460b3c9b3fa14fdc1a949744">DMA_PeriphIncOffsetSizeConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_Pincos)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga77f7628f6be9d6d088127eceb090b8b2">DMA_FlowControllerConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_FlowCtrl)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga6a11a2c951cff59b125ba8857d44e3f3">DMA_SetCurrDataCounter</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint16_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="df/df8/group___d_m_a_1ga4a76444a92423f5f15a4328738d6dc46">DMA_GetCurrDataCounter</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga8d0957e50302efaf48a16c62d14c9ca8">DMA_DoubleBufferModeConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t Memory1BaseAddr, uint32_t DMA_CurrentMemory)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga7fe09e62ea3125db384829dab59ebe3e">DMA_DoubleBufferModeCmd</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga4ebcffd32eb6968ac61cfb64a6bae258">DMA_MemoryTargetConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t MemoryBaseAddr, uint32_t DMA_MemoryTarget)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="df/df8/group___d_m_a_1ga74b6624f9faa2f43c9369ddbdeab241c">DMA_GetCurrentMemoryTarget</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FunctionalState <link linkend="df/df8/group___d_m_a_1gaa4d631cdd6cd020106435f30c0c6fb15">DMA_GetCmdStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="df/df8/group___d_m_a_1ga9893809a7067861ec111f7d712ebf28d">DMA_GetFIFOStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="df/df8/group___d_m_a_1ga10cfc0fe31d64a1fd8fb3efb4ae2a411">DMA_GetFlagStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1ga510d62b4051f5a5de164e84b266b851d">DMA_ClearFlag</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1gab9c469a3f5d4aca5c97dee798ffc2f05">DMA_ITConfig</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="df/df8/group___d_m_a_1gad0ccf5f6548bd7cf8f2cae30393bb716">DMA_GetITStatus</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/df8/group___d_m_a_1gad5433018889cd36140d98bb380c4e76e">DMA_ClearITPendingBit</link> (
+DMA_Stream_TypeDef * DMAy_Streamx, uint32_t DMA_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the DMA firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dma.h</para>
+    </simplesect>
+</section>

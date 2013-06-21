@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d6c/group___s_d_i_o___clock___edge">
+    <title>SDIO_Clock_Edge</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d6c/group___s_d_i_o___clock___edge_1ga6d0f902037762a3048d95303c0037313">SDIO_ClockEdge_Rising</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d6c/group___s_d_i_o___clock___edge_1ga7be68024e3e2fe1994def85bc944189b">SDIO_ClockEdge_Falling</link> ((uint32_t)0x00002000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="df/d6c/group___s_d_i_o___clock___edge_1ga63420b10a52e3d82a89a45f20dc41786">IS_SDIO_CLOCK_EDGE</link> (((EDGE) == SDIO_ClockEdge_Rising) || \
+                                  ((EDGE) == SDIO_ClockEdge_Falling))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

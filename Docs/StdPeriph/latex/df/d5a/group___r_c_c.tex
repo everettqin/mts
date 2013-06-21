@@ -1,0 +1,1656 @@
+\hypertarget{group___r_c_c}{\section{R\-C\-C}
+\label{group___r_c_c}\index{R\-C\-C@{R\-C\-C}}
+}
+
+
+R\-C\-C driver modules.  
+
+
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___r_c_c___exported___constants}{R\-C\-C\-\_\-\-Exported\-\_\-\-Constants}
+\item 
+\hyperlink{group___r_c_c___private___functions}{R\-C\-C\-\_\-\-Private\-\_\-\-Functions}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_r_c_c___clocks_type_def}{R\-C\-C\-\_\-\-Clocks\-Type\-Def}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___r_c_c_ga539e07c3b3c55f1f1d47231341fb11e1}{\#define {\bfseries R\-C\-C\-\_\-\-O\-F\-F\-S\-E\-T}~(R\-C\-C\-\_\-\-B\-A\-S\-E -\/ P\-E\-R\-I\-P\-H\-\_\-\-B\-A\-S\-E)}\label{group___r_c_c_ga539e07c3b3c55f1f1d47231341fb11e1}
+
+\item 
+\hypertarget{group___r_c_c_gafa1d3d0ea72132df651c76fc1bdffffc}{\#define {\bfseries C\-R\-\_\-\-O\-F\-F\-S\-E\-T}~(R\-C\-C\-\_\-\-O\-F\-F\-S\-E\-T + 0x00)}\label{group___r_c_c_gafa1d3d0ea72132df651c76fc1bdffffc}
+
+\item 
+\hypertarget{group___r_c_c_ga3d3085e491cbef815d223afbe5bf1930}{\#define {\bfseries H\-S\-I\-O\-N\-\_\-\-Bit\-Number}~0x00}\label{group___r_c_c_ga3d3085e491cbef815d223afbe5bf1930}
+
+\item 
+\hypertarget{group___r_c_c_gac3290a833c0e35ec17d32c2d494e6133}{\#define {\bfseries C\-R\-\_\-\-H\-S\-I\-O\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (H\-S\-I\-O\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___r_c_c_gac3290a833c0e35ec17d32c2d494e6133}
+
+\item 
+\hypertarget{group___r_c_c_ga253fa44d87aabc55f0cd6628e77a51fd}{\#define {\bfseries C\-S\-S\-O\-N\-\_\-\-Bit\-Number}~0x13}\label{group___r_c_c_ga253fa44d87aabc55f0cd6628e77a51fd}
+
+\item 
+\hypertarget{group___r_c_c_gaca914aed10477ae4090fea0a9639b1ea}{\#define {\bfseries C\-R\-\_\-\-C\-S\-S\-O\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (C\-S\-S\-O\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___r_c_c_gaca914aed10477ae4090fea0a9639b1ea}
+
+\item 
+\hypertarget{group___r_c_c_gab24d7f5f8e4b3b717fd91b54f393f6a3}{\#define {\bfseries P\-L\-L\-O\-N\-\_\-\-Bit\-Number}~0x18}\label{group___r_c_c_gab24d7f5f8e4b3b717fd91b54f393f6a3}
+
+\item 
+\hypertarget{group___r_c_c_ga3f1fb2589cb8b5ac2f7121aba1135a5f}{\#define {\bfseries C\-R\-\_\-\-P\-L\-L\-O\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (P\-L\-L\-O\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___r_c_c_ga3f1fb2589cb8b5ac2f7121aba1135a5f}
+
+\item 
+\hypertarget{group___r_c_c_gabae59c3e4200523e3aa5b6e10aee8c46}{\#define {\bfseries P\-L\-L\-I2\-S\-O\-N\-\_\-\-Bit\-Number}~0x1\-A}\label{group___r_c_c_gabae59c3e4200523e3aa5b6e10aee8c46}
+
+\item 
+\hypertarget{group___r_c_c_ga0c0fb27aba4eb660f7590252596bdfc5}{\#define {\bfseries C\-R\-\_\-\-P\-L\-L\-I2\-S\-O\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (P\-L\-L\-I2\-S\-O\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___r_c_c_ga0c0fb27aba4eb660f7590252596bdfc5}
+
+\item 
+\hypertarget{group___r_c_c_ga8682298330c3b9bae1992e4f1a0af985}{\#define {\bfseries C\-F\-G\-R\-\_\-\-O\-F\-F\-S\-E\-T}~(R\-C\-C\-\_\-\-O\-F\-F\-S\-E\-T + 0x08)}\label{group___r_c_c_ga8682298330c3b9bae1992e4f1a0af985}
+
+\item 
+\hypertarget{group___r_c_c_ga9561d436b438d8f513b754f1934c3e30}{\#define {\bfseries I2\-S\-S\-R\-C\-\_\-\-Bit\-Number}~0x17}\label{group___r_c_c_ga9561d436b438d8f513b754f1934c3e30}
+
+\item 
+\hypertarget{group___r_c_c_ga9076f5ddbb262fd45584702f5d280c9e}{\#define {\bfseries C\-F\-G\-R\-\_\-\-I2\-S\-S\-R\-C\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-F\-G\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (I2\-S\-S\-R\-C\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___r_c_c_ga9076f5ddbb262fd45584702f5d280c9e}
+
+\item 
+\hypertarget{group___r_c_c_ga5f8a0c3cb5f5c835bf7eef09515138ad}{\#define {\bfseries B\-D\-C\-R\-\_\-\-O\-F\-F\-S\-E\-T}~(R\-C\-C\-\_\-\-O\-F\-F\-S\-E\-T + 0x70)}\label{group___r_c_c_ga5f8a0c3cb5f5c835bf7eef09515138ad}
+
+\item 
+\hypertarget{group___r_c_c_ga9302c551752124766afc4cee65436405}{\#define {\bfseries R\-T\-C\-E\-N\-\_\-\-Bit\-Number}~0x0\-F}\label{group___r_c_c_ga9302c551752124766afc4cee65436405}
+
+\item 
+\hypertarget{group___r_c_c_gaf70aaf70b0752ccb3a60307b2fb46038}{\#define {\bfseries B\-D\-C\-R\-\_\-\-R\-T\-C\-E\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (B\-D\-C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (R\-T\-C\-E\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___r_c_c_gaf70aaf70b0752ccb3a60307b2fb46038}
+
+\item 
+\hypertarget{group___r_c_c_gae6718158034388d8fde8caaa28ffe8b9}{\#define {\bfseries B\-D\-R\-S\-T\-\_\-\-Bit\-Number}~0x10}\label{group___r_c_c_gae6718158034388d8fde8caaa28ffe8b9}
+
+\item 
+\hypertarget{group___r_c_c_ga892fdf297b85b85cbaf0723649b31818}{\#define {\bfseries B\-D\-C\-R\-\_\-\-B\-D\-R\-S\-T\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (B\-D\-C\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (B\-D\-R\-S\-T\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___r_c_c_ga892fdf297b85b85cbaf0723649b31818}
+
+\item 
+\hypertarget{group___r_c_c_ga984cbe73312b6d3d355c5053763d499a}{\#define {\bfseries C\-S\-R\-\_\-\-O\-F\-F\-S\-E\-T}~(R\-C\-C\-\_\-\-O\-F\-F\-S\-E\-T + 0x74)}\label{group___r_c_c_ga984cbe73312b6d3d355c5053763d499a}
+
+\item 
+\hypertarget{group___r_c_c_ga3f9dbe50769ce2a63ae12520433b9b40}{\#define {\bfseries L\-S\-I\-O\-N\-\_\-\-Bit\-Number}~0x00}\label{group___r_c_c_ga3f9dbe50769ce2a63ae12520433b9b40}
+
+\item 
+\hypertarget{group___r_c_c_gaa253e36e7e5fb02998c0e4d0388abc52}{\#define {\bfseries C\-S\-R\-\_\-\-L\-S\-I\-O\-N\-\_\-\-B\-B}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-B\-\_\-\-B\-A\-S\-E + (C\-S\-R\-\_\-\-O\-F\-F\-S\-E\-T $\ast$ 32) + (L\-S\-I\-O\-N\-\_\-\-Bit\-Number $\ast$ 4))}\label{group___r_c_c_gaa253e36e7e5fb02998c0e4d0388abc52}
+
+\item 
+\hypertarget{group___r_c_c_gabd7dd9cf31a9cc27fd9c0c1624f9a298}{\#define {\bfseries C\-F\-G\-R\-\_\-\-M\-C\-O2\-\_\-\-R\-E\-S\-E\-T\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x07\-F\-F\-F\-F\-F\-F)}\label{group___r_c_c_gabd7dd9cf31a9cc27fd9c0c1624f9a298}
+
+\item 
+\hypertarget{group___r_c_c_ga51f5130a66963090dc02b4ebd47e2f83}{\#define {\bfseries C\-F\-G\-R\-\_\-\-M\-C\-O1\-\_\-\-R\-E\-S\-E\-T\-\_\-\-M\-A\-S\-K}~((uint32\-\_\-t)0x\-F89\-F\-F\-F\-F\-F)}\label{group___r_c_c_ga51f5130a66963090dc02b4ebd47e2f83}
+
+\item 
+\hypertarget{group___r_c_c_ga890221cb651a3f30f6d1bca0d9b0e13d}{\#define {\bfseries F\-L\-A\-G\-\_\-\-M\-A\-S\-K}~((uint8\-\_\-t)0x1\-F)}\label{group___r_c_c_ga890221cb651a3f30f6d1bca0d9b0e13d}
+
+\item 
+\hypertarget{group___r_c_c_ga9b2724575bb34217aeddcb69c41a1547}{\#define {\bfseries C\-R\-\_\-\-B\-Y\-T\-E3\-\_\-\-A\-D\-D\-R\-E\-S\-S}~((uint32\-\_\-t)0x40023802)}\label{group___r_c_c_ga9b2724575bb34217aeddcb69c41a1547}
+
+\item 
+\hypertarget{group___r_c_c_gaab58c3f3f81bf1ab9a14cf3fececd8c4}{\#define {\bfseries C\-I\-R\-\_\-\-B\-Y\-T\-E2\-\_\-\-A\-D\-D\-R\-E\-S\-S}~((uint32\-\_\-t)(R\-C\-C\-\_\-\-B\-A\-S\-E + 0x0\-C + 0x01))}\label{group___r_c_c_gaab58c3f3f81bf1ab9a14cf3fececd8c4}
+
+\item 
+\hypertarget{group___r_c_c_ga43f47430582c9575970901533e525bb5}{\#define {\bfseries C\-I\-R\-\_\-\-B\-Y\-T\-E3\-\_\-\-A\-D\-D\-R\-E\-S\-S}~((uint32\-\_\-t)(R\-C\-C\-\_\-\-B\-A\-S\-E + 0x0\-C + 0x02))}\label{group___r_c_c_ga43f47430582c9575970901533e525bb5}
+
+\item 
+\hypertarget{group___r_c_c_ga40b5a415d697b6af7babd8a208c92435}{\#define {\bfseries B\-D\-C\-R\-\_\-\-A\-D\-D\-R\-E\-S\-S}~(P\-E\-R\-I\-P\-H\-\_\-\-B\-A\-S\-E + B\-D\-C\-R\-\_\-\-O\-F\-F\-S\-E\-T)}\label{group___r_c_c_ga40b5a415d697b6af7babd8a208c92435}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___r_c_c_ga413f6422be11b1334abe60b3bff2e062}{R\-C\-C\-\_\-\-De\-Init} (void)
+\begin{DoxyCompactList}\small\item\em Resets the R\-C\-C clock configuration to the default reset state. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga523b06e73f6aa8a03e42299c855066a8}{R\-C\-C\-\_\-\-H\-S\-E\-Config} (uint8\-\_\-t R\-C\-C\-\_\-\-H\-S\-E)
+\begin{DoxyCompactList}\small\item\em Configures the External High Speed oscillator (H\-S\-E). \end{DoxyCompactList}\item 
+Error\-Status \hyperlink{group___r_c_c_gae0f15692614dd048ee4110a056f001dc}{R\-C\-C\-\_\-\-Wait\-For\-H\-S\-E\-Start\-Up} (void)
+\begin{DoxyCompactList}\small\item\em Waits for H\-S\-E start-\/up. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gaa2d6a35f5c2e0f86317c3beb222677fc}{R\-C\-C\-\_\-\-Adjust\-H\-S\-I\-Calibration\-Value} (uint8\-\_\-t H\-S\-I\-Calibration\-Value)
+\begin{DoxyCompactList}\small\item\em Adjusts the Internal High Speed oscillator (H\-S\-I) calibration value. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga0c6772a1e43765909495f57815ef69e2}{R\-C\-C\-\_\-\-H\-S\-I\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Internal High Speed oscillator (H\-S\-I). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga65209ab5c3589b249c7d70f978735ca6}{R\-C\-C\-\_\-\-L\-S\-E\-Config} (uint8\-\_\-t R\-C\-C\-\_\-\-L\-S\-E)
+\begin{DoxyCompactList}\small\item\em Configures the External Low Speed oscillator (L\-S\-E). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga81e3ca29fd154ac2019bba6936d6d5ed}{R\-C\-C\-\_\-\-L\-S\-I\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Internal Low Speed oscillator (L\-S\-I). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga154b93e90bfdede2a874244a1ff1002e}{R\-C\-C\-\_\-\-P\-L\-L\-Config} (uint32\-\_\-t R\-C\-C\-\_\-\-P\-L\-L\-Source, uint32\-\_\-t P\-L\-L\-M, uint32\-\_\-t P\-L\-L\-N, uint32\-\_\-t P\-L\-L\-P, uint32\-\_\-t P\-L\-L\-Q)
+\begin{DoxyCompactList}\small\item\em Configures the main P\-L\-L clock source, multiplication and division factors. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga84dee53c75e58fdb53571716593c2272}{R\-C\-C\-\_\-\-P\-L\-L\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the main P\-L\-L. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga4c15157382939a693c15620a4867e6ad}{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Config} (uint32\-\_\-t P\-L\-L\-I2\-S\-N, uint32\-\_\-t P\-L\-L\-I2\-S\-R)
+\begin{DoxyCompactList}\small\item\em Configures the P\-L\-L\-I2\-S clock multiplication and division factors. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga2efe493a6337d5e0034bfcdfb0f541e4}{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the P\-L\-L\-I2\-S. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga0ff1fd7b9a8a49cdda11b7d7261c3494}{R\-C\-C\-\_\-\-Clock\-Security\-System\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Clock Security System. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga15c9ecb6ef015ed008cb28e5b7a50531}{R\-C\-C\-\_\-\-M\-C\-O1\-Config} (uint32\-\_\-t R\-C\-C\-\_\-\-M\-C\-O1\-Source, uint32\-\_\-t R\-C\-C\-\_\-\-M\-C\-O1\-Div)
+\begin{DoxyCompactList}\small\item\em Selects the clock source to output on M\-C\-O1 pin(\-P\-A8). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gaf50f10675b747de60c739e44e5c22aee}{R\-C\-C\-\_\-\-M\-C\-O2\-Config} (uint32\-\_\-t R\-C\-C\-\_\-\-M\-C\-O2\-Source, uint32\-\_\-t R\-C\-C\-\_\-\-M\-C\-O2\-Div)
+\begin{DoxyCompactList}\small\item\em Selects the clock source to output on M\-C\-O2 pin(\-P\-C9). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga3551a36a8f0a3dc96a74d6b939048337}{R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Config} (uint32\-\_\-t R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Source)
+\begin{DoxyCompactList}\small\item\em Configures the system clock (S\-Y\-S\-C\-L\-K). \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group___r_c_c_gaaeb32311c208b2a980841c9c884a41ea}{R\-C\-C\-\_\-\-Get\-S\-Y\-S\-C\-L\-K\-Source} (void)
+\begin{DoxyCompactList}\small\item\em Returns the clock source used as system clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga9d0aec72e236c6cdf3a3a82dfb525491}{R\-C\-C\-\_\-\-H\-C\-L\-K\-Config} (uint32\-\_\-t R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K)
+\begin{DoxyCompactList}\small\item\em Configures the A\-H\-B clock (H\-C\-L\-K). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga448137346d4292985d4e7a61dd1a824f}{R\-C\-C\-\_\-\-P\-C\-L\-K1\-Config} (uint32\-\_\-t R\-C\-C\-\_\-\-H\-C\-L\-K)
+\begin{DoxyCompactList}\small\item\em Configures the Low Speed A\-P\-B clock (P\-C\-L\-K1). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga09f9c010a4adca9e036da42c2ca6126a}{R\-C\-C\-\_\-\-P\-C\-L\-K2\-Config} (uint32\-\_\-t R\-C\-C\-\_\-\-H\-C\-L\-K)
+\begin{DoxyCompactList}\small\item\em Configures the High Speed A\-P\-B clock (P\-C\-L\-K2). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga3e9944fd1ed734275222bbb3e3f29993}{R\-C\-C\-\_\-\-Get\-Clocks\-Freq} (\hyperlink{struct_r_c_c___clocks_type_def}{R\-C\-C\-\_\-\-Clocks\-Type\-Def} $\ast$R\-C\-C\-\_\-\-Clocks)
+\begin{DoxyCompactList}\small\item\em Returns the frequencies of different on chip clocks; S\-Y\-S\-C\-L\-K, H\-C\-L\-K, P\-C\-L\-K1 and P\-C\-L\-K2. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga1473d8a5a020642966359611c44181b0}{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Config} (uint32\-\_\-t R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Source)
+\begin{DoxyCompactList}\small\item\em Configures the R\-T\-C clock (R\-T\-C\-C\-L\-K). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga9802f84846df2cea8e369234ed13b159}{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the R\-T\-C clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga636c3b72f35391e67f12a551b15fa54a}{R\-C\-C\-\_\-\-Backup\-Reset\-Cmd} (Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Forces or releases the Backup domain reset. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga6c56f8529988fcc8f4dbffbc1bab27d0}{R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Config} (uint32\-\_\-t R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Source)
+\begin{DoxyCompactList}\small\item\em Configures the I2\-S clock source (I2\-S\-C\-L\-K). \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga80c89116820d48bb38db2e7d5e5a49b9}{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-H\-B1\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\-H\-B1 peripheral clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gaadffedbd87e796f01d9776b8ee01ff5e}{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-H\-B2\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\-H\-B2 peripheral clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga4eb8c119f2e9bf2bd2e042d27f151338}{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-H\-B3\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\-H\-B3 peripheral clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gaee7cc5d73af7fe1986fceff8afd3973e}{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-P\-B1\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the Low Speed A\-P\-B (A\-P\-B1) peripheral clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga56ff55caf8d835351916b40dd030bc87}{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-P\-B2\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the High Speed A\-P\-B (A\-P\-B2) peripheral clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gaa7c450567f4731d4f0615f63586cad86}{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Reset\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-H\-B1\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Forces or releases A\-H\-B1 peripheral reset. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gafb119d6d1955d1b8c361e8140845ac5a}{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Reset\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-H\-B2\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Forces or releases A\-H\-B2 peripheral reset. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gaee44f159a1ca9ebdd7117bff387cd592}{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Reset\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-H\-B3\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Forces or releases A\-H\-B3 peripheral reset. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gab197ae4369c10b92640a733b40ed2801}{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Reset\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-P\-B1\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Forces or releases Low Speed A\-P\-B (A\-P\-B1) peripheral reset. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gad94553850ac07106a27ee85fec37efdf}{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Reset\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-P\-B2\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Forces or releases High Speed A\-P\-B (A\-P\-B2) peripheral reset. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga5cd0d5adbc7496d7005b208bd19ce255}{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-H\-B1\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\-H\-B1 peripheral clock during Low Power (Sleep) mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga1ac5bb9676ae9b48e50d6a95de922ce3}{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-H\-B2\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\-H\-B2 peripheral clock during Low Power (Sleep) mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga4e1df07cdfd81c068902d9d35fcc3911}{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-L\-P\-Mode\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-H\-B3\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\-H\-B3 peripheral clock during Low Power (Sleep) mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga84dd64badb84768cbcf19e241cadff50}{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-P\-B1\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\-P\-B1 peripheral clock during Low Power (Sleep) mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga30365b9e0b4c5d7e98c2675c862ddd7e}{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd} (uint32\-\_\-t R\-C\-C\-\_\-\-A\-P\-B2\-Periph, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the A\-P\-B2 peripheral clock during Low Power (Sleep) mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_gaa953aa226e9ce45300d535941e4dfe2f}{R\-C\-C\-\_\-\-I\-T\-Config} (uint8\-\_\-t R\-C\-C\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified R\-C\-C interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___r_c_c_ga2897bdc52f272031c44fb1f72205d295}{R\-C\-C\-\_\-\-Get\-Flag\-Status} (uint8\-\_\-t R\-C\-C\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified R\-C\-C flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga53f909dbb15a54124419084ebda97d72}{R\-C\-C\-\_\-\-Clear\-Flag} (void)
+\begin{DoxyCompactList}\small\item\em Clears the R\-C\-C reset flags. The reset flags are\-: R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-I\-N\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-O\-R\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-S\-F\-T\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-I\-W\-D\-G\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-W\-W\-D\-G\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-P\-W\-R\-R\-S\-T. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___r_c_c_ga6126c99f398ee4be410ad76ae3aee18f}{R\-C\-C\-\_\-\-Get\-I\-T\-Status} (uint8\-\_\-t R\-C\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified R\-C\-C interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_c_c_ga529842d165910f8f87e26115da36089b}{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint8\-\_\-t R\-C\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the R\-C\-C's interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+R\-C\-C driver modules. 
+
+\subsection{Function Documentation}
+\hypertarget{group___r_c_c_gaa2d6a35f5c2e0f86317c3beb222677fc}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Adjust\-H\-S\-I\-Calibration\-Value@{R\-C\-C\-\_\-\-Adjust\-H\-S\-I\-Calibration\-Value}}
+\index{R\-C\-C\-\_\-\-Adjust\-H\-S\-I\-Calibration\-Value@{R\-C\-C\-\_\-\-Adjust\-H\-S\-I\-Calibration\-Value}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Adjust\-H\-S\-I\-Calibration\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-Adjust\-H\-S\-I\-Calibration\-Value (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{H\-S\-I\-Calibration\-Value}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gaa2d6a35f5c2e0f86317c3beb222677fc}
+
+
+Adjusts the Internal High Speed oscillator (H\-S\-I) calibration value. 
+
+\begin{DoxyNote}{Note}
+The calibration is used to compensate for the variations in voltage and temperature that influence the frequency of the internal H\-S\-I R\-C. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em H\-S\-I\-Calibration\-Value,\-:} & specifies the calibration trimming value. This parameter must be a number between 0 and 0x1\-F. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 292 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga80c89116820d48bb38db2e7d5e5a49b9}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-H\-B1\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga80c89116820d48bb38db2e7d5e5a49b9}
+
+
+Enables or disables the A\-H\-B1 peripheral clock. 
+
+\begin{DoxyNote}{Note}
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-H\-B\-Periph,\-:} & specifies the A\-H\-B1 peripheral to gates its clock. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-A\-: G\-P\-I\-O\-A clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-B\-: G\-P\-I\-O\-B clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-C\-: G\-P\-I\-O\-C clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-D\-: G\-P\-I\-O\-D clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-E\-: G\-P\-I\-O\-E clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-F\-: G\-P\-I\-O\-F clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-G\-: G\-P\-I\-O\-G clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-G\-: G\-P\-I\-O\-G clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-I\-: G\-P\-I\-O\-I clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-C\-R\-C\-: C\-R\-C clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-B\-K\-P\-S\-R\-A\-M\-: B\-K\-P\-S\-R\-A\-M interface clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-C\-C\-M\-D\-A\-T\-A\-R\-A\-M\-E\-N C\-C\-M data R\-A\-M interface clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-D\-M\-A1\-: D\-M\-A1 clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-D\-M\-A2\-: D\-M\-A2 clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-E\-T\-H\-\_\-\-M\-A\-C\-: Ethernet M\-A\-C clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-E\-T\-H\-\_\-\-M\-A\-C\-\_\-\-Tx\-: Ethernet Transmission clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-E\-T\-H\-\_\-\-M\-A\-C\-\_\-\-Rx\-: Ethernet Reception clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-E\-T\-H\-\_\-\-M\-A\-C\-\_\-\-P\-T\-P\-: Ethernet P\-T\-P clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-O\-T\-G\-\_\-\-H\-S\-: U\-S\-B O\-T\-G H\-S clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-O\-T\-G\-\_\-\-H\-S\-\_\-\-U\-L\-P\-I\-: U\-S\-B O\-T\-G H\-S U\-L\-P\-I clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1085 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga5cd0d5adbc7496d7005b208bd19ce255}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-H\-B1\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga5cd0d5adbc7496d7005b208bd19ce255}
+
+
+Enables or disables the A\-H\-B1 peripheral clock during Low Power (Sleep) mode. 
+
+\begin{DoxyNote}{Note}
+Peripheral clock gating in S\-L\-E\-E\-P mode can be used to further reduce power consumption. 
+
+After wakeup from S\-L\-E\-E\-P mode, the peripheral clock is enabled again. 
+
+By default, all peripheral clocks are enabled during S\-L\-E\-E\-P mode. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-H\-B\-Periph,\-:} & specifies the A\-H\-B1 peripheral to gates its clock. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-A\-: G\-P\-I\-O\-A clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-B\-: G\-P\-I\-O\-B clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-C\-: G\-P\-I\-O\-C clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-D\-: G\-P\-I\-O\-D clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-E\-: G\-P\-I\-O\-E clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-F\-: G\-P\-I\-O\-F clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-G\-: G\-P\-I\-O\-G clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-G\-: G\-P\-I\-O\-G clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-I\-: G\-P\-I\-O\-I clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-C\-R\-C\-: C\-R\-C clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-B\-K\-P\-S\-R\-A\-M\-: B\-K\-P\-S\-R\-A\-M interface clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-D\-M\-A1\-: D\-M\-A1 clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-D\-M\-A2\-: D\-M\-A2 clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-E\-T\-H\-\_\-\-M\-A\-C\-: Ethernet M\-A\-C clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-E\-T\-H\-\_\-\-M\-A\-C\-\_\-\-Tx\-: Ethernet Transmission clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-E\-T\-H\-\_\-\-M\-A\-C\-\_\-\-Rx\-: Ethernet Reception clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-E\-T\-H\-\_\-\-M\-A\-C\-\_\-\-P\-T\-P\-: Ethernet P\-T\-P clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-O\-T\-G\-\_\-\-H\-S\-: U\-S\-B O\-T\-G H\-S clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-O\-T\-G\-\_\-\-H\-S\-\_\-\-U\-L\-P\-I\-: U\-S\-B O\-T\-G H\-S U\-L\-P\-I clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1455 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gaa7c450567f4731d4f0615f63586cad86}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Reset\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Reset\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Reset\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-Reset\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-H\-B1\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gaa7c450567f4731d4f0615f63586cad86}
+
+
+Forces or releases A\-H\-B1 peripheral reset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-H\-B1\-Periph,\-:} & specifies the A\-H\-B1 peripheral to reset. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-A\-: G\-P\-I\-O\-A clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-B\-: G\-P\-I\-O\-B clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-C\-: G\-P\-I\-O\-C clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-D\-: G\-P\-I\-O\-D clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-E\-: G\-P\-I\-O\-E clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-F\-: G\-P\-I\-O\-F clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-G\-: G\-P\-I\-O\-G clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-G\-: G\-P\-I\-O\-G clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-G\-P\-I\-O\-I\-: G\-P\-I\-O\-I clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-C\-R\-C\-: C\-R\-C clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-D\-M\-A1\-: D\-M\-A1 clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-D\-M\-A2\-: D\-M\-A2 clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-E\-T\-H\-\_\-\-M\-A\-C\-: Ethernet M\-A\-C clock \item R\-C\-C\-\_\-\-A\-H\-B1\-Periph\-\_\-\-O\-T\-G\-\_\-\-H\-S\-: U\-S\-B O\-T\-G H\-S clock\end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral reset. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1273 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gaadffedbd87e796f01d9776b8ee01ff5e}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-H\-B2\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gaadffedbd87e796f01d9776b8ee01ff5e}
+
+
+Enables or disables the A\-H\-B2 peripheral clock. 
+
+\begin{DoxyNote}{Note}
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-H\-B\-Periph,\-:} & specifies the A\-H\-B2 peripheral to gates its clock. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-D\-C\-M\-I\-: D\-C\-M\-I clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-C\-R\-Y\-P\-: C\-R\-Y\-P clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-H\-A\-S\-H\-: H\-A\-S\-H clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-R\-N\-G\-: R\-N\-G clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-O\-T\-G\-\_\-\-F\-S\-: U\-S\-B O\-T\-G F\-S clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1117 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga1ac5bb9676ae9b48e50d6a95de922ce3}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-H\-B2\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga1ac5bb9676ae9b48e50d6a95de922ce3}
+
+
+Enables or disables the A\-H\-B2 peripheral clock during Low Power (Sleep) mode. 
+
+\begin{DoxyNote}{Note}
+Peripheral clock gating in S\-L\-E\-E\-P mode can be used to further reduce power consumption. 
+
+After wakeup from S\-L\-E\-E\-P mode, the peripheral clock is enabled again. 
+
+By default, all peripheral clocks are enabled during S\-L\-E\-E\-P mode. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-H\-B\-Periph,\-:} & specifies the A\-H\-B2 peripheral to gates its clock. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-D\-C\-M\-I\-: D\-C\-M\-I clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-C\-R\-Y\-P\-: C\-R\-Y\-P clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-H\-A\-S\-H\-: H\-A\-S\-H clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-R\-N\-G\-: R\-N\-G clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-O\-T\-G\-\_\-\-F\-S\-: U\-S\-B O\-T\-G F\-S clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1487 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gafb119d6d1955d1b8c361e8140845ac5a}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Reset\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Reset\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Reset\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-Reset\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-H\-B2\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gafb119d6d1955d1b8c361e8140845ac5a}
+
+
+Forces or releases A\-H\-B2 peripheral reset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-H\-B2\-Periph,\-:} & specifies the A\-H\-B2 peripheral to reset. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-D\-C\-M\-I\-: D\-C\-M\-I clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-C\-R\-Y\-P\-: C\-R\-Y\-P clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-H\-A\-S\-H\-: H\-A\-S\-H clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-R\-N\-G\-: R\-N\-G clock \item R\-C\-C\-\_\-\-A\-H\-B2\-Periph\-\_\-\-O\-T\-G\-\_\-\-F\-S\-: U\-S\-B O\-T\-G F\-S clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral reset. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1302 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga4eb8c119f2e9bf2bd2e042d27f151338}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-H\-B3\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga4eb8c119f2e9bf2bd2e042d27f151338}
+
+
+Enables or disables the A\-H\-B3 peripheral clock. 
+
+\begin{DoxyNote}{Note}
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-H\-B\-Periph,\-:} & specifies the A\-H\-B3 peripheral to gates its clock. This parameter must be\-: R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-\_\-\-F\-S\-M\-C \\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1144 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga4e1df07cdfd81c068902d9d35fcc3911}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-L\-P\-Mode\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-L\-P\-Mode\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-L\-P\-Mode\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Clock\-L\-P\-Mode\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-H\-B3\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga4e1df07cdfd81c068902d9d35fcc3911}
+
+
+Enables or disables the A\-H\-B3 peripheral clock during Low Power (Sleep) mode. 
+
+\begin{DoxyNote}{Note}
+Peripheral clock gating in S\-L\-E\-E\-P mode can be used to further reduce power consumption. 
+
+After wakeup from S\-L\-E\-E\-P mode, the peripheral clock is enabled again. 
+
+By default, all peripheral clocks are enabled during S\-L\-E\-E\-P mode. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-H\-B\-Periph,\-:} & specifies the A\-H\-B3 peripheral to gates its clock. This parameter must be\-: R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-\_\-\-F\-S\-M\-C \\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1514 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gaee44f159a1ca9ebdd7117bff387cd592}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Reset\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Reset\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Reset\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-Reset\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-H\-B3\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gaee44f159a1ca9ebdd7117bff387cd592}
+
+
+Forces or releases A\-H\-B3 peripheral reset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-H\-B3\-Periph,\-:} & specifies the A\-H\-B3 peripheral to reset. This parameter must be\-: R\-C\-C\-\_\-\-A\-H\-B3\-Periph\-\_\-\-F\-S\-M\-C \\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral reset. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1326 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gaee7cc5d73af7fe1986fceff8afd3973e}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-P\-B1\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gaee7cc5d73af7fe1986fceff8afd3973e}
+
+
+Enables or disables the Low Speed A\-P\-B (A\-P\-B1) peripheral clock. 
+
+\begin{DoxyNote}{Note}
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-P\-B1\-Periph,\-:} & specifies the A\-P\-B1 peripheral to gates its clock. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M2\-: T\-I\-M2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M3\-: T\-I\-M3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M4\-: T\-I\-M4 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M5\-: T\-I\-M5 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M6\-: T\-I\-M6 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M7\-: T\-I\-M7 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M12\-: T\-I\-M12 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M13\-: T\-I\-M13 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M14\-: T\-I\-M14 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-W\-W\-D\-G\-: W\-W\-D\-G clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-S\-P\-I2\-: S\-P\-I2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-S\-P\-I3\-: S\-P\-I3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-S\-A\-R\-T2\-: U\-S\-A\-R\-T2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-S\-A\-R\-T3\-: U\-S\-A\-R\-T3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-A\-R\-T4\-: U\-A\-R\-T4 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-A\-R\-T5\-: U\-A\-R\-T5 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-I2\-C1\-: I2\-C1 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-I2\-C2\-: I2\-C2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-I2\-C3\-: I2\-C3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-C\-A\-N1\-: C\-A\-N1 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-C\-A\-N2\-: C\-A\-N2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-P\-W\-R\-: P\-W\-R clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-D\-A\-C\-: D\-A\-C clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1194 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga84dd64badb84768cbcf19e241cadff50}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Clock\-L\-P\-Mode\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-P\-B1\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga84dd64badb84768cbcf19e241cadff50}
+
+
+Enables or disables the A\-P\-B1 peripheral clock during Low Power (Sleep) mode. 
+
+\begin{DoxyNote}{Note}
+Peripheral clock gating in S\-L\-E\-E\-P mode can be used to further reduce power consumption. 
+
+After wakeup from S\-L\-E\-E\-P mode, the peripheral clock is enabled again. 
+
+By default, all peripheral clocks are enabled during S\-L\-E\-E\-P mode. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-P\-B1\-Periph,\-:} & specifies the A\-P\-B1 peripheral to gates its clock. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M2\-: T\-I\-M2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M3\-: T\-I\-M3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M4\-: T\-I\-M4 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M5\-: T\-I\-M5 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M6\-: T\-I\-M6 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M7\-: T\-I\-M7 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M12\-: T\-I\-M12 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M13\-: T\-I\-M13 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M14\-: T\-I\-M14 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-W\-W\-D\-G\-: W\-W\-D\-G clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-S\-P\-I2\-: S\-P\-I2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-S\-P\-I3\-: S\-P\-I3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-S\-A\-R\-T2\-: U\-S\-A\-R\-T2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-S\-A\-R\-T3\-: U\-S\-A\-R\-T3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-A\-R\-T4\-: U\-A\-R\-T4 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-A\-R\-T5\-: U\-A\-R\-T5 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-I2\-C1\-: I2\-C1 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-I2\-C2\-: I2\-C2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-I2\-C3\-: I2\-C3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-C\-A\-N1\-: C\-A\-N1 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-C\-A\-N2\-: C\-A\-N2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-P\-W\-R\-: P\-W\-R clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-D\-A\-C\-: D\-A\-C clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1564 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gab197ae4369c10b92640a733b40ed2801}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Reset\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Reset\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Reset\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-Reset\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-P\-B1\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gab197ae4369c10b92640a733b40ed2801}
+
+
+Forces or releases Low Speed A\-P\-B (A\-P\-B1) peripheral reset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-P\-B1\-Periph,\-:} & specifies the A\-P\-B1 peripheral to reset. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M2\-: T\-I\-M2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M3\-: T\-I\-M3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M4\-: T\-I\-M4 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M5\-: T\-I\-M5 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M6\-: T\-I\-M6 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M7\-: T\-I\-M7 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M12\-: T\-I\-M12 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M13\-: T\-I\-M13 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-T\-I\-M14\-: T\-I\-M14 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-W\-W\-D\-G\-: W\-W\-D\-G clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-S\-P\-I2\-: S\-P\-I2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-S\-P\-I3\-: S\-P\-I3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-S\-A\-R\-T2\-: U\-S\-A\-R\-T2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-S\-A\-R\-T3\-: U\-S\-A\-R\-T3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-A\-R\-T4\-: U\-A\-R\-T4 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-U\-A\-R\-T5\-: U\-A\-R\-T5 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-I2\-C1\-: I2\-C1 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-I2\-C2\-: I2\-C2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-I2\-C3\-: I2\-C3 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-C\-A\-N1\-: C\-A\-N1 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-C\-A\-N2\-: C\-A\-N2 clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-P\-W\-R\-: P\-W\-R clock \item R\-C\-C\-\_\-\-A\-P\-B1\-Periph\-\_\-\-D\-A\-C\-: D\-A\-C clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral reset. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1373 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga56ff55caf8d835351916b40dd030bc87}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-P\-B2\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga56ff55caf8d835351916b40dd030bc87}
+
+
+Enables or disables the High Speed A\-P\-B (A\-P\-B2) peripheral clock. 
+
+\begin{DoxyNote}{Note}
+After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-P\-B2\-Periph,\-:} & specifies the A\-P\-B2 peripheral to gates its clock. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M1\-: T\-I\-M1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M8\-: T\-I\-M8 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-U\-S\-A\-R\-T1\-: U\-S\-A\-R\-T1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-U\-S\-A\-R\-T6\-: U\-S\-A\-R\-T6 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-A\-D\-C1\-: A\-D\-C1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-A\-D\-C2\-: A\-D\-C2 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-A\-D\-C3\-: A\-D\-C3 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-S\-D\-I\-O\-: S\-D\-I\-O clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-S\-P\-I1\-: S\-P\-I1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-S\-Y\-S\-C\-F\-G\-: S\-Y\-S\-C\-F\-G clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M9\-: T\-I\-M9 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M10\-: T\-I\-M10 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M11\-: T\-I\-M11 clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1234 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga30365b9e0b4c5d7e98c2675c862ddd7e}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Clock\-L\-P\-Mode\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-P\-B2\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga30365b9e0b4c5d7e98c2675c862ddd7e}
+
+
+Enables or disables the A\-P\-B2 peripheral clock during Low Power (Sleep) mode. 
+
+\begin{DoxyNote}{Note}
+Peripheral clock gating in S\-L\-E\-E\-P mode can be used to further reduce power consumption. 
+
+After wakeup from S\-L\-E\-E\-P mode, the peripheral clock is enabled again. 
+
+By default, all peripheral clocks are enabled during S\-L\-E\-E\-P mode. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-P\-B2\-Periph,\-:} & specifies the A\-P\-B2 peripheral to gates its clock. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M1\-: T\-I\-M1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M8\-: T\-I\-M8 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-U\-S\-A\-R\-T1\-: U\-S\-A\-R\-T1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-U\-S\-A\-R\-T6\-: U\-S\-A\-R\-T6 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-A\-D\-C1\-: A\-D\-C1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-A\-D\-C2\-: A\-D\-C2 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-A\-D\-C3\-: A\-D\-C3 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-S\-D\-I\-O\-: S\-D\-I\-O clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-S\-P\-I1\-: S\-P\-I1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-S\-Y\-S\-C\-F\-G\-: S\-Y\-S\-C\-F\-G clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M9\-: T\-I\-M9 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M10\-: T\-I\-M10 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M11\-: T\-I\-M11 clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1604 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gad94553850ac07106a27ee85fec37efdf}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Reset\-Cmd}}
+\index{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Reset\-Cmd@{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Reset\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Reset\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-Reset\-Cmd (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-A\-P\-B2\-Periph, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gad94553850ac07106a27ee85fec37efdf}
+
+
+Forces or releases High Speed A\-P\-B (A\-P\-B2) peripheral reset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-A\-P\-B2\-Periph,\-:} & specifies the A\-P\-B2 peripheral to reset. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M1\-: T\-I\-M1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M8\-: T\-I\-M8 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-U\-S\-A\-R\-T1\-: U\-S\-A\-R\-T1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-U\-S\-A\-R\-T6\-: U\-S\-A\-R\-T6 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-A\-D\-C1\-: A\-D\-C1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-A\-D\-C2\-: A\-D\-C2 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-A\-D\-C3\-: A\-D\-C3 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-S\-D\-I\-O\-: S\-D\-I\-O clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-S\-P\-I1\-: S\-P\-I1 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-S\-Y\-S\-C\-F\-G\-: S\-Y\-S\-C\-F\-G clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M9\-: T\-I\-M9 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M10\-: T\-I\-M10 clock \item R\-C\-C\-\_\-\-A\-P\-B2\-Periph\-\_\-\-T\-I\-M11\-: T\-I\-M11 clock \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified peripheral reset. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1409 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga636c3b72f35391e67f12a551b15fa54a}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Backup\-Reset\-Cmd@{R\-C\-C\-\_\-\-Backup\-Reset\-Cmd}}
+\index{R\-C\-C\-\_\-\-Backup\-Reset\-Cmd@{R\-C\-C\-\_\-\-Backup\-Reset\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Backup\-Reset\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-Backup\-Reset\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga636c3b72f35391e67f12a551b15fa54a}
+
+
+Forces or releases the Backup domain reset. 
+
+\begin{DoxyNote}{Note}
+This function resets the R\-T\-C peripheral (including the backup registers) and the R\-T\-C clock source selection in R\-C\-C\-\_\-\-C\-S\-R register. 
+
+The B\-K\-P\-S\-R\-A\-M is not affected by this reset. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the Backup domain reset. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1029 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga53f909dbb15a54124419084ebda97d72}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Clear\-Flag@{R\-C\-C\-\_\-\-Clear\-Flag}}
+\index{R\-C\-C\-\_\-\-Clear\-Flag@{R\-C\-C\-\_\-\-Clear\-Flag}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga53f909dbb15a54124419084ebda97d72}
+
+
+Clears the R\-C\-C reset flags. The reset flags are\-: R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-I\-N\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-O\-R\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-S\-F\-T\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-I\-W\-D\-G\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-W\-W\-D\-G\-R\-S\-T, R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-P\-W\-R\-R\-S\-T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1730 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga529842d165910f8f87e26115da36089b}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga529842d165910f8f87e26115da36089b}
+
+
+Clears the R\-C\-C's interrupt pending bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-I\-T,\-:} & specifies the interrupt pending bit to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-I\-R\-D\-Y\-: L\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-E\-R\-D\-Y\-: L\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-I\-R\-D\-Y\-: H\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-E\-R\-D\-Y\-: H\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-R\-D\-Y\-: main P\-L\-L ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-I2\-S\-R\-D\-Y\-: P\-L\-L\-I2\-S ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-C\-S\-S\-: Clock Security System interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1782 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga0ff1fd7b9a8a49cdda11b7d7261c3494}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Clock\-Security\-System\-Cmd@{R\-C\-C\-\_\-\-Clock\-Security\-System\-Cmd}}
+\index{R\-C\-C\-\_\-\-Clock\-Security\-System\-Cmd@{R\-C\-C\-\_\-\-Clock\-Security\-System\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Clock\-Security\-System\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-Clock\-Security\-System\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga0ff1fd7b9a8a49cdda11b7d7261c3494}
+
+
+Enables or disables the Clock Security System. 
+
+\begin{DoxyNote}{Note}
+If a failure is detected on the H\-S\-E oscillator clock, this oscillator is automatically disabled and an interrupt is generated to inform the software about the failure (Clock Security System Interrupt, C\-S\-S\-I), allowing the M\-C\-U to perform rescue operations. The C\-S\-S\-I is linked to the Cortex-\/\-M4 N\-M\-I (Non-\/\-Maskable Interrupt) exception vector. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the Clock Security System. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 518 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga413f6422be11b1334abe60b3bff2e062}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-De\-Init@{R\-C\-C\-\_\-\-De\-Init}}
+\index{R\-C\-C\-\_\-\-De\-Init@{R\-C\-C\-\_\-\-De\-Init}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-De\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-De\-Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga413f6422be11b1334abe60b3bff2e062}
+
+
+Resets the R\-C\-C clock configuration to the default reset state. 
+
+\begin{DoxyNote}{Note}
+The default reset state of the clock configuration is given below\-:
+\begin{DoxyItemize}
+\item H\-S\-I O\-N and used as system clock source
+\item H\-S\-E, P\-L\-L and P\-L\-L\-I2\-S O\-F\-F
+\item A\-H\-B, A\-P\-B1 and A\-P\-B2 prescaler set to 1.
+\item C\-S\-S, M\-C\-O1 and M\-C\-O2 O\-F\-F
+\item All interrupts disabled 
+\end{DoxyItemize}
+
+This function doesn't modify the configuration of the
+\begin{DoxyItemize}
+\item Peripheral clocks
+\item L\-S\-I, L\-S\-E and R\-T\-C clocks 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 196 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga3e9944fd1ed734275222bbb3e3f29993}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Get\-Clocks\-Freq@{R\-C\-C\-\_\-\-Get\-Clocks\-Freq}}
+\index{R\-C\-C\-\_\-\-Get\-Clocks\-Freq@{R\-C\-C\-\_\-\-Get\-Clocks\-Freq}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Get\-Clocks\-Freq}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-Get\-Clocks\-Freq (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-C\-C\-\_\-\-Clocks\-Type\-Def} $\ast$}]{R\-C\-C\-\_\-\-Clocks}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga3e9944fd1ed734275222bbb3e3f29993}
+
+
+Returns the frequencies of different on chip clocks; S\-Y\-S\-C\-L\-K, H\-C\-L\-K, P\-C\-L\-K1 and P\-C\-L\-K2. 
+
+\begin{DoxyNote}{Note}
+The system frequency computed by this function is not the real frequency in the chip. It is calculated based on the predefined constant and the selected clock source\-: 
+
+If S\-Y\-S\-C\-L\-K source is H\-S\-I, function returns values based on H\-S\-I\-\_\-\-V\-A\-L\-U\-E($\ast$) 
+
+If S\-Y\-S\-C\-L\-K source is H\-S\-E, function returns values based on H\-S\-E\-\_\-\-V\-A\-L\-U\-E($\ast$$\ast$) 
+
+If S\-Y\-S\-C\-L\-K source is P\-L\-L, function returns values based on H\-S\-E\-\_\-\-V\-A\-L\-U\-E($\ast$$\ast$) or H\-S\-I\-\_\-\-V\-A\-L\-U\-E($\ast$) multiplied/divided by the P\-L\-L factors. 
+
+($\ast$) H\-S\-I\-\_\-\-V\-A\-L\-U\-E is a constant defined in stm32f4xx.\-h file (default value 16 M\-Hz) but the real value may vary depending on the variations in voltage and temperature. 
+
+($\ast$$\ast$) H\-S\-E\-\_\-\-V\-A\-L\-U\-E is a constant defined in stm32f4xx.\-h file (default value 25 M\-Hz), user has to ensure that H\-S\-E\-\_\-\-V\-A\-L\-U\-E is same as the real frequency of the crystal used. Otherwise, this function may have wrong result.
+
+The result of this function could be not correct when using fractional value for H\-S\-E crystal.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-Clocks,\-:} & pointer to a \hyperlink{struct_r_c_c___clocks_type_def}{R\-C\-C\-\_\-\-Clocks\-Type\-Def} structure which will hold the clocks frequencies.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function can be used by the user application to compute the baudrate for the communication peripherals or configure other parameters. 
+
+Each time S\-Y\-S\-C\-L\-K, H\-C\-L\-K, P\-C\-L\-K1 and/or P\-C\-L\-K2 clock changes, this function must be called to update the structure's field. Otherwise, any configuration based on this function will be incorrect.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 855 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga2897bdc52f272031c44fb1f72205d295}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Get\-Flag\-Status@{R\-C\-C\-\_\-\-Get\-Flag\-Status}}
+\index{R\-C\-C\-\_\-\-Get\-Flag\-Status@{R\-C\-C\-\_\-\-Get\-Flag\-Status}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status R\-C\-C\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga2897bdc52f272031c44fb1f72205d295}
+
+
+Checks whether the specified R\-C\-C flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-H\-S\-I\-R\-D\-Y\-: H\-S\-I oscillator clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-H\-S\-E\-R\-D\-Y\-: H\-S\-E oscillator clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-L\-L\-R\-D\-Y\-: main P\-L\-L clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-L\-L\-I2\-S\-R\-D\-Y\-: P\-L\-L\-I2\-S clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-S\-E\-R\-D\-Y\-: L\-S\-E oscillator clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-S\-I\-R\-D\-Y\-: L\-S\-I oscillator clock ready \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-B\-O\-R\-R\-S\-T\-: P\-O\-R/\-P\-D\-R or B\-O\-R reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-I\-N\-R\-S\-T\-: Pin reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-P\-O\-R\-R\-S\-T\-: P\-O\-R/\-P\-D\-R reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-S\-F\-T\-R\-S\-T\-: Software reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-I\-W\-D\-G\-R\-S\-T\-: Independent Watchdog reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-W\-W\-D\-G\-R\-S\-T\-: Window Watchdog reset \item R\-C\-C\-\_\-\-F\-L\-A\-G\-\_\-\-L\-P\-W\-R\-R\-S\-T\-: Low Power reset \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of R\-C\-C\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1685 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga6126c99f398ee4be410ad76ae3aee18f}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Get\-I\-T\-Status@{R\-C\-C\-\_\-\-Get\-I\-T\-Status}}
+\index{R\-C\-C\-\_\-\-Get\-I\-T\-Status@{R\-C\-C\-\_\-\-Get\-I\-T\-Status}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status R\-C\-C\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga6126c99f398ee4be410ad76ae3aee18f}
+
+
+Checks whether the specified R\-C\-C interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-I\-T,\-:} & specifies the R\-C\-C interrupt source to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-I\-R\-D\-Y\-: L\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-E\-R\-D\-Y\-: L\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-I\-R\-D\-Y\-: H\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-E\-R\-D\-Y\-: H\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-R\-D\-Y\-: main P\-L\-L ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-I2\-S\-R\-D\-Y\-: P\-L\-L\-I2\-S ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-C\-S\-S\-: Clock Security System interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of R\-C\-C\-\_\-\-I\-T (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1749 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gaaeb32311c208b2a980841c9c884a41ea}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Get\-S\-Y\-S\-C\-L\-K\-Source@{R\-C\-C\-\_\-\-Get\-S\-Y\-S\-C\-L\-K\-Source}}
+\index{R\-C\-C\-\_\-\-Get\-S\-Y\-S\-C\-L\-K\-Source@{R\-C\-C\-\_\-\-Get\-S\-Y\-S\-C\-L\-K\-Source}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Get\-S\-Y\-S\-C\-L\-K\-Source}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t R\-C\-C\-\_\-\-Get\-S\-Y\-S\-C\-L\-K\-Source (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gaaeb32311c208b2a980841c9c884a41ea}
+
+
+Returns the clock source used as system clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & clock source used as system clock. The returned value can be one of the following\-:
+\begin{DoxyItemize}
+\item 0x00\-: H\-S\-I used as system clock
+\item 0x04\-: H\-S\-E used as system clock
+\item 0x08\-: P\-L\-L used as system clock 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 715 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga9d0aec72e236c6cdf3a3a82dfb525491}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-H\-C\-L\-K\-Config@{R\-C\-C\-\_\-\-H\-C\-L\-K\-Config}}
+\index{R\-C\-C\-\_\-\-H\-C\-L\-K\-Config@{R\-C\-C\-\_\-\-H\-C\-L\-K\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-H\-C\-L\-K\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-H\-C\-L\-K\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga9d0aec72e236c6cdf3a3a82dfb525491}
+
+
+Configures the A\-H\-B clock (H\-C\-L\-K). 
+
+\begin{DoxyNote}{Note}
+Depending on the device voltage range, the software has to set correctly these bits to ensure that H\-C\-L\-K not exceed the maximum allowed frequency (for more details refer to section above \char`\"{}\-C\-P\-U, A\-H\-B and A\-P\-B busses clocks configuration functions\char`\"{}) 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K,\-:} & defines the A\-H\-B clock divider. This clock is derived from the system clock (S\-Y\-S\-C\-L\-K). This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-\_\-\-Div1\-: A\-H\-B clock = S\-Y\-S\-C\-L\-K \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-\_\-\-Div2\-: A\-H\-B clock = S\-Y\-S\-C\-L\-K/2 \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-\_\-\-Div4\-: A\-H\-B clock = S\-Y\-S\-C\-L\-K/4 \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-\_\-\-Div8\-: A\-H\-B clock = S\-Y\-S\-C\-L\-K/8 \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-\_\-\-Div16\-: A\-H\-B clock = S\-Y\-S\-C\-L\-K/16 \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-\_\-\-Div64\-: A\-H\-B clock = S\-Y\-S\-C\-L\-K/64 \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-\_\-\-Div128\-: A\-H\-B clock = S\-Y\-S\-C\-L\-K/128 \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-\_\-\-Div256\-: A\-H\-B clock = S\-Y\-S\-C\-L\-K/256 \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-\_\-\-Div512\-: A\-H\-B clock = S\-Y\-S\-C\-L\-K/512 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 740 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga523b06e73f6aa8a03e42299c855066a8}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-H\-S\-E\-Config@{R\-C\-C\-\_\-\-H\-S\-E\-Config}}
+\index{R\-C\-C\-\_\-\-H\-S\-E\-Config@{R\-C\-C\-\_\-\-H\-S\-E\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-H\-S\-E\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-H\-S\-E\-Config (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-H\-S\-E}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga523b06e73f6aa8a03e42299c855066a8}
+
+
+Configures the External High Speed oscillator (H\-S\-E). 
+
+\begin{DoxyNote}{Note}
+After enabling the H\-S\-E (R\-C\-C\-\_\-\-H\-S\-E\-\_\-\-O\-N or R\-C\-C\-\_\-\-H\-S\-E\-\_\-\-Bypass), the application software should wait on H\-S\-E\-R\-D\-Y flag to be set indicating that H\-S\-E clock is stable and can be used to clock the P\-L\-L and/or system clock. 
+
+H\-S\-E state can not be changed if it is used directly or through the P\-L\-L as system clock. In this case, you have to select another source of the system clock then change the H\-S\-E state (ex. disable it). 
+
+The H\-S\-E is stopped by hardware when entering S\-T\-O\-P and S\-T\-A\-N\-D\-B\-Y modes. 
+
+This function reset the C\-S\-S\-O\-N bit, so if the Clock security system(\-C\-S\-S) was previously enabled you have to enable it again after calling this function. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-H\-S\-E,\-:} & specifies the new state of the H\-S\-E. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-H\-S\-E\-\_\-\-O\-F\-F\-: turn O\-F\-F the H\-S\-E oscillator, H\-S\-E\-R\-D\-Y flag goes low after 6 H\-S\-E oscillator clock cycles. \item R\-C\-C\-\_\-\-H\-S\-E\-\_\-\-O\-N\-: turn O\-N the H\-S\-E oscillator \item R\-C\-C\-\_\-\-H\-S\-E\-\_\-\-Bypass\-: H\-S\-E oscillator bypassed with external clock \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 237 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga0c6772a1e43765909495f57815ef69e2}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-H\-S\-I\-Cmd@{R\-C\-C\-\_\-\-H\-S\-I\-Cmd}}
+\index{R\-C\-C\-\_\-\-H\-S\-I\-Cmd@{R\-C\-C\-\_\-\-H\-S\-I\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-H\-S\-I\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-H\-S\-I\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga0c6772a1e43765909495f57815ef69e2}
+
+
+Enables or disables the Internal High Speed oscillator (H\-S\-I). 
+
+\begin{DoxyNote}{Note}
+The H\-S\-I is stopped by hardware when entering S\-T\-O\-P and S\-T\-A\-N\-D\-B\-Y modes. It is used (enabled by hardware) as system clock source after startup from Reset, wakeup from S\-T\-O\-P and S\-T\-A\-N\-D\-B\-Y mode, or in case of failure of the H\-S\-E used directly or indirectly as system clock (if the Clock Security System C\-S\-S is enabled). 
+
+H\-S\-I can not be stopped if it is used as system clock source. In this case, you have to select another source of the system clock then stop the H\-S\-I. 
+
+After enabling the H\-S\-I, the application software should wait on H\-S\-I\-R\-D\-Y flag to be set indicating that H\-S\-I clock is stable and can be used as system clock source. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the H\-S\-I. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+When the H\-S\-I is stopped, H\-S\-I\-R\-D\-Y flag goes low after 6 H\-S\-I oscillator clock cycles. 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 328 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga6c56f8529988fcc8f4dbffbc1bab27d0}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Config@{R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Config}}
+\index{R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Config@{R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Source}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga6c56f8529988fcc8f4dbffbc1bab27d0}
+
+
+Configures the I2\-S clock source (I2\-S\-C\-L\-K). 
+
+\begin{DoxyNote}{Note}
+This function must be called before enabling the I2\-S A\-P\-B clock. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-I2\-S\-C\-L\-K\-Source,\-:} & specifies the I2\-S clock source. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-I2\-S2\-C\-L\-K\-Source\-\_\-\-P\-L\-L\-I2\-S\-: P\-L\-L\-I2\-S clock used as I2\-S clock source \item R\-C\-C\-\_\-\-I2\-S2\-C\-L\-K\-Source\-\_\-\-Ext\-: External clock mapped on the I2\-S\-\_\-\-C\-K\-I\-N pin used as I2\-S clock source \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1046 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gaa953aa226e9ce45300d535941e4dfe2f}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-I\-T\-Config@{R\-C\-C\-\_\-\-I\-T\-Config}}
+\index{R\-C\-C\-\_\-\-I\-T\-Config@{R\-C\-C\-\_\-\-I\-T\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gaa953aa226e9ce45300d535941e4dfe2f}
+
+
+Enables or disables the specified R\-C\-C interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-I\-T,\-:} & specifies the R\-C\-C interrupt sources to be enabled or disabled. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-I\-R\-D\-Y\-: L\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-L\-S\-E\-R\-D\-Y\-: L\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-I\-R\-D\-Y\-: H\-S\-I ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-H\-S\-E\-R\-D\-Y\-: H\-S\-E ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-R\-D\-Y\-: main P\-L\-L ready interrupt \item R\-C\-C\-\_\-\-I\-T\-\_\-\-P\-L\-L\-I2\-S\-R\-D\-Y\-: P\-L\-L\-I2\-S ready interrupt \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified R\-C\-C interrupts. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1649 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga65209ab5c3589b249c7d70f978735ca6}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-L\-S\-E\-Config@{R\-C\-C\-\_\-\-L\-S\-E\-Config}}
+\index{R\-C\-C\-\_\-\-L\-S\-E\-Config@{R\-C\-C\-\_\-\-L\-S\-E\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-L\-S\-E\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-L\-S\-E\-Config (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{R\-C\-C\-\_\-\-L\-S\-E}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga65209ab5c3589b249c7d70f978735ca6}
+
+
+Configures the External Low Speed oscillator (L\-S\-E). 
+
+\begin{DoxyNote}{Note}
+As the L\-S\-E is in the Backup domain and write access is denied to this domain after reset, you have to enable write access using P\-W\-R\-\_\-\-Backup\-Access\-Cmd(\-E\-N\-A\-B\-L\-E) function before to configure the L\-S\-E (to be done once after reset). 
+
+After enabling the L\-S\-E (R\-C\-C\-\_\-\-L\-S\-E\-\_\-\-O\-N or R\-C\-C\-\_\-\-L\-S\-E\-\_\-\-Bypass), the application software should wait on L\-S\-E\-R\-D\-Y flag to be set indicating that L\-S\-E clock is stable and can be used to clock the R\-T\-C. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-L\-S\-E,\-:} & specifies the new state of the L\-S\-E. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-L\-S\-E\-\_\-\-O\-F\-F\-: turn O\-F\-F the L\-S\-E oscillator, L\-S\-E\-R\-D\-Y flag goes low after 6 L\-S\-E oscillator clock cycles. \item R\-C\-C\-\_\-\-L\-S\-E\-\_\-\-O\-N\-: turn O\-N the L\-S\-E oscillator \item R\-C\-C\-\_\-\-L\-S\-E\-\_\-\-Bypass\-: L\-S\-E oscillator bypassed with external clock \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 353 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga81e3ca29fd154ac2019bba6936d6d5ed}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-L\-S\-I\-Cmd@{R\-C\-C\-\_\-\-L\-S\-I\-Cmd}}
+\index{R\-C\-C\-\_\-\-L\-S\-I\-Cmd@{R\-C\-C\-\_\-\-L\-S\-I\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-L\-S\-I\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-L\-S\-I\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga81e3ca29fd154ac2019bba6936d6d5ed}
+
+
+Enables or disables the Internal Low Speed oscillator (L\-S\-I). 
+
+\begin{DoxyNote}{Note}
+After enabling the L\-S\-I, the application software should wait on L\-S\-I\-R\-D\-Y flag to be set indicating that L\-S\-I clock is stable and can be used to clock the I\-W\-D\-G and/or the R\-T\-C. 
+
+L\-S\-I can not be disabled if the I\-W\-D\-G is running. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the L\-S\-I. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+When the L\-S\-I is stopped, L\-S\-I\-R\-D\-Y flag goes low after 6 L\-S\-I oscillator clock cycles. 
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 393 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga15c9ecb6ef015ed008cb28e5b7a50531}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-M\-C\-O1\-Config@{R\-C\-C\-\_\-\-M\-C\-O1\-Config}}
+\index{R\-C\-C\-\_\-\-M\-C\-O1\-Config@{R\-C\-C\-\_\-\-M\-C\-O1\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-M\-C\-O1\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-M\-C\-O1\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-M\-C\-O1\-Source, }
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-M\-C\-O1\-Div}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga15c9ecb6ef015ed008cb28e5b7a50531}
+
+
+Selects the clock source to output on M\-C\-O1 pin(\-P\-A8). 
+
+\begin{DoxyNote}{Note}
+P\-A8 should be configured in alternate function mode. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-M\-C\-O1\-Source,\-:} & specifies the clock source to output. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-M\-C\-O1\-Source\-\_\-\-H\-S\-I\-: H\-S\-I clock selected as M\-C\-O1 source \item R\-C\-C\-\_\-\-M\-C\-O1\-Source\-\_\-\-L\-S\-E\-: L\-S\-E clock selected as M\-C\-O1 source \item R\-C\-C\-\_\-\-M\-C\-O1\-Source\-\_\-\-H\-S\-E\-: H\-S\-E clock selected as M\-C\-O1 source \item R\-C\-C\-\_\-\-M\-C\-O1\-Source\-\_\-\-P\-L\-L\-C\-L\-K\-: main P\-L\-L clock selected as M\-C\-O1 source \end{DoxyItemize}
+\\
+\hline
+{\em R\-C\-C\-\_\-\-M\-C\-O1\-Div,\-:} & specifies the M\-C\-O1 prescaler. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-M\-C\-O1\-Div\-\_\-1\-: no division applied to M\-C\-O1 clock \item R\-C\-C\-\_\-\-M\-C\-O1\-Div\-\_\-2\-: division by 2 applied to M\-C\-O1 clock \item R\-C\-C\-\_\-\-M\-C\-O1\-Div\-\_\-3\-: division by 3 applied to M\-C\-O1 clock \item R\-C\-C\-\_\-\-M\-C\-O1\-Div\-\_\-4\-: division by 4 applied to M\-C\-O1 clock \item R\-C\-C\-\_\-\-M\-C\-O1\-Div\-\_\-5\-: division by 5 applied to M\-C\-O1 clock \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 543 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gaf50f10675b747de60c739e44e5c22aee}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-M\-C\-O2\-Config@{R\-C\-C\-\_\-\-M\-C\-O2\-Config}}
+\index{R\-C\-C\-\_\-\-M\-C\-O2\-Config@{R\-C\-C\-\_\-\-M\-C\-O2\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-M\-C\-O2\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-M\-C\-O2\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-M\-C\-O2\-Source, }
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-M\-C\-O2\-Div}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gaf50f10675b747de60c739e44e5c22aee}
+
+
+Selects the clock source to output on M\-C\-O2 pin(\-P\-C9). 
+
+\begin{DoxyNote}{Note}
+P\-C9 should be configured in alternate function mode. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-M\-C\-O2\-Source,\-:} & specifies the clock source to output. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-M\-C\-O2\-Source\-\_\-\-S\-Y\-S\-C\-L\-K\-: System clock (S\-Y\-S\-C\-L\-K) selected as M\-C\-O2 source \item R\-C\-C\-\_\-\-M\-C\-O2\-Source\-\_\-\-P\-L\-L\-I2\-S\-C\-L\-K\-: P\-L\-L\-I2\-S clock selected as M\-C\-O2 source \item R\-C\-C\-\_\-\-M\-C\-O2\-Source\-\_\-\-H\-S\-E\-: H\-S\-E clock selected as M\-C\-O2 source \item R\-C\-C\-\_\-\-M\-C\-O2\-Source\-\_\-\-P\-L\-L\-C\-L\-K\-: main P\-L\-L clock selected as M\-C\-O2 source \end{DoxyItemize}
+\\
+\hline
+{\em R\-C\-C\-\_\-\-M\-C\-O2\-Div,\-:} & specifies the M\-C\-O2 prescaler. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-M\-C\-O2\-Div\-\_\-1\-: no division applied to M\-C\-O2 clock \item R\-C\-C\-\_\-\-M\-C\-O2\-Div\-\_\-2\-: division by 2 applied to M\-C\-O2 clock \item R\-C\-C\-\_\-\-M\-C\-O2\-Div\-\_\-3\-: division by 3 applied to M\-C\-O2 clock \item R\-C\-C\-\_\-\-M\-C\-O2\-Div\-\_\-4\-: division by 4 applied to M\-C\-O2 clock \item R\-C\-C\-\_\-\-M\-C\-O2\-Div\-\_\-5\-: division by 5 applied to M\-C\-O2 clock \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 581 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga448137346d4292985d4e7a61dd1a824f}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-P\-C\-L\-K1\-Config@{R\-C\-C\-\_\-\-P\-C\-L\-K1\-Config}}
+\index{R\-C\-C\-\_\-\-P\-C\-L\-K1\-Config@{R\-C\-C\-\_\-\-P\-C\-L\-K1\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-P\-C\-L\-K1\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-P\-C\-L\-K1\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-H\-C\-L\-K}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga448137346d4292985d4e7a61dd1a824f}
+
+
+Configures the Low Speed A\-P\-B clock (P\-C\-L\-K1). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-H\-C\-L\-K,\-:} & defines the A\-P\-B1 clock divider. This clock is derived from the A\-H\-B clock (H\-C\-L\-K). This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div1\-: A\-P\-B1 clock = H\-C\-L\-K \item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div2\-: A\-P\-B1 clock = H\-C\-L\-K/2 \item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div4\-: A\-P\-B1 clock = H\-C\-L\-K/4 \item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div8\-: A\-P\-B1 clock = H\-C\-L\-K/8 \item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div16\-: A\-P\-B1 clock = H\-C\-L\-K/16 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 772 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga09f9c010a4adca9e036da42c2ca6126a}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-P\-C\-L\-K2\-Config@{R\-C\-C\-\_\-\-P\-C\-L\-K2\-Config}}
+\index{R\-C\-C\-\_\-\-P\-C\-L\-K2\-Config@{R\-C\-C\-\_\-\-P\-C\-L\-K2\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-P\-C\-L\-K2\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-P\-C\-L\-K2\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-H\-C\-L\-K}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga09f9c010a4adca9e036da42c2ca6126a}
+
+
+Configures the High Speed A\-P\-B clock (P\-C\-L\-K2). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-H\-C\-L\-K,\-:} & defines the A\-P\-B2 clock divider. This clock is derived from the A\-H\-B clock (H\-C\-L\-K). This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div1\-: A\-P\-B2 clock = H\-C\-L\-K \item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div2\-: A\-P\-B2 clock = H\-C\-L\-K/2 \item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div4\-: A\-P\-B2 clock = H\-C\-L\-K/4 \item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div8\-: A\-P\-B2 clock = H\-C\-L\-K/8 \item R\-C\-C\-\_\-\-H\-C\-L\-K\-\_\-\-Div16\-: A\-P\-B2 clock = H\-C\-L\-K/16 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 803 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga84dee53c75e58fdb53571716593c2272}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-P\-L\-L\-Cmd@{R\-C\-C\-\_\-\-P\-L\-L\-Cmd}}
+\index{R\-C\-C\-\_\-\-P\-L\-L\-Cmd@{R\-C\-C\-\_\-\-P\-L\-L\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-P\-L\-L\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-P\-L\-L\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga84dee53c75e58fdb53571716593c2272}
+
+
+Enables or disables the main P\-L\-L. 
+
+\begin{DoxyNote}{Note}
+After enabling the main P\-L\-L, the application software should wait on P\-L\-L\-R\-D\-Y flag to be set indicating that P\-L\-L clock is stable and can be used as system clock source. 
+
+The main P\-L\-L can not be disabled if it is used as system clock source 
+
+The main P\-L\-L is disabled by hardware when entering S\-T\-O\-P and S\-T\-A\-N\-D\-B\-Y modes. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the main P\-L\-L. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 459 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga154b93e90bfdede2a874244a1ff1002e}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-P\-L\-L\-Config@{R\-C\-C\-\_\-\-P\-L\-L\-Config}}
+\index{R\-C\-C\-\_\-\-P\-L\-L\-Config@{R\-C\-C\-\_\-\-P\-L\-L\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-P\-L\-L\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-P\-L\-L\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-P\-L\-L\-Source, }
+\item[{uint32\-\_\-t}]{P\-L\-L\-M, }
+\item[{uint32\-\_\-t}]{P\-L\-L\-N, }
+\item[{uint32\-\_\-t}]{P\-L\-L\-P, }
+\item[{uint32\-\_\-t}]{P\-L\-L\-Q}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga154b93e90bfdede2a874244a1ff1002e}
+
+
+Configures the main P\-L\-L clock source, multiplication and division factors. 
+
+\begin{DoxyNote}{Note}
+This function must be used only when the main P\-L\-L is disabled.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-P\-L\-L\-Source,\-:} & specifies the P\-L\-L entry clock source. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-P\-L\-L\-Source\-\_\-\-H\-S\-I\-: H\-S\-I oscillator clock selected as P\-L\-L clock entry \item R\-C\-C\-\_\-\-P\-L\-L\-Source\-\_\-\-H\-S\-E\-: H\-S\-E oscillator clock selected as P\-L\-L clock entry \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This clock source (R\-C\-C\-\_\-\-P\-L\-L\-Source) is common for the main P\-L\-L and P\-L\-L\-I2\-S.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em P\-L\-L\-M,\-:} & specifies the division factor for P\-L\-L V\-C\-O input clock This parameter must be a number between 0 and 63. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You have to set the P\-L\-L\-M parameter correctly to ensure that the V\-C\-O input frequency ranges from 1 to 2 M\-Hz. It is recommended to select a frequency of 2 M\-Hz to limit P\-L\-L jitter.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em P\-L\-L\-N,\-:} & specifies the multiplication factor for P\-L\-L V\-C\-O output clock This parameter must be a number between 192 and 432. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You have to set the P\-L\-L\-N parameter correctly to ensure that the V\-C\-O output frequency is between 192 and 432 M\-Hz.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em P\-L\-L\-P,\-:} & specifies the division factor for main system clock (S\-Y\-S\-C\-L\-K) This parameter must be a number in the range \{2, 4, 6, or 8\}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You have to set the P\-L\-L\-P parameter correctly to not exceed 168 M\-Hz on the System clock frequency.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em P\-L\-L\-Q,\-:} & specifies the division factor for O\-T\-G F\-S, S\-D\-I\-O and R\-N\-G clocks This parameter must be a number between 4 and 15. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If the U\-S\-B O\-T\-G F\-S is used in your application, you have to set the P\-L\-L\-Q parameter correctly to have 48 M\-Hz clock for the U\-S\-B. However, the S\-D\-I\-O and R\-N\-G need a frequency lower than or equal to 48 M\-Hz to work correctly.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 436 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga2efe493a6337d5e0034bfcdfb0f541e4}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Cmd@{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Cmd}}
+\index{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Cmd@{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga2efe493a6337d5e0034bfcdfb0f541e4}
+
+
+Enables or disables the P\-L\-L\-I2\-S. 
+
+\begin{DoxyNote}{Note}
+The P\-L\-L\-I2\-S is disabled by hardware when entering S\-T\-O\-P and S\-T\-A\-N\-D\-B\-Y modes. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the P\-L\-L\-I2\-S. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 500 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga4c15157382939a693c15620a4867e6ad}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Config@{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Config}}
+\index{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Config@{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-P\-L\-L\-I2\-S\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{P\-L\-L\-I2\-S\-N, }
+\item[{uint32\-\_\-t}]{P\-L\-L\-I2\-S\-R}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga4c15157382939a693c15620a4867e6ad}
+
+
+Configures the P\-L\-L\-I2\-S clock multiplication and division factors. 
+
+\begin{DoxyNote}{Note}
+This function must be used only when the P\-L\-L\-I2\-S is disabled. 
+
+P\-L\-L\-I2\-S clock source is common with the main P\-L\-L (configured in R\-C\-C\-\_\-\-P\-L\-L\-Config function )
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em P\-L\-L\-I2\-S\-N,\-:} & specifies the multiplication factor for P\-L\-L\-I2\-S V\-C\-O output clock This parameter must be a number between 192 and 432. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You have to set the P\-L\-L\-I2\-S\-N parameter correctly to ensure that the V\-C\-O output frequency is between 192 and 432 M\-Hz.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em P\-L\-L\-I2\-S\-R,\-:} & specifies the division factor for I2\-S clock This parameter must be a number between 2 and 7. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You have to set the P\-L\-L\-I2\-S\-R parameter correctly to not exceed 192 M\-Hz on the I2\-S clock frequency.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 485 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga9802f84846df2cea8e369234ed13b159}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Cmd@{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Cmd}}
+\index{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Cmd@{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Cmd}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Cmd (
+\begin{DoxyParamCaption}
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga9802f84846df2cea8e369234ed13b159}
+
+
+Enables or disables the R\-T\-C clock. 
+
+\begin{DoxyNote}{Note}
+This function must be used only after the R\-T\-C clock source was selected using the R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Config function. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em New\-State,\-:} & new state of the R\-T\-C clock. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 1012 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga1473d8a5a020642966359611c44181b0}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Config@{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Config}}
+\index{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Config@{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Source}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga1473d8a5a020642966359611c44181b0}
+
+
+Configures the R\-T\-C clock (R\-T\-C\-C\-L\-K). 
+
+\begin{DoxyNote}{Note}
+As the R\-T\-C clock configuration bits are in the Backup domain and write access is denied to this domain after reset, you have to enable write access using P\-W\-R\-\_\-\-Backup\-Access\-Cmd(\-E\-N\-A\-B\-L\-E) function before to configure the R\-T\-C clock source (to be done once after reset). 
+
+Once the R\-T\-C clock is configured it can't be changed unless the Backup domain is reset using \hyperlink{group___r_c_c_ga636c3b72f35391e67f12a551b15fa54a}{R\-C\-C\-\_\-\-Backup\-Reset\-Cmd()} function, or by a Power On Reset (P\-O\-R).
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Source,\-:} & specifies the R\-T\-C clock source. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Source\-\_\-\-L\-S\-E\-: L\-S\-E selected as R\-T\-C clock \item R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Source\-\_\-\-L\-S\-I\-: L\-S\-I selected as R\-T\-C clock \item R\-C\-C\-\_\-\-R\-T\-C\-C\-L\-K\-Source\-\_\-\-H\-S\-E\-\_\-\-Divx\-: H\-S\-E clock divided by x selected as R\-T\-C clock, where x\-:\mbox{[}2,31\mbox{]}\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If the L\-S\-E or L\-S\-I is used as R\-T\-C clock source, the R\-T\-C continues to work in S\-T\-O\-P and S\-T\-A\-N\-D\-B\-Y modes, and can be used as wakeup source. However, when the H\-S\-E clock is used as R\-T\-C clock source, the R\-T\-C cannot be used in S\-T\-O\-P and S\-T\-A\-N\-D\-B\-Y modes. 
+
+The maximum input clock frequency for R\-T\-C is 1\-M\-Hz (when using H\-S\-E as R\-T\-C clock source).
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 980 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_ga3551a36a8f0a3dc96a74d6b939048337}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Config@{R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Config}}
+\index{R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Config@{R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Config}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Source}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_ga3551a36a8f0a3dc96a74d6b939048337}
+
+
+Configures the system clock (S\-Y\-S\-C\-L\-K). 
+
+\begin{DoxyNote}{Note}
+The H\-S\-I is used (enabled by hardware) as system clock source after startup from Reset, wake-\/up from S\-T\-O\-P and S\-T\-A\-N\-D\-B\-Y mode, or in case of failure of the H\-S\-E used directly or indirectly as system clock (if the Clock Security System C\-S\-S is enabled). 
+
+A switch from one clock source to another occurs only if the target clock source is ready (clock stable after startup delay or P\-L\-L locked). If a clock source which is not yet ready is selected, the switch will occur when the clock source will be ready. You can use \hyperlink{group___r_c_c_gaaeb32311c208b2a980841c9c884a41ea}{R\-C\-C\-\_\-\-Get\-S\-Y\-S\-C\-L\-K\-Source()} function to know which clock is currently used as system clock source. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Source,\-:} & specifies the clock source used as system clock. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Source\-\_\-\-H\-S\-I\-: H\-S\-I selected as system clock source \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Source\-\_\-\-H\-S\-E\-: H\-S\-E selected as system clock source \item R\-C\-C\-\_\-\-S\-Y\-S\-C\-L\-K\-Source\-\_\-\-P\-L\-L\-C\-L\-K\-: P\-L\-L selected as system clock source \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 687 of file stm32f4xx\-\_\-rcc.\-c.
+
+\hypertarget{group___r_c_c_gae0f15692614dd048ee4110a056f001dc}{\index{R\-C\-C@{R\-C\-C}!R\-C\-C\-\_\-\-Wait\-For\-H\-S\-E\-Start\-Up@{R\-C\-C\-\_\-\-Wait\-For\-H\-S\-E\-Start\-Up}}
+\index{R\-C\-C\-\_\-\-Wait\-For\-H\-S\-E\-Start\-Up@{R\-C\-C\-\_\-\-Wait\-For\-H\-S\-E\-Start\-Up}!RCC@{R\-C\-C}}
+\subsubsection[{R\-C\-C\-\_\-\-Wait\-For\-H\-S\-E\-Start\-Up}]{\setlength{\rightskip}{0pt plus 5cm}Error\-Status R\-C\-C\-\_\-\-Wait\-For\-H\-S\-E\-Start\-Up (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___r_c_c_gae0f15692614dd048ee4110a056f001dc}
+
+
+Waits for H\-S\-E start-\/up. 
+
+\begin{DoxyNote}{Note}
+This functions waits on H\-S\-E\-R\-D\-Y flag to be set and return S\-U\-C\-C\-E\-S\-S if this flag is set, otherwise returns E\-R\-R\-O\-R if the timeout is reached and this flag is not set. The timeout value is defined by the constant H\-S\-E\-\_\-\-S\-T\-A\-R\-T\-U\-P\-\_\-\-T\-I\-M\-E\-O\-U\-T in stm32f4xx.\-h file. You can tailor it depending on the H\-S\-E crystal used in your application. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em An} & Error\-Status enumeration value\-:
+\begin{DoxyItemize}
+\item S\-U\-C\-C\-E\-S\-S\-: H\-S\-E oscillator is stable and ready to use
+\item E\-R\-R\-O\-R\-: H\-S\-E oscillator not yet ready 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 261 of file stm32f4xx\-\_\-rcc.\-c.
+

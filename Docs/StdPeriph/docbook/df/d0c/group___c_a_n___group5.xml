@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d0c/group___c_a_n___group5">
+    <title>CAN Bus Error management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CAN Bus Error management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      CAN Bus Error management functions
+ ===============================================================================  
+  This section provides functions allowing to 
+   -  Return the CANx&apos;s last error code (LEC)
+   -  Return the CANx Receive Error Counter (REC)
+   -  Return the LSB of the 9-bit CANx Transmit Error Counter(TEC).
+   
+   @note If TEC is greater than 255, The CAN is in bus-off state.
+   @note if REC or TEC are greater than 96, an Error warning flag occurs.
+   @note if REC or TEC are greater than 127, an Error Passive Flag occurs.</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/d0c/group___c_a_n___group5_1gaaee721a392b6b21bfd15dc160aeb6924">CAN_GetLastErrorCode</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/d0c/group___c_a_n___group5_1ga6903eecbec40eb1361d915ddde9a3274">CAN_GetReceiveErrorCounter</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="df/d0c/group___c_a_n___group5_1ga85ee0c35bf7ca15d4e4c862eef534843">CAN_GetLSBTransmitErrorCounter</link> (
+CAN_TypeDef * CANx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="df/d0c/group___c_a_n___group5_1gaaee721a392b6b21bfd15dc160aeb6924">
+                <title>uint8_t CAN_GetLastErrorCode (CAN_TypeDef *CANx)</title> <emphasis>Returns the CANx&apos;s last error code (LEC).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Error</entry>
+                                <entry>
+<para>code:<itemizedlist>
+<listitem>
+<para>CAN_ERRORCODE_NoErr: No Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_StuffErr: Stuff Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_FormErr: Form Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_ACKErr : Acknowledgment Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_BitRecessiveErr: Bit Recessive Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_BitDominantErr: Bit Dominant Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_CRCErr: CRC Error</para>
+</listitem><listitem>
+<para>CAN_ERRORCODE_SoftwareSetErr: Software Set Error </para>
+</listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/d0c/group___c_a_n___group5_1ga6903eecbec40eb1361d915ddde9a3274">
+                <title>uint8_t CAN_GetReceiveErrorCounter (CAN_TypeDef *CANx)</title> <emphasis>Returns the CANx Receive Error Counter (REC).</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>In case of an error during reception, this counter is incremented by 1 or by 8 depending on the error condition as defined by the CAN standard. After every successful reception, the counter is decremented by 1 or reset to 120 if its value was higher than 128. When the counter value exceeds 127, the CAN controller enters the error passive state. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CAN</entry>
+                                <entry>
+<para>Receive Error Counter. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="df/d0c/group___c_a_n___group5_1ga85ee0c35bf7ca15d4e4c862eef534843">
+                <title>uint8_t CAN_GetLSBTransmitErrorCounter (CAN_TypeDef *CANx)</title> <emphasis>Returns the LSB of the 9-bit CANx Transmit Error Counter(TEC).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>LSB</entry>
+                                <entry>
+<para>of the 9-bit CAN Transmit Error Counter. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d8f/struct_g_p_i_o___init_type_def">
+<title>GPIO_InitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d27/stm32f4xx__gpio_8h">&lt;stm32f4xx_gpio.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t GPIO_Pin</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GPIOMode_TypeDef GPIO_Mode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GPIOSpeed_TypeDef GPIO_Speed</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GPIOOType_TypeDef GPIO_OType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GPIOPuPd_TypeDef GPIO_PuPd</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>GPIO Init structure definition. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t GPIO_Pin</title>                
+<para>Specifies the GPIO pins to be configured. This parameter can be any value of <link linkend="d7/dbe/group___g_p_i_o__pins__define">GPIO_pins_define</link> </para>
+
+                <para>Definition at line 119 of file stm32f4xx_gpio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_gpio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>GPIOMode_TypeDef GPIO_Mode</title>                
+<para>Specifies the operating mode for the selected pins. This parameter can be a value of <link linkend="dd/d94/group___g_p_i_o_1ga1347339e1c84a196fabbb31205eec5d4">GPIOMode_TypeDef</link> </para>
+
+                <para>Definition at line 122 of file stm32f4xx_gpio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_gpio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>GPIOSpeed_TypeDef GPIO_Speed</title>                
+<para>Specifies the speed for the selected pins. This parameter can be a value of <link linkend="dd/d94/group___g_p_i_o_1ga062ad92b67b4a1f301c161022cf3ba8e">GPIOSpeed_TypeDef</link> </para>
+
+                <para>Definition at line 125 of file stm32f4xx_gpio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_gpio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>GPIOOType_TypeDef GPIO_OType</title>                
+<para>Specifies the operating output type for the selected pins. This parameter can be a value of <link linkend="dd/d94/group___g_p_i_o_1gae74212e8d66c389f47326b06bdf6d2ab">GPIOOType_TypeDef</link> </para>
+
+                <para>Definition at line 128 of file stm32f4xx_gpio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_gpio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>GPIOPuPd_TypeDef GPIO_PuPd</title>                
+<para>Specifies the operating Pull-up/Pull down for the selected pins. This parameter can be a value of <link linkend="dd/d94/group___g_p_i_o_1gafb7ecd99c44b4fd702d669304a36c2c8">GPIOPuPd_TypeDef</link> </para>
+
+                <para>Definition at line 131 of file stm32f4xx_gpio.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_gpio.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d94/group___s_d_i_o___read___wait___mode">
+    <title>SDIO_Read_Wait_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d94/group___s_d_i_o___read___wait___mode_1ga5d73b50fed8b2589f337a6301f22f41c">SDIO_ReadWaitMode_CLK</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d94/group___s_d_i_o___read___wait___mode_1ga3d6952d82468b49dcc7abd5b9e02039f">SDIO_ReadWaitMode_DATA2</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d5/d94/group___s_d_i_o___read___wait___mode_1ga35144093f5b3553a62c2248896eead4d">IS_SDIO_READWAIT_MODE</link> (((MODE) == SDIO_ReadWaitMode_CLK) || \
+                                     ((MODE) == SDIO_ReadWaitMode_DATA2))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

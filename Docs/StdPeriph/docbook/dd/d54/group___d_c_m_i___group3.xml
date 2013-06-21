@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d54/group___d_c_m_i___group3">
+    <title>Interrupts and flags management functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Interrupts and flags management functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                  Interrupts and flags management functions
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d54/group___d_c_m_i___group3_1ga3d89fb10384dff1dfd9197fbb6c6b2eb">DCMI_ITConfig</link> (
+uint16_t DCMI_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="dd/d54/group___d_c_m_i___group3_1ga1b66e1966fbea902a8e7015c56db7587">DCMI_GetFlagStatus</link> (
+uint16_t DCMI_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d54/group___d_c_m_i___group3_1ga1c93caf3ccfecf07cec8e1e0f844ddaa">DCMI_ClearFlag</link> (
+uint16_t DCMI_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="dd/d54/group___d_c_m_i___group3_1gac0b27821aab3ee6b73ae8a6c6339fed5">DCMI_GetITStatus</link> (
+uint16_t DCMI_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d54/group___d_c_m_i___group3_1ga908e6dad7bc5f4f4bbc512f679222c55">DCMI_ClearITPendingBit</link> (
+uint16_t DCMI_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dd/d54/group___d_c_m_i___group3_1ga3d89fb10384dff1dfd9197fbb6c6b2eb">
+                <title>void DCMI_ITConfig (uint16_t DCMI_IT, FunctionalState NewState)</title> <emphasis>Enables or disables the DCMI interface interrupts.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DCMI_IT, :</entry>
+                                <entry>
+<para>specifies the DCMI interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DCMI_IT_FRAME: Frame capture complete interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_OVF: Overflow interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_ERR: Synchronization error interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_VSYNC: VSYNC interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_LINE: Line interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the specified DCMI interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d54/group___d_c_m_i___group3_1ga1b66e1966fbea902a8e7015c56db7587">
+                <title>FlagStatus DCMI_GetFlagStatus (uint16_t DCMI_FLAG)</title> <emphasis>Checks whether the  DCMI interface flag is set or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DCMI_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DCMI_FLAG_FRAMERI: Frame capture complete Raw flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_OVFRI: Overflow Raw flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_ERRRI: Synchronization error Raw flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_VSYNCRI: VSYNC Raw flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_LINERI: Line Raw flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_FRAMEMI: Frame capture complete Masked flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_OVFMI: Overflow Masked flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_ERRMI: Synchronization error Masked flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_VSYNCMI: VSYNC Masked flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_LINEMI: Line Masked flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_HSYNC: HSYNC flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_VSYNC: VSYNC flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_FNE: Fifo not empty flag mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of DCMI_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d54/group___d_c_m_i___group3_1ga1c93caf3ccfecf07cec8e1e0f844ddaa">
+                <title>void DCMI_ClearFlag (uint16_t DCMI_FLAG)</title> <emphasis>Clears the DCMI&apos;s pending flags.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DCMI_FLAG, :</entry>
+                                <entry>
+<para>specifies the flag to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DCMI_FLAG_FRAMERI: Frame capture complete Raw flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_OVFRI: Overflow Raw flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_ERRRI: Synchronization error Raw flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_VSYNCRI: VSYNC Raw flag mask </para>
+</listitem>
+<listitem>
+<para>DCMI_FLAG_LINERI: Line Raw flag mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d54/group___d_c_m_i___group3_1gac0b27821aab3ee6b73ae8a6c6339fed5">
+                <title>ITStatus DCMI_GetITStatus (uint16_t DCMI_IT)</title> <emphasis>Checks whether the DCMI interrupt has occurred or not.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DCMI_IT, :</entry>
+                                <entry>
+<para>specifies the DCMI interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>DCMI_IT_FRAME: Frame capture complete interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_OVF: Overflow interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_ERR: Synchronization error interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_VSYNC: VSYNC interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_LINE: Line interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>The</entry>
+                                <entry>
+<para>new state of DCMI_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d54/group___d_c_m_i___group3_1ga908e6dad7bc5f4f4bbc512f679222c55">
+                <title>void DCMI_ClearITPendingBit (uint16_t DCMI_IT)</title> <emphasis>Clears the DCMI&apos;s interrupt pending bits.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>DCMI_IT, :</entry>
+                                <entry>
+<para>specifies the DCMI interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>DCMI_IT_FRAME: Frame capture complete interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_OVF: Overflow interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_ERR: Synchronization error interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_VSYNC: VSYNC interrupt mask </para>
+</listitem>
+<listitem>
+<para>DCMI_IT_LINE: Line interrupt mask </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

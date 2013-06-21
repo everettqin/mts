@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d3c/group___h_a_s_h___group3">
+    <title>Context swapping functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Context swapping functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                             Context swapping functions
+ ===============================================================================  
+
+  This section provides functions allowing to save and store HASH Context
+  
+  It is possible to interrupt a HASH/HMAC process to perform another processing 
+  with a higher priority, and to complete the interrupted process later on, when 
+  the higher priority task is complete. To do so, the context of the interrupted 
+  task must be saved from the HASH registers to memory, and then be restored 
+  from memory to the HASH registers.
+  
+  1. To save the current context, use HASH_SaveContext() function
+  2. To restore the saved context, use HASH_RestoreContext() function </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___h_a_s_h___group3_1ga9432b2b66e223414c840e9313c388bc5">HASH_SaveContext</link> (
+<link linkend="d7/dd8/struct_h_a_s_h___context">HASH_Context</link> * HASH_ContextSave)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d3c/group___h_a_s_h___group3_1ga1d8412a13601376c968aec63212ca54e">HASH_RestoreContext</link> (
+<link linkend="d7/dd8/struct_h_a_s_h___context">HASH_Context</link> * HASH_ContextRestore)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dd/d3c/group___h_a_s_h___group3_1ga9432b2b66e223414c840e9313c388bc5">
+                <title>void HASH_SaveContext (HASH_Context *HASH_ContextSave)</title> <emphasis>Save the Hash peripheral Context.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>The context can be saved only when no block is currently being processed. So user must wait for DINIS = 1 (the last block has been processed and the input FIFO is empty) or NBW != 0 (the FIFO is not full and no processing is ongoing). </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_ContextSave, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d7/dd8/struct_h_a_s_h___context">HASH_Context</link> structure that contains the repository for current context. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d3c/group___h_a_s_h___group3_1ga1d8412a13601376c968aec63212ca54e">
+                <title>void HASH_RestoreContext (HASH_Context *HASH_ContextRestore)</title> <emphasis>Restore the Hash peripheral Context.</emphasis>
+                
+<para><formalpara><title>Note: </title>
+
+<para>After calling this function, user can restart the processing from the point where it has been interrupted. </para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>HASH_ContextRestore, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="d7/dd8/struct_h_a_s_h___context">HASH_Context</link> structure that contains the repository for saved context. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

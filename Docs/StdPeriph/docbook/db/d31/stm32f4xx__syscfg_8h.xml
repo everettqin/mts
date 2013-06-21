@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d31/stm32f4xx__syscfg_8h">
+    <title>stm32f4xx_syscfg.h File Reference</title>
+    <programlisting>#include stm32f4xx.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga66aab57f683213ff74751390162c425d">EXTI_PortSourceGPIOA</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga16ab9db3a6cfad6e0204daeea375fadf">EXTI_PortSourceGPIOB</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga827bef5afe2be4ac3db7f8f1fc538d6e">EXTI_PortSourceGPIOC</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gaa46454cf1df3cc5c1dfceb460e5345d8">EXTI_PortSourceGPIOD</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gab9d4c8777a3f5c9cc90ae844b1c2bbfa">EXTI_PortSourceGPIOE</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga942c607129ec8fa9397417236be932d1">EXTI_PortSourceGPIOF</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gab21c24889233b24373a471222e85b950">EXTI_PortSourceGPIOG</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gaf7fb8bbfc4d796b92df64e41a2c44dc6">EXTI_PortSourceGPIOH</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1ga9f57956fd533afa9b5d323601842c74e">EXTI_PortSourceGPIOI</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d6/dbb/group___s_y_s_c_f_g___e_x_t_i___port___sources_1gaec9c6d2a4276fc14c4e147631a0efe92">IS_EXTI_PORT_SOURCE</link> (((PORTSOURCE) == EXTI_PortSourceGPIOA) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOB) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOC) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOD) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOE) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOF) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOG) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOH) || \
+                                        ((PORTSOURCE) == EXTI_PortSourceGPIOI))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga85e9f2bccca02c8f63fa5d486bb42393">EXTI_PinSource0</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gadc4c0152b4bd194f872061c03cc9f5d5">EXTI_PinSource1</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga6306a0c8e41b63c45387146670e63fbd">EXTI_PinSource2</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga3c1315cbd350e6da814124d523657202">EXTI_PinSource3</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gad540175ce80056822bd017d03fe64bb7">EXTI_PinSource4</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga95d0ef8a0d250cf48ca1fa7d9787f362">EXTI_PinSource5</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gaa3d69b7d174bf6bffcb9f83c96b0cdad">EXTI_PinSource6</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga976aa2587515a7008eeaefd56c202669">EXTI_PinSource7</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga8847240d3d4539b3ad228f313500947a">EXTI_PinSource8</link> ((uint8_t)0x08)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga38ab8ede0a3daa3678176804cd1f0965">EXTI_PinSource9</link> ((uint8_t)0x09)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga7480fcdcea08747b4a1fa26fe8593faa">EXTI_PinSource10</link> ((uint8_t)0x0A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga823961e32c95720bbcac6511dce36eca">EXTI_PinSource11</link> ((uint8_t)0x0B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga87dd83e2e115acaed3f9d4770a731c38">EXTI_PinSource12</link> ((uint8_t)0x0C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga21c2e799449919491f56b774dcb547e2">EXTI_PinSource13</link> ((uint8_t)0x0D)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gadf2623bff33cc8e7697fdb2641998b22">EXTI_PinSource14</link> ((uint8_t)0x0E)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1gace55270207b97b533ac87ab0a7047857">EXTI_PinSource15</link> ((uint8_t)0x0F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d71/group___s_y_s_c_f_g___e_x_t_i___pin___sources_1ga8d63ba3b1a3f9d69c8539304431793c1">IS_EXTI_PIN_SOURCE</link> (((PINSOURCE) == EXTI_PinSource0) || \
+                                       ((PINSOURCE) == EXTI_PinSource1) || \
+                                       ((PINSOURCE) == EXTI_PinSource2) || \
+                                       ((PINSOURCE) == EXTI_PinSource3) || \
+                                       ((PINSOURCE) == EXTI_PinSource4) || \
+                                       ((PINSOURCE) == EXTI_PinSource5) || \
+                                       ((PINSOURCE) == EXTI_PinSource6) || \
+                                       ((PINSOURCE) == EXTI_PinSource7) || \
+                                       ((PINSOURCE) == EXTI_PinSource8) || \
+                                       ((PINSOURCE) == EXTI_PinSource9) || \
+                                       ((PINSOURCE) == EXTI_PinSource10) || \
+                                       ((PINSOURCE) == EXTI_PinSource11) || \
+                                       ((PINSOURCE) == EXTI_PinSource12) || \
+                                       ((PINSOURCE) == EXTI_PinSource13) || \
+                                       ((PINSOURCE) == EXTI_PinSource14) || \
+                                       ((PINSOURCE) == EXTI_PinSource15))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1gaca6b4b48448ddf67fdaa37412a0202ff">SYSCFG_MemoryRemap_Flash</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1gadabfec4d205f0a25ede0e6ee8ebfcfab">SYSCFG_MemoryRemap_SystemFlash</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1ga7ed56d4bd566e0d97cce3962461673cf">SYSCFG_MemoryRemap_FSMC</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1ga3dc9c7f02f9457d344ffe377df125ee2">SYSCFG_MemoryRemap_SRAM</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d80/group___s_y_s_c_f_g___memory___remap___config_1ga6c9e6ea1798ba9dc317e2b814228652e">IS_SYSCFG_MEMORY_REMAP_CONFING</link> (((REMAP) == SYSCFG_MemoryRemap_Flash) || \
+                                                     ((REMAP) == SYSCFG_MemoryRemap_SystemFlash) || \
+                                                     ((REMAP) == SYSCFG_MemoryRemap_SRAM) || \
+                                                     ((REMAP) == SYSCFG_MemoryRemap_FSMC))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d7e/group___s_y_s_c_f_g___e_t_h_e_r_n_e_t___media___interface_1ga07d3a311515069bb26e8f84febc80494">SYSCFG_ETH_MediaInterface_MII</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d7e/group___s_y_s_c_f_g___e_t_h_e_r_n_e_t___media___interface_1ga0608a8f6380bcf7de7c87dd331740857">SYSCFG_ETH_MediaInterface_RMII</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d7e/group___s_y_s_c_f_g___e_t_h_e_r_n_e_t___media___interface_1gaaf950ee46f31e95060335eba33910d01">IS_SYSCFG_ETH_MEDIA_INTERFACE</link> (((INTERFACE) == SYSCFG_ETH_MediaInterface_MII) || \
+                                                ((INTERFACE) == SYSCFG_ETH_MediaInterface_RMII))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d0d/group___s_y_s_c_f_g_1gaf2f9faa2df9a59a68ae17fae23bc478e">SYSCFG_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d0d/group___s_y_s_c_f_g_1ga09a5712f6c66ba5f0e0eeba30bc1e20d">SYSCFG_MemoryRemapConfig</link> (
+uint8_t SYSCFG_MemoryRemap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d0d/group___s_y_s_c_f_g_1gafedab1f64cef720aeafeafd409ba6ae7">SYSCFG_EXTILineConfig</link> (
+uint8_t EXTI_PortSourceGPIOx, uint8_t EXTI_PinSourcex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d0d/group___s_y_s_c_f_g_1gabec494266ebbbde0279ad1d16c3065d0">SYSCFG_ETH_MediaInterfaceConfig</link> (
+uint32_t SYSCFG_ETH_MediaInterface)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d0d/group___s_y_s_c_f_g_1ga85e423de2ee76b615120bde37881bb93">SYSCFG_CompensationCellCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d1/d0d/group___s_y_s_c_f_g_1ga2541640bdf35f63e4bb55f7dc8be9d16">SYSCFG_GetCompensationCellStatus</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the SYSCFG firmware library. </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h</para>
+    </simplesect>
+</section>

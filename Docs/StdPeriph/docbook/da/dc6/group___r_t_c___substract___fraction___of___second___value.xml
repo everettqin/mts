@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/dc6/group___r_t_c___substract___fraction___of___second___value">
+    <title>RTC_Substract_Fraction_Of_Second_Value</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dc6/group___r_t_c___substract___fraction___of___second___value_1ga8ad118d512f7dc9ce3d4b6669fd3f4b4">IS_RTC_SHIFT_SUBFS</link> ((FS) &lt;= 0x00007FFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

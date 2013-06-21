@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d4c/group___s_p_i___c_r_c__polynomial">
+    <title>SPI_CRC_polynomial</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___s_p_i___c_r_c__polynomial_1ga76eec5bbb44c873aa52966a9cb6c8f8c">IS_SPI_CRC_POLYNOMIAL</link> ((POLYNOMIAL) &gt;= 0x1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d12/group___s_d_i_o___exported___constants">
+    <title>SDIO_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="df/d6c/group___s_d_i_o___clock___edge">SDIO_Clock_Edge</link></para></listitem>
+            <listitem><para><link linkend="d1/d0e/group___s_d_i_o___clock___bypass">SDIO_Clock_Bypass</link></para></listitem>
+            <listitem><para><link linkend="df/dd3/group___s_d_i_o___clock___power___save">SDIO_Clock_Power_Save</link></para></listitem>
+            <listitem><para><link linkend="de/db9/group___s_d_i_o___bus___wide">SDIO_Bus_Wide</link></para></listitem>
+            <listitem><para><link linkend="de/d0e/group___s_d_i_o___hardware___flow___control">SDIO_Hardware_Flow_Control</link></para></listitem>
+            <listitem><para><link linkend="d6/d22/group___s_d_i_o___power___state">SDIO_Power_State</link></para></listitem>
+            <listitem><para><link linkend="d6/d5e/group___s_d_i_o___interrupt__sources">SDIO_Interrupt_sources</link></para></listitem>
+            <listitem><para><link linkend="d3/d06/group___s_d_i_o___command___index">SDIO_Command_Index</link></para></listitem>
+            <listitem><para><link linkend="de/d50/group___s_d_i_o___response___type">SDIO_Response_Type</link></para></listitem>
+            <listitem><para><link linkend="dd/d2d/group___s_d_i_o___wait___interrupt___state">SDIO_Wait_Interrupt_State</link></para></listitem>
+            <listitem><para><link linkend="da/d46/group___s_d_i_o___c_p_s_m___state">SDIO_CPSM_State</link></para></listitem>
+            <listitem><para><link linkend="d3/d64/group___s_d_i_o___response___registers">SDIO_Response_Registers</link></para></listitem>
+            <listitem><para><link linkend="d7/d1d/group___s_d_i_o___data___length">SDIO_Data_Length</link></para></listitem>
+            <listitem><para><link linkend="d4/ddb/group___s_d_i_o___data___block___size">SDIO_Data_Block_Size</link></para></listitem>
+            <listitem><para><link linkend="d4/de5/group___s_d_i_o___transfer___direction">SDIO_Transfer_Direction</link></para></listitem>
+            <listitem><para><link linkend="d7/de8/group___s_d_i_o___transfer___type">SDIO_Transfer_Type</link></para></listitem>
+            <listitem><para><link linkend="da/d3a/group___s_d_i_o___d_p_s_m___state">SDIO_DPSM_State</link></para></listitem>
+            <listitem><para><link linkend="d9/da9/group___s_d_i_o___flags">SDIO_Flags</link></para></listitem>
+            <listitem><para><link linkend="d5/d94/group___s_d_i_o___read___wait___mode">SDIO_Read_Wait_Mode</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="df/d6c/group___s_d_i_o___clock___edge.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d0e/group___s_d_i_o___clock___bypass.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="df/dd3/group___s_d_i_o___clock___power___save.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/db9/group___s_d_i_o___bus___wide.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d0e/group___s_d_i_o___hardware___flow___control.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d22/group___s_d_i_o___power___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d5e/group___s_d_i_o___interrupt__sources.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d06/group___s_d_i_o___command___index.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/d50/group___s_d_i_o___response___type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dd/d2d/group___s_d_i_o___wait___interrupt___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d46/group___s_d_i_o___c_p_s_m___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d64/group___s_d_i_o___response___registers.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d1d/group___s_d_i_o___data___length.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/ddb/group___s_d_i_o___data___block___size.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/de5/group___s_d_i_o___transfer___direction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/de8/group___s_d_i_o___transfer___type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d3a/group___s_d_i_o___d_p_s_m___state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/da9/group___s_d_i_o___flags.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d94/group___s_d_i_o___read___wait___mode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

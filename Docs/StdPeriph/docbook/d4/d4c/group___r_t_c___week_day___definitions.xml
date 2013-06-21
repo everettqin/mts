@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d4c/group___r_t_c___week_day___definitions">
+    <title>RTC_WeekDay_Definitions</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1ga7401371e61060e5d5fa2bf81f5369f02">RTC_Weekday_Monday</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1ga23f9646fb7114c436d4e822b88101757">RTC_Weekday_Tuesday</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1gaa8de8244a8b3e44001871aa74282d3ae">RTC_Weekday_Wednesday</link> ((uint8_t)0x03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1gac2413b21a6893d2003334f19b59e137d">RTC_Weekday_Thursday</link> ((uint8_t)0x04)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1ga556885ed7436fd0128e21ff48d7d0044">RTC_Weekday_Friday</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1gafdca8b8c2b9c56f9715efdf6ba96a8a9">RTC_Weekday_Saturday</link> ((uint8_t)0x06)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1ga9a6a6992dfefab667878480f5565c928">RTC_Weekday_Sunday</link> ((uint8_t)0x07)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/d4c/group___r_t_c___week_day___definitions_1gaf17712ffb0834287f23c19235d53c7ec">IS_RTC_WEEKDAY</link> (((WEEKDAY) == RTC_Weekday_Monday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Tuesday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Wednesday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Thursday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Friday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Saturday) || \
+                                 ((WEEKDAY) == RTC_Weekday_Sunday))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

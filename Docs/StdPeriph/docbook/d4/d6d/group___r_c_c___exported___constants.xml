@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d6d/group___r_c_c___exported___constants">
+    <title>RCC_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="dc/d81/group___r_c_c___h_s_e__configuration">RCC_HSE_configuration</link></para></listitem>
+            <listitem><para><link linkend="dc/d9e/group___r_c_c___p_l_l___clock___source">RCC_PLL_Clock_Source</link></para></listitem>
+            <listitem><para><link linkend="d0/dd0/group___r_c_c___system___clock___source">RCC_System_Clock_Source</link></para></listitem>
+            <listitem><para><link linkend="db/d31/group___r_c_c___a_h_b___clock___source">RCC_AHB_Clock_Source</link></para></listitem>
+            <listitem><para><link linkend="d1/d0e/group___r_c_c___a_p_b1___a_p_b2___clock___source">RCC_APB1_APB2_Clock_Source</link></para></listitem>
+            <listitem><para><link linkend="d4/de0/group___r_c_c___interrupt___source">RCC_Interrupt_Source</link></para></listitem>
+            <listitem><para><link linkend="d5/d46/group___r_c_c___l_s_e___configuration">RCC_LSE_Configuration</link></para></listitem>
+            <listitem><para><link linkend="da/da3/group___r_c_c___r_t_c___clock___source">RCC_RTC_Clock_Source</link></para></listitem>
+            <listitem><para><link linkend="de/df7/group___r_c_c___i2_s___clock___source">RCC_I2S_Clock_Source</link></para></listitem>
+            <listitem><para><link linkend="db/d85/group___r_c_c___a_h_b1___peripherals">RCC_AHB1_Peripherals</link></para></listitem>
+            <listitem><para><link linkend="d3/d9f/group___r_c_c___a_h_b2___peripherals">RCC_AHB2_Peripherals</link></para></listitem>
+            <listitem><para><link linkend="de/dcb/group___r_c_c___a_h_b3___peripherals">RCC_AHB3_Peripherals</link></para></listitem>
+            <listitem><para><link linkend="d7/d3f/group___r_c_c___a_p_b1___peripherals">RCC_APB1_Peripherals</link></para></listitem>
+            <listitem><para><link linkend="d2/d13/group___r_c_c___a_p_b2___peripherals">RCC_APB2_Peripherals</link></para></listitem>
+            <listitem><para><link linkend="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler">RCC_MCO1_Clock_Source_Prescaler</link></para></listitem>
+            <listitem><para><link linkend="d0/d08/group___r_c_c___m_c_o2___clock___source___prescaler">RCC_MCO2_Clock_Source_Prescaler</link></para></listitem>
+            <listitem><para><link linkend="d2/d85/group___r_c_c___flag">RCC_Flag</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="dc/d81/group___r_c_c___h_s_e__configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d9e/group___r_c_c___p_l_l___clock___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/dd0/group___r_c_c___system___clock___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d31/group___r_c_c___a_h_b___clock___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d1/d0e/group___r_c_c___a_p_b1___a_p_b2___clock___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d4/de0/group___r_c_c___interrupt___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d46/group___r_c_c___l_s_e___configuration.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/da3/group___r_c_c___r_t_c___clock___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/df7/group___r_c_c___i2_s___clock___source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="db/d85/group___r_c_c___a_h_b1___peripherals.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d3/d9f/group___r_c_c___a_h_b2___peripherals.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="de/dcb/group___r_c_c___a_h_b3___peripherals.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d3f/group___r_c_c___a_p_b1___peripherals.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d13/group___r_c_c___a_p_b2___peripherals.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d5/d6a/group___r_c_c___m_c_o1___clock___source___prescaler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/d08/group___r_c_c___m_c_o2___clock___source___prescaler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d2/d85/group___r_c_c___flag.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

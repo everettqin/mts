@@ -1,0 +1,828 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d51/stm32f4xx__rtc_8c">
+    <title>stm32f4xx_rtc.c File Reference</title>
+    <programlisting>#include stm32f4xx_rtc.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1gacc08d7d212e235f4b04bb88f5567fa54">RTC_TR_RESERVED_MASK</link> ((uint32_t)0x007F7F7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga16855eaae542f992c93170492822d058">RTC_DR_RESERVED_MASK</link> ((uint32_t)0x00FFFF3F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga0dbaf639bc171f2055c9055d538f13df">RTC_INIT_MASK</link> ((uint32_t)0xFFFFFFFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga3a1033490aaf8304e1522d551bd1a7b9">RTC_RSF_MASK</link> ((uint32_t)0xFFFFFF5F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga0c7513e50528d7b5a52e88340a4e7b25">RTC_FLAGS_MASK</link> ((uint32_t)(RTC_FLAG_TSOVF | RTC_FLAG_TSF | RTC_FLAG_WUTF | \
+                                            RTC_FLAG_ALRBF | RTC_FLAG_ALRAF | RTC_FLAG_INITF | \
+                                            RTC_FLAG_RSF | RTC_FLAG_INITS | RTC_FLAG_WUTWF | \
+                                            RTC_FLAG_ALRBWF | RTC_FLAG_ALRAWF | RTC_FLAG_TAMP1F ))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1gab89243e1f23e45fedc6357396b26827d">INITMODE_TIMEOUT</link> ((uint32_t) 0x00010000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga017f8fc40e791545ae1dfebf84567ed8">SYNCHRO_TIMEOUT</link> ((uint32_t) 0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1gae578d94ca54a697f9d26b20944f036bc">RECALPF_TIMEOUT</link> ((uint32_t) 0x00020000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d9/dfc/group___r_t_c_1ga911218ae83f22129a4df0087d98db3cd">SHPF_TIMEOUT</link> ((uint32_t) 0x00001000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static uint8_t <link linkend="d3/d00/group___r_t_c___private___functions_1ga020add50c73f0a08516fef0eeee8cca9">RTC_ByteToBcd2</link> (
+uint8_t Value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static uint8_t <link linkend="d3/d00/group___r_t_c___private___functions_1ga39e7c20215c2f546a20cf5df25c72d72">RTC_Bcd2ToByte</link> (
+uint8_t Value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1ga9777c6cc4a99c339ebc527a791b2ebe7">RTC_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1ga8eb747bf9698b2482ba6ef4d811de8e0">RTC_Init</link> (
+<link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> * RTC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4a/group___r_t_c___group1_1gab466f3348de3236976e9aec7d6025dff">RTC_StructInit</link> (
+<link linkend="d8/d8e/struct_r_t_c___init_type_def">RTC_InitTypeDef</link> * RTC_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4a/group___r_t_c___group1_1ga9d4bdfd3ae6957630d15d2497573b7c7">RTC_WriteProtectionCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1ga679f8883cbfb267a53ffb1ab4cc5c8c5">RTC_EnterInitMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4a/group___r_t_c___group1_1ga87f86f3b794205f09a1eac51738d900f">RTC_ExitInitMode</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1ga2938febeef6baf0d91cc066ca5caf095">RTC_WaitForSynchro</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d4a/group___r_t_c___group1_1gaa60079ec257fb3a277d058ca8305533d">RTC_RefClockCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d4a/group___r_t_c___group1_1gae5e7c682f15b8ae9ddd3b2a85a9df7db">RTC_BypassShadowCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d1/db1/group___r_t_c___group2_1ga9f9df80cfa82f7a4dd9f4d0cf2ffb3a6">RTC_SetTime</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_TimeStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/db1/group___r_t_c___group2_1ga0404db6e0c70e5a6bbbe4fa58a577365">RTC_TimeStructInit</link> (
+<link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_TimeStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/db1/group___r_t_c___group2_1ga1fcc101339c77aebd25ec3621fd1b61a">RTC_GetTime</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_TimeStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d1/db1/group___r_t_c___group2_1gae59c33fb19e36b6abab0bad58072c01a">RTC_GetSubSecond</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d1/db1/group___r_t_c___group2_1ga69d08538147f3d89c818dcfabf50e362">RTC_SetDate</link> (
+uint32_t RTC_Format, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_DateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/db1/group___r_t_c___group2_1ga6e4e99be910d7759f8910056a2985056">RTC_DateStructInit</link> (
+<link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_DateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/db1/group___r_t_c___group2_1ga582645d554cdd4a316213e90f0b4c8ae">RTC_GetDate</link> (
+uint32_t RTC_Format, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_DateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d0b/group___r_t_c___group3_1ga44e3334f8e882df9b8a59b47f0857395">RTC_SetAlarm</link> (
+uint32_t RTC_Format, uint32_t RTC_Alarm, <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d0b/group___r_t_c___group3_1ga36ab6199e21fb415ab1ec4d7aa48ba45">RTC_AlarmStructInit</link> (
+<link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d0b/group___r_t_c___group3_1ga6e2888d2fd2e3ecb4ec50f5c955b362b">RTC_GetAlarm</link> (
+uint32_t RTC_Format, uint32_t RTC_Alarm, <link linkend="d7/ded/struct_r_t_c___alarm_type_def">RTC_AlarmTypeDef</link> * RTC_AlarmStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="d0/d0b/group___r_t_c___group3_1gac2c08f1aeeb664d3d245cb5aca1b8ca8">RTC_AlarmCmd</link> (
+uint32_t RTC_Alarm, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d0b/group___r_t_c___group3_1ga7b3e4e9e39262e9b0d1aadd895394e46">RTC_AlarmSubSecondConfig</link> (
+uint32_t RTC_Alarm, uint32_t RTC_AlarmSubSecondValue, uint32_t RTC_AlarmSubSecondMask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d0/d0b/group___r_t_c___group3_1gae7b5e7146be2710d619c8ed3cca464ad">RTC_GetAlarmSubSecond</link> (
+uint32_t RTC_Alarm)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d77/group___r_t_c___group4_1ga2557b02b318211112731a91a190c4b26">RTC_WakeUpClockConfig</link> (
+uint32_t RTC_WakeUpClock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d77/group___r_t_c___group4_1ga1412044eb756a166c1cf341f3d46ed6b">RTC_SetWakeUpCounter</link> (
+uint32_t RTC_WakeUpCounter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="dc/d77/group___r_t_c___group4_1gae63aab672e917cc48e298162c3dec049">RTC_GetWakeUpCounter</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="dc/d77/group___r_t_c___group4_1ga2ce05293303e0d7879c6d755c5355b4c">RTC_WakeUpCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d16/group___r_t_c___group5_1ga812feddea77990b5dc336a4989ae61b8">RTC_DayLightSavingConfig</link> (
+uint32_t RTC_DayLightSaving, uint32_t RTC_StoreOperation)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d2/d16/group___r_t_c___group5_1gaba0c1361790203e9dca43846f0d9bc15">RTC_GetStoreOperation</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d85/group___r_t_c___group6_1gae3165ef19ef3bd63789e59130ad8d89b">RTC_OutputConfig</link> (
+uint32_t RTC_Output, uint32_t RTC_OutputPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="de/dad/group___r_t_c___group7_1gaa3bb10170a2c70ac9ce3e41c611bdd43">RTC_CoarseCalibConfig</link> (
+uint32_t RTC_CalibSign, uint32_t Value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="de/dad/group___r_t_c___group7_1ga008ae7173b2befe876f5e76686bc9089">RTC_CoarseCalibCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dad/group___r_t_c___group7_1ga25eaa2de5ee858a4572d5fb1eb146ff8">RTC_CalibOutputCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/dad/group___r_t_c___group7_1ga2139adc802bdb6882904c0b855d50b29">RTC_CalibOutputConfig</link> (
+uint32_t RTC_CalibOutput)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="de/dad/group___r_t_c___group7_1ga91a28dcc7d45340a469dd8b8c029f841">RTC_SmoothCalibConfig</link> (
+uint32_t RTC_SmoothCalibPeriod, uint32_t RTC_SmoothCalibPlusPulses, uint32_t RTC_SmouthCalibMinusPulsesValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d91/group___r_t_c___group8_1ga7d80fa4a2c87654598d8207154ac8e96">RTC_TimeStampCmd</link> (
+uint32_t RTC_TimeStampEdge, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d91/group___r_t_c___group8_1ga44c38b0c74e9e960a4263b2905f44796">RTC_GetTimeStamp</link> (
+uint32_t RTC_Format, <link linkend="d6/dbb/struct_r_t_c___time_type_def">RTC_TimeTypeDef</link> * RTC_StampTimeStruct, <link linkend="d4/d06/struct_r_t_c___date_type_def">RTC_DateTypeDef</link> * RTC_StampDateStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d7/d91/group___r_t_c___group8_1ga2b0ef81f4959a2f9fc6361fbda759b00">RTC_GetTimeStampSubSecond</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1gad547d636cfc4fd8d4d673325571e0ffb">RTC_TamperTriggerConfig</link> (
+uint32_t RTC_Tamper, uint32_t RTC_TamperTrigger)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1gaf85cc696d624da0de9fbe99779402833">RTC_TamperCmd</link> (
+uint32_t RTC_Tamper, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1ga1e87b9ae757ad12d7585e4fbcbf2c4b8">RTC_TamperFilterConfig</link> (
+uint32_t RTC_TamperFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1gadc7f33a31df80b5deac313fc8af8d7f7">RTC_TamperSamplingFreqConfig</link> (
+uint32_t RTC_TamperSamplingFreq)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1gafc176a013076a651862dc6a957286025">RTC_TamperPinsPrechargeDuration</link> (
+uint32_t RTC_TamperPrechargeDuration)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1ga29c82fceefd21a78dc55ccc5bcc1ed59">RTC_TimeStampOnTamperDetectionCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/de3/group___r_t_c___group9_1ga981b9c654e521282a2020a81118c8c3c">RTC_TamperPullUpCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/d2e/group___r_t_c___group10_1gaa1241e2b47d04acc116b50d7b031c3aa">RTC_WriteBackupRegister</link> (
+uint32_t RTC_BKP_DR, uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d2/d2e/group___r_t_c___group10_1ga504489fd91a66e392beb82bb8230b37f">RTC_ReadBackupRegister</link> (
+uint32_t RTC_BKP_DR)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d3a/group___r_t_c___group11_1ga46777272ae77eb9dc38610481e12b0ed">RTC_TamperPinSelection</link> (
+uint32_t RTC_TamperPin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d3a/group___r_t_c___group11_1gaedf9830bdaaaa50ea5d45d2ff7bb43a9">RTC_TimeStampPinSelection</link> (
+uint32_t RTC_TimeStampPin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d3a/group___r_t_c___group11_1ga95263b7acf7168d52f66ef9121f14760">RTC_OutputTypeConfig</link> (
+uint32_t RTC_OutputType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ErrorStatus <link linkend="da/d9b/group___r_t_c___group12_1gaad434ed2a268f05662f0613e8e9717f3">RTC_SynchroShiftConfig</link> (
+uint32_t RTC_ShiftAdd1S, uint32_t RTC_ShiftSubFS)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d74/group___r_t_c___group13_1gaa8469b33b3a99025baf52f007683b925">RTC_ITConfig</link> (
+uint32_t RTC_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d1/d74/group___r_t_c___group13_1gaf2a7f11aa7160e95650fd10845e7780b">RTC_GetFlagStatus</link> (
+uint32_t RTC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d74/group___r_t_c___group13_1ga9be3325e05418d05c8c5a5ad369c7d50">RTC_ClearFlag</link> (
+uint32_t RTC_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d1/d74/group___r_t_c___group13_1gaab81adc6d2a5a5c1e37a49707c6bf640">RTC_GetITStatus</link> (
+uint32_t RTC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d74/group___r_t_c___group13_1gacac6accc75ae54f1b799fa8e7e83ccdb">RTC_ClearITPendingBit</link> (
+uint32_t RTC_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the following functionalities of the Real-Time Clock (RTC) peripheral: </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011<itemizedlist>
+<listitem>
+<para>Initialization</para>
+</listitem><listitem>
+<para>Calendar (Time and Date) configuration</para>
+</listitem><listitem>
+<para>Alarms (Alarm A and Alarm B) configuration</para>
+</listitem><listitem>
+<para>WakeUp Timer configuration</para>
+</listitem><listitem>
+<para>Daylight Saving configuration</para>
+</listitem><listitem>
+<para>Output pin Configuration</para>
+</listitem><listitem>
+<para>Coarse digital Calibration configuration</para>
+</listitem><listitem>
+<para>Smooth digital Calibration configuration</para>
+</listitem><listitem>
+<para>TimeStamp configuration</para>
+</listitem><listitem>
+<para>Tampers configuration</para>
+</listitem><listitem>
+<para>Backup Data Registers configuration</para>
+</listitem><listitem>
+<para>Shift control synchronisation</para>
+</listitem><listitem>
+<para>RTC Tamper and TimeStamp Pins Selection and Output Type Config configuration</para>
+</listitem><listitem>
+<para>Interrupts and flags management</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<programlisting><literallayout>*
+*          ===================================================================
+*                               Backup Domain Operating Condition
+*          ===================================================================
+*          The real-time clock (RTC), the RTC backup registers, and the backup 
+*          SRAM (BKP SRAM) can be powered from the VBAT voltage when the main 
+*          VDD supply is powered off.
+*          To retain the content of the RTC backup registers, backup SRAM, 
+*          and supply the RTC when VDD is turned off, VBAT pin can be connected 
+*          to an optional standby voltage supplied by a battery or by another 
+*          source.
+*
+*          To allow the RTC to operate even when the main digital supply (VDD) 
+*          is turned off, the VBAT pin powers the following blocks:
+*            1 - The RTC
+*            2 - The LSE oscillator
+*            3 - The backup SRAM when the low power backup regulator is enabled
+*            4 - PC13 to PC15 I/Os, plus PI8 I/O (when available)
+*
+*          When the backup domain is supplied by VDD (analog switch connected 
+*          to VDD), the following functions are available:
+*            1 - PC14 and PC15 can be used as either GPIO or LSE pins
+*            2 - PC13 can be used as a GPIO or as the RTC_AF1 pin
+*            3 - PI8 can be used as a GPIO or as the RTC_AF2 pin
+*
+*          When the backup domain is supplied by VBAT (analog switch connected 
+*          to VBAT because VDD is not present), the following functions are available:
+*            1 - PC14 and PC15 can be used as LSE pins only
+*            2 - PC13 can be used as the RTC_AF1 pin 
+*            3 - PI8 can be used as the RTC_AF2 pin
+*
+*          ===================================================================
+*                                    Backup Domain Reset
+*          ===================================================================
+*          The backup domain reset sets all RTC registers and the RCC_BDCR 
+*          register to their reset values. The BKPSRAM is not affected by this
+*          reset. The only way of resetting the BKPSRAM is through the Flash 
+*          interface by requesting a protection level change from 1 to 0.
+*          A backup domain reset is generated when one of the following events
+*          occurs:
+*            1 - Software reset, triggered by setting the BDRST bit in the 
+*                RCC Backup domain control register (RCC_BDCR). You can use the
+*                RCC_BackupResetCmd().
+*            2 - VDD or VBAT power on, if both supplies have previously been
+*                powered off.
+*
+*          ===================================================================
+*                                   Backup Domain Access
+*          ===================================================================
+*          After reset, the backup domain (RTC registers, RTC backup data 
+*          registers and backup SRAM) is protected against possible unwanted 
+*          write accesses. 
+*          To enable access to the RTC Domain and RTC registers, proceed as follows:
+*            - Enable the Power Controller (PWR) APB1 interface clock using the
+*              RCC_APB1PeriphClockCmd() function.
+*            - Enable access to RTC domain using the PWR_BackupAccessCmd() function.
+*            - Select the RTC clock source using the RCC_RTCCLKConfig() function.
+*            - Enable RTC Clock using the RCC_RTCCLKCmd() function.
+*
+*          ===================================================================
+*                                   RTC Driver: how to use it
+*          ===================================================================
+*            - Enable the RTC domain access (see description in the section above)
+*            - Configure the RTC Prescaler (Asynchronous and Synchronous) and
+*              RTC hour format using the RTC_Init() function.
+*
+*          Time and Date configuration
+*          ===========================
+*            - To configure the RTC Calendar (Time and Date) use the RTC_SetTime()
+*              and RTC_SetDate() functions.
+*            - To read the RTC Calendar, use the RTC_GetTime() and RTC_GetDate()
+*              functions.
+*            - Use the RTC_DayLightSavingConfig() function to add or sub one
+*              hour to the RTC Calendar.    
+*
+*          Alarm configuration
+*          ===================
+*            - To configure the RTC Alarm use the RTC_SetAlarm() function.
+*            - Enable the selected RTC Alarm using the RTC_AlarmCmd() function
+*            - To read the RTC Alarm, use the RTC_GetAlarm() function.
+*            - To read the RTC alarm SubSecond, use the RTC_GetAlarmSubSecond() function.
+*
+*          RTC Wakeup configuration
+*          ========================
+*            - Configure the RTC Wakeup Clock source use the RTC_WakeUpClockConfig()
+*              function.
+*            - Configure the RTC WakeUp Counter using the RTC_SetWakeUpCounter() 
+*              function  
+*            - Enable the RTC WakeUp using the RTC_WakeUpCmd() function  
+*            - To read the RTC WakeUp Counter register, use the RTC_GetWakeUpCounter() 
+*              function.
+*
+*          Outputs configuration
+*          =====================
+*          The RTC has 2 different outputs:
+*            - AFO_ALARM: this output is used to manage the RTC Alarm A, Alarm B
+*              and WaKeUp signals.          
+*              To output the selected RTC signal on RTC_AF1 pin, use the 
+*              RTC_OutputConfig() function.                
+*            - AFO_CALIB: this output is 512Hz signal or 1Hz .  
+*              To output the RTC Clock on RTC_AF1 pin, use the RTC_CalibOutputCmd()
+*              function.
+*
+*          Smooth digital Calibration configuration
+*          =================================    
+*            - Configure the RTC Original Digital Calibration Value and the corresponding
+*              calibration cycle period (32s,16s and 8s) using the RTC_SmoothCalibConfig() 
+*              function.
+*
+*          Coarse digital Calibration configuration
+*          =================================
+*            - Configure the RTC Coarse Calibration Value and the corresponding
+*              sign using the RTC_CoarseCalibConfig() function.
+*            - Enable the RTC Coarse Calibration using the RTC_CoarseCalibCmd() 
+*              function  
+*
+*          TimeStamp configuration
+*          =======================
+*            - Configure the RTC_AF1 trigger and enables the RTC TimeStamp 
+*              using the RTC_TimeStampCmd() function.
+*            - To read the RTC TimeStamp Time and Date register, use the 
+*              RTC_GetTimeStamp() function.
+*            - To read the RTC TimeStamp SubSecond register, use the 
+*              RTC_GetTimeStampSubSecond() function.
+*            - The TAMPER1 alternate function can be mapped either to RTC_AF1(PC13)
+*              or RTC_AF2 (PI8) depending on the value of TAMP1INSEL bit in 
+*              RTC_TAFCR register. You can use the  RTC_TamperPinSelection()
+*              function to select the corresponding pin.     
+*
+*          Tamper configuration
+*          ====================
+*            - Enable the RTC Tamper using the RTC_TamperCmd() function.
+*             - Configure the Tamper filter count using RTC_TamperFilterConfig()
+*              function. 
+*            - Configure the RTC Tamper trigger Edge or Level according to the Tamper 
+*              filter (if equal to 0 Edge else Level) value using the RTC_TamperConfig() function.
+*            - Configure the Tamper sampling frequency using RTC_TamperSamplingFreqConfig()
+*              function.
+*            - Configure the Tamper precharge or discharge duration using 
+*              RTC_TamperPinsPrechargeDuration() function.
+*            - Enable the Tamper Pull-UP using RTC_TamperPullUpDisableCmd() function.
+*            - Enable the Time stamp on Tamper detection event using  
+*              RTC_TSOnTamperDetecCmd() function.
+*            - The TIMESTAMP alternate function can be mapped to either RTC_AF1 
+*              or RTC_AF2 depending on the value of the TSINSEL bit in the 
+*              RTC_TAFCR register. You can use the  RTC_TimeStampPinSelection()
+*              function to select the corresponding pin. 
+*
+*          Backup Data Registers configuration
+*          ===================================
+*            - To write to the RTC Backup Data registers, use the RTC_WriteBackupRegister()
+*              function.  
+*            - To read the RTC Backup Data registers, use the RTC_ReadBackupRegister()
+*              function.
+* 
+*          ===================================================================
+*                                  RTC and low power modes
+*          ===================================================================
+*           The MCU can be woken up from a low power mode by an RTC alternate 
+*           function.
+*           The RTC alternate functions are the RTC alarms (Alarm A and Alarm B), 
+*           RTC wakeup, RTC tamper event detection and RTC time stamp event detection.
+*           These RTC alternate functions can wake up the system from the Stop 
+*           and Standby lowpower modes.
+*           The system can also wake up from low power modes without depending 
+*           on an external interrupt (Auto-wakeup mode), by using the RTC alarm 
+*           or the RTC wakeup events.
+*           The RTC provides a programmable time base for waking up from the 
+*           Stop or Standby mode at regular intervals.
+*           Wakeup from STOP and Standby modes is possible only when the RTC 
+*           clock source is LSE or LSI.
+*
+*          ===================================================================
+*                            Selection of RTC_AF1 alternate functions
+*          ===================================================================
+*          The RTC_AF1 pin (PC13) can be used for the following purposes:
+*            - AFO_ALARM output
+*            - AFO_CALIB output
+*            - AFI_TAMPER
+*            - AFI_TIMESTAMP
+*
+* +-------------------------------------------------------------------------------------------------------------+
+* |     Pin         |AFO_ALARM |AFO_CALIB |AFI_TAMPER |AFI_TIMESTAMP | TAMP1INSEL |   TSINSEL    |ALARMOUTTYPE  |
+* |  configuration  | ENABLED  | ENABLED  |  ENABLED  |   ENABLED    |TAMPER1 pin |TIMESTAMP pin |  AFO_ALARM   |
+* |  and function   |          |          |           |              | selection  |  selection   |Configuration |
+* |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+* |   Alarm out     |          |          |           |              |    Don&apos;t   |     Don&apos;t    |              |
+* |   output OD     |     1    |Don&apos;t care|Don&apos;t care | Don&apos;t care   |    care    |     care     |      0       |
+* |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+* |   Alarm out     |          |          |           |              |    Don&apos;t   |     Don&apos;t    |              |
+* |   output PP     |     1    |Don&apos;t care|Don&apos;t care | Don&apos;t care   |    care    |     care     |      1       |
+* |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+* | Calibration out |          |          |           |              |    Don&apos;t   |     Don&apos;t    |              |
+* |   output PP     |     0    |    1     |Don&apos;t care | Don&apos;t care   |    care    |     care     |  Don&apos;t care  |
+* |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+* |  TAMPER input   |          |          |           |              |            |     Don&apos;t    |              |
+* |   floating      |     0    |    0     |     1     |      0       |      0     |     care     |  Don&apos;t care  |
+* |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+* |  TIMESTAMP and  |          |          |           |              |            |              |              |
+* |  TAMPER input   |     0    |    0     |     1     |      1       |      0     |      0       |  Don&apos;t care  |
+* |   floating      |          |          |           |              |            |              |              |
+* |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+* | TIMESTAMP input |          |          |           |              |    Don&apos;t   |              |              |
+* |    floating     |     0    |    0     |     0     |      1       |    care    |      0       |  Don&apos;t care  |
+* |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+* |  Standard GPIO  |     0    |    0     |     0     |      0       | Don&apos;t care |  Don&apos;t care  |  Don&apos;t care  |
+* +-------------------------------------------------------------------------------------------------------------+
+*
+*
+*          ===================================================================
+*                            Selection of RTC_AF2 alternate functions
+*          ===================================================================
+*          The RTC_AF2 pin (PI8) can be used for the following purposes:
+*            - AFI_TAMPER
+*            - AFI_TIMESTAMP
+*
+* +---------------------------------------------------------------------------------------+
+* |     Pin         |AFI_TAMPER |AFI_TIMESTAMP | TAMP1INSEL |   TSINSEL    |ALARMOUTTYPE  |
+* |  configuration  |  ENABLED  |   ENABLED    |TAMPER1 pin |TIMESTAMP pin |  AFO_ALARM   |
+* |  and function   |           |              | selection  |  selection   |Configuration |
+* |-----------------|-----------|--------------|------------|--------------|--------------|
+* |  TAMPER input   |           |              |            |     Don&apos;t    |              |
+* |   floating      |     1     |      0       |      1     |     care     |  Don&apos;t care  |
+* |-----------------|-----------|--------------|------------|--------------|--------------|
+* |  TIMESTAMP and  |           |              |            |              |              |
+* |  TAMPER input   |     1     |      1       |      1     |      1       |  Don&apos;t care  |
+* |   floating      |           |              |            |              |              |
+* |-----------------|-----------|--------------|------------|--------------|--------------|
+* | TIMESTAMP input |           |              |    Don&apos;t   |              |              |
+* |    floating     |     0     |      1       |    care    |      1       |  Don&apos;t care  |
+* |-----------------|-----------|--------------|------------|--------------|--------------|
+* |  Standard GPIO  |     0     |      0       | Don&apos;t care |  Don&apos;t care  |  Don&apos;t care  |
+* +---------------------------------------------------------------------------------------+
+* 
+*
+*  </literallayout></programlisting></para>
+
+<para><formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.c</para>
+    </simplesect>
+</section>

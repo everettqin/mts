@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d89/struct_f_s_m_c___n_a_n_d___p_c_c_a_r_d_timing_init_type_def">
+<title>FSMC_NAND_PCCARDTimingInitTypeDef struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d3/d3a/stm32f4xx__fsmc_8h">&lt;stm32f4xx_fsmc.h&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_SetupTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_WaitSetupTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_HoldSetupTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t FSMC_HiZSetupTime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Timing parameters For FSMC NAND and PCCARD Banks. </para>
+    </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>uint32_t FSMC_SetupTime</title>                
+<para>Defines the number of HCLK cycles to setup address before the command assertion for NAND-Flash read or write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a value between 0 and 0xFF. </para>
+
+                <para>Definition at line 148 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_WaitSetupTime</title>                
+<para>Defines the minimum number of HCLK cycles to assert the command for NAND-Flash read or write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a number between 0x00 and 0xFF </para>
+
+                <para>Definition at line 154 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_HoldSetupTime</title>                
+<para>Defines the number of HCLK clock cycles to hold address (and data for write access) after the command deassertion for NAND-Flash read or write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a number between 0x00 and 0xFF </para>
+
+                <para>Definition at line 160 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>uint32_t FSMC_HiZSetupTime</title>                
+<para>Defines the number of HCLK clock cycles during which the databus is kept in HiZ after the start of a NAND-Flash write access to common/Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a number between 0x00 and 0xFF </para>
+
+                <para>Definition at line 167 of file stm32f4xx_fsmc.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_fsmc.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+</section>

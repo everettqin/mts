@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d14/stm32f4xx__dcmi_8c">
+    <title>stm32f4xx_dcmi.c File Reference</title>
+    <programlisting>#include stm32f4xx_dcmi.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1gab8f501f117d5695017e1dc5a611a5015">DCMI_DeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga1299076f1459525053ba4f2fa408ed2a">DCMI_Init</link> (
+<link linkend="d8/daa/struct_d_c_m_i___init_type_def">DCMI_InitTypeDef</link> * DCMI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga268eb4266fe7f294ee748e86f7b8add2">DCMI_StructInit</link> (
+<link linkend="d8/daa/struct_d_c_m_i___init_type_def">DCMI_InitTypeDef</link> * DCMI_InitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga3bd4eb06314ed06dcb71ee91391b7ec4">DCMI_CROPConfig</link> (
+<link linkend="dd/dc1/struct_d_c_m_i___c_r_o_p_init_type_def">DCMI_CROPInitTypeDef</link> * DCMI_CROPInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga7139eecdc0f7975b42cd2f9c5644d0a5">DCMI_CROPCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga8888b27bd5aca62d250642468ea6cd6d">DCMI_SetEmbeddedSynchroCodes</link> (
+<link linkend="d4/de2/struct_d_c_m_i___codes_init_type_def">DCMI_CodesInitTypeDef</link> * DCMI_CodesInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d7a/group___d_c_m_i___group1_1ga30a38a4858273c05e8f1b4677d744c13">DCMI_JPEGCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/db8/group___d_c_m_i___group2_1ga36bba54c40637b8071aea8ffea71fb84">DCMI_Cmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/db8/group___d_c_m_i___group2_1gad00fb33497ffa337a5b2b77fc6aa8d74">DCMI_CaptureCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="dd/db8/group___d_c_m_i___group2_1ga475305bd8694e4cebefcb263c0a5b979">DCMI_ReadData</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d54/group___d_c_m_i___group3_1ga3d89fb10384dff1dfd9197fbb6c6b2eb">DCMI_ITConfig</link> (
+uint16_t DCMI_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="dd/d54/group___d_c_m_i___group3_1ga1b66e1966fbea902a8e7015c56db7587">DCMI_GetFlagStatus</link> (
+uint16_t DCMI_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d54/group___d_c_m_i___group3_1ga1c93caf3ccfecf07cec8e1e0f844ddaa">DCMI_ClearFlag</link> (
+uint16_t DCMI_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="dd/d54/group___d_c_m_i___group3_1gac0b27821aab3ee6b73ae8a6c6339fed5">DCMI_GetITStatus</link> (
+uint16_t DCMI_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d54/group___d_c_m_i___group3_1ga908e6dad7bc5f4f4bbc512f679222c55">DCMI_ClearITPendingBit</link> (
+uint16_t DCMI_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the following functionalities of the DCMI peripheral: </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011<itemizedlist>
+<listitem>
+<para>Initialization and Configuration</para>
+</listitem><listitem>
+<para>Image capture functions</para>
+</listitem><listitem>
+<para>Interrupts and flags management</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<programlisting><literallayout>*  
+*        
+*          ===================================================================
+*                                 How to use this driver
+*          ===================================================================  
+*         
+*         The sequence below describes how to use this driver to capture image
+*         from a camera module connected to the DCMI Interface.
+*         This sequence does not take into account the configuration of the  
+*         camera module, which should be made before to configure and enable
+*         the DCMI to capture images.
+*           
+*          1. Enable the clock for the DCMI and associated GPIOs using the following functions:
+*                 RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_DCMI, ENABLE);
+*                 RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);
+*
+*          2. DCMI pins configuration 
+*             - Connect the involved DCMI pins to AF13 using the following function 
+*                 GPIO_PinAFConfig(GPIOx, GPIO_PinSourcex, GPIO_AF_DCMI); 
+*             - Configure these DCMI pins in alternate function mode by calling the function
+*                 GPIO_Init();
+*    
+*          3. Declare a DCMI_InitTypeDef structure, for example:
+*                 DCMI_InitTypeDef  DCMI_InitStructure;
+*             and fill the DCMI_InitStructure variable with the allowed values
+*             of the structure member.
+*  
+*          4. Initialize the DCMI interface by calling the function
+*                 DCMI_Init(&amp;DCMI_InitStructure); 
+*  
+*          5. Configure the DMA2_Stream1 channel1 to transfer Data from DCMI DR
+*             register to the destination memory buffer.
+*  
+*          6. Enable DCMI interface using the function
+*                 DCMI_Cmd(ENABLE);
+*                 
+*         7. Start the image capture using the function
+*                 DCMI_CaptureCmd(ENABLE);
+*                 
+*         8. At this stage the DCMI interface waits for the first start of frame,
+*            then a DMA request is generated continuously/once (depending on the
+*            mode used, Continuous/Snapshot) to transfer the received data into
+*            the destination memory. 
+*   
+*  @note  If you need to capture only a rectangular window from the received
+*         image, you have to use the DCMI_CROPConfig() function to configure 
+*         the coordinates and size of the window to be captured, then enable 
+*         the Crop feature using DCMI_CROPCmd(ENABLE);  
+*         In this case, the Crop configuration should be made before to enable
+*         and start the DCMI interface. 
+*        
+*  </literallayout></programlisting></para>
+
+<para><formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.c</para>
+    </simplesect>
+</section>

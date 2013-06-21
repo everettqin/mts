@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d64/group___s_d_i_o___response___registers">
+    <title>SDIO_Response_Registers</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d64/group___s_d_i_o___response___registers_1ga9d78943952cf0e36736313d949520a2d">SDIO_RESP1</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d64/group___s_d_i_o___response___registers_1gabd551272af4161844b5358fd3c3c379c">SDIO_RESP2</link> ((uint32_t)0x00000004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d64/group___s_d_i_o___response___registers_1gae9887669a72395d54d600829a959d2f4">SDIO_RESP3</link> ((uint32_t)0x00000008)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d64/group___s_d_i_o___response___registers_1ga57c3f6414198e5497736e398c02a1d9e">SDIO_RESP4</link> ((uint32_t)0x0000000C)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d3/d64/group___s_d_i_o___response___registers_1gaea6a7f75a5e677d50ba5c9ae2d3a7839">IS_SDIO_RESP</link> (((RESP) == SDIO_RESP1) || ((RESP) == SDIO_RESP2) || \
+                            ((RESP) == SDIO_RESP3) || ((RESP) == SDIO_RESP4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dd8/group___g_p_i_o___exported___constants">
+    <title>GPIO_Exported_Constants</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d7/dbe/group___g_p_i_o__pins__define">GPIO_pins_define</link></para></listitem>
+            <listitem><para><link linkend="d7/d97/group___g_p_i_o___pin__sources">GPIO_Pin_sources</link></para></listitem>
+            <listitem><para><link linkend="d0/deb/group___g_p_i_o___alternat__function__selection__define">GPIO_Alternat_function_selection_define</link></para></listitem>
+            <listitem><para><link linkend="dc/d32/group___g_p_i_o___legacy">GPIO_Legacy</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="d7/dbe/group___g_p_i_o__pins__define.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d7/d97/group___g_p_i_o___pin__sources.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d0/deb/group___g_p_i_o___alternat__function__selection__define.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="dc/d32/group___g_p_i_o___legacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

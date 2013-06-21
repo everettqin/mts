@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d81/group___r_c_c___h_s_e__configuration">
+    <title>RCC_HSE_configuration</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d81/group___r_c_c___h_s_e__configuration_1ga1616626d23fbce440398578855df6f97">RCC_HSE_OFF</link> ((uint8_t)0x00)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d81/group___r_c_c___h_s_e__configuration_1gabc4f70a44776c557af20496b04d9a9db">RCC_HSE_ON</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d81/group___r_c_c___h_s_e__configuration_1ga09061e9909d5f588baa7bfb0f7edd9fa">RCC_HSE_Bypass</link> ((uint8_t)0x05)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dc/d81/group___r_c_c___h_s_e__configuration_1ga287bbcafd73d07ec915c2f793301908a">IS_RCC_HSE</link> (((HSE) == RCC_HSE_OFF) || ((HSE) == RCC_HSE_ON) || \
+                         ((HSE) == RCC_HSE_Bypass))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

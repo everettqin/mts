@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d83/group___r_t_c___asynchronous___predivider">
+    <title>RTC_Asynchronous_Predivider</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="db/d83/group___r_t_c___asynchronous___predivider_1gac20f6c94ede2d474df8ba4acb7328d93">IS_RTC_ASYNCH_PREDIV</link> ((PREDIV) &lt;= 0x7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

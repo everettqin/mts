@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/dd3/group___t_i_m___prescaler___reload___mode">
+    <title>TIM_Prescaler_Reload_Mode</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dd3/group___t_i_m___prescaler___reload___mode_1gad76dd05a3ae4e44e040e0e083bd460bf">TIM_PSCReloadMode_Update</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dd3/group___t_i_m___prescaler___reload___mode_1ga9ba55481ccdcb64268b7b9f2095bfc17">TIM_PSCReloadMode_Immediate</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/dd3/group___t_i_m___prescaler___reload___mode_1ga156317fc6b2c1f6f2e1da9dfa555ecf4">IS_TIM_PRESCALER_RELOAD</link> (((RELOAD) == TIM_PSCReloadMode_Update) || \
+                                         ((RELOAD) == TIM_PSCReloadMode_Immediate))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

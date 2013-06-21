@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/da8/group___a_d_c__data__align">
+    <title>ADC_data_align</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da8/group___a_d_c__data__align_1ga80b5d2f2b6b058bc498f58e0a92ad035">ADC_DataAlign_Right</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da8/group___a_d_c__data__align_1ga87c2b7021bc288174d5d6175dc267251">ADC_DataAlign_Left</link> ((uint32_t)0x00000800)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/da8/group___a_d_c__data__align_1ga2903b620e3c61dc47ed8c0fbf4197801">IS_ADC_DATA_ALIGN</link> (((ALIGN) == ADC_DataAlign_Right) || \
+                                  ((ALIGN) == ADC_DataAlign_Left))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

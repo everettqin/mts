@@ -1,0 +1,193 @@
+\hypertarget{group___f_s_m_c___group4}{\section{Interrupts and flags management functions}
+\label{group___f_s_m_c___group4}\index{Interrupts and flags management functions@{Interrupts and flags management functions}}
+}
+
+
+Interrupts and flags management functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___f_s_m_c___group4_ga217027ae3cd213b9076b6a1be197064c}{F\-S\-M\-C\-\_\-\-I\-T\-Config} (uint32\-\_\-t F\-S\-M\-C\-\_\-\-Bank, uint32\-\_\-t F\-S\-M\-C\-\_\-\-I\-T, Functional\-State New\-State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified F\-S\-M\-C interrupts. \end{DoxyCompactList}\item 
+Flag\-Status \hyperlink{group___f_s_m_c___group4_gae00355115b078f483f0771057bb849c4}{F\-S\-M\-C\-\_\-\-Get\-Flag\-Status} (uint32\-\_\-t F\-S\-M\-C\-\_\-\-Bank, uint32\-\_\-t F\-S\-M\-C\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified F\-S\-M\-C flag is set or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_s_m_c___group4_ga697618f2de0ad9a8a82461ddbebd5264}{F\-S\-M\-C\-\_\-\-Clear\-Flag} (uint32\-\_\-t F\-S\-M\-C\-\_\-\-Bank, uint32\-\_\-t F\-S\-M\-C\-\_\-\-F\-L\-A\-G)
+\begin{DoxyCompactList}\small\item\em Clears the F\-S\-M\-C's pending flags. \end{DoxyCompactList}\item 
+I\-T\-Status \hyperlink{group___f_s_m_c___group4_ga7fce9ca889d33cd8b8b7413875dd4d73}{F\-S\-M\-C\-\_\-\-Get\-I\-T\-Status} (uint32\-\_\-t F\-S\-M\-C\-\_\-\-Bank, uint32\-\_\-t F\-S\-M\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified F\-S\-M\-C interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___f_s_m_c___group4_gad9387e7674b8a376256a3378649e004e}{F\-S\-M\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit} (uint32\-\_\-t F\-S\-M\-C\-\_\-\-Bank, uint32\-\_\-t F\-S\-M\-C\-\_\-\-I\-T)
+\begin{DoxyCompactList}\small\item\em Clears the F\-S\-M\-C's interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interrupts and flags management functions. \begin{DoxyVerb} ===============================================================================
+                     Interrupts and flags management functions
+ ===============================================================================  \end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\hypertarget{group___f_s_m_c___group4_ga697618f2de0ad9a8a82461ddbebd5264}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!F\-S\-M\-C\-\_\-\-Clear\-Flag@{F\-S\-M\-C\-\_\-\-Clear\-Flag}}
+\index{F\-S\-M\-C\-\_\-\-Clear\-Flag@{F\-S\-M\-C\-\_\-\-Clear\-Flag}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{F\-S\-M\-C\-\_\-\-Clear\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void F\-S\-M\-C\-\_\-\-Clear\-Flag (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-Bank, }
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___f_s_m_c___group4_ga697618f2de0ad9a8a82461ddbebd5264}
+
+
+Clears the F\-S\-M\-C's pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-S\-M\-C\-\_\-\-Bank,\-:} & specifies the F\-S\-M\-C Bank to be used This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-Bank2\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank2 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank3\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank3 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank4\-\_\-\-P\-C\-C\-A\-R\-D\-: F\-S\-M\-C Bank4 P\-C\-C\-A\-R\-D \end{DoxyItemize}
+\\
+\hline
+{\em F\-S\-M\-C\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-F\-L\-A\-G\-\_\-\-Rising\-Edge\-: Rising edge detection Flag. \item F\-S\-M\-C\-\_\-\-F\-L\-A\-G\-\_\-\-Level\-: Level detection Flag. \item F\-S\-M\-C\-\_\-\-F\-L\-A\-G\-\_\-\-Falling\-Edge\-: Falling edge detection Flag. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 859 of file stm32f4xx\-\_\-fsmc.\-c.
+
+\hypertarget{group___f_s_m_c___group4_gad9387e7674b8a376256a3378649e004e}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!F\-S\-M\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{F\-S\-M\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}}
+\index{F\-S\-M\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit@{F\-S\-M\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{F\-S\-M\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void F\-S\-M\-C\-\_\-\-Clear\-I\-T\-Pending\-Bit (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-Bank, }
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___f_s_m_c___group4_gad9387e7674b8a376256a3378649e004e}
+
+
+Clears the F\-S\-M\-C's interrupt pending bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-S\-M\-C\-\_\-\-Bank,\-:} & specifies the F\-S\-M\-C Bank to be used This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-Bank2\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank2 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank3\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank3 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank4\-\_\-\-P\-C\-C\-A\-R\-D\-: F\-S\-M\-C Bank4 P\-C\-C\-A\-R\-D \end{DoxyItemize}
+\\
+\hline
+{\em F\-S\-M\-C\-\_\-\-I\-T,\-:} & specifies the interrupt pending bit to clear. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-I\-T\-\_\-\-Rising\-Edge\-: Rising edge detection interrupt. \item F\-S\-M\-C\-\_\-\-I\-T\-\_\-\-Level\-: Level edge detection interrupt. \item F\-S\-M\-C\-\_\-\-I\-T\-\_\-\-Falling\-Edge\-: Falling edge detection interrupt. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 945 of file stm32f4xx\-\_\-fsmc.\-c.
+
+\hypertarget{group___f_s_m_c___group4_gae00355115b078f483f0771057bb849c4}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!F\-S\-M\-C\-\_\-\-Get\-Flag\-Status@{F\-S\-M\-C\-\_\-\-Get\-Flag\-Status}}
+\index{F\-S\-M\-C\-\_\-\-Get\-Flag\-Status@{F\-S\-M\-C\-\_\-\-Get\-Flag\-Status}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{F\-S\-M\-C\-\_\-\-Get\-Flag\-Status}]{\setlength{\rightskip}{0pt plus 5cm}Flag\-Status F\-S\-M\-C\-\_\-\-Get\-Flag\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-Bank, }
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-F\-L\-A\-G}
+\end{DoxyParamCaption}
+)}}\label{group___f_s_m_c___group4_gae00355115b078f483f0771057bb849c4}
+
+
+Checks whether the specified F\-S\-M\-C flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-S\-M\-C\-\_\-\-Bank,\-:} & specifies the F\-S\-M\-C Bank to be used This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-Bank2\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank2 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank3\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank3 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank4\-\_\-\-P\-C\-C\-A\-R\-D\-: F\-S\-M\-C Bank4 P\-C\-C\-A\-R\-D \end{DoxyItemize}
+\\
+\hline
+{\em F\-S\-M\-C\-\_\-\-F\-L\-A\-G,\-:} & specifies the flag to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-F\-L\-A\-G\-\_\-\-Rising\-Edge\-: Rising edge detection Flag. \item F\-S\-M\-C\-\_\-\-F\-L\-A\-G\-\_\-\-Level\-: Level detection Flag. \item F\-S\-M\-C\-\_\-\-F\-L\-A\-G\-\_\-\-Falling\-Edge\-: Falling edge detection Flag. \item F\-S\-M\-C\-\_\-\-F\-L\-A\-G\-\_\-\-F\-E\-M\-P\-T\-: Fifo empty Flag. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of F\-S\-M\-C\-\_\-\-F\-L\-A\-G (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 809 of file stm32f4xx\-\_\-fsmc.\-c.
+
+\hypertarget{group___f_s_m_c___group4_ga7fce9ca889d33cd8b8b7413875dd4d73}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!F\-S\-M\-C\-\_\-\-Get\-I\-T\-Status@{F\-S\-M\-C\-\_\-\-Get\-I\-T\-Status}}
+\index{F\-S\-M\-C\-\_\-\-Get\-I\-T\-Status@{F\-S\-M\-C\-\_\-\-Get\-I\-T\-Status}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{F\-S\-M\-C\-\_\-\-Get\-I\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}I\-T\-Status F\-S\-M\-C\-\_\-\-Get\-I\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-Bank, }
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-I\-T}
+\end{DoxyParamCaption}
+)}}\label{group___f_s_m_c___group4_ga7fce9ca889d33cd8b8b7413875dd4d73}
+
+
+Checks whether the specified F\-S\-M\-C interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-S\-M\-C\-\_\-\-Bank,\-:} & specifies the F\-S\-M\-C Bank to be used This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-Bank2\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank2 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank3\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank3 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank4\-\_\-\-P\-C\-C\-A\-R\-D\-: F\-S\-M\-C Bank4 P\-C\-C\-A\-R\-D \end{DoxyItemize}
+\\
+\hline
+{\em F\-S\-M\-C\-\_\-\-I\-T,\-:} & specifies the F\-S\-M\-C interrupt source to check. This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-I\-T\-\_\-\-Rising\-Edge\-: Rising edge detection interrupt. \item F\-S\-M\-C\-\_\-\-I\-T\-\_\-\-Level\-: Level edge detection interrupt. \item F\-S\-M\-C\-\_\-\-I\-T\-\_\-\-Falling\-Edge\-: Falling edge detection interrupt. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of F\-S\-M\-C\-\_\-\-I\-T (S\-E\-T or R\-E\-S\-E\-T). \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 894 of file stm32f4xx\-\_\-fsmc.\-c.
+
+\hypertarget{group___f_s_m_c___group4_ga217027ae3cd213b9076b6a1be197064c}{\index{Interrupts and flags management functions@{Interrupts and flags management functions}!F\-S\-M\-C\-\_\-\-I\-T\-Config@{F\-S\-M\-C\-\_\-\-I\-T\-Config}}
+\index{F\-S\-M\-C\-\_\-\-I\-T\-Config@{F\-S\-M\-C\-\_\-\-I\-T\-Config}!Interrupts and flags management functions@{Interrupts and flags management functions}}
+\subsubsection[{F\-S\-M\-C\-\_\-\-I\-T\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void F\-S\-M\-C\-\_\-\-I\-T\-Config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-Bank, }
+\item[{uint32\-\_\-t}]{F\-S\-M\-C\-\_\-\-I\-T, }
+\item[{Functional\-State}]{New\-State}
+\end{DoxyParamCaption}
+)}}\label{group___f_s_m_c___group4_ga217027ae3cd213b9076b6a1be197064c}
+
+
+Enables or disables the specified F\-S\-M\-C interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\-S\-M\-C\-\_\-\-Bank,\-:} & specifies the F\-S\-M\-C Bank to be used This parameter can be one of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-Bank2\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank2 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank3\-\_\-\-N\-A\-N\-D\-: F\-S\-M\-C Bank3 N\-A\-N\-D \item F\-S\-M\-C\-\_\-\-Bank4\-\_\-\-P\-C\-C\-A\-R\-D\-: F\-S\-M\-C Bank4 P\-C\-C\-A\-R\-D \end{DoxyItemize}
+\\
+\hline
+{\em F\-S\-M\-C\-\_\-\-I\-T,\-:} & specifies the F\-S\-M\-C interrupt sources to be enabled or disabled. This parameter can be any combination of the following values\-: \begin{DoxyItemize}
+\item F\-S\-M\-C\-\_\-\-I\-T\-\_\-\-Rising\-Edge\-: Rising edge detection interrupt. \item F\-S\-M\-C\-\_\-\-I\-T\-\_\-\-Level\-: Level edge detection interrupt. \item F\-S\-M\-C\-\_\-\-I\-T\-\_\-\-Falling\-Edge\-: Falling edge detection interrupt. \end{DoxyItemize}
+\\
+\hline
+{\em New\-State,\-:} & new state of the specified F\-S\-M\-C interrupts. This parameter can be\-: E\-N\-A\-B\-L\-E or D\-I\-S\-A\-B\-L\-E. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 749 of file stm32f4xx\-\_\-fsmc.\-c.
+

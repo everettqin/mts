@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d0e/group___u_s_a_r_t___interrupt__definition">
+    <title>USART_Interrupt_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="d7/dc0/group___u_s_a_r_t___legacy">USART_Legacy</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1gae607c28a462c224c575b7541dc4f7067">USART_IT_PE</link> ((uint16_t)0x0028)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1gab18d0fe889204a4c34f6d5817fb5147d">USART_IT_TXE</link> ((uint16_t)0x0727)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1ga748e86162cc110513330079982821c39">USART_IT_TC</link> ((uint16_t)0x0626)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1gacdd49b93072655a21a63a35e6431f8ae">USART_IT_RXNE</link> ((uint16_t)0x0525)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1gaad8fd44c80b30285dc3088a0b3aa5bd9">USART_IT_ORE_RX</link> ((uint16_t)0x0325) /* In case interrupt is generated if the RXNEIE bit is set */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1ga5d85aab24b7b2dfddb61ba2a49fa6185">USART_IT_IDLE</link> ((uint16_t)0x0424)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1ga063628e16cdda199b07d380421afc4a5">USART_IT_LBD</link> ((uint16_t)0x0846)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1gab49efbefaca2921e8cbe8f5146e99dbd">USART_IT_CTS</link> ((uint16_t)0x096A)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1ga631e83efd4c4789128d80a9539faf78a">USART_IT_ERR</link> ((uint16_t)0x0060)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1ga1faa2d618b7c1038f8cad50fec7d0ba4">USART_IT_ORE_ER</link> ((uint16_t)0x0360) /* In case interrupt is generated if the EIE bit is set */</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1gad5de042f579b50f1e8643009176486b3">USART_IT_NE</link> ((uint16_t)0x0260)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1ga9af8790f78f6cb1591506c57d0cc0fb3">USART_IT_FE</link> ((uint16_t)0x0160)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1ga37ce140eae1938a414ff32afed5ef236">IS_USART_CONFIG_IT</link> (((IT) == USART_IT_PE) || ((IT) == USART_IT_TXE) || \
+                                ((IT) == USART_IT_TC) || ((IT) == USART_IT_RXNE) || \
+                                ((IT) == USART_IT_IDLE) || ((IT) == USART_IT_LBD) || \
+                                ((IT) == USART_IT_CTS) || ((IT) == USART_IT_ERR))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1ga9a8014793a383d710eaaf4185f2b795d">IS_USART_GET_IT</link> (((IT) == USART_IT_PE) || ((IT) == USART_IT_TXE) || \
+                             ((IT) == USART_IT_TC) || ((IT) == USART_IT_RXNE) || \
+                             ((IT) == USART_IT_IDLE) || ((IT) == USART_IT_LBD) || \
+                             ((IT) == USART_IT_CTS) || ((IT) == USART_IT_ORE) || \
+                             ((IT) == USART_IT_ORE_RX) || ((IT) == USART_IT_ORE_ER) || \
+                             ((IT) == USART_IT_NE) || ((IT) == USART_IT_FE))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d0e/group___u_s_a_r_t___interrupt__definition_1ga3ceda175140b84eea02a2261ebda4efd">IS_USART_CLEAR_IT</link> (((IT) == USART_IT_TC) || ((IT) == USART_IT_RXNE) || \
+                               ((IT) == USART_IT_LBD) || ((IT) == USART_IT_CTS))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+<xi:include href="d7/dc0/group___u_s_a_r_t___legacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

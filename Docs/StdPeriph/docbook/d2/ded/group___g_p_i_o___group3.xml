@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/ded/group___g_p_i_o___group3">
+    <title>GPIO Alternate functions configuration function</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>GPIO Alternate functions configuration function. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+               GPIO Alternate functions configuration function
+ ===============================================================================  </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/ded/group___g_p_i_o___group3_1ga0a77617a322562ae84f8d72486032c5d">GPIO_PinAFConfig</link> (
+GPIO_TypeDef * GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d2/ded/group___g_p_i_o___group3_1ga0a77617a322562ae84f8d72486032c5d">
+                <title>void GPIO_PinAFConfig (GPIO_TypeDef *GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF)</title> <emphasis>Changes the mapping of the specified pin.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>GPIOx, :</entry>
+                                <entry>
+<para>where x can be (A..I) to select the GPIO peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_PinSource, :</entry>
+                                <entry>
+<para>specifies the pin for the Alternate function. This parameter can be GPIO_PinSourcex where x can be (0..15). </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>GPIO_AFSelection, :</entry>
+                                <entry>
+<para>selects the pin to used as Alternate function. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>GPIO_AF_RTC_50Hz: Connect RTC_50Hz pin to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_MCO: Connect MCO pin (MCO1 and MCO2) to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TAMPER: Connect TAMPER pins (TAMPER_1 and TAMPER_2) to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SWJ: Connect SWJ pins (SWD and JTAG)to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TRACE: Connect TRACE pins to AF0 (default after reset) </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM1: Connect TIM1 pins to AF1 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM2: Connect TIM2 pins to AF1 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM3: Connect TIM3 pins to AF2 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM4: Connect TIM4 pins to AF2 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM5: Connect TIM5 pins to AF2 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM8: Connect TIM8 pins to AF3 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM9: Connect TIM9 pins to AF3 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM10: Connect TIM10 pins to AF3 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM11: Connect TIM11 pins to AF3 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_I2C1: Connect I2C1 pins to AF4 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_I2C2: Connect I2C2 pins to AF4 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_I2C3: Connect I2C3 pins to AF4 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SPI1: Connect SPI1 pins to AF5 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SPI2: Connect SPI2/I2S2 pins to AF5 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SPI3: Connect SPI3/I2S3 pins to AF6 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_I2S3ext: Connect I2S3ext pins to AF7 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_USART1: Connect USART1 pins to AF7 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_USART2: Connect USART2 pins to AF7 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_USART3: Connect USART3 pins to AF7 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_UART4: Connect UART4 pins to AF8 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_UART5: Connect UART5 pins to AF8 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_USART6: Connect USART6 pins to AF8 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_CAN1: Connect CAN1 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_CAN2: Connect CAN2 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM12: Connect TIM12 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM13: Connect TIM13 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_TIM14: Connect TIM14 pins to AF9 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_OTG_FS: Connect OTG_FS pins to AF10 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_OTG_HS: Connect OTG_HS pins to AF10 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_ETH: Connect ETHERNET pins to AF11 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_FSMC: Connect FSMC pins to AF12 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_OTG_HS_FS: Connect OTG HS (configured in FS) pins to AF12 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_SDIO: Connect SDIO pins to AF12 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_DCMI: Connect DCMI pins to AF13 </para>
+</listitem>
+<listitem>
+<para>GPIO_AF_EVENTOUT: Connect EVENTOUT pins to AF15 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

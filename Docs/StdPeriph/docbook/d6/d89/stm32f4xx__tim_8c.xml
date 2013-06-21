@@ -1,0 +1,916 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d89/stm32f4xx__tim_8c">
+    <title>stm32f4xx_tim.c File Reference</title>
+    <programlisting>#include stm32f4xx_tim.h</programlisting>
+    <programlisting>#include stm32f4xx_rcc.h</programlisting>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d28/group___t_i_m_1ga705d4e8fca08b32bfd20592dea164447">SMCR_ETR_MASK</link> ((uint16_t)0x00FF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d28/group___t_i_m_1ga110aacc88d798c51d324cb360c62c538">CCMR_OFFSET</link> ((uint16_t)0x0018)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d28/group___t_i_m_1gac721c0fff405ca1dc4bfe9c84868e928">CCER_CCE_SET</link> ((uint16_t)0x0001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d28/group___t_i_m_1ga82e4fa29e85adee9247914e00323fe34">CCER_CCNE_SET</link> ((uint16_t)0x0004)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d28/group___t_i_m_1ga56a11432b4408650479f5c19dbbafbc8">CCMR_OC13M_MASK</link> ((uint16_t)0xFF8F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="de/d28/group___t_i_m_1gabd4e5a88e8b7c9dbd068bbfd9f0e6ed2">CCMR_OC24M_MASK</link> ((uint16_t)0x8FFF)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dc/dc0/group___t_i_m___private___functions_1gac8dbcb0d903cc0a3491155b5b4fbee65">TI1_Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dc/dc0/group___t_i_m___private___functions_1gafed528b30af910d7e55ebd1d22a9a58f">TI2_Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dc/dc0/group___t_i_m___private___functions_1gae0776241db23f0f31950476804dad588">TI3_Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dc/dc0/group___t_i_m___private___functions_1gaee26c0ada47174264fcd624cad3a91aa">TI4_Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection, uint16_t TIM_ICFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga1659cc0ce503ac151568e0c7c02b1ba5">TIM_DeInit</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga83fd58c9416802d9638bbe1715c98932">TIM_TimeBaseInit</link> (
+TIM_TypeDef * TIMx, <link linkend="dc/da6/struct_t_i_m___time_base_init_type_def">TIM_TimeBaseInitTypeDef</link> * TIM_TimeBaseInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga1556a0b9a5d53506875fd7de0cbc6b1f">TIM_TimeBaseStructInit</link> (
+<link linkend="dc/da6/struct_t_i_m___time_base_init_type_def">TIM_TimeBaseInitTypeDef</link> * TIM_TimeBaseInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga45c6fd9041baf7f64c121e0172f305c7">TIM_PrescalerConfig</link> (
+TIM_TypeDef * TIMx, uint16_t Prescaler, uint16_t TIM_PSCReloadMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga93941c1db20bf3794f377307df90a67b">TIM_CounterModeConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_CounterMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga18173e7955a85d5c2598c643eada2692">TIM_SetCounter</link> (
+TIM_TypeDef * TIMx, uint32_t Counter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1gad6a388d498c7f299d00a9d0871943041">TIM_SetAutoreload</link> (
+TIM_TypeDef * TIMx, uint32_t Autoreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d1/d65/group___t_i_m___group1_1ga53607976e0866ab424e294cda9f6036e">TIM_GetCounter</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="d1/d65/group___t_i_m___group1_1ga427eb6e533480e02a27cd0ca876183d6">TIM_GetPrescaler</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1gace2384dd33e849a054f61b8e1fc7e7c3">TIM_UpdateDisableConfig</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga1d7a8f952e209de142499e67a653fc1f">TIM_UpdateRequestConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_UpdateSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga42b44b9fc2b0798d733720dd6bac1ac0">TIM_ARRPreloadConfig</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1gadd2cca5fac6c1291dc4339098d5c9562">TIM_SelectOnePulseMode</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OPMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga20ef804dc32c723662d11ee7da3baab2">TIM_SetClockDivision</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_CKD)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d65/group___t_i_m___group1_1ga2bdc275bcbd2ce9d1ba632e6c89896b7">TIM_Cmd</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gafcdb6ff00158862aef7fed5e7a554a3e">TIM_OC1Init</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga2017455121d910d6ff63ac6f219842c5">TIM_OC2Init</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga90d4a358d4e6d4c5ed17dc1d6beb5f30">TIM_OC3Init</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga64571ebbb58cac39a9e760050175f11c">TIM_OC4Init</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga394683c78ae02837882e36014e11643e">TIM_OCStructInit</link> (
+<link linkend="d3/d21/struct_t_i_m___o_c_init_type_def">TIM_OCInitTypeDef</link> * TIM_OCInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga83ea0af5a7c1af521236ce5e4d2c42b0">TIM_SelectOCxM</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_Channel, uint16_t TIM_OCMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga48631e66c32bb905946664f4722b2546">TIM_SetCompare1</link> (
+TIM_TypeDef * TIMx, uint32_t Compare1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga3de36754f3ba5d46b9ef2bf8e77575c7">TIM_SetCompare2</link> (
+TIM_TypeDef * TIMx, uint32_t Compare2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gac372fbbbbc20329802659dd6c6b4e051">TIM_SetCompare3</link> (
+TIM_TypeDef * TIMx, uint32_t Compare3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga99ba6c2afa87a239c9d32a49762b4245">TIM_SetCompare4</link> (
+TIM_TypeDef * TIMx, uint32_t Compare4)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga4f58c12e6493a0d8b9555c9097b831d6">TIM_ForcedOC1Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ForcedAction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga3d2902b6fbab8dd55cd531055ffcc63d">TIM_ForcedOC2Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ForcedAction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga920b0fb4ca44fceffd1c3e441feebd8f">TIM_ForcedOC3Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ForcedAction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gaf0a0bbe74251e56d4b835d20b0a3aa63">TIM_ForcedOC4Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ForcedAction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga60e6c29ad8f919bef616cf8e3306dd64">TIM_OC1PreloadConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga75b4614c6dd2cd52f2c5becdb6590c10">TIM_OC2PreloadConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga8b2391685a519e60e596b7d596f86f09">TIM_OC3PreloadConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga8bf4dfb35ff0c7b494dd96579f50b1ec">TIM_OC4PreloadConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPreload)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gaec82031ca62f31f5483195c09752a83a">TIM_OC1FastConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCFast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga413359c87f46c69f1ffe2dc8fb3a65e7">TIM_OC2FastConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCFast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gab2f3698e6e56bd9b0a4be7056ba789e1">TIM_OC3FastConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCFast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga58279a04e8ea5333f1079d3cce8dde12">TIM_OC4FastConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCFast)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga34e926cd8a99cfcc7480b2d6de5118b6">TIM_ClearOC1Ref</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCClear)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gac474ebc815d24c8a589969e0c68b27b0">TIM_ClearOC2Ref</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCClear)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga0bd9476a14bd346c319945ec4fa2bc67">TIM_ClearOC3Ref</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCClear)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gaeee5fa66b26e7c6f71850272dc3028f3">TIM_ClearOC4Ref</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCClear)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga03878f78163485c8a3508cff2111c297">TIM_OC1PolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga3cb91578e7dd34ea7d09862482960445">TIM_OC1NPolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCNPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga6831cacaac1ef50291af94db94450797">TIM_OC2PolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga2fa6ea3a89f446b52b4e699272b70cad">TIM_OC2NPolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCNPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga1ef43b03fe666495e80aac9741ae7ab0">TIM_OC3PolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gac710acc5b682e892584fc6f089f61dc2">TIM_OC3NPolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCNPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1gad678410f7c7244f83daad93ce9d1056e">TIM_OC4PolarityConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_OCPolarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga3ecc4647d9ede261beb5e0535cf29ebb">TIM_CCxCmd</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_Channel, uint16_t TIM_CCx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/dbc/group___t_i_m___group2_1ga304ff7c8a1615498da749bf2507e9f2b">TIM_CCxNCmd</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_Channel, uint16_t TIM_CCxN)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc0/group___t_i_m___group3_1ga9e6a153dd6552e4e1188eba227316f7f">TIM_ICInit</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d66/struct_t_i_m___i_c_init_type_def">TIM_ICInitTypeDef</link> * TIM_ICInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc0/group___t_i_m___group3_1ga5005dac8e4e8a4c7fc2a0ef05b77cc50">TIM_ICStructInit</link> (
+<link linkend="d3/d66/struct_t_i_m___i_c_init_type_def">TIM_ICInitTypeDef</link> * TIM_ICInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc0/group___t_i_m___group3_1gaa71f9296556310f85628d6c748a06475">TIM_PWMIConfig</link> (
+TIM_TypeDef * TIMx, <link linkend="d3/d66/struct_t_i_m___i_c_init_type_def">TIM_ICInitTypeDef</link> * TIM_ICInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="db/dc0/group___t_i_m___group3_1ga6bd39ca543305ff0cd06fce0f678d94d">TIM_GetCapture1</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="db/dc0/group___t_i_m___group3_1ga2524cb5db14e388fb7f20c99fb3d58a5">TIM_GetCapture2</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="db/dc0/group___t_i_m___group3_1ga71ee9ce2c535ec0fb3fac5f9119221f7">TIM_GetCapture3</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="db/dc0/group___t_i_m___group3_1ga420b022cbc71ac603b5dd4922687abb1">TIM_GetCapture4</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc0/group___t_i_m___group3_1gaf0f684dea88e222de9689d8ed0ca8805">TIM_SetIC1Prescaler</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPSC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc0/group___t_i_m___group3_1ga3cc4869b5fe73271808512c89322a325">TIM_SetIC2Prescaler</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPSC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc0/group___t_i_m___group3_1ga76f906383b8132ebe00dffadb70cf7f9">TIM_SetIC3Prescaler</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPSC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/dc0/group___t_i_m___group3_1ga0f2c784271356d6b64b8c0da64dbdbc2">TIM_SetIC4Prescaler</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ICPSC)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1ga3df4ba3f0727f63ce621e2b2e6035d4f">TIM_BDTRConfig</link> (
+TIM_TypeDef * TIMx, <link linkend="d8/d23/struct_t_i_m___b_d_t_r_init_type_def">TIM_BDTRInitTypeDef</link> * TIM_BDTRInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1gaea0f49938cda8ae0738162194798afc6">TIM_BDTRStructInit</link> (
+<link linkend="d8/d23/struct_t_i_m___b_d_t_r_init_type_def">TIM_BDTRInitTypeDef</link> * TIM_BDTRInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1ga3e59ebced2ab8e0b817c460f1670e97d">TIM_CtrlPWMOutputs</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1gaff2e7f9959b1b36e830df028c14accc8">TIM_SelectCOM</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dc1/group___t_i_m___group4_1ga0a935254e44312b1d78e8684a58db3c1">TIM_CCPreloadControl</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga70e3d6c09d55ee69002e154c85cd40e4">TIM_ITConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_IT, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga38bd4ffda920dd4f7655a0a2c6100a6e">TIM_GenerateEvent</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_EventSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>FlagStatus <link linkend="d5/d80/group___t_i_m___group5_1ga0adcbbd5e838ec8642e7a9b80075f41f">TIM_GetFlagStatus</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga46568c7b254941dc53e785342d60baf3">TIM_ClearFlag</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_FLAG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITStatus <link linkend="d5/d80/group___t_i_m___group5_1ga0827a0b411707304f76d33050727c24d">TIM_GetITStatus</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga9eb1e95af71ed380f51a2c6d585cc5d6">TIM_ClearITPendingBit</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_IT)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1gad7156f84c436c8ac92cd789611826d09">TIM_DMAConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_DMABase, uint16_t TIM_DMABurstLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga24700389cfa3ea9b42234933b23f1399">TIM_DMACmd</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_DMASource, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d80/group___t_i_m___group5_1ga5273cb65acb885fe7982827b1c6b7d75">TIM_SelectCCDMA</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d48/group___t_i_m___group6_1ga2394f0221709c0659874f9a4184cf86e">TIM_InternalClockConfig</link> (
+TIM_TypeDef * TIMx)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d48/group___t_i_m___group6_1gabef227d21d9e121e6a4ec5ab6223f5a9">TIM_ITRxExternalClockConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_InputTriggerSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d48/group___t_i_m___group6_1gaf460e7d9c9969044e364130e209937fc">TIM_TIxExternalClockConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_TIxExternalCLKSource, uint16_t TIM_ICPolarity, uint16_t ICFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d48/group___t_i_m___group6_1ga47c05638b93aabcd641dbc8859e1b2df">TIM_ETRClockMode1Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/d48/group___t_i_m___group6_1ga0a9cbcbab32326cbbdaf4c111f59ec20">TIM_ETRClockMode2Config</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga4252583c6ae8a73d6fc66f7e951dbc35">TIM_SelectInputTrigger</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_InputTriggerSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga28745aaa549e2067e42c19569209e6c6">TIM_SelectOutputTrigger</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_TRGOSource)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga2f19ce1d90990691cf037e419ba08003">TIM_SelectSlaveMode</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_SlaveMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga4dcc3d11b670c381d0ff9cb7e9fd01e2">TIM_SelectMasterSlaveMode</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_MasterSlaveMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="df/dba/group___t_i_m___group7_1ga8bdde400b7a30f3e747fe8e4962c0abe">TIM_ETRConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity, uint16_t ExtTRGFilter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d6f/group___t_i_m___group8_1ga0fc7e76c47a3bd1ba1ebc71427832b51">TIM_EncoderInterfaceConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_EncoderMode, uint16_t TIM_IC1Polarity, uint16_t TIM_IC2Polarity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d6f/group___t_i_m___group8_1ga42c2d1025a3937c9d9f38631af86ffa4">TIM_SelectHallSensor</link> (
+TIM_TypeDef * TIMx, FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/dc3/group___t_i_m___group9_1ga08ffb6f2bfa96b6fbcbb8d8001cb8ba9">TIM_RemapConfig</link> (
+TIM_TypeDef * TIMx, uint16_t TIM_Remap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+
+<para>This file provides firmware functions to manage the following functionalities of the TIM peripheral: </para>
+
+<para><formalpara><title>Author: </title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>30-September-2011<itemizedlist>
+<listitem>
+<para>TimeBase management</para>
+</listitem><listitem>
+<para>Output Compare management</para>
+</listitem><listitem>
+<para>Input Capture management</para>
+</listitem><listitem>
+<para>Advanced-control timers (TIM1 and TIM8) specific features</para>
+</listitem><listitem>
+<para>Interrupts, DMA and flags management</para>
+</listitem><listitem>
+<para>Clocks management</para>
+</listitem><listitem>
+<para>Synchronization management</para>
+</listitem><listitem>
+<para>Specific interface management</para>
+</listitem><listitem>
+<para>Specific remapping management</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<programlisting><literallayout>*  
+*          ===================================================================
+*                                 How to use this driver
+*          ===================================================================
+*          This driver provides functions to configure and program the TIM 
+*          of all STM32F4xx devices.
+*          These functions are split in 9 groups: 
+*   
+*          1. TIM TimeBase management: this group includes all needed functions 
+*             to configure the TM Timebase unit:
+*                   - Set/Get Prescaler
+*                   - Set/Get Autoreload  
+*                   - Counter modes configuration
+*                   - Set Clock division  
+*                   - Select the One Pulse mode
+*                   - Update Request Configuration
+*                   - Update Disable Configuration
+*                   - Auto-Preload Configuration 
+*                   - Enable/Disable the counter     
+*                 
+*          2. TIM Output Compare management: this group includes all needed 
+*             functions to configure the Capture/Compare unit used in Output 
+*             compare mode: 
+*                   - Configure each channel, independently, in Output Compare mode
+*                   - Select the output compare modes
+*                   - Select the Polarities of each channel
+*                   - Set/Get the Capture/Compare register values
+*                   - Select the Output Compare Fast mode 
+*                   - Select the Output Compare Forced mode  
+*                   - Output Compare-Preload Configuration 
+*                   - Clear Output Compare Reference
+*                   - Select the OCREF Clear signal
+*                   - Enable/Disable the Capture/Compare Channels    
+*                   
+*          3. TIM Input Capture management: this group includes all needed 
+*             functions to configure the Capture/Compare unit used in 
+*             Input Capture mode:
+*                   - Configure each channel in input capture mode
+*                   - Configure Channel1/2 in PWM Input mode
+*                   - Set the Input Capture Prescaler
+*                   - Get the Capture/Compare values      
+*                   
+*          4. Advanced-control timers (TIM1 and TIM8) specific features
+*                   - Configures the Break input, dead time, Lock level, the OSSI,
+*                      the OSSR State and the AOE(automatic output enable)
+*                   - Enable/Disable the TIM peripheral Main Outputs
+*                   - Select the Commutation event
+*                   - Set/Reset the Capture Compare Preload Control bit
+*                              
+*          5. TIM interrupts, DMA and flags management
+*                   - Enable/Disable interrupt sources
+*                   - Get flags status
+*                   - Clear flags/ Pending bits
+*                   - Enable/Disable DMA requests 
+*                   - Configure DMA burst mode
+*                   - Select CaptureCompare DMA request  
+*              
+*          6. TIM clocks management: this group includes all needed functions 
+*             to configure the clock controller unit:
+*                   - Select internal/External clock
+*                   - Select the external clock mode: ETR(Mode1/Mode2), TIx or ITRx
+*         
+*          7. TIM synchronization management: this group includes all needed 
+*             functions to configure the Synchronization unit:
+*                   - Select Input Trigger  
+*                   - Select Output Trigger  
+*                   - Select Master Slave Mode 
+*                   - ETR Configuration when used as external trigger   
+*     
+*          8. TIM specific interface management, this group includes all 
+*             needed functions to use the specific TIM interface:
+*                   - Encoder Interface Configuration
+*                   - Select Hall Sensor   
+*         
+*          9. TIM specific remapping management includes the Remapping 
+*             configuration of specific timers               
+*   
+*  </literallayout></programlisting></para>
+
+<para><formalpara><title>Attention: </title>
+
+<para></para>
+</formalpara>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#x00A9; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+    <para>Definition in file E:/Workspaces/Google_Drive/Google Drive/Workshop/arm/stsw-stm32068/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c</para>
+    </simplesect>
+</section>

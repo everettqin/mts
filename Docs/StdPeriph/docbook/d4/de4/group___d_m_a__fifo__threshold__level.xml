@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/de4/group___d_m_a__fifo__threshold__level">
+    <title>DMA_fifo_threshold_level</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1gacc98384bbba43a9c4f70b448518acfe4">DMA_FIFOThreshold_1QuarterFull</link> ((uint32_t)0x00000000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1ga626b546865960343fdcfdf33ac8ceb03">DMA_FIFOThreshold_HalfFull</link> ((uint32_t)0x00000001)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1ga6f041008fce4bb341f9a518d803a308b">DMA_FIFOThreshold_3QuartersFull</link> ((uint32_t)0x00000002)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1ga9f1008e0df7d41d910ed89d7e0872e69">DMA_FIFOThreshold_Full</link> ((uint32_t)0x00000003)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d4/de4/group___d_m_a__fifo__threshold__level_1gaeafc0d9e327d6e5b26cd37f6744b232f">IS_DMA_FIFO_THRESHOLD</link> (((THRESHOLD) == DMA_FIFOThreshold_1QuarterFull ) || \
+                                          ((THRESHOLD) == DMA_FIFOThreshold_HalfFull)      || \
+                                          ((THRESHOLD) == DMA_FIFOThreshold_3QuartersFull) || \
+                                          ((THRESHOLD) == DMA_FIFOThreshold_Full))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

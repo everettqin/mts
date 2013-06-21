@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d62/group___h_a_s_h__interrupts__definition">
+    <title>HASH_interrupts_definition</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d62/group___h_a_s_h__interrupts__definition_1ga0df296dbab5028378cc21ad733eb5675">HASH_IT_DINI</link> ((uint8_t)0x01)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d62/group___h_a_s_h__interrupts__definition_1gab5285b1618e3fac906d7502261d9bb38">HASH_IT_DCI</link> ((uint8_t)0x02)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d62/group___h_a_s_h__interrupts__definition_1gabaf192c1ebff9bebe380d01b4c3006fe">IS_HASH_IT</link> ((((IT) &amp; (uint8_t)0xFC) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d62/group___h_a_s_h__interrupts__definition_1gaf6b9b0113009e2bb8f8d462b714313af">IS_HASH_GET_IT</link> (((IT) == <link linkend="da/d62/group___h_a_s_h__interrupts__definition_1ga0df296dbab5028378cc21ad733eb5675">HASH_IT_DINI</link>) || ((IT) == <link linkend="da/d62/group___h_a_s_h__interrupts__definition_1gab5285b1618e3fac906d7502261d9bb38">HASH_IT_DCI</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="da/d62/group___h_a_s_h__interrupts__definition_1ga0df296dbab5028378cc21ad733eb5675">
+                <title>#define HASH_IT_DINI</title>                
+<para>A new block can be entered into the input buffer (DIN) </para>
+
+                <para>Definition at line 150 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="da/d62/group___h_a_s_h__interrupts__definition_1gab5285b1618e3fac906d7502261d9bb38">
+                <title>#define HASH_IT_DCI</title>                
+<para>Digest calculation complete </para>
+
+                <para>Definition at line 151 of file stm32f4xx_hash.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_hash.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d5b/group___c_r_c">
+    <title>CRC</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CRC driver modules. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+    <simplesect>
+        <title>Modules</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="da/d58/group___c_r_c___exported___constants">CRC_Exported_Constants</link></para></listitem>
+            <listitem><para><link linkend="da/d36/group___c_r_c___private___functions">CRC_Private_Functions</link></para></listitem>
+        </itemizedlist>
+    </para>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d5b/group___c_r_c_1ga506467d5ef873a5a4ade4ae83cb110f6">CRC_ResetDR</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d0/d5b/group___c_r_c_1ga5407fdbb8e8c9be6322cc8856ae5db3b">CRC_CalcCRC</link> (
+uint32_t Data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d0/d5b/group___c_r_c_1gab15ebf620615c360048fb4f45b15fae6">CRC_CalcBlockCRC</link> (
+uint32_t pBuffer, uint32_t BufferLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint32_t <link linkend="d0/d5b/group___c_r_c_1gab62db4561b0558f3c8ed53887fe7de8b">CRC_GetCRC</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d5b/group___c_r_c_1ga769c9a42be57b972ae61bbada0f2e46a">CRC_SetIDRegister</link> (
+uint8_t IDValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="d0/d5b/group___c_r_c_1gaf869f6e9c3ca0ae0822cfad1abea7e5f">CRC_GetIDRegister</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d0/d5b/group___c_r_c_1ga506467d5ef873a5a4ade4ae83cb110f6">
+                <title>void CRC_ResetDR (void)</title> <emphasis>Resets the CRC Data register (DR).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d5b/group___c_r_c_1ga5407fdbb8e8c9be6322cc8856ae5db3b">
+                <title>uint32_t CRC_CalcCRC (uint32_t Data)</title> <emphasis>Computes the 32-bit CRC of a given data word(32-bit).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>Data, :</entry>
+                                <entry>
+<para>data word(32-bit) to compute its CRC </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>32-bit</entry>
+                                <entry>
+<para>CRC </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d5b/group___c_r_c_1gab15ebf620615c360048fb4f45b15fae6">
+                <title>uint32_t CRC_CalcBlockCRC (uint32_t pBuffer[], uint32_t BufferLength)</title> <emphasis>Computes the 32-bit CRC of a given buffer of data word(32-bit).</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>pBuffer, :</entry>
+                                <entry>
+<para>pointer to the buffer containing the data to be computed </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>BufferLength, :</entry>
+                                <entry>
+<para>length of the buffer to be computed </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>32-bit</entry>
+                                <entry>
+<para>CRC </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d5b/group___c_r_c_1gab62db4561b0558f3c8ed53887fe7de8b">
+                <title>uint32_t CRC_GetCRC (void)</title> <emphasis>Returns the current CRC value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>32-bit</entry>
+                                <entry>
+<para>CRC </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d5b/group___c_r_c_1ga769c9a42be57b972ae61bbada0f2e46a">
+                <title>void CRC_SetIDRegister (uint8_t IDValue)</title> <emphasis>Stores a 8-bit data in the Independent Data(ID) register.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>IDValue, :</entry>
+                                <entry>
+<para>8-bit value to be stored in the ID register </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d5b/group___c_r_c_1gaf869f6e9c3ca0ae0822cfad1abea7e5f">
+                <title>uint8_t CRC_GetIDRegister (void)</title> <emphasis>Returns the 8-bit data stored in the Independent Data(ID) register.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>8-bit</entry>
+                                <entry>
+<para>value of the ID register </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+<xi:include href="da/d58/group___c_r_c___exported___constants.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="da/d36/group___c_r_c___private___functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity">
+    <title>DCMI_PIXCK_Polarity</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga71fe5ad550cc63a754ea075d7b21fd78">DCMI_PCKPolarity_Falling</link> ((uint16_t)0x0000)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga3835956f9c552c1a0438ee408d5046ca">DCMI_PCKPolarity_Rising</link> ((uint16_t)0x0020)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga08c6dd6e407a5a8f7aaa90dadb1774a5">IS_DCMI_PCKPOLARITY</link> (((POLARITY) == <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga71fe5ad550cc63a754ea075d7b21fd78">DCMI_PCKPolarity_Falling</link>) || \
+                                      ((POLARITY) == <link linkend="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga3835956f9c552c1a0438ee408d5046ca">DCMI_PCKPolarity_Rising</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Define Documentation</title>
+            <section xml:id="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga71fe5ad550cc63a754ea075d7b21fd78">
+                <title>#define DCMI_PCKPolarity_Falling</title>                
+<para>Pixel clock active on Falling edge </para>
+
+                <para>Definition at line 136 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+            <section xml:id="d7/d4c/group___d_c_m_i___p_i_x_c_k___polarity_1ga3835956f9c552c1a0438ee408d5046ca">
+                <title>#define DCMI_PCKPolarity_Rising</title>                
+<para>Pixel clock active on Rising edge </para>
+
+                <para>Definition at line 137 of file stm32f4xx_dcmi.h</para>
+                <para>The Documentation for this define was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>stm32f4xx_dcmi.h</para></listitem></itemizedlist></para>
+            </section>
+        </section>
+</section>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d95/group___a_d_c__injected__rank">
+    <title>ADC_injected_rank</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="da/d95/group___a_d_c__injected__rank_1ga63f95f9a45f4d718aabc9e429d860e9d">IS_ADC_INJECTED_RANK</link> (((RANK) &gt;= 0x1) &amp;&amp; ((RANK) &lt;= 0x4))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/da8/group___c_a_n___group3">
+    <title>CAN Frames Reception functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>CAN Frames Reception functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                      CAN Frames Reception functions
+ ===============================================================================  
+  This section provides functions allowing to 
+   -  Receive a correct CAN frame
+   -  Release a specified receive FIFO (2 FIFOs are available)
+   -  Return the number of the pending received CAN frames</literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/da8/group___c_a_n___group3_1ga351b90bb8a3bb0c846f85bbd56ef4dc8">CAN_Receive</link> (
+CAN_TypeDef * CANx, uint8_t FIFONumber, <link linkend="d7/d57/struct_can_rx_msg">CanRxMsg</link> * RxMessage)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/da8/group___c_a_n___group3_1ga1bc3b39471e579b4101624c33d27918b">CAN_FIFORelease</link> (
+CAN_TypeDef * CANx, uint8_t FIFONumber)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="d6/da8/group___c_a_n___group3_1ga7100459a95ce1b3cfe8ab15e112029fe">CAN_MessagePending</link> (
+CAN_TypeDef * CANx, uint8_t FIFONumber)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="d6/da8/group___c_a_n___group3_1ga351b90bb8a3bb0c846f85bbd56ef4dc8">
+                <title>void CAN_Receive (CAN_TypeDef *CANx, uint8_t FIFONumber, CanRxMsg *RxMessage)</title> <emphasis>Receives a correct CAN frame.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FIFONumber, :</entry>
+                                <entry>
+<para>Receive FIFO number, CAN_FIFO0 or CAN_FIFO1. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>RxMessage, :</entry>
+                                <entry>
+<para>pointer to a structure receive frame which contains CAN Id, CAN DLC, CAN data and FMI number. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/da8/group___c_a_n___group3_1ga1bc3b39471e579b4101624c33d27918b">
+                <title>void CAN_FIFORelease (CAN_TypeDef *CANx, uint8_t FIFONumber)</title> <emphasis>Releases the specified receive FIFO.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FIFONumber, :</entry>
+                                <entry>
+<para>FIFO to release, CAN_FIFO0 or CAN_FIFO1. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d6/da8/group___c_a_n___group3_1ga7100459a95ce1b3cfe8ab15e112029fe">
+                <title>uint8_t CAN_MessagePending (CAN_TypeDef *CANx, uint8_t FIFONumber)</title> <emphasis>Returns the number of pending received messages.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>CANx, :</entry>
+                                <entry>
+<para>where x can be 1 or 2 to select the CAN peripheral. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>FIFONumber, :</entry>
+                                <entry>
+<para>Receive FIFO number, CAN_FIFO0 or CAN_FIFO1. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NbMessage</entry>
+                                <entry>
+<para>: which is the number of pending message. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

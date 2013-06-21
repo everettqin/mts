@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d1b/group___f_s_m_c___group3">
+    <title>PCCARD Controller functions</title>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>PCCARD Controller functions. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><programlisting><literallayout> ===============================================================================
+                    PCCARD Controller functions
+ ===============================================================================  
+
+ The following sequence should be followed to configure the FSMC to interface with
+ 16-bit PC Card compatible memory connected to the PCCARD Bank:
+ 
+   1. Enable the clock for the FSMC and associated GPIOs using the following functions:
+          RCC_AHB3PeriphClockCmd(RCC_AHB3Periph_FSMC, ENABLE);
+          RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);
+
+   2. FSMC pins configuration 
+       - Connect the involved FSMC pins to AF12 using the following function 
+          GPIO_PinAFConfig(GPIOx, GPIO_PinSourcex, GPIO_AF_FSMC); 
+       - Configure these FSMC pins in alternate function mode by calling the function
+          GPIO_Init();    
+       
+   3. Declare a FSMC_PCCARDInitTypeDef structure, for example:
+          FSMC_PCCARDInitTypeDef  FSMC_PCCARDInitStructure;
+      and fill the FSMC_PCCARDInitStructure variable with the allowed values of
+      the structure member.
+      
+   4. Initialize the PCCARD Controller by calling the function
+          FSMC_PCCARDInit(&amp;FSMC_PCCARDInitStructure); 
+
+   5. Then enable the PCCARD Bank:
+          FSMC_PCCARDCmd(ENABLE);  
+
+   6. At this stage you can read/write from/to the memory connected to the PCCARD Bank. </literallayout></programlisting> </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___f_s_m_c___group3_1ga2f53ccf3a4f3c80a5a56fb47ccd47ccd">FSMC_PCCARDDeInit</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___f_s_m_c___group3_1gacee1351363e7700a296faa1734a910aa">FSMC_PCCARDInit</link> (
+<link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> * FSMC_PCCARDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___f_s_m_c___group3_1ga7a64ba0e0545b3f1913c9d1d28c05e62">FSMC_PCCARDStructInit</link> (
+<link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> * FSMC_PCCARDInitStruct)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d1b/group___f_s_m_c___group3_1ga2d410151ceb3428c6a1bf374a0472cde">FSMC_PCCARDCmd</link> (
+FunctionalState NewState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Function Documentation</title>
+            <section xml:id="dd/d1b/group___f_s_m_c___group3_1ga2f53ccf3a4f3c80a5a56fb47ccd47ccd">
+                <title>void FSMC_PCCARDDeInit (void)</title> <emphasis>Deinitializes the FSMC PCCARD Bank registers to their default reset values.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___f_s_m_c___group3_1gacee1351363e7700a296faa1734a910aa">
+                <title>void FSMC_PCCARDInit (FSMC_PCCARDInitTypeDef *FSMC_PCCARDInitStruct)</title> <emphasis>Initializes the FSMC PCCARD Bank according to the specified parameters
+        in the FSMC_PCCARDInitStruct.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_PCCARDInitStruct</entry>
+                                <entry>
+<para>: pointer to a <link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> structure that contains the configuration information for the FSMC PCCARD Bank. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___f_s_m_c___group3_1ga7a64ba0e0545b3f1913c9d1d28c05e62">
+                <title>void FSMC_PCCARDStructInit (FSMC_PCCARDInitTypeDef *FSMC_PCCARDInitStruct)</title> <emphasis>Fills each FSMC_PCCARDInitStruct member with its default value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>FSMC_PCCARDInitStruct, :</entry>
+                                <entry>
+<para>pointer to a <link linkend="db/dc7/struct_f_s_m_c___p_c_c_a_r_d_init_type_def">FSMC_PCCARDInitTypeDef</link> structure which will be initialized. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d1b/group___f_s_m_c___group3_1ga2d410151ceb3428c6a1bf374a0472cde">
+                <title>void FSMC_PCCARDCmd (FunctionalState NewState)</title> <emphasis>Enables or disables the PCCARD Memory Bank.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>NewState, :</entry>
+                                <entry>
+<para>new state of the PCCARD Memory Bank. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

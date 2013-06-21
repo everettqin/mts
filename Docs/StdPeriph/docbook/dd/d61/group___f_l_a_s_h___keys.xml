@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d61/group___f_l_a_s_h___keys">
+    <title>FLASH_Keys</title>
+        <simplesect>
+            <title>Detailed Description</title>
+        </simplesect>
+        <simplesect>
+            <title>Defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1gae497135e5528d69274bf8daf7f077f23">RDP_KEY</link> ((uint16_t)0x00A5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1gafd77e7bf91765d891ce63e2f0084b019">FLASH_KEY1</link> ((uint32_t)0x45670123)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1gaee83d0f557e158da52f4a205db6b60a7">FLASH_KEY2</link> ((uint32_t)0xCDEF89AB)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1gacebe54ff9ff12abcf0e4d3e697b2f116">FLASH_OPT_KEY1</link> ((uint32_t)0x08192A3B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="dd/d61/group___f_l_a_s_h___keys_1ga636d46db38e376f0483eed4b7346697c">FLASH_OPT_KEY2</link> ((uint32_t)0x4C5D6E7F)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>
