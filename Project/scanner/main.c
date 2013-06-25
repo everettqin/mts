@@ -53,6 +53,7 @@ int main(void)
 	
 	while(1){
 		ENC_1_GetStatus();
+		SENSOR_GetStatus();
 	}
 }
 

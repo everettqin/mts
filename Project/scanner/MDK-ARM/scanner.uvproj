@@ -488,19 +488,9 @@
               <FilePath>..\..\..\Modules\src\enc_1.c</FilePath>
             </File>
             <File>
-              <FileName>enc_1_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\Modules\src\enc_1_it.c</FilePath>
-            </File>
-            <File>
               <FileName>enc_2.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\Modules\src\enc_2.c</FilePath>
-            </File>
-            <File>
-              <FileName>enc_2_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\Modules\src\enc_2_it.c</FilePath>
             </File>
             <File>
               <FileName>sensor.c</FileName>
@@ -513,24 +503,14 @@
               <FilePath>..\..\..\Modules\src\sensor_header.c</FilePath>
             </File>
             <File>
-              <FileName>sensor_header_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\Modules\src\sensor_header_it.c</FilePath>
-            </File>
-            <File>
-              <FileName>sensor_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\Modules\src\sensor_it.c</FilePath>
-            </File>
-            <File>
               <FileName>paper_feeder.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\Modules\src\paper_feeder.c</FilePath>
             </File>
             <File>
-              <FileName>paper_feeder_it.c</FileName>
+              <FileName>buttons.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Modules\src\paper_feeder_it.c</FilePath>
+              <FilePath>..\..\..\Modules\src\buttons.c</FilePath>
             </File>
           </Files>
         </Group>

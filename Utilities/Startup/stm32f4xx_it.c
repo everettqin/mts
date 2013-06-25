@@ -15,6 +15,7 @@
 #include "stm32f4xx_it.h"
 #include "stm32f4_discovery.h"
 #include "paper_feeder.h"
+#include "sensor.h"
 
 
 /** @addtogroup STM32F4_Discovery_Peripheral_Examples
@@ -28,6 +29,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 extern __IO uint8_t MainState;
+__IO int8_t sensor_header = 0;
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -159,7 +161,9 @@ void EXTI0_IRQHandler(void)
   { 		
 		if (MainState == DISABLE) {
 			MainState = ENABLE;
-			PAPER_FEEDER_Move(1000);
+			//PAPER_FEEDER_Move(50);
+			SENSOR_Init();
+			SENSOR_Start();
 		} else {
 			MainState = DISABLE;
 		}
@@ -177,6 +181,33 @@ void TIM2_IRQHandler(void) {
     TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
 			//IRQ_count++;
   }
+}
+
+void ADC_IRQHandler(void){
+	
+  //ADC_ClearFlag(ADC1,ADC_FLAG_EOC);
+	__IO uint16_t SENSOR_A_VoltValue = ADC_GetConversionValue(ADC1) * 3000/0xfff;
+	__IO uint16_t SENSOR_B_VoltValue = ADC_GetConversionValue(ADC2) * 3000/0xfff;
+	
+	if(SENSOR_A_VoltValue > SENSOR_B_VoltValue) {
+		sensor_header = 1;
+	} else {
+		sensor_header = -1;
+	}
+	
+}
+
+void DMA2_Stream0_IRQHandler (void) {
+	__IO uint16_t SENSOR_A_VoltValue = ADC_GetConversionValue(ADC1) * 3000/0xfff;
+	__IO uint16_t SENSOR_B_VoltValue = ADC_GetConversionValue(ADC2) * 3000/0xfff;
+	
+	if(SENSOR_A_VoltValue > SENSOR_B_VoltValue) {
+		sensor_header = 1;
+	} else {
+		sensor_header = -1;
+	}
+	
+	DMA_ClearITPendingBit(DMA2_Stream0, DMA_IT_TCIF0);
 }
 /**
   * @}

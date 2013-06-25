@@ -6,11 +6,11 @@
 /* Global macro -------------------------------------------------------------*/
 /**
  * START_PROGRAMM		USER BUTTON			|									
- * ENC_1 						GPIOA_PIN15(CH1)|	GPIOB_PIN3(CH2)			| TIM2 
- * ENC_2 						GPIOB_PIN6(CH1)	|	GPIOB_PIN7(CH3)   		|	TIM4
+ * ENC_1 						GPIOA_PIN15(CH1)|	GPIOB_PIN3(CH2)	| TIM2 
+ * ENC_2 						GPIOB_PIN6(CH1)	|	GPIOB_PIN7(CH3) |	TIM4
  * PAPER_FEEDER			GPIOC_PIN6(CH1)	| 								|	TIM3
  * SENSOR_HEADER 		GPIOC_PIN8(CH3)	|	GPIOC_PIN9(CH4)	|	TIM3
- * SENSOR						GPIOC				| pin_2		pin_3	|	ADC
+ * SENSOR						GPIOC_PIN2(CH12)    ADC1	| GPIOC_PIN3(CH13)    ADC2
  */
 
 /* ENC_1 Configuration ------------------------------------------------------*/
@@ -58,9 +58,9 @@
 
 /* Paper Feeder Configuration --------------------------------------------------------*/
 /* definitions the signal */
-#define PAPER_FEEDER_SIGNAL_FREQUENCY		10			//	(Hz)
-#define PAPER_FEEDER_SIGNA_PERIOD				1 / PAPER_FEEDER_FREQUENCY	//	(sec)
-#define	PAPER_FEEDER_SIGNA_WIDTH				0.5			//	(1)
+#define PAPER_FEEDER_SIGNAL_FREQUENCY			50			//	(Hz)
+#define PAPER_FEEDER_SIGNAL_PERIOD				1 / PAPER_FEEDER_FREQUENCY	//	(sec)
+#define	PAPER_FEEDER_SIGNAL_DUTY_CYCLE		0.5			//	(1)
 
 /* definitions the timer */
 #define PAPER_FEEDER_TIMER 				TIM3 
@@ -75,7 +75,7 @@
 
 /* Sensor Header Configuration --------------------------------------------------------*/
 /* definitions the signal */
-#define SENSOR_HEADER_SIGNAL_FREQUENCY		10			//	(Hz)
+#define SENSOR_HEADER_SIGNAL_FREQUENCY		50			//	(Hz)
 #define SENSOR_HEADER_SIGNA_PERIOD				1 / SENSOR_HEADER_SIGNAL_FREQUENCY	//	(sec)
 #define	SENSOR_HEADER_SIGNA_WIDTH				0.5			//	(1)
 
@@ -105,13 +105,13 @@
 #define SENSOR_B_ADC_CLK 					RCC_APB2Periph_ADC4 
 
 /* definitions the gpio */ 
-#define SENSOR_A_GPIO_PORT 			GPIOC
-#define SENSOR_A_GPIO_PIN 			GPIO_Pin_2 
-#define SENSOR_A_GPIO_CLK 			RCC_AHB1Periph_GPIOC 
+#define SENSOR_A_GPIO_PORT 				GPIOC
+#define SENSOR_A_GPIO_PIN 				GPIO_Pin_2 
+#define SENSOR_A_GPIO_CLK 				RCC_AHB1Periph_GPIOC 
 
-#define SENSOR_B_GPIO_PORT 			GPIOC 
-#define SENSOR_B_GPIO_PIN 			GPIO_Pin_3 
-#define SENSOR_B_GPIO_CLK 			RCC_AHB1Periph_GPIOC 
+#define SENSOR_B_GPIO_PORT 				GPIOC 
+#define SENSOR_B_GPIO_PIN 				GPIO_Pin_3 
+#define SENSOR_B_GPIO_CLK 				RCC_AHB1Periph_GPIOC 
 
 /* Global variable ------------------------------------------------------------*/
 extern uint32_t ENCA_value;

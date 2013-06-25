@@ -36,18 +36,27 @@ void PAPER_FEEDER_TIM_Init(void) {
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
 	TIM_OCInitTypeDef  			TIM_OCInitStructure;
 	
-	/* Private variables ---------------------------------------------------------*/
-	uint16_t CCR_Val = 333;
-	uint16_t PrescalerValue = 0;
-	
+	/* Private variables ---------------------------------------------------------*/	
+	/** Compute Timer Clock in us 
+		* Timer Clock = 168M / 168 = 1M
+		* PAPER_FEEDER_SIGNAL_FREQUENCY 	= 50Hz
+		* PAPER_FEEDER_SIGNAL_PERIOD 		  = 0.02s = 20ms = 20000us 
+		* PeriodValue = 1M / 50 / 2 = 10000
+		* CCRValue = PeriodValue * PAPER_FEEDER_SIGNAL_DUTY_CYCLE - 1 = 20000 * 0.5 - 1 = 4999
+		*/
+	uint32_t TimerCCK = 1000000;
+	uint16_t PrescalerValue = (uint16_t) (SystemCoreClock / TimerCCK) - 1; // = 168 
+	uint32_t PeriodValue = TimerCCK / PAPER_FEEDER_SIGNAL_FREQUENCY / 2;
+	uint32_t CCRValue = PeriodValue * PAPER_FEEDER_SIGNAL_DUTY_CYCLE - 1;
+
 	/* TIMER clock enable */
   RCC_APB1PeriphClockCmd(PAPER_FEEDER_TIMER_CLK, ENABLE);
 	
 	/* Compute the prescaler value */
-  PrescalerValue = (uint16_t) ((SystemCoreClock /2) / 28000000) - 1;
+  //PrescalerValue = (uint16_t) ((SystemCoreClock /2) / 28000000) - 1;
 
   /* Time base configuration */
-  TIM_TimeBaseStructure.TIM_Period 				= 665;
+  TIM_TimeBaseStructure.TIM_Period 				= PeriodValue;
   TIM_TimeBaseStructure.TIM_Prescaler 		= PrescalerValue;
   TIM_TimeBaseStructure.TIM_ClockDivision = 0;
   TIM_TimeBaseStructure.TIM_CounterMode 	= TIM_CounterMode_Up;
@@ -57,7 +66,7 @@ void PAPER_FEEDER_TIM_Init(void) {
   /* PWM Mode configuration */
   TIM_OCInitStructure.TIM_OCMode 					= TIM_OCMode_PWM1;
   TIM_OCInitStructure.TIM_OutputState 		= TIM_OutputState_Enable;
-  TIM_OCInitStructure.TIM_Pulse 					= CCR_Val;
+  TIM_OCInitStructure.TIM_Pulse 					= CCRValue;
   TIM_OCInitStructure.TIM_OCPolarity 			= TIM_OCPolarity_High;
 
   TIM_OC1Init(PAPER_FEEDER_TIMER, &TIM_OCInitStructure);
@@ -101,7 +110,7 @@ void PAPER_FEEDER_Start(void){
 }
 
 void PAPER_FEEDER_Move(int16_t distance) {
-	ENC_1_Init();
+	ENC_1_Init(distance);
 	ENC_1_Start();
 	
 	PAPER_FEEDER_Init();

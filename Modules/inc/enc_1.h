@@ -5,7 +5,7 @@
 #include "stm32f4xx_conf.h" 
 
 /* Private function prototypes -----------------------------------------------*/
-extern void ENC_1_Init(void);
+extern void ENC_1_Init(int16_t distance);
 extern void ENC_1_Start(void);
 extern void ENC_1_GetStatus(void);
 

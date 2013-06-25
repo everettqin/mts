@@ -1,18 +1,18 @@
 #include "enc_1.h"
 
-void ENC_1_Init(void);
+void ENC_1_Init(int16_t distance);
 void ENC_1_Start(void);
 void ENC_1_GetStatus(void);
 void ENC_1_GPIO_Init(void);
-void ENC_1_TIM_Init(void);
+void ENC_1_TIM_Init(int16_t distance);
 
 uint32_t ENC_1_A_value		= 0;
 uint32_t ENC_1_B_value		= 0;
 uint32_t ENC_1_count			= 0;
 
-void ENC_1_Init (void) {
+void ENC_1_Init(int16_t distance) {
 	ENC_1_GPIO_Init();
-	ENC_1_TIM_Init();
+	ENC_1_TIM_Init(distance);
 }
 
 void ENC_1_Start(void) {	
@@ -61,7 +61,7 @@ void ENC_1_GPIO_Init(void){
   * @param  None
   * @retval None
   */
-void ENC_1_TIM_Init(void) {	
+void ENC_1_TIM_Init(int16_t distance) {	
 	/* Private typedef -----------------------------------------------------------*/
 	NVIC_InitTypeDef  NVIC_InitStructure;
 	
@@ -73,7 +73,7 @@ void ENC_1_TIM_Init(void) {
 	* set both inputs to rising polarity to let it use both edges
 	*/
 	TIM_EncoderInterfaceConfig 		(ENC_1_TIMER, TIM_EncoderMode_TI12, TIM_ICPolarity_Falling, TIM_ICPolarity_Falling); 
-	TIM_SetAutoreload 						(ENC_1_TIMER, 0xfff); 
+	TIM_SetAutoreload 						(ENC_1_TIMER, distance); 
 	 
 	/* clear the interrupt */
 	TIM_ClearFlag(ENC_1_TIMER, TIM_FLAG_Update);

@@ -37,3 +37,4 @@
 ..\..\..\Temp\Out\stm32f4xx_it.o: ..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
 ..\..\..\Temp\Out\stm32f4xx_it.o: ..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery.h
 ..\..\..\Temp\Out\stm32f4xx_it.o: ..\..\..\Modules\inc\paper_feeder.h
+..\..\..\Temp\Out\stm32f4xx_it.o: ..\..\..\Modules\inc\sensor.h

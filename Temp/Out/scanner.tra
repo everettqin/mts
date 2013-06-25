@@ -30,7 +30,7 @@
 ### ADS-LD Output File: '..\..\..\Temp\Out\scanner.axf'
 ### ADS-LD Command File: '..\..\..\Temp\Out\scanner.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\..\..\Temp\Out\scanner.lnp', Handle=0x0001CB5C
+### Creating CmdFile '..\..\..\Temp\Out\scanner.lnp', Handle=0x0000DD30
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\..\..\Temp\Out\scanner.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

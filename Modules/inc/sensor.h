@@ -4,5 +4,6 @@
 /* Public functions ---------------------------------------------------------*/
 extern void SENSOR_Init(void);
 extern void SENSOR_Start(void);
+extern void SENSOR_GetStatus(void);
 
 #endif
